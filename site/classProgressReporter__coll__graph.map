@@ -1,0 +1,9 @@
+<map id="ProgressReporter" name="ProgressReporter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,148,269,293"/>
+<area shape="rect" id="Node000002" href="$classdouble.html" title=" " alt="" coords="5,5,64,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,69,102,122,112,134,108,137,98,126,56,72"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,5,288,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,71,191,131,185,131,185,71"/>
+<area shape="rect" id="Node000004" href="$classunsigned.html" title=" " alt="" coords="311,5,385,71"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="322,72,264,137,260,134,318,69"/>
+</map>

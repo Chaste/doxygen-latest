@@ -1,0 +1,13 @@
+<map id="AbstractLookupTableCollection" name="AbstractLookupTableCollection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="327,177,576,423"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,156,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,70,93,112,101,133,113,152,156,191,206,223,259,248,312,267,310,272,257,253,203,228,153,195,109,155,96,136,87,114,79,71"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="211,5,355,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="288,70,296,111,311,152,320,167,315,169,306,154,290,112,283,71"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="387,5,516,71"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="454,71,454,161,449,161,449,71"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="568,5,681,71"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="624,72,615,112,598,155,588,170,583,168,593,152,610,111,618,70"/>
+<area shape="rect" id="Node000006" href="$classdouble.html" title=" " alt="" coords="783,5,842,71"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="813,71,803,114,793,136,780,155,739,193,692,224,642,249,592,268,590,263,640,244,690,219,736,189,776,152,789,133,798,112,808,70"/>
+</map>

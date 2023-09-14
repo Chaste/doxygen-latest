@@ -1,0 +1,9 @@
+<map id="SteadyStateRestitutionStimulus" name="SteadyStateRestitutionStimulus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="119,388,364,493"/>
+<area shape="rect" id="Node000002" href="$classMultiStimulus.html" title=" " alt="" coords="171,193,311,339"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,352,244,388,239,388,239,352"/>
+<area shape="rect" id="Node000003" href="$classAbstractStimulusFunction.html" title=" " alt="" coords="5,5,221,131"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="163,141,197,192,192,195,159,144"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="245,28,496,108"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="347,110,300,181,295,178,343,107"/>
+</map>

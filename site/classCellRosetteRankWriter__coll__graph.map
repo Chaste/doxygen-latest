@@ -1,0 +1,16 @@
+<map id="CellRosetteRankWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="CellRosetteRankWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="502,840,722,980"/>
+<area shape="rect" id="Node000002" href="$classAbstractCellWriter.html" title=" " alt="" coords="489,511,735,791"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="615,804,615,840,609,840,609,804"/>
+<area shape="rect" id="Node000003" href="$classAbstractCellBasedWriter.html" title=" " alt="" coords="299,173,519,433"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="494,444,533,509,528,512,490,447"/>
+<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="196,118,301,206,297,211,192,122"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="537,25,588,91"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="581,90,596,134,611,226,620,320,623,411,623,494,618,494,618,411,615,321,606,227,591,135,576,92"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="539,91,505,136,489,161,485,158,500,133,535,87"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="264,25,464,91"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="365,91,368,149,369,157,364,157,363,150,360,91"/>
+<area shape="rect" id="Node000007" href="$classbool.html" title=" " alt="" coords="819,271,861,336"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="837,337,824,384,802,435,777,476,747,515,743,512,772,473,798,432,819,382,831,336"/>
+</map>

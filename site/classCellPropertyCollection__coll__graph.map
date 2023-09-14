@@ -1,0 +1,12 @@
+<map id="CellPropertyCollection" name="CellPropertyCollection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="77,476,273,841"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,241,224,321"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,320,146,459,140,460,118,321"/>
+<area shape="rect" id="Node000003" href="$classCellPropertyRegistry.html" title=" " alt="" coords="249,148,461,413"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="294,415,271,462,266,460,289,413"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="462,251,480,262,487,280,485,293,477,302,473,299,480,291,482,281,476,266,459,256"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="168,5,387,85"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="284,85,292,123,294,132,289,133,287,125,279,86"/>
+<area shape="rect" id="Node000005" href="$classbool.html" title=" " alt="" coords="411,13,453,78"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="424,79,406,133,401,131,419,77"/>
+</map>

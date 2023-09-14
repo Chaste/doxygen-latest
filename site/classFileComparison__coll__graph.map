@@ -1,0 +1,16 @@
+<map id="FileComparison" name="FileComparison">
+<area shape="rect" id="Node000001" title=" " alt="" coords="428,391,657,596"/>
+<area shape="rect" id="Node000002" href="$classAbstractFileComparison.html" title=" " alt="" coords="156,148,361,313"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="360,321,434,389,430,393,356,325"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,56,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="43,70,56,97,74,122,107,151,143,176,140,180,103,155,70,126,51,100,38,72"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="117,5,197,71"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="168,70,188,123,193,133,188,135,183,125,163,72"/>
+<area shape="rect" id="Node000005" href="$classunsigned.html" title=" " alt="" coords="222,5,295,71"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="261,71,261,132,256,132,256,71"/>
+<area shape="rect" id="Node000006" href="$classbool.html" title=" " alt="" coords="437,5,480,71"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="482,49,506,68,526,93,540,144,548,215,550,374,545,374,543,215,535,145,522,96,503,71,479,53"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="439,54,379,97,337,138,334,134,376,93,436,50"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="725,198,875,263"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="771,265,657,380,653,377,767,261"/>
+</map>

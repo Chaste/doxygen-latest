@@ -1,0 +1,18 @@
+<map id="EdgeOperation" name="EdgeOperation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="161,436,371,721"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,213,137,279"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,279,83,342,92,377,106,411,127,444,152,476,148,479,122,447,101,413,87,379,77,343,69,279"/>
+<area shape="rect" id="Node000003" href="$classunsigned.html" title=" " alt="" coords="161,213,235,279"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,279,195,341,202,412,204,420,198,421,197,412,190,341,192,279"/>
+<area shape="rect" id="Node000004" href="$classEdgeRemapInfo.html" title=" " alt="" coords="553,133,718,359"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="554,343,536,361,461,428,385,490,382,486,457,424,532,357,550,339"/>
+<area shape="rect" id="Node000005" href="$classbool.html" title=" " alt="" coords="337,5,379,71"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="357,71,350,134,339,274,333,335,319,413,318,421,312,420,314,411,327,334,334,273,345,133,352,71"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="381,66,403,88,429,107,457,117,481,118,506,120,535,131,541,134,538,139,533,136,505,125,481,124,455,122,426,112,399,92,378,70"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="425,5,539,71"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="496,70,515,108,544,140,540,143,510,111,491,72"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="563,5,707,71"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="638,71,638,117,633,117,633,71"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="732,5,861,71"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="774,73,730,128,726,125,770,69"/>
+</map>

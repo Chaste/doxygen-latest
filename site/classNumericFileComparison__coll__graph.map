@@ -1,0 +1,13 @@
+<map id="NumericFileComparison" name="NumericFileComparison">
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,363,305,488"/>
+<area shape="rect" id="Node000002" href="$classAbstractFileComparison.html" title=" " alt="" coords="105,148,311,313"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,327,211,362,205,362,205,327"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,56,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="36,70,43,97,56,123,73,144,94,163,90,167,69,147,51,125,38,99,31,72"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="117,5,197,71"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="159,70,164,124,166,131,161,133,159,124,153,71"/>
+<area shape="rect" id="Node000005" href="$classunsigned.html" title=" " alt="" coords="222,5,295,71"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="253,71,237,132,231,131,248,70"/>
+<area shape="rect" id="Node000006" href="$classbool.html" title=" " alt="" coords="355,5,397,71"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="367,72,354,99,337,126,324,140,320,137,333,122,349,96,362,70"/>
+</map>

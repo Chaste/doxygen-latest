@@ -1,0 +1,31 @@
+<map id="Kerchoffs2003ContractionModel" name="Kerchoffs2003ContractionModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="437,2023,644,2277"/>
+<area shape="rect" id="Node000002" href="$classAbstractOdeBasedContractionModel.html" title=" " alt="" coords="268,1808,492,1963"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="436,1973,466,2021,461,2024,432,1976"/>
+<area shape="rect" id="Node000003" href="$classAbstractOdeSystem.html" title=" " alt="" coords="364,1465,562,1690"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="432,1704,404,1808,398,1807,427,1702"/>
+<area shape="rect" id="Node000004" href="$classAbstractParameterisedSystem.html" title=" " alt="" coords="209,992,445,1372"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="399,1384,427,1464,422,1465,394,1386"/>
+<area shape="rect" id="Node000005" href="$classAbstractUntemplatedParameterisedSystem.html" title=" " alt="" coords="358,148,632,457"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="519,471,525,584,524,710,510,842,497,906,479,969,465,1003,448,1036,443,1034,460,1001,474,967,491,905,504,841,518,710,520,584,514,471"/>
+<area shape="rect" id="Node000009" href="$classAbstractParameterisedSystem.html" title=" " alt="" coords="181,535,417,915"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="443,471,425,512,414,535,409,533,421,510,438,469"/>
+<area shape="rect" id="Node000006" href="$classunsigned.html" title=" " alt="" coords="348,13,421,78"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="381,78,380,101,383,123,386,132,381,133,378,125,374,101,375,78"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="491,5,718,85"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="593,86,578,125,574,134,569,132,573,123,588,84"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="25,692,154,757"/>
+<area shape="poly" id="edge13_Node000002_Node000008" title=" " alt="" coords="83,758,66,823,45,917,26,1032,12,1164,9,1304,13,1376,22,1448,36,1519,55,1588,80,1655,112,1719,140,1756,175,1788,214,1815,255,1837,252,1842,211,1820,171,1793,136,1760,107,1721,75,1657,50,1590,30,1520,17,1449,8,1377,4,1304,7,1163,20,1032,40,916,60,822,78,757"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="100,757,129,853,150,911,176,967,202,1013,198,1015,171,969,145,913,124,854,95,758"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="300,928,302,968,304,992,298,992,296,968,294,929"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="266,270,332,335"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="302,336,302,518,296,518,296,336"/>
+<area shape="rect" id="Node000011" href="$classbool.html" title=" " alt="" coords="592,1149,635,1215"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="632,1214,668,1294,686,1344,699,1395,736,1558,751,1626,761,1689,764,1752,758,1819,741,1891,712,1974,688,2018,657,2057,653,2054,684,2015,707,1972,736,1890,753,1818,759,1752,756,1690,746,1627,731,1559,694,1397,680,1346,663,1296,627,1216"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="604,1216,514,1450,509,1448,599,1214"/>
+<area shape="rect" id="Node000012" href="$classAbstractContractionModel.html" title=" " alt="" coords="122,1435,340,1720"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="309,1731,346,1807,341,1809,304,1733"/>
+<area shape="rect" id="Node000013" href="$classdouble.html" title=" " alt="" coords="586,1545,644,1610"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="607,1611,584,1695,562,1798,550,1904,544,2007,539,2006,545,1903,556,1797,578,1693,602,1609"/>
+<area shape="poly" id="edge14_Node000002_Node000013" title=" " alt="" coords="617,1611,607,1668,595,1697,576,1722,561,1732,546,1737,518,1736,491,1735,477,1738,462,1746,438,1768,419,1795,415,1792,434,1765,459,1742,475,1733,490,1730,519,1731,546,1732,559,1727,572,1718,590,1694,602,1666,612,1610"/>
+</map>

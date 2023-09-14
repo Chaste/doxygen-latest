@@ -1,0 +1,9 @@
+<map id="CellMLToSharedLibraryConverter" name="CellMLToSharedLibraryConverter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="131,148,381,273"/>
+<area shape="rect" id="Node000002" href="$classbool.html" title=" " alt="" coords="5,5,48,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="32,70,39,97,54,122,83,148,118,168,115,173,80,152,50,126,34,99,27,71"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="231,5,281,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,71,259,132,253,132,253,71"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="395,5,445,71"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="417,72,408,99,393,126,381,138,378,135,388,122,403,97,412,70"/>
+</map>
