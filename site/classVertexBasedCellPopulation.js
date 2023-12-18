@@ -21,7 +21,7 @@ var classVertexBasedCellPopulation =
     [ "GetElementCorrespondingToCell", "classVertexBasedCellPopulation.html#a519e36b3b66332f7fb56d4f183ecd1c6", null ],
     [ "GetLocationOfCellCentre", "classVertexBasedCellPopulation.html#a1ff3384522009800539eca2da369ea32", null ],
     [ "GetLocationsOfT2Swaps", "classVertexBasedCellPopulation.html#ac9abf3a375cec32a26c232b27e28bf1f", null ],
-    [ "GetNeighbouringEdgeIndices", "classVertexBasedCellPopulation.html#ad2668d412277e7928851d26d6ec62f69", null ],
+    [ "GetNeighbouringEdgeIndices", "classVertexBasedCellPopulation.html#ac5f7937fb5a6838a1f6206cfd5dbd551", null ],
     [ "GetNeighbouringLocationIndices", "classVertexBasedCellPopulation.html#ada776b6132ebd8522082c3d09231ea92", null ],
     [ "GetNeighbouringNodeIndices", "classVertexBasedCellPopulation.html#a11e5d0b2b6cabde54968b2aa5ca6b202", null ],
     [ "GetNode", "classVertexBasedCellPopulation.html#afeca24a00895cb33528a923b42b04788", null ],

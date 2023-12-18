@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::3d0dea6ed10f59ded46a6a0c5abbad47053c1f51</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::395b21489ded288b40aa95e8766fa8e90c4639e9</span>
    </div>
   </td>
  </tr>
@@ -76,14 +76,14 @@ $(document).ready(function(){initNavTree('classMutableMesh.html',''); initResiza
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classMutableMesh__inherit__graph.svg" width="1443" height="4519"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classMutableMesh__inherit__graph.svg" width="1179" height="4519"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for MutableMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classMutableMesh__coll__graph.svg" width="1832" height="2438"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classMutableMesh__coll__graph.svg" width="3142" height="3350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -448,9 +448,10 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
       </table>
 </div><div class="memdoc">
 <p>Constructor which takes in a vector of nodes.</p>
+<p>The full tetrahedral mesh is internally constructed automatically via a call to <a class="el" href="classMutableMesh.html#ac353eb6bf2f244a24db6e7bc28a6a454">ReMesh()</a>. The nodes you have supplied will eventually be deleted by the mesh destructor, you don't need to delete them yourself.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nodes</td><td>a vector of nodes </td></tr>
+    <tr><td class="paramname">nodes</td><td>a vector of pointers to nodes </td></tr>
   </table>
   </dd>
 </dl>
@@ -518,7 +519,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableMesh_8cpp_source.html#l00100">100</a> of file <a class="el" href="MutableMesh_8cpp_source.html">MutableMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, and <a class="el" href="Element_8cpp_source.html#l00104">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::ResetIndex()</a>.</p>
+<p class="reference">References <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, and <a class="el" href="Element_8cpp_source.html#l00100">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::ResetIndex()</a>.</p>
 
 </div>
 </div>
@@ -591,7 +592,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000113">Todo:</a></b></dt><dd>use ElementIterator here? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000114">Todo:</a></b></dt><dd>use ElementIterator here? </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableMesh_8cpp_source.html#l01077">1077</a> of file <a class="el" href="MutableMesh_8cpp_source.html">MutableMesh.cpp</a>.</p>
 
@@ -643,7 +644,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableMesh_8cpp_source.html#l00992">992</a> of file <a class="el" href="MutableMesh_8cpp_source.html">MutableMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Element_8cpp_source.html#l00118">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::CalculateCircumsphere()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00116">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNode()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
+<p class="reference">References <a class="el" href="Element_8cpp_source.html#l00114">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::CalculateCircumsphere()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00116">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNode()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
 
 </div>
 </div>
@@ -714,7 +715,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableMesh_8cpp_source.html#l00515">515</a> of file <a class="el" href="MutableMesh_8cpp_source.html">MutableMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00154">EXCEPTION</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00116">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNode()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="Node_8cpp_source.html#l00412">Node&lt; SPACE_DIM &gt;::IsDeleted()</a>, <a class="el" href="Element_8cpp_source.html#l00074">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::MarkAsDeleted()</a>, and <a class="el" href="Node_8cpp_source.html#l00127">Node&lt; SPACE_DIM &gt;::SetAsBoundaryNode()</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00116">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNode()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="Node_8cpp_source.html#l00412">Node&lt; SPACE_DIM &gt;::IsDeleted()</a>, <a class="el" href="Element_8cpp_source.html#l00074">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::MarkAsDeleted()</a>, and <a class="el" href="Node_8cpp_source.html#l00127">Node&lt; SPACE_DIM &gt;::SetAsBoundaryNode()</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1063,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableMesh_8cpp_source.html#l00459">459</a> of file <a class="el" href="MutableMesh_8cpp_source.html">MutableMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00154">EXCEPTION</a>, <a class="el" href="Element_8cpp_source.html#l00313">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::IncludesPoint()</a>, <a class="el" href="ChastePoint_8cpp_source.html#l00076">ChastePoint&lt; DIM &gt;::rGetLocation()</a>, and <a class="el" href="Element_8cpp_source.html#l00089">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::UpdateNode()</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="Element_8cpp_source.html#l00309">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::IncludesPoint()</a>, <a class="el" href="ChastePoint_8cpp_source.html#l00076">ChastePoint&lt; DIM &gt;::rGetLocation()</a>, and <a class="el" href="Element_8cpp_source.html#l00085">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::UpdateNode()</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1158,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableMesh_8cpp_source.html#l00675">675</a> of file <a class="el" href="MutableMesh_8cpp_source.html">MutableMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00154">EXCEPTION</a>, <a class="el" href="NodeMap_8cpp_source.html#l00052">NodeMap::Resize()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00076">NodeMap::SetDeleted()</a>, and <a class="el" href="NodeMap_8cpp_source.html#l00066">NodeMap::SetNewIndex()</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="NodeMap_8cpp_source.html#l00052">NodeMap::Resize()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00076">NodeMap::SetDeleted()</a>, and <a class="el" href="NodeMap_8cpp_source.html#l00066">NodeMap::SetNewIndex()</a>.</p>
 
 </div>
 </div>
@@ -1226,7 +1227,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000114">Todo:</a></b></dt><dd>should unsigned <a class="el" href="classAbstractMesh.html#ad81a40a2e3970600185117829c1ca5f1">GetNumBoundaryNodes()</a> be overloaded too?? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000112">Todo:</a></b></dt><dd>should unsigned <a class="el" href="classAbstractMesh.html#ad81a40a2e3970600185117829c1ca5f1">GetNumBoundaryNodes()</a> be overloaded too?? </dd></dl>
 <p>Rescale the mesh from a boundary node.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1344,7 +1345,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableMesh_8cpp_source.html#l00174">174</a> of file <a class="el" href="MutableMesh_8cpp_source.html">MutableMesh.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Cylindrical2dMesh_8cpp_source.html#l00499">Cylindrical2dMesh::SetNode()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00754">Toroidal2dMesh::SetNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Cylindrical2dMesh_8cpp_source.html#l00499">Cylindrical2dMesh::SetNode()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00754">Toroidal2dMesh::SetNode()</a>, and <a class="el" href="MeshBasedCellPopulation_8cpp_source.html#l00131">MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::SetNode()</a>.</p>
 
 </div>
 </div>
@@ -1387,7 +1388,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableMesh_8cpp_source.html#l00911">911</a> of file <a class="el" href="MutableMesh_8cpp_source.html">MutableMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="Exception_8hpp_source.html#l00217">NEVER_REACHED</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00074">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::ReplaceNode()</a>, <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>, <a class="el" href="Node_8cpp_source.html#l00139">Node&lt; SPACE_DIM &gt;::rGetLocation()</a>, and <a class="el" href="Exception_8hpp_source.html#l00053">UNSIGNED_UNSET</a>.</p>
+<p class="reference">References <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00074">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::ReplaceNode()</a>, <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>, <a class="el" href="Node_8cpp_source.html#l00139">Node&lt; SPACE_DIM &gt;::rGetLocation()</a>, and <a class="el" href="Exception_8hpp_source.html#l00053">UNSIGNED_UNSET</a>.</p>
 
 </div>
 </div>
@@ -1415,7 +1416,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>returns a vector of triples with pointers to the new node followed by pointers to the nodes defining the bisected edge. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000112">Todo:</a></b></dt><dd>use iterators to tidy this up </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000113">Todo:</a></b></dt><dd>use iterators to tidy this up </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableMesh_8cpp_source.html#l00815">815</a> of file <a class="el" href="MutableMesh_8cpp_source.html">MutableMesh.cpp</a>.</p>
 

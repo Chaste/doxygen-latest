@@ -1,16 +1,32 @@
 <map id="RadialCellDataDistributionWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="RadialCellDataDistributionWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="482,779,742,1093"/>
-<area shape="rect" id="Node000002" href="$classAbstractCellPopulationWriter.html" title=" " alt="" coords="336,496,563,716"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="512,727,537,777,532,779,507,730"/>
-<area shape="rect" id="Node000003" href="$classAbstractCellBasedWriter.html" title=" " alt="" coords="278,173,498,433"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="420,446,430,495,424,496,414,447"/>
-<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="191,118,279,199,276,203,187,122"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="537,25,588,91"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="581,90,596,134,610,216,621,299,632,467,633,625,628,762,623,762,628,625,627,467,616,300,605,216,591,135,576,92"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="539,92,505,136,487,161,482,158,501,133,535,89"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="264,25,464,91"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="366,91,368,149,369,157,363,157,363,149,361,91"/>
-<area shape="rect" id="Node000007" href="$classunsigned.html" title=" " alt="" coords="650,573,723,639"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="682,639,654,763,649,762,677,638"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="95,1423,355,1737"/>
+<area shape="rect" id="Node000002" href="$classAbstractCellPopulationWriter.html" title=" " alt="" coords="112,1140,339,1360"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,1374,228,1422,223,1422,223,1374"/>
+<area shape="rect" id="Node000003" href="$classAbstractCellBasedWriter.html" title=" " alt="" coords="123,817,343,1077"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,1091,231,1140,226,1140,227,1091"/>
+<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="332,649,567,755"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="397,767,346,824,342,820,393,763"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="31,669,110,735"/>
+<area shape="poly" id="edge14_Node000001_Node000005" title=" " alt="" coords="70,735,61,841,57,997,60,1086,68,1178,81,1270,103,1359,120,1407,115,1409,97,1361,76,1271,62,1178,55,1086,52,997,56,840,64,735"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="94,734,140,802,136,805,90,737"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,507,136,587"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="73,601,73,669,68,669,68,601"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="161,662,308,742"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="237,742,237,801,231,801,232,742"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="336,514,437,579"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="382,580,373,604,359,627,314,656,311,651,355,623,369,602,377,578"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="315,364,458,444"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="389,458,389,514,384,514,384,458"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="318,235,455,315"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="389,328,389,364,384,364,384,328"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="305,120,468,185"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="389,199,389,235,384,235,384,199"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="337,5,436,71"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="389,85,389,120,384,120,384,85"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="160,514,309,579"/>
+<area shape="poly" id="edge12_Node000007_Node000013" title=" " alt="" coords="237,593,237,661,232,661,232,593"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="223,371,246,437"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="237,437,237,497,232,497,232,437"/>
+<area shape="rect" id="Node000015" href="$classunsigned.html" title=" " alt="" coords="363,1217,437,1283"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="389,1284,353,1361,327,1410,323,1407,348,1359,384,1282"/>
 </map>

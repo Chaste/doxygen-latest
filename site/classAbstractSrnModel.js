@@ -22,7 +22,7 @@ var classAbstractSrnModel =
     [ "serialize", "classAbstractSrnModel.html#a9e1dffce57c76f464d199a8a6c7c8946", null ],
     [ "SetCell", "classAbstractSrnModel.html#a70bcf3a225883d76ad3e7b2e711d1f6e", null ],
     [ "SetEdgeLocalIndex", "classAbstractSrnModel.html#a3447f04acd272dbe3c0fa487a8aa8ba9", null ],
-    [ "SetEdgeModelIndicator", "classAbstractSrnModel.html#ac48c859a2a276d22e734875fc117c033", null ],
+    [ "SetEdgeModelIndicator", "classAbstractSrnModel.html#a383b7fc609fdee37a1b2ca344f7ef8ae", null ],
     [ "SetSimulatedToTime", "classAbstractSrnModel.html#a00aa28e227c45315689fae68866f9c92", null ],
     [ "SimulateToCurrentTime", "classAbstractSrnModel.html#a147afa450f5466dc41bdefa18fe3edb5", null ],
     [ "SplitEdgeSrn", "classAbstractSrnModel.html#a57f198bf7bd20e0849d4d470acdce666", null ],

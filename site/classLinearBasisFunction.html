@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::3d0dea6ed10f59ded46a6a0c5abbad47053c1f51</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::395b21489ded288b40aa95e8766fa8e90c4639e9</span>
    </div>
   </td>
  </tr>
@@ -148,7 +148,7 @@ class LinearBasisFunction&lt; ELEMENT_DIM &gt;</div><p>Linear basis functions fo
 
 <p class="definition">Definition at line <a class="el" href="LinearBasisFunction_8cpp_source.html#l00121">121</a> of file <a class="el" href="LinearBasisFunction_8cpp_source.html">LinearBasisFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00217">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
 
 </div>
 </div>
@@ -189,7 +189,7 @@ class LinearBasisFunction&lt; ELEMENT_DIM &gt;</div><p>Linear basis functions fo
 
 <p class="definition">Definition at line <a class="el" href="LinearBasisFunction_8cpp_source.html#l00088">88</a> of file <a class="el" href="LinearBasisFunction_8cpp_source.html">LinearBasisFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00217">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ class LinearBasisFunction&lt; ELEMENT_DIM &gt;</div><p>Linear basis functions fo
 
 <p class="definition">Definition at line <a class="el" href="LinearBasisFunction_8cpp_source.html#l00051">51</a> of file <a class="el" href="LinearBasisFunction_8cpp_source.html">LinearBasisFunction.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00217">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
 
 </div>
 </div>
@@ -480,17 +480,16 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM&gt;
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Compute the derivatives of all basis functions at a point within an element.</p>
+<p>Compute the derivatives of all basis functions at a point within an element. Returns the derivatives as the column vectors of the matrix argument in local index order.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rPoint</td><td>The point at which to compute the basis functions. The results are undefined if this is not within the canonical element. </td></tr>
-    <tr><td class="paramname">rReturnValue</td><td>A reference to a vector, to be filled in </td></tr>
+    <tr><td class="paramname">rReturnValue</td><td>A reference to a matrix, to be filled in </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The derivatives of the basis functions as the column vectors of a matrix in local index order. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBasisFunction_8cpp_source.html#l00321">321</a> of file <a class="el" href="LinearBasisFunction_8cpp_source.html">LinearBasisFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBasisFunction_8cpp_source.html#l00320">320</a> of file <a class="el" href="LinearBasisFunction_8cpp_source.html">LinearBasisFunction.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="AbstractFeCableIntegralAssembler_8hpp_source.html#l00313">AbstractFeCableIntegralAssembler&lt; ELEMENT_DIM, SPACE_DIM, PROBLEM_DIM, CAN_ASSEMBLE_VECTOR, CAN_ASSEMBLE_MATRIX, INTERPOLATION_LEVEL &gt;::ComputeTransformedBasisFunctionDerivatives()</a>, and <a class="el" href="AbstractFeVolumeIntegralAssembler_8hpp_source.html#l00332">AbstractFeVolumeIntegralAssembler&lt; ELEMENT_DIM, SPACE_DIM, PROBLEM_DIM, CAN_ASSEMBLE_VECTOR, CAN_ASSEMBLE_MATRIX, INTERPOLATION_LEVEL &gt;::ComputeTransformedBasisFunctionDerivatives()</a>.</p>
 
@@ -592,13 +591,12 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM&gt;
   <table class="params">
     <tr><td class="paramname">rPoint</td><td>The point at which to compute the basis functions. The results are undefined if this is not within the canonical element. </td></tr>
     <tr><td class="paramname">rInverseJacobian</td><td>The inverse of the Jacobian matrix mapping the real element into the canonical element. </td></tr>
-    <tr><td class="paramname">rReturnValue</td><td>A reference to a vector, to be filled in </td></tr>
+    <tr><td class="paramname">rReturnValue</td><td>A reference to a vector, to be filled in (returned) Returns (in rReturnValue) The derivatives of the basis functions, in local index order. Each entry is a vector (c_vector&lt;double, SPACE_DIM&gt; instance) giving the derivative along each axis. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The derivatives of the basis functions, in local index order. Each entry is a vector (c_vector&lt;double, SPACE_DIM&gt; instance) giving the derivative along each axis. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="LinearBasisFunction_8cpp_source.html#l00348">348</a> of file <a class="el" href="LinearBasisFunction_8cpp_source.html">LinearBasisFunction.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="LinearBasisFunction_8cpp_source.html#l00347">347</a> of file <a class="el" href="LinearBasisFunction_8cpp_source.html">LinearBasisFunction.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="AbstractContinuumMechanicsAssembler_8hpp_source.html#l00442">AbstractContinuumMechanicsAssembler&lt; DIM, CAN_ASSEMBLE_VECTOR, CAN_ASSEMBLE_MATRIX &gt;::AssembleOnElement()</a>, <a class="el" href="AbstractFunctionalCalculator_8hpp_source.html#l00118">AbstractFunctionalCalculator&lt; ELEMENT_DIM, SPACE_DIM, PROBLEM_DIM &gt;::CalculateOnElement()</a>, <a class="el" href="AbstractCardiacMechanicsSolver_8cpp_source.html#l00418">AbstractCardiacMechanicsSolver&lt; ELASTICITY_SOLVER, DIM &gt;::ComputeDeformationGradientAndStretchInEachElement()</a>, <a class="el" href="CellwiseDataGradient_8cpp_source.html#l00046">CellwiseDataGradient&lt; DIM &gt;::SetupGradients()</a>, <a class="el" href="AbstractBoxDomainPdeModifier_8cpp_source.html#l00132">AbstractBoxDomainPdeModifier&lt; DIM &gt;::UpdateCellData()</a>, and <a class="el" href="AbstractGrowingDomainPdeModifier_8cpp_source.html#l00084">AbstractGrowingDomainPdeModifier&lt; DIM &gt;::UpdateCellData()</a>.</p>
 

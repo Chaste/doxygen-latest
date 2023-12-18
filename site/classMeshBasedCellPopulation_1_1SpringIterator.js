@@ -6,7 +6,7 @@ var classMeshBasedCellPopulation_1_1SpringIterator =
     [ "GetNodeA", "classMeshBasedCellPopulation_1_1SpringIterator.html#abdfde28623e8ad8f33da35f51966ddc0", null ],
     [ "GetNodeB", "classMeshBasedCellPopulation_1_1SpringIterator.html#ad424626ebab4618163cc0e7cedf2394f", null ],
     [ "operator!=", "classMeshBasedCellPopulation_1_1SpringIterator.html#a81b42a3218dc2de502518a9b83c5d009", null ],
-    [ "operator++", "classMeshBasedCellPopulation_1_1SpringIterator.html#a7af5f1fc8db372be33ac27db0521f4ee", null ],
+    [ "operator++", "classMeshBasedCellPopulation_1_1SpringIterator.html#abc8b0482186ef111aca28885a0a9dc27", null ],
     [ "mEdgeIter", "classMeshBasedCellPopulation_1_1SpringIterator.html#a2a2dd502039f7fafd80d0af85d49ea28", null ],
     [ "mrCellPopulation", "classMeshBasedCellPopulation_1_1SpringIterator.html#a504cdbfede2cc97d01e1b4795a6fa3ab", null ],
     [ "mSpringsVisited", "classMeshBasedCellPopulation_1_1SpringIterator.html#a914edfa20e82302edf8bfc6925653f9b", null ]

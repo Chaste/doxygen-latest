@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::3d0dea6ed10f59ded46a6a0c5abbad47053c1f51</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::395b21489ded288b40aa95e8766fa8e90c4639e9</span>
    </div>
   </td>
  </tr>
@@ -309,46 +309,46 @@ $(document).ready(function(){initNavTree('LinearBasisFunction_8cpp_source.html',
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>}</div>
 </div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM&gt;</div>
-<div class="foldopen" id="foldopen00321" data-start="{" data-end="}">
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="classLinearBasisFunction.html#a5d886ab7f77485ddc42bd9ae170f1bf8">  321</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLinearBasisFunction.html#a5d886ab7f77485ddc42bd9ae170f1bf8">LinearBasisFunction&lt;ELEMENT_DIM&gt;::ComputeBasisFunctionDerivatives</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;ELEMENT_DIM&gt;</a>&amp; rPoint,</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                                                                    c_matrix&lt;double, ELEMENT_DIM, ELEMENT_DIM+1&gt;&amp; rReturnValue)</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>{</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    assert(ELEMENT_DIM &lt; 4 &amp;&amp; ELEMENT_DIM &gt; 0);</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;ELEMENT_DIM+1; j++)</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    {</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        matrix_column&lt;c_matrix&lt;double, ELEMENT_DIM, ELEMENT_DIM+1&gt; &gt; column(rReturnValue, j);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        column = ComputeBasisFunctionDerivative(rPoint, j);</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    }</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>}</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM&gt;</div>
+<div class="foldopen" id="foldopen00320" data-start="{" data-end="}">
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="classLinearBasisFunction.html#a5d886ab7f77485ddc42bd9ae170f1bf8">  320</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLinearBasisFunction.html#a5d886ab7f77485ddc42bd9ae170f1bf8">LinearBasisFunction&lt;ELEMENT_DIM&gt;::ComputeBasisFunctionDerivatives</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;ELEMENT_DIM&gt;</a>&amp; rPoint,</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                                                                    c_matrix&lt;double, ELEMENT_DIM, ELEMENT_DIM+1&gt;&amp; rReturnValue)</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>{</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    assert(ELEMENT_DIM &lt; 4 &amp;&amp; ELEMENT_DIM &gt; 0);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;ELEMENT_DIM+1; j++)</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    {</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        matrix_column&lt;c_matrix&lt;double, ELEMENT_DIM, ELEMENT_DIM+1&gt; &gt; column(rReturnValue, j);</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        column = ComputeBasisFunctionDerivative(rPoint, j);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    }</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>}</div>
 </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM&gt;</div>
-<div class="foldopen" id="foldopen00348" data-start="{" data-end="}">
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="classLinearBasisFunction.html#a4d752fd7738f3d95e69675c3484b8d32">  348</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLinearBasisFunction.html#a4d752fd7738f3d95e69675c3484b8d32">LinearBasisFunction&lt;ELEMENT_DIM&gt;::ComputeTransformedBasisFunctionDerivatives</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;ELEMENT_DIM&gt;</a>&amp; rPoint,</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                                                                               <span class="keyword">const</span> c_matrix&lt;double, ELEMENT_DIM, ELEMENT_DIM&gt;&amp; rInverseJacobian,</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                                                                               c_matrix&lt;double, ELEMENT_DIM, ELEMENT_DIM+1&gt;&amp; rReturnValue)</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>{</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    assert(ELEMENT_DIM &lt; 4 &amp;&amp; ELEMENT_DIM &gt; 0);</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    ComputeBasisFunctionDerivatives(rPoint, rReturnValue);</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    rReturnValue = prod(trans(rInverseJacobian), rReturnValue);</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>}</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM&gt;</div>
+<div class="foldopen" id="foldopen00347" data-start="{" data-end="}">
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="classLinearBasisFunction.html#a4d752fd7738f3d95e69675c3484b8d32">  347</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classLinearBasisFunction.html#a4d752fd7738f3d95e69675c3484b8d32">LinearBasisFunction&lt;ELEMENT_DIM&gt;::ComputeTransformedBasisFunctionDerivatives</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;ELEMENT_DIM&gt;</a>&amp; rPoint,</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                                                                               <span class="keyword">const</span> c_matrix&lt;double, ELEMENT_DIM, ELEMENT_DIM&gt;&amp; rInverseJacobian,</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                                                                               c_matrix&lt;double, ELEMENT_DIM, ELEMENT_DIM+1&gt;&amp; rReturnValue)</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>{</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    assert(ELEMENT_DIM &lt; 4 &amp;&amp; ELEMENT_DIM &gt; 0);</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    ComputeBasisFunctionDerivatives(rPoint, rReturnValue);</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    rReturnValue = prod(trans(rInverseJacobian), rReturnValue);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>}</div>
 </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classLinearBasisFunction.html">LinearBasisFunction&lt;1&gt;</a>;</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classLinearBasisFunction.html">LinearBasisFunction&lt;2&gt;</a>;</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classLinearBasisFunction.html">LinearBasisFunction&lt;3&gt;</a>;</div>
-<div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00217">Exception.hpp:217</a></div></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classLinearBasisFunction.html">LinearBasisFunction&lt;1&gt;</a>;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classLinearBasisFunction.html">LinearBasisFunction&lt;2&gt;</a>;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classLinearBasisFunction.html">LinearBasisFunction&lt;3&gt;</a>;</div>
+<div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00219">Exception.hpp:219</a></div></div>
 <div class="ttc" id="aUblasCustomFunctions_8hpp_html"><div class="ttname"><a href="UblasCustomFunctions_8hpp.html">UblasCustomFunctions.hpp</a></div></div>
 <div class="ttc" id="aclassChastePoint_html"><div class="ttname"><a href="classChastePoint.html">ChastePoint</a></div><div class="ttdef"><b>Definition</b> <a href="ChastePoint_8hpp_source.html#l00049">ChastePoint.hpp:50</a></div></div>
 <div class="ttc" id="aclassLinearBasisFunction_html"><div class="ttname"><a href="classLinearBasisFunction.html">LinearBasisFunction</a></div><div class="ttdef"><b>Definition</b> <a href="LinearBasisFunction_8hpp_source.html#l00046">LinearBasisFunction.hpp:47</a></div></div>
 <div class="ttc" id="aclassLinearBasisFunction_html_a059c40c22b2449c85c88679663fd7260"><div class="ttname"><a href="classLinearBasisFunction.html#a059c40c22b2449c85c88679663fd7260">LinearBasisFunction::ComputeBasisFunctionDerivative</a></div><div class="ttdeci">static c_vector&lt; double, ELEMENT_DIM &gt; ComputeBasisFunctionDerivative(const ChastePoint&lt; ELEMENT_DIM &gt; &amp;rPoint, unsigned basisIndex)</div></div>
 <div class="ttc" id="aclassLinearBasisFunction_html_a2ab687fc4c14fcfccbb61dcc1780d381"><div class="ttname"><a href="classLinearBasisFunction.html#a2ab687fc4c14fcfccbb61dcc1780d381">LinearBasisFunction::ComputeBasisFunctions</a></div><div class="ttdeci">static void ComputeBasisFunctions(const ChastePoint&lt; ELEMENT_DIM &gt; &amp;rPoint, c_vector&lt; double, ELEMENT_DIM+1 &gt; &amp;rReturnValue)</div><div class="ttdef"><b>Definition</b> <a href="LinearBasisFunction_8cpp_source.html#l00287">LinearBasisFunction.cpp:287</a></div></div>
-<div class="ttc" id="aclassLinearBasisFunction_html_a4d752fd7738f3d95e69675c3484b8d32"><div class="ttname"><a href="classLinearBasisFunction.html#a4d752fd7738f3d95e69675c3484b8d32">LinearBasisFunction::ComputeTransformedBasisFunctionDerivatives</a></div><div class="ttdeci">static void ComputeTransformedBasisFunctionDerivatives(const ChastePoint&lt; ELEMENT_DIM &gt; &amp;rPoint, const c_matrix&lt; double, ELEMENT_DIM, ELEMENT_DIM &gt; &amp;rInverseJacobian, c_matrix&lt; double, ELEMENT_DIM, ELEMENT_DIM+1 &gt; &amp;rReturnValue)</div><div class="ttdef"><b>Definition</b> <a href="LinearBasisFunction_8cpp_source.html#l00348">LinearBasisFunction.cpp:348</a></div></div>
-<div class="ttc" id="aclassLinearBasisFunction_html_a5d886ab7f77485ddc42bd9ae170f1bf8"><div class="ttname"><a href="classLinearBasisFunction.html#a5d886ab7f77485ddc42bd9ae170f1bf8">LinearBasisFunction::ComputeBasisFunctionDerivatives</a></div><div class="ttdeci">static void ComputeBasisFunctionDerivatives(const ChastePoint&lt; ELEMENT_DIM &gt; &amp;rPoint, c_matrix&lt; double, ELEMENT_DIM, ELEMENT_DIM+1 &gt; &amp;rReturnValue)</div><div class="ttdef"><b>Definition</b> <a href="LinearBasisFunction_8cpp_source.html#l00321">LinearBasisFunction.cpp:321</a></div></div>
+<div class="ttc" id="aclassLinearBasisFunction_html_a4d752fd7738f3d95e69675c3484b8d32"><div class="ttname"><a href="classLinearBasisFunction.html#a4d752fd7738f3d95e69675c3484b8d32">LinearBasisFunction::ComputeTransformedBasisFunctionDerivatives</a></div><div class="ttdeci">static void ComputeTransformedBasisFunctionDerivatives(const ChastePoint&lt; ELEMENT_DIM &gt; &amp;rPoint, const c_matrix&lt; double, ELEMENT_DIM, ELEMENT_DIM &gt; &amp;rInverseJacobian, c_matrix&lt; double, ELEMENT_DIM, ELEMENT_DIM+1 &gt; &amp;rReturnValue)</div><div class="ttdef"><b>Definition</b> <a href="LinearBasisFunction_8cpp_source.html#l00347">LinearBasisFunction.cpp:347</a></div></div>
+<div class="ttc" id="aclassLinearBasisFunction_html_a5d886ab7f77485ddc42bd9ae170f1bf8"><div class="ttname"><a href="classLinearBasisFunction.html#a5d886ab7f77485ddc42bd9ae170f1bf8">LinearBasisFunction::ComputeBasisFunctionDerivatives</a></div><div class="ttdeci">static void ComputeBasisFunctionDerivatives(const ChastePoint&lt; ELEMENT_DIM &gt; &amp;rPoint, c_matrix&lt; double, ELEMENT_DIM, ELEMENT_DIM+1 &gt; &amp;rReturnValue)</div><div class="ttdef"><b>Definition</b> <a href="LinearBasisFunction_8cpp_source.html#l00320">LinearBasisFunction.cpp:320</a></div></div>
 <div class="ttc" id="aclassLinearBasisFunction_html_a6402ace441091487ee9140e0e54421f1"><div class="ttname"><a href="classLinearBasisFunction.html#a6402ace441091487ee9140e0e54421f1">LinearBasisFunction::ComputeBasisFunction</a></div><div class="ttdeci">static double ComputeBasisFunction(const ChastePoint&lt; ELEMENT_DIM &gt; &amp;rPoint, unsigned basisIndex)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

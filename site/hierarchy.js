@@ -6,6 +6,7 @@ var hierarchy =
       [ "StimulusBoundaryCondition< SPACE_DIM >", "classStimulusBoundaryCondition.html", null ]
     ] ],
     [ "AbstractCardiacCellFactory< ELEMENT_DIM, SPACE_DIM >", "classAbstractCardiacCellFactory.html", [
+      [ "PlaneStimulusCellFactory< CELL, ELEMENT_DIM, ELEMENT_DIM >", "classPlaneStimulusCellFactory.html", null ],
       [ "AbstractPurkinjeCellFactory< ELEMENT_DIM, SPACE_DIM >", "classAbstractPurkinjeCellFactory.html", null ],
       [ "PlaneStimulusCellFactory< CELL, ELEMENT_DIM, SPACE_DIM >", "classPlaneStimulusCellFactory.html", [
         [ "GeneralPlaneStimulusCellFactory< CELL, ELEMENT_DIM, SPACE_DIM >", "classGeneralPlaneStimulusCellFactory.html", null ]
@@ -21,9 +22,6 @@ var hierarchy =
     ] ],
     [ "AbstractCardiacCellFactory< DIM, DIM >", "classAbstractCardiacCellFactory.html", null ],
     [ "AbstractCardiacCellFactory< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractCardiacCellFactory.html", null ],
-    [ "AbstractCardiacCellFactory< ELEMENT_DIM, SPACE_DIM >", "classAbstractCardiacCellFactory.html", [
-      [ "PlaneStimulusCellFactory< CELL, ELEMENT_DIM, ELEMENT_DIM >", "classPlaneStimulusCellFactory.html", null ]
-    ] ],
     [ "AbstractCardiacCellFactory< SPACE_DIM >", "classAbstractCardiacCellFactory.html", [
       [ "HeartConfigRelatedCellFactory< SPACE_DIM >", "classHeartConfigRelatedCellFactory.html", null ]
     ] ],
@@ -59,18 +57,17 @@ var hierarchy =
       [ "ChasteEllipsoid< SPACE_DIM >", "classChasteEllipsoid.html", null ],
       [ "ChasteNodesList< SPACE_DIM >", "classChasteNodesList.html", null ]
     ] ],
+    [ "AbstractChasteRegion< ELEMENT_DIM >", "classAbstractChasteRegion.html", null ],
     [ "AbstractConductivityModifier< ELEMENT_DIM, SPACE_DIM >", "classAbstractConductivityModifier.html", null ],
     [ "AbstractConductivityModifier< DIM, DIM >", "classAbstractConductivityModifier.html", [
       [ "CardiacElectroMechanicsProblem< DIM, ELEC_PROB_DIM >", "classCardiacElectroMechanicsProblem.html", [
         [ "CardiacElectroMechProbRegularGeom< DIM >", "classCardiacElectroMechProbRegularGeom.html", null ]
       ] ]
     ] ],
-    [ "AbstractConductivityModifier< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractConductivityModifier.html", null ],
     [ "AbstractConductivityTensors< ELEMENT_DIM, SPACE_DIM >", "classAbstractConductivityTensors.html", [
       [ "AxisymmetricConductivityTensors< ELEMENT_DIM, SPACE_DIM >", "classAxisymmetricConductivityTensors.html", null ],
       [ "OrthotropicConductivityTensors< ELEMENT_DIM, SPACE_DIM >", "classOrthotropicConductivityTensors.html", null ]
     ] ],
-    [ "AbstractConductivityTensors< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractConductivityTensors.html", null ],
     [ "AbstractConductivityTensors< SPACE_DIM, SPACE_DIM >", "classAbstractConductivityTensors.html", null ],
     [ "AbstractContinuumMechanicsSolver< DIM >", "classAbstractContinuumMechanicsSolver.html", [
       [ "AbstractNonlinearElasticitySolver< DIM >", "classAbstractNonlinearElasticitySolver.html", [
@@ -114,10 +111,16 @@ var hierarchy =
         [ "PottsElement< DIM >", "classPottsElement.html", null ]
       ] ],
       [ "AbstractTetrahedralElement< ELEMENT_DIM, SPACE_DIM >", "classAbstractTetrahedralElement.html", [
+        [ "BoundaryElement< ELEMENT_DIM-1, SPACE_DIM >", "classBoundaryElement.html", null ],
+        [ "BoundaryElement< DIM-1, DIM >", "classBoundaryElement.html", null ],
+        [ "Element< 1u, SPACE_DIM >", "classElement.html", null ],
+        [ "Element< DIM, DIM >", "classElement.html", null ],
         [ "BoundaryElement< ELEMENT_DIM, SPACE_DIM >", "classBoundaryElement.html", null ],
         [ "Element< ELEMENT_DIM, SPACE_DIM >", "classElement.html", null ]
       ] ],
       [ "MutableElement< ELEMENT_DIM, SPACE_DIM >", "classMutableElement.html", [
+        [ "VertexElement< ELEMENT_DIM - 1, SPACE_DIM >", "classVertexElement.html", null ],
+        [ "VertexElement< ELEMENT_DIM-1, SPACE_DIM >", "classVertexElement.html", null ],
         [ "VertexElement< ELEMENT_DIM, SPACE_DIM >", "classVertexElement.html", null ]
       ] ]
     ] ],
@@ -149,10 +152,7 @@ var hierarchy =
     ] ],
     [ "AbstractLinearParabolicPdeSystemForCoupledOdeSystem< ELEMENT_DIM, SPACE_DIM, PROBLEM_DIM >", "classAbstractLinearParabolicPdeSystemForCoupledOdeSystem.html", null ],
     [ "AbstractLinearParabolicPdeSystemForCoupledOdeSystem< ELEMENT_DIM, ELEMENT_DIM, 1 >", "classAbstractLinearParabolicPdeSystemForCoupledOdeSystem.html", null ],
-    [ "AbstractLinearPde< ELEMENT_DIM, SPACE_DIM >", "classAbstractLinearPde.html", [
-      [ "AbstractLinearParabolicPde< ELEMENT_DIM, SPACE_DIM >", "classAbstractLinearParabolicPde.html", null ]
-    ] ],
-    [ "AbstractLinearPde< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractLinearPde.html", null ],
+    [ "AbstractLinearPde< ELEMENT_DIM, SPACE_DIM >", "classAbstractLinearPde.html", null ],
     [ "AbstractLinearPde< ELEMENT_DIM, SPACE_DIM >", "classAbstractLinearPde.html", [
       [ "AbstractLinearEllipticPde< DIM, DIM >", "classAbstractLinearEllipticPde.html", [
         [ "AveragedSourceEllipticPde< DIM >", "classAveragedSourceEllipticPde.html", [
@@ -166,8 +166,8 @@ var hierarchy =
         [ "CellwiseSourceParabolicPde< DIM >", "classCellwiseSourceParabolicPde.html", null ],
         [ "UniformSourceParabolicPde< DIM >", "classUniformSourceParabolicPde.html", null ]
       ] ],
-      [ "AbstractLinearParabolicPde< ELEMENT_DIM, SPACE_DIM >", "classAbstractLinearParabolicPde.html", null ],
-      [ "AbstractLinearEllipticPde< ELEMENT_DIM, SPACE_DIM >", "classAbstractLinearEllipticPde.html", null ]
+      [ "AbstractLinearEllipticPde< ELEMENT_DIM, SPACE_DIM >", "classAbstractLinearEllipticPde.html", null ],
+      [ "AbstractLinearParabolicPde< ELEMENT_DIM, SPACE_DIM >", "classAbstractLinearParabolicPde.html", null ]
     ] ],
     [ "AbstractLookupTableCollection", "classAbstractLookupTableCollection.html", null ],
     [ "AbstractMaterialLaw< DIM >", "classAbstractMaterialLaw.html", [
@@ -209,6 +209,10 @@ var hierarchy =
     ] ],
     [ "AbstractMeshWriter< ELEMENT_DIM, SPACE_DIM >", "classAbstractMeshWriter.html", [
       [ "AbstractTetrahedralMeshWriter< ELEMENT_DIM, SPACE_DIM >", "classAbstractTetrahedralMeshWriter.html", [
+        [ "CmguiMeshWriter< DIM, DIM >", "classCmguiMeshWriter.html", [
+          [ "CmguiDeformedSolutionsWriter< DIM >", "classCmguiDeformedSolutionsWriter.html", null ]
+        ] ],
+        [ "CmguiMeshWriter< ELEMENT_DIM, SPACE_DIM >", "classCmguiMeshWriter.html", null ],
         [ "MeshalyzerMeshWriter< ELEMENT_DIM, SPACE_DIM >", "classMeshalyzerMeshWriter.html", null ],
         [ "TrianglesMeshWriter< ELEMENT_DIM, SPACE_DIM >", "classTrianglesMeshWriter.html", null ],
         [ "VtkMeshWriter< ELEMENT_DIM, SPACE_DIM >", "classVtkMeshWriter.html", null ],
@@ -324,21 +328,15 @@ var hierarchy =
       [ "AbstractMeshReader< ELEMENT_DIM, SPACE_DIM >::NodeIterator", "classAbstractMeshReader_1_1NodeIterator.html", null ]
     ] ],
     [ "boost::noncopyable", null, [
-      [ "AbstractCardiacTissue< ELEMENT_DIM, SPACE_DIM >", "classAbstractCardiacTissue.html", [
-        [ "MonodomainTissue< ELEMENT_DIM, ELEMENT_DIM >", "classMonodomainTissue.html", null ],
-        [ "MonodomainTissue< ELEMENT_DIM, SPACE_DIM >", "classMonodomainTissue.html", null ]
-      ] ],
       [ "AbstractCardiacTissue< SPACE_DIM >", "classAbstractCardiacTissue.html", [
         [ "BidomainTissue< DIM >", "classBidomainTissue.html", null ],
         [ "ExtendedBidomainTissue< DIM >", "classExtendedBidomainTissue.html", null ],
         [ "BidomainTissue< SPACE_DIM >", "classBidomainTissue.html", null ],
         [ "ExtendedBidomainTissue< SPACE_DIM >", "classExtendedBidomainTissue.html", null ]
       ] ],
-      [ "AbstractCardiacTissue< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractCardiacTissue.html", null ],
       [ "AbstractFeAssemblerInterface< true, false >", "classAbstractFeAssemblerInterface.html", [
         [ "ContinuumMechanicsNeumannBcsAssembler< DIM >", "classContinuumMechanicsNeumannBcsAssembler.html", null ]
       ] ],
-      [ "AbstractMesh< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractMesh.html", null ],
       [ "AbstractMesh< DIM, DIM >", "classAbstractMesh.html", [
         [ "PottsMesh< SPACE_DIM >", "classPottsMesh.html", null ],
         [ "PottsMesh< DIM >", "classPottsMesh.html", null ]
@@ -363,6 +361,7 @@ var hierarchy =
         [ "BoundaryConditionsContainer< ELEMENT_DIM, SPACE_DIM, PROBLEM_DIM >", "classBoundaryConditionsContainer.html", null ]
       ] ],
       [ "AbstractCardiacTissue< ELEMENT_DIM, SPACE_DIM >", "classAbstractCardiacTissue.html", [
+        [ "MonodomainTissue< ELEMENT_DIM, ELEMENT_DIM >", "classMonodomainTissue.html", null ],
         [ "MonodomainTissue< ELEMENT_DIM, SPACE_DIM >", "classMonodomainTissue.html", null ]
       ] ],
       [ "AbstractFeAssemblerInterface< CAN_ASSEMBLE_VECTOR, CAN_ASSEMBLE_MATRIX >", "classAbstractFeAssemblerInterface.html", [
@@ -492,9 +491,8 @@ var hierarchy =
       ] ],
       [ "AbstractMesh< ELEMENT_DIM, SPACE_DIM >", "classAbstractMesh.html", [
         [ "AbstractTetrahedralMesh< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractTetrahedralMesh.html", null ],
-        [ "AbstractTetrahedralMesh< SPACE_DIM, SPACE_DIM >", "classAbstractTetrahedralMesh.html", null ],
         [ "AbstractTetrahedralMesh< DIM, DIM >", "classAbstractTetrahedralMesh.html", null ],
-        [ "VertexMesh< ELEMENT_DIM, ELEMENT_DIM >", "classVertexMesh.html", null ],
+        [ "AbstractTetrahedralMesh< SPACE_DIM, SPACE_DIM >", "classAbstractTetrahedralMesh.html", null ],
         [ "VertexMesh< 2, 2 >", "classVertexMesh.html", null ],
         [ "VertexMesh< DIM, DIM >", "classVertexMesh.html", null ],
         [ "AbstractTetrahedralMesh< ELEMENT_DIM, SPACE_DIM >", "classAbstractTetrahedralMesh.html", [
@@ -523,7 +521,6 @@ var hierarchy =
                 [ "PeriodicNodesOnlyMesh< SPACE_DIM >", "classPeriodicNodesOnlyMesh.html", null ]
               ] ]
             ] ],
-            [ "MutableMesh< ELEMENT_DIM, ELEMENT_DIM >", "classMutableMesh.html", null ],
             [ "MutableMesh< DIM, DIM >", "classMutableMesh.html", null ],
             [ "MutableMesh< ELEMENT_DIM, SPACE_DIM >", "classMutableMesh.html", null ],
             [ "NonCachedTetrahedralMesh< ELEMENT_DIM, SPACE_DIM >", "classNonCachedTetrahedralMesh.html", null ]
@@ -622,12 +619,10 @@ var hierarchy =
     [ "ChasteBuildInfo", "classChasteBuildInfo.html", null ],
     [ "ChastePoint< DIM >", "classChastePoint.html", null ],
     [ "ChastePoint< 0 >", "classChastePoint_3_010_01_4.html", null ],
+    [ "ChastePoint< ELEMENT_DIM >", "classChastePoint.html", null ],
     [ "ChastePoint< SPACE_DIM >", "classChastePoint.html", null ],
     [ "ChastePosixPathFixer", "classChastePosixPathFixer.html", null ],
     [ "Citations", "classCitations.html", null ],
-    [ "CmguiMeshWriter", "classCmguiMeshWriter.html", [
-      [ "CmguiDeformedSolutionsWriter< DIM >", "classCmguiDeformedSolutionsWriter.html", null ]
-    ] ],
     [ "CombinedOdeSystem::VariableParameterMap", "structCombinedOdeSystem_1_1VariableParameterMap.html", null ],
     [ "CombinedOdeSystemInformation::InstancePointers", "structCombinedOdeSystemInformation_1_1InstancePointers.html", null ],
     [ "CommandLineArgumentsMocker", "classCommandLineArgumentsMocker.html", null ],
@@ -682,6 +677,7 @@ var hierarchy =
     [ "boost::random::exponential_distribution_v165< double >", "classboost_1_1random_1_1exponential__distribution__v165.html", null ],
     [ "FibreConverter", "classFibreConverter.html", null ],
     [ "FibreReader< DIM >", "classFibreReader.html", null ],
+    [ "FibreReader< SPACE_DIM >", "classFibreReader.html", null ],
     [ "FibreWriter< DIM >", "classFibreWriter.html", null ],
     [ "FileFinder", "classFileFinder.html", [
       [ "HeartFileFinder", "classHeartFileFinder.html", null ]
@@ -714,7 +710,6 @@ var hierarchy =
     [ "GmshTypes", "structGmshTypes.html", null ],
     [ "HeartConfig", "classHeartConfig.html", null ],
     [ "HeartGeometryInformation< SPACE_DIM >", "classHeartGeometryInformation.html", null ],
-    [ "HeartGeometryInformation< ELEMENT_DIM >", "classHeartGeometryInformation.html", null ],
     [ "HeartRegionCode", "classHeartRegionCode.html", null ],
     [ "HoneycombMeshGenerator", "classHoneycombMeshGenerator.html", [
       [ "CylindricalHoneycombMeshGenerator", "classCylindricalHoneycombMeshGenerator.html", null ],
@@ -765,22 +760,13 @@ var hierarchy =
       [ "AbstractCellKiller< 2 >", "classAbstractCellKiller.html", [
         [ "RadialSloughingCellKiller", "classRadialSloughingCellKiller.html", null ]
       ] ],
-      [ "AbstractCellPopulation< ELEMENT_DIM, SPACE_DIM >", "classAbstractCellPopulation.html", [
-        [ "AbstractOffLatticeCellPopulation< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractOffLatticeCellPopulation.html", null ],
-        [ "AbstractOffLatticeCellPopulation< ELEMENT_DIM, SPACE_DIM >", "classAbstractOffLatticeCellPopulation.html", [
-          [ "AbstractCentreBasedCellPopulation< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractCentreBasedCellPopulation.html", null ],
-          [ "AbstractCentreBasedCellPopulation< ELEMENT_DIM, SPACE_DIM >", "classAbstractCentreBasedCellPopulation.html", [
-            [ "MeshBasedCellPopulation< ELEMENT_DIM, SPACE_DIM >", "classMeshBasedCellPopulation.html", null ]
-          ] ]
-        ] ]
-      ] ],
-      [ "AbstractCellPopulation< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractCellPopulation.html", null ],
       [ "AbstractCellPopulation< DIM >", "classAbstractCellPopulation.html", [
         [ "AbstractOnLatticeCellPopulation< DIM >", "classAbstractOnLatticeCellPopulation.html", [
           [ "CaBasedCellPopulation< DIM >", "classCaBasedCellPopulation.html", null ],
           [ "PottsBasedCellPopulation< DIM >", "classPottsBasedCellPopulation.html", null ]
         ] ]
       ] ],
+      [ "AbstractCellPopulation< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractCellPopulation.html", null ],
       [ "AbstractCellPopulation< SPACE_DIM >", "classAbstractCellPopulation.html", null ],
       [ "AbstractCellPopulation< DIM, DIM >", "classAbstractCellPopulation.html", null ],
       [ "AbstractCellPopulationBoundaryCondition< DIM >", "classAbstractCellPopulationBoundaryCondition.html", [
@@ -790,7 +776,6 @@ var hierarchy =
       ] ],
       [ "AbstractCellPopulationBoundaryCondition< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractCellPopulationBoundaryCondition.html", null ],
       [ "AbstractCentreBasedDivisionRule< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractCentreBasedDivisionRule.html", null ],
-      [ "AbstractForce< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractForce.html", null ],
       [ "AbstractForce< DIM >", "classAbstractForce.html", [
         [ "BuskeCompressionForce< DIM >", "classBuskeCompressionForce.html", null ],
         [ "ChemotacticForce< DIM >", "classChemotacticForce.html", null ],
@@ -804,12 +789,7 @@ var hierarchy =
         [ "VertexCryptBoundaryForce< DIM >", "classVertexCryptBoundaryForce.html", null ],
         [ "WelikyOsterForce< DIM >", "classWelikyOsterForce.html", null ]
       ] ],
-      [ "AbstractForce< ELEMENT_DIM, SPACE_DIM >", "classAbstractForce.html", [
-        [ "AbstractTwoBodyInteractionForce< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractTwoBodyInteractionForce.html", null ],
-        [ "AbstractTwoBodyInteractionForce< ELEMENT_DIM, SPACE_DIM >", "classAbstractTwoBodyInteractionForce.html", [
-          [ "GeneralisedLinearSpringForce< ELEMENT_DIM, ELEMENT_DIM >", "classGeneralisedLinearSpringForce.html", null ]
-        ] ]
-      ] ],
+      [ "AbstractForce< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractForce.html", null ],
       [ "AbstractNumericalMethod< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractNumericalMethod.html", null ],
       [ "AbstractCaBasedDivisionRule< SPACE_DIM >", "classAbstractCaBasedDivisionRule.html", [
         [ "ExclusionCaBasedDivisionRule< SPACE_DIM >", "classExclusionCaBasedDivisionRule.html", null ],
@@ -908,6 +888,7 @@ var hierarchy =
         [ "AbstractOffLatticeCellPopulation< DIM >", "classAbstractOffLatticeCellPopulation.html", [
           [ "VertexBasedCellPopulation< DIM >", "classVertexBasedCellPopulation.html", null ]
         ] ],
+        [ "AbstractOffLatticeCellPopulation< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractOffLatticeCellPopulation.html", null ],
         [ "AbstractOffLatticeCellPopulation< ELEMENT_DIM, SPACE_DIM >", "classAbstractOffLatticeCellPopulation.html", [
           [ "AbstractCentreBasedCellPopulation< DIM >", "classAbstractCentreBasedCellPopulation.html", [
             [ "NodeBasedCellPopulation< DIM >", "classNodeBasedCellPopulation.html", [
@@ -959,10 +940,12 @@ var hierarchy =
           [ "BuskeAdhesiveForce< DIM >", "classBuskeAdhesiveForce.html", null ],
           [ "BuskeElasticForce< DIM >", "classBuskeElasticForce.html", null ]
         ] ],
+        [ "AbstractTwoBodyInteractionForce< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractTwoBodyInteractionForce.html", null ],
         [ "AbstractTwoBodyInteractionForce< ELEMENT_DIM, SPACE_DIM >", "classAbstractTwoBodyInteractionForce.html", [
           [ "GeneralisedLinearSpringForce< 2 >", "classGeneralisedLinearSpringForce.html", [
             [ "CryptProjectionForce", "classCryptProjectionForce.html", null ]
           ] ],
+          [ "GeneralisedLinearSpringForce< ELEMENT_DIM, ELEMENT_DIM >", "classGeneralisedLinearSpringForce.html", null ],
           [ "GeneralisedLinearSpringForce< DIM >", "classGeneralisedLinearSpringForce.html", [
             [ "LinearSpringWithVariableSpringConstantsForce< DIM >", "classLinearSpringWithVariableSpringConstantsForce.html", null ],
             [ "RepulsionForce< DIM >", "classRepulsionForce.html", null ]
@@ -1034,6 +1017,7 @@ var hierarchy =
     [ "Node< SPACE_DIM >", "classNode.html", null ],
     [ "Node< SPACE_DIM >::ContainingBoundaryElementIterator", "classNode_1_1ContainingBoundaryElementIterator.html", null ],
     [ "Node< SPACE_DIM >::ContainingElementIterator", "classNode_1_1ContainingElementIterator.html", null ],
+    [ "Node< DIM >", "classNode.html", null ],
     [ "NodeAttributes< SPACE_DIM >", "classNodeAttributes.html", null ],
     [ "NodeMap", "classNodeMap.html", null ],
     [ "NodePartitioner< ELEMENT_DIM, SPACE_DIM >", "classNodePartitioner.html", null ],
@@ -1079,10 +1063,10 @@ var hierarchy =
     [ "SimpleDataWriter", "classSimpleDataWriter.html", null ],
     [ "splaynode", "structsplaynode.html", null ],
     [ "std::exception", null, [
-      [ "StepSizeException", "classStepSizeException.html", null ]
-    ] ],
-    [ "std::runtime_error", null, [
-      [ "Exception", "classException.html", null ]
+      [ "StepSizeException", "classStepSizeException.html", null ],
+      [ "std::runtime_error", null, [
+        [ "Exception", "classException.html", null ]
+      ] ]
     ] ],
     [ "StressRecoveror< DIM >", "classStressRecoveror.html", null ],
     [ "T1SwapInfo< SPACE_DIM >", "structT1SwapInfo.html", null ],
@@ -1103,29 +1087,19 @@ var hierarchy =
     [ "XmlTools", "classXmlTools.html", null ],
     [ "XmlTools::Finalizer", "classXmlTools_1_1Finalizer.html", null ],
     [ "XmlTransforms", "classXmlTransforms.html", null ],
-    [ "AbstractConductivityModifier< ELEMENT_DIM, SPACE_DIM > *", "classAbstractConductivityModifier_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_5.html", null ],
-    [ "AbstractConductivityTensors< ELEMENT_DIM, SPACE_DIM > *", "classAbstractConductivityTensors_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_5.html", null ],
-    [ "AbstractMesh< ELEMENT_DIM, SPACE_DIM > &", "classAbstractMesh_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_6.html", null ],
+    [ "AbstractCellPopulation< ELEMENT_DIM, SPACE_DIM > &", "classAbstractCellPopulation_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_6.html", null ],
+    [ "AbstractCellPopulation< ELEMENT_DIM, SPACE_DIM > *", "classAbstractCellPopulation_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_5.html", null ],
+    [ "AbstractOffLatticeCellPopulation< ELEMENT_DIM, SPACE_DIM > *", "classAbstractOffLatticeCellPopulation_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_5.html", null ],
     [ "bool", "classbool.html", null ],
-    [ "shared_ptr< AbstractCentreBasedDivisionRule< ELEMENT_DIM, SPACE_DIM > >", "classboost_1_1shared__ptr_3_01AbstractCentreBasedDivisionRule_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_4.html", null ],
     [ "double", "classdouble.html", null ],
     [ "EdgeHelper< SPACE_DIM >", "classEdgeHelper_3_01SPACE__DIM_01_4.html", null ],
+    [ "EdgeHelper< SPACE_DIM > *", "classEdgeHelper_3_01SPACE__DIM_01_4_01_5.html", null ],
     [ "hsize_t", "classhsize__t.html", null ],
     [ "Mat", "classMat.html", null ],
     [ "MPI_Request", "classMPI__Request.html", null ],
-    [ "MutableMesh< ELEMENT_DIM, SPACE_DIM > *", "classMutableMesh_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_5.html", null ],
     [ "N_Vector", "classN__Vector.html", null ],
     [ "NaturalNeumannSurfaceTermAssembler< ELEMENT_DIM, SPACE_DIM, PROBLEM_DIM >", "classNaturalNeumannSurfaceTermAssembler_3_01ELEMENT__DIM_00_01SPACE__DIM_00_01PROBLEM__DIM_01_4.html", null ],
     [ "PetscInt", "classPetscInt.html", null ],
-    [ "vector< boost::shared_ptr< AbstractCellBasedSimulationModifier< ELEMENT_DIM, SPACE_DIM > > >", "classstd_1_1vector_3_01boost_1_1shared__ptr_3_01AbstractCellBasedSimulationModifier_3_01ELEMENT_f2f25a55f36026785293440398eb21c6.html", null ],
-    [ "vector< boost::shared_ptr< AbstractCellKiller< SPACE_DIM > > >", "classstd_1_1vector_3_01boost_1_1shared__ptr_3_01AbstractCellKiller_3_01SPACE__DIM_01_4_01_4_01_4.html", null ],
-    [ "vector< boost::shared_ptr< AbstractCellPopulationBoundaryCondition< ELEMENT_DIM, SPACE_DIM > > > *", "classstd_1_1vector_3_01boost_1_1shared__ptr_3_01AbstractCellPopulationBoundaryCondition_3_01ELEM45775f4a308479344c9ef776e5e746a2.html", null ],
-    [ "vector< boost::shared_ptr< AbstractCellPopulationCountWriter< ELEMENT_DIM, SPACE_DIM > > >", "classstd_1_1vector_3_01boost_1_1shared__ptr_3_01AbstractCellPopulationCountWriter_3_01ELEMENT__D3e0b1c3ab2d7b1953e9c925ed028c24c.html", null ],
-    [ "vector< boost::shared_ptr< AbstractCellPopulationEventWriter< ELEMENT_DIM, SPACE_DIM > > >", "classstd_1_1vector_3_01boost_1_1shared__ptr_3_01AbstractCellPopulationEventWriter_3_01ELEMENT__D28583815c0ed68b1abb1f50062945f86.html", null ],
-    [ "vector< boost::shared_ptr< AbstractCellPopulationWriter< ELEMENT_DIM, SPACE_DIM > > >", "classstd_1_1vector_3_01boost_1_1shared__ptr_3_01AbstractCellPopulationWriter_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_4_01_4.html", null ],
-    [ "vector< boost::shared_ptr< AbstractCellWriter< ELEMENT_DIM, SPACE_DIM > > >", "classstd_1_1vector_3_01boost_1_1shared__ptr_3_01AbstractCellWriter_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_4_01_4.html", null ],
-    [ "vector< boost::shared_ptr< AbstractForce< ELEMENT_DIM, SPACE_DIM > > > *", "classstd_1_1vector_3_01boost_1_1shared__ptr_3_01AbstractForce_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4_01_4_01_4_01_5.html", null ],
-    [ "vector< std::pair< Node< SPACE_DIM > *, Node< SPACE_DIM > * > >", "classstd_1_1vector_3_01std_1_1pair_3_01Node_3_01SPACE__DIM_01_4_01_5_00_01Node_3_01SPACE__DIM_01_4_01_5_01_4_01_4.html", null ],
     [ "unsigned", "classunsigned.html", null ],
     [ "Vec", "classVec.html", null ],
     [ "VertexMeshOperationRecorder< ELEMENT_DIM, SPACE_DIM >", "classVertexMeshOperationRecorder_3_01ELEMENT__DIM_00_01SPACE__DIM_01_4.html", null ]

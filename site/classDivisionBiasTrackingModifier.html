@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::3d0dea6ed10f59ded46a6a0c5abbad47053c1f51</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::395b21489ded288b40aa95e8766fa8e90c4639e9</span>
    </div>
   </td>
  </tr>
@@ -165,7 +165,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 <p>Constructor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">centre</td><td>the specified axis along which division probability is biased </td></tr>
+    <tr><td class="paramname">divisionBiasVector</td><td>the specified axis along which division probability is biased </td></tr>
   </table>
   </dd>
 </dl>
@@ -432,12 +432,12 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
   </dd>
 </dl>
 <p>This hack is needed because in the case of a <a class="el" href="classMeshBasedCellPopulation.html">MeshBasedCellPopulation</a> in which multiple cell divisions have occurred over one time step, the Voronoi tessellation (while existing) is out-of-date. Thus, if we did not regenerate the Voronoi tessellation here, an assertion may trip as we try to access a Voronoi element whose index exceeds the number of elements in the out-of-date tessellation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000294">Todo:</a></b></dt><dd>work out how to properly fix this (#1986) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000293">Todo:</a></b></dt><dd>work out how to properly fix this (#1986) </dd></dl>
 <p>Iterate over cell population and store each cell's signed distance along mDivisionBiasVector through the centroid of the cell population, where zero corresponds to a cell located at the centroid of the cell population.</p>
 
 <p class="definition">Definition at line <a class="el" href="DivisionBiasTrackingModifier_8cpp_source.html#l00076">76</a> of file <a class="el" href="DivisionBiasTrackingModifier_8cpp_source.html">DivisionBiasTrackingModifier.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="classAbstractCellPopulation.html#af84dadab9e5ce128890442c47a86487b">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::Begin()</a>, <a class="el" href="classMeshBasedCellPopulation.html#ab3f1a432486c46d351be177c3641cb02">MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::CreateVoronoiTessellation()</a>, <a class="el" href="classAbstractCellPopulation.html#abf6a7f3f482f56428c3810558e4806d4">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::End()</a>, <a class="el" href="classAbstractCellPopulation.html#abeac136a25c6c12ff3aac7529c7ead5c">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetCentroidOfCellPopulation()</a>, <a class="el" href="classAbstractCellPopulation.html#a1116e4649745100a0d6b12c3dbed6118">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetLocationOfCellCentre()</a>, and <a class="el" href="classAbstractCellPopulation.html#a7b4dac40d6417494df5d33e518f39b90">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::Update()</a>.</p>
+<p class="reference">References <a class="el" href="AbstractCellPopulation_8hpp_source.html#l01119">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::Begin()</a>, <a class="el" href="MeshBasedCellPopulation_8cpp_source.html#l00864">MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::CreateVoronoiTessellation()</a>, <a class="el" href="AbstractCellPopulation_8hpp_source.html#l01125">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::End()</a>, <a class="el" href="AbstractCellPopulation_8cpp_source.html#l00463">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetCentroidOfCellPopulation()</a>, <a class="el" href="classAbstractCellPopulation.html#a1116e4649745100a0d6b12c3dbed6118">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetLocationOfCellCentre()</a>, and <a class="el" href="classAbstractCellPopulation.html#a7b4dac40d6417494df5d33e518f39b90">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::Update()</a>.</p>
 
 </div>
 </div>

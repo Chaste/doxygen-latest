@@ -110,7 +110,7 @@
 <text text-anchor="start" x="27" y="-463" font-family="Helvetica,sans-Serif" font-size="10.00">SetNode()</text>
 <text text-anchor="start" x="14" y="-448" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="27" y="-448" font-family="Helvetica,sans-Serif" font-size="10.00">GetDampingConstant()</text>
-<text text-anchor="start" x="27" y="-433" font-family="Helvetica,sans-Serif" font-size="10.00">and 43 more...</text>
+<text text-anchor="start" x="27" y="-433" font-family="Helvetica,sans-Serif" font-size="10.00">and 38 more...</text>
 <text text-anchor="start" x="14" y="-418" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
 <text text-anchor="start" x="27" y="-418" font-family="Helvetica,sans-Serif" font-size="10.00">UpdateGhostNodesAfterReMesh()</text>
 <text text-anchor="start" x="14" y="-403" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
@@ -241,7 +241,7 @@
 <text text-anchor="start" x="134" y="-922" font-family="Helvetica,sans-Serif" font-size="10.00">SetNode()</text>
 <text text-anchor="start" x="121" y="-907" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="134" y="-907" font-family="Helvetica,sans-Serif" font-size="10.00">GetDampingConstant()</text>
-<text text-anchor="start" x="134" y="-892" font-family="Helvetica,sans-Serif" font-size="10.00">and 43 more...</text>
+<text text-anchor="start" x="134" y="-892" font-family="Helvetica,sans-Serif" font-size="10.00">and 38 more...</text>
 <text text-anchor="start" x="121" y="-877" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
 <text text-anchor="start" x="134" y="-877" font-family="Helvetica,sans-Serif" font-size="10.00">UpdateGhostNodesAfterReMesh()</text>
 <text text-anchor="start" x="121" y="-862" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>

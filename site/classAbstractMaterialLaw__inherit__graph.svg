@@ -331,32 +331,30 @@
 <g id="Node000009" class="node">
 <title>Node9</title>
 <g id="a_Node000009"><a xlink:href="classAbstractIsotropicIncompressibleMaterialLaw.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="transparent" points="424,-442 221,-442 221,-251 424,-251 424,-442"/>
-<text text-anchor="start" x="244.5" y="-429.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractIsotropicIncompressible</text>
-<text text-anchor="start" x="278.5" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">MaterialLaw&lt; 3 &gt;</text>
-<text text-anchor="start" x="321" y="-403.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="225.5" y="-388.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="238.5" y="-388.5" font-family="Helvetica,sans-Serif" font-size="10.00">ComputeStressAndStressDerivative()</text>
-<text text-anchor="start" x="225.5" y="-373.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="238.5" y="-373.5" font-family="Helvetica,sans-Serif" font-size="10.00">~AbstractIsotropicIncompressible</text>
-<text text-anchor="start" x="238.5" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">MaterialLaw()</text>
-<text text-anchor="start" x="225.5" y="-347.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="238.5" y="-347.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetZeroStrainPressure()</text>
-<text text-anchor="start" x="225.5" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="238.5" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetZeroStrainPressure()</text>
-<text text-anchor="start" x="225.5" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="238.5" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_dW_dI1()</text>
-<text text-anchor="start" x="225.5" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="238.5" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_dW_dI2()</text>
-<text text-anchor="start" x="225.5" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="238.5" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI1()</text>
-<text text-anchor="start" x="225.5" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="238.5" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI2()</text>
-<text text-anchor="start" x="225.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="238.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI1I2()</text>
-<polygon fill="#666666" stroke="#666666" points="221.5,-413.5 221.5,-413.5 424.5,-413.5 424.5,-413.5 221.5,-413.5"/>
-<polygon fill="#666666" stroke="#666666" points="221.5,-398.5 221.5,-398.5 424.5,-398.5 424.5,-398.5 221.5,-398.5"/>
-<polygon fill="none" stroke="#666666" points="221,-251 221,-442 424,-442 424,-251 221,-251"/>
+<polygon fill="white" stroke="transparent" points="424,-434.5 221,-434.5 221,-258.5 424,-258.5 424,-434.5"/>
+<text text-anchor="start" x="244.5" y="-422.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractIsotropicIncompressible</text>
+<text text-anchor="start" x="278.5" y="-411.5" font-family="Helvetica,sans-Serif" font-size="10.00">MaterialLaw&lt; 3 &gt;</text>
+<text text-anchor="start" x="321" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="225.5" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="238.5" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00">ComputeStressAndStressDerivative()</text>
+<text text-anchor="start" x="225.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="238.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">~AbstractIsotropicIncompressible</text>
+<text text-anchor="start" x="238.5" y="-355.5" font-family="Helvetica,sans-Serif" font-size="10.00">MaterialLaw()</text>
+<text text-anchor="start" x="225.5" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="238.5" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetZeroStrainPressure()</text>
+<text text-anchor="start" x="225.5" y="-325.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="238.5" y="-325.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_dW_dI1()</text>
+<text text-anchor="start" x="225.5" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="238.5" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_dW_dI2()</text>
+<text text-anchor="start" x="225.5" y="-295.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="238.5" y="-295.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI1()</text>
+<text text-anchor="start" x="225.5" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="238.5" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI2()</text>
+<text text-anchor="start" x="225.5" y="-265.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="238.5" y="-265.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI1I2()</text>
+<polygon fill="#666666" stroke="#666666" points="221.5,-406.5 221.5,-406.5 424.5,-406.5 424.5,-406.5 221.5,-406.5"/>
+<polygon fill="#666666" stroke="#666666" points="221.5,-391.5 221.5,-391.5 424.5,-391.5 424.5,-391.5 221.5,-391.5"/>
+<polygon fill="none" stroke="#666666" points="221,-258.5 221,-434.5 424,-434.5 424,-258.5 221,-258.5"/>
 </a>
 </g>
 </g>
@@ -364,7 +362,7 @@
 <g id="edge8_Node000008_Node000009" class="edge">
 <title>Node8&#45;&gt;Node9</title>
 <g id="a_edge8_Node000008_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M418.52,-792.62C413.27,-780.34 408.31,-767.43 404.5,-755 375.34,-659.7 386.4,-631.66 366.5,-534 360.39,-504.01 352.99,-471.49 346.01,-442.13"/>
+<path fill="none" stroke="#63b8ff" d="M418.52,-792.62C413.27,-780.34 408.31,-767.43 404.5,-755 375.34,-659.7 386.4,-631.66 366.5,-534 359.86,-501.4 351.69,-465.81 344.21,-434.55"/>
 <polygon fill="none" stroke="#63b8ff" points="415.35,-794.12 422.57,-801.87 421.76,-791.31 415.35,-794.12"/>
 </a>
 </g>
@@ -373,32 +371,30 @@
 <g id="Node000011" class="node">
 <title>Node11</title>
 <g id="a_Node000011"><a xlink:href="classAbstractIsotropicIncompressibleMaterialLaw.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="transparent" points="617,-740 414,-740 414,-549 617,-549 617,-740"/>
-<text text-anchor="start" x="437.5" y="-727.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractIsotropicIncompressible</text>
-<text text-anchor="start" x="464.5" y="-716.5" font-family="Helvetica,sans-Serif" font-size="10.00">MaterialLaw&lt; DIM &gt;</text>
-<text text-anchor="start" x="514" y="-701.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="418.5" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="431.5" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">ComputeStressAndStressDerivative()</text>
-<text text-anchor="start" x="418.5" y="-671.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="431.5" y="-671.5" font-family="Helvetica,sans-Serif" font-size="10.00">~AbstractIsotropicIncompressible</text>
-<text text-anchor="start" x="431.5" y="-660.5" font-family="Helvetica,sans-Serif" font-size="10.00">MaterialLaw()</text>
-<text text-anchor="start" x="418.5" y="-645.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="431.5" y="-645.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetZeroStrainPressure()</text>
-<text text-anchor="start" x="418.5" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="431.5" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetZeroStrainPressure()</text>
-<text text-anchor="start" x="418.5" y="-615.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="431.5" y="-615.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_dW_dI1()</text>
-<text text-anchor="start" x="418.5" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="431.5" y="-600.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_dW_dI2()</text>
-<text text-anchor="start" x="418.5" y="-585.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="431.5" y="-585.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI1()</text>
-<text text-anchor="start" x="418.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="431.5" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI2()</text>
-<text text-anchor="start" x="418.5" y="-555.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="431.5" y="-555.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI1I2()</text>
-<polygon fill="#666666" stroke="#666666" points="414.5,-711.5 414.5,-711.5 617.5,-711.5 617.5,-711.5 414.5,-711.5"/>
-<polygon fill="#666666" stroke="#666666" points="414.5,-696.5 414.5,-696.5 617.5,-696.5 617.5,-696.5 414.5,-696.5"/>
-<polygon fill="none" stroke="#666666" points="414,-549 414,-740 617,-740 617,-549 414,-549"/>
+<polygon fill="white" stroke="transparent" points="617,-732.5 414,-732.5 414,-556.5 617,-556.5 617,-732.5"/>
+<text text-anchor="start" x="437.5" y="-720.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractIsotropicIncompressible</text>
+<text text-anchor="start" x="464.5" y="-709.5" font-family="Helvetica,sans-Serif" font-size="10.00">MaterialLaw&lt; DIM &gt;</text>
+<text text-anchor="start" x="514" y="-694.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="418.5" y="-679.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="431.5" y="-679.5" font-family="Helvetica,sans-Serif" font-size="10.00">ComputeStressAndStressDerivative()</text>
+<text text-anchor="start" x="418.5" y="-664.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="431.5" y="-664.5" font-family="Helvetica,sans-Serif" font-size="10.00">~AbstractIsotropicIncompressible</text>
+<text text-anchor="start" x="431.5" y="-653.5" font-family="Helvetica,sans-Serif" font-size="10.00">MaterialLaw()</text>
+<text text-anchor="start" x="418.5" y="-638.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="431.5" y="-638.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetZeroStrainPressure()</text>
+<text text-anchor="start" x="418.5" y="-623.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="431.5" y="-623.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_dW_dI1()</text>
+<text text-anchor="start" x="418.5" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="431.5" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_dW_dI2()</text>
+<text text-anchor="start" x="418.5" y="-593.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="431.5" y="-593.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI1()</text>
+<text text-anchor="start" x="418.5" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="431.5" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI2()</text>
+<text text-anchor="start" x="418.5" y="-563.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="431.5" y="-563.5" font-family="Helvetica,sans-Serif" font-size="10.00">Get_d2W_dI1I2()</text>
+<polygon fill="#666666" stroke="#666666" points="414.5,-704.5 414.5,-704.5 617.5,-704.5 617.5,-704.5 414.5,-704.5"/>
+<polygon fill="#666666" stroke="#666666" points="414.5,-689.5 414.5,-689.5 617.5,-689.5 617.5,-689.5 414.5,-689.5"/>
+<polygon fill="none" stroke="#666666" points="414,-556.5 414,-732.5 617,-732.5 617,-556.5 414,-556.5"/>
 </a>
 </g>
 </g>
@@ -406,7 +402,7 @@
 <g id="edge10_Node000008_Node000011" class="edge">
 <title>Node8&#45;&gt;Node11</title>
 <g id="a_edge10_Node000008_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M470.47,-792.03C475.48,-775.7 480.97,-757.84 486.34,-740.38"/>
+<path fill="none" stroke="#63b8ff" d="M470.37,-792.33C476.16,-773.49 482.59,-752.59 488.73,-732.61"/>
 <polygon fill="none" stroke="#63b8ff" points="467,-791.4 467.41,-801.98 473.69,-793.45 467,-791.4"/>
 </a>
 </g>
@@ -491,8 +487,8 @@
 <g id="edge9_Node000009_Node000010" class="edge">
 <title>Node9&#45;&gt;Node10</title>
 <g id="a_edge9_Node000009_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M322.5,-240.79C322.5,-217.01 322.5,-192.05 322.5,-169.28"/>
-<polygon fill="none" stroke="#63b8ff" points="319,-240.9 322.5,-250.9 326,-240.9 319,-240.9"/>
+<path fill="none" stroke="#63b8ff" d="M322.5,-247.97C322.5,-222 322.5,-194.19 322.5,-169.05"/>
+<polygon fill="none" stroke="#63b8ff" points="319,-248.2 322.5,-258.2 326,-248.2 319,-248.2"/>
 </a>
 </g>
 </g>
@@ -500,8 +496,8 @@
 <g id="edge13_Node000011_Node000009" class="edge">
 <title>Node11&#45;&gt;Node9</title>
 <g id="a_edge13_Node000011_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="orange" d="M448.12,-540.15C427.33,-508.28 404.56,-473.35 384.18,-442.09"/>
-<polygon fill="orange" stroke="orange" points="445.24,-542.16 453.64,-548.62 451.11,-538.33 445.24,-542.16"/>
+<path fill="none" stroke="orange" d="M453,-547.64C429.29,-511.28 402.44,-470.11 379.29,-434.6"/>
+<polygon fill="orange" stroke="orange" points="450.24,-549.83 458.64,-556.29 456.11,-546 450.24,-549.83"/>
 </a>
 </g>
 <text text-anchor="middle" x="447.5" y="-508" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &lt; 3 &gt;</text>
@@ -544,8 +540,8 @@
 <g id="edge11_Node000011_Node000012" class="edge">
 <title>Node11&#45;&gt;Node12</title>
 <g id="a_edge11_Node000011_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M515.5,-538.42C515.5,-505.2 515.5,-468.82 515.5,-436.81"/>
-<polygon fill="none" stroke="#63b8ff" points="512,-538.62 515.5,-548.62 519,-538.62 512,-538.62"/>
+<path fill="none" stroke="#63b8ff" d="M515.5,-545.99C515.5,-510.74 515.5,-471.14 515.5,-436.65"/>
+<polygon fill="none" stroke="#63b8ff" points="512,-546.29 515.5,-556.29 519,-546.29 512,-546.29"/>
 </a>
 </g>
 </g>
@@ -589,8 +585,8 @@
 <g id="edge12_Node000011_Node000013" class="edge">
 <title>Node11&#45;&gt;Node13</title>
 <g id="a_edge12_Node000011_Node000013"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M574.99,-539.93C592.86,-508.8 612.4,-474.78 630,-444.13"/>
-<polygon fill="none" stroke="#63b8ff" points="571.94,-538.21 569.99,-548.62 578.01,-541.69 571.94,-538.21"/>
+<path fill="none" stroke="#63b8ff" d="M570.62,-547.52C589.63,-514.42 610.93,-477.34 629.97,-444.18"/>
+<polygon fill="none" stroke="#63b8ff" points="567.53,-545.88 565.59,-556.29 573.6,-549.36 567.53,-545.88"/>
 </a>
 </g>
 </g>

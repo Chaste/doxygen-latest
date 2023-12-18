@@ -1,11 +1,17 @@
 <map id="MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="35,435,232,755"/>
-<area shape="rect" id="Node000003" href="$classVertexElement.html" title=" " alt="" coords="5,837,219,1117"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,769,122,837,117,837,121,768"/>
-<area shape="rect" id="Node000004" href="$classMutableElement.html" title=" " alt="" coords="243,817,410,1137"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="223,766,248,816,243,818,218,768"/>
-<area shape="rect" id="Node000002" href="$classAbstractElement.html" title=" " alt="" coords="24,5,243,385"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,399,136,435,131,435,131,399"/>
-<area shape="rect" id="Node000005" href="$classPottsElement.html" title=" " alt="" coords="248,1187,405,1332"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="329,1151,329,1186,324,1186,324,1151"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="357,435,555,755"/>
+<area shape="rect" id="Node000003" href="$classVertexElement.html" title=" " alt="" coords="249,1215,463,1495"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="496,768,508,866,512,974,504,1084,494,1139,480,1192,465,1226,460,1224,475,1190,489,1138,499,1084,507,974,503,866,491,769"/>
+<area shape="rect" id="Node000004" href="$classVertexElement.html" title=" " alt="" coords="5,1215,219,1495"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="349,676,279,741,248,779,221,819,197,866,176,916,146,1020,128,1122,118,1215,113,1214,122,1121,141,1018,171,914,192,864,216,816,244,775,276,737,345,672"/>
+<area shape="rect" id="Node000005" href="$classVertexElement.html" title=" " alt="" coords="231,837,444,1117"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="405,769,383,838,378,836,400,767"/>
+<area shape="rect" id="Node000006" href="$classMutableElement.html" title=" " alt="" coords="534,817,701,1137"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="531,766,552,816,547,818,526,769"/>
+<area shape="rect" id="Node000002" href="$classAbstractElement.html" title=" " alt="" coords="347,5,565,385"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="459,399,459,435,453,435,453,399"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="339,1131,341,1191,343,1214,338,1215,336,1191,334,1132"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="223,1079,189,1119,160,1163,138,1216,133,1214,155,1160,184,1116,219,1076"/>
+<area shape="rect" id="Node000007" href="$classPottsElement.html" title=" " alt="" coords="539,1282,696,1427"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="620,1151,620,1282,615,1282,615,1151"/>
 </map>

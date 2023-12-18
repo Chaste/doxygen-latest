@@ -259,7 +259,7 @@ var annotated_dup =
     [ "ChemotaxisPottsUpdateRule", "classChemotaxisPottsUpdateRule.html", "classChemotaxisPottsUpdateRule" ],
     [ "Citations", "classCitations.html", "classCitations" ],
     [ "CmguiDeformedSolutionsWriter", "classCmguiDeformedSolutionsWriter.html", "classCmguiDeformedSolutionsWriter" ],
-    [ "CmguiMeshWriter", "classCmguiMeshWriter.html", null ],
+    [ "CmguiMeshWriter", "classCmguiMeshWriter.html", "classCmguiMeshWriter" ],
     [ "CML_noble_varghese_kohl_noble_1998_basic_with_sac", "classCML__noble__varghese__kohl__noble__1998__basic__with__sac.html", "classCML__noble__varghese__kohl__noble__1998__basic__with__sac" ],
     [ "ColumnDataReader", "classColumnDataReader.html", "classColumnDataReader" ],
     [ "ColumnDataWriter", "classColumnDataWriter.html", "classColumnDataWriter" ],

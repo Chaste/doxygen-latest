@@ -2,6 +2,7 @@ var classVertexMeshOperationRecorder =
 [
     [ "VertexMeshOperationRecorder", "classVertexMeshOperationRecorder.html#acbadfbe0c2c2836d33cc6b9fc7c774ec", null ],
     [ "~VertexMeshOperationRecorder", "classVertexMeshOperationRecorder.html#a515c6aa381a2b8fc15f426363b51f9ca", null ],
+    [ "ClearCellDivisionInfo", "classVertexMeshOperationRecorder.html#ab75d6fddf4bb2bd46bdfb0eb901575e5", null ],
     [ "ClearEdgeOperations", "classVertexMeshOperationRecorder.html#ada47482918df4acecdd33a39b3d4e8af", null ],
     [ "ClearT1SwapsInfo", "classVertexMeshOperationRecorder.html#a71b49ec2013e2f707d964aaf5887ffa4", null ],
     [ "ClearT2SwapsInfo", "classVertexMeshOperationRecorder.html#a81e4546275a2b4084e764f07faa0410c", null ],

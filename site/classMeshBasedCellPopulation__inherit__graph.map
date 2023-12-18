@@ -1,13 +1,11 @@
 <map id="MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;">
 <area shape="rect" id="Node000001" title=" " alt="" coords="289,1847,543,2396"/>
-<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="557,2101,566,2110,569,2122,562,2138,544,2147,542,2143,558,2134,564,2121,561,2112,553,2105"/>
-<area shape="poly" id="edge10_Node000001_Node000001" title=" " alt="" coords="556,2064,619,2063,675,2072,698,2080,716,2091,728,2105,732,2121,727,2139,714,2153,695,2164,670,2172,609,2180,543,2177,543,2171,609,2174,669,2167,693,2159,711,2149,723,2136,727,2121,723,2107,712,2095,696,2085,674,2077,619,2069,556,2070"/>
 <area shape="rect" id="Node000006" href="$classMeshBasedCellPopulation.html" title=" " alt="" coords="12,2459,265,3008"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="288,2409,266,2460,261,2457,284,2407"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="288,2409,266,2460,261,2457,284,2407"/>
 <area shape="rect" id="Node000008" href="$classMeshBasedCellPopulation.html" title=" " alt="" coords="289,2466,543,3001"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="419,2410,419,2466,413,2466,413,2410"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="419,2410,419,2466,413,2466,413,2410"/>
 <area shape="rect" id="Node000009" href="$classMeshBasedCellPopulation.html" title=" " alt="" coords="567,2466,820,3001"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="549,2408,575,2465,570,2467,544,2410"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="549,2408,575,2465,570,2467,544,2410"/>
 <area shape="rect" id="Node000002" href="$classAbstractCentreBasedCellPopulation.html" title=" " alt="" coords="281,1383,551,1797"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="419,1811,419,1847,413,1847,413,1811"/>
 <area shape="rect" id="Node000003" href="$classAbstractOffLatticeCellPopulation.html" title=" " alt="" coords="289,933,543,1333"/>
@@ -17,5 +15,5 @@
 <area shape="rect" id="Node000005" href="$classIdentifiable.html" title=" " alt="" coords="299,5,533,111"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="419,125,419,160,413,160,413,125"/>
 <area shape="rect" id="Node000007" href="$classMeshBasedCellPopulationWithGhostNodes.html" title=" " alt="" coords="5,3057,272,3516"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="141,3022,141,3057,136,3057,136,3022"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="141,3022,141,3057,136,3057,136,3022"/>
 </map>

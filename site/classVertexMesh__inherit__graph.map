@@ -1,25 +1,23 @@
 <map id="VertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="VertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="509,629,756,1199"/>
-<area shape="rect" id="Node000004" href="$classMutableVertexMesh.html" title=" " alt="" coords="99,2321,361,3304"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="499,999,428,1053,357,1118,293,1193,267,1234,244,1277,197,1403,162,1534,138,1668,124,1804,119,1939,121,2072,128,2200,140,2321,135,2321,123,2200,115,2072,114,1939,119,1804,133,1668,157,1533,192,1401,240,1275,262,1231,289,1190,353,1114,425,1049,496,995"/>
-<area shape="rect" id="Node000007" href="$classMutableVertexMesh.html" title=" " alt="" coords="410,2321,671,3304"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="586,1213,579,1276,560,1544,548,1816,541,2080,539,2321,533,2321,536,2079,542,1816,555,1544,574,1276,581,1212"/>
-<area shape="rect" id="Node000008" href="$classMutableVertexMesh.html" title=" " alt="" coords="254,1276,515,2259"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="540,1213,537,1223,518,1287,513,1285,531,1222,535,1211"/>
-<area shape="rect" id="Node000009" href="$classVertexMesh.html" title=" " alt="" coords="589,1483,836,2052"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="663,1212,689,1482,683,1483,658,1213"/>
-<area shape="rect" id="Node000010" href="$classVertexMesh.html" title=" " alt="" coords="860,1490,1107,2045"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="767,1075,814,1146,854,1222,881,1286,904,1354,940,1489,935,1490,899,1355,876,1288,849,1224,809,1149,762,1078"/>
-<area shape="rect" id="Node000011" href="$classVertexMesh.html" title=" " alt="" coords="1131,1490,1377,2045"/>
-<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="769,981,858,1034,953,1102,1043,1182,1084,1227,1120,1274,1150,1324,1176,1378,1197,1433,1214,1489,1209,1490,1192,1435,1171,1380,1146,1327,1116,1278,1080,1230,1039,1186,949,1106,855,1039,767,985"/>
-<area shape="rect" id="Node000002" href="$classAbstractMesh.html" title=" " alt="" coords="510,120,755,580"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="635,593,635,629,630,629,630,593"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="562,5,703,71"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="635,84,635,120,630,120,630,84"/>
-<area shape="rect" id="Node000005" href="$classCylindrical2dVertexMesh.html" title=" " alt="" coords="5,3383,217,3689"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="150,3318,139,3383,134,3383,144,3317"/>
-<area shape="rect" id="Node000006" href="$classToroidal2dVertexMesh.html" title=" " alt="" coords="241,3353,456,3719"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="316,3317,321,3353,316,3354,310,3318"/>
-<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="313,2273,305,2321,300,2321,307,2272"/>
-<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="438,2272,442,2297,446,2321,440,2322,437,2298,433,2273"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="429,629,676,1199"/>
+<area shape="rect" id="Node000004" href="$classMutableVertexMesh.html" title=" " alt="" coords="99,2307,361,3289"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="421,1024,370,1074,321,1131,278,1195,244,1262,202,1390,171,1522,150,1656,137,1792,132,1927,133,2059,140,2186,150,2306,145,2307,134,2186,128,2059,127,1927,132,1792,145,1656,166,1521,197,1388,240,1260,273,1192,317,1128,366,1070,417,1020"/>
+<area shape="rect" id="Node000007" href="$classMutableVertexMesh.html" title=" " alt="" coords="410,2307,671,3289"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="553,1212,546,2306,541,2306,548,1212"/>
+<area shape="rect" id="Node000008" href="$classMutableVertexMesh.html" title=" " alt="" coords="254,1261,515,2244"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="496,1213,486,1262,481,1261,490,1212"/>
+<area shape="rect" id="Node000009" href="$classVertexMesh.html" title=" " alt="" coords="589,1475,836,2030"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="612,1212,662,1474,657,1475,607,1213"/>
+<area shape="rect" id="Node000010" href="$classVertexMesh.html" title=" " alt="" coords="860,1475,1107,2030"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="688,1042,774,1144,815,1201,850,1260,896,1365,932,1474,927,1476,891,1367,845,1263,810,1204,770,1147,684,1046"/>
+<area shape="rect" id="Node000002" href="$classAbstractMesh.html" title=" " alt="" coords="430,120,675,580"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="555,593,555,629,550,629,550,593"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="482,5,623,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="555,84,555,120,550,120,550,84"/>
+<area shape="rect" id="Node000005" href="$classCylindrical2dVertexMesh.html" title=" " alt="" coords="5,3369,217,3674"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="150,3303,139,3369,134,3368,144,3303"/>
+<area shape="rect" id="Node000006" href="$classToroidal2dVertexMesh.html" title=" " alt="" coords="241,3339,456,3704"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="316,3302,321,3338,316,3339,310,3303"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="313,2258,305,2307,300,2306,307,2257"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="438,2257,442,2282,446,2306,440,2307,437,2283,433,2258"/>
 </map>

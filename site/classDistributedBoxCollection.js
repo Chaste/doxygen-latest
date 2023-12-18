@@ -1,6 +1,6 @@
 var classDistributedBoxCollection =
 [
-    [ "DistributedBoxCollection", "classDistributedBoxCollection.html#a62c7bb6ac3643345073814447503bb38", null ],
+    [ "DistributedBoxCollection", "classDistributedBoxCollection.html#a26b41a0d71aaf9e2be93216064e04caf", null ],
     [ "~DistributedBoxCollection", "classDistributedBoxCollection.html#a1704d214482b734c7ab719cfef3669db", null ],
     [ "AddPairsFromBox", "classDistributedBoxCollection.html#a0272a042267f088e48e79234ad55e5b8", null ],
     [ "CalculateBoundaryNodePairs", "classDistributedBoxCollection.html#ad6c92897c3644ee3386f32a7282c571d", null ],

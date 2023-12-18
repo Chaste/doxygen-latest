@@ -1,15 +1,20 @@
 <map id="DistributedVector::Stripe" name="DistributedVector::Stripe">
-<area shape="rect" id="Node000001" title=" " alt="" coords="161,635,296,775"/>
-<area shape="rect" id="Node000002" href="$classunsigned.html" title=" " alt="" coords="31,5,104,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,72,34,162,21,223,12,290,8,361,12,433,26,504,51,571,70,599,94,624,149,664,145,668,90,628,66,603,46,573,20,506,7,434,3,361,7,289,16,222,28,161,54,70"/>
-<area shape="rect" id="Node000004" href="$classDistributedVectorFactory.html" title=" " alt="" coords="118,177,339,572"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="84,70,122,152,126,161,121,163,117,154,79,72"/>
-<area shape="rect" id="Node000003" href="$classdouble.html" title=" " alt="" coords="517,342,575,407"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="550,407,549,444,543,488,530,533,507,574,465,615,415,647,363,671,313,687,311,682,361,666,413,642,462,611,503,570,525,531,538,487,544,444,545,407"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,572,231,618,226,618,226,572"/>
-<area shape="poly" id="edge7_Node000004_Node000004" title=" " alt="" coords="341,335,359,350,366,375,363,391,355,404,351,401,358,390,361,375,355,353,338,339"/>
-<area shape="rect" id="Node000005" href="$classbool.html" title=" " alt="" coords="202,5,245,71"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="226,71,227,153,228,161,222,161,222,153,221,71"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="379,5,523,71"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="450,71,441,112,424,155,391,208,352,257,348,254,387,205,420,152,436,110,445,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="128,891,262,1031"/>
+<area shape="rect" id="Node000002" href="$classunsigned.html" title=" " alt="" coords="18,133,92,199"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,199,30,269,15,351,8,480,17,608,26,670,39,727,55,780,75,827,94,859,118,889,114,892,90,862,70,829,50,782,34,728,21,671,11,609,3,480,10,350,25,267,43,198"/>
+<area shape="rect" id="Node000004" href="$classDistributedVectorFactory.html" title=" " alt="" coords="84,433,306,828"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="57,199,59,258,70,326,98,417,93,419,64,327,54,259,52,199"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="180,261,352,327"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="93,187,200,250,197,255,90,191"/>
+<area shape="rect" id="Node000003" href="$classdouble.html" title=" " alt="" coords="483,598,542,663"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="517,663,515,700,509,744,496,789,473,830,431,871,381,903,329,927,279,943,278,938,327,922,379,898,428,867,469,826,491,787,504,743,510,700,511,663"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,828,198,874,192,874,192,828"/>
+<area shape="poly" id="edge10_Node000004_Node000004" title=" " alt="" coords="308,591,325,606,332,631,329,647,322,660,317,657,324,646,327,631,321,609,304,595"/>
+<area shape="rect" id="Node000005" href="$classbool.html" title=" " alt="" coords="376,261,419,327"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="392,328,379,368,360,411,317,481,313,478,355,408,374,366,387,326"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="262,327,243,418,237,417,256,326"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="205,133,326,199"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="268,213,268,261,263,261,263,213"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="254,5,277,71"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="268,71,268,117,263,117,263,71"/>
 </map>

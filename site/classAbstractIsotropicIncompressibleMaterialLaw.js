@@ -7,6 +7,5 @@ var classAbstractIsotropicIncompressibleMaterialLaw =
     [ "Get_d2W_dI2", "classAbstractIsotropicIncompressibleMaterialLaw.html#acbcca2fcf4c5d73484dfeb4c65cb10bb", null ],
     [ "Get_dW_dI1", "classAbstractIsotropicIncompressibleMaterialLaw.html#a3ba3f6957e2343e39d6304d4cdc2405e", null ],
     [ "Get_dW_dI2", "classAbstractIsotropicIncompressibleMaterialLaw.html#ae377687f775dd070cdf29bd60b26efcf", null ],
-    [ "GetZeroStrainPressure", "classAbstractIsotropicIncompressibleMaterialLaw.html#a27adcc0c5bcad08996010b02127fff2c", null ],
     [ "GetZeroStrainPressure", "classAbstractIsotropicIncompressibleMaterialLaw.html#a0ed4782aabae2b54c1e6df0dc72f9585", null ]
 ];

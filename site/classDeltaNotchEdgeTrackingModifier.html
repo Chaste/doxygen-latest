@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::3d0dea6ed10f59ded46a6a0c5abbad47053c1f51</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::395b21489ded288b40aa95e8766fa8e90c4639e9</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,8 @@ $(document).ready(function(){initNavTree('classDeltaNotchEdgeTrackingModifier.ht
   <div class="headertitle"><div class="title">DeltaNotchEdgeTrackingModifier&lt; DIM &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html">DeltaNotchEdgeTrackingModifier.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for DeltaNotchEdgeTrackingModifier&lt; DIM &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -131,8 +133,9 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt;<br />
-class DeltaNotchEdgeTrackingModifier&lt; DIM &gt;</div>
-<p class="definition">Definition at line <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html#l00046">46</a> of file <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html">DeltaNotchEdgeTrackingModifier.hpp</a>.</p>
+class DeltaNotchEdgeTrackingModifier&lt; DIM &gt;</div><p>A modifier class in which the mean levels of Delta in neighbouring cells are computed and stored in <a class="el" href="classCellData.html">CellData</a>. To be used in conjunction with Delta Notch cell cycle models. </p>
+
+<p class="definition">Definition at line <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html#l00051">51</a> of file <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html">DeltaNotchEdgeTrackingModifier.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9899629d8118a804b2e0d695529d11da" name="a9899629d8118a804b2e0d695529d11da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9899629d8118a804b2e0d695529d11da">&#9670;&#160;</a></span>DeltaNotchEdgeTrackingModifier()</h2>
@@ -274,7 +277,7 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html#l00059">59</a> of file <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html">DeltaNotchEdgeTrackingModifier.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html#l00064">64</a> of file <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html">DeltaNotchEdgeTrackingModifier.hpp</a>.</p>
 
 </div>
 </div>
@@ -393,7 +396,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="DeltaNotchEdgeTrackingModifier_8cpp_source.html#l00070">70</a> of file <a class="el" href="DeltaNotchEdgeTrackingModifier_8cpp_source.html">DeltaNotchEdgeTrackingModifier.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="classAbstractCellPopulation.html#af84dadab9e5ce128890442c47a86487b">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::Begin()</a>, <a class="el" href="classAbstractCellPopulation.html#abf6a7f3f482f56428c3810558e4806d4">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::End()</a>, <a class="el" href="classAbstractCellPopulation.html#a9013896ac72468a9851f70a8a07b27e6">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetCellUsingLocationIndex()</a>, <a class="el" href="classAbstractCellPopulation.html#a00fb41994948ba2873aaed9f5388298d">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNeighbouringEdgeIndices()</a>, and <a class="el" href="CellSrnModel_8cpp_source.html#l00145">CellSrnModel::GetNumEdgeSrn()</a>.</p>
+<p class="reference">References <a class="el" href="AbstractCellPopulation_8hpp_source.html#l01119">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::Begin()</a>, <a class="el" href="AbstractCellPopulation_8hpp_source.html#l01125">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::End()</a>, <a class="el" href="AbstractCellPopulation_8cpp_source.html#l00326">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetCellUsingLocationIndex()</a>, <a class="el" href="AbstractCellPopulation_8cpp_source.html#l00456">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNeighbouringEdgeIndices()</a>, and <a class="el" href="CellSrnModel_8cpp_source.html#l00145">CellSrnModel::GetNumEdgeSrn()</a>.</p>
 
 </div>
 </div>
@@ -421,7 +424,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 </div><div class="memdoc">
 <p>Needed for serialization. </p>
 
-<p class="definition">Definition at line <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html#l00050">50</a> of file <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html">DeltaNotchEdgeTrackingModifier.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html#l00055">55</a> of file <a class="el" href="DeltaNotchEdgeTrackingModifier_8hpp_source.html">DeltaNotchEdgeTrackingModifier.hpp</a>.</p>
 
 </div>
 </div>
