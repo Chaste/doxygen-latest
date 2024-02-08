@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::ac4deeb787164b1a929b16fbffa5545f9d136fa5</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::ad0d8de57658bf6c73b08c23cb43f9d677644a03</span>
    </div>
   </td>
  </tr>
@@ -238,7 +238,7 @@ class BidomainSolver&lt; ELEMENT_DIM, SPACE_DIM &gt;</div><p>A bidomain solver, 
 <p>[ (chi*C/dt) M + K1 K1 ] [ V^{n+1} ] = [ (chi*C/dt) M V^{n} + M F^{n} + c1_surf ] [ K1 K2 ] [ PhiE^{n+1}] [ c2_surf ]</p>
 <p>where chi is the surface-area to volume ratio, C the capacitance, dt the timestep M the mass matrix, K1 and K2 stiffness matrices, V^{n} and PhiE^{n} the vector of voltages and phi_e at time n, F^{n} the vector of (chi*Iionic + Istim) at each node, and c1_surf and c2_surf vectors arising from any surface stimuli (usually zero).</p>
 <p>This solver uses two assemblers, one to assemble the whole LHS matrix, and also to compute c1_surf and c2_surf, and one to assemble the mass matrix M.</p>
-<p>Also allows state variable interpolation (SVI) to be used on elements for which it will be needed, if the appropriate <a class="el" href="classHeartConfig.html">HeartConfig</a> boolean is set. See wiki page ChasteGuides/StateVariableInterpolation for more details on this. In this case the vector [c_correction, 0] is added to the above, and another assembler is used to create the c_correction. </p>
+<p>Also allows state variable interpolation (SVI) to be used on elements for which it will be needed, if the appropriate <a class="el" href="classHeartConfig.html">HeartConfig</a> boolean is set. See <a href="https://chaste.github.io/docs/user-guides/state-variable-interpolation/">https://chaste.github.io/docs/user-guides/state-variable-interpolation/</a> for more details on this. In this case the vector [c_correction, 0] is added to the above, and another assembler is used to create the c_correction. </p>
 
 <p class="definition">Definition at line <a class="el" href="BidomainSolver_8hpp_source.html#l00080">80</a> of file <a class="el" href="BidomainSolver_8hpp_source.html">BidomainSolver.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

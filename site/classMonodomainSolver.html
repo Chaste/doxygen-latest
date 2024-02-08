@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::ac4deeb787164b1a929b16fbffa5545f9d136fa5</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::ad0d8de57658bf6c73b08c23cb43f9d677644a03</span>
    </div>
   </td>
  </tr>
@@ -209,7 +209,7 @@ class MonodomainSolver&lt; ELEMENT_DIM, SPACE_DIM &gt;</div><p>A monodomain solv
 <p>( (chi*C/dt) M + K ) V^{n+1} = (chi*C/dt) M V^{n} + M F^{n} + c_surf</p>
 <p>where chi is the surface-area to volume ratio, C the capacitance, dt the timestep M the mass matrix, K the stiffness matrix, V^{n} the vector of voltages at time n, F^{n} the vector of (chi*Iionic + Istim) at each node, and c_surf a vector arising from any surface stimuli (usually zero).</p>
 <p>This solver uses two assemblers, <a class="el" href="classMonodomainAssembler.html">MonodomainAssembler</a> to assemble the LHS matrix, [(chi*C/dt) M + K], and also to compute c_surf, and <a class="el" href="classMassMatrixAssembler.html">MassMatrixAssembler</a> to assemble the mass matrix M used on the RHS. Note that <a class="el" href="classMonodomainAssembler.html">MonodomainAssembler</a> itself calls: <a class="el" href="classMassMatrixAssembler.html">MassMatrixAssembler</a> for M (as this class does directly for RHS), and <a class="el" href="classMonodomainStiffnessMatrixAssembler.html">MonodomainStiffnessMatrixAssembler</a> for K.</p>
-<p>Also allows state variable interpolation (SVI) to be used on elements for which it will be needed, if the appropriate <a class="el" href="classHeartConfig.html">HeartConfig</a> boolean is set. See wiki page ChasteGuides/StateVariableInterpolation for more details on this. In this case the equation is ( (chi*C/dt) M + K ) V^{n+1} = (chi*C/dt) M V^{n} + M F^{n} + c_surf + c_correction and another assembler is used to create the c_correction. </p>
+<p>Also allows state variable interpolation (SVI) to be used on elements for which it will be needed, if the appropriate <a class="el" href="classHeartConfig.html">HeartConfig</a> boolean is set. See <a href="https://chaste.github.io/docs/user-guides/state-variable-interpolation/">https://chaste.github.io/docs/user-guides/state-variable-interpolation/</a> for more details on this. In this case the equation is ( (chi*C/dt) M + K ) V^{n+1} = (chi*C/dt) M V^{n} + M F^{n} + c_surf + c_correction and another assembler is used to create the c_correction. </p>
 
 <p class="definition">Definition at line <a class="el" href="MonodomainSolver_8hpp_source.html#l00074">74</a> of file <a class="el" href="MonodomainSolver_8hpp_source.html">MonodomainSolver.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
