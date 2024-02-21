@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::78e2c05430e25b182c797514534de93068cf7e80</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::42d35c65402f93050369c45e34ce3d09bac0f9a0</span>
    </div>
   </td>
  </tr>
@@ -88,10 +88,10 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <p class="enddd"><a class="anchor" id="_todo000053"></a>#2017 This code will be needed in the future, not being covered now. Add a test which covers this, e.g. by doing a simulation with a bad stimulus for one of the Purkinje cells - stimulating with the wrong choice of sign say.  </p>
 </dd>
 <dt>Member <a class="el" href="classAbstractCellPopulation.html#ab20f4c6a5a1eebe46d8c3dbe977b073b">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetCellUsingLocationIndex</a>  (unsigned index)</dt>
-<dd><a class="anchor" id="_todo000253"></a>should be an exception? </dd>
+<dd><a class="anchor" id="_todo000254"></a>should be an exception? </dd>
 <dt>Member <a class="el" href="classAbstractCellPopulation.html#aac78c3a843150474e73cf0d85fc59138">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::OutputCellPopulationInfo</a>  (out_stream &amp;rParamsFile)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000255"></a>this currently ignores different parameter regimes (#1453) </p>
-<p class="enddd"><a class="anchor" id="_todo000254"></a>this currently ignores different parameter regimes (#1453)  </p>
+<p class="enddd"><a class="anchor" id="_todo000253"></a>this currently ignores different parameter regimes (#1453)  </p>
 </dd>
 <dt>Member <a class="el" href="classAbstractChasteRegion.html#a7e4d20807c2051813654c36111341548">AbstractChasteRegion&lt; SPACE_DIM &gt;::Destroy</a>  ()</dt>
 <dd><a class="anchor" id="_todo000087"></a>Proper memory management Cleans any data which the concrete class may have created (archiving)  </dd>
@@ -147,17 +147,17 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classAbstractPdeModifier.html#a0202eff0acc4c55d35f920c3dbdb4fbd">AbstractPdeModifier&lt; DIM &gt;::mIsNeumannBoundaryCondition</a>  </dt>
 <dd><a class="anchor" id="_todo000232"></a>Generalize to allow mixed boundary conditions  </dd>
 <dt>Member <a class="el" href="classAbstractPerElementWriter.html#a83925cf973d56760706b60e81ce80e86">AbstractPerElementWriter&lt; ELEMENT_DIM, SPACE_DIM, DATA_SIZE &gt;::WriteData</a>  (<a class="el" href="classOutputFileHandler.html">OutputFileHandler</a> &amp;rHandler, const std::string &amp;rFileName)</dt>
-<dd><a class="anchor" id="_todo000126"></a>See if this can be speeded up with #2351.  </dd>
+<dd><a class="anchor" id="_todo000125"></a>See if this can be speeded up with #2351.  </dd>
 <dt>Member <a class="el" href="classAbstractTetrahedralElement_3_010_00_01SPACE__DIM_01_4.html#a16f7aa6ac83b246d0199d5a675c5b3c2">AbstractTetrahedralElement&lt; 0, SPACE_DIM &gt;::CalculateNormal</a>  ()</dt>
 <dd><a class="anchor" id="_todo000089"></a>should throw?  </dd>
 <dt>Member <a class="el" href="classAbstractTetrahedralMesh.html#a915badea8c69373c2ad54099a0d69f3e">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::CalculateMinMaxEdgeLengths</a>  ()</dt>
 <dd><a class="anchor" id="_todo000093"></a>Should be const </dd>
 <dt>Member <a class="el" href="classAbstractTetrahedralMesh.html#a2673b92918ba2ecb58d7c6be35562976">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::CalculateNodeExchange</a>  (std::vector&lt; std::vector&lt; unsigned &gt; &gt; &amp;rNodesToSendPerProcess, std::vector&lt; std::vector&lt; unsigned &gt; &gt; &amp;rNodesToReceivePerProcess)</dt>
-<dd><a class="anchor" id="_todo000092"></a>#2426 This is where we should check that we DO HAVE a Tetrahedral (not Distributed mesh)  </dd>
+<dd><a class="anchor" id="_todo000090"></a>#2426 This is where we should check that we DO HAVE a Tetrahedral (not Distributed mesh)  </dd>
 <dt>Member <a class="el" href="classAbstractTetrahedralMesh.html#a58117ae299e18890024229126015a377">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ConstructFromMesh</a>  (AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rOtherMesh)</dt>
-<dd><a class="anchor" id="_todo000091"></a>Can we make this const?  </dd>
+<dd><a class="anchor" id="_todo000092"></a>Can we make this const?  </dd>
 <dt>Member <a class="el" href="classAbstractTetrahedralMesh.html#a05e7799792ce90aa7206664098110d70">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::load</a>  (Archive &amp;archive, const unsigned int version)</dt>
-<dd><a class="anchor" id="_todo000090"></a>#1199 make this work for everything else...  </dd>
+<dd><a class="anchor" id="_todo000091"></a>#1199 make this work for everything else...  </dd>
 <dt>Member <a class="el" href="classAbstractTetrahedralMeshWriter.html#ad732d0dae28b0efd5b528f060d77b4d9">AbstractTetrahedralMeshWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::WriteFilesUsingMesh</a>  (AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMesh, bool keepOriginalElementIndexing=true)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000168"></a>#1322 Mesh should really be const! </p>
 <p class="interdd"><a class="anchor" id="_todo000171"></a>#1322, This should be const too </p>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classAbstractTetrahedralMeshWriter.html#aefb12232703541d2959a5a54dd283914">AbstractTetrahedralMeshWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::WriteFilesUsingParallelMesh</a>  (bool keepOriginalElementIndexing=true)</dt>
 <dd><a class="anchor" id="_todo000172"></a>#2351 Also exclude VTK writer  </dd>
 <dt>Member <a class="el" href="classAbstractTwoBodyInteractionForce.html#a212bd46ca25b9ccf1a792d7acbc7354c">AbstractTwoBodyInteractionForce&lt; ELEMENT_DIM, SPACE_DIM &gt;::AddForceContribution</a>  (AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rCellPopulation)</dt>
-<dd><a class="anchor" id="_todo000262"></a>this could be tidied by using the rGetNodePairs for all populations and moving the below calculation into the <a class="el" href="classMutableMesh.html">MutableMesh</a>.  </dd>
+<dd><a class="anchor" id="_todo000263"></a>this could be tidied by using the rGetNodePairs for all populations and moving the below calculation into the <a class="el" href="classMutableMesh.html">MutableMesh</a>.  </dd>
 <dt>Member <a class="el" href="classActivationOutputModifier.html#a3d9fa96746951494b73c33cba7eaed9b">ActivationOutputModifier::ProcessSolutionAtTimeStep</a>  (double time, Vec solution, unsigned problemDim)</dt>
 <dd><a class="anchor" id="_todo000016"></a>#2570 Add to a longer running test  </dd>
 <dt>Member <a class="el" href="classAdhesionPottsUpdateRule.html#a74099428222fb1b5f03d64ee73c8cf1b">AdhesionPottsUpdateRule&lt; DIM &gt;::mCellBoundaryAdhesionEnergyParameter</a>  </dt>
@@ -187,9 +187,9 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classBoundaryConditionsContainer.html#a7a8ad2d7013bdea0bdef532efb3fa00f">BoundaryConditionsContainer&lt; ELEMENT_DIM, SPACE_DIM, PROBLEM_DIM &gt;::HasNeumannBoundaryCondition</a>  (const <a class="el" href="classBoundaryElement.html">BoundaryElement</a>&lt; ELEMENT_DIM-1, SPACE_DIM &gt; *pSurfaceElement, unsigned indexOfUnknown=0)</dt>
 <dd><a class="anchor" id="_todo000188"></a>#1321 This is a horrendously inefficient fix. Perhaps have flag in element object? </dd>
 <dt>Member <a class="el" href="classBox.html#aa3e559a1da4cd93b842d4818a068ba63">Box&lt; DIM &gt;::rGetElementsContained</a>  ()</dt>
-<dd><a class="anchor" id="_todo000125"></a>#2308 there are no methods to remove or clear elements  </dd>
+<dd><a class="anchor" id="_todo000126"></a>#2308 there are no methods to remove or clear elements  </dd>
 <dt>Class <a class="el" href="classBuskeAdhesiveForce.html">BuskeAdhesiveForce&lt; DIM &gt;</a>  </dt>
-<dd><a class="anchor" id="_todo000263"></a>does this mean natural radius of a cell? If so at what age? (#1764) Time is in hours.  </dd>
+<dd><a class="anchor" id="_todo000262"></a>does this mean natural radius of a cell? If so at what age? (#1764) Time is in hours.  </dd>
 <dt>Class <a class="el" href="classBuskeCompressionForce.html">BuskeCompressionForce&lt; DIM &gt;</a>  </dt>
 <dd><a class="anchor" id="_todo000264"></a>does this mean natural radius of a cell? If so at what age? (#1764) Time is in hours. </dd>
 <dt>Member <a class="el" href="classBuskeCompressionForce.html#a69b15f6dcacb9041faec1068978bdf2a">BuskeCompressionForce&lt; DIM &gt;::AddForceContribution</a>  (<a class="el" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt; DIM &gt;</a> &amp;rCellPopulation)</dt>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classCellPopulationAdjacencyMatrixWriter.html#a42ff78e40c477eb244fe4388d5ce23f6">CellPopulationAdjacencyMatrixWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::VisitAnyPopulation</a>  (AbstractCellPopulation&lt; SPACE_DIM, SPACE_DIM &gt; *pCellPopulation)</dt>
 <dd><a class="anchor" id="_todo000304"></a>#2645 - if efficiency is an issue, check if this is really needed  </dd>
 <dt>Member <a class="el" href="classCellProperties.html#ac227be9d1633ef96c7a5ef79855a2d5e">CellProperties::CalculateProperties</a>  ()</dt>
-<dd><a class="anchor" id="_todo000010"></a>#1495 a horrible magic number but seems to work OK.  </dd>
+<dd><a class="anchor" id="_todo000008"></a>#1495 a horrible magic number but seems to work OK.  </dd>
 <dt>Class <a class="el" href="classCellwiseSourceEllipticPde.html">CellwiseSourceEllipticPde&lt; DIM &gt;</a>  </dt>
 <dd><a class="anchor" id="_todo000240"></a>make member names and methods consistent with those of <a class="el" href="classCellwiseSourceParabolicPde.html">CellwiseSourceParabolicPde</a>  </dd>
 <dt>Member <a class="el" href="ChasteSerialization_8hpp.html#ab992a9beb2386a026e3fbb30c11d9648">CHASTE_CAN_CHECKPOINT_DLLS</a>  </dt>
@@ -264,10 +264,10 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classDistributedTetrahedralMesh.html#ac40e45b3286c308bc281d7705c02acad">DistributedTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ConstructCuboid</a>  (unsigned width, unsigned height, unsigned depth)</dt>
 <dd><a class="anchor" id="_todo000106"></a>probably faster to make mesh from scratch.  </dd>
 <dt>Member <a class="el" href="classDistributedTetrahedralMesh.html#a32a12e026b6fd1c040e865fdaaf5f545">DistributedTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ConstructFromMeshReader</a>  (AbstractMeshReader&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMeshReader)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000103"></a>#1289 assert the node is not considered both owned and halo-owned. </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000100"></a></p>
+<p class="interdd"><a class="anchor" id="_todo000103"></a>#1289 assert the node is not considered both owned and halo-owned. </p>
 <p class="interdd"><a class="anchor" id="_todo000102"></a>#1930 We should use a reader set iterator for this bit now. </p>
 <p class="interdd"><a class="anchor" id="_todo000101"></a>#1730 and we should be able to combine ASCII branch </p>
-<p class="interdd"><a class="anchor" id="_todo000100"></a></p>
 <p class="enddd"><a class="anchor" id="_todo000099"></a>#1930 We should use a reader set iterator for this bit now.  </p>
 </dd>
 <dt>Member <a class="el" href="classDistributedTetrahedralMesh.html#ad0a907f6c2801588fd946b307abe40c0">DistributedTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ConstructLinearMesh</a>  (unsigned width)</dt>
@@ -287,8 +287,8 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classElectrodes.html#a0ed44416621780c10e2f95f5f0057a6f">Electrodes&lt; DIM &gt;::SwitchOn</a>  (double time)</dt>
 <dd><a class="anchor" id="_todo000030"></a>remove magic number? (#1884)  </dd>
 <dt>Member <a class="el" href="classElement.html#a7659b64d36f88f6adf8545562afbf653">Element&lt; ELEMENT_DIM, SPACE_DIM &gt;::CalculateXi</a>  (const <a class="el" href="classChastePoint.html">ChastePoint&lt; SPACE_DIM &gt;</a> &amp;rTestPoint)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000107"></a>: #1361 ComputeContainingElements and related methods, and methods called by that down to here, should really take in const c_vector&amp; rather than ChastePoints. </p>
-<p class="enddd"><a class="anchor" id="_todo000108"></a>#1326 This method shouldn't need a new Jacobian inverse for every Xi  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000108"></a>#1326 This method shouldn't need a new Jacobian inverse for every Xi </p>
+<p class="enddd"><a class="anchor" id="_todo000107"></a>: #1361 ComputeContainingElements and related methods, and methods called by that down to here, should really take in const c_vector&amp; rather than ChastePoints.  </p>
 </dd>
 <dt>Member <a class="el" href="classElementAttributes.html#aaf32bd2767df88652e680c931c2df92a">ElementAttributes&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetFirstAttribute</a>  ()</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000110"></a>#2739 This should throw an exception if there are no attributes </p>
@@ -297,8 +297,8 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classEllipticBoxDomainPdeModifier.html#a87f2e9a2b3353f4e8d6dbd30a2943c49">EllipticBoxDomainPdeModifier&lt; DIM &gt;::ConstructBoundaryConditionsContainer</a>  (<a class="el" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt; DIM, DIM &gt;</a> &amp;rCellPopulation)</dt>
 <dd><a class="anchor" id="_todo000235"></a>Replace this assertion with an exception in the constructor  </dd>
 <dt>Member <a class="el" href="classEllipticBoxDomainPdeModifier.html#a74bece4b7fea97138cb4dae5d191c9b2">EllipticBoxDomainPdeModifier&lt; DIM &gt;::UpdateAtEndOfTimeStep</a>  (<a class="el" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt; DIM, DIM &gt;</a> &amp;rCellPopulation)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000234"></a>Use solution at previous time step as an initial guess for Solve() </p>
-<p class="enddd"><a class="anchor" id="_todo000233"></a>allow other PDE classes to be used with this modifier  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000233"></a>allow other PDE classes to be used with this modifier </p>
+<p class="enddd"><a class="anchor" id="_todo000234"></a>Use solution at previous time step as an initial guess for Solve()  </p>
 </dd>
 <dt>Member <a class="el" href="classExponentialMaterialLaw.html#a291b4a2441a90b0605d41985269d7304">ExponentialMaterialLaw&lt; DIM &gt;::Get_d2W_dI1</a>  (double I1, double I2)</dt>
 <dd><a class="anchor" id="_todo000208"></a>The name of this method should not include underscores. </dd>
@@ -339,8 +339,8 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classHdf5DataWriter.html#a26b94db980113f00ebc58b48b2f8d813">Hdf5DataWriter::Hdf5DataWriter</a>  (<a class="el" href="classDistributedVectorFactory.html">DistributedVectorFactory</a> &amp;rVectorFactory, const std::string &amp;rDirectory, const std::string &amp;rBaseName, bool cleanDirectory=true, bool extendData=false, std::string datasetName="Data", bool useCache=false)</dt>
 <dd><a class="anchor" id="_todo000062"></a>1300 We can't set mDataFixedDimensionSize, because the information isn't in the input file. This means that checking the size of input vectors in PutVector and PutStripedVector is impossible.  </dd>
 <dt>Member <a class="el" href="classHdf5ToCmguiConverter.html#a2ea23769c7d52d605fa6db85011bb894">Hdf5ToCmguiConverter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Hdf5ToCmguiConverter</a>  (const <a class="el" href="classFileFinder.html">FileFinder</a> &amp;rInputDirectory, const std::string &amp;rFileBaseName, AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; *pMesh, bool hasBath=false, unsigned precision=0u)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000009"></a>What if the mesh has been scaled, translated or rotated? </p>
-<p class="enddd"><a class="anchor" id="_todo000008"></a>#1660 at present this converter is hardcoded to work with "Data" using the below statement  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000010"></a>What if the mesh has been scaled, translated or rotated? </p>
+<p class="enddd"><a class="anchor" id="_todo000009"></a>#1660 at present this converter is hardcoded to work with "Data" using the below statement  </p>
 </dd>
 <dt>Member <a class="el" href="classHdf5ToMeshalyzerConverter.html#a9c2a9efdd43ce69a9f23a58da1bbd23b">Hdf5ToMeshalyzerConverter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Hdf5ToMeshalyzerConverter</a>  (const <a class="el" href="classFileFinder.html">FileFinder</a> &amp;rInputDirectory, const std::string &amp;rFileBaseName, AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; *pMesh, bool usingOriginalNodeOrdering, unsigned precision=0)</dt>
 <dd><a class="anchor" id="_todo000192"></a>What if the mesh has been scaled, translated or rotated?  </dd>
@@ -354,14 +354,14 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <p class="enddd">There is no set method  </p>
 </dd>
 <dt>Member <a class="el" href="classHeartConfig.html#a6aff6217542aceeb055e8d18f8f2cda2">HeartConfig::GetConductivityHeterogeneities</a>  (std::vector&lt; boost::shared_ptr&lt; AbstractChasteRegion&lt; DIM &gt; &gt; &gt; &amp;conductivitiesHeterogeneityAreas, std::vector&lt; c_vector&lt; double, 3 &gt; &gt; &amp;intraConductivities, std::vector&lt; c_vector&lt; double, 3 &gt; &gt; &amp;extraConductivities) const</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000044"></a>When this is implemented, then we require an example in ChasteParametersFullFormat.xml </p>
-<p class="enddd"><a class="anchor" id="_todo000038"></a>- do we assume the vectors are initially empty?  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000038"></a>- do we assume the vectors are initially empty? </p>
+<p class="enddd"><a class="anchor" id="_todo000044"></a>When this is implemented, then we require an example in ChasteParametersFullFormat.xml  </p>
 </dd>
 <dt>Member <a class="el" href="classHeartConfig.html#a8d124b0c64108a23b401a24ba07015f6">HeartConfig::GetIonicModelRegions</a>  (std::vector&lt; boost::shared_ptr&lt; AbstractChasteRegion&lt; DIM &gt; &gt; &gt; &amp;rDefinedRegions, std::vector&lt; cp::ionic_model_selection_type &gt; &amp;rIonicModels) const</dt>
 <dd><a class="anchor" id="_todo000042"></a>When this is implemented, then we require an example in ChasteParametersFullFormat.xml  </dd>
 <dt>Member <a class="el" href="classHeartConfig.html#a043cf239f3e3db27789cd569fa7261e6">HeartConfig::GetStimuli</a>  (std::vector&lt; boost::shared_ptr&lt; AbstractStimulusFunction &gt; &gt; &amp;rStimuliApplied, std::vector&lt; boost::shared_ptr&lt; AbstractChasteRegion&lt; DIM &gt; &gt; &gt; &amp;rStimulatedAreas) const</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000036"></a>There is no set method </p>
-<p class="enddd"><a class="anchor" id="_todo000035"></a>- do we assume the vectors are initially empty? </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000035"></a>- do we assume the vectors are initially empty?</p>
+<p class="enddd"><a class="anchor" id="_todo000036"></a>There is no set method  </p>
 </dd>
 <dt>Member <a class="el" href="classHeartConfig.html#a2f629df484e2205be3f61af02d5144e3">HeartConfig::HeartConfig</a>  ()</dt>
 <dd><a class="anchor" id="_todo000041"></a>#1703 This defaults should be set in <a class="el" href="HeartConfigDefaults_8hpp.html">HeartConfigDefaults.hpp</a>  </dd>
@@ -375,65 +375,65 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dd><a class="anchor" id="_todo000046"></a>#1703 Think about adding this convenience method either copying the existing BathIds, resetting them out of the way, or making them empty...  </dd>
 <dt>Member <a class="el" href="classHeartGeometryInformation.html#a1289b90320250f683b4898be7ba4c8c1">HeartGeometryInformation&lt; SPACE_DIM &gt;::LEFT_VENTRICLE_WALL</a>  </dt>
 <dd><a class="anchor" id="_todo000034"></a>#1703 Perhaps add these constants to <a class="el" href="classHeartConfig.html">HeartConfig</a>...  </dd>
-<dt>Member <a class="el" href="classHeterotypicBoundaryLengthWriter.html#a6a1dd52efff34cee93db355127c16815">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (VertexBasedCellPopulation&lt; SPACE_DIM &gt; *pCellPopulation)</dt>
-<dd><a class="anchor" id="_todo000310"></a>#2273 - check if this call to Update() is needed  </dd>
-<dt>Member <a class="el" href="classHeterotypicBoundaryLengthWriter.html#a855e4331acf291962e3bc9cc3f26e469">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (PottsBasedCellPopulation&lt; SPACE_DIM &gt; *pCellPopulation)</dt>
-<dd><a class="anchor" id="_todo000309"></a>#2273 - investigate whether there is a hard-coded assumption that neighbouring nodes in Potts simulations are unit distance apart  </dd>
+<dt>Member <a class="el" href="classHeterotypicBoundaryLengthWriter.html#a4aac1004aad00bfc926c7f53f7471b89">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt; *pCellPopulation)</dt>
+<dd><a class="anchor" id="_todo000307"></a>#2273 - check we have correctly dealt with ghost nodes  </dd>
 <dt>Member <a class="el" href="classHeterotypicBoundaryLengthWriter.html#a09b814d8e1658cb638d0116cfbefae9c">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (NodeBasedCellPopulation&lt; SPACE_DIM &gt; *pCellPopulation)</dt>
 <dd><a class="anchor" id="_todo000308"></a>#2273 - check if this call to Update() is needed  </dd>
+<dt>Member <a class="el" href="classHeterotypicBoundaryLengthWriter.html#a855e4331acf291962e3bc9cc3f26e469">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (PottsBasedCellPopulation&lt; SPACE_DIM &gt; *pCellPopulation)</dt>
+<dd><a class="anchor" id="_todo000309"></a>#2273 - investigate whether there is a hard-coded assumption that neighbouring nodes in Potts simulations are unit distance apart  </dd>
 <dt>Member <a class="el" href="classHeterotypicBoundaryLengthWriter.html#a4aac1004aad00bfc926c7f53f7471b89">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt; *pCellPopulation)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000307"></a>#2273 - check we have correctly dealt with ghost nodes </p>
-<p class="enddd"><a class="anchor" id="_todo000306"></a>#2273 - check if this call is needed  </p>
-</dd>
+<dd><a class="anchor" id="_todo000306"></a>#2273 - check if this call is needed  </dd>
+<dt>Member <a class="el" href="classHeterotypicBoundaryLengthWriter.html#a6a1dd52efff34cee93db355127c16815">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (VertexBasedCellPopulation&lt; SPACE_DIM &gt; *pCellPopulation)</dt>
+<dd><a class="anchor" id="_todo000310"></a>#2273 - check if this call to Update() is needed  </dd>
 <dt>Member <a class="el" href="classIncompressibleNonlinearElasticitySolver.html#a34ef6cc2f1238bdc45652f158af0ceb3">IncompressibleNonlinearElasticitySolver&lt; DIM &gt;::FormInitialGuess</a>  ()</dt>
 <dd><a class="anchor" id="_todo000221"></a>#2223 This is unlikely to work using <a class="el" href="classDistributedQuadraticMesh.html">DistributedQuadraticMesh</a> with Non-homogeneous material laws  </dd>
 <dt>Member <a class="el" href="classLegacyCellProliferativeTypesWriter.html#a068d6e0304c28308c17d005571dc7da2">LegacyCellProliferativeTypesWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetCellDataForVtkOutput</a>  (CellPtr pCell, AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt; *pCellPopulation)</dt>
 <dd><a class="anchor" id="_todo000302"></a>: replace this hard-coded 6 with the <a class="el" href="classApoptoticCellProperty.html">ApoptoticCellProperty</a> member mColour?  </dd>
 <dt>Member <a class="el" href="classLegacyCellProliferativeTypesWriter.html#a018dc3c4b31e02f47cd1bd9d3b8f5f9a">LegacyCellProliferativeTypesWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::VisitCell</a>  (CellPtr pCell, AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt; *pCellPopulation)</dt>
 <dd><a class="anchor" id="_todo000303"></a>: replace this hard-coded 6 with the <a class="el" href="classApoptoticCellProperty.html">ApoptoticCellProperty</a> member mColour? (#2512)  </dd>
-<dt>Member <a class="el" href="classLinearSystem.html#af1bfecddfb062c43463efe466fd64aa8">LinearSystem::LinearSystem</a>  (PetscInt lhsVectorSize, unsigned rowPreallocation=UINT_MAX)</dt>
-<dd><a class="anchor" id="_todo000067"></a>: if we create a linear system object outside a cardiac solver, these are gonna be the default solver and preconditioner. Not consitent with ChasteDefaults.xml though...  </dd>
-<dt>Member <a class="el" href="classLinearSystem.html#a79b5a1abd9189331236113d48ffde5a9">LinearSystem::LinearSystem</a>  (Vec residualVector, Mat jacobianMatrix)</dt>
-<dd><a class="anchor" id="_todo000074"></a>: if we create a linear system object outside a cardiac solver, these are gonna be the default solver and preconditioner. Not consitent with ChasteDefaults.xml though...  </dd>
 <dt>Member <a class="el" href="classLinearSystem.html#a1a1d3ed87e066074e3e44bb02ac9c96a">LinearSystem::LinearSystem</a>  (Vec templateVector, unsigned rowPreallocation, bool newAllocationError=true)</dt>
-<dd><a class="anchor" id="_todo000073"></a>: if we create a linear system object outside a cardiac solver, these are gonna be the default solver and preconditioner. Not consistent with ChasteDefaults.xml though...  </dd>
+<dd><a class="anchor" id="_todo000076"></a>: if we create a linear system object outside a cardiac solver, these are gonna be the default solver and preconditioner. Not consistent with ChasteDefaults.xml though...  </dd>
+<dt>Member <a class="el" href="classLinearSystem.html#af1bfecddfb062c43463efe466fd64aa8">LinearSystem::LinearSystem</a>  (PetscInt lhsVectorSize, unsigned rowPreallocation=UINT_MAX)</dt>
+<dd><a class="anchor" id="_todo000075"></a>: if we create a linear system object outside a cardiac solver, these are gonna be the default solver and preconditioner. Not consitent with ChasteDefaults.xml though...  </dd>
+<dt>Member <a class="el" href="classLinearSystem.html#a79b5a1abd9189331236113d48ffde5a9">LinearSystem::LinearSystem</a>  (Vec residualVector, Mat jacobianMatrix)</dt>
+<dd><a class="anchor" id="_todo000077"></a>: if we create a linear system object outside a cardiac solver, these are gonna be the default solver and preconditioner. Not consitent with ChasteDefaults.xml though...  </dd>
 <dt>Member <a class="el" href="classLinearSystem.html#a5e6afa86b789aba62eba01d8eadeb198">LinearSystem::mOwnershipRangeLo</a>  </dt>
-<dd><a class="anchor" id="_todo000084"></a>Verify claim that ownership range for Vec and Mat is same. This should only matter for efficiency if the claim is false.  </dd>
+<dd><a class="anchor" id="_todo000066"></a>Verify claim that ownership range for Vec and Mat is same. This should only matter for efficiency if the claim is false.  </dd>
 <dt>Member <a class="el" href="classLinearSystem.html#acdf8590613ad204cc72dbe6a48f286fd">LinearSystem::mpBlockDiagonalPC</a>  </dt>
-<dd><a class="anchor" id="_todo000085"></a>: #1082 Create an abstract class for the preconditioners and use a single pointer  </dd>
+<dd><a class="anchor" id="_todo000067"></a>: #1082 Create an abstract class for the preconditioners and use a single pointer  </dd>
 <dt>Member <a class="el" href="classLinearSystem.html#ac090910dc85ff722cf2b560810460566">LinearSystem::ResetKspSolver</a>  ()</dt>
-<dd><a class="anchor" id="_todo000083"></a>#1695 Store this number in a member variable.  </dd>
+<dd><a class="anchor" id="_todo000086"></a>#1695 Store this number in a member variable.  </dd>
 <dt>Member <a class="el" href="classLinearSystem.html#a10c3dac3140195854ab2cd72f7b3a8be">LinearSystem::SetMatrixIsSymmetric</a>  (bool isSymmetric=true)</dt>
-<dd><a class="anchor" id="_todo000076"></a>: shall we allow modifying the symmetry flag anytime?  </dd>
+<dd><a class="anchor" id="_todo000079"></a>: shall we allow modifying the symmetry flag anytime?  </dd>
 <dt>Member <a class="el" href="classLinearSystem.html#aef72ca135343b273fb352fc7dcc590b0">LinearSystem::SetPcType</a>  (const char *pcType, boost::shared_ptr&lt; std::vector&lt; PetscInt &gt; &gt; pBathNodes=boost::shared_ptr&lt; std::vector&lt; PetscInt &gt; &gt;())</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000086"></a>: #1082 is this the way of defining a null pointer as the default value of pBathNodes? </p>
-<p class="interdd"><a class="anchor" id="_todo000077"></a>: #1082 use a single pointer to abstract class </p>
-<p class="interdd"><a class="anchor" id="_todo000079"></a>: #1082 use a single pointer to abstract class </p>
-<p class="enddd"><a class="anchor" id="_todo000078"></a>: #1082 use a single pointer to abstract class  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000074"></a>: #1082 is this the way of defining a null pointer as the default value of pBathNodes? </p>
+<p class="interdd"><a class="anchor" id="_todo000080"></a>: #1082 use a single pointer to abstract class </p>
+<p class="interdd"><a class="anchor" id="_todo000082"></a>: #1082 use a single pointer to abstract class </p>
+<p class="enddd"><a class="anchor" id="_todo000081"></a>: #1082 use a single pointer to abstract class  </p>
 </dd>
 <dt>Member <a class="el" href="classLinearSystem.html#a08b0f6efd57a961a0f7b1214b80897cc">LinearSystem::Solve</a>  (Vec lhsGuess=nullptr)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000082"></a>#1695 Store this number in a member variable. </p>
-<p class="interdd"><a class="anchor" id="_todo000081"></a>Should it be compulsory for the caller to supply this and manage the memory? </p>
-<p class="enddd"><a class="anchor" id="_todo000080"></a>This is a magic number. Do we want a warning here?  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000085"></a>#1695 Store this number in a member variable. </p>
+<p class="interdd"><a class="anchor" id="_todo000084"></a>Should it be compulsory for the caller to supply this and manage the memory? </p>
+<p class="enddd"><a class="anchor" id="_todo000083"></a>This is a magic number. Do we want a warning here?  </p>
 </dd>
 <dt>Member <a class="el" href="classLinearSystem.html#ae4aa80d347b07a6377607349eb334819">LinearSystem::~LinearSystem</a>  ()</dt>
-<dd><a class="anchor" id="_todo000075"></a>Never tested in linalg component  </dd>
+<dd><a class="anchor" id="_todo000078"></a>Never tested in linalg component  </dd>
 <dt>Member <a class="el" href="classMeshBasedCellPopulation.html#abb03119586dd906d5e7ad191728a1003">MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetVolumeOfVoronoiElement</a>  (unsigned index)</dt>
-<dd><a class="anchor" id="_todo000270"></a>This method is somewhat redundant following the introduction of the method <a class="el" href="classMeshBasedCellPopulation.html#ae37b1901c982b60b6e8dd10854a6a0bc">GetVolumeOfCell()</a> (see #1985). </dd>
+<dd><a class="anchor" id="_todo000271"></a>This method is somewhat redundant following the introduction of the method <a class="el" href="classMeshBasedCellPopulation.html#ae37b1901c982b60b6e8dd10854a6a0bc">GetVolumeOfCell()</a> (see #1985). </dd>
 <dt>Member <a class="el" href="classMeshBasedCellPopulation.html#a3d695764d1bac2895b62ae88f6c2076d">MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;::Update</a>  (bool hasHadBirthsOrDeaths=true)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000272"></a>check if there is a more efficient way of keeping track of node velocity information (#2404) </p>
-<p class="enddd"><a class="anchor" id="_todo000273"></a>There may be a better way of checking if node radii are set (#2694)  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000273"></a>There may be a better way of checking if node radii are set (#2694) </p>
+<p class="enddd"><a class="anchor" id="_todo000272"></a>check if there is a more efficient way of keeping track of node velocity information (#2404)  </p>
 </dd>
 <dt>Member <a class="el" href="classMeshBasedCellPopulationWithGhostNodes.html#a66b743e5fb21be4bc0c34154dc609711">MeshBasedCellPopulationWithGhostNodes&lt; DIM &gt;::WriteVtkResultsToFile</a>  (const std::string &amp;rDirectory)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000269"></a>#1975 - deal with possibility of information stored in <a class="el" href="classCellData.html">CellData</a> </p>
-<p class="enddd"><a class="anchor" id="_todo000271"></a>#1975 - deal with possibility of information stored in <a class="el" href="classCellData.html">CellData</a>  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000270"></a>#1975 - deal with possibility of information stored in <a class="el" href="classCellData.html">CellData</a> </p>
+<p class="enddd"><a class="anchor" id="_todo000269"></a>#1975 - deal with possibility of information stored in <a class="el" href="classCellData.html">CellData</a>  </p>
 </dd>
 <dt>Class <a class="el" href="classMeshEventHandler.html">MeshEventHandler</a>  </dt>
 <dd><a class="anchor" id="_todo000167"></a>Temporary for #2351  </dd>
 <dt>Member <a class="el" href="classMonodomainPurkinjeProblem.html#a9a0e2fd0a4042cdffcc5da7b08927f00">MonodomainPurkinjeProblem&lt; ELEMENT_DIM, SPACE_DIM &gt;::CreateSolver</a>  ()</dt>
-<dd><a class="anchor" id="_todo000039"></a>#2017 give a nice error  </dd>
+<dd><a class="anchor" id="_todo000040"></a>#2017 give a nice error  </dd>
 <dt>Member <a class="el" href="classMonodomainPurkinjeProblem.html#a25de9b144cafde38cceaeac5ff17fa0f">MonodomainPurkinjeProblem&lt; ELEMENT_DIM, SPACE_DIM &gt;::serialize</a>  (Archive &amp;archive, const unsigned int version)</dt>
-<dd><a class="anchor" id="_todo000040"></a>Serialization of Purkinje problems is untested  </dd>
+<dd><a class="anchor" id="_todo000039"></a>Serialization of Purkinje problems is untested  </dd>
 <dt>Member <a class="el" href="classMooneyRivlinMaterialLaw.html#a16002ef8753f56e75545c07f2a079209">MooneyRivlinMaterialLaw&lt; DIM &gt;::Get_d2W_dI1</a>  (double I1, double I2)</dt>
 <dd><a class="anchor" id="_todo000213"></a>The name of this method should not include underscores. </dd>
 <dt>Member <a class="el" href="classMooneyRivlinMaterialLaw.html#aa6ef7d8e0134db35cf1f590358a17890">MooneyRivlinMaterialLaw&lt; DIM &gt;::Get_d2W_dI1I2</a>  (double I1, double I2)</dt>
@@ -451,14 +451,14 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classMutableMesh.html#ac7c26be6d2e53cba93283ca9200bdc66">MutableMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::SplitLongEdges</a>  (double cutoffLength)</dt>
 <dd><a class="anchor" id="_todo000113"></a>use iterators to tidy this up  </dd>
 <dt>Member <a class="el" href="classMutableVertexMesh.html#a0fe5b93f5673b432caafe002707d82bc">MutableVertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::CheckForSwapsFromShortEdges</a>  ()</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000141"></a>Could we search more efficiently by just iterating over edges? (see #2401) </p>
-<p class="enddd"><a class="anchor" id="_todo000143"></a>Use iterators to tidy this up (see #2401)  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000144"></a>Use iterators to tidy this up (see #2401) </p>
+<p class="enddd"><a class="anchor" id="_todo000143"></a>Could we search more efficiently by just iterating over edges? (see #2401)  </p>
 </dd>
 <dt>Member <a class="el" href="classMutableVertexMesh.html#a52a816bda4b8cdf4b93c8ca787082cfd">MutableVertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::CheckForT2Swaps</a>  (<a class="el" href="classVertexElementMap.html">VertexElementMap</a> &amp;rElementMap)</dt>
 <dd><a class="anchor" id="_todo000145"></a>: cover this line in a test  </dd>
 <dt>Member <a class="el" href="classMutableVertexMesh.html#aeecc3fb0677e787592ebe9b81f0e65ac">MutableVertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::DivideElement</a>  (VertexElement&lt; ELEMENT_DIM, SPACE_DIM &gt; *pElement, unsigned nodeAIndex, unsigned nodeBIndex, bool placeOriginalElementBelow=false)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000138"></a>this could be more efficient (see #2401) </p>
-<p class="enddd"><a class="anchor" id="_todo000131"></a>This method currently assumes SPACE_DIM = 2 (see #866) </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000131"></a>This method currently assumes SPACE_DIM = 2 (see #866)</p>
+<p class="enddd"><a class="anchor" id="_todo000138"></a>this could be more efficient (see #2401)  </p>
 </dd>
 <dt>Member <a class="el" href="classMutableVertexMesh.html#a6f364bc7a3a1771ca544f8b15938cb09">MutableVertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::DivideElementAlongGivenAxis</a>  (VertexElement&lt; ELEMENT_DIM, SPACE_DIM &gt; *pElement, c_vector&lt; double, SPACE_DIM &gt; axisOfDivision, bool placeOriginalElementBelow=false)</dt>
 <dd><a class="anchor" id="_todo000137"></a>or should we move a and b apart, it may interfere with neighbouring edges? (see #1399 and #2401)  </dd>
@@ -471,28 +471,28 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classMutableVertexMesh.html#a51e7eb87d4bb3444dc747f74a8e11bdd">MutableVertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ReMesh</a>  ()</dt>
 <dd><a class="anchor" id="_todo000133"></a>This method seems to be redundant; remove it? (#2401)  </dd>
 <dt>Member <a class="el" href="classMutableVertexMesh.html#af4d4012ffd46303c7e7cce923ffb53b8">MutableVertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ReMesh</a>  (<a class="el" href="classVertexElementMap.html">VertexElementMap</a> &amp;rElementMap)</dt>
-<dd><a class="anchor" id="_todo000139"></a>Implement <a class="el" href="classMutableVertexMesh.html#a51e7eb87d4bb3444dc747f74a8e11bdd">ReMesh()</a> in 3D (see #1422)  </dd>
+<dd><a class="anchor" id="_todo000141"></a>Implement <a class="el" href="classMutableVertexMesh.html#a51e7eb87d4bb3444dc747f74a8e11bdd">ReMesh()</a> in 3D (see #1422)  </dd>
 <dt>Member <a class="el" href="classMutableVertexMesh.html#a1c6ab25fc5774b21ec4e793204c7335f">MutableVertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::serialize</a>  (Archive &amp;archive, const unsigned int version)</dt>
 <dd><a class="anchor" id="_todo000132"></a>: maybe we should archive the mLocationsOfT1Swaps and mDeletedNodeIndices etc. as well?  </dd>
 <dt>Member <a class="el" href="classMutableVertexMesh.html#a87c8c8d0942a5573314756f972d082fb">MutableVertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::WidenEdgeOrCorrectIntersectionLocationIfNecessary</a>  (unsigned indexA, unsigned indexB, c_vector&lt; double, 2 &gt; intersection)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000154"></a>investigate if moving A and B causes other issues with nearby nodes (see #2401)</p>
+<dd><p class="startdd"><a class="anchor" id="_todo000156"></a>currently this assumes a worst case scenario of 3 nodes between A and B; could be less movement for other cases (see #2401) </p>
 <p class="interdd"><a class="anchor" id="_todo000155"></a>currently this assumes a worst case scenario of 3 nodes between A and B could be less movement for other cases (see #1399 and #2401) </p>
-<p class="enddd"><a class="anchor" id="_todo000156"></a>currently this assumes a worst case scenario of 3 nodes between A and B; could be less movement for other cases (see #2401)  </p>
+<p class="enddd"><a class="anchor" id="_todo000154"></a>investigate if moving A and B causes other issues with nearby nodes (see #2401) </p>
 </dd>
 <dt>Member <a class="el" href="classNodeBasedCellPopulation.html#a84737c7f74b0ab7b91dd67f1187b08e8">NodeBasedCellPopulation&lt; DIM &gt;::UpdateMapsAfterRemesh</a>  (<a class="el" href="classNodeMap.html">NodeMap</a> &amp;map)</dt>
 <dd><a class="anchor" id="_todo000274"></a>we want to make mCellLocationMap private - we need to find a better way of doing this  </dd>
 <dt>Member <a class="el" href="classNodePartitioner.html#a98d5b18d486ff5e3786082c0d6e4b385">NodePartitioner&lt; ELEMENT_DIM, SPACE_DIM &gt;::PetscMatrixPartitioning</a>  (AbstractMeshReader&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMeshReader, std::vector&lt; unsigned &gt; &amp;rNodePermutation, std::set&lt; unsigned &gt; &amp;rNodesOwned, std::vector&lt; unsigned &gt; &amp;rProcessorsOffset)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000116"></a>: This assembly is likely to generate many communications. Try to interleave other operations by executing them between Begin() and End(). </p>
-<p class="enddd"><a class="anchor" id="_todo000115"></a>#1216 change the number 54 below (row nonzero allocation) to be nonmagic  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000115"></a>#1216 change the number 54 below (row nonzero allocation) to be nonmagic </p>
+<p class="enddd"><a class="anchor" id="_todo000116"></a>: This assembly is likely to generate many communications. Try to interleave other operations by executing them between Begin() and End().  </p>
 </dd>
 <dt>Class <a class="el" href="classNodeVelocityWriter.html">NodeVelocityWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>  </dt>
-<dd><a class="anchor" id="_todo000311"></a>some code duplication in methods; potential for refactoring (#2404)  </dd>
-<dt>Member <a class="el" href="classNodeVelocityWriter.html#adb937a0dc23bbc722cea5b163a61d184">NodeVelocityWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt; *pCellPopulation)</dt>
+<dd><a class="anchor" id="_todo000313"></a>some code duplication in methods; potential for refactoring (#2404)  </dd>
+<dt>Member <a class="el" href="classNodeVelocityWriter.html#a2367d9303cbe352d73ef07b6991ba293">NodeVelocityWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (NodeBasedCellPopulation&lt; SPACE_DIM &gt; *pCellPopulation)</dt>
 <dd><a class="anchor" id="_todo000312"></a>correct time step? (#2404)  </dd>
+<dt>Member <a class="el" href="classNodeVelocityWriter.html#adb937a0dc23bbc722cea5b163a61d184">NodeVelocityWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (MeshBasedCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt; *pCellPopulation)</dt>
+<dd><a class="anchor" id="_todo000311"></a>correct time step? (#2404)  </dd>
 <dt>Member <a class="el" href="classNodeVelocityWriter.html#aa61388d9178e89d0dd88a21722610186">NodeVelocityWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (VertexBasedCellPopulation&lt; SPACE_DIM &gt; *pCellPopulation)</dt>
 <dd><a class="anchor" id="_todo000314"></a>correct time step? (#2404)  </dd>
-<dt>Member <a class="el" href="classNodeVelocityWriter.html#a2367d9303cbe352d73ef07b6991ba293">NodeVelocityWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit</a>  (NodeBasedCellPopulation&lt; SPACE_DIM &gt; *pCellPopulation)</dt>
-<dd><a class="anchor" id="_todo000313"></a>correct time step? (#2404)  </dd>
 <dt>Member <a class="el" href="classObsoleteBoxCollection.html#ab914b3a0beb3eb93e6e472a8fbb8a703">ObsoleteBoxCollection&lt; DIM &gt;::ObsoleteBoxCollection</a>  (double boxWidth, c_vector&lt; double, 2 *DIM &gt; domainSize, bool isPeriodicInX=false, bool isPeriodicInY=false, bool isPeriodicInZ=false)</dt>
 <dd><a class="anchor" id="_todo000128"></a>#2725 example: domain width of 1.0 and box width of 0.25, the following line will create 5 boxes not 4  </dd>
 <dt>Member <a class="el" href="classOdeSystemInformation.html#a290a58619ebad70ded740c148df3ad9d">OdeSystemInformation&lt; ODE_SYSTEM &gt;::mpInstance</a>  </dt>
@@ -512,13 +512,13 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="structPCLDUFactorisation_1_1PCLDUFactorisationContext.html#a89466aa004f0e1a893e555c238d6ec84">PCLDUFactorisation::PCLDUFactorisationContext::PC_amg_A22</a>  </dt>
 <dd><a class="anchor" id="_todo000064"></a>- don't create this every iteration but save it first time is needed.  </dd>
 <dt>Class <a class="el" href="classPCTwoLevelsBlockDiagonal.html">PCTwoLevelsBlockDiagonal</a>  </dt>
-<dd><a class="anchor" id="_todo000066"></a>: #1082 update this description  </dd>
+<dd><a class="anchor" id="_todo000068"></a>: #1082 update this description  </dd>
 <dt>Member <a class="el" href="classPCTwoLevelsBlockDiagonal.html#a6115871fb1c77b86a91cc9ba9eedaee0">PCTwoLevelsBlockDiagonal::PCTwoLevelsBlockDiagonalCreate</a>  (KSP &amp;rKspObject, std::vector&lt; PetscInt &gt; &amp;rBathNodes)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000072"></a>: #1082 OK in parallel. Use as an example for the other two blocks </p>
-<p class="interdd"><a class="anchor" id="_todo000071"></a>: #1082 legacy, no need to use the references </p>
-<p class="interdd"><a class="anchor" id="_todo000070"></a>: #1082 assert size(x1) = size(x21) + size(x22) </p>
-<p class="interdd"><a class="anchor" id="_todo000068"></a>: #1082 won't work in parallel </p>
-<p class="enddd"><a class="anchor" id="_todo000069"></a>: #1082 won't work in parallel  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000071"></a>: #1082 assert size(x1) = size(x21) + size(x22) </p>
+<p class="interdd"><a class="anchor" id="_todo000072"></a>: #1082 legacy, no need to use the references </p>
+<p class="interdd"><a class="anchor" id="_todo000070"></a>: #1082 won't work in parallel </p>
+<p class="interdd"><a class="anchor" id="_todo000069"></a>: #1082 won't work in parallel </p>
+<p class="enddd"><a class="anchor" id="_todo000073"></a>: #1082 OK in parallel. Use as an example for the other two blocks  </p>
 </dd>
 <dt>Class <a class="el" href="classPdeSimulationTime.html">PdeSimulationTime</a>  </dt>
 <dd><a class="anchor" id="_todo000189"></a>Integrate with other time stepping classes or remove? A small convenience class providing a consistent global time to the PDE solver classes. </dd>
@@ -539,10 +539,10 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classPolynomialMaterialLaw3d.html#a1aabede19af92507752a4ddcb58311ff">PolynomialMaterialLaw3d::Get_dW_dI2</a>  (double I1, double I2)</dt>
 <dd><a class="anchor" id="_todo000217"></a>The name of this method should not include underscores. </dd>
 <dt>Member <a class="el" href="classPostProcessingWriter.html#abdb67a953b0778e2fac1afb6b5750b40">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::WriteAboveThresholdDepolarisationFile</a>  (double threshold)</dt>
-<dd><a class="anchor" id="_todo000013"></a>This method ought to be private and called by the WritePostProcessingFiles method if the user requests for it. This will be possible after modifying the schema and specifying Get and Set methods in <a class="el" href="classHeartConfig.html">HeartConfig</a> to check whether the user wants this file or not </dd>
+<dd><a class="anchor" id="_todo000012"></a>This method ought to be private and called by the WritePostProcessingFiles method if the user requests for it. This will be possible after modifying the schema and specifying Get and Set methods in <a class="el" href="classHeartConfig.html">HeartConfig</a> to check whether the user wants this file or not </dd>
 <dt>Member <a class="el" href="classPostProcessingWriter.html#a01f17ae3ebbe61bdc066f8fa2b2fd1dd">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::WritePostProcessingFiles</a>  ()</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000015"></a>#2359 work out how to get rid of these lines </p>
-<p class="enddd"><a class="anchor" id="_todo000014"></a>#2359 work out how to get rid of this line needed because <a class="el" href="classPseudoEcgCalculator.html">PseudoEcgCalculator</a> makes its own <a class="el" href="classHdf5DataReader.html">Hdf5DataReader</a>.  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000014"></a>#2359 work out how to get rid of this line needed because <a class="el" href="classPseudoEcgCalculator.html">PseudoEcgCalculator</a> makes its own <a class="el" href="classHdf5DataReader.html">Hdf5DataReader</a>. </p>
+<p class="enddd"><a class="anchor" id="_todo000015"></a>#2359 work out how to get rid of these lines  </p>
 </dd>
 <dt>Member <a class="el" href="classPottsBasedCellPopulation.html#aa5da9623326526f6703a500bc7db241d">PottsBasedCellPopulation&lt; DIM &gt;::CreateElementTessellation</a>  ()</dt>
 <dd><a class="anchor" id="_todo000276"></a>implement this method (#1666)  </dd>
@@ -565,15 +565,15 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <p class="enddd"><a class="anchor" id="_todo000248"></a>Mesh should be const (#1076)  </p>
 </dd>
 <dt>Member <a class="el" href="classPropagationPropertiesCalculator.html#ab15f4eda33765afaf13429629a185697">PropagationPropertiesCalculator::CalculateAllConductionVelocities</a>  (unsigned globalNearNodeIndex, unsigned globalFarNodeIndex, const double euclideanDistance)</dt>
-<dd><a class="anchor" id="_todo000012"></a>remove magic number? (#1884)  </dd>
+<dd><a class="anchor" id="_todo000013"></a>remove magic number? (#1884)  </dd>
 <dt>Member <a class="el" href="classPropagationPropertiesCalculator.html#a0a47dc575c80c929b57ec6424f3db405">PropagationPropertiesCalculator::CalculateConductionVelocity</a>  (unsigned globalNearNodeIndex, unsigned globalFarNodeIndex, const double euclideanDistance)</dt>
 <dd><a class="anchor" id="_todo000011"></a>remove magic number? (#1884)  </dd>
 <dt>Member <a class="el" href="classQuadraticMeshHelper.html#a608ef99997f831e92ead524f125acf7c">QuadraticMeshHelper&lt; DIM &gt;::AddNodesToBoundaryElements</a>  (<a class="el" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt; DIM, DIM &gt;</a> *pMesh, AbstractMeshReader&lt; DIM, DIM &gt; *pMeshReader)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000117"></a>#1930 Until there is an interator_facade over boundary elements, </p>
-<p class="enddd"><a class="anchor" id="_todo000119"></a>#1930 Once there is an interator_facade then we can do: elem_index = pMeshReader-&gt;GetFaceData(face_index).ContainingElement;  </p>
+<p class="enddd"><a class="anchor" id="_todo000118"></a>#1930 Once there is an interator_facade then we can do: elem_index = pMeshReader-&gt;GetFaceData(face_index).ContainingElement;  </p>
 </dd>
 <dt>Member <a class="el" href="classQuadraticMeshHelper.html#a758d22a85130d84f33eb94ba8c82e69d">QuadraticMeshHelper&lt; DIM &gt;::HelperMethod1</a>  (unsigned boundaryElemNode0, unsigned boundaryElemNode1, <a class="el" href="classElement.html">Element&lt; DIM, DIM &gt;</a> *pElement, unsigned node0, unsigned node1, unsigned node2, unsigned &amp;rOffset, bool &amp;rReverse)</dt>
-<dd><a class="anchor" id="_todo000118"></a>document these parameters </dd>
+<dd><a class="anchor" id="_todo000119"></a>document these parameters </dd>
 <dt>Member <a class="el" href="classQuadraticMeshHelper.html#a4b8600c287c23379cba3f6c3b843c97b">QuadraticMeshHelper&lt; DIM &gt;::HelperMethod2</a>  (<a class="el" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt; DIM, DIM &gt;</a> *pMesh, <a class="el" href="classBoundaryElement.html">BoundaryElement</a>&lt; DIM-1, DIM &gt; *pBoundaryElement, <a class="el" href="classElement.html">Element&lt; DIM, DIM &gt;</a> *pElement, unsigned internalNode0, unsigned internalNode1, unsigned internalNode2, unsigned offset, bool reverse)</dt>
 <dd><a class="anchor" id="_todo000120"></a>document these parameters </dd>
 <dt>Member <a class="el" href="classRandomCaSwitchingUpdateRule.html#aa124cd1a0df68c690fbbef4df7ce8e44">RandomCaSwitchingUpdateRule&lt; DIM &gt;::mSwitchingParameter</a>  </dt>
@@ -591,8 +591,8 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classSurfaceAreaConstraintPottsUpdateRule.html#ab209a93af6a067ce393f416553fcfbd4">SurfaceAreaConstraintPottsUpdateRule&lt; DIM &gt;::SurfaceAreaConstraintPottsUpdateRule</a>  ()</dt>
 <dd><a class="anchor" id="_todo000286"></a>Default values don't apply in 3D.  </dd>
 <dt>Member <a class="el" href="classTargetAreaLinearGrowthModifier.html#a31715cc793bfe73d19a4e7b4bdd1ece6">TargetAreaLinearGrowthModifier&lt; DIM &gt;::UpdateTargetAreaOfCell</a>  (const CellPtr pCell)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000295"></a>: which cells are apoptotic? if they get apoptotic during G2-phase then this line has to be changed </p>
-<p class="enddd"><a class="anchor" id="_todo000296"></a>This is a little hack that we might want to clean up in the future.  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000296"></a>This is a little hack that we might want to clean up in the future. </p>
+<p class="enddd"><a class="anchor" id="_todo000295"></a>: which cells are apoptotic? if they get apoptotic during G2-phase then this line has to be changed  </p>
 </dd>
 <dt>Member <a class="el" href="classTetrahedralMesh.html#a2b7721c1b40cb3b817bc8acdd974bd0b">TetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ImportFromMesher</a>  (MESHER_IO &amp;mesherOutput, unsigned numberOfElements, int *elementList, unsigned numberOfFaces, int *faceList, int *edgeMarkerList)</dt>
 <dd><a class="anchor" id="_todo000121"></a>#1545: (or add arguments ...) </dd>
@@ -608,11 +608,11 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dd><a class="anchor" id="_todo000123"></a>#2452 We need a way of propagating this back to the mesh (and insuring that the mesh is NOT being re-partitioned) </dd>
 <dt>Member <a class="el" href="classTrianglesMeshWriter.html#af0405222ffe5cc110081c53452802940">TrianglesMeshWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::WriteFiles</a>  ()</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000176"></a>#1949 Readers do not currently support reading of node attributes, so we cannot yet write them from a reader </p>
-<p class="interdd"><a class="anchor" id="_todo000175"></a>#1949 </p>
-<p class="interdd"><a class="anchor" id="_todo000174"></a>#1949 Readers do not currently support reading of node attributes, so we cannot yet write them from a reader </p>
 <p class="interdd"><a class="anchor" id="_todo000179"></a>#1949 </p>
 <p class="interdd"><a class="anchor" id="_todo000178"></a>#1949 </p>
-<p class="enddd"><a class="anchor" id="_todo000177"></a>#1949 Will deadlock on GetNode(global ID) in parallel since this code is run on the master process  </p>
+<p class="interdd"><a class="anchor" id="_todo000177"></a>#1949 Will deadlock on GetNode(global ID) in parallel since this code is run on the master process </p>
+<p class="interdd"><a class="anchor" id="_todo000174"></a>#1949 Readers do not currently support reading of node attributes, so we cannot yet write them from a reader </p>
+<p class="enddd"><a class="anchor" id="_todo000175"></a>#1949  </p>
 </dd>
 <dt>Member <a class="el" href="classVertexBasedCellPopulation.html#ad1fdd7b913b9894942026192ba31114d">VertexBasedCellPopulation&lt; DIM &gt;::GetCellDataItemAtPdeNode</a>  (unsigned pdeNodeIndex, std::string &amp;rVariableName, bool dirichletBoundaryConditionApplies=false, double dirichletBoundaryValue=0.0)</dt>
 <dd><a class="anchor" id="_todo000292"></a>Work out a better way to do the nodes not associated with cells  </dd>
@@ -623,17 +623,17 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classVertexBasedCellPopulation.html#add7793abd54166755fb92b2d375f31bf">VertexBasedCellPopulation&lt; DIM &gt;::Update</a>  (bool hasHadBirthsOrDeaths=true)</dt>
 <dd><a class="anchor" id="_todo000290"></a>We want to make these maps private, so we need a better way of doing the code below.  </dd>
 <dt>Member <a class="el" href="classVertexMesh.html#a8b97f419143391a509ae849611bba446">VertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ElementIncludesPoint</a>  (const c_vector&lt; double, SPACE_DIM &gt; &amp;rTestPoint, unsigned elementIndex)</dt>
-<dd><a class="anchor" id="_todo000151"></a>(see #2387 and #2401) Investigate why the commented implementation causes Test2DVertexBasedCryptRepresentativeSimulation to fail  </dd>
+<dd><a class="anchor" id="_todo000152"></a>(see #2387 and #2401) Investigate why the commented implementation causes Test2DVertexBasedCryptRepresentativeSimulation to fail  </dd>
 <dt>Member <a class="el" href="classVertexMesh.html#ac3b1ef99d19e007c3ba87c816f90605b">VertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetCentroidOfElement</a>  (unsigned index)</dt>
 <dd><a class="anchor" id="_todo000146"></a>compute centroid rather than centre of mass (see #1422)  </dd>
 <dt>Member <a class="el" href="classVertexMesh.html#aae5aa2c760a84b9261d3793f2a990451">VertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::SolveBoundaryElementMapping</a>  (unsigned index) const</dt>
-<dd><a class="anchor" id="_todo000140"></a>sort out boundary elements in a vertex mesh (#1263)  </dd>
+<dd><a class="anchor" id="_todo000142"></a>sort out boundary elements in a vertex mesh (#1263)  </dd>
 <dt>Class <a class="el" href="classVertexMesh_1_1VertexElementIterator.html">VertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::VertexElementIterator</a>  </dt>
-<dd><a class="anchor" id="_todo000152"></a>This is the same as in <a class="el" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a> and <a class="el" href="classPottsMesh.html">PottsMesh</a> - merge? (#1379)  </dd>
+<dd><a class="anchor" id="_todo000151"></a>This is the same as in <a class="el" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a> and <a class="el" href="classPottsMesh.html">PottsMesh</a> - merge? (#1379)  </dd>
 <dt>Member <a class="el" href="classVertexMesh.html#a780ce4177239e9352e3c3f540b990610">VertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::VertexMesh</a>  (TetrahedralMesh&lt; 2, 2 &gt; &amp;rMesh, bool isPeriodic=false, bool isBounded=false)</dt>
-<dd><a class="anchor" id="_todo000142"></a>Merge with 3D Voronoi constructor? (see #1075) </dd>
+<dd><a class="anchor" id="_todo000139"></a>Merge with 3D Voronoi constructor? (see #1075) </dd>
 <dt>Member <a class="el" href="classVertexMesh.html#a95c11e802b7024578eb490d1f7e1a767">VertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::VertexMesh</a>  (<a class="el" href="classTetrahedralMesh.html">TetrahedralMesh&lt; 3, 3 &gt;</a> &amp;rMesh)</dt>
-<dd><a class="anchor" id="_todo000144"></a>Merge with 2D Voronoi constructor? (see #1075) </dd>
+<dd><a class="anchor" id="_todo000140"></a>Merge with 2D Voronoi constructor? (see #1075) </dd>
 <dt>Member <a class="el" href="classVertexMeshReader.html#a462a4c94668c6985fa899ff72d80e96e">VertexMeshReader&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNextElementDataWithFaces</a>  ()</dt>
 <dd><a class="anchor" id="_todo000160"></a>Store face orientations? (#1076/#1377)  </dd>
 <dt>Member <a class="el" href="classVertexMeshReader.html#af5f354ca7f6b4889a66a9e2015b8f471">VertexMeshReader&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNextFaceData</a>  ()</dt>
@@ -651,13 +651,13 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classVertexMeshWriter.html#a7b70f3e874b4a7111fcb9ba36c26aa3d">VertexMeshWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::WriteFiles</a>  ()</dt>
 <dd><a class="anchor" id="_todo000166"></a>Store face orientations? (#1076/#1377)  </dd>
 <dt>Member <a class="el" href="classVertexMeshWriter.html#ad0255a5990c2ed45d592fabfd86baa3f">VertexMeshWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::WriteFilesUsingMesh</a>  (VertexMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMesh)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000163"></a>Mesh should be const (#1076) </p>
-<p class="enddd"><a class="anchor" id="_todo000165"></a>Mesh should be const (#1076)  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000165"></a>Mesh should be const (#1076) </p>
+<p class="enddd"><a class="anchor" id="_todo000163"></a>Mesh should be const (#1076)  </p>
 </dd>
 <dt>Member <a class="el" href="classVolumeConstraintPottsUpdateRule.html#a9ee8b8c8355849d8640db2774544c610">VolumeConstraintPottsUpdateRule&lt; DIM &gt;::mDeformationEnergyParameter</a>  </dt>
-<dd><a class="anchor" id="_todo000287"></a>provide units  </dd>
+<dd><a class="anchor" id="_todo000288"></a>provide units  </dd>
 <dt>Member <a class="el" href="classVolumeConstraintPottsUpdateRule.html#afd65007dcda7f2166df34bbd344bb45f">VolumeConstraintPottsUpdateRule&lt; DIM &gt;::VolumeConstraintPottsUpdateRule</a>  ()</dt>
-<dd><a class="anchor" id="_todo000288"></a>Default values don't apply in 3D.  </dd>
+<dd><a class="anchor" id="_todo000287"></a>Default values don't apply in 3D.  </dd>
 <dt>Class <a class="el" href="classVolumeDependentAveragedSourceEllipticPde.html">VolumeDependentAveragedSourceEllipticPde&lt; DIM &gt;</a>  </dt>
 <dd><a class="anchor" id="_todo000241"></a>Consider creating a VolumeDependentAveragedSourceParabolicPde class  </dd>
 <dt>Member <a class="el" href="classVolumeTrackingModifier.html#ae542894bc323da62cb5b2b911ecbb75b">VolumeTrackingModifier&lt; DIM &gt;::UpdateCellData</a>  (<a class="el" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt; DIM, DIM &gt;</a> &amp;rCellPopulation)</dt>
@@ -667,8 +667,8 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <dt>Member <a class="el" href="classVtkMeshWriter.html#a916bbe019de8e4956d34b365ca7e11ca">VtkMeshWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::WriteFilesUsingMesh</a>  (AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMesh, bool keepOriginalElementIndexing=true)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000182"></a>#1322 Mesh should be const </p>
 <p class="interdd"><a class="anchor" id="_todo000180"></a>#1322 Mesh should really be const! </p>
-<p class="interdd"><a class="anchor" id="_todo000183"></a>This ought to look exactly like the other MakeVtkMesh </p>
-<p class="enddd"><a class="anchor" id="_todo000184"></a>#1494 Do we need a barrier? </p>
+<p class="interdd"><a class="anchor" id="_todo000184"></a>#1494 Do we need a barrier? </p>
+<p class="enddd"><a class="anchor" id="_todo000183"></a>This ought to look exactly like the other MakeVtkMesh </p>
 </dd>
 </dl>
 </div></div><!-- contents -->
