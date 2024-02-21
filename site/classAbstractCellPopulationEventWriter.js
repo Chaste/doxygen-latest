@@ -3,6 +3,7 @@ var classAbstractCellPopulationEventWriter =
     [ "AbstractCellPopulationEventWriter", "classAbstractCellPopulationEventWriter.html#a62c4c463b2eea8349f5d3e75c68c59a2", null ],
     [ "serialize", "classAbstractCellPopulationEventWriter.html#a57a6efb05cc546c29a3a94e5badddd4e", null ],
     [ "Visit", "classAbstractCellPopulationEventWriter.html#ae1b0fabed9b8c9c4ff2c45691435e54e", null ],
+    [ "Visit", "classAbstractCellPopulationEventWriter.html#a3b70e201d6a3199a58aa95418c6e5281", null ],
     [ "Visit", "classAbstractCellPopulationEventWriter.html#a85f5d9bbf1c283628286638b100810e6", null ],
     [ "Visit", "classAbstractCellPopulationEventWriter.html#a12a20a9b42b4a4aee554c4aab1a91a24", null ],
     [ "Visit", "classAbstractCellPopulationEventWriter.html#a4924b7551ff4ba70f8c4a4c1f68b8432", null ],

@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::42d35c65402f93050369c45e34ce3d09bac0f9a0</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f27b35ec9aa72280b44f219de6dafacc16a84165</span>
    </div>
   </td>
  </tr>
@@ -75,14 +75,14 @@ $(document).ready(function(){initNavTree('classAbstractCellPopulationEventWriter
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classAbstractCellPopulationEventWriter__inherit__graph.svg" width="480" height="995"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classAbstractCellPopulationEventWriter__inherit__graph.svg" width="480" height="1035"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for AbstractCellPopulationEventWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classAbstractCellPopulationEventWriter__coll__graph.svg" width="672" height="1367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classAbstractCellPopulationEventWriter__coll__graph.svg" width="672" height="1387"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -101,6 +101,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4924b7551ff4ba70f8c4a4c1f68b8432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa51263dd9b5d1f4e255dd3c92bd63b7e" id="r_aa51263dd9b5d1f4e255dd3c92bd63b7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCellPopulationEventWriter.html#aa51263dd9b5d1f4e255dd3c92bd63b7e">Visit</a> (<a class="el" href="classVertexBasedCellPopulation.html">VertexBasedCellPopulation</a>&lt; SPACE_DIM &gt; *pCellPopulation)=0</td></tr>
 <tr class="separator:aa51263dd9b5d1f4e255dd3c92bd63b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b70e201d6a3199a58aa95418c6e5281" id="r_a3b70e201d6a3199a58aa95418c6e5281"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCellPopulationEventWriter.html#a3b70e201d6a3199a58aa95418c6e5281">Visit</a> (<a class="el" href="classImmersedBoundaryCellPopulation.html">ImmersedBoundaryCellPopulation</a>&lt; SPACE_DIM &gt; *pCellPopulation)=0</td></tr>
+<tr class="separator:a3b70e201d6a3199a58aa95418c6e5281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAbstractCellBasedWriter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAbstractCellBasedWriter')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAbstractCellBasedWriter.html">AbstractCellBasedWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;</a></td></tr>
 <tr class="memitem:a00a2b5a444f35a89ed785cfaeb56206b inherit pub_methods_classAbstractCellBasedWriter" id="r_a00a2b5a444f35a89ed785cfaeb56206b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractCellBasedWriter.html#a00a2b5a444f35a89ed785cfaeb56206b">AbstractCellBasedWriter</a> (const std::string &amp;rFileName)</td></tr>
 <tr class="separator:a00a2b5a444f35a89ed785cfaeb56206b inherit pub_methods_classAbstractCellBasedWriter"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +153,7 @@ class AbstractCellPopulationEventWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;</div><p>
 <p>The key difference between this class and <a class="el" href="classAbstractCellPopulationWriter.html">AbstractCellPopulationWriter</a> is that writers inheriting from this class are NOT compatible with a RoundRobin loop, because they write information that needs to be collected from all processes, such as global counters for mutation states. These writers concentrate the information from all processes and then write it at each timestep for which output is required.</p>
 <p>These writers also only write data when an event has occured since the last output step/ </p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html#l00063">63</a> of file <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html">AbstractCellPopulationEventWriter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html#l00064">64</a> of file <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html">AbstractCellPopulationEventWriter.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a62c4c463b2eea8349f5d3e75c68c59a2" name="a62c4c463b2eea8349f5d3e75c68c59a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62c4c463b2eea8349f5d3e75c68c59a2">&#9670;&#160;</a></span>AbstractCellPopulationEventWriter()</h2>
@@ -228,12 +230,12 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html#l00075">75</a> of file <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html">AbstractCellPopulationEventWriter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html#l00076">76</a> of file <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html">AbstractCellPopulationEventWriter.hpp</a>.</p>
 
 </div>
 </div>
 <a id="ae1b0fabed9b8c9c4ff2c45691435e54e" name="ae1b0fabed9b8c9c4ff2c45691435e54e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1b0fabed9b8c9c4ff2c45691435e54e">&#9670;&#160;</a></span>Visit() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b0fabed9b8c9c4ff2c45691435e54e">&#9670;&#160;</a></span>Visit() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,8 +272,46 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 </div>
 </div>
+<a id="a3b70e201d6a3199a58aa95418c6e5281" name="a3b70e201d6a3199a58aa95418c6e5281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b70e201d6a3199a58aa95418c6e5281">&#9670;&#160;</a></span>Visit() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a class="el" href="classunsigned.html">unsigned</a> SPACE_DIM&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classAbstractCellPopulationEventWriter.html">AbstractCellPopulationEventWriter</a>&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classImmersedBoundaryCellPopulation.html">ImmersedBoundaryCellPopulation</a>&lt; SPACE_DIM &gt; *&#160;</td>
+          <td class="paramname"><em>pCellPopulation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visit the population and write the data.</p>
+<p>As this method is pure virtual, it must be overridden in subclasses.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCellPopulation</td><td>a pointer to the <a class="el" href="classImmersedBoundaryCellPopulation.html">ImmersedBoundaryCellPopulation</a> to visit. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classCellDivisionLocationsWriter.html#a2cea128922c881083de16e0c5048c938">CellDivisionLocationsWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>, and <a class="el" href="classCellRemovalLocationsWriter.html#a6755f9f52cd482aba33c35d384b00cc9">CellRemovalLocationsWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
+
+</div>
+</div>
 <a id="a85f5d9bbf1c283628286638b100810e6" name="a85f5d9bbf1c283628286638b100810e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85f5d9bbf1c283628286638b100810e6">&#9670;&#160;</a></span>Visit() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f5d9bbf1c283628286638b100810e6">&#9670;&#160;</a></span>Visit() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,7 +349,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div>
 </div>
 <a id="a12a20a9b42b4a4aee554c4aab1a91a24" name="a12a20a9b42b4a4aee554c4aab1a91a24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12a20a9b42b4a4aee554c4aab1a91a24">&#9670;&#160;</a></span>Visit() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a20a9b42b4a4aee554c4aab1a91a24">&#9670;&#160;</a></span>Visit() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +387,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div>
 </div>
 <a id="a4924b7551ff4ba70f8c4a4c1f68b8432" name="a4924b7551ff4ba70f8c4a4c1f68b8432"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4924b7551ff4ba70f8c4a4c1f68b8432">&#9670;&#160;</a></span>Visit() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4924b7551ff4ba70f8c4a4c1f68b8432">&#9670;&#160;</a></span>Visit() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,7 +425,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div>
 </div>
 <a id="aa51263dd9b5d1f4e255dd3c92bd63b7e" name="aa51263dd9b5d1f4e255dd3c92bd63b7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa51263dd9b5d1f4e255dd3c92bd63b7e">&#9670;&#160;</a></span>Visit() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51263dd9b5d1f4e255dd3c92bd63b7e">&#9670;&#160;</a></span>Visit() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,7 +523,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div><div class="memdoc">
 <p>Needed for serialization. </p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html#l00067">67</a> of file <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html">AbstractCellPopulationEventWriter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html#l00068">68</a> of file <a class="el" href="AbstractCellPopulationEventWriter_8hpp_source.html">AbstractCellPopulationEventWriter.hpp</a>.</p>
 
 </div>
 </div>

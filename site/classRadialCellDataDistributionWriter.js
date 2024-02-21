@@ -7,6 +7,7 @@ var classRadialCellDataDistributionWriter =
     [ "SetNumRadialBins", "classRadialCellDataDistributionWriter.html#a81a22b409523a18afabe8e0a8b89cfc5", null ],
     [ "SetVariableName", "classRadialCellDataDistributionWriter.html#a71f20a3f89d073bf558821756afc7afb", null ],
     [ "Visit", "classRadialCellDataDistributionWriter.html#aa7132521a36f38591d0e0f16bd389a49", null ],
+    [ "Visit", "classRadialCellDataDistributionWriter.html#ae0980bc6e162f5c6b8bb92e5456f8e0e", null ],
     [ "Visit", "classRadialCellDataDistributionWriter.html#a87b46ff7163bf3886c9b2e5866d8ee03", null ],
     [ "Visit", "classRadialCellDataDistributionWriter.html#a31d5039fb85ae85423614233bd628734", null ],
     [ "Visit", "classRadialCellDataDistributionWriter.html#ad88d92d73e1fc16d3dca0bd9c9602c48", null ],

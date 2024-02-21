@@ -18,6 +18,8 @@ var dir_2c0af3619cef4c486f07f6080b5b69b3 =
     [ "CaBasedCellPopulation.hpp", "CaBasedCellPopulation_8hpp_source.html", null ],
     [ "CellwiseDataGradient.cpp", "CellwiseDataGradient_8cpp_source.html", null ],
     [ "CellwiseDataGradient.hpp", "CellwiseDataGradient_8hpp_source.html", null ],
+    [ "ImmersedBoundaryCellPopulation.cpp", "ImmersedBoundaryCellPopulation_8cpp_source.html", null ],
+    [ "ImmersedBoundaryCellPopulation.hpp", "ImmersedBoundaryCellPopulation_8hpp_source.html", null ],
     [ "MeshBasedCellPopulation.cpp", "MeshBasedCellPopulation_8cpp_source.html", null ],
     [ "MeshBasedCellPopulation.hpp", "MeshBasedCellPopulation_8hpp_source.html", null ],
     [ "MeshBasedCellPopulationWithGhostNodes.cpp", "MeshBasedCellPopulationWithGhostNodes_8cpp_source.html", null ],

@@ -32,6 +32,10 @@ var dir_8e6e7e93debdd2cb7a5ff78de52389ae =
     [ "CellRosetteRankWriter.hpp", "CellRosetteRankWriter_8hpp_source.html", null ],
     [ "CellVolumesWriter.cpp", "CellVolumesWriter_8cpp_source.html", null ],
     [ "CellVolumesWriter.hpp", "CellVolumesWriter_8hpp_source.html", null ],
+    [ "ImmersedBoundaryBoundaryCellWriter.cpp", "ImmersedBoundaryBoundaryCellWriter_8cpp_source.html", null ],
+    [ "ImmersedBoundaryBoundaryCellWriter.hpp", "ImmersedBoundaryBoundaryCellWriter_8hpp_source.html", null ],
+    [ "ImmersedBoundaryNeighbourNumberWriter.cpp", "ImmersedBoundaryNeighbourNumberWriter_8cpp_source.html", null ],
+    [ "ImmersedBoundaryNeighbourNumberWriter.hpp", "ImmersedBoundaryNeighbourNumberWriter_8hpp_source.html", null ],
     [ "LegacyCellProliferativeTypesWriter.cpp", "LegacyCellProliferativeTypesWriter_8cpp_source.html", null ],
     [ "LegacyCellProliferativeTypesWriter.hpp", "LegacyCellProliferativeTypesWriter_8hpp_source.html", null ]
 ];

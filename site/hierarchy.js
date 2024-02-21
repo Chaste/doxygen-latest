@@ -119,8 +119,11 @@ var hierarchy =
         [ "Element< ELEMENT_DIM, SPACE_DIM >", "classElement.html", null ]
       ] ],
       [ "MutableElement< ELEMENT_DIM, SPACE_DIM >", "classMutableElement.html", [
+        [ "ImmersedBoundaryElement< ELEMENT_DIM - 1, SPACE_DIM >", "classImmersedBoundaryElement.html", null ],
+        [ "ImmersedBoundaryElement< ELEMENT_DIM-1, SPACE_DIM >", "classImmersedBoundaryElement.html", null ],
         [ "VertexElement< ELEMENT_DIM - 1, SPACE_DIM >", "classVertexElement.html", null ],
         [ "VertexElement< ELEMENT_DIM-1, SPACE_DIM >", "classVertexElement.html", null ],
+        [ "ImmersedBoundaryElement< ELEMENT_DIM, SPACE_DIM >", "classImmersedBoundaryElement.html", null ],
         [ "VertexElement< ELEMENT_DIM, SPACE_DIM >", "classVertexElement.html", null ]
       ] ]
     ] ],
@@ -129,6 +132,7 @@ var hierarchy =
     ] ],
     [ "AbstractElement< 1, SPACE_DIM >", "classAbstractElement.html", [
       [ "MutableElement< 1, SPACE_DIM >", "classMutableElement_3_011_00_01SPACE__DIM_01_4.html", [
+        [ "ImmersedBoundaryElement< 1, SPACE_DIM >", "classImmersedBoundaryElement_3_011_00_01SPACE__DIM_01_4.html", null ],
         [ "VertexElement< 1, SPACE_DIM >", "classVertexElement_3_011_00_01SPACE__DIM_01_4.html", null ]
       ] ]
     ] ],
@@ -200,6 +204,7 @@ var hierarchy =
         [ "MemfemMeshReader< ELEMENT_DIM, SPACE_DIM >", "classMemfemMeshReader.html", null ]
       ] ],
       [ "GmshMeshReader< ELEMENT_DIM, SPACE_DIM >", "classGmshMeshReader.html", null ],
+      [ "ImmersedBoundaryMeshReader< ELEMENT_DIM, SPACE_DIM >", "classImmersedBoundaryMeshReader.html", null ],
       [ "TrianglesMeshReader< ELEMENT_DIM, SPACE_DIM >", "classTrianglesMeshReader.html", null ],
       [ "VertexMeshReader< ELEMENT_DIM, SPACE_DIM >", "classVertexMeshReader.html", null ],
       [ "VtkMeshReader< ELEMENT_DIM, SPACE_DIM >", "classVtkMeshReader.html", null ]
@@ -220,6 +225,7 @@ var hierarchy =
           [ "Hdf5ToXdmfConverter< ELEMENT_DIM, SPACE_DIM >", "classHdf5ToXdmfConverter.html", null ]
         ] ]
       ] ],
+      [ "ImmersedBoundaryMeshWriter< ELEMENT_DIM, SPACE_DIM >", "classImmersedBoundaryMeshWriter.html", null ],
       [ "TrapezoidEdgeVertexMeshWriter< ELEMENT_DIM, SPACE_DIM >", "classTrapezoidEdgeVertexMeshWriter.html", null ],
       [ "VertexMeshWriter< ELEMENT_DIM, SPACE_DIM >", "classVertexMeshWriter.html", null ]
     ] ],
@@ -493,6 +499,8 @@ var hierarchy =
         [ "AbstractTetrahedralMesh< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractTetrahedralMesh.html", null ],
         [ "AbstractTetrahedralMesh< DIM, DIM >", "classAbstractTetrahedralMesh.html", null ],
         [ "AbstractTetrahedralMesh< SPACE_DIM, SPACE_DIM >", "classAbstractTetrahedralMesh.html", null ],
+        [ "ImmersedBoundaryMesh< DIM, DIM >", "classImmersedBoundaryMesh.html", null ],
+        [ "ImmersedBoundaryMesh< 2, 2 >", "classImmersedBoundaryMesh.html", null ],
         [ "VertexMesh< 2, 2 >", "classVertexMesh.html", null ],
         [ "VertexMesh< DIM, DIM >", "classVertexMesh.html", null ],
         [ "AbstractTetrahedralMesh< ELEMENT_DIM, SPACE_DIM >", "classAbstractTetrahedralMesh.html", [
@@ -526,6 +534,7 @@ var hierarchy =
             [ "NonCachedTetrahedralMesh< ELEMENT_DIM, SPACE_DIM >", "classNonCachedTetrahedralMesh.html", null ]
           ] ]
         ] ],
+        [ "ImmersedBoundaryMesh< ELEMENT_DIM, SPACE_DIM >", "classImmersedBoundaryMesh.html", null ],
         [ "VertexMesh< ELEMENT_DIM, SPACE_DIM >", "classVertexMesh.html", [
           [ "MutableVertexMesh< 2, 2 >", "classMutableVertexMesh.html", [
             [ "Cylindrical2dVertexMesh", "classCylindrical2dVertexMesh.html", null ],
@@ -684,6 +693,7 @@ var hierarchy =
     ] ],
     [ "FineCoarseMeshPair< DIM >", "classFineCoarseMeshPair.html", null ],
     [ "flipstacker", "structflipstacker.html", null ],
+    [ "FluidSource< SPACE_DIM >", "classFluidSource.html", null ],
     [ "FourthOrderTensor< DIM1, DIM2, DIM3, DIM4 >", "classFourthOrderTensor.html", null ],
     [ "FourthOrderTensor< DIM, DIM, DIM, DIM >", "classFourthOrderTensor.html", null ],
     [ "GaussianQuadratureRule< ELEMENT_DIM >", "classGaussianQuadratureRule.html", null ],
@@ -739,6 +749,7 @@ var hierarchy =
           ] ]
         ] ],
         [ "AbstractTargetAreaModifier< DIM >", "classAbstractTargetAreaModifier.html", [
+          [ "NormallyDistributedTargetAreaModifier< DIM >", "classNormallyDistributedTargetAreaModifier.html", null ],
           [ "SimpleTargetAreaModifier< DIM >", "classSimpleTargetAreaModifier.html", null ],
           [ "TargetAreaLinearGrowthModifier< DIM >", "classTargetAreaLinearGrowthModifier.html", null ]
         ] ],
@@ -747,6 +758,8 @@ var hierarchy =
         [ "DeltaNotchTrackingModifier< DIM >", "classDeltaNotchTrackingModifier.html", null ],
         [ "DivisionBiasTrackingModifier< DIM >", "classDivisionBiasTrackingModifier.html", null ],
         [ "ExtrinsicPullModifier< DIM >", "classExtrinsicPullModifier.html", null ],
+        [ "ImmersedBoundarySimulationModifier< DIM >", "classImmersedBoundarySimulationModifier.html", null ],
+        [ "ImmersedBoundarySvgWriter< DIM >", "classImmersedBoundarySvgWriter.html", null ],
         [ "VolumeTrackingModifier< DIM >", "classVolumeTrackingModifier.html", null ]
       ] ],
       [ "AbstractCellKiller< DIM >", "classAbstractCellKiller.html", [
@@ -847,6 +860,8 @@ var hierarchy =
           [ "CellRadiusWriter< ELEMENT_DIM, SPACE_DIM >", "classCellRadiusWriter.html", null ],
           [ "CellRosetteRankWriter< ELEMENT_DIM, SPACE_DIM >", "classCellRosetteRankWriter.html", null ],
           [ "CellVolumesWriter< ELEMENT_DIM, SPACE_DIM >", "classCellVolumesWriter.html", null ],
+          [ "ImmersedBoundaryBoundaryCellWriter< ELEMENT_DIM, SPACE_DIM >", "classImmersedBoundaryBoundaryCellWriter.html", null ],
+          [ "ImmersedBoundaryNeighbourNumberWriter< ELEMENT_DIM, SPACE_DIM >", "classImmersedBoundaryNeighbourNumberWriter.html", null ],
           [ "LegacyCellProliferativeTypesWriter< ELEMENT_DIM, SPACE_DIM >", "classLegacyCellProliferativeTypesWriter.html", null ]
         ] ]
       ] ],
@@ -886,6 +901,7 @@ var hierarchy =
       ] ],
       [ "AbstractCellPopulation< ELEMENT_DIM, SPACE_DIM >", "classAbstractCellPopulation.html", [
         [ "AbstractOffLatticeCellPopulation< DIM >", "classAbstractOffLatticeCellPopulation.html", [
+          [ "ImmersedBoundaryCellPopulation< DIM >", "classImmersedBoundaryCellPopulation.html", null ],
           [ "VertexBasedCellPopulation< DIM >", "classVertexBasedCellPopulation.html", null ]
         ] ],
         [ "AbstractOffLatticeCellPopulation< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractOffLatticeCellPopulation.html", null ],
@@ -956,6 +972,17 @@ var hierarchy =
         ] ],
         [ "PopulationTestingForce< ELEMENT_DIM, SPACE_DIM >", "classPopulationTestingForce.html", null ]
       ] ],
+      [ "AbstractImmersedBoundaryDivisionRule< SPACE_DIM >", "classAbstractImmersedBoundaryDivisionRule.html", [
+        [ "ShortAxisImmersedBoundaryDivisionRule< SPACE_DIM >", "classShortAxisImmersedBoundaryDivisionRule.html", null ]
+      ] ],
+      [ "AbstractImmersedBoundaryForce< DIM >", "classAbstractImmersedBoundaryForce.html", [
+        [ "ImmersedBoundaryKinematicFeedbackForce< DIM >", "classImmersedBoundaryKinematicFeedbackForce.html", null ],
+        [ "ImmersedBoundaryLinearDifferentialAdhesionForce< DIM >", "classImmersedBoundaryLinearDifferentialAdhesionForce.html", null ],
+        [ "ImmersedBoundaryLinearInteractionForce< DIM >", "classImmersedBoundaryLinearInteractionForce.html", null ],
+        [ "ImmersedBoundaryLinearMembraneForce< DIM >", "classImmersedBoundaryLinearMembraneForce.html", null ],
+        [ "ImmersedBoundaryMorseInteractionForce< DIM >", "classImmersedBoundaryMorseInteractionForce.html", null ],
+        [ "ImmersedBoundaryMorseMembraneForce< DIM >", "classImmersedBoundaryMorseMembraneForce.html", null ]
+      ] ],
       [ "AbstractIvpOdeSolver", "classAbstractIvpOdeSolver.html", [
         [ "AbstractOneStepIvpOdeSolver", "classAbstractOneStepIvpOdeSolver.html", [
           [ "BackwardEulerIvpOdeSolver", "classBackwardEulerIvpOdeSolver.html", null ],
@@ -1004,6 +1031,13 @@ var hierarchy =
         [ "VonMisesVertexBasedDivisionRule< SPACE_DIM >", "classVonMisesVertexBasedDivisionRule.html", null ]
       ] ]
     ] ],
+    [ "ImmersedBoundary2dArrays< DIM >", "classImmersedBoundary2dArrays.html", null ],
+    [ "ImmersedBoundaryElementData", "structImmersedBoundaryElementData.html", null ],
+    [ "ImmersedBoundaryFftInterface< DIM >", "classImmersedBoundaryFftInterface.html", null ],
+    [ "ImmersedBoundaryHoneycombMeshGenerator", "classImmersedBoundaryHoneycombMeshGenerator.html", null ],
+    [ "ImmersedBoundaryMesh< ELEMENT_DIM, SPACE_DIM >::ImmersedBoundaryElementIterator", "classImmersedBoundaryMesh_1_1ImmersedBoundaryElementIterator.html", null ],
+    [ "ImmersedBoundaryMesh< ELEMENT_DIM, SPACE_DIM >::ImmersedBoundaryLaminaIterator", "classImmersedBoundaryMesh_1_1ImmersedBoundaryLaminaIterator.html", null ],
+    [ "ImmersedBoundaryPalisadeMeshGenerator", "classImmersedBoundaryPalisadeMeshGenerator.html", null ],
     [ "LessThanNode< SPACE_DIM >", "structLessThanNode.html", null ],
     [ "LinearBasisFunction< ELEMENT_DIM >", "classLinearBasisFunction.html", null ],
     [ "LinearBasisFunction< 0 >", "classLinearBasisFunction_3_010_01_4.html", null ],
@@ -1026,8 +1060,18 @@ var hierarchy =
     [ "ObjectCommunicator< CLASS >", "classObjectCommunicator.html", null ],
     [ "ObjectCommunicator< std::vector< std::pair< CellPtr, Node< DIM > * > > >", "classObjectCommunicator.html", null ],
     [ "ObsoleteBoxCollection< DIM >", "classObsoleteBoxCollection.html", null ],
+    [ "ObsoleteBoxCollection< SPACE_DIM >", "classObsoleteBoxCollection.html", null ],
     [ "OdeLinearSystemSolver", "classOdeLinearSystemSolver.html", null ],
     [ "OdeSolution", "classOdeSolution.html", null ],
+    [ "OffLatticeRandomFieldGenerator< SPACE_DIM >", "classOffLatticeRandomFieldGenerator.html", null ],
+    [ "OpenSimplex2S", "classOpenSimplex2S.html", null ],
+    [ "OpenSimplex2S::Grad2", "structOpenSimplex2S_1_1Grad2.html", null ],
+    [ "OpenSimplex2S::Grad3", "structOpenSimplex2S_1_1Grad3.html", null ],
+    [ "OpenSimplex2S::Grad4", "structOpenSimplex2S_1_1Grad4.html", null ],
+    [ "OpenSimplex2S::Initializer", "structOpenSimplex2S_1_1Initializer.html", null ],
+    [ "OpenSimplex2S::LatticePoint2D", "structOpenSimplex2S_1_1LatticePoint2D.html", null ],
+    [ "OpenSimplex2S::LatticePoint3D", "structOpenSimplex2S_1_1LatticePoint3D.html", null ],
+    [ "OpenSimplex2S::LatticePoint4D", "structOpenSimplex2S_1_1LatticePoint4D.html", null ],
     [ "osub", "structosub.html", null ],
     [ "otri", "structotri.html", null ],
     [ "OutputDirectoryFifoQueue", "classOutputDirectoryFifoQueue.html", null ],
@@ -1069,12 +1113,15 @@ var hierarchy =
       ] ]
     ] ],
     [ "StressRecoveror< DIM >", "classStressRecoveror.html", null ],
+    [ "SuperellipseGenerator", "classSuperellipseGenerator.html", null ],
     [ "T1SwapInfo< SPACE_DIM >", "structT1SwapInfo.html", null ],
     [ "T2SwapInfo< SPACE_DIM >", "structT2SwapInfo.html", null ],
     [ "T3SwapInfo< SPACE_DIM >", "structT3SwapInfo.html", null ],
     [ "TetrahedralMesh< ELEMENT_DIM, SPACE_DIM >::EdgeIterator", "classTetrahedralMesh_1_1EdgeIterator.html", null ],
     [ "Timer", "classTimer.html", null ],
     [ "TimeStepper", "classTimeStepper.html", null ],
+    [ "UniformGridRandomFieldGenerator< SPACE_DIM >", "classUniformGridRandomFieldGenerator.html", null ],
+    [ "UniformGridRandomFieldGenerator< DIM >", "classUniformGridRandomFieldGenerator.html", null ],
     [ "VertexBasedPopulationSrn< DIM >", "classVertexBasedPopulationSrn.html", null ],
     [ "VertexElementData", "structVertexElementData.html", null ],
     [ "VertexElementMap", "classVertexElementMap.html", null ],

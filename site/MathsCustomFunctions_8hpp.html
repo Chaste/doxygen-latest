@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::42d35c65402f93050369c45e34ce3d09bac0f9a0</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f27b35ec9aa72280b44f219de6dafacc16a84165</span>
    </div>
   </td>
  </tr>
@@ -67,6 +67,7 @@ $(document).ready(function(){initNavTree('MathsCustomFunctions_8hpp.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cfloat&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for MathsCustomFunctions.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -79,7 +80,7 @@ $(document).ready(function(){initNavTree('MathsCustomFunctions_8hpp.html',''); i
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="MathsCustomFunctions_8hpp__dep__incl.svg" width="14836" height="1283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="MathsCustomFunctions_8hpp__dep__incl.svg" width="13891" height="1283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="MathsCustomFunctions_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -103,12 +104,71 @@ Functions</h2></td></tr>
 <tr class="separator:ad8230f5d90405b25c026c16bd229eb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bdd005790e191303623f929a76f7f21" id="r_a7bdd005790e191303623f929a76f7f21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdouble.html">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MathsCustomFunctions_8hpp.html#a7bdd005790e191303623f929a76f7f21">SafeDivide</a> (<a class="el" href="classdouble.html">double</a> numerator, <a class="el" href="classdouble.html">double</a> divisor)</td></tr>
 <tr class="separator:a7bdd005790e191303623f929a76f7f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f4c59678b6773b8cc28a4400938137" id="r_aa4f4c59678b6773b8cc28a4400938137"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunsigned.html">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MathsCustomFunctions_8hpp.html#aa4f4c59678b6773b8cc28a4400938137">AdvanceMod</a> (<a class="el" href="classunsigned.html">unsigned</a> index, int increment, std::size_t range) noexcept</td></tr>
+<tr class="separator:aa4f4c59678b6773b8cc28a4400938137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d1df305a9739404ebe4777b9c69d1b4" id="r_a8d1df305a9739404ebe4777b9c69d1b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunsigned.html">unsigned</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MathsCustomFunctions_8hpp.html#a8d1df305a9739404ebe4777b9c69d1b4">SmallDifferenceMod</a> (<a class="el" href="classunsigned.html">unsigned</a> idxA, <a class="el" href="classunsigned.html">unsigned</a> idxB, std::size_t range) noexcept</td></tr>
+<tr class="separator:a8d1df305a9739404ebe4777b9c69d1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains some utility functions and a small class for dealing with floating point numbers. </p>
 
 <p class="definition">Definition in file <a class="el" href="MathsCustomFunctions_8hpp_source.html">MathsCustomFunctions.hpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="aa4f4c59678b6773b8cc28a4400938137" name="aa4f4c59678b6773b8cc28a4400938137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f4c59678b6773b8cc28a4400938137">&#9670;&#160;</a></span>AdvanceMod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classunsigned.html">unsigned</a> AdvanceMod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classunsigned.html">unsigned</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>increment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>range</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Advance index by increment and return the result modulo range taking into account negative decrements. It is assumed that index + range does not overflow the int type, and that 0 &lt; range &lt; INT_MAX.</p>
+<p>Note that this function is designed to avoid integer division and is very efficient when (index + increment) is in [-range, 2*range).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>the current index to increment </td></tr>
+    <tr><td class="paramname">increment</td><td>the amount to increment the index by </td></tr>
+    <tr><td class="paramname">range</td><td>the top of the range; [0, range) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(current_location + increment) % range, accounting for negative values </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00172">172</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aa3ac29397cf085b7edd4894bbbc30dc0" name="aa3ac29397cf085b7edd4894bbbc30dc0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3ac29397cf085b7edd4894bbbc30dc0">&#9670;&#160;</a></span>CeilDivide()</h2>
 
@@ -143,7 +203,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00131">131</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00132">132</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -181,7 +241,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00108">108</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00109">109</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -219,9 +279,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00154">154</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00155">155</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00217">CompareDoubles::Difference()</a>, and <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00171">CompareDoubles::WithinRelativeTolerance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00245">CompareDoubles::Difference()</a>, and <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00199">CompareDoubles::WithinRelativeTolerance()</a>.</p>
 
 </div>
 </div>
@@ -248,7 +308,61 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00144">144</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00145">145</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8d1df305a9739404ebe4777b9c69d1b4" name="a8d1df305a9739404ebe4777b9c69d1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d1df305a9739404ebe4777b9c69d1b4">&#9670;&#160;</a></span>SmallDifferenceMod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classunsigned.html">unsigned</a> SmallDifferenceMod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classunsigned.html">unsigned</a>&#160;</td>
+          <td class="paramname"><em>idxA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classunsigned.html">unsigned</a>&#160;</td>
+          <td class="paramname"><em>idxB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>range</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculate the smaller of the two differences between two indices, modulo N. I.e. the smallest number of increments from idxA required to get to idxB, modulo range.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idxA</td><td>first index, in [0, range) </td></tr>
+    <tr><td class="paramname">idxB</td><td>second index, in [0, range) </td></tr>
+    <tr><td class="paramname">range</td><td>the top of the range; [0, range) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the smallest difference between idxA and idxB </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00188">188</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -287,7 +401,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>x^exponent a.k.a x**exponent. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00041">41</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00042">42</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
 
 </div>
 </div>
@@ -326,7 +440,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>x^exponent a.k.a x**exponent. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00071">71</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00072">72</a> of file <a class="el" href="MathsCustomFunctions_8cpp_source.html">MathsCustomFunctions.cpp</a>.</p>
 
 </div>
 </div>

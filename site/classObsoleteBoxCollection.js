@@ -3,7 +3,7 @@ var classObsoleteBoxCollection =
     [ "ObsoleteBoxCollection", "classObsoleteBoxCollection.html#ab914b3a0beb3eb93e6e472a8fbb8a703", null ],
     [ "CalculateContainingBox", "classObsoleteBoxCollection.html#a5f727c2278c4560613cb5cdf27d6884d", null ],
     [ "CalculateContainingBox", "classObsoleteBoxCollection.html#af3c6404f15693c156a577d9872cf5411", null ],
-    [ "CalculateNodePairs", "classObsoleteBoxCollection.html#af43f89d9e12fcbfc929c4fe4e7aaa032", null ],
+    [ "CalculateNodePairs", "classObsoleteBoxCollection.html#a6bf67ce9d1cc6b307c4b6e1bb6fac2b8", null ],
     [ "EmptyBoxes", "classObsoleteBoxCollection.html#ad138a4be4d3350e7b72ecbd0298725d2", null ],
     [ "GetGridIndices", "classObsoleteBoxCollection.html#a48297a518e25a4358e93a45ab2c2ffab", null ],
     [ "GetLinearIndex", "classObsoleteBoxCollection.html#aaceb0793f19506d187a15c02c8431737", null ],

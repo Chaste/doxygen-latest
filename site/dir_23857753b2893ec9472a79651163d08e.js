@@ -15,6 +15,10 @@ var dir_23857753b2893ec9472a79651163d08e =
     [ "DistanceMapCalculator.hpp", "DistanceMapCalculator_8hpp_source.html", null ],
     [ "DistributedBoxCollection.cpp", "DistributedBoxCollection_8cpp_source.html", null ],
     [ "DistributedBoxCollection.hpp", "DistributedBoxCollection_8hpp_source.html", null ],
+    [ "MeshUtilityFunctions.cpp", "MeshUtilityFunctions_8cpp_source.html", null ],
+    [ "MeshUtilityFunctions.hpp", "MeshUtilityFunctions_8hpp.html", "MeshUtilityFunctions_8hpp" ],
     [ "ObsoleteBoxCollection.cpp", "ObsoleteBoxCollection_8cpp_source.html", null ],
-    [ "ObsoleteBoxCollection.hpp", "ObsoleteBoxCollection_8hpp_source.html", null ]
+    [ "ObsoleteBoxCollection.hpp", "ObsoleteBoxCollection_8hpp_source.html", null ],
+    [ "SuperellipseGenerator.cpp", "SuperellipseGenerator_8cpp_source.html", null ],
+    [ "SuperellipseGenerator.hpp", "SuperellipseGenerator_8hpp_source.html", null ]
 ];

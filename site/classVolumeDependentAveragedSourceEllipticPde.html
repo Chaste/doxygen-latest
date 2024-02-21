@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::42d35c65402f93050369c45e34ce3d09bac0f9a0</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f27b35ec9aa72280b44f219de6dafacc16a84165</span>
    </div>
   </td>
  </tr>
@@ -167,7 +167,7 @@ class VolumeDependentAveragedSourceEllipticPde&lt; DIM &gt;</div><p>An elliptic 
 <p>where the scalars D and k are specified by the members mDiffusionCoefficient and mSourceCoefficient, respectively. Their values must be set in the constructor.</p>
 <p>The function rho(x) denotes the local density of non-apoptotic cells. This quantity is computed for each element of a 'coarse' finite element mesh that is passed to the method <a class="el" href="classVolumeDependentAveragedSourceEllipticPde.html#af88169db9431b8a4c90945c9a5b244f2">SetupSourceTerms()</a> and stored in the member mCellDensityOnCoarseElements.</p>
 <p>For a point x, rho(x) is a weighted sum of the non-apoptotic cells whose centres lie in each finite element containing that point, scaled by the area of that element. The weighting assigned to each cell is given by the square of the radius of the associated node, which is accessed using the GetRadius() method.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000241">Todo:</a></b></dt><dd>Consider creating a VolumeDependentAveragedSourceParabolicPde class </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000243">Todo:</a></b></dt><dd>Consider creating a VolumeDependentAveragedSourceParabolicPde class </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="VolumeDependentAveragedSourceEllipticPde_8hpp_source.html#l00074">74</a> of file <a class="el" href="VolumeDependentAveragedSourceEllipticPde_8hpp_source.html">VolumeDependentAveragedSourceEllipticPde.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>

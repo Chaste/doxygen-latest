@@ -3,6 +3,7 @@ var classCellProliferativeTypesCountWriter =
     [ "CellProliferativeTypesCountWriter", "classCellProliferativeTypesCountWriter.html#aaf99d57f7ffaa8fdad0837cd10e9a7ba", null ],
     [ "serialize", "classCellProliferativeTypesCountWriter.html#ad26e2823f2d04c0e69b58c86def84452", null ],
     [ "Visit", "classCellProliferativeTypesCountWriter.html#a7bc78552e96c25aaee6756d88268fffe", null ],
+    [ "Visit", "classCellProliferativeTypesCountWriter.html#af7efce23f4bcdf8229a849cc142dd47a", null ],
     [ "Visit", "classCellProliferativeTypesCountWriter.html#a364ab27bb35c0fd6cc4897966aedfaa8", null ],
     [ "Visit", "classCellProliferativeTypesCountWriter.html#a26af5a000434033b416d833d1f011631", null ],
     [ "Visit", "classCellProliferativeTypesCountWriter.html#a7b324e84498dcd30d7fe8d9eedfe4fda", null ],

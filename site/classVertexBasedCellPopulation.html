@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::42d35c65402f93050369c45e34ce3d09bac0f9a0</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f27b35ec9aa72280b44f219de6dafacc16a84165</span>
    </div>
   </td>
  </tr>
@@ -1019,7 +1019,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the value of a <a class="el" href="classCellData.html">CellData</a> item (interpolated if necessary) at a node, specified by its index in a tetrahedral mesh for use with a PDE modifier. This method can be called by PDE modifier classes. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000292">Todo:</a></b></dt><dd>Work out a better way to do the nodes not associated with cells </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000295">Todo:</a></b></dt><dd>Work out a better way to do the nodes not associated with cells </dd></dl>
 
 <p>Implements <a class="el" href="classAbstractCellPopulation.html#a6a418610dddd863a6bbe4412963a159b">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
 
@@ -1092,7 +1092,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 
 <p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, and <a class="el" href="SimulationTime_8cpp_source.html#l00046">SimulationTime::Instance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="NodeVelocityWriter_8cpp_source.html#l00153">NodeVelocityWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="NodeVelocityWriter_8cpp_source.html#l00154">NodeVelocityWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1158,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="VertexBasedCellPopulation_8cpp_source.html#l00160">160</a> of file <a class="el" href="VertexBasedCellPopulation_8cpp_source.html">VertexBasedCellPopulation.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="FarhadifarForce_8cpp_source.html#l00055">FarhadifarForce&lt; DIM &gt;::AddForceContribution()</a>, <a class="el" href="NagaiHondaForce_8cpp_source.html#l00058">NagaiHondaForce&lt; DIM &gt;::AddForceContribution()</a>, and <a class="el" href="CellPopulationElementWriter_8cpp_source.html#l00137">CellPopulationElementWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="FarhadifarForce_8cpp_source.html#l00055">FarhadifarForce&lt; DIM &gt;::AddForceContribution()</a>, <a class="el" href="NagaiHondaForce_8cpp_source.html#l00058">NagaiHondaForce&lt; DIM &gt;::AddForceContribution()</a>, and <a class="el" href="CellPopulationElementWriter_8cpp_source.html#l00138">CellPopulationElementWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>.</p>
 
 </div>
 </div>
@@ -1593,7 +1593,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 <p>Overridden <a class="el" href="classVertexBasedCellPopulation.html#aa4edcb8688142c4c66acd412f32ac138">GetTetrahedralMeshForPdeModifier()</a> method.</p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to a tetrahedral mesh using the nodes in the <a class="el" href="classVertexMesh.html">VertexMesh</a> as well as an additional node at the centre of each <a class="el" href="classVertexElement.html">VertexElement</a>. At present, this method only works in 2D.</dd></dl>
 <p>This method is called by <a class="el" href="classAbstractGrowingDomainPdeModifier.html">AbstractGrowingDomainPdeModifier</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000291">Todo:</a></b></dt><dd>will the nodes in mpMutableVertexMesh always have indices 0,1,2,...? (#2221) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000294">Todo:</a></b></dt><dd>will the nodes in mpMutableVertexMesh always have indices 0,1,2,...? (#2221) </dd></dl>
 
 <p>Implements <a class="el" href="classAbstractCellPopulation.html#a582e64e338a19a64feaa1fc4cab6a742">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
 
@@ -1896,7 +1896,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 <p>Remove all cells labelled as dead.</p>
 <p>Note that after calling this method the cell population will be in an inconsistent state until the equivalent of a 'remesh' is performed! So don't try iterating over cells or anything like that.</p>
 <dl class="section return"><dt>Returns</dt><dd>number of cells removed </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000289">Todo:</a></b></dt><dd>(#2489) this should cause an error - we should fix this! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000292">Todo:</a></b></dt><dd>(#2489) this should cause an error - we should fix this! </dd></dl>
 
 <p>Implements <a class="el" href="classAbstractCellPopulation.html#a5a3c5b0f01354fa25044e174c1c10269">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
 
@@ -1924,7 +1924,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="VertexBasedCellPopulation_8cpp_source.html#l00148">148</a> of file <a class="el" href="VertexBasedCellPopulation_8cpp_source.html">VertexBasedCellPopulation.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="FarhadifarForce_8cpp_source.html#l00055">FarhadifarForce&lt; DIM &gt;::AddForceContribution()</a>, <a class="el" href="NagaiHondaForce_8cpp_source.html#l00058">NagaiHondaForce&lt; DIM &gt;::AddForceContribution()</a>, <a class="el" href="WelikyOsterForce_8cpp_source.html#l00052">WelikyOsterForce&lt; DIM &gt;::AddForceContribution()</a>, <a class="el" href="VertexCryptBoundaryForce_8cpp_source.html#l00054">VertexCryptBoundaryForce&lt; DIM &gt;::AddForceContribution()</a>, <a class="el" href="ShortAxisVertexBasedDivisionRule_8cpp_source.html#l00039">ShortAxisVertexBasedDivisionRule&lt; SPACE_DIM &gt;::CalculateCellDivisionVector()</a>, <a class="el" href="VertexBasedPopulationSrn_8cpp_source.html#l00057">VertexBasedPopulationSrn&lt; DIM &gt;::UpdateSrnAfterBirthOrDeath()</a>, <a class="el" href="CellPopulationElementWriter_8cpp_source.html#l00137">CellPopulationElementWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, <a class="el" href="HeterotypicBoundaryLengthWriter_8cpp_source.html#l00368">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, <a class="el" href="NodeVelocityWriter_8cpp_source.html#l00153">NodeVelocityWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, <a class="el" href="VertexIntersectionSwapLocationsWriter_8cpp_source.html#l00071">VertexIntersectionSwapLocationsWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, <a class="el" href="VertexT1SwapLocationsWriter_8cpp_source.html#l00071">VertexT1SwapLocationsWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, <a class="el" href="VertexT2SwapLocationsWriter_8cpp_source.html#l00071">VertexT2SwapLocationsWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, and <a class="el" href="VertexT3SwapLocationsWriter_8cpp_source.html#l00071">VertexT3SwapLocationsWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="FarhadifarForce_8cpp_source.html#l00055">FarhadifarForce&lt; DIM &gt;::AddForceContribution()</a>, <a class="el" href="NagaiHondaForce_8cpp_source.html#l00058">NagaiHondaForce&lt; DIM &gt;::AddForceContribution()</a>, <a class="el" href="WelikyOsterForce_8cpp_source.html#l00052">WelikyOsterForce&lt; DIM &gt;::AddForceContribution()</a>, <a class="el" href="VertexCryptBoundaryForce_8cpp_source.html#l00054">VertexCryptBoundaryForce&lt; DIM &gt;::AddForceContribution()</a>, <a class="el" href="ShortAxisVertexBasedDivisionRule_8cpp_source.html#l00039">ShortAxisVertexBasedDivisionRule&lt; SPACE_DIM &gt;::CalculateCellDivisionVector()</a>, <a class="el" href="VertexBasedPopulationSrn_8cpp_source.html#l00057">VertexBasedPopulationSrn&lt; DIM &gt;::UpdateSrnAfterBirthOrDeath()</a>, <a class="el" href="CellPopulationElementWriter_8cpp_source.html#l00138">CellPopulationElementWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, <a class="el" href="HeterotypicBoundaryLengthWriter_8cpp_source.html#l00373">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, <a class="el" href="NodeVelocityWriter_8cpp_source.html#l00154">NodeVelocityWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, <a class="el" href="VertexIntersectionSwapLocationsWriter_8cpp_source.html#l00076">VertexIntersectionSwapLocationsWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, <a class="el" href="VertexT1SwapLocationsWriter_8cpp_source.html#l00072">VertexT1SwapLocationsWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, <a class="el" href="VertexT2SwapLocationsWriter_8cpp_source.html#l00072">VertexT2SwapLocationsWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>, and <a class="el" href="VertexT3SwapLocationsWriter_8cpp_source.html#l00072">VertexT3SwapLocationsWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>.</p>
 
 </div>
 </div>
@@ -2305,7 +2305,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000290">Todo:</a></b></dt><dd>We want to make these maps private, so we need a better way of doing the code below. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000293">Todo:</a></b></dt><dd>We want to make these maps private, so we need a better way of doing the code below. </dd></dl>
 
 <p>Implements <a class="el" href="classAbstractCellPopulation.html#a7b4dac40d6417494df5d33e518f39b90">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
 
@@ -2313,7 +2313,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 
 <p class="reference">References <a class="el" href="VertexElementMap_8cpp_source.html#l00078">VertexElementMap::GetNewIndex()</a>, <a class="el" href="VertexElementMap_8cpp_source.html#l00073">VertexElementMap::IsDeleted()</a>, <a class="el" href="VertexElementMap_8cpp_source.html#l00087">VertexElementMap::IsIdentityMap()</a>, and <a class="el" href="VertexElementMap_8cpp_source.html#l00055">VertexElementMap::ResetToIdentity()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="HeterotypicBoundaryLengthWriter_8cpp_source.html#l00368">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="HeterotypicBoundaryLengthWriter_8cpp_source.html#l00373">HeterotypicBoundaryLengthWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::Visit()</a>.</p>
 
 </div>
 </div>
