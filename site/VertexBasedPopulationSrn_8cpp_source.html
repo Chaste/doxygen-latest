@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::c31657407e4f08956875284080ae73013ab0da6f</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::69d202ca83a99895c17fb090d347fc19e1cc2515</span>
    </div>
   </td>
  </tr>
@@ -138,9 +138,9 @@ $(document).ready(function(){initNavTree('VertexBasedPopulationSrn_8cpp_source.h
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> operation : r_operations)</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    {</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="comment">/*</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">         * An operation with deleted element may be recorded, e.g. following a </span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">         * T2 swap, neighbouring element may become triangular due to node </span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">         * merging and may subsequently be marked for deletion, despite being </span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">         * An operation with deleted element may be recorded, e.g. following a</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">         * T2 swap, neighbouring element may become triangular due to node</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">         * merging and may subsequently be marked for deletion, despite being</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">         * marked to perform edge operations (e.g. node merging).</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">         */</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">switch</span> (operation.GetOperation())</div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('VertexBasedPopulationSrn_8cpp_source.h
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <span class="keywordtype">unsigned</span> location_index = stored_index;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <span class="comment">/*</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">                 * If operation is recorded before element indices are changed. </span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">                 * If operation is recorded before element indices are changed.</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">                 * For example, if the operations recorded during T2 swap.</span></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">                 */</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keywordflow">if</span> (operation.IsElementIndexRemapped())</div>
@@ -218,9 +218,9 @@ $(document).ready(function(){initNavTree('VertexBasedPopulationSrn_8cpp_source.h
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keyword">const</span> std::vector&lt;double&gt; split_proportions = rEdgeChange.<a class="code hl_function" href="classEdgeRemapInfo.html#abdbff1dd89f1e9413a0132801c623b60">GetSplitProportions</a>();</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> num_edges = edge_mapping.size();</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    std::vector&lt;unsigned&gt; shrunk_edges;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">     * Go through the edges, check its status and the index corresponding to the </span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">     * Go through the edges, check its status and the index corresponding to the</span></div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">     * edge status before rearrangement. Go through the SRN model.</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; num_edges; i++)</div>
@@ -230,10 +230,10 @@ $(document).ready(function(){initNavTree('VertexBasedPopulationSrn_8cpp_source.h
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="comment">/*</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">         * remap_status can be the following:</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">         * 0 - Direct remapping, the edge SRN of the oldModel can be transferred </span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">         * 0 - Direct remapping, the edge SRN of the oldModel can be transferred</span></div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">         *         directly to the new model</span></div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">         * 1 - The edge is a split point between the dividing cells</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">         * 2 - This is a new edge i.e. the dividing line in the middle of the </span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">         * 2 - This is a new edge i.e. the dividing line in the middle of the</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">         *         old and new cells</span></div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">         * 3 - Edge below or above the edge that was deleted due to node merging</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">         * 4 - Edge above was merged into this edge</span></div>
@@ -252,9 +252,9 @@ $(document).ready(function(){initNavTree('VertexBasedPopulationSrn_8cpp_source.h
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            }</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <span class="keywordflow">case</span> 1:</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            {</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                <span class="comment">/* </span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">                 * Edge split depends on the relative splitting node position </span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">                 * because currently we assume that edge concentrations are </span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                <span class="comment">/*</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">                 * Edge split depends on the relative splitting node position</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">                 * because currently we assume that edge concentrations are</span></div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">                 * uniform on the edge.</span></div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">                 */</span></div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                new_edge_srn[i] = boost::shared_ptr&lt;AbstractSrnModel&gt;(parentSrnEdges[remap_index]-&gt;CreateSrnModel());</div>
@@ -306,7 +306,7 @@ $(document).ready(function(){initNavTree('VertexBasedPopulationSrn_8cpp_source.h
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        new_edge_srn[i]-&gt;SetEdgeLocalIndex(i);</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        new_edge_srn[i]-&gt;SetCell(pCellSrn-&gt;<a class="code hl_function" href="classAbstractSrnModel.html#aca98bac8bd3c7718dcaf787477fa1682">GetCell</a>());</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="comment">// For the case when edge quantities are returned into interior when edge shrinks due to node merging</span></div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keyword">auto</span> p_interior_srn = boost::shared_ptr&lt;AbstractSrnModel&gt;(pCellSrn-&gt;<a class="code hl_function" href="classCellSrnModel.html#ade69fd1e93f112ad8a5934579d72d5e0">GetInteriorSrn</a>());</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keywordflow">if</span> (p_interior_srn != <span class="keyword">nullptr</span>)</div>

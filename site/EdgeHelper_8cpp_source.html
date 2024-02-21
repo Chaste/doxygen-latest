@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::c31657407e4f08956875284080ae73013ab0da6f</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::69d202ca83a99895c17fb090d347fc19e1cc2515</span>
    </div>
   </td>
  </tr>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('EdgeHelper_8cpp_source.html',''); init
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classEdgeHelper.html#ada88e2d94fc97448cbb8ce26cfd2ceec">   94</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classEdgeHelper.html#ada88e2d94fc97448cbb8ce26cfd2ceec">EdgeHelper&lt;SPACE_DIM&gt;::RemoveDeletedEdges</a>()</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">     * Remove any edges that have been marked for deletion and store all other </span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">     * Remove any edges that have been marked for deletion and store all other</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">     * nodes in a temporary structure.</span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    std::vector&lt;std::unique_ptr&lt;Edge&lt;SPACE_DIM&gt; &gt; &gt; live_edges;</div>
@@ -188,13 +188,13 @@ $(document).ready(function(){initNavTree('EdgeHelper_8cpp_source.html',''); init
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>          live_edges.push_back(std::move(p_edge));</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>      }</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>      <span class="comment">/*</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">       * Note: there&#39;s no need to manually delete the edge, because the </span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">       * Note: there&#39;s no need to manually delete the edge, because the</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">       * unique_ptr automatically takes care of that when it goes out of scope.</span></div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">       */</span></div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">     * Repopulate the edges vector, using std::move to efficiently transfer </span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">     * Repopulate the edges vector, using std::move to efficiently transfer</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">     * ownership of the pointers.</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    mEdges = std::move(live_edges);</div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('EdgeHelper_8cpp_source.html',''); init
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>{</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    mEdgesMap.clear();</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; p_edge : mEdges) </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; p_edge : mEdges)</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    {</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        mEdgesMap[p_edge-&gt;GetMapIndex()] = p_edge.get();</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>

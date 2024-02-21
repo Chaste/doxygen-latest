@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::c31657407e4f08956875284080ae73013ab0da6f</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::69d202ca83a99895c17fb090d347fc19e1cc2515</span>
    </div>
   </td>
  </tr>
@@ -107,14 +107,14 @@ $(document).ready(function(){initNavTree('CellSrnModel_8cpp_source.html',''); in
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classCellSrnModel.html#a308754e001422a81fc4508e2d755f7c4">   38</a></span><a class="code hl_function" href="classCellSrnModel.html#a5db992d164ffe041cd1ad92cf6258813">CellSrnModel::CellSrnModel</a>(<span class="keyword">const</span> <a class="code hl_class" href="classCellSrnModel.html">CellSrnModel</a> &amp;rModel)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    : <a class="code hl_class" href="classAbstractSrnModel.html">AbstractSrnModel</a>(rModel), </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    : <a class="code hl_class" href="classAbstractSrnModel.html">AbstractSrnModel</a>(rModel),</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      mpInteriorSrnModel(nullptr)</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">/*</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">     * Edge SRN vector should be empty in the newly created cell. They are added in</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     * VertexBasedPopulation::UpdateSrnAfterBirthOrDeath().</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     * </span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     * Copy interior SRN to the new cell. Interior SRN should have custom implementation </span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     * Copy interior SRN to the new cell. Interior SRN should have custom implementation</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">     * of a new interior SRN creation after cell division.</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span> (rModel.<a class="code hl_variable" href="classCellSrnModel.html#add2639e397be2a3828d57134c3e27a36">mpInteriorSrnModel</a> != <span class="keyword">nullptr</span>)</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('CellSrnModel_8cpp_source.html',''); in
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">/*</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">     * Note that edge models follow different rules since the number and the state of edge SRNs</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">     * after cell divisions depends on local topology. That is custom behavior of edge SRN models </span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">     * after cell divisions depends on local topology. That is custom behavior of edge SRN models</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">     * is important to implement correctly.</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter : <a class="code hl_variable" href="classCellSrnModel.html#a965d7786affc26efdbc3be5e08f1b881">mEdgeSrnModels</a>)</div>

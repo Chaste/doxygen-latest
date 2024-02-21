@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::c31657407e4f08956875284080ae73013ab0da6f</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::69d202ca83a99895c17fb090d347fc19e1cc2515</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('CvodeContextManager_8cpp_source.html',
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>CvodeContextManager* CvodeContextManager::Instance()</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// Single instance per thread</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> <span class="keyword">thread_local</span> std::unique_ptr&lt;CvodeContextManager&gt; instance = std::unique_ptr&lt;CvodeContextManager&gt;(<span class="keyword">new</span> CvodeContextManager()); </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> <span class="keyword">thread_local</span> std::unique_ptr&lt;CvodeContextManager&gt; instance = std::unique_ptr&lt;CvodeContextManager&gt;(<span class="keyword">new</span> CvodeContextManager());</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> instance.get();</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>

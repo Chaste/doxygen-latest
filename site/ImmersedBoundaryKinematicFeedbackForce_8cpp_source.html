@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::c31657407e4f08956875284080ae73013ab0da6f</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::69d202ca83a99895c17fb090d347fc19e1cc2515</span>
    </div>
   </td>
  </tr>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('ImmersedBoundaryKinematicFeedbackForce
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * Calculate force only if neither node is in a lamina, and if nodes are in </span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">     * Calculate force only if neither node is in a lamina, and if nodes are in</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">     * different elements.</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">auto</span> condition_satisfied = [&amp;rCellPopulation](<span class="keyword">const</span> std::pair&lt;Node&lt;DIM&gt;*, <a class="code hl_class" href="classNode.html">Node&lt;DIM&gt;</a>*&gt;&amp; pair) -&gt; <span class="keywordtype">bool</span></div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('ImmersedBoundaryKinematicFeedbackForce
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <a class="code hl_class" href="classImmersedBoundaryCellPopulation.html">ImmersedBoundaryCellPopulation&lt;DIM&gt;</a>&amp; rCellPopulation)</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>{</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">     * Populate the mPreviousLocations vector with the current location of </span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">     * Populate the mPreviousLocations vector with the current location of</span></div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">     * nodes, so it&#39;s ready for next time step.</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p_node : rCellPopulation.<a class="code hl_function" href="classImmersedBoundaryCellPopulation.html#a699a4d02aa9c3f8835049c10e8862b0f">rGetMesh</a>().<a class="code hl_function" href="classImmersedBoundaryMesh.html#a406d6e69638fa36b98a1cf2efa602b40">rGetNodes</a>())</div>
