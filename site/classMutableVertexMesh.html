@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::69d202ca83a99895c17fb090d347fc19e1cc2515</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::037e73aa8d47413ba6327931ee7af5908f9c2f53</span>
    </div>
   </td>
  </tr>
@@ -789,8 +789,8 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 <p>Helper method for <a class="el" href="classMutableVertexMesh.html#a51e7eb87d4bb3444dc747f74a8e11bdd">ReMesh()</a>.</p>
 <p>Check if any neighbouring nodes in an element are closer than the mCellRearrangementThreshold and are not contained in any triangular elements. If any such pair of nodes are found, then call <a class="el" href="classMutableVertexMesh.html#a1ffa8a388a76d447cb43e8e92cc78f48">IdentifySwapType()</a>, which in turn implements the appropriate local remeshing operation (a T1 swap, void removal, or node merge).</p>
 <dl class="section return"><dt>Returns</dt><dd>whether we need to check for, and implement, any further local remeshing operations (true if any swaps are performed). </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000142">Todo:</a></b></dt><dd>Could we search more efficiently by just iterating over edges? (see #2401) </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000143">Todo:</a></b></dt><dd>Use iterators to tidy this up (see #2401) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000144">Todo:</a></b></dt><dd>Could we search more efficiently by just iterating over edges? (see #2401) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000145">Todo:</a></b></dt><dd>Use iterators to tidy this up (see #2401) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01058">1058</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
@@ -824,7 +824,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>whether we need to check for, and implement, any further local remeshing operations </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000144">Todo:</a></b></dt><dd>: cover this line in a test </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000146">Todo:</a></b></dt><dd>: cover this line in a test </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01126">1126</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
@@ -1096,7 +1096,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index of the new element </dd></dl>
 <p>Remove the correct nodes from each element. If placeOriginalElementBelow is true, place the original element below (in the y direction) the new element; otherwise, place it above.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000140">Todo:</a></b></dt><dd>this could be more efficient (see #2401) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000142">Todo:</a></b></dt><dd>this could be more efficient (see #2401) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l00686">686</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
@@ -1670,7 +1670,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<p>Here, the triangular element would be along the short edge. Since we are already checking in <a class="el" href="classMutableVertexMesh.html#a0fe5b93f5673b432caafe002707d82bc">CheckForSwapsFromShortEdges()</a> whether the element is triangular, this exception is redundant for simulations. We leave it in for clarity. /// </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000148">Todo:</a></b></dt><dd>: consider removing the checking for this exception (see #2401) </dd></dl>
+<p>Here, the triangular element would be along the short edge. Since we are already checking in <a class="el" href="classMutableVertexMesh.html#a0fe5b93f5673b432caafe002707d82bc">CheckForSwapsFromShortEdges()</a> whether the element is triangular, this exception is redundant for simulations. We leave it in for clarity. /// </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000147">Todo:</a></b></dt><dd>: consider removing the checking for this exception (see #2401) </dd></dl>
 <p>If this is true then one of the elements adjacent to the triangular void is triangular. This element will then not share the short edge that is considered for a swap. Nevertheless, it would loose an edge during the swap. We are currently not able to deal with this situation. Related to #2533 and #2401.</p>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01292">1292</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
@@ -1984,7 +1984,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000150">Todo:</a></b></dt><dd>remove magic number? (see #1884 and #2401) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000149">Todo:</a></b></dt><dd>remove magic number? (see #1884 and #2401) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01825">1825</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
@@ -2076,7 +2076,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000155">Todo:</a></b></dt><dd>the intersection location is sometimes overwritten when WidenEdgeOrCorrectIntersectionLocationIfNecessary </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000150">Todo:</a></b></dt><dd>the intersection location is sometimes overwritten when WidenEdgeOrCorrectIntersectionLocationIfNecessary </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l02514">2514</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
@@ -2198,7 +2198,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000141">Todo:</a></b></dt><dd>Implement <a class="el" href="classMutableVertexMesh.html#a51e7eb87d4bb3444dc747f74a8e11bdd">ReMesh()</a> in 3D (see #1422) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000143">Todo:</a></b></dt><dd>Implement <a class="el" href="classMutableVertexMesh.html#a51e7eb87d4bb3444dc747f74a8e11bdd">ReMesh()</a> in 3D (see #1422) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01003">1003</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
@@ -2709,12 +2709,12 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>intersection, the corrected location of where we are planning to put the merged node </dd></dl>
-<p>If the edge is shorter than 4.0*mCellRearrangementRatio*mCellRearrangementThreshold move vertexA and vertexB 4.0*mCellRearrangementRatio*mCellRearrangementThreshold apart. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000156">Todo:</a></b></dt><dd>investigate if moving A and B causes other issues with nearby nodes (see #2401)</dd></dl>
-<p>Note: this distance is so that there is always enough room for new nodes (if necessary) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000157">Todo:</a></b></dt><dd>currently this assumes a worst case scenario of 3 nodes between A and B could be less movement for other cases (see #1399 and #2401) </dd></dl>
+<p>If the edge is shorter than 4.0*mCellRearrangementRatio*mCellRearrangementThreshold move vertexA and vertexB 4.0*mCellRearrangementRatio*mCellRearrangementThreshold apart. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000151">Todo:</a></b></dt><dd>investigate if moving A and B causes other issues with nearby nodes (see #2401)</dd></dl>
+<p>Note: this distance is so that there is always enough room for new nodes (if necessary) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000152">Todo:</a></b></dt><dd>currently this assumes a worst case scenario of 3 nodes between A and B could be less movement for other cases (see #1399 and #2401) </dd></dl>
 <p>Reset the intersection away from vertices A and B to allow enough room for new nodes.</p>
 <p>If the intersection is within mCellRearrangementRatio^2*mCellRearrangementThreshold of vertexA or vertexB move it mCellRearrangementRatio^2*mCellRearrangementThreshold away.</p>
 <p>Note: this distance so that there is always enough room for new nodes (if necessary).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000158">Todo:</a></b></dt><dd>currently this assumes a worst case scenario of 3 nodes between A and B; could be less movement for other cases (see #2401) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000153">Todo:</a></b></dt><dd>currently this assumes a worst case scenario of 3 nodes between A and B; could be less movement for other cases (see #2401) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l04119">4119</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
