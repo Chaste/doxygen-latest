@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::8f4ef9b8ba9a4a375e486f10cf82d36851c26348</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f2ff7ee04e70ac9d06c57344df8d017dbb12b97b</span>
    </div>
   </td>
  </tr>
@@ -1984,7 +1984,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000149">Todo:</a></b></dt><dd>remove magic number? (see #1884 and #2401) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000148">Todo:</a></b></dt><dd>remove magic number? (see #1884 and #2401) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01825">1825</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
@@ -2076,7 +2076,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000151">Todo:</a></b></dt><dd>the intersection location is sometimes overwritten when WidenEdgeOrCorrectIntersectionLocationIfNecessary </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000152">Todo:</a></b></dt><dd>the intersection location is sometimes overwritten when WidenEdgeOrCorrectIntersectionLocationIfNecessary </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l02514">2514</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
@@ -2709,12 +2709,12 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>intersection, the corrected location of where we are planning to put the merged node </dd></dl>
-<p>If the edge is shorter than 4.0*mCellRearrangementRatio*mCellRearrangementThreshold move vertexA and vertexB 4.0*mCellRearrangementRatio*mCellRearrangementThreshold apart. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000156">Todo:</a></b></dt><dd>investigate if moving A and B causes other issues with nearby nodes (see #2401)</dd></dl>
-<p>Note: this distance is so that there is always enough room for new nodes (if necessary) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000157">Todo:</a></b></dt><dd>currently this assumes a worst case scenario of 3 nodes between A and B could be less movement for other cases (see #1399 and #2401) </dd></dl>
+<p>If the edge is shorter than 4.0*mCellRearrangementRatio*mCellRearrangementThreshold move vertexA and vertexB 4.0*mCellRearrangementRatio*mCellRearrangementThreshold apart. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000153">Todo:</a></b></dt><dd>investigate if moving A and B causes other issues with nearby nodes (see #2401)</dd></dl>
+<p>Note: this distance is so that there is always enough room for new nodes (if necessary) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000154">Todo:</a></b></dt><dd>currently this assumes a worst case scenario of 3 nodes between A and B could be less movement for other cases (see #1399 and #2401) </dd></dl>
 <p>Reset the intersection away from vertices A and B to allow enough room for new nodes.</p>
 <p>If the intersection is within mCellRearrangementRatio^2*mCellRearrangementThreshold of vertexA or vertexB move it mCellRearrangementRatio^2*mCellRearrangementThreshold away.</p>
 <p>Note: this distance so that there is always enough room for new nodes (if necessary).</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000158">Todo:</a></b></dt><dd>currently this assumes a worst case scenario of 3 nodes between A and B; could be less movement for other cases (see #2401) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000155">Todo:</a></b></dt><dd>currently this assumes a worst case scenario of 3 nodes between A and B; could be less movement for other cases (see #2401) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l04119">4119</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
