@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f2ff7ee04e70ac9d06c57344df8d017dbb12b97b</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::d945304f3a4d7c9f6873dff35fd0c9d84108b749</span>
    </div>
   </td>
  </tr>
@@ -277,7 +277,7 @@ $(document).ready(function(){initNavTree('CellMLToSharedLibraryConverter_8cpp_so
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                                      <span class="stringliteral">&quot;set(CMAKE_CXX_STANDARD_REQUIRED ON)\n&quot;</span> &lt;&lt;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                                      <span class="stringliteral">&quot;set(CMAKE_CXX_EXTENSIONS OFF)\n&quot;</span> &lt;&lt;</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                                      <span class="stringliteral">&quot;project (ChasteCellMLToSharedLibraryConverter)\n&quot;</span> &lt;&lt;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                                      <span class="stringliteral">&quot;find_package(PythonInterp 3.5 REQUIRED)\n&quot;</span> &lt;&lt;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                                      <span class="stringliteral">&quot;find_package(Python3 3.5 REQUIRED)\n&quot;</span> &lt;&lt;</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                                      <span class="stringliteral">&quot;set(codegen_python3_venv &quot;</span> + chaste_root.<a class="code hl_function" href="classFileFinder.html#a2c3045dd214ec8867b698042b46b4359">GetAbsolutePath</a>() + <span class="stringliteral">&quot;/codegen_python3_venv/bin)\n&quot;</span> &lt;&lt;</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                                      <span class="stringliteral">&quot;find_package(Chaste COMPONENTS &quot;</span> &lt;&lt; <a class="code hl_variable" href="classCellMLToSharedLibraryConverter.html#af5338e79bd346c66bca477d74527dd3f">mComponentName</a> &lt;&lt; <span class="stringliteral">&quot;)\n&quot;</span> &lt;&lt;</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                                      <span class="stringliteral">&quot;chaste_do_cellml(sources &quot;</span> &lt;&lt; cellml_file.<a class="code hl_function" href="classFileFinder.html#a2c3045dd214ec8867b698042b46b4359">GetAbsolutePath</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <span class="stringliteral">&quot;ON &quot;</span> &lt;&lt; <a class="code hl_variable" href="classCellMLToSharedLibraryConverter.html#a77fd3fb65b87c0e11e1e0f30f5b0eee6">codegen_args</a> &lt;&lt; <span class="stringliteral">&quot;)\n&quot;</span> &lt;&lt;</div>
