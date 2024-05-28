@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::5328fbcc90aa4b951fdff8b5db625e83cd70b440</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2a96aad13aaa759ad9229a55e3752b660f183259</span>
    </div>
   </td>
  </tr>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('DistributedVectorFactory_8cpp_source.h
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    VecSetBlockSize(vec, stride);</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    VecSetSizes(vec, stride*(<a class="code hl_variable" href="classDistributedVectorFactory.html#a5af6f8879691298f8ec6bf69e8757a72">mHi</a>-<a class="code hl_variable" href="classDistributedVectorFactory.html#a581cb503e9c3154d91bd7a38cb584aac">mLo</a>), stride*<a class="code hl_variable" href="classDistributedVectorFactory.html#af6a1180e5d438115bdacfb408f92de01">mProblemSize</a>);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    VecSetType(vec,VECMPI);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="comment">//VecCreateMPIWithArray(PETSC_COMM_WORLD, stride, stride*(mHi-mLo), stride*mProblemSize, PETSC_NULL/*No array*/, &amp;vec);</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="comment">//VecCreateMPIWithArray(PETSC_COMM_WORLD, stride, stride*(mHi-mLo), stride*mProblemSize, CHASTE_PETSC_NULLPTR/*No array*/, &amp;vec);</span></div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    VecCreateMPI(PETSC_COMM_WORLD, stride*(<a class="code hl_variable" href="classDistributedVectorFactory.html#a5af6f8879691298f8ec6bf69e8757a72">mHi</a>-<a class="code hl_variable" href="classDistributedVectorFactory.html#a581cb503e9c3154d91bd7a38cb584aac">mLo</a>), stride*<a class="code hl_variable" href="classDistributedVectorFactory.html#af6a1180e5d438115bdacfb408f92de01">mProblemSize</a>, &amp;vec);</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    VecSetBlockSize(vec, stride);</div>
@@ -327,7 +327,7 @@ $(document).ready(function(){initNavTree('DistributedVectorFactory_8cpp_source.h
 <div class="ttc" id="aclassDistributedVectorFactory_html_afe6936c77a938fe547e6b2613c074a88"><div class="ttname"><a href="classDistributedVectorFactory.html#afe6936c77a938fe547e6b2613c074a88">DistributedVectorFactory::GetNumProcs</a></div><div class="ttdeci">unsigned GetNumProcs() const</div><div class="ttdef"><b>Definition</b> <a href="DistributedVectorFactory_8hpp_source.html#l00228">DistributedVectorFactory.hpp:228</a></div></div>
 <div class="ttc" id="aclassDistributedVector_html"><div class="ttname"><a href="classDistributedVector.html">DistributedVector</a></div><div class="ttdef"><b>Definition</b> <a href="DistributedVector_8hpp_source.html#l00055">DistributedVector.hpp:56</a></div></div>
 <div class="ttc" id="aclassPetscInt_html"><div class="ttname"><a href="classPetscInt.html">PetscInt</a></div></div>
-<div class="ttc" id="aclassPetscTools_html_a0d218276d49e4605dc5b9272317b4e76"><div class="ttname"><a href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a></div><div class="ttdeci">static void Destroy(Vec &amp;rVec)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00352">PetscTools.hpp:352</a></div></div>
+<div class="ttc" id="aclassPetscTools_html_a0d218276d49e4605dc5b9272317b4e76"><div class="ttname"><a href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a></div><div class="ttdeci">static void Destroy(Vec &amp;rVec)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00366">PetscTools.hpp:366</a></div></div>
 <div class="ttc" id="aclassPetscTools_html_aa85bd67ff451c14350d1910a0048c2ea"><div class="ttname"><a href="classPetscTools.html#aa85bd67ff451c14350d1910a0048c2ea">PetscTools::CreateVec</a></div><div class="ttdeci">static Vec CreateVec(int size, int localSize=PETSC_DECIDE, bool ignoreOffProcEntries=true)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8cpp_source.html#l00218">PetscTools.cpp:218</a></div></div>
 <div class="ttc" id="aclassPetscTools_html_af356e0bc76119082d764ce55397fd4b1"><div class="ttname"><a href="classPetscTools.html#af356e0bc76119082d764ce55397fd4b1">PetscTools::GetNumProcs</a></div><div class="ttdeci">static unsigned GetNumProcs()</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8cpp_source.html#l00108">PetscTools.cpp:108</a></div></div>
 <div class="ttc" id="aclassVec_html"><div class="ttname"><a href="classVec.html">Vec</a></div></div>

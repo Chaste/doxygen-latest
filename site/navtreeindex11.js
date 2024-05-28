@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"classAbstractLinearEllipticPde.html#a56dc30d9cf43d0f1b040ae37aa93abfc":[1,0,79,4],
 "classAbstractLinearEllipticPde.html#ac3af4e7acc8244199b56e4fadc2db544":[1,0,79,3],
 "classAbstractLinearEllipticPde.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,79,8],
 "classAbstractLinearEllipticPde.html#acccbcd50f870a7f33b156aec40840cdb":[1,0,79,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "classAbstractNonlinearElasticitySolver.html#a14b1cebb390b0c94fdfc89c7d3c82c87":[1,0,91,10],
 "classAbstractNonlinearElasticitySolver.html#a180e7ca56c39c2fdfd7476b6d549f69b":[1,0,91,30],
 "classAbstractNonlinearElasticitySolver.html#a1d2fca2272541c97ccba787f07f0e370":[1,0,91,38],
-"classAbstractNonlinearElasticitySolver.html#a2202f40360301d537f7d33c07b2cb2f7":[1,0,91,29],
-"classAbstractNonlinearElasticitySolver.html#a24d91c3b774e3934b9ce193a18554f00":[1,0,91,21]
+"classAbstractNonlinearElasticitySolver.html#a2202f40360301d537f7d33c07b2cb2f7":[1,0,91,29]
 };

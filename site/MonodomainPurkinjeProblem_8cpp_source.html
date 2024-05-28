@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::5328fbcc90aa4b951fdff8b5db625e83cd70b440</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2a96aad13aaa759ad9229a55e3752b660f183259</span>
    </div>
   </td>
  </tr>
@@ -207,11 +207,11 @@ $(document).ready(function(){initNavTree('MonodomainPurkinjeProblem_8cpp_source.
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">double</span> v_max, v_min, v_purk_max, v_purk_min;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    VecStrideMax( this-&gt;mSolution, 0, PETSC_NULL, &amp;v_max );</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    VecStrideMin( this-&gt;mSolution, 0, PETSC_NULL, &amp;v_min );</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    VecStrideMax( this-&gt;mSolution, 0, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, &amp;v_max );</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    VecStrideMin( this-&gt;mSolution, 0, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, &amp;v_min );</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    VecStrideMax( this-&gt;mSolution, 1, PETSC_NULL, &amp;v_purk_max );</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    VecStrideMin( this-&gt;mSolution, 1, PETSC_NULL, &amp;v_purk_min );</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    VecStrideMax( this-&gt;mSolution, 1, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, &amp;v_purk_max );</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    VecStrideMin( this-&gt;mSolution, 1, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, &amp;v_purk_min );</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="comment">// avoid printing 1e-320 etc</span></div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">if</span>(fabs(v_purk_min)&lt;1e-20)</div>
@@ -281,6 +281,7 @@ $(document).ready(function(){initNavTree('MonodomainPurkinjeProblem_8cpp_source.
 <div class="ttc" id="aException_8hpp_html"><div class="ttname"><a href="Exception_8hpp.html">Exception.hpp</a></div></div>
 <div class="ttc" id="aException_8hpp_html_ab812c978627256aabe068eaa9f074b45"><div class="ttname"><a href="Exception_8hpp.html#ab812c978627256aabe068eaa9f074b45">EXCEPT_IF_NOT</a></div><div class="ttdeci">#define EXCEPT_IF_NOT(test)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00171">Exception.hpp:171</a></div></div>
 <div class="ttc" id="aException_8hpp_html_af2b42ae36ede1d9c8f7c20de69d07106"><div class="ttname"><a href="Exception_8hpp.html#af2b42ae36ede1d9c8f7c20de69d07106">UNSIGNED_UNSET</a></div><div class="ttdeci">const unsigned UNSIGNED_UNSET</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00053">Exception.hpp:53</a></div></div>
+<div class="ttc" id="aPetscTools_8hpp_html_ac01ab379e8a552e591b309ae9a25481f"><div class="ttname"><a href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a></div><div class="ttdeci">#define CHASTE_PETSC_NULLPTR</div><div class="ttdoc">A macro to define PETSc null pointer based on the PETSc version.</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00069">PetscTools.hpp:69</a></div></div>
 <div class="ttc" id="aSerializationExportWrapperForCpp_8hpp_html"><div class="ttname"><a href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a></div></div>
 <div class="ttc" id="aSerializationExportWrapper_8hpp_html_a37744051991efcdabf0f9d8649d4f865"><div class="ttname"><a href="SerializationExportWrapper_8hpp.html#a37744051991efcdabf0f9d8649d4f865">EXPORT_TEMPLATE_CLASS2</a></div><div class="ttdeci">#define EXPORT_TEMPLATE_CLASS2(CLASS, E, S)</div><div class="ttdef"><b>Definition</b> <a href="SerializationExportWrapper_8hpp_source.html#l00371">SerializationExportWrapper.hpp:371</a></div></div>
 <div class="ttc" id="aclassAbstractCardiacProblem_html"><div class="ttname"><a href="classAbstractCardiacProblem.html">AbstractCardiacProblem</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractCardiacProblem_8hpp_source.html#l00113">AbstractCardiacProblem.hpp:114</a></div></div>

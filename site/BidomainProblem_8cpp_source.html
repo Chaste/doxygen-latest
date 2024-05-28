@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::5328fbcc90aa4b951fdff8b5db625e83cd70b440</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2a96aad13aaa759ad9229a55e3752b660f183259</span>
    </div>
   </td>
  </tr>
@@ -304,11 +304,11 @@ $(document).ready(function(){initNavTree('BidomainProblem_8cpp_source.html','');
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordtype">double</span> v_max, v_min, phi_max, phi_min;</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    VecStrideMax( this-&gt;mSolution, 0, PETSC_NULL, &amp;v_max );</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    VecStrideMin( this-&gt;mSolution, 0, PETSC_NULL, &amp;v_min );</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    VecStrideMax( this-&gt;mSolution, 0, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, &amp;v_max );</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    VecStrideMin( this-&gt;mSolution, 0, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, &amp;v_min );</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    VecStrideMax( this-&gt;mSolution, 1, PETSC_NULL, &amp;phi_max );</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    VecStrideMin( this-&gt;mSolution, 1, PETSC_NULL, &amp;phi_min );</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    VecStrideMax( this-&gt;mSolution, 1, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, &amp;phi_max );</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    VecStrideMin( this-&gt;mSolution, 1, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, &amp;phi_min );</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    {</div>
@@ -501,6 +501,7 @@ $(document).ready(function(){initNavTree('BidomainProblem_8cpp_source.html','');
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#a68d8898f0cc9b0e791c643c0396efd2d">EXPORT_TEMPLATE_CLASS_SAME_DIMS</a>(<a class="code hl_class" href="classBidomainProblem.html">BidomainProblem</a>)</div>
 <div class="ttc" id="aException_8hpp_html"><div class="ttname"><a href="Exception_8hpp.html">Exception.hpp</a></div></div>
 <div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
+<div class="ttc" id="aPetscTools_8hpp_html_ac01ab379e8a552e591b309ae9a25481f"><div class="ttname"><a href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a></div><div class="ttdeci">#define CHASTE_PETSC_NULLPTR</div><div class="ttdoc">A macro to define PETSc null pointer based on the PETSc version.</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00069">PetscTools.hpp:69</a></div></div>
 <div class="ttc" id="aSerializationExportWrapperForCpp_8hpp_html"><div class="ttname"><a href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a></div></div>
 <div class="ttc" id="aSerializationExportWrapper_8hpp_html_a68d8898f0cc9b0e791c643c0396efd2d"><div class="ttname"><a href="SerializationExportWrapper_8hpp.html#a68d8898f0cc9b0e791c643c0396efd2d">EXPORT_TEMPLATE_CLASS_SAME_DIMS</a></div><div class="ttdeci">#define EXPORT_TEMPLATE_CLASS_SAME_DIMS(CLASS)</div><div class="ttdef"><b>Definition</b> <a href="SerializationExportWrapper_8hpp_source.html#l00352">SerializationExportWrapper.hpp:352</a></div></div>
 <div class="ttc" id="aclassAbstractCardiacCellFactory_html"><div class="ttname"><a href="classAbstractCardiacCellFactory.html">AbstractCardiacCellFactory</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractCardiacCellFactory_8hpp_source.html#l00070">AbstractCardiacCellFactory.hpp:71</a></div></div>

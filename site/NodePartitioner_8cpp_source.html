@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::5328fbcc90aa4b951fdff8b5db625e83cd70b440</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2a96aad13aaa759ad9229a55e3752b660f183259</span>
    </div>
   </td>
  </tr>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('NodePartitioner_8cpp_source.html','');
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    xadj[0]=0;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">for</span> (<a class="code hl_class" href="classPetscInt.html">PetscInt</a> row_global_index=connectivity_matrix_lo; row_global_index&lt;connectivity_matrix_hi; row_global_index++)</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        MatGetRow(connectivity_matrix, row_global_index, &amp;row_num_nz, &amp;column_indices, PETSC_NULL);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        MatGetRow(connectivity_matrix, row_global_index, &amp;row_num_nz, &amp;column_indices, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>);</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordtype">unsigned</span> row_local_index = row_global_index - connectivity_matrix_lo;</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        xadj[row_local_index+1] = xadj[row_local_index] + row_num_nz;</div>
@@ -271,14 +271,14 @@ $(document).ready(function(){initNavTree('NodePartitioner_8cpp_source.html','');
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>           adjncy[xadj[row_local_index] + col_index] =  column_indices[col_index];</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        }</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        MatRestoreRow(connectivity_matrix, row_global_index, &amp;row_num_nz,&amp;column_indices, PETSC_NULL);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        MatRestoreRow(connectivity_matrix, row_global_index, &amp;row_num_nz,&amp;column_indices, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>);</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(connectivity_matrix);</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="comment">// Convert to an adjacency matrix</span></div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <a class="code hl_class" href="classMat.html">Mat</a> adj_matrix;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    MatCreateMPIAdj(PETSC_COMM_WORLD, num_local_nodes, num_nodes, xadj, adjncy, PETSC_NULL, &amp;adj_matrix);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    MatCreateMPIAdj(PETSC_COMM_WORLD, num_local_nodes, num_nodes, xadj, adjncy, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, &amp;adj_matrix);</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <a class="code hl_function" href="classPetscTools.html#a7a807cfd3f93e989e1d90d00650e5c64">PetscTools::Barrier</a>();</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
@@ -327,7 +327,7 @@ $(document).ready(function(){initNavTree('NodePartitioner_8cpp_source.html','');
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="comment">// Index sets only give local information, we want global</span></div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    AO ordering;</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    AOCreateBasicIS(new_global_node_indices, PETSC_NULL <span class="comment">/* natural ordering */</span>, &amp;ordering);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    AOCreateBasicIS(new_global_node_indices, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a> <span class="comment">/* natural ordering */</span>, &amp;ordering);</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="comment">// The locally owned range under the new numbering</span></div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <a class="code hl_class" href="classPetscInt.html">PetscInt</a>* local_range = <span class="keyword">new</span> <a class="code hl_class" href="classPetscInt.html">PetscInt</a>[my_num_nodes];</div>
@@ -453,7 +453,8 @@ $(document).ready(function(){initNavTree('NodePartitioner_8cpp_source.html','');
 <div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
 <div class="ttc" id="aException_8hpp_html_af2b42ae36ede1d9c8f7c20de69d07106"><div class="ttname"><a href="Exception_8hpp.html#af2b42ae36ede1d9c8f7c20de69d07106">UNSIGNED_UNSET</a></div><div class="ttdeci">const unsigned UNSIGNED_UNSET</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00053">Exception.hpp:53</a></div></div>
 <div class="ttc" id="aPetscTools_8hpp_html"><div class="ttname"><a href="PetscTools_8hpp.html">PetscTools.hpp</a></div></div>
-<div class="ttc" id="aPetscTools_8hpp_html_ad95ab7dc1ad0630a0e68bc2ee28da4b8"><div class="ttname"><a href="PetscTools_8hpp.html#ad95ab7dc1ad0630a0e68bc2ee28da4b8">PETSC_DESTROY_PARAM</a></div><div class="ttdeci">#define PETSC_DESTROY_PARAM(x)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00070">PetscTools.hpp:70</a></div></div>
+<div class="ttc" id="aPetscTools_8hpp_html_ac01ab379e8a552e591b309ae9a25481f"><div class="ttname"><a href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a></div><div class="ttdeci">#define CHASTE_PETSC_NULLPTR</div><div class="ttdoc">A macro to define PETSc null pointer based on the PETSc version.</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00069">PetscTools.hpp:69</a></div></div>
+<div class="ttc" id="aPetscTools_8hpp_html_ad95ab7dc1ad0630a0e68bc2ee28da4b8"><div class="ttname"><a href="PetscTools_8hpp.html#ad95ab7dc1ad0630a0e68bc2ee28da4b8">PETSC_DESTROY_PARAM</a></div><div class="ttdeci">#define PETSC_DESTROY_PARAM(x)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00084">PetscTools.hpp:84</a></div></div>
 <div class="ttc" id="aclassAbstractMeshReader_html"><div class="ttname"><a href="classAbstractMeshReader.html">AbstractMeshReader</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractMeshReader_8hpp_source.html#l00076">AbstractMeshReader.hpp:77</a></div></div>
 <div class="ttc" id="aclassAbstractMeshReader_html_a359c40f76709bed38695aeb598fea7cd"><div class="ttname"><a href="classAbstractMeshReader.html#a359c40f76709bed38695aeb598fea7cd">AbstractMeshReader::Reset</a></div><div class="ttdeci">virtual void Reset()=0</div></div>
 <div class="ttc" id="aclassAbstractMeshReader_html_a38046993b70239a7adf51d167ce1f4d3"><div class="ttname"><a href="classAbstractMeshReader.html#a38046993b70239a7adf51d167ce1f4d3">AbstractMeshReader::GetNumElements</a></div><div class="ttdeci">virtual unsigned GetNumElements() const =0</div></div>
@@ -479,7 +480,7 @@ $(document).ready(function(){initNavTree('NodePartitioner_8cpp_source.html','');
 <div class="ttc" id="aclassNodePartitioner_html_aa92dedeaf829b4790e94be0766722573"><div class="ttname"><a href="classNodePartitioner.html#aa92dedeaf829b4790e94be0766722573">NodePartitioner::GeometricPartitioning</a></div><div class="ttdeci">static void GeometricPartitioning(AbstractMeshReader&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMeshReader, std::vector&lt; unsigned &gt; &amp;rNodePermutation, std::set&lt; unsigned &gt; &amp;rNodesOwned, std::vector&lt; unsigned &gt; &amp;rProcessorsOffset, ChasteCuboid&lt; SPACE_DIM &gt; *pRegion)</div><div class="ttdef"><b>Definition</b> <a href="NodePartitioner_8cpp_source.html#l00299">NodePartitioner.cpp:299</a></div></div>
 <div class="ttc" id="aclassPetscInt_html"><div class="ttname"><a href="classPetscInt.html">PetscInt</a></div></div>
 <div class="ttc" id="aclassPetscMatTools_html_aa9717ce944536cda4afaac557aba7254"><div class="ttname"><a href="classPetscMatTools.html#aa9717ce944536cda4afaac557aba7254">PetscMatTools::Finalise</a></div><div class="ttdeci">static void Finalise(Mat matrix)</div><div class="ttdef"><b>Definition</b> <a href="PetscMatTools_8cpp_source.html#l00067">PetscMatTools.cpp:67</a></div></div>
-<div class="ttc" id="aclassPetscTools_html_a0d218276d49e4605dc5b9272317b4e76"><div class="ttname"><a href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a></div><div class="ttdeci">static void Destroy(Vec &amp;rVec)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00352">PetscTools.hpp:352</a></div></div>
+<div class="ttc" id="aclassPetscTools_html_a0d218276d49e4605dc5b9272317b4e76"><div class="ttname"><a href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a></div><div class="ttdeci">static void Destroy(Vec &amp;rVec)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00366">PetscTools.hpp:366</a></div></div>
 <div class="ttc" id="aclassPetscTools_html_a30cf1b3576c5dd99556f6b87a05be7cc"><div class="ttname"><a href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a></div><div class="ttdeci">static bool AmMaster()</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8cpp_source.html#l00120">PetscTools.cpp:120</a></div></div>
 <div class="ttc" id="aclassPetscTools_html_a45d6cfe320d8266756c20a38de1e9a73"><div class="ttname"><a href="classPetscTools.html#a45d6cfe320d8266756c20a38de1e9a73">PetscTools::AmTopMost</a></div><div class="ttdeci">static bool AmTopMost()</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8cpp_source.html#l00126">PetscTools.cpp:126</a></div></div>
 <div class="ttc" id="aclassPetscTools_html_a7a807cfd3f93e989e1d90d00650e5c64"><div class="ttname"><a href="classPetscTools.html#a7a807cfd3f93e989e1d90d00650e5c64">PetscTools::Barrier</a></div><div class="ttdeci">static void Barrier(const std::string callerId=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8cpp_source.html#l00134">PetscTools.cpp:134</a></div></div>

@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::5328fbcc90aa4b951fdff8b5db625e83cd70b440</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2a96aad13aaa759ad9229a55e3752b660f183259</span>
    </div>
   </td>
  </tr>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('ExecutableSupport_8cpp_source.html',''
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_function" href="classCommandLineArguments.html#a05b160b100db21aec7f47398d12612c0">CommandLineArguments::Instance</a>()-&gt;<a class="code hl_variable" href="classCommandLineArguments.html#a067b1911f5cfe57e7acc7b7a1cc477c2">p_argc</a> = pArgc;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_function" href="classCommandLineArguments.html#a05b160b100db21aec7f47398d12612c0">CommandLineArguments::Instance</a>()-&gt;<a class="code hl_variable" href="classCommandLineArguments.html#afe9555ea87ea7ecac846aa5fcda7c209">p_argv</a> = pArgv;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="comment">// Initialise PETSc</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    PETSCEXCEPT(PetscInitialize(pArgc, pArgv, PETSC_NULL, PETSC_NULL));</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    PETSCEXCEPT(PetscInitialize(pArgc, pArgv, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>));</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="comment">// Set default output folder</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classExecutableSupport.html#acc824de727e10f93c3f563e0163876f8">mOutputDirectory</a>.<a class="code hl_function" href="classFileFinder.html#add892bd7eced4a4c730ee29cc5c38121">IsPathSet</a>())</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    {</div>
@@ -596,6 +596,7 @@ $(document).ready(function(){initNavTree('ExecutableSupport_8cpp_source.html',''
 </div>
 <div class="ttc" id="aChasteSerialization_8hpp_html"><div class="ttname"><a href="ChasteSerialization_8hpp.html">ChasteSerialization.hpp</a></div></div>
 <div class="ttc" id="aPetscTools_8hpp_html"><div class="ttname"><a href="PetscTools_8hpp.html">PetscTools.hpp</a></div></div>
+<div class="ttc" id="aPetscTools_8hpp_html_ac01ab379e8a552e591b309ae9a25481f"><div class="ttname"><a href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a></div><div class="ttdeci">#define CHASTE_PETSC_NULLPTR</div><div class="ttdoc">A macro to define PETSc null pointer based on the PETSc version.</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00069">PetscTools.hpp:69</a></div></div>
 <div class="ttc" id="aclassChasteBuildInfo_html_a0801b5dff0e6a89d2872ca3540a94245"><div class="ttname"><a href="classChasteBuildInfo.html#a0801b5dff0e6a89d2872ca3540a94245">ChasteBuildInfo::rGetIfProjectsModified</a></div><div class="ttdeci">static const std::map&lt; std::string, std::string &gt; &amp; rGetIfProjectsModified()</div></div>
 <div class="ttc" id="aclassChasteBuildInfo_html_a194dc816387edd9fbd6a5ce7ad75c66f"><div class="ttname"><a href="classChasteBuildInfo.html#a194dc816387edd9fbd6a5ce7ad75c66f">ChasteBuildInfo::GetRevisionNumber</a></div><div class="ttdeci">static unsigned long long GetRevisionNumber()</div></div>
 <div class="ttc" id="aclassChasteBuildInfo_html_a3e7d9ce4ac3cf153ce71060e2d164755"><div class="ttname"><a href="classChasteBuildInfo.html#a3e7d9ce4ac3cf153ce71060e2d164755">ChasteBuildInfo::GetBuilderUnameInfo</a></div><div class="ttdeci">static const char * GetBuilderUnameInfo()</div></div>

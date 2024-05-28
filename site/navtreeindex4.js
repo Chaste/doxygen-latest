@@ -9,11 +9,12 @@ var NAVTREEINDEX4 =
 "PetscSetupUtils_8hpp_source.html":[2,0,3,0,1,9],
 "PetscTools_8cpp_source.html":[2,0,3,0,2,8],
 "PetscTools_8hpp.html":[2,0,3,0,2,9],
-"PetscTools_8hpp.html#a0f7f8c92a8824e7999a60af319c801df":[2,0,3,0,2,9,2],
-"PetscTools_8hpp.html#a524a5be6b03b54f7148115745469afd0":[2,0,3,0,2,9,1],
-"PetscTools_8hpp.html#aa7e2737954067ace3389b2d2274b3d7b":[2,0,3,0,2,9,4],
-"PetscTools_8hpp.html#ad95ab7dc1ad0630a0e68bc2ee28da4b8":[2,0,3,0,2,9,3],
-"PetscTools_8hpp.html#ae2ff00db32a1376e3b6dea97bc390076":[2,0,3,0,2,9,5],
+"PetscTools_8hpp.html#a0f7f8c92a8824e7999a60af319c801df":[2,0,3,0,2,9,3],
+"PetscTools_8hpp.html#a524a5be6b03b54f7148115745469afd0":[2,0,3,0,2,9,2],
+"PetscTools_8hpp.html#aa7e2737954067ace3389b2d2274b3d7b":[2,0,3,0,2,9,5],
+"PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f":[2,0,3,0,2,9,1],
+"PetscTools_8hpp.html#ad95ab7dc1ad0630a0e68bc2ee28da4b8":[2,0,3,0,2,9,4],
+"PetscTools_8hpp.html#ae2ff00db32a1376e3b6dea97bc390076":[2,0,3,0,2,9,6],
 "PetscTools_8hpp_source.html":[2,0,3,0,2,9],
 "PetscVecTools_8cpp_source.html":[2,0,6,0,12],
 "PetscVecTools_8hpp_source.html":[2,0,6,0,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "UblasCustomFunctions_8hpp.html#a2b6fdee2f97970a6288ec3259ffd55bd":[2,0,6,0,19,16],
 "UblasCustomFunctions_8hpp.html#a31234f25099b44de41511757c7e9edd7":[2,0,6,0,19,34],
 "UblasCustomFunctions_8hpp.html#a349956365445c25327c2666655547e4a":[2,0,6,0,19,21],
-"UblasCustomFunctions_8hpp.html#a34e062234abbcd78bf987b47b307db21":[2,0,6,0,19,30],
-"UblasCustomFunctions_8hpp.html#a359b6e7af6167425541e8d51827ffa75":[2,0,6,0,19,24]
+"UblasCustomFunctions_8hpp.html#a34e062234abbcd78bf987b47b307db21":[2,0,6,0,19,30]
 };

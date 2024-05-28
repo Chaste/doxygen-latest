@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::5328fbcc90aa4b951fdff8b5db625e83cd70b440</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2a96aad13aaa759ad9229a55e3752b660f183259</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,9 @@ Macros</h2></td></tr>
 <tr class="separator:a524a5be6b03b54f7148115745469afd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f7f8c92a8824e7999a60af319c801df" id="r_a0f7f8c92a8824e7999a60af319c801df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PetscTools_8hpp.html#a0f7f8c92a8824e7999a60af319c801df">EXIT_IF_SEQUENTIAL</a>&#160;&#160;&#160;if(<a class="el" href="classPetscTools.html#a850294f254244f4f006695ba4052ab33">PetscTools::IsSequential</a>()){TS_TRACE(&quot;This test is not meant to be executed in sequential.&quot;);return;}</td></tr>
 <tr class="separator:a0f7f8c92a8824e7999a60af319c801df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01ab379e8a552e591b309ae9a25481f" id="r_ac01ab379e8a552e591b309ae9a25481f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>&#160;&#160;&#160;PETSC_NULL</td></tr>
+<tr class="memdesc:ac01ab379e8a552e591b309ae9a25481f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A macro to define PETSc null pointer based on the PETSc version.  <br /></td></tr>
+<tr class="separator:ac01ab379e8a552e591b309ae9a25481f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad95ab7dc1ad0630a0e68bc2ee28da4b8" id="r_ad95ab7dc1ad0630a0e68bc2ee28da4b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PetscTools_8hpp.html#ad95ab7dc1ad0630a0e68bc2ee28da4b8">PETSC_DESTROY_PARAM</a>(x)&#160;&#160;&#160;x</td></tr>
 <tr class="separator:ad95ab7dc1ad0630a0e68bc2ee28da4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e2737954067ace3389b2d2274b3d7b" id="r_aa7e2737954067ace3389b2d2274b3d7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PetscTools_8hpp.html#aa7e2737954067ace3389b2d2274b3d7b">TRY_IF_MASTER</a>(method)</td></tr>
@@ -117,6 +120,25 @@ Typedefs</h2></td></tr>
 
 <p class="definition">Definition in file <a class="el" href="PetscTools_8hpp_source.html">PetscTools.hpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ac01ab379e8a552e591b309ae9a25481f" name="ac01ab379e8a552e591b309ae9a25481f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac01ab379e8a552e591b309ae9a25481f">&#9670;&#160;</a></span>CHASTE_PETSC_NULLPTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHASTE_PETSC_NULLPTR&#160;&#160;&#160;PETSC_NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A macro to define PETSc null pointer based on the PETSc version. </p>
+<p>This macro is defined to handle the change in PETSc's null pointer definition between versions. For PETSc version 3.19.0 and later, it uses PETSC_NULLPTR. For older versions, it uses PETSC_NULL. See <a href="https://github.com/Chaste/Chaste/issues/263">https://github.com/Chaste/Chaste/issues/263</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="PetscTools_8hpp_source.html#l00069">69</a> of file <a class="el" href="PetscTools_8hpp_source.html">PetscTools.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a524a5be6b03b54f7148115745469afd0" name="a524a5be6b03b54f7148115745469afd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a524a5be6b03b54f7148115745469afd0">&#9670;&#160;</a></span>EXIT_IF_PARALLEL</h2>
 
@@ -173,7 +195,7 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PetscTools_8hpp_source.html#l00070">70</a> of file <a class="el" href="PetscTools_8hpp_source.html">PetscTools.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PetscTools_8hpp_source.html#l00084">84</a> of file <a class="el" href="PetscTools_8hpp_source.html">PetscTools.hpp</a>.</p>
 
 </div>
 </div>
@@ -213,7 +235,7 @@ Typedefs</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PetscTools_8hpp_source.html#l00091">91</a> of file <a class="el" href="PetscTools_8hpp_source.html">PetscTools.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PetscTools_8hpp_source.html#l00105">105</a> of file <a class="el" href="PetscTools_8hpp_source.html">PetscTools.hpp</a>.</p>
 
 </div>
 </div>
@@ -231,7 +253,7 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 <p>Older versions of PETSc used PetscTruth in place of PetscBool, so we define an alias for those installations. </p>
 
-<p class="definition">Definition at line <a class="el" href="PetscTools_8hpp_source.html#l00062">62</a> of file <a class="el" href="PetscTools_8hpp_source.html">PetscTools.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PetscTools_8hpp_source.html#l00076">76</a> of file <a class="el" href="PetscTools_8hpp_source.html">PetscTools.hpp</a>.</p>
 
 </div>
 </div>

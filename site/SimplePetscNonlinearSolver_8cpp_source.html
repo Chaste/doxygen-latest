@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::5328fbcc90aa4b951fdff8b5db625e83cd70b440</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2a96aad13aaa759ad9229a55e3752b660f183259</span>
    </div>
   </td>
  </tr>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('SimplePetscNonlinearSolver_8cpp_source
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#if (PETSC_VERSION_MAJOR == 2 &amp;&amp; PETSC_VERSION_MINOR == 2) </span><span class="comment">//PETSc 2.2</span></div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    SNESSolve(snes, x);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    SNESSolve(snes, PETSC_NULL, x);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    SNESSolve(snes, <a class="code hl_define" href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a>, x);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(residual);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(jacobian); <span class="comment">// Free Jacobian</span></div>
@@ -204,10 +204,11 @@ $(document).ready(function(){initNavTree('SimplePetscNonlinearSolver_8cpp_source
 <div class="ttc" id="aException_8hpp_html"><div class="ttname"><a href="Exception_8hpp.html">Exception.hpp</a></div></div>
 <div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
 <div class="ttc" id="aPetscTools_8hpp_html"><div class="ttname"><a href="PetscTools_8hpp.html">PetscTools.hpp</a></div></div>
-<div class="ttc" id="aPetscTools_8hpp_html_ad95ab7dc1ad0630a0e68bc2ee28da4b8"><div class="ttname"><a href="PetscTools_8hpp.html#ad95ab7dc1ad0630a0e68bc2ee28da4b8">PETSC_DESTROY_PARAM</a></div><div class="ttdeci">#define PETSC_DESTROY_PARAM(x)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00070">PetscTools.hpp:70</a></div></div>
+<div class="ttc" id="aPetscTools_8hpp_html_ac01ab379e8a552e591b309ae9a25481f"><div class="ttname"><a href="PetscTools_8hpp.html#ac01ab379e8a552e591b309ae9a25481f">CHASTE_PETSC_NULLPTR</a></div><div class="ttdeci">#define CHASTE_PETSC_NULLPTR</div><div class="ttdoc">A macro to define PETSc null pointer based on the PETSc version.</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00069">PetscTools.hpp:69</a></div></div>
+<div class="ttc" id="aPetscTools_8hpp_html_ad95ab7dc1ad0630a0e68bc2ee28da4b8"><div class="ttname"><a href="PetscTools_8hpp.html#ad95ab7dc1ad0630a0e68bc2ee28da4b8">PETSC_DESTROY_PARAM</a></div><div class="ttdeci">#define PETSC_DESTROY_PARAM(x)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00084">PetscTools.hpp:84</a></div></div>
 <div class="ttc" id="aclassMat_html"><div class="ttname"><a href="classMat.html">Mat</a></div></div>
 <div class="ttc" id="aclassPetscInt_html"><div class="ttname"><a href="classPetscInt.html">PetscInt</a></div></div>
-<div class="ttc" id="aclassPetscTools_html_a0d218276d49e4605dc5b9272317b4e76"><div class="ttname"><a href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a></div><div class="ttdeci">static void Destroy(Vec &amp;rVec)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00352">PetscTools.hpp:352</a></div></div>
+<div class="ttc" id="aclassPetscTools_html_a0d218276d49e4605dc5b9272317b4e76"><div class="ttname"><a href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a></div><div class="ttdeci">static void Destroy(Vec &amp;rVec)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8hpp_source.html#l00366">PetscTools.hpp:366</a></div></div>
 <div class="ttc" id="aclassPetscTools_html_ad6d7a60499c5a6bd9c64eb35fffd3b06"><div class="ttname"><a href="classPetscTools.html#ad6d7a60499c5a6bd9c64eb35fffd3b06">PetscTools::SetupMat</a></div><div class="ttdeci">static void SetupMat(Mat &amp;rMat, int numRows, int numColumns, unsigned rowPreallocation, int numLocalRows=PETSC_DECIDE, int numLocalColumns=PETSC_DECIDE, bool ignoreOffProcEntries=true, bool newAllocationError=true)</div><div class="ttdef"><b>Definition</b> <a href="PetscTools_8cpp_source.html#l00272">PetscTools.cpp:272</a></div></div>
 <div class="ttc" id="aclassSimplePetscNonlinearSolver_html_ad42e84156f73e457dd58ad88842aefd6"><div class="ttname"><a href="classSimplePetscNonlinearSolver.html#ad42e84156f73e457dd58ad88842aefd6">SimplePetscNonlinearSolver::Solve</a></div><div class="ttdeci">Vec Solve(PetscErrorCode(*pComputeResidual)(SNES, Vec, Vec, void *), PetscErrorCode(*pComputeJacobian)(SNES, Vec, Mat *, Mat *, MatStructure *, void *), Vec initialGuess, unsigned fill, void *pContext)</div><div class="ttdef"><b>Definition</b> <a href="SimplePetscNonlinearSolver_8cpp_source.html#l00046">SimplePetscNonlinearSolver.cpp:46</a></div></div>
 <div class="ttc" id="aclassVec_html"><div class="ttname"><a href="classVec.html">Vec</a></div></div>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"classPottsMesh.html#af5c3ad1fa79cfad0923d2223725a1970":[1,0,535,11],
 "classPottsMeshGenerator.html":[1,0,536],
 "classPottsMeshGenerator.html#a1d8b3b05ba314ae3ef1de887d315392f":[1,0,536,3],
 "classPottsMeshGenerator.html#a4fef1d652dd4d6be06e6ae74b2eadc0a":[1,0,536,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "classRegularStimulus.html":[1,0,557],
 "classRegularStimulus.html#a057059b4f16367b083148ae6a2f9a4c4":[1,0,557,11],
 "classRegularStimulus.html#a05fbb008415c153e55744a27bfcdbbef":[1,0,557,8],
-"classRegularStimulus.html#a078039a71adb8275f1763d09391aadb8":[1,0,557,3],
-"classRegularStimulus.html#a0858bbd4b235fa71b61798ae8e00994b":[1,0,557,2]
+"classRegularStimulus.html#a078039a71adb8275f1763d09391aadb8":[1,0,557,3]
 };

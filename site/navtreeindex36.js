@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"classOdeSolution.html#a0400df1a66855c93ff2521ff7a642324":[1,0,492,20],
 "classOdeSolution.html#a0605cb764e508954f57107f0e68d1931":[1,0,492,2],
 "classOdeSolution.html#a12c457dff982f14bac71ecba7932ddd8":[1,0,492,8],
 "classOdeSolution.html#a13dfa3a47e7f8c9a523bfe1d3cf42ed3":[1,0,492,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "classPetscMatTools.html#a5aa09bdaed7d4372cab33f898c593399":[1,0,519,11],
 "classPetscMatTools.html#a6ae709c830c74b78f9c6ec0c1e6ad49a":[1,0,519,3],
 "classPetscMatTools.html#a742a2bec669f75b1067b282ce6cf3b11":[1,0,519,17],
-"classPetscMatTools.html#a7a9a78b5ccdd2ac99a9e46f09de9e04e":[1,0,519,8],
-"classPetscMatTools.html#a81ec00917b30dcf7da65791a05eb35ee":[1,0,519,13]
+"classPetscMatTools.html#a7a9a78b5ccdd2ac99a9e46f09de9e04e":[1,0,519,8]
 };
