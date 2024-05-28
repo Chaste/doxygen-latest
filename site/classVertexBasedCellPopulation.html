@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::a98d83f6b8ed55dd4bb7f459514fbe005d30629e</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::0c1a2248f7dd114dedfc2221572fd8e58de9caff</span>
    </div>
   </td>
  </tr>
@@ -1593,13 +1593,13 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 <p>Overridden <a class="el" href="classVertexBasedCellPopulation.html#aa4edcb8688142c4c66acd412f32ac138">GetTetrahedralMeshForPdeModifier()</a> method.</p>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to a tetrahedral mesh using the nodes in the <a class="el" href="classVertexMesh.html">VertexMesh</a> as well as an additional node at the centre of each <a class="el" href="classVertexElement.html">VertexElement</a>. At present, this method only works in 2D.</dd></dl>
 <p>This method is called by <a class="el" href="classAbstractGrowingDomainPdeModifier.html">AbstractGrowingDomainPdeModifier</a>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000294">Todo:</a></b></dt><dd>will the nodes in mpMutableVertexMesh always have indices 0,1,2,...? (#2221) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000293">Todo:</a></b></dt><dd>will the nodes in mpMutableVertexMesh always have indices 0,1,2,...? (#2221) </dd></dl>
 
 <p>Implements <a class="el" href="classAbstractCellPopulation.html#a582e64e338a19a64feaa1fc4cab6a742">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="VertexBasedCellPopulation_8cpp_source.html#l00895">895</a> of file <a class="el" href="VertexBasedCellPopulation_8cpp_source.html">VertexBasedCellPopulation.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="TetrahedralMesh_8cpp_source.html#l00068">TetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ConstructFromMeshReader()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="OutputFileHandler_8cpp_source.html#l00327">OutputFileHandler::FindFile()</a>, <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="OutputFileHandler_8cpp_source.html#l00249">OutputFileHandler::GetOutputDirectoryFullPath()</a>, <a class="el" href="Node_8cpp_source.html#l00164">Node&lt; SPACE_DIM &gt;::IsBoundaryNode()</a>, <a class="el" href="PetscTools_8cpp_source.html#l00091">PetscTools::IsSequential()</a>, <a class="el" href="OutputFileHandler_8cpp_source.html#l00265">OutputFileHandler::OpenOutputFile()</a>, <a class="el" href="FileFinder_8cpp_source.html#l00421">FileFinder::Remove()</a>, <a class="el" href="Node_8cpp_source.html#l00139">Node&lt; SPACE_DIM &gt;::rGetLocation()</a>, and <a class="el" href="AbstractMesh_8cpp_source.html#l00506">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::SetMeshHasChangedSinceLoading()</a>.</p>
+<p class="reference">References <a class="el" href="TetrahedralMesh_8cpp_source.html#l00068">TetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ConstructFromMeshReader()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="OutputFileHandler_8cpp_source.html#l00317">OutputFileHandler::FindFile()</a>, <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="OutputFileHandler_8cpp_source.html#l00239">OutputFileHandler::GetOutputDirectoryFullPath()</a>, <a class="el" href="Node_8cpp_source.html#l00164">Node&lt; SPACE_DIM &gt;::IsBoundaryNode()</a>, <a class="el" href="PetscTools_8cpp_source.html#l00091">PetscTools::IsSequential()</a>, <a class="el" href="OutputFileHandler_8cpp_source.html#l00255">OutputFileHandler::OpenOutputFile()</a>, <a class="el" href="FileFinder_8cpp_source.html#l00421">FileFinder::Remove()</a>, <a class="el" href="Node_8cpp_source.html#l00139">Node&lt; SPACE_DIM &gt;::rGetLocation()</a>, and <a class="el" href="AbstractMesh_8cpp_source.html#l00506">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::SetMeshHasChangedSinceLoading()</a>.</p>
 
 </div>
 </div>
@@ -1896,7 +1896,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 <p>Remove all cells labelled as dead.</p>
 <p>Note that after calling this method the cell population will be in an inconsistent state until the equivalent of a 'remesh' is performed! So don't try iterating over cells or anything like that.</p>
 <dl class="section return"><dt>Returns</dt><dd>number of cells removed </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000292">Todo:</a></b></dt><dd>(#2489) this should cause an error - we should fix this! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000291">Todo:</a></b></dt><dd>(#2489) this should cause an error - we should fix this! </dd></dl>
 
 <p>Implements <a class="el" href="classAbstractCellPopulation.html#a5a3c5b0f01354fa25044e174c1c10269">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
 
@@ -2305,7 +2305,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000293">Todo:</a></b></dt><dd>We want to make these maps private, so we need a better way of doing the code below. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000292">Todo:</a></b></dt><dd>We want to make these maps private, so we need a better way of doing the code below. </dd></dl>
 
 <p>Implements <a class="el" href="classAbstractCellPopulation.html#a7b4dac40d6417494df5d33e518f39b90">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
 

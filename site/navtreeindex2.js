@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"CryptSimulation1d_8hpp_source.html":[2,0,2,0,6,1],
 "CryptSimulation2d_8cpp_source.html":[2,0,2,0,6,2],
 "CryptSimulation2d_8hpp_source.html":[2,0,2,0,6,3],
 "CryptSimulationBoundaryCondition_8cpp_source.html":[2,0,2,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "Hdf5ToXdmfConverter_8cpp_source.html":[2,0,9,0,1,8],
 "Hdf5ToXdmfConverter_8hpp_source.html":[2,0,9,0,1,9],
 "HeartConfigDefaults_8hpp.html":[2,0,4,0,5,26],
-"HeartConfigDefaults_8hpp.html#a036d1372e32bd605e0ccc9047ddca5f0":[2,0,4,0,5,26,3],
-"HeartConfigDefaults_8hpp.html#a77a4c7d39d35ca77f0c44780e3ce37ba":[2,0,4,0,5,26,2]
+"HeartConfigDefaults_8hpp.html#a036d1372e32bd605e0ccc9047ddca5f0":[2,0,4,0,5,26,3]
 };

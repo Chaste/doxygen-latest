@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"classImmersedBoundarySvgWriter.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,414,11],
 "classImmersedBoundarySvgWriter.html#aeb7f8575c1de342b9c0535ce587fc083":[1,0,414,6],
 "classImmersedBoundarySvgWriter.html#af67dd1a7ffbe3188f3a22fde4fd0a42e":[1,0,414,1],
 "classImplicitCardiacMechanicsSolver.html":[1,0,415],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "classLogFile.html#ae7fd15cc3c27456cd35885621d362d2b":[1,0,428,4],
 "classLuoRudySpiralWaveCellFactory.html":[1,0,429],
 "classLuoRudySpiralWaveCellFactory.html#a4bb98def0b3bb8f3d8bedbc2a7f39d56":[1,0,429,0],
-"classLuoRudySpiralWaveCellFactory.html#a8f0dc218488ae2fc06136da4d5bc7225":[1,0,429,6],
-"classLuoRudySpiralWaveCellFactory.html#a9a8ce2d3afa039f297bf65350e1441c3":[1,0,429,3]
+"classLuoRudySpiralWaveCellFactory.html#a8f0dc218488ae2fc06136da4d5bc7225":[1,0,429,6]
 };

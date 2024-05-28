@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"classPetscMatTools.html#a7a9a78b5ccdd2ac99a9e46f09de9e04e":[1,0,519,8],
 "classPetscMatTools.html#a81ec00917b30dcf7da65791a05eb35ee":[1,0,519,13],
 "classPetscMatTools.html#a8563e1b557a0b0051e2659d186c2bddd":[1,0,519,0],
 "classPetscMatTools.html#a871794b7b4edc05a98810c83a6e59f05":[1,0,519,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "classPottsMesh.html#ae5e2c935a241fe9177e203afa4d63b5d":[1,0,535,16],
 "classPottsMesh.html#aec1217f04c57cf3fd2920faee8f229d4":[1,0,535,13],
 "classPottsMesh.html#af09a9b8bfcc5279c13606f5fec1bffcc":[1,0,535,22],
-"classPottsMesh.html#af1d26fd3ff19accc5f783ef9f540cbcd":[1,0,535,21],
-"classPottsMesh.html#af3fd727da4b0fd871e11b82bb3b1b041":[1,0,535,15]
+"classPottsMesh.html#af1d26fd3ff19accc5f783ef9f540cbcd":[1,0,535,21]
 };

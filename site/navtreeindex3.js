@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"HeartConfigDefaults_8hpp.html#a77a4c7d39d35ca77f0c44780e3ce37ba":[2,0,4,0,5,26,2],
 "HeartConfigDefaults_8hpp.html#a7ad3f935cd200cc147566092b1fab250":[2,0,4,0,5,26,0],
 "HeartConfigDefaults_8hpp.html#a9cb0112bf0d8f377fae47e0df70821ab":[2,0,4,0,5,26,1],
 "HeartConfigDefaults_8hpp_source.html":[2,0,4,0,5,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "PdeSimulationTime_8cpp_source.html":[2,0,9,0,0,15],
 "PdeSimulationTime_8hpp_source.html":[2,0,9,0,0,16],
 "PeriodicNodesOnlyMesh_8cpp_source.html":[2,0,7,0,3,8],
-"PeriodicNodesOnlyMesh_8hpp_source.html":[2,0,7,0,3,9],
-"PetscAndChasteCitations_8hpp_source.html":[2,0,3,0,1,6]
+"PeriodicNodesOnlyMesh_8hpp_source.html":[2,0,7,0,3,9]
 };

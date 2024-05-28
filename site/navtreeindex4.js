@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"PetscAndChasteCitations_8hpp_source.html":[2,0,3,0,1,6],
 "PetscException_8cpp_source.html":[2,0,3,0,2,6],
 "PetscException_8hpp_source.html":[2,0,3,0,2,7],
 "PetscMatTools_8cpp_source.html":[2,0,6,0,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "UblasCustomFunctions_8hpp.html#a266ebcba8a140a5b9dec7d4a0de3e5fc":[2,0,6,0,19,36],
 "UblasCustomFunctions_8hpp.html#a2b6fdee2f97970a6288ec3259ffd55bd":[2,0,6,0,19,16],
 "UblasCustomFunctions_8hpp.html#a31234f25099b44de41511757c7e9edd7":[2,0,6,0,19,34],
-"UblasCustomFunctions_8hpp.html#a349956365445c25327c2666655547e4a":[2,0,6,0,19,21],
-"UblasCustomFunctions_8hpp.html#a34e062234abbcd78bf987b47b307db21":[2,0,6,0,19,30]
+"UblasCustomFunctions_8hpp.html#a349956365445c25327c2666655547e4a":[2,0,6,0,19,21]
 };

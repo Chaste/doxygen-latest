@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"classPottsMesh.html#af3fd727da4b0fd871e11b82bb3b1b041":[1,0,535,15],
 "classPottsMesh.html#af5c3ad1fa79cfad0923d2223725a1970":[1,0,535,11],
 "classPottsMeshGenerator.html":[1,0,536],
 "classPottsMeshGenerator.html#a1d8b3b05ba314ae3ef1de887d315392f":[1,0,536,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "classRandomNumberGenerator.html#ae96e7b92257c9bd687016900108eee9f":[1,0,556,14],
 "classRegularStimulus.html":[1,0,557],
 "classRegularStimulus.html#a057059b4f16367b083148ae6a2f9a4c4":[1,0,557,11],
-"classRegularStimulus.html#a05fbb008415c153e55744a27bfcdbbef":[1,0,557,8],
-"classRegularStimulus.html#a078039a71adb8275f1763d09391aadb8":[1,0,557,3]
+"classRegularStimulus.html#a05fbb008415c153e55744a27bfcdbbef":[1,0,557,8]
 };
