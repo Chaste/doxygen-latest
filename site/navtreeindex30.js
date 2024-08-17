@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"classImmersedBoundaryMesh.html#abe8a9fcfa8aedec3b3135a5b8e6ee97a":[1,0,406,54],
 "classImmersedBoundaryMesh.html#abeccb65ec86d1fd541a100939c9e713a":[1,0,406,79],
 "classImmersedBoundaryMesh.html#abf3ed09bfc818e200b7b6ad90fb23a00":[1,0,406,33],
 "classImmersedBoundaryMesh.html#ac6127d94396d2fcd0229ff0a8a506710":[1,0,406,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "classImmersedBoundarySvgWriter.html#a6ec1f24af5c7fec1361a0e83c1aa405f":[1,0,414,7],
 "classImmersedBoundarySvgWriter.html#a748aa651f1d29784e84b39fe12584c05":[1,0,414,5],
 "classImmersedBoundarySvgWriter.html#a8a0aa00fa3de34673c0aae70d5336e43":[1,0,414,4],
-"classImmersedBoundarySvgWriter.html#a97ec52bf0e4ac14a9bf139898ae1715f":[1,0,414,14],
-"classImmersedBoundarySvgWriter.html#a99782b6a2d58e604cbe17faf27a87578":[1,0,414,10]
+"classImmersedBoundarySvgWriter.html#a97ec52bf0e4ac14a9bf139898ae1715f":[1,0,414,14]
 };

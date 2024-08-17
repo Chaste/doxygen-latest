@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"classAbstractElement.html#a9e805cac976dee64da41ff11d87c2f24":[1,0,59,17],
 "classAbstractElement.html#aba671c1d70a7697292eff47237a1a009":[1,0,59,14],
 "classAbstractElement.html#abc87611ab1dcbacdc1a2dd3c62eec2ae":[1,0,59,4],
 "classAbstractElement.html#ac1ef0f71ae056fc5878aa35cc55bd24c":[1,0,59,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "classAbstractIvpOdeSolver.html#aa39f4eb42df48592d50202a3aee175f0":[1,0,78,0],
 "classAbstractIvpOdeSolver.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,78,8],
 "classAbstractIvpOdeSolver.html#adfab92f4bb5eed8088b852c1ce94a346":[1,0,78,1],
-"classAbstractIvpOdeSolver.html#af2232e7b9012f21a7dfca8252417329c":[1,0,78,3],
-"classAbstractLinearEllipticPde.html":[1,0,79]
+"classAbstractIvpOdeSolver.html#af2232e7b9012f21a7dfca8252417329c":[1,0,78,3]
 };

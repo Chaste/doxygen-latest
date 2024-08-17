@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"classHeartConfig.html#a9aa42b672223ab649afb42986f2506b8":[1,0,383,66],
 "classHeartConfig.html#a9b5377c5f2f8a4b61a3a05d6c0b89d62":[1,0,383,89],
 "classHeartConfig.html#a9c9f9fefab6c029324426098740b5bc4":[1,0,383,180],
 "classHeartConfig.html#a9f91acbb46d064dda8e335940005bfc5":[1,0,383,135],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "classImmersedBoundaryCellPopulation.html#a014175cfed09490f9751ef0ae7ddd7df":[1,0,396,37],
 "classImmersedBoundaryCellPopulation.html#a0af20c03ac13a9445668af750faa7ec7":[1,0,396,14],
 "classImmersedBoundaryCellPopulation.html#a0b5f7cb300130b6656a83e6496fa90d6":[1,0,396,35],
-"classImmersedBoundaryCellPopulation.html#a0df5ae799fed6819c203ee1329385b9d":[1,0,396,49],
-"classImmersedBoundaryCellPopulation.html#a1515653e8e1b2abf57fe2db5635bbf7c":[1,0,396,58]
+"classImmersedBoundaryCellPopulation.html#a0df5ae799fed6819c203ee1329385b9d":[1,0,396,49]
 };

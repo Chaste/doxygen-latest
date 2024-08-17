@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"classSimulationTime.html#af33f9985646461539533c43279cbfd0f":[1,0,582,10],
 "classSimulationTime.html#af40fd598adb2ab1a99142a8e393aaf37":[1,0,582,16],
 "classSimulationTime.html#af7911e75485eab15236cf8c35e6a54c1":[1,0,582,4],
 "classSimulationTime.html#afc7bc6910470fa8e07e98376333c0c20":[1,0,582,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "classTargetAreaLinearGrowthModifier.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,612,9],
 "classTargetAreaLinearGrowthModifier.html#afedcd98be9de3cc4aa67ef5f70db4989":[1,0,612,5],
 "classTargetedCellKiller.html":[1,0,613],
-"classTargetedCellKiller.html#a3a4ebe26bc9d0a28f44b379209a8f21a":[1,0,613,2],
-"classTargetedCellKiller.html#a5fbafc9a632567619e18f482f60f011c":[1,0,613,8]
+"classTargetedCellKiller.html#a3a4ebe26bc9d0a28f44b379209a8f21a":[1,0,613,2]
 };

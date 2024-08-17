@@ -6,6 +6,7 @@ var dir_153b6113adfe56ce3b68923ad87d45aa =
     [ "random", "dir_de35090011566eb26aaa173a229da07f.html", "dir_de35090011566eb26aaa173a229da07f" ],
     [ "timing", "dir_19a45b9c41b8ed5f1eb97e0d1b01c68f.html", "dir_19a45b9c41b8ed5f1eb97e0d1b01c68f" ],
     [ "ChasteBuildRoot.hpp", "ChasteBuildRoot_8hpp.html", "ChasteBuildRoot_8hpp" ],
+    [ "ChastePragmas.hpp", "ChastePragmas_8hpp_source.html", null ],
     [ "ChasteSyscalls.hpp", "ChasteSyscalls_8hpp.html", "ChasteSyscalls_8hpp" ],
     [ "Citations.cpp", "Citations_8cpp_source.html", null ],
     [ "Citations.hpp", "Citations_8hpp_source.html", null ],

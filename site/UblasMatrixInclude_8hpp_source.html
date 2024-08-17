@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::5feae49c6bbd3f4c46a766d998ca13a306f23dd1</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::60e837ec54cfdf0e6b6cce5c8a3e037d883c9a61</span>
    </div>
   </td>
  </tr>
@@ -105,13 +105,17 @@ $(document).ready(function(){initNavTree('UblasMatrixInclude_8hpp_source.html','
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#ifndef UBLASMATRIXINCLUDE_HPP_</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#define UBLASMATRIXINCLUDE_HPP_</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;boost/numeric/ublas/matrix.hpp&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;ChastePragmas.hpp&quot;</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">using </span>boost::numeric::ublas::c_matrix;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">using </span>boost::numeric::ublas::zero_matrix;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">using </span>boost::numeric::ublas::identity_matrix;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>CHASTE_DISABLE_BOOST_DEPRECATION_WARNING_BEGIN</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;boost/numeric/ublas/matrix.hpp&gt;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>CHASTE_DISABLE_BOOST_DEPRECATION_WARNING_END</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif </span><span class="comment">/*UBLASMATRIXINCLUDE_HPP_*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">using </span>boost::numeric::ublas::c_matrix;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">using </span>boost::numeric::ublas::zero_matrix;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">using </span>boost::numeric::ublas::identity_matrix;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">/*UBLASMATRIXINCLUDE_HPP_*/</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
