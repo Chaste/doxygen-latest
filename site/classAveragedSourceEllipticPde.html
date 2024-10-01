@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f2a4e6b6f0c17e3b22329e29946680df5e40a0d9</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::a87e00c60af704cdee4e6325a6f79b7915464a88</span>
    </div>
   </td>
  </tr>
@@ -156,7 +156,7 @@ class AveragedSourceEllipticPde&lt; DIM &gt;</div><p>An elliptic PDE to be solve
 <p>Grad.(D*Grad(u)) + k*u*rho(x) = 0,</p>
 <p>where the scalars D and k are specified by the members mDiffusionCoefficient and mSourceCoefficient, respectively. Their values must be set in the constructor.</p>
 <p>The function rho(x) denotes the local density of non-apoptotic cells. This quantity is computed for each element of a 'coarse' finite element mesh that is passed to the method <a class="el" href="classAveragedSourceEllipticPde.html#abd2340fba2eefa01b861885aed165a80">SetupSourceTerms()</a> and stored in the member mCellDensityOnCoarseElements. For a point x, rho(x) is defined to be the number of non-apoptotic cells whose centres lie in each finite element containing that point, scaled by the area of that element.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000240">Todo:</a></b></dt><dd>make member names and methods consistent with those of <a class="el" href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde</a> (#2876) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000242">Todo:</a></b></dt><dd>make member names and methods consistent with those of <a class="el" href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde</a> (#2876) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="AveragedSourceEllipticPde_8hpp_source.html#l00068">68</a> of file <a class="el" href="AveragedSourceEllipticPde_8hpp_source.html">AveragedSourceEllipticPde.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
