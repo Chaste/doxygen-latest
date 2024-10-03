@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::7f04d041fce7f57d9cd0636698dd0243bc91ef1d</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::771ab98f8913a3343662c7287a42f1f9fa9ac297</span>
    </div>
   </td>
  </tr>
@@ -679,7 +679,7 @@ $(document).ready(function(){initNavTree('NodesOnlyMesh_8cpp_source.html',''); i
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>    <span class="keywordflow">return</span> index;</div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>}</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span> </div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
 <div class="foldopen" id="foldopen00506" data-start="{" data-end="}">
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno"><a class="line" href="classNodesOnlyMesh.html#a2ad3d3bcfc2083b6234099ded6c80f77">  506</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classNodesOnlyMesh.html#a2ad3d3bcfc2083b6234099ded6c80f77">NodesOnlyMesh&lt;SPACE_DIM&gt;::EnlargeBoxCollection</a>()</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>{</div>
@@ -688,40 +688,40 @@ $(document).ready(function(){initNavTree('NodesOnlyMesh_8cpp_source.html',''); i
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    <span class="keywordtype">int</span> num_local_rows = mpBoxCollection-&gt;GetNumLocalRows();</div>
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>    <span class="keywordtype">int</span> new_local_rows = num_local_rows + (int)(<a class="code hl_function" href="classPetscTools.html#a45d6cfe320d8266756c20a38de1e9a73">PetscTools::AmTopMost</a>()) + (<span class="keywordtype">int</span>)(<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>());</div>
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span> </div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>    c_vector&lt;double, 2*SPACE_DIM&gt; current_domain_size = mpBoxCollection-&gt;rGetDomainSize();</div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>    c_vector&lt;double, 2*SPACE_DIM&gt; new_domain_size = current_domain_size;</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span> </div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>    <span class="keywordtype">double</span> fudge = 1e-14;</div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    c_vector&lt;bool, SPACE_DIM&gt; is_periodic = mpBoxCollection-&gt;GetIsPeriodicAllDims();</div>
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> d=0; d &lt; SPACE_DIM; d++)</div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    {</div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>        <span class="comment">// We don&#39;t enlarge in periodic directions</span></div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        <span class="keywordflow">if</span> ( !is_periodic(d) )</div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    {</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        new_domain_size[2*d] = current_domain_size[2*d] - (mMaximumInteractionDistance - fudge);</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>        new_domain_size[2*d+1] = current_domain_size[2*d+1] + (mMaximumInteractionDistance - fudge);</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    }</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    }</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    SetUpBoxCollection(mMaximumInteractionDistance, new_domain_size, new_local_rows);</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>}</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>    c_vector&lt;double, 2 * SPACE_DIM&gt; current_domain_size = mpBoxCollection-&gt;rGetDomainSize();</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>    c_vector&lt;double, 2 * SPACE_DIM&gt; new_domain_size;</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>    new_domain_size = current_domain_size;</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    <span class="keywordtype">double</span> fudge = 1e-14;</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>    c_vector&lt;bool, SPACE_DIM&gt; is_periodic = mpBoxCollection-&gt;GetIsPeriodicAllDims();</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> d = 0; d &lt; SPACE_DIM; d++)</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    {</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        <span class="comment">// We don&#39;t enlarge in periodic directions</span></div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>        <span class="keywordflow">if</span> (!is_periodic(d))</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        {</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>            new_domain_size[2 * d] = current_domain_size[2 * d] - (mMaximumInteractionDistance - fudge);</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>            new_domain_size[2 * d + 1] = current_domain_size[2 * d + 1] + (mMaximumInteractionDistance - fudge);</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>        }</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    }</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>    SetUpBoxCollection(mMaximumInteractionDistance, new_domain_size, new_local_rows);</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>}</div>
 </div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span> </div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00531" data-start="{" data-end="}">
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno"><a class="line" href="classNodesOnlyMesh.html#a76c6f18cf090c4dc77347ec8a65f6058">  531</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classNodesOnlyMesh.html#a76c6f18cf090c4dc77347ec8a65f6058">NodesOnlyMesh&lt;SPACE_DIM&gt;::IsANodeCloseToDomainBoundary</a>()</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>{</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    assert(mpBoxCollection);</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span> </div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    <span class="keywordtype">int</span> is_local_node_close = 0;</div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    c_vector&lt;double, 2*SPACE_DIM&gt; domain_boundary = mpBoxCollection-&gt;rGetDomainSize();</div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span> </div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractMesh_1_1NodeIterator.html">AbstractMesh&lt;SPACE_DIM, SPACE_DIM&gt;::NodeIterator</a> node_iter = this-&gt;GetNodeIteratorBegin();</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>         node_iter != this-&gt;GetNodeIteratorEnd();</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>         ++node_iter)</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    {</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>        <span class="comment">// Note that we define this vector before setting it as otherwise the profiling build will break (see #2367)</span></div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>        c_vector&lt;double, SPACE_DIM&gt; location;</div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>        location = node_iter-&gt;rGetLocation();</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span> </div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00532" data-start="{" data-end="}">
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno"><a class="line" href="classNodesOnlyMesh.html#a76c6f18cf090c4dc77347ec8a65f6058">  532</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classNodesOnlyMesh.html#a76c6f18cf090c4dc77347ec8a65f6058">NodesOnlyMesh&lt;SPACE_DIM&gt;::IsANodeCloseToDomainBoundary</a>()</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>{</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    assert(mpBoxCollection);</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span> </div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    <span class="keywordtype">int</span> is_local_node_close = 0;</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    c_vector&lt;double, 2*SPACE_DIM&gt; domain_boundary = mpBoxCollection-&gt;rGetDomainSize();</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractMesh_1_1NodeIterator.html">AbstractMesh&lt;SPACE_DIM, SPACE_DIM&gt;::NodeIterator</a> node_iter = this-&gt;GetNodeIteratorBegin();</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>         node_iter != this-&gt;GetNodeIteratorEnd();</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>         ++node_iter)</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    {</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>        c_vector&lt;double, SPACE_DIM&gt; location = node_iter-&gt;rGetLocation();</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span> </div>
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>        <span class="comment">// We need to ignore periodic dimensions</span></div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>        c_vector&lt;bool, SPACE_DIM&gt; is_periodic = mpBoxCollection-&gt;GetIsPeriodicAllDims();</div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> d=0; d&lt;SPACE_DIM; d++)</div>
@@ -1021,7 +1021,7 @@ $(document).ready(function(){initNavTree('NodesOnlyMesh_8cpp_source.html',''); i
 <div class="ttc" id="aclassAbstractMeshReader_html"><div class="ttname"><a href="classAbstractMeshReader.html">AbstractMeshReader</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractMeshReader_8hpp_source.html#l00076">AbstractMeshReader.hpp:77</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_1_1NodeIterator_html"><div class="ttname"><a href="classAbstractMesh_1_1NodeIterator.html">AbstractMesh::NodeIterator</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8hpp_source.html#l00458">AbstractMesh.hpp:459</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_html"><div class="ttname"><a href="classAbstractMesh.html">AbstractMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8hpp_source.html#l00060">AbstractMesh.hpp:61</a></div></div>
-<div class="ttc" id="aclassAbstractMesh_html_a6f459b71a3a353b051ff91b969173cf2"><div class="ttname"><a href="classAbstractMesh.html#a6f459b71a3a353b051ff91b969173cf2">AbstractMesh::GetWidth</a></div><div class="ttdeci">virtual double GetWidth(const unsigned &amp;rDimension) const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00220">AbstractMesh.cpp:220</a></div></div>
+<div class="ttc" id="aclassAbstractMesh_html_a6f459b71a3a353b051ff91b969173cf2"><div class="ttname"><a href="classAbstractMesh.html#a6f459b71a3a353b051ff91b969173cf2">AbstractMesh::GetWidth</a></div><div class="ttdeci">virtual double GetWidth(const unsigned &amp;rDimension) const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00221">AbstractMesh.cpp:221</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_html_ab5402e1970a7c0bf0e4b4f33a813d443"><div class="ttname"><a href="classAbstractMesh.html#ab5402e1970a7c0bf0e4b4f33a813d443">AbstractMesh::mNodes</a></div><div class="ttdeci">std::vector&lt; Node&lt; SPACE_DIM &gt; * &gt; mNodes</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8hpp_source.html#l00096">AbstractMesh.hpp:96</a></div></div>
 <div class="ttc" id="aclassChasteCuboid_html"><div class="ttname"><a href="classChasteCuboid.html">ChasteCuboid</a></div><div class="ttdef"><b>Definition</b> <a href="ChasteCuboid_8hpp_source.html#l00051">ChasteCuboid.hpp:52</a></div></div>
 <div class="ttc" id="aclassChasteCuboid_html_a677688f43af4f977aa19d2bd6c7b6333"><div class="ttname"><a href="classChasteCuboid.html#a677688f43af4f977aa19d2bd6c7b6333">ChasteCuboid::rGetUpperCorner</a></div><div class="ttdeci">const ChastePoint&lt; SPACE_DIM &gt; &amp; rGetUpperCorner() const</div><div class="ttdef"><b>Definition</b> <a href="ChasteCuboid_8cpp_source.html#l00068">ChasteCuboid.cpp:68</a></div></div>
@@ -1069,7 +1069,7 @@ $(document).ready(function(){initNavTree('NodesOnlyMesh_8cpp_source.html',''); i
 <div class="ttc" id="aclassNodesOnlyMesh_html_a64fa14fbb8ace90b5f299b1044141781"><div class="ttname"><a href="classNodesOnlyMesh.html#a64fa14fbb8ace90b5f299b1044141781">NodesOnlyMesh::SetNode</a></div><div class="ttdeci">void SetNode(unsigned nodeIndex, ChastePoint&lt; SPACE_DIM &gt; point, bool concreteMove=false)</div><div class="ttdef"><b>Definition</b> <a href="NodesOnlyMesh_8cpp_source.html#l00414">NodesOnlyMesh.cpp:414</a></div></div>
 <div class="ttc" id="aclassNodesOnlyMesh_html_a6542eacadc52539bbcea8ff2549a6419"><div class="ttname"><a href="classNodesOnlyMesh.html#a6542eacadc52539bbcea8ff2549a6419">NodesOnlyMesh::GetNodeOrHaloNode</a></div><div class="ttdeci">Node&lt; SPACE_DIM &gt; * GetNodeOrHaloNode(unsigned index) const</div><div class="ttdef"><b>Definition</b> <a href="NodesOnlyMesh_8cpp_source.html#l00158">NodesOnlyMesh.cpp:158</a></div></div>
 <div class="ttc" id="aclassNodesOnlyMesh_html_a6854be0c56074ebc7f5097de6728a8be"><div class="ttname"><a href="classNodesOnlyMesh.html#a6854be0c56074ebc7f5097de6728a8be">NodesOnlyMesh::~NodesOnlyMesh</a></div><div class="ttdeci">virtual ~NodesOnlyMesh()</div><div class="ttdef"><b>Definition</b> <a href="NodesOnlyMesh_8cpp_source.html#l00053">NodesOnlyMesh.cpp:53</a></div></div>
-<div class="ttc" id="aclassNodesOnlyMesh_html_a76c6f18cf090c4dc77347ec8a65f6058"><div class="ttname"><a href="classNodesOnlyMesh.html#a76c6f18cf090c4dc77347ec8a65f6058">NodesOnlyMesh::IsANodeCloseToDomainBoundary</a></div><div class="ttdeci">bool IsANodeCloseToDomainBoundary()</div><div class="ttdef"><b>Definition</b> <a href="NodesOnlyMesh_8cpp_source.html#l00531">NodesOnlyMesh.cpp:531</a></div></div>
+<div class="ttc" id="aclassNodesOnlyMesh_html_a76c6f18cf090c4dc77347ec8a65f6058"><div class="ttname"><a href="classNodesOnlyMesh.html#a76c6f18cf090c4dc77347ec8a65f6058">NodesOnlyMesh::IsANodeCloseToDomainBoundary</a></div><div class="ttdeci">bool IsANodeCloseToDomainBoundary()</div><div class="ttdef"><b>Definition</b> <a href="NodesOnlyMesh_8cpp_source.html#l00532">NodesOnlyMesh.cpp:532</a></div></div>
 <div class="ttc" id="aclassNodesOnlyMesh_html_a7ac3eff86181bd8186eb824c7199dfb5"><div class="ttname"><a href="classNodesOnlyMesh.html#a7ac3eff86181bd8186eb824c7199dfb5">NodesOnlyMesh::rGetHaloNodesToSendRight</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; &amp; rGetHaloNodesToSendRight()</div><div class="ttdef"><b>Definition</b> <a href="NodesOnlyMesh_8cpp_source.html#l00347">NodesOnlyMesh.cpp:347</a></div></div>
 <div class="ttc" id="aclassNodesOnlyMesh_html_a7d4227c2f4c6e1bf9783dcec8eacb663"><div class="ttname"><a href="classNodesOnlyMesh.html#a7d4227c2f4c6e1bf9783dcec8eacb663">NodesOnlyMesh::UpdateNodeIndices</a></div><div class="ttdeci">void UpdateNodeIndices()</div><div class="ttdef"><b>Definition</b> <a href="NodesOnlyMesh_8cpp_source.html#l00280">NodesOnlyMesh.cpp:280</a></div></div>
 <div class="ttc" id="aclassNodesOnlyMesh_html_a830005a3e2e6a050a047aa7f394c6c87"><div class="ttname"><a href="classNodesOnlyMesh.html#a830005a3e2e6a050a047aa7f394c6c87">NodesOnlyMesh::GetWidth</a></div><div class="ttdeci">double GetWidth(const unsigned &amp;rDimension) const</div><div class="ttdef"><b>Definition</b> <a href="NodesOnlyMesh_8cpp_source.html#l00209">NodesOnlyMesh.cpp:209</a></div></div>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"classLuoRudySpiralWaveCellFactory.html#a4bb98def0b3bb8f3d8bedbc2a7f39d56":[1,0,429,0],
 "classLuoRudySpiralWaveCellFactory.html#a8f0dc218488ae2fc06136da4d5bc7225":[1,0,429,6],
 "classLuoRudySpiralWaveCellFactory.html#a9a8ce2d3afa039f297bf65350e1441c3":[1,0,429,3],
 "classLuoRudySpiralWaveCellFactory.html#aa59e926f673d4d9b4c3961aeabfccdee":[1,0,429,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "classMonodomainPurkinjeProblem.html#aa4b59ed91dd2e6ae42abfb3f013990dd":[1,0,449,9],
 "classMonodomainPurkinjeProblem.html#ab0d57e18a64c59f81816a4dd9317a569":[1,0,449,3],
 "classMonodomainPurkinjeProblem.html#abeb9d8b013b3bf4dca567bd66a8f5e10":[1,0,449,4],
-"classMonodomainPurkinjeProblem.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,449,11],
-"classMonodomainPurkinjeProblem.html#ae28727654b1cf9a5c2f91fdcc3a3047b":[1,0,449,7]
+"classMonodomainPurkinjeProblem.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,449,11]
 };

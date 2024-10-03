@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"structVertexElementData.html#a512d53c580b2f7576614e5fb28475773":[1,0,641,3],
 "structVertexElementData.html#a9daeb0db215d97718b45264bf151b4a6":[1,0,641,0],
 "structVertexElementData.html#ad38c1212347847777f9f82dc5cf32837":[1,0,641,1],
 "structbadsubseg.html":[1,0,151],

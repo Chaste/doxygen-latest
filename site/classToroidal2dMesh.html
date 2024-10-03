@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::7f04d041fce7f57d9cd0636698dd0243bc91ef1d</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::771ab98f8913a3343662c7287a42f1f9fa9ac297</span>
    </div>
   </td>
  </tr>
@@ -556,7 +556,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00060">60</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AbstractMesh_8hpp_source.html#l00096">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mNodes</a>, <a class="el" href="MutableMesh_8cpp_source.html#l00808">MutableMesh&lt; 2, 2 &gt;::ReMesh()</a>, <a class="el" href="Node_8cpp_source.html#l00139">Node&lt; SPACE_DIM &gt;::rGetLocation()</a>, and <a class="el" href="Exception_8hpp_source.html#l00229">UNUSED_OPT</a>.</p>
+<p class="reference">References <a class="el" href="AbstractMesh_8hpp_source.html#l00096">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mNodes</a>, <a class="el" href="MutableMesh_8cpp_source.html#l00808">MutableMesh&lt; 2, 2 &gt;::ReMesh()</a>, <a class="el" href="Node_8cpp_source.html#l00139">Node&lt; SPACE_DIM &gt;::rGetLocation()</a>, and <a class="el" href="Exception_8hpp_source.html#l00237">UNUSED_OPT</a>.</p>
 
 </div>
 </div>
@@ -605,9 +605,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the global index of the new node </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00800">800</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00798">798</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="MutableMesh_8cpp_source.html#l00080">MutableMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::AddNode()</a>, <a class="el" href="Node_8cpp_source.html#l00133">Node&lt; SPACE_DIM &gt;::GetPoint()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00754">SetNode()</a>.</p>
+<p class="reference">References <a class="el" href="MutableMesh_8cpp_source.html#l00080">MutableMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::AddNode()</a>, <a class="el" href="Node_8cpp_source.html#l00133">Node&lt; SPACE_DIM &gt;::GetPoint()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00752">SetNode()</a>.</p>
 
 </div>
 </div>
@@ -636,9 +636,9 @@ Additional Inherited Members</h2></td></tr>
 <p>This method should only ever be called by the public <a class="el" href="classMutableMesh.html#ac353eb6bf2f244a24db6e7bc28a6a454">ReMesh()</a> method.</p>
 <p>Uses mLeftPeriodicBoundaryElementIndices and mRightPeriodicBoundaryElementIndices and compares the nodes in each to ensure that both boundaries have been meshed identically. If they have not it calls UseTheseElementsToDecideMeshing() to sort out the troublesome elements which have been meshed differently on each side and uses the meshing of the elements on the right hand boundary to decide on how to mesh the left hand side. </p>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00811">811</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00809">809</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01024">GenerateVectorsOfElementsStraddlingCylindricalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01180">GetCorrespondingCylindricalNodeIndex()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00141">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElement()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00085">mLeftPeriodicBoundaryElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00088">mRightPeriodicBoundaryElementIndices</a>, and <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01022">GenerateVectorsOfElementsStraddlingCylindricalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01178">GetCorrespondingCylindricalNodeIndex()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00141">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElement()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00085">mLeftPeriodicBoundaryElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00088">mRightPeriodicBoundaryElementIndices</a>, and <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
@@ -669,9 +669,9 @@ Additional Inherited Members</h2></td></tr>
 <p>This method should only ever be called by the public <a class="el" href="classMutableMesh.html#ac353eb6bf2f244a24db6e7bc28a6a454">ReMesh()</a> method.</p>
 <p>Uses mLeftPeriodicBoundaryElementIndices and mRightPeriodicBoundaryElementIndices and compares the nodes in each to ensure that both boundaries have been meshed identically. If they have not it calls UseTheseElementsToDecideMeshing() to sort out the troublesome elements which have been meshed differently on each side and uses the meshing of the elements on the right hand boundary to decide on how to mesh the left hand side. </p>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00917">917</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00915">915</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01117">GenerateVectorsOfElementsStraddlingToroidalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01229">GetCorrespondingToroidalNodeIndex()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00141">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElement()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00109">mBottomPeriodicBoundaryElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00112">mTopPeriodicBoundaryElementIndices</a>, and <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01115">GenerateVectorsOfElementsStraddlingToroidalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01227">GetCorrespondingToroidalNodeIndex()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00141">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElement()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00109">mBottomPeriodicBoundaryElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00112">mTopPeriodicBoundaryElementIndices</a>, and <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
@@ -736,11 +736,11 @@ Additional Inherited Members</h2></td></tr>
 <p>The elements which straddle the periodic boundaries need to be identified in order to compare the list on the right with the list on the left and reconstruct a Toroidal mesh.</p>
 <p>Empties and repopulates the member variables mLeftPeriodicBoundaryElementIndices and mRightPeriodicBoundaryElementIndices </p>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01024">1024</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01022">1022</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00725">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorBegin()</a>, <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00732">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorEnd()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00073">mImageToLeftOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00082">mImageToRightOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00085">mLeftPeriodicBoundaryElementIndices</a>, and <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00088">mRightPeriodicBoundaryElementIndices</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00811">CorrectCylindricalNonPeriodicMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00809">CorrectCylindricalNonPeriodicMesh()</a>.</p>
 
 </div>
 </div>
@@ -770,11 +770,11 @@ Additional Inherited Members</h2></td></tr>
 <p>The elements which straddle the periodic boundaries need to be identified in order to compare the list on the right with the list on the left and reconstruct a Toroidal mesh.</p>
 <p>Empties and repopulates the member variables mLeftPeriodicBoundaryElementIndices and mRightPeriodicBoundaryElementIndices </p>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01117">1117</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01115">1115</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00725">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorBegin()</a>, <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00732">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorEnd()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00109">mBottomPeriodicBoundaryElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00097">mImageToBottomOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00106">mImageToTopOriginalNodeMap</a>, and <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00112">mTopPeriodicBoundaryElementIndices</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00917">CorrectToroidalNonPeriodicMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00915">CorrectToroidalNonPeriodicMesh()</a>.</p>
 
 </div>
 </div>
@@ -810,11 +810,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index of the corresponding mirror image of that node (can be either an original or mirror node) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01180">1180</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01178">1178</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00079">mRightImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00076">mRightOriginals</a>, and <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00079">mRightImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00076">mRightOriginals</a>, and <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00811">CorrectCylindricalNonPeriodicMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00809">CorrectCylindricalNonPeriodicMesh()</a>.</p>
 
 </div>
 </div>
@@ -850,11 +850,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the index of the corresponding mirror image of that node (can be either an original or mirror node) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01229">1229</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01227">1227</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00103">mTopImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00100">mTopOriginals</a>, and <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00103">mTopImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00100">mTopOriginals</a>, and <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00917">CorrectToroidalNonPeriodicMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00915">CorrectToroidalNonPeriodicMesh()</a>.</p>
 
 </div>
 </div>
@@ -912,7 +912,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the vector from location1 to location2 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00722">722</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00720">720</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00064">mHeight</a>, and <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00061">mWidth</a>.</p>
 
@@ -953,7 +953,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classAbstractMesh.html#a6f459b71a3a353b051ff91b969173cf2">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00785">785</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00783">783</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00064">mHeight</a>, and <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00061">mWidth</a>.</p>
 
@@ -984,7 +984,7 @@ Additional Inherited Members</h2></td></tr>
 <p>After any corrections have been made to the boundary elements (see UseTheseElementsToDecideMeshing()) this method deletes the mirror image nodes, elements and boundary elements created for a Toroidal remesh by cycling through the elements and changing elements with partly real and partly imaginary elements to be real with periodic real nodes instead of mirror image nodes. We end up with very strangely shaped elements which cross the whole mesh but specify the correct connections between nodes.</p>
 <p>This method should only ever be called by the public <a class="el" href="classMutableMesh.html#ac353eb6bf2f244a24db6e7bc28a6a454">ReMesh()</a> method. </p>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00451">451</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00449">449</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00725">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorBegin()</a>, <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00732">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorEnd()</a>, <a class="el" href="MutableMesh_8hpp_source.html#l00136">MutableMesh&lt; 2, 2 &gt;::mDeletedElementIndices</a>, <a class="el" href="MutableMesh_8hpp_source.html#l00148">MutableMesh&lt; 2, 2 &gt;::mDeletedNodeIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00073">mImageToLeftOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00082">mImageToRightOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00070">mLeftImages</a>, <a class="el" href="AbstractMesh_8hpp_source.html#l00096">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mNodes</a>, and <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00079">mRightImages</a>.</p>
 
@@ -1017,7 +1017,7 @@ Additional Inherited Members</h2></td></tr>
 <p>After any corrections have been made to the boundary elements (see UseTheseElementsToDecideMeshing()) this method deletes the mirror image nodes, elements and boundary elements created for a Toroidal remesh by cycling through the elements and changing elements with partly real and partly imaginary elements to be real with periodic real nodes instead of mirror image nodes. We end up with very strangely shaped elements which cross the whole mesh but specify the correct connections between nodes.</p>
 <p>This method should only ever be called by the public <a class="el" href="classMutableMesh.html#ac353eb6bf2f244a24db6e7bc28a6a454">ReMesh()</a> method. </p>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00588">588</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00586">586</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00725">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorBegin()</a>, <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00732">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorEnd()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00094">mBottomImages</a>, <a class="el" href="MutableMesh_8hpp_source.html#l00136">MutableMesh&lt; 2, 2 &gt;::mDeletedElementIndices</a>, <a class="el" href="MutableMesh_8hpp_source.html#l00148">MutableMesh&lt; 2, 2 &gt;::mDeletedNodeIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00097">mImageToBottomOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00106">mImageToTopOriginalNodeMap</a>, <a class="el" href="AbstractMesh_8hpp_source.html#l00096">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mNodes</a>, and <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00103">mTopImages</a>.</p>
 
@@ -1051,7 +1051,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classTetrahedralMesh.html#a1f01e6d70901f4afd970e2092006af9c">TetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01278">1278</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01276">1276</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00064">mHeight</a>, <a class="el" href="AbstractMesh_8hpp_source.html#l00096">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mNodes</a>, and <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00061">mWidth</a>.</p>
 
@@ -1093,7 +1093,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">199</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00811">CorrectCylindricalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00917">CorrectToroidalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00155">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetBoundaryElementIteratorBegin()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00161">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetBoundaryElementIteratorEnd()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00141">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElement()</a>, <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00725">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorBegin()</a>, <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00732">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorEnd()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00087">NodeMap::GetNewIndex()</a>, <a class="el" href="AbstractMesh_8cpp_source.html#l00093">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNode()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00116">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNode()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00099">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumAllElements()</a>, <a class="el" href="AbstractMesh_8cpp_source.html#l00078">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumAllNodes()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00105">NodeMap::GetSize()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00135">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::IsDeleted()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00082">NodeMap::IsDeleted()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00100">NodeMap::IsIdentityMap()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00094">mBottomImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00091">mBottomOriginals</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00109">mBottomPeriodicBoundaryElementIndices</a>, <a class="el" href="TetrahedralMesh_8hpp_source.html#l00125">TetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mBoundaryElementJacobianDeterminants</a>, <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00280">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mBoundaryElements</a>, <a class="el" href="TetrahedralMesh_8hpp_source.html#l00122">TetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mBoundaryElementWeightedDirections</a>, <a class="el" href="MutableMesh_8hpp_source.html#l00142">MutableMesh&lt; 2, 2 &gt;::mDeletedBoundaryElementIndices</a>, <a class="el" href="MutableMesh_8hpp_source.html#l00136">MutableMesh&lt; 2, 2 &gt;::mDeletedElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00064">mHeight</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00097">mImageToBottomOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00073">mImageToLeftOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00082">mImageToRightOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00106">mImageToTopOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00070">mLeftImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00067">mLeftOriginals</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00085">mLeftPeriodicBoundaryElementIndices</a>, <a class="el" href="AbstractMesh_8hpp_source.html#l00096">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mNodes</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00079">mRightImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00076">mRightOriginals</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00088">mRightPeriodicBoundaryElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00103">mTopImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00100">mTopOriginals</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00112">mTopPeriodicBoundaryElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00061">mWidth</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00451">ReconstructCylindricalMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00588">ReconstructToroidalMesh()</a>, <a class="el" href="BoundaryElement_8cpp_source.html#l00064">BoundaryElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::RegisterWithNodes()</a>, <a class="el" href="MutableMesh_8cpp_source.html#l00564">MutableMesh&lt; 2, 2 &gt;::ReIndex()</a>, <a class="el" href="MutableMesh_8cpp_source.html#l00808">MutableMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ReMesh()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00057">NodeMap::ResetToIdentity()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00052">NodeMap::Resize()</a>, <a class="el" href="Node_8cpp_source.html#l00139">Node&lt; SPACE_DIM &gt;::rGetLocation()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00076">NodeMap::SetDeleted()</a>, and <a class="el" href="NodeMap_8cpp_source.html#l00066">NodeMap::SetNewIndex()</a>.</p>
+<p class="reference">References <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00809">CorrectCylindricalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00915">CorrectToroidalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00155">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetBoundaryElementIteratorBegin()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00161">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetBoundaryElementIteratorEnd()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00141">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElement()</a>, <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00725">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorBegin()</a>, <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00732">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetElementIteratorEnd()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00087">NodeMap::GetNewIndex()</a>, <a class="el" href="AbstractMesh_8cpp_source.html#l00094">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNode()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00116">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNode()</a>, <a class="el" href="AbstractTetrahedralMesh_8cpp_source.html#l00099">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumAllElements()</a>, <a class="el" href="AbstractMesh_8cpp_source.html#l00079">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumAllNodes()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00105">NodeMap::GetSize()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00135">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::IsDeleted()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00082">NodeMap::IsDeleted()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00100">NodeMap::IsIdentityMap()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00094">mBottomImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00091">mBottomOriginals</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00109">mBottomPeriodicBoundaryElementIndices</a>, <a class="el" href="TetrahedralMesh_8hpp_source.html#l00125">TetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mBoundaryElementJacobianDeterminants</a>, <a class="el" href="AbstractTetrahedralMesh_8hpp_source.html#l00280">AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mBoundaryElements</a>, <a class="el" href="TetrahedralMesh_8hpp_source.html#l00122">TetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mBoundaryElementWeightedDirections</a>, <a class="el" href="MutableMesh_8hpp_source.html#l00142">MutableMesh&lt; 2, 2 &gt;::mDeletedBoundaryElementIndices</a>, <a class="el" href="MutableMesh_8hpp_source.html#l00136">MutableMesh&lt; 2, 2 &gt;::mDeletedElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00064">mHeight</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00097">mImageToBottomOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00073">mImageToLeftOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00082">mImageToRightOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00106">mImageToTopOriginalNodeMap</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00070">mLeftImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00067">mLeftOriginals</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00085">mLeftPeriodicBoundaryElementIndices</a>, <a class="el" href="AbstractMesh_8hpp_source.html#l00096">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::mNodes</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00079">mRightImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00076">mRightOriginals</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00088">mRightPeriodicBoundaryElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00103">mTopImages</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00100">mTopOriginals</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00112">mTopPeriodicBoundaryElementIndices</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00061">mWidth</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00449">ReconstructCylindricalMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00586">ReconstructToroidalMesh()</a>, <a class="el" href="BoundaryElement_8cpp_source.html#l00064">BoundaryElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::RegisterWithNodes()</a>, <a class="el" href="MutableMesh_8cpp_source.html#l00564">MutableMesh&lt; 2, 2 &gt;::ReIndex()</a>, <a class="el" href="MutableMesh_8cpp_source.html#l00808">MutableMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ReMesh()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00057">NodeMap::ResetToIdentity()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00052">NodeMap::Resize()</a>, <a class="el" href="Node_8cpp_source.html#l00139">Node&lt; SPACE_DIM &gt;::rGetLocation()</a>, <a class="el" href="NodeMap_8cpp_source.html#l00076">NodeMap::SetDeleted()</a>, and <a class="el" href="NodeMap_8cpp_source.html#l00066">NodeMap::SetNewIndex()</a>.</p>
 
 </div>
 </div>
@@ -1190,11 +1190,11 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00754">754</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00752">752</a> of file <a class="el" href="Toroidal2dMesh_8cpp_source.html">Toroidal2dMesh.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00064">mHeight</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00061">mWidth</a>, <a class="el" href="ChastePoint_8cpp_source.html#l00076">ChastePoint&lt; DIM &gt;::rGetLocation()</a>, <a class="el" href="ChastePoint_8cpp_source.html#l00108">ChastePoint&lt; DIM &gt;::SetCoordinate()</a>, and <a class="el" href="MutableMesh_8cpp_source.html#l00174">MutableMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::SetNode()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00800">AddNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00798">AddNode()</a>.</p>
 
 </div>
 </div>
@@ -1272,7 +1272,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00094">94</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00588">ReconstructToroidalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00586">ReconstructToroidalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1326,7 +1326,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00109">109</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00917">CorrectToroidalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01117">GenerateVectorsOfElementsStraddlingToroidalPeriodicBoundaries()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00915">CorrectToroidalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01115">GenerateVectorsOfElementsStraddlingToroidalPeriodicBoundaries()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1353,7 +1353,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00064">64</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00722">GetVectorFromAtoB()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00785">GetWidth()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01278">RefreshMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00236">serialize()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00754">SetNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00720">GetVectorFromAtoB()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00783">GetWidth()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01276">RefreshMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00236">serialize()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00752">SetNode()</a>.</p>
 
 </div>
 </div>
@@ -1380,7 +1380,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00097">97</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01117">GenerateVectorsOfElementsStraddlingToroidalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00588">ReconstructToroidalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01115">GenerateVectorsOfElementsStraddlingToroidalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00586">ReconstructToroidalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1407,7 +1407,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00073">73</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01024">GenerateVectorsOfElementsStraddlingCylindricalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00451">ReconstructCylindricalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01022">GenerateVectorsOfElementsStraddlingCylindricalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00449">ReconstructCylindricalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1434,7 +1434,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00082">82</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01024">GenerateVectorsOfElementsStraddlingCylindricalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00451">ReconstructCylindricalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01022">GenerateVectorsOfElementsStraddlingCylindricalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00449">ReconstructCylindricalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1461,7 +1461,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00106">106</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01117">GenerateVectorsOfElementsStraddlingToroidalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00588">ReconstructToroidalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01115">GenerateVectorsOfElementsStraddlingToroidalPeriodicBoundaries()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00586">ReconstructToroidalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1488,7 +1488,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00070">70</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00451">ReconstructCylindricalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00449">ReconstructCylindricalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1542,7 +1542,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00085">85</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00811">CorrectCylindricalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01024">GenerateVectorsOfElementsStraddlingCylindricalPeriodicBoundaries()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00809">CorrectCylindricalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01022">GenerateVectorsOfElementsStraddlingCylindricalPeriodicBoundaries()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1594,7 +1594,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00079">79</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01180">GetCorrespondingCylindricalNodeIndex()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00451">ReconstructCylindricalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01178">GetCorrespondingCylindricalNodeIndex()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00449">ReconstructCylindricalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1621,7 +1621,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00076">76</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01180">GetCorrespondingCylindricalNodeIndex()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01178">GetCorrespondingCylindricalNodeIndex()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1648,7 +1648,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00088">88</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00811">CorrectCylindricalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01024">GenerateVectorsOfElementsStraddlingCylindricalPeriodicBoundaries()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00809">CorrectCylindricalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01022">GenerateVectorsOfElementsStraddlingCylindricalPeriodicBoundaries()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1675,7 +1675,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00103">103</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01229">GetCorrespondingToroidalNodeIndex()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00588">ReconstructToroidalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01227">GetCorrespondingToroidalNodeIndex()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00586">ReconstructToroidalMesh()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1702,7 +1702,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00100">100</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01229">GetCorrespondingToroidalNodeIndex()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01227">GetCorrespondingToroidalNodeIndex()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1729,7 +1729,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00112">112</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00917">CorrectToroidalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01117">GenerateVectorsOfElementsStraddlingToroidalPeriodicBoundaries()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00915">CorrectToroidalNonPeriodicMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01115">GenerateVectorsOfElementsStraddlingToroidalPeriodicBoundaries()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>.</p>
 
 </div>
 </div>
@@ -1756,7 +1756,7 @@ template&lt;class Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00061">61</a> of file <a class="el" href="Toroidal2dMesh_8hpp_source.html">Toroidal2dMesh.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00722">GetVectorFromAtoB()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00785">GetWidth()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01278">RefreshMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00236">serialize()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00754">SetNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00084">CreateMirrorNodes()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00720">GetVectorFromAtoB()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00783">GetWidth()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l01276">RefreshMesh()</a>, <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00199">ReMesh()</a>, <a class="el" href="Toroidal2dMesh_8hpp_source.html#l00236">serialize()</a>, and <a class="el" href="Toroidal2dMesh_8cpp_source.html#l00752">SetNode()</a>.</p>
 
 </div>
 </div>

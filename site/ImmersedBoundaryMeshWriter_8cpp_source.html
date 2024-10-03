@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::7f04d041fce7f57d9cd0636698dd0243bc91ef1d</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::771ab98f8913a3343662c7287a42f1f9fa9ac297</span>
    </div>
   </td>
  </tr>
@@ -510,8 +510,8 @@ $(document).ready(function(){initNavTree('ImmersedBoundaryMeshWriter_8cpp_source
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>                <span class="comment">// Get node, index and location</span></div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>                <a class="code hl_class" href="classNode.html">Node&lt;SPACE_DIM&gt;</a>* p_node = iter-&gt;GetNode(node_idx);</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>                <span class="keywordtype">unsigned</span> global_idx = p_node-&gt;<a class="code hl_function" href="classNode.html#ab316c0b1ee76c5a0eecde5d38320f418">GetIndex</a>();</div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>                c_vector&lt;double, SPACE_DIM&gt; position = p_node-&gt;<a class="code hl_function" href="classNode.html#aa125ab5172596c6bf3a993e25211a7da">rGetLocation</a>();</div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span> </div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>                c_vector&lt;double, SPACE_DIM&gt; position = p_node-&gt;<a class="code hl_function" href="classNode.html#aa125ab5172596c6bf3a993e25211a7da">rGetLocation</a>();</div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>                p_pts-&gt;InsertPoint(global_idx, position[0], position[1], 0.0);</div>
 <div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span> </div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>                p_cell_id_list-&gt;SetId(node_idx, global_idx);</div>
@@ -900,7 +900,7 @@ $(document).ready(function(){initNavTree('ImmersedBoundaryMeshWriter_8cpp_source
 <div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classImmersedBoundaryMeshWriter.html">ImmersedBoundaryMeshWriter&lt;2,3&gt;</a>;</div>
 <div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classImmersedBoundaryMeshWriter.html">ImmersedBoundaryMeshWriter&lt;3,3&gt;</a>;</div>
 <div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
-<div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00219">Exception.hpp:219</a></div></div>
+<div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00227">Exception.hpp:227</a></div></div>
 <div class="ttc" id="aMathsCustomFunctions_8hpp_html"><div class="ttname"><a href="MathsCustomFunctions_8hpp.html">MathsCustomFunctions.hpp</a></div></div>
 <div class="ttc" id="aUblasCustomFunctions_8hpp_html"><div class="ttname"><a href="UblasCustomFunctions_8hpp.html">UblasCustomFunctions.hpp</a></div></div>
 <div class="ttc" id="aclassAbstractMeshWriter_html"><div class="ttname"><a href="classAbstractMeshWriter.html">AbstractMeshWriter</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractMeshWriter_8hpp_source.html#l00050">AbstractMeshWriter.hpp:51</a></div></div>

@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::7f04d041fce7f57d9cd0636698dd0243bc91ef1d</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::771ab98f8913a3343662c7287a42f1f9fa9ac297</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,8 @@ Macros</h2></td></tr>
 <tr class="separator:aa49c727f91093a79c46ee6ecd83548bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab812c978627256aabe068eaa9f074b45" id="r_ab812c978627256aabe068eaa9f074b45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Exception_8hpp.html#ab812c978627256aabe068eaa9f074b45">EXCEPT_IF_NOT</a>(test)&#160;&#160;&#160;    if (!(test)) <a class="el" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(&quot;Assertion tripped: &quot; BOOST_PP_STRINGIZE(test))</td></tr>
 <tr class="separator:ab812c978627256aabe068eaa9f074b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad600bfabad606e4e17876a08c52e4c02" id="r_ad600bfabad606e4e17876a08c52e4c02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Exception_8hpp.html#ad600bfabad606e4e17876a08c52e4c02">EXCEPT_IF</a>(test)&#160;&#160;&#160;    if (test) <a class="el" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(&quot;Assertion tripped: &quot; BOOST_PP_STRINGIZE(test))</td></tr>
+<tr class="separator:ad600bfabad606e4e17876a08c52e4c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24909b2dc78407281a934bb1434e124f" id="r_a24909b2dc78407281a934bb1434e124f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Exception_8hpp.html#a24909b2dc78407281a934bb1434e124f">TERMINATE</a>(message)</td></tr>
 <tr class="separator:a24909b2dc78407281a934bb1434e124f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0019d0a062e0daca4aa9b982d8f6ac4" id="r_ae0019d0a062e0daca4aa9b982d8f6ac4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a>&#160;&#160;&#160;<a class="el" href="Exception_8hpp.html#a24909b2dc78407281a934bb1434e124f">TERMINATE</a>(&quot;Should have been impossible to reach this line of code&quot;); exit(EXIT_FAILURE)</td></tr>
@@ -176,7 +178,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00300">300</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00308">308</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
 
 </div>
 </div>
@@ -217,7 +219,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00283">283</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00291">291</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
 
 </div>
 </div>
@@ -254,7 +256,34 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00238">238</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00246">246</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad600bfabad606e4e17876a08c52e4c02" name="ad600bfabad606e4e17876a08c52e4c02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad600bfabad606e4e17876a08c52e4c02">&#9670;&#160;</a></span>EXCEPT_IF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXCEPT_IF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">test</td><td>)</td>
+          <td>&#160;&#160;&#160;    if (test) <a class="el" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(&quot;Assertion tripped: &quot; BOOST_PP_STRINGIZE(test))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Convenience macro for the opposite truth condition as EXCEPT_IF_NOT.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">test</td><td>the test that must always be false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00179">179</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
 
 </div>
 </div>
@@ -359,7 +388,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00267">267</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00275">275</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
 
 </div>
 </div>
@@ -403,7 +432,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00314">314</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00322">322</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
 
 </div>
 </div>
@@ -446,7 +475,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00329">329</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00337">337</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
 
 </div>
 </div>
@@ -482,7 +511,7 @@ Variables</h2></td></tr>
 <div class="line">        <a class="code hl_define" href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a>;</div>
 <div class="line">        <span class="keywordflow">break</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00219">Exception.hpp:219</a></div></div>
+<div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00227">Exception.hpp:227</a></div></div>
 <div class="ttc" id="astructRelativeTo_html_a71205f16f6ffbf2c354beb369d8b996c"><div class="ttname"><a href="structRelativeTo.html#a71205f16f6ffbf2c354beb369d8b996c">RelativeTo::Value</a></div><div class="ttdeci">Value</div><div class="ttdef"><b>Definition</b> <a href="FileFinder_8hpp_source.html#l00054">FileFinder.hpp:55</a></div></div>
 <div class="ttc" id="astructRelativeTo_html_a71205f16f6ffbf2c354beb369d8b996ca79432caa8e303fb2903b65d6fa5f04a8"><div class="ttname"><a href="structRelativeTo.html#a71205f16f6ffbf2c354beb369d8b996ca79432caa8e303fb2903b65d6fa5f04a8">RelativeTo::Absolute</a></div><div class="ttdeci">@ Absolute</div><div class="ttdef"><b>Definition</b> <a href="FileFinder_8hpp_source.html#l00060">FileFinder.hpp:60</a></div></div>
 <div class="ttc" id="astructRelativeTo_html_a71205f16f6ffbf2c354beb369d8b996ca7d8d067a4ecd2bafa88912dbf8ac785b"><div class="ttname"><a href="structRelativeTo.html#a71205f16f6ffbf2c354beb369d8b996ca7d8d067a4ecd2bafa88912dbf8ac785b">RelativeTo::ChasteSourceRoot</a></div><div class="ttdeci">@ ChasteSourceRoot</div><div class="ttdef"><b>Definition</b> <a href="FileFinder_8hpp_source.html#l00058">FileFinder.hpp:58</a></div></div>
@@ -490,7 +519,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="astructRelativeTo_html_a71205f16f6ffbf2c354beb369d8b996caab109680c356ada0533fcc39ffcddb54"><div class="ttname"><a href="structRelativeTo.html#a71205f16f6ffbf2c354beb369d8b996caab109680c356ada0533fcc39ffcddb54">RelativeTo::CWD</a></div><div class="ttdeci">@ CWD</div><div class="ttdef"><b>Definition</b> <a href="FileFinder_8hpp_source.html#l00056">FileFinder.hpp:56</a></div></div>
 </div><!-- fragment --><p>relative_to is considered potentially uninitialised in the default branch unless the compiler finds a exit, assert or throw statement. </p>
 
-<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00219">219</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00227">227</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
 
 </div>
 </div>
@@ -522,7 +551,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00181">181</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00189">189</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
 
 </div>
 </div>
@@ -548,7 +577,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00229">229</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Exception_8hpp_source.html#l00237">237</a> of file <a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>.</p>
 
 </div>
 </div>

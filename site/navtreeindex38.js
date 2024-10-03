@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"classPottsMesh.html#a9f9b26b6ac9b3b2b1b5cae0eedf393a5":[1,0,535,27],
 "classPottsMesh.html#aa6a810cd32fc0cf01012200cd0137cb8":[1,0,535,7],
 "classPottsMesh.html#abd777155e917f7c572c43cc2cc205438":[1,0,535,29],
 "classPottsMesh.html#abf02b6353267c723baf2499218152e8e":[1,0,535,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "classRandomNumberGenerator.html#a6dad23f5d15daf5a98f53a322ae18575":[1,0,556,3],
 "classRandomNumberGenerator.html#a7bde43628bae2b451d2c283648d25975":[1,0,556,4],
 "classRandomNumberGenerator.html#a83f0619e56893ea58d00663beca98e6e":[1,0,556,5],
-"classRandomNumberGenerator.html#a8b3fe2d42f67f65643eaeb4ddb8d1dfa":[1,0,556,1],
-"classRandomNumberGenerator.html#a8e7e711ea58f13f3ed95becbe33684e9":[1,0,556,0]
+"classRandomNumberGenerator.html#a8b3fe2d42f67f65643eaeb4ddb8d1dfa":[1,0,556,1]
 };

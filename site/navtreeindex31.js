@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"classImmersedBoundarySvgWriter.html#a97ec52bf0e4ac14a9bf139898ae1715f":[1,0,414,14],
 "classImmersedBoundarySvgWriter.html#a99782b6a2d58e604cbe17faf27a87578":[1,0,414,10],
 "classImmersedBoundarySvgWriter.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,414,11],
 "classImmersedBoundarySvgWriter.html#aeb7f8575c1de342b9c0535ce587fc083":[1,0,414,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "classLogFile.html#ac4faccaf54bb94ff2c3bcf79745ffd52":[1,0,428,11],
 "classLogFile.html#ad11b3baf5602575c1396f726d3598188":[1,0,428,0],
 "classLogFile.html#ae7fd15cc3c27456cd35885621d362d2b":[1,0,428,4],
-"classLuoRudySpiralWaveCellFactory.html":[1,0,429],
-"classLuoRudySpiralWaveCellFactory.html#a4bb98def0b3bb8f3d8bedbc2a7f39d56":[1,0,429,0]
+"classLuoRudySpiralWaveCellFactory.html":[1,0,429]
 };

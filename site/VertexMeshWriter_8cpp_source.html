@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::7f04d041fce7f57d9cd0636698dd0243bc91ef1d</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::771ab98f8913a3343662c7287a42f1f9fa9ac297</span>
    </div>
   </td>
  </tr>
@@ -362,11 +362,11 @@ $(document).ready(function(){initNavTree('VertexMeshWriter_8cpp_source.html','')
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    {</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        c_vector&lt;double, SPACE_DIM&gt; position;</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        position = rMesh.<a class="code hl_function" href="classAbstractMesh.html#a9c0e16a572d40d8599ca1adde020a2e4">GetNode</a>(node_num)-&gt;rGetLocation();</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        <span class="keywordflow">if</span> (SPACE_DIM == 2)</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (SPACE_DIM == 2)</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        {</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            p_pts-&gt;InsertPoint(node_num, position[0], position[1], 0.0);</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        }</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (SPACE_DIM == 3)</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (SPACE_DIM == 3)</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        {</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            p_pts-&gt;InsertPoint(node_num, position[0], position[1], position[2]);</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        }</div>
@@ -601,12 +601,12 @@ $(document).ready(function(){initNavTree('VertexMeshWriter_8cpp_source.html','')
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classVertexMeshWriter.html">VertexMeshWriter&lt;2,2&gt;</a>;</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classVertexMeshWriter.html">VertexMeshWriter&lt;2,3&gt;</a>;</div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classVertexMeshWriter.html">VertexMeshWriter&lt;3,3&gt;</a>;</div>
-<div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00219">Exception.hpp:219</a></div></div>
+<div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00227">Exception.hpp:227</a></div></div>
 <div class="ttc" id="aclassAbstractMeshWriter_html"><div class="ttname"><a href="classAbstractMeshWriter.html">AbstractMeshWriter</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractMeshWriter_8hpp_source.html#l00050">AbstractMeshWriter.hpp:51</a></div></div>
 <div class="ttc" id="aclassAbstractMeshWriter_html_a7ed87b4e19a517ab1675bd42babc627c"><div class="ttname"><a href="classAbstractMeshWriter.html#a7ed87b4e19a517ab1675bd42babc627c">AbstractMeshWriter::GetNextElement</a></div><div class="ttdeci">virtual ElementData GetNextElement()</div><div class="ttdef"><b>Definition</b> <a href="AbstractMeshWriter_8cpp_source.html#l00094">AbstractMeshWriter.cpp:94</a></div></div>
 <div class="ttc" id="aclassAbstractMeshWriter_html_ac4b4f95a5cfa551769c957ce30f7357e"><div class="ttname"><a href="classAbstractMeshWriter.html#ac4b4f95a5cfa551769c957ce30f7357e">AbstractMeshWriter::GetNextNode</a></div><div class="ttdeci">virtual std::vector&lt; double &gt; GetNextNode()</div><div class="ttdef"><b>Definition</b> <a href="AbstractMeshWriter_8cpp_source.html#l00087">AbstractMeshWriter.cpp:87</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_1_1NodeIterator_html"><div class="ttname"><a href="classAbstractMesh_1_1NodeIterator.html">AbstractMesh::NodeIterator</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8hpp_source.html#l00458">AbstractMesh.hpp:459</a></div></div>
-<div class="ttc" id="aclassAbstractMesh_html_a9c0e16a572d40d8599ca1adde020a2e4"><div class="ttname"><a href="classAbstractMesh.html#a9c0e16a572d40d8599ca1adde020a2e4">AbstractMesh::GetNode</a></div><div class="ttdeci">Node&lt; SPACE_DIM &gt; * GetNode(unsigned index) const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00093">AbstractMesh.cpp:93</a></div></div>
+<div class="ttc" id="aclassAbstractMesh_html_a9c0e16a572d40d8599ca1adde020a2e4"><div class="ttname"><a href="classAbstractMesh.html#a9c0e16a572d40d8599ca1adde020a2e4">AbstractMesh::GetNode</a></div><div class="ttdeci">Node&lt; SPACE_DIM &gt; * GetNode(unsigned index) const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00094">AbstractMesh.cpp:94</a></div></div>
 <div class="ttc" id="aclassChasteBuildInfo_html_af5842208aedc7b8b880e0942b2448acd"><div class="ttname"><a href="classChasteBuildInfo.html#af5842208aedc7b8b880e0942b2448acd">ChasteBuildInfo::GetProvenanceString</a></div><div class="ttdeci">static std::string GetProvenanceString()</div></div>
 <div class="ttc" id="aclassNodeMap_html"><div class="ttname"><a href="classNodeMap.html">NodeMap</a></div><div class="ttdef"><b>Definition</b> <a href="NodeMap_8hpp_source.html#l00046">NodeMap.hpp:47</a></div></div>
 <div class="ttc" id="aclassVertexElement_html"><div class="ttname"><a href="classVertexElement.html">VertexElement</a></div><div class="ttdef"><b>Definition</b> <a href="VertexElement_8hpp_source.html#l00052">VertexElement.hpp:53</a></div></div>

@@ -4,6 +4,7 @@ var Exception_8hpp =
     [ "ABORT_IF_NON0", "Exception_8hpp.html#a760437830245b68471aee7e1a29bc33c", null ],
     [ "ABORT_IF_NON0_WITH_MSG", "Exception_8hpp.html#af70142fff465dd356c2a32df3eacca88", null ],
     [ "ABORT_IF_THROWS", "Exception_8hpp.html#a3959b478c8fab86e699e8797c0f80ef4", null ],
+    [ "EXCEPT_IF", "Exception_8hpp.html#ad600bfabad606e4e17876a08c52e4c02", null ],
     [ "EXCEPT_IF_NOT", "Exception_8hpp.html#ab812c978627256aabe068eaa9f074b45", null ],
     [ "EXCEPTION", "Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb", null ],
     [ "EXPECT0", "Exception_8hpp.html#a1137cf625db1f536a3251a0891b3d491", null ],

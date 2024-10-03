@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::7f04d041fce7f57d9cd0636698dd0243bc91ef1d</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::771ab98f8913a3343662c7287a42f1f9fa9ac297</span>
    </div>
   </td>
  </tr>
@@ -723,7 +723,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01151">1151</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, and <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, and <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>.</p>
 
 </div>
 </div>
@@ -760,7 +760,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l04033">4033</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="RandomNumberGenerator_8cpp_source.html#l00059">RandomNumberGenerator::Instance()</a>, <a class="el" href="Node_8cpp_source.html#l00412">Node&lt; SPACE_DIM &gt;::IsDeleted()</a>, <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
+<p class="reference">References <a class="el" href="RandomNumberGenerator_8cpp_source.html#l00059">RandomNumberGenerator::Instance()</a>, <a class="el" href="Node_8cpp_source.html#l00412">Node&lt; SPACE_DIM &gt;::IsDeleted()</a>, <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
 
 </div>
 </div>
@@ -791,12 +791,12 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 <p>Helper method for <a class="el" href="classMutableVertexMesh.html#a51e7eb87d4bb3444dc747f74a8e11bdd">ReMesh()</a>.</p>
 <p>Check if any neighbouring nodes in an element are closer than the mCellRearrangementThreshold and are not contained in any triangular elements. If any such pair of nodes are found, then call <a class="el" href="classMutableVertexMesh.html#a1ffa8a388a76d447cb43e8e92cc78f48">IdentifySwapType()</a>, which in turn implements the appropriate local remeshing operation (a T1 swap, void removal, or node merge).</p>
 <dl class="section return"><dt>Returns</dt><dd>whether we need to check for, and implement, any further local remeshing operations (true if any swaps are performed). </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000142">Todo:</a></b></dt><dd>Could we search more efficiently by just iterating over edges? (see #2401) </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000143">Todo:</a></b></dt><dd>Use iterators to tidy this up (see #2401) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000144">Todo:</a></b></dt><dd>Could we search more efficiently by just iterating over edges? (see #2401) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000145">Todo:</a></b></dt><dd>Use iterators to tidy this up (see #2401) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01058">1058</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
+<p class="reference">References <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
 
 </div>
 </div>
@@ -826,7 +826,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>whether we need to check for, and implement, any further local remeshing operations </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000144">Todo:</a></b></dt><dd>: cover this line in a test </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000147">Todo:</a></b></dt><dd>: cover this line in a test </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01126">1126</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
@@ -963,7 +963,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l00819">819</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>, <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>, and <a class="el" href="Node_8cpp_source.html#l00127">Node&lt; SPACE_DIM &gt;::SetAsBoundaryNode()</a>.</p>
+<p class="reference">References <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>, <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>, and <a class="el" href="Node_8cpp_source.html#l00127">Node&lt; SPACE_DIM &gt;::SetAsBoundaryNode()</a>.</p>
 
 </div>
 </div>
@@ -1672,12 +1672,12 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<p>Here, the triangular element would be along the short edge. Since we are already checking in <a class="el" href="classMutableVertexMesh.html#a0fe5b93f5673b432caafe002707d82bc">CheckForSwapsFromShortEdges()</a> whether the element is triangular, this exception is redundant for simulations. We leave it in for clarity. /// </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000145">Todo:</a></b></dt><dd>: consider removing the checking for this exception (see #2401) </dd></dl>
+<p>Here, the triangular element would be along the short edge. Since we are already checking in <a class="el" href="classMutableVertexMesh.html#a0fe5b93f5673b432caafe002707d82bc">CheckForSwapsFromShortEdges()</a> whether the element is triangular, this exception is redundant for simulations. We leave it in for clarity. /// </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000149">Todo:</a></b></dt><dd>: consider removing the checking for this exception (see #2401) </dd></dl>
 <p>If this is true then one of the elements adjacent to the triangular void is triangular. This element will then not share the short edge that is considered for a swap. Nevertheless, it would loose an edge during the swap. We are currently not able to deal with this situation. Related to #2533 and #2401.</p>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01292">1292</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00225">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="RandomNumberGenerator_8cpp_source.html#l00059">RandomNumberGenerator::Instance()</a>, <a class="el" href="Node_8cpp_source.html#l00412">Node&lt; SPACE_DIM &gt;::IsDeleted()</a>, <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>, <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>, <a class="el" href="Node_8cpp_source.html#l00139">Node&lt; SPACE_DIM &gt;::rGetLocation()</a>, <a class="el" href="Node_8cpp_source.html#l00151">Node&lt; SPACE_DIM &gt;::rGetModifiableLocation()</a>, and <a class="el" href="Node_8cpp_source.html#l00127">Node&lt; SPACE_DIM &gt;::SetAsBoundaryNode()</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00225">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="RandomNumberGenerator_8cpp_source.html#l00059">RandomNumberGenerator::Instance()</a>, <a class="el" href="Node_8cpp_source.html#l00412">Node&lt; SPACE_DIM &gt;::IsDeleted()</a>, <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>, <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>, <a class="el" href="Node_8cpp_source.html#l00139">Node&lt; SPACE_DIM &gt;::rGetLocation()</a>, <a class="el" href="Node_8cpp_source.html#l00151">Node&lt; SPACE_DIM &gt;::rGetModifiableLocation()</a>, and <a class="el" href="Node_8cpp_source.html#l00127">Node&lt; SPACE_DIM &gt;::SetAsBoundaryNode()</a>.</p>
 
 </div>
 </div>
@@ -1728,7 +1728,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l02025">2025</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00225">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, and <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00225">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, and <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>.</p>
 
 </div>
 </div>
@@ -1822,7 +1822,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l03649">3649</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="MutableElement_8cpp_source.html#l00173">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::AddNode()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00136">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::DeleteNode()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00225">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="RandomNumberGenerator_8cpp_source.html#l00059">RandomNumberGenerator::Instance()</a>, <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>, <a class="el" href="RandomNumberGenerator_8cpp_source.html#l00077">RandomNumberGenerator::randMod()</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
+<p class="reference">References <a class="el" href="MutableElement_8cpp_source.html#l00173">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::AddNode()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00136">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::DeleteNode()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00225">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="RandomNumberGenerator_8cpp_source.html#l00059">RandomNumberGenerator::Instance()</a>, <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>, <a class="el" href="RandomNumberGenerator_8cpp_source.html#l00077">RandomNumberGenerator::randMod()</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
 
 </div>
 </div>
@@ -1931,7 +1931,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l03528">3528</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
 
 </div>
 </div>
@@ -1986,11 +1986,11 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000148">Todo:</a></b></dt><dd>remove magic number? (see #1884 and #2401) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000150">Todo:</a></b></dt><dd>remove magic number? (see #1884 and #2401) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01825">1825</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="T1SwapInfo_8hpp_source.html#l00069">T1SwapInfo&lt; SPACE_DIM &gt;::mLocation</a>, <a class="el" href="T1SwapInfo_8hpp_source.html#l00081">T1SwapInfo&lt; SPACE_DIM &gt;::mPostSwapEdge</a>, <a class="el" href="T1SwapInfo_8hpp_source.html#l00075">T1SwapInfo&lt; SPACE_DIM &gt;::mPreSwapEdge</a>, and <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="T1SwapInfo_8hpp_source.html#l00069">T1SwapInfo&lt; SPACE_DIM &gt;::mLocation</a>, <a class="el" href="T1SwapInfo_8hpp_source.html#l00081">T1SwapInfo&lt; SPACE_DIM &gt;::mPostSwapEdge</a>, <a class="el" href="T1SwapInfo_8hpp_source.html#l00075">T1SwapInfo&lt; SPACE_DIM &gt;::mPreSwapEdge</a>, and <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>.</p>
 
 </div>
 </div>
@@ -2030,7 +2030,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l02394">2394</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="MutableElement_8cpp_source.html#l00136">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::DeleteNode()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="MutableElement_8cpp_source.html#l00312">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetEdge()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00225">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocalIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00319">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumEdges()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="T2SwapInfo_8hpp_source.html#l00068">T2SwapInfo&lt; SPACE_DIM &gt;::mCellId</a>, <a class="el" href="T2SwapInfo_8hpp_source.html#l00071">T2SwapInfo&lt; SPACE_DIM &gt;::mLocation</a>, <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00074">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::ReplaceNode()</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
+<p class="reference">References <a class="el" href="MutableElement_8cpp_source.html#l00136">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::DeleteNode()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="MutableElement_8cpp_source.html#l00312">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetEdge()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="Node_8cpp_source.html#l00158">Node&lt; SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00225">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocalIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00319">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumEdges()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="T2SwapInfo_8hpp_source.html#l00068">T2SwapInfo&lt; SPACE_DIM &gt;::mCellId</a>, <a class="el" href="T2SwapInfo_8hpp_source.html#l00071">T2SwapInfo&lt; SPACE_DIM &gt;::mLocation</a>, <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00074">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::ReplaceNode()</a>, and <a class="el" href="Node_8cpp_source.html#l00300">Node&lt; SPACE_DIM &gt;::rGetContainingElementIndices()</a>.</p>
 
 </div>
 </div>
@@ -2078,11 +2078,11 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000151">Todo:</a></b></dt><dd>the intersection location is sometimes overwritten when WidenEdgeOrCorrectIntersectionLocationIfNecessary </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000155">Todo:</a></b></dt><dd>the intersection location is sometimes overwritten when WidenEdgeOrCorrectIntersectionLocationIfNecessary </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l02514">2514</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="MutableElement_8cpp_source.html#l00173">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::AddNode()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00136">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::DeleteNode()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="MutableElement_8cpp_source.html#l00312">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetEdge()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00225">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00089">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocation()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00319">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumEdges()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="T3SwapInfo_8hpp_source.html#l00067">T3SwapInfo&lt; SPACE_DIM &gt;::mLocation</a>, and <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="MutableElement_8cpp_source.html#l00173">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::AddNode()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00136">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::DeleteNode()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="MutableElement_8cpp_source.html#l00312">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetEdge()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00141">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00225">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00089">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeLocation()</a>, <a class="el" href="MutableElement_8cpp_source.html#l00319">MutableElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumEdges()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00123">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNumNodes()</a>, <a class="el" href="T3SwapInfo_8hpp_source.html#l00067">T3SwapInfo&lt; SPACE_DIM &gt;::mLocation</a>, and <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>.</p>
 
 </div>
 </div>
@@ -2140,7 +2140,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l03465">3465</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Node_8cpp_source.html#l00412">Node&lt; SPACE_DIM &gt;::IsDeleted()</a>, <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>, <a class="el" href="Node_8cpp_source.html#l00151">Node&lt; SPACE_DIM &gt;::rGetModifiableLocation()</a>, and <a class="el" href="Node_8cpp_source.html#l00127">Node&lt; SPACE_DIM &gt;::SetAsBoundaryNode()</a>.</p>
+<p class="reference">References <a class="el" href="Node_8cpp_source.html#l00412">Node&lt; SPACE_DIM &gt;::IsDeleted()</a>, <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>, <a class="el" href="Node_8cpp_source.html#l00151">Node&lt; SPACE_DIM &gt;::rGetModifiableLocation()</a>, and <a class="el" href="Node_8cpp_source.html#l00127">Node&lt; SPACE_DIM &gt;::SetAsBoundaryNode()</a>.</p>
 
 </div>
 </div>
@@ -2200,11 +2200,11 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000141">Todo:</a></b></dt><dd>Implement <a class="el" href="classMutableVertexMesh.html#a51e7eb87d4bb3444dc747f74a8e11bdd">ReMesh()</a> in 3D (see #1422) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000142">Todo:</a></b></dt><dd>Implement <a class="el" href="classMutableVertexMesh.html#a51e7eb87d4bb3444dc747f74a8e11bdd">ReMesh()</a> in 3D (see #1422) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="MutableVertexMesh_8cpp_source.html#l01003">1003</a> of file <a class="el" href="MutableVertexMesh_8cpp_source.html">MutableVertexMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, and <a class="el" href="Exception_8hpp_source.html#l00219">NEVER_REACHED</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, and <a class="el" href="Exception_8hpp_source.html#l00227">NEVER_REACHED</a>.</p>
 
 </div>
 </div>

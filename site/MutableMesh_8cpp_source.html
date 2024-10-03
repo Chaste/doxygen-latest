@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::7f04d041fce7f57d9cd0636698dd0243bc91ef1d</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::771ab98f8913a3343662c7287a42f1f9fa9ac297</span>
    </div>
   </td>
  </tr>
@@ -1159,12 +1159,12 @@ $(document).ready(function(){initNavTree('MutableMesh_8cpp_source.html',''); ini
 <div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>    }</div>
 <div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span> </div>
 <div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>    <span class="comment">// Get the circumsphere information</span></div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>    c_vector&lt;double, SPACE_DIM+1&gt; this_circum_centre;</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>    c_vector&lt;double, SPACE_DIM+1&gt; this_circum_centre = zero_vector&lt;double&gt;(SPACE_DIM+1);</div>
 <div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span> </div>
 <div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>    this_circum_centre = pElement-&gt;<a class="code hl_function" href="classElement.html#ab0d6bf58459a08a18f5e83cca7140f17">CalculateCircumsphere</a>(this-&gt;mElementJacobians[pElement-&gt;<a class="code hl_function" href="classAbstractElement.html#ac1ef0f71ae056fc5878aa35cc55bd24c">GetIndex</a>()], this-&gt;mElementInverseJacobians[pElement-&gt;<a class="code hl_function" href="classAbstractElement.html#ac1ef0f71ae056fc5878aa35cc55bd24c">GetIndex</a>()]);</div>
 <div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span> </div>
 <div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>    <span class="comment">// Copy the actually circumcentre into a smaller vector</span></div>
-<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>    c_vector&lt;double, ELEMENT_DIM&gt; circum_centre;</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>    c_vector&lt;double, ELEMENT_DIM&gt; circum_centre = zero_vector&lt;double&gt;(ELEMENT_DIM);</div>
 <div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;ELEMENT_DIM; i++)</div>
 <div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>    {</div>
 <div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>        circum_centre[i] = this_circum_centre[i];</div>
@@ -1174,67 +1174,66 @@ $(document).ready(function(){initNavTree('MutableMesh_8cpp_source.html',''); ini
 <div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>         it != neighbouring_nodes_indices.end();</div>
 <div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>         ++it)</div>
 <div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>    {</div>
-<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>        c_vector&lt;double, ELEMENT_DIM&gt; node_location;</div>
-<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>        node_location = this-&gt;GetNode(*it)-&gt;rGetLocation();</div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span> </div>
-<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>        <span class="comment">// Calculate vector from circumcenter to node</span></div>
-<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>        node_location -= circum_centre;</div>
-<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span> </div>
-<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>        <span class="comment">// This is to calculate the squared distance between them</span></div>
-<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>        <span class="keywordtype">double</span> squared_distance = inner_prod(node_location, node_location);</div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span> </div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>        <span class="comment">// If the squared distance is less than the elements circum-radius(squared),</span></div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>        <span class="comment">// then the Voronoi property is violated.</span></div>
-<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>        <span class="keywordflow">if</span> (squared_distance &lt; this_circum_centre[ELEMENT_DIM])</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>        {</div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>            <span class="comment">// We know the node is inside the circumsphere, but we don&#39;t know how far</span></div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>            <span class="keywordtype">double</span> radius = sqrt(this_circum_centre[ELEMENT_DIM]);</div>
-<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>            <span class="keywordtype">double</span> distance = radius - sqrt(squared_distance);</div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span> </div>
-<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>            <span class="comment">// If the node penetration is greater than supplied maximum penetration factor</span></div>
-<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>            <span class="keywordflow">if</span> (distance/radius &gt; maxPenetration)</div>
-<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>            {</div>
-<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>            }</div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>        }</div>
-<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>    }</div>
-<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>}</div>
+<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>        c_vector&lt;double, ELEMENT_DIM&gt; node_location = this-&gt;GetNode(*it)-&gt;rGetLocation();</div>
+<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span> </div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>        <span class="comment">// Calculate vector from circumcenter to node</span></div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>        node_location -= circum_centre;</div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span> </div>
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>        <span class="comment">// This is to calculate the squared distance between them</span></div>
+<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>        <span class="keywordtype">double</span> squared_distance = inner_prod(node_location, node_location);</div>
+<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span> </div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>        <span class="comment">// If the squared distance is less than the elements circum-radius(squared),</span></div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>        <span class="comment">// then the Voronoi property is violated.</span></div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>        <span class="keywordflow">if</span> (squared_distance &lt; this_circum_centre[ELEMENT_DIM])</div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>        {</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>            <span class="comment">// We know the node is inside the circumsphere, but we don&#39;t know how far</span></div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>            <span class="keywordtype">double</span> radius = sqrt(this_circum_centre[ELEMENT_DIM]);</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>            <span class="keywordtype">double</span> distance = radius - sqrt(squared_distance);</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span> </div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>            <span class="comment">// If the node penetration is greater than supplied maximum penetration factor</span></div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>            <span class="keywordflow">if</span> (distance/radius &gt; maxPenetration)</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>            {</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>            }</div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>        }</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    }</div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>}</div>
 </div>
-<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span> </div>
-<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen01077" data-start="{" data-end="}">
-<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"><a class="line" href="classMutableMesh.html#a3e67b3b6fe1bdd5487a8a2976d810262"> 1077</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classMutableMesh.html#a3a48de933e960d1aa91f6f521347f35e">MutableMesh&lt;ELEMENT_DIM, SPACE_DIM&gt;::CheckIsVoronoi</a>(<span class="keywordtype">double</span> maxPenetration)</div>
-<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>{</div>
-<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>    <span class="comment">// Looping through all the elements in the mesh</span></div>
-<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;this-&gt;mElements.size(); i++)</div>
-<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>    {</div>
-<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>        <span class="comment">// Check if the element is not deleted</span></div>
-<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>        <span class="keywordflow">if</span> (!this-&gt;mElements[i]-&gt;IsDeleted())</div>
-<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>        {</div>
-<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>            <span class="comment">// Checking the Voronoi of the Element</span></div>
-<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>            <span class="keywordflow">if</span> (CheckIsVoronoi(this-&gt;mElements[i], maxPenetration) == <span class="keyword">false</span>)</div>
-<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>            {</div>
-<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>            }</div>
-<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>        }</div>
-<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>    }</div>
-<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>}</div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span> </div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen01076" data-start="{" data-end="}">
+<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"><a class="line" href="classMutableMesh.html#a3e67b3b6fe1bdd5487a8a2976d810262"> 1076</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classMutableMesh.html#a3a48de933e960d1aa91f6f521347f35e">MutableMesh&lt;ELEMENT_DIM, SPACE_DIM&gt;::CheckIsVoronoi</a>(<span class="keywordtype">double</span> maxPenetration)</div>
+<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>{</div>
+<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>    <span class="comment">// Looping through all the elements in the mesh</span></div>
+<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;this-&gt;mElements.size(); i++)</div>
+<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    {</div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>        <span class="comment">// Check if the element is not deleted</span></div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>        <span class="keywordflow">if</span> (!this-&gt;mElements[i]-&gt;IsDeleted())</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>        {</div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>            <span class="comment">// Checking the Voronoi of the Element</span></div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>            <span class="keywordflow">if</span> (CheckIsVoronoi(this-&gt;mElements[i], maxPenetration) == <span class="keyword">false</span>)</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>            {</div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>            }</div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>        }</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>    }</div>
+<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>}</div>
 </div>
 </div>
-<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span> </div>
-<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;1,1&gt;</a>;</div>
-<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;1,2&gt;</a>;</div>
-<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;1,3&gt;</a>;</div>
-<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;2,2&gt;</a>;</div>
-<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;2,3&gt;</a>;</div>
-<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;3,3&gt;</a>;</div>
-<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span> </div>
-<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
-<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
-<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#a06bf2790effa58816b6fd58a7ccd2d53">EXPORT_TEMPLATE_CLASS_ALL_DIMS</a>(<a class="code hl_class" href="classMutableMesh.html">MutableMesh</a>)</div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span> </div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;1,1&gt;</a>;</div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;1,2&gt;</a>;</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;1,3&gt;</a>;</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;2,2&gt;</a>;</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;2,3&gt;</a>;</div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classMutableMesh.html">MutableMesh&lt;3,3&gt;</a>;</div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span> </div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#a06bf2790effa58816b6fd58a7ccd2d53">EXPORT_TEMPLATE_CLASS_ALL_DIMS</a>(<a class="code hl_class" href="classMutableMesh.html">MutableMesh</a>)</div>
 </div>
 </div>
 </div>
@@ -1262,7 +1261,7 @@ $(document).ready(function(){initNavTree('MutableMesh_8cpp_source.html',''); ini
 </div>
 </div>
 <div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
-<div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00219">Exception.hpp:219</a></div></div>
+<div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00227">Exception.hpp:227</a></div></div>
 <div class="ttc" id="aException_8hpp_html_af2b42ae36ede1d9c8f7c20de69d07106"><div class="ttname"><a href="Exception_8hpp.html#af2b42ae36ede1d9c8f7c20de69d07106">UNSIGNED_UNSET</a></div><div class="ttdeci">const unsigned UNSIGNED_UNSET</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00053">Exception.hpp:53</a></div></div>
 <div class="ttc" id="aSerializationExportWrapperForCpp_8hpp_html"><div class="ttname"><a href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a></div></div>
 <div class="ttc" id="aSerializationExportWrapper_8hpp_html_a06bf2790effa58816b6fd58a7ccd2d53"><div class="ttname"><a href="SerializationExportWrapper_8hpp.html#a06bf2790effa58816b6fd58a7ccd2d53">EXPORT_TEMPLATE_CLASS_ALL_DIMS</a></div><div class="ttdeci">#define EXPORT_TEMPLATE_CLASS_ALL_DIMS(CLASS)</div><div class="ttdef"><b>Definition</b> <a href="SerializationExportWrapper_8hpp_source.html#l00358">SerializationExportWrapper.hpp:358</a></div></div>
@@ -1278,7 +1277,7 @@ $(document).ready(function(){initNavTree('MutableMesh_8cpp_source.html',''); ini
 <div class="ttc" id="aclassChastePoint_html_a75550dbb1f45ed92885214e79caaaf21"><div class="ttname"><a href="classChastePoint.html#a75550dbb1f45ed92885214e79caaaf21">ChastePoint::rGetLocation</a></div><div class="ttdeci">c_vector&lt; double, DIM &gt; &amp; rGetLocation()</div><div class="ttdef"><b>Definition</b> <a href="ChastePoint_8cpp_source.html#l00076">ChastePoint.cpp:76</a></div></div>
 <div class="ttc" id="aclassDistributedVectorFactory_html"><div class="ttname"><a href="classDistributedVectorFactory.html">DistributedVectorFactory</a></div><div class="ttdef"><b>Definition</b> <a href="DistributedVectorFactory_8hpp_source.html#l00057">DistributedVectorFactory.hpp:58</a></div></div>
 <div class="ttc" id="aclassElement_html"><div class="ttname"><a href="classElement.html">Element</a></div><div class="ttdef"><b>Definition</b> <a href="Element_8hpp_source.html#l00053">Element.hpp:54</a></div></div>
-<div class="ttc" id="aclassElement_html_a382beb232e938179d61f95f6923abda7"><div class="ttname"><a href="classElement.html#a382beb232e938179d61f95f6923abda7">Element::IncludesPoint</a></div><div class="ttdeci">bool IncludesPoint(const ChastePoint&lt; SPACE_DIM &gt; &amp;rTestPoint, bool strict=false)</div><div class="ttdef"><b>Definition</b> <a href="Element_8cpp_source.html#l00309">Element.cpp:309</a></div></div>
+<div class="ttc" id="aclassElement_html_a382beb232e938179d61f95f6923abda7"><div class="ttname"><a href="classElement.html#a382beb232e938179d61f95f6923abda7">Element::IncludesPoint</a></div><div class="ttdeci">bool IncludesPoint(const ChastePoint&lt; SPACE_DIM &gt; &amp;rTestPoint, bool strict=false)</div><div class="ttdef"><b>Definition</b> <a href="Element_8cpp_source.html#l00310">Element.cpp:310</a></div></div>
 <div class="ttc" id="aclassElement_html_a51d59629394a6ab8a09fa6ca66602cdf"><div class="ttname"><a href="classElement.html#a51d59629394a6ab8a09fa6ca66602cdf">Element::UpdateNode</a></div><div class="ttdeci">void UpdateNode(const unsigned &amp;rIndex, Node&lt; SPACE_DIM &gt; *pNode)</div><div class="ttdef"><b>Definition</b> <a href="Element_8cpp_source.html#l00085">Element.cpp:85</a></div></div>
 <div class="ttc" id="aclassElement_html_a8eac5fa30018106833e9227930cb8f80"><div class="ttname"><a href="classElement.html#a8eac5fa30018106833e9227930cb8f80">Element::ResetIndex</a></div><div class="ttdeci">void ResetIndex(unsigned index)</div><div class="ttdef"><b>Definition</b> <a href="Element_8cpp_source.html#l00100">Element.cpp:100</a></div></div>
 <div class="ttc" id="aclassElement_html_aa77e0f19cda16ee2b81d31172ef38307"><div class="ttname"><a href="classElement.html#aa77e0f19cda16ee2b81d31172ef38307">Element::MarkAsDeleted</a></div><div class="ttdeci">void MarkAsDeleted()</div><div class="ttdef"><b>Definition</b> <a href="Element_8cpp_source.html#l00074">Element.cpp:74</a></div></div>

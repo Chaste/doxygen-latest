@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"HeartConfigDefaults_8hpp.html":[2,0,4,0,5,26],
 "HeartConfigDefaults_8hpp.html#a036d1372e32bd605e0ccc9047ddca5f0":[2,0,4,0,5,26,3],
 "HeartConfigDefaults_8hpp.html#a77a4c7d39d35ca77f0c44780e3ce37ba":[2,0,4,0,5,26,2],
 "HeartConfigDefaults_8hpp.html#a7ad3f935cd200cc147566092b1fab250":[2,0,4,0,5,26,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "ParallelColumnDataWriter_8hpp_source.html":[2,0,5,0,3,7],
 "PdeConvergenceTester_8hpp_source.html":[2,0,4,0,0,4],
 "PdeSimulationTime_8cpp_source.html":[2,0,9,0,0,15],
-"PdeSimulationTime_8hpp_source.html":[2,0,9,0,0,16],
-"PeriodicNodesOnlyMesh_8cpp_source.html":[2,0,7,0,3,8]
+"PdeSimulationTime_8hpp_source.html":[2,0,9,0,0,16]
 };

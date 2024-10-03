@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"classExtendedBidomainProblem.html#a0f81c0147b38f5401dfc97120610c082":[1,0,339,7],
 "classExtendedBidomainProblem.html#a123f5aef96db123560c5d5ea7241b858":[1,0,339,31],
 "classExtendedBidomainProblem.html#a1b58307d459be94d0b5aed1d5a412290":[1,0,339,41],
 "classExtendedBidomainProblem.html#a298c00fe113a081981430664862d995c":[1,0,339,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "classFileFinder.html#a9eaa1458cbb08cf53bcdf6a4dadfb70b":[1,0,352,32],
 "classFileFinder.html#aa38c22124c03242cd6b3d5c80767fdda":[1,0,352,2],
 "classFileFinder.html#aae0388aa4a049a03d19f97223e8a6cf9":[1,0,352,19],
-"classFileFinder.html#ab3e2ab59e28bdf147bf29f3d72cff0ee":[1,0,352,26],
-"classFileFinder.html#ab7ae3a06bc090903fbca450517b82710":[1,0,352,17]
+"classFileFinder.html#ab3e2ab59e28bdf147bf29f3d72cff0ee":[1,0,352,26]
 };

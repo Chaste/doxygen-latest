@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"classEdgeHelper.html#a94a0c37203fc3dd23a393aec6c8edffd":[1,0,315,7],
 "classEdgeHelper.html#ab31e25bd835fac249510954dfa9a90a3":[1,0,315,1],
 "classEdgeHelper.html#ac40c37ead4136ac4ef895b353b685f44":[1,0,315,2],
 "classEdgeHelper.html#ad8687031c1c17825cb6d8e9fef1d0543":[1,0,315,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "classExtendedBidomainNeumannSurfaceTermAssembler.html#a4d3d39d77d22f12cde77c7c07e7535f7":[1,0,338,1],
 "classExtendedBidomainNeumannSurfaceTermAssembler.html#aa7650475c7423ee957a1b0c36b41a056":[1,0,338,0],
 "classExtendedBidomainProblem.html":[1,0,339],
-"classExtendedBidomainProblem.html#a0d95cb51f9b85e5274714f67337fda52":[1,0,339,16],
-"classExtendedBidomainProblem.html#a0f81c0147b38f5401dfc97120610c082":[1,0,339,7]
+"classExtendedBidomainProblem.html#a0d95cb51f9b85e5274714f67337fda52":[1,0,339,16]
 };
