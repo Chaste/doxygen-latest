@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::771ab98f8913a3343662c7287a42f1f9fa9ac297</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f4e357178db84b0074645ec781777ee906e93b8d</span>
    </div>
   </td>
  </tr>
@@ -838,152 +838,140 @@ $(document).ready(function(){initNavTree('Cylindrical2dMesh_8cpp_source.html',''
 <div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    <a class="code hl_variable" href="classCylindrical2dMesh.html#adcb5eb0caa264855f63d61c81aa9e5fb">mLeftPeriodicBoundaryElementIndices</a>.clear();</div>
 <div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    <a class="code hl_variable" href="classCylindrical2dMesh.html#ad5fcd76b28b5914be925b2b73d096498">mRightPeriodicBoundaryElementIndices</a>.clear();</div>
 <div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span> </div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    <span class="keywordtype">unsigned</span> incidences_of_zero_left_image_nodes = 0;</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keywordtype">unsigned</span> incidences_of_zero_right_image_nodes = 0;</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> </div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    <span class="keywordflow">for</span> (<a class="code hl_class" href="classAbstractTetrahedralMesh_1_1ElementIterator.html">MutableMesh&lt;2,2&gt;::ElementIterator</a> elem_iter = <a class="code hl_function" href="classAbstractTetrahedralMesh.html#a76f353fa97bdc3df3a4be30bb8839bb3">GetElementIteratorBegin</a>();</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>         elem_iter != <a class="code hl_function" href="classAbstractTetrahedralMesh.html#a882e37dc5497cc485eaeb148dfdf910f">GetElementIteratorEnd</a>();</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>         ++elem_iter)</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    {</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        <span class="comment">// Left images are on the right of the mesh</span></div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>        <span class="keywordtype">unsigned</span> number_of_left_image_nodes = 0;</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>        <span class="keywordtype">unsigned</span> number_of_right_image_nodes = 0;</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;3; i++)</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>        {</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>            <span class="keywordtype">unsigned</span> this_node_index = elem_iter-&gt;GetNodeGlobalIndex(i);</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span> </div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classCylindrical2dMesh.html#a388e79d7f8a993b9bf44ae9828fe39f1">mImageToLeftOriginalNodeMap</a>.find(this_node_index) != <a class="code hl_variable" href="classCylindrical2dMesh.html#a388e79d7f8a993b9bf44ae9828fe39f1">mImageToLeftOriginalNodeMap</a>.end())</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>            {</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>                number_of_left_image_nodes++;</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>            }</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classCylindrical2dMesh.html#a6704f04d227dca813d401d0cdbfebfa6">mImageToRightOriginalNodeMap</a>.find(this_node_index) != <a class="code hl_variable" href="classCylindrical2dMesh.html#a6704f04d227dca813d401d0cdbfebfa6">mImageToRightOriginalNodeMap</a>.end())</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>            {</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>                number_of_right_image_nodes++;</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>            }</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>        }</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span> </div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>        <span class="keywordflow">if</span> ((number_of_left_image_nodes == 0) &amp;&amp; (number_of_right_image_nodes == 1 || number_of_right_image_nodes == 2) )</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>        {</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>            incidences_of_zero_left_image_nodes++;</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>        }</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>        <span class="keywordflow">if</span> ((number_of_right_image_nodes == 0) &amp;&amp; (number_of_left_image_nodes == 1 || number_of_left_image_nodes == 2) )</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        {</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>            incidences_of_zero_right_image_nodes++;</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>        }</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span> </div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>        <span class="comment">/* SJ - Have checked the following:</span></div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span><span class="comment">         * - It is never the case that number_of_left_image_nodes + number_of_right_image_nodes &gt; 3</span></div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span><span class="comment">         * - There are 1264 incidences of zero left image nodes, and 1252 incidences of zero right image nodes</span></div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span><span class="comment">         * - There are 450 incidences of zero left image nodes and non-zero right image nodes; 438 incidences of zero right image nodes and non-zero left</span></div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span><span class="comment">         *   image nodes</span></div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span><span class="comment">         * - There are 40 incidences of 0 left image nodes, and 1/2 right image nodes; 39 incidences of 0 right image nodes and 1/2 left image nodes</span></div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span><span class="comment">         * As this corresponds to 40 left-hand boundary elements and 39 right-hand boundary elements, then it is this extra occurrence of a 0 left</span></div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span><span class="comment">         * image node with 1/2 right image nodes that is responsible for the extra element.</span></div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span> </div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        <span class="comment">// Elements on the left hand side (images of right nodes)</span></div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>        <span class="keywordflow">if</span> (number_of_right_image_nodes == 1 || number_of_right_image_nodes == 2)</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>        {</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>            <a class="code hl_variable" href="classCylindrical2dMesh.html#adcb5eb0caa264855f63d61c81aa9e5fb">mLeftPeriodicBoundaryElementIndices</a>.insert(elem_iter-&gt;GetIndex());</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>        }</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span> </div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>        <span class="comment">// Elements on the right (images of left nodes)</span></div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        <span class="keywordflow">if</span> (number_of_left_image_nodes == 1 || number_of_left_image_nodes == 2)</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>        {</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>            <a class="code hl_variable" href="classCylindrical2dMesh.html#ad5fcd76b28b5914be925b2b73d096498">mRightPeriodicBoundaryElementIndices</a>.insert(elem_iter-&gt;GetIndex());</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>        }</div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    }</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span> </div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span><span class="comment">//    if (mLeftPeriodicBoundaryElementIndices.size() != mRightPeriodicBoundaryElementIndices.size())</span></div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span><span class="comment">//    {</span></div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span><span class="comment">//        mMismatchedBoundaryElements = true;</span></div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span><span class="comment">//        // In here - if you hit this case, we want to stop the test and move on, so we work with a stopping event</span></div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span><span class="comment">//    }</span></div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span> </div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    <span class="comment">// Every boundary element on the left must have a corresponding element on the right</span></div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    assert(<a class="code hl_variable" href="classCylindrical2dMesh.html#adcb5eb0caa264855f63d61c81aa9e5fb">mLeftPeriodicBoundaryElementIndices</a>.size() == <a class="code hl_variable" href="classCylindrical2dMesh.html#ad5fcd76b28b5914be925b2b73d096498">mRightPeriodicBoundaryElementIndices</a>.size());</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>}</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    <span class="keywordflow">for</span> (<a class="code hl_class" href="classAbstractTetrahedralMesh_1_1ElementIterator.html">MutableMesh&lt;2,2&gt;::ElementIterator</a> elem_iter = <a class="code hl_function" href="classAbstractTetrahedralMesh.html#a76f353fa97bdc3df3a4be30bb8839bb3">GetElementIteratorBegin</a>();</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>         elem_iter != <a class="code hl_function" href="classAbstractTetrahedralMesh.html#a882e37dc5497cc485eaeb148dfdf910f">GetElementIteratorEnd</a>();</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>         ++elem_iter)</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    {</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>        <span class="comment">// Left images are on the right of the mesh</span></div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>        <span class="keywordtype">unsigned</span> number_of_left_image_nodes = 0;</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>        <span class="keywordtype">unsigned</span> number_of_right_image_nodes = 0;</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span> </div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;3; i++)</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>        {</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>            <span class="keywordtype">unsigned</span> this_node_index = elem_iter-&gt;GetNodeGlobalIndex(i);</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span> </div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classCylindrical2dMesh.html#a388e79d7f8a993b9bf44ae9828fe39f1">mImageToLeftOriginalNodeMap</a>.find(this_node_index) != <a class="code hl_variable" href="classCylindrical2dMesh.html#a388e79d7f8a993b9bf44ae9828fe39f1">mImageToLeftOriginalNodeMap</a>.end())</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>            {</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>                number_of_left_image_nodes++;</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>            }</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classCylindrical2dMesh.html#a6704f04d227dca813d401d0cdbfebfa6">mImageToRightOriginalNodeMap</a>.find(this_node_index) != <a class="code hl_variable" href="classCylindrical2dMesh.html#a6704f04d227dca813d401d0cdbfebfa6">mImageToRightOriginalNodeMap</a>.end())</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>            {</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>                number_of_right_image_nodes++;</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>            }</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>        }</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span> </div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        <span class="comment">/* SJ - Have checked the following:</span></div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="comment">         * - It is never the case that number_of_left_image_nodes + number_of_right_image_nodes &gt; 3</span></div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="comment">         * - There are 1264 incidences of zero left image nodes, and 1252 incidences of zero right image nodes</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="comment">         * - There are 450 incidences of zero left image nodes and non-zero right image nodes; 438 incidences of zero right image nodes and non-zero left</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="comment">         *   image nodes</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="comment">         * - There are 40 incidences of 0 left image nodes, and 1/2 right image nodes; 39 incidences of 0 right image nodes and 1/2 left image nodes</span></div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="comment">         * As this corresponds to 40 left-hand boundary elements and 39 right-hand boundary elements, then it is this extra occurrence of a 0 left</span></div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="comment">         * image node with 1/2 right image nodes that is responsible for the extra element.</span></div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span> </div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>        <span class="comment">// Elements on the left hand side (images of right nodes)</span></div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>        <span class="keywordflow">if</span> (number_of_right_image_nodes == 1 || number_of_right_image_nodes == 2)</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>        {</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>            <a class="code hl_variable" href="classCylindrical2dMesh.html#adcb5eb0caa264855f63d61c81aa9e5fb">mLeftPeriodicBoundaryElementIndices</a>.insert(elem_iter-&gt;GetIndex());</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>        }</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span> </div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>        <span class="comment">// Elements on the right (images of left nodes)</span></div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>        <span class="keywordflow">if</span> (number_of_left_image_nodes == 1 || number_of_left_image_nodes == 2)</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>        {</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>            <a class="code hl_variable" href="classCylindrical2dMesh.html#ad5fcd76b28b5914be925b2b73d096498">mRightPeriodicBoundaryElementIndices</a>.insert(elem_iter-&gt;GetIndex());</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>        }</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    }</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span> </div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span><span class="comment">//    if (mLeftPeriodicBoundaryElementIndices.size() != mRightPeriodicBoundaryElementIndices.size())</span></div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span><span class="comment">//    {</span></div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span><span class="comment">//        mMismatchedBoundaryElements = true;</span></div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="comment">//        // In here - if you hit this case, we want to stop the test and move on, so we work with a stopping event</span></div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span><span class="comment">//    }</span></div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span> </div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    <span class="comment">// Every boundary element on the left must have a corresponding element on the right</span></div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    assert(<a class="code hl_variable" href="classCylindrical2dMesh.html#adcb5eb0caa264855f63d61c81aa9e5fb">mLeftPeriodicBoundaryElementIndices</a>.size() == <a class="code hl_variable" href="classCylindrical2dMesh.html#ad5fcd76b28b5914be925b2b73d096498">mRightPeriodicBoundaryElementIndices</a>.size());</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>}</div>
 </div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span> </div>
-<div class="foldopen" id="foldopen00807" data-start="{" data-end="}">
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno"><a class="line" href="classCylindrical2dMesh.html#a20d1fa6e742f846e54b11ab0ba450322">  807</a></span><span class="keywordtype">unsigned</span> <a class="code hl_function" href="classCylindrical2dMesh.html#a20d1fa6e742f846e54b11ab0ba450322">Cylindrical2dMesh::GetCorrespondingNodeIndex</a>(<span class="keywordtype">unsigned</span> nodeIndex)</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>{</div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    <span class="keywordtype">unsigned</span> corresponding_node_index = UINT_MAX;</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span> </div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="comment">// If nodeIndex is a member of mRightOriginals, then find the corresponding node index in mRightImages</span></div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    std::vector&lt;unsigned&gt;::iterator right_orig_iter = std::find(<a class="code hl_variable" href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">mRightOriginals</a>.begin(), <a class="code hl_variable" href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">mRightOriginals</a>.end(), nodeIndex);</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>    <span class="keywordflow">if</span> (right_orig_iter != <a class="code hl_variable" href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">mRightOriginals</a>.end())</div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    {</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        corresponding_node_index = <a class="code hl_variable" href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">mRightImages</a>[right_orig_iter - <a class="code hl_variable" href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">mRightOriginals</a>.begin()];</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    }</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>    {</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>        <span class="comment">// If nodeIndex is a member of mRightImages, then find the corresponding node index in mRightOriginals</span></div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>        std::vector&lt;unsigned&gt;::iterator right_im_iter = std::find(<a class="code hl_variable" href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">mRightImages</a>.begin(), <a class="code hl_variable" href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">mRightImages</a>.end(), nodeIndex);</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>        <span class="keywordflow">if</span> (right_im_iter != <a class="code hl_variable" href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">mRightImages</a>.end())</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>        {</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>            corresponding_node_index = <a class="code hl_variable" href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">mRightOriginals</a>[right_im_iter - <a class="code hl_variable" href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">mRightImages</a>.begin()];</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>        }</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>        {</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>            <span class="comment">// If nodeIndex is a member of mLeftOriginals, then find the corresponding node index in mLeftImages</span></div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>            std::vector&lt;unsigned&gt;::iterator left_orig_iter = std::find(<a class="code hl_variable" href="classCylindrical2dMesh.html#ac8ec0e81ced21f788bb5762ea6927889">mLeftOriginals</a>.begin(), <a class="code hl_variable" href="classCylindrical2dMesh.html#ac8ec0e81ced21f788bb5762ea6927889">mLeftOriginals</a>.end(), nodeIndex);</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>            <span class="keywordflow">if</span> (left_orig_iter != <a class="code hl_variable" href="classCylindrical2dMesh.html#ac8ec0e81ced21f788bb5762ea6927889">mLeftOriginals</a>.end())</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>            {</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>                corresponding_node_index = <a class="code hl_variable" href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">mLeftImages</a>[left_orig_iter - <a class="code hl_variable" href="classCylindrical2dMesh.html#ac8ec0e81ced21f788bb5762ea6927889">mLeftOriginals</a>.begin()];</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>            }</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>            <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>            {</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>                <span class="comment">// If nodeIndex is a member of mLeftImages, then find the corresponding node index in mLeftOriginals</span></div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>                std::vector&lt;unsigned&gt;::iterator left_im_iter = std::find(<a class="code hl_variable" href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">mLeftImages</a>.begin(), <a class="code hl_variable" href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">mLeftImages</a>.end(), nodeIndex);</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>                <span class="keywordflow">if</span> (left_im_iter != <a class="code hl_variable" href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">mLeftImages</a>.end())</div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>                {</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>                     corresponding_node_index = <a class="code hl_variable" href="classCylindrical2dMesh.html#ac8ec0e81ced21f788bb5762ea6927889">mLeftOriginals</a>[left_im_iter - <a class="code hl_variable" href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">mLeftImages</a>.begin()];</div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>                }</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>            }</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>        }</div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>    }</div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span> </div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    <span class="comment">// We must have found the corresponding node index</span></div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    assert(corresponding_node_index != UINT_MAX);</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    <span class="keywordflow">return</span> corresponding_node_index;</div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>}</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
+<div class="foldopen" id="foldopen00795" data-start="{" data-end="}">
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno"><a class="line" href="classCylindrical2dMesh.html#a20d1fa6e742f846e54b11ab0ba450322">  795</a></span><span class="keywordtype">unsigned</span> <a class="code hl_function" href="classCylindrical2dMesh.html#a20d1fa6e742f846e54b11ab0ba450322">Cylindrical2dMesh::GetCorrespondingNodeIndex</a>(<span class="keywordtype">unsigned</span> nodeIndex)</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>{</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    <span class="keywordtype">unsigned</span> corresponding_node_index = UINT_MAX;</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span> </div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    <span class="comment">// If nodeIndex is a member of mRightOriginals, then find the corresponding node index in mRightImages</span></div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    std::vector&lt;unsigned&gt;::iterator right_orig_iter = std::find(<a class="code hl_variable" href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">mRightOriginals</a>.begin(), <a class="code hl_variable" href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">mRightOriginals</a>.end(), nodeIndex);</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    <span class="keywordflow">if</span> (right_orig_iter != <a class="code hl_variable" href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">mRightOriginals</a>.end())</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    {</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>        corresponding_node_index = <a class="code hl_variable" href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">mRightImages</a>[right_orig_iter - <a class="code hl_variable" href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">mRightOriginals</a>.begin()];</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    }</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    {</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>        <span class="comment">// If nodeIndex is a member of mRightImages, then find the corresponding node index in mRightOriginals</span></div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>        std::vector&lt;unsigned&gt;::iterator right_im_iter = std::find(<a class="code hl_variable" href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">mRightImages</a>.begin(), <a class="code hl_variable" href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">mRightImages</a>.end(), nodeIndex);</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        <span class="keywordflow">if</span> (right_im_iter != <a class="code hl_variable" href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">mRightImages</a>.end())</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>        {</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>            corresponding_node_index = <a class="code hl_variable" href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">mRightOriginals</a>[right_im_iter - <a class="code hl_variable" href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">mRightImages</a>.begin()];</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>        }</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>        {</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>            <span class="comment">// If nodeIndex is a member of mLeftOriginals, then find the corresponding node index in mLeftImages</span></div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>            std::vector&lt;unsigned&gt;::iterator left_orig_iter = std::find(<a class="code hl_variable" href="classCylindrical2dMesh.html#ac8ec0e81ced21f788bb5762ea6927889">mLeftOriginals</a>.begin(), <a class="code hl_variable" href="classCylindrical2dMesh.html#ac8ec0e81ced21f788bb5762ea6927889">mLeftOriginals</a>.end(), nodeIndex);</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>            <span class="keywordflow">if</span> (left_orig_iter != <a class="code hl_variable" href="classCylindrical2dMesh.html#ac8ec0e81ced21f788bb5762ea6927889">mLeftOriginals</a>.end())</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>            {</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>                corresponding_node_index = <a class="code hl_variable" href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">mLeftImages</a>[left_orig_iter - <a class="code hl_variable" href="classCylindrical2dMesh.html#ac8ec0e81ced21f788bb5762ea6927889">mLeftOriginals</a>.begin()];</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>            }</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>            {</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>                <span class="comment">// If nodeIndex is a member of mLeftImages, then find the corresponding node index in mLeftOriginals</span></div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>                std::vector&lt;unsigned&gt;::iterator left_im_iter = std::find(<a class="code hl_variable" href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">mLeftImages</a>.begin(), <a class="code hl_variable" href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">mLeftImages</a>.end(), nodeIndex);</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>                <span class="keywordflow">if</span> (left_im_iter != <a class="code hl_variable" href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">mLeftImages</a>.end())</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>                {</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>                     corresponding_node_index = <a class="code hl_variable" href="classCylindrical2dMesh.html#ac8ec0e81ced21f788bb5762ea6927889">mLeftOriginals</a>[left_im_iter - <a class="code hl_variable" href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">mLeftImages</a>.begin()];</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>                }</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>            }</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>        }</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>    }</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span> </div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>    <span class="comment">// We must have found the corresponding node index</span></div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>    assert(corresponding_node_index != UINT_MAX);</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>    <span class="keywordflow">return</span> corresponding_node_index;</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>}</div>
 </div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span> </div>
-<div class="foldopen" id="foldopen00850" data-start="{" data-end="}">
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno"><a class="line" href="classCylindrical2dMesh.html#aacc72a4d0097b9661ea39f886eaa7555">  850</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCylindrical2dMesh.html#aacc72a4d0097b9661ea39f886eaa7555">Cylindrical2dMesh::GetHaloScalingFactor</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCylindrical2dMesh.html#ada8d0f0cb1728e609b2ec4ebc0a8afb3">mHaloScalingFactor</a>;</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>}</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span> </div>
+<div class="foldopen" id="foldopen00838" data-start="{" data-end="}">
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno"><a class="line" href="classCylindrical2dMesh.html#aacc72a4d0097b9661ea39f886eaa7555">  838</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCylindrical2dMesh.html#aacc72a4d0097b9661ea39f886eaa7555">Cylindrical2dMesh::GetHaloScalingFactor</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCylindrical2dMesh.html#ada8d0f0cb1728e609b2ec4ebc0a8afb3">mHaloScalingFactor</a>;</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>}</div>
 </div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span> </div>
-<div class="foldopen" id="foldopen00855" data-start="{" data-end="}">
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno"><a class="line" href="classCylindrical2dMesh.html#a8c68e9014c5933dc944c60032c83bb07">  855</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCylindrical2dMesh.html#a8c68e9014c5933dc944c60032c83bb07">Cylindrical2dMesh::SetHaloScalingFactor</a>(<span class="keywordtype">double</span> haloScalingFactor)</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>{</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    assert(haloScalingFactor &gt;= 0.0);</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    <a class="code hl_variable" href="classCylindrical2dMesh.html#ada8d0f0cb1728e609b2ec4ebc0a8afb3">mHaloScalingFactor</a> = haloScalingFactor;</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>}</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
+<div class="foldopen" id="foldopen00843" data-start="{" data-end="}">
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno"><a class="line" href="classCylindrical2dMesh.html#a8c68e9014c5933dc944c60032c83bb07">  843</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCylindrical2dMesh.html#a8c68e9014c5933dc944c60032c83bb07">Cylindrical2dMesh::SetHaloScalingFactor</a>(<span class="keywordtype">double</span> haloScalingFactor)</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>{</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    assert(haloScalingFactor &gt;= 0.0);</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    <a class="code hl_variable" href="classCylindrical2dMesh.html#ada8d0f0cb1728e609b2ec4ebc0a8afb3">mHaloScalingFactor</a> = haloScalingFactor;</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>}</div>
 </div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>
-<div class="foldopen" id="foldopen00861" data-start="{" data-end="}">
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno"><a class="line" href="classCylindrical2dMesh.html#a616be0c0b15738f9c975884b775deadb">  861</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCylindrical2dMesh.html#a616be0c0b15738f9c975884b775deadb">Cylindrical2dMesh::GetHaloOffset</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCylindrical2dMesh.html#ad6e9c7d894dad6dd877d7f9b0eddd21e">mHaloOffset</a>;</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>}</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
+<div class="foldopen" id="foldopen00849" data-start="{" data-end="}">
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno"><a class="line" href="classCylindrical2dMesh.html#a616be0c0b15738f9c975884b775deadb">  849</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCylindrical2dMesh.html#a616be0c0b15738f9c975884b775deadb">Cylindrical2dMesh::GetHaloOffset</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCylindrical2dMesh.html#ad6e9c7d894dad6dd877d7f9b0eddd21e">mHaloOffset</a>;</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>}</div>
 </div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span> </div>
-<div class="foldopen" id="foldopen00866" data-start="{" data-end="}">
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno"><a class="line" href="classCylindrical2dMesh.html#a688e19fe2764ab5f31a8fb5cfb89fdc6">  866</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCylindrical2dMesh.html#a688e19fe2764ab5f31a8fb5cfb89fdc6">Cylindrical2dMesh::SetHaloOffset</a>(<span class="keywordtype">double</span> haloOffset)</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>{</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>    assert(haloOffset &gt;= 0.0);</div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>    <a class="code hl_variable" href="classCylindrical2dMesh.html#ad6e9c7d894dad6dd877d7f9b0eddd21e">mHaloOffset</a> = haloOffset;</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>}</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span> </div>
+<div class="foldopen" id="foldopen00854" data-start="{" data-end="}">
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno"><a class="line" href="classCylindrical2dMesh.html#a688e19fe2764ab5f31a8fb5cfb89fdc6">  854</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCylindrical2dMesh.html#a688e19fe2764ab5f31a8fb5cfb89fdc6">Cylindrical2dMesh::SetHaloOffset</a>(<span class="keywordtype">double</span> haloOffset)</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>{</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>    assert(haloOffset &gt;= 0.0);</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    <a class="code hl_variable" href="classCylindrical2dMesh.html#ad6e9c7d894dad6dd877d7f9b0eddd21e">mHaloOffset</a> = haloOffset;</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>}</div>
 </div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span> </div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#ace086cfef82d692752842bea698f6e7c">CHASTE_CLASS_EXPORT</a>(<a class="code hl_class" href="classCylindrical2dMesh.html">Cylindrical2dMesh</a>)</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span> </div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#ace086cfef82d692752842bea698f6e7c">CHASTE_CLASS_EXPORT</a>(<a class="code hl_class" href="classCylindrical2dMesh.html">Cylindrical2dMesh</a>)</div>
 <div class="ttc" id="aException_8hpp_html"><div class="ttname"><a href="Exception_8hpp.html">Exception.hpp</a></div></div>
 <div class="ttc" id="aException_8hpp_html_ac7f0d719848e5a14ba55d70276feb00f"><div class="ttname"><a href="Exception_8hpp.html#ac7f0d719848e5a14ba55d70276feb00f">UNUSED_OPT</a></div><div class="ttdeci">#define UNUSED_OPT(var)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00237">Exception.hpp:237</a></div></div>
 <div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00227">Exception.hpp:227</a></div></div>
@@ -1025,25 +1013,25 @@ $(document).ready(function(){initNavTree('Cylindrical2dMesh_8cpp_source.html',''
 <div class="ttc" id="aclassCylindrical2dMesh_html_a1871e91f48c7a98369dbfe5f97c40138"><div class="ttname"><a href="classCylindrical2dMesh.html#a1871e91f48c7a98369dbfe5f97c40138">Cylindrical2dMesh::CreateHaloNodes</a></div><div class="ttdeci">void CreateHaloNodes()</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00159">Cylindrical2dMesh.cpp:159</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a1bfed1bd45fd3eaa8dec5d5ed35eb357"><div class="ttname"><a href="classCylindrical2dMesh.html#a1bfed1bd45fd3eaa8dec5d5ed35eb357">Cylindrical2dMesh::mLeftImages</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; mLeftImages</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8hpp_source.html#l00079">Cylindrical2dMesh.hpp:79</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a1eb3e5c7e92abe8eec39353c5be06422"><div class="ttname"><a href="classCylindrical2dMesh.html#a1eb3e5c7e92abe8eec39353c5be06422">Cylindrical2dMesh::AddNode</a></div><div class="ttdeci">unsigned AddNode(Node&lt; 2 &gt; *pNewNode)</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00532">Cylindrical2dMesh.cpp:532</a></div></div>
-<div class="ttc" id="aclassCylindrical2dMesh_html_a20d1fa6e742f846e54b11ab0ba450322"><div class="ttname"><a href="classCylindrical2dMesh.html#a20d1fa6e742f846e54b11ab0ba450322">Cylindrical2dMesh::GetCorrespondingNodeIndex</a></div><div class="ttdeci">unsigned GetCorrespondingNodeIndex(unsigned nodeIndex)</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00807">Cylindrical2dMesh.cpp:807</a></div></div>
+<div class="ttc" id="aclassCylindrical2dMesh_html_a20d1fa6e742f846e54b11ab0ba450322"><div class="ttname"><a href="classCylindrical2dMesh.html#a20d1fa6e742f846e54b11ab0ba450322">Cylindrical2dMesh::GetCorrespondingNodeIndex</a></div><div class="ttdeci">unsigned GetCorrespondingNodeIndex(unsigned nodeIndex)</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00795">Cylindrical2dMesh.cpp:795</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a26a01f0b8af79857b8b862a3205f5d3c"><div class="ttname"><a href="classCylindrical2dMesh.html#a26a01f0b8af79857b8b862a3205f5d3c">Cylindrical2dMesh::mRightImages</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; mRightImages</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8hpp_source.html#l00088">Cylindrical2dMesh.hpp:88</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a2839340eca2fadf8d61c12f473fdc57c"><div class="ttname"><a href="classCylindrical2dMesh.html#a2839340eca2fadf8d61c12f473fdc57c">Cylindrical2dMesh::~Cylindrical2dMesh</a></div><div class="ttdeci">~Cylindrical2dMesh()</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00056">Cylindrical2dMesh.cpp:56</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a388e79d7f8a993b9bf44ae9828fe39f1"><div class="ttname"><a href="classCylindrical2dMesh.html#a388e79d7f8a993b9bf44ae9828fe39f1">Cylindrical2dMesh::mImageToLeftOriginalNodeMap</a></div><div class="ttdeci">std::map&lt; unsigned, unsigned &gt; mImageToLeftOriginalNodeMap</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8hpp_source.html#l00082">Cylindrical2dMesh.hpp:82</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a38e35076af649f365c9a26219fa3ad1e"><div class="ttname"><a href="classCylindrical2dMesh.html#a38e35076af649f365c9a26219fa3ad1e">Cylindrical2dMesh::CorrectNonPeriodicMesh</a></div><div class="ttdeci">void CorrectNonPeriodicMesh()</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00543">Cylindrical2dMesh.cpp:543</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a3ea23d2d9acbae46333ec73fafb584c3"><div class="ttname"><a href="classCylindrical2dMesh.html#a3ea23d2d9acbae46333ec73fafb584c3">Cylindrical2dMesh::GetWidth</a></div><div class="ttdeci">double GetWidth(const unsigned &amp;rDimension) const</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00517">Cylindrical2dMesh.cpp:517</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a541fc18d26c6bc241c19120ef7f7fbcf"><div class="ttname"><a href="classCylindrical2dMesh.html#a541fc18d26c6bc241c19120ef7f7fbcf">Cylindrical2dMesh::GenerateVectorsOfElementsStraddlingPeriodicBoundaries</a></div><div class="ttdeci">void GenerateVectorsOfElementsStraddlingPeriodicBoundaries()</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00735">Cylindrical2dMesh.cpp:735</a></div></div>
-<div class="ttc" id="aclassCylindrical2dMesh_html_a616be0c0b15738f9c975884b775deadb"><div class="ttname"><a href="classCylindrical2dMesh.html#a616be0c0b15738f9c975884b775deadb">Cylindrical2dMesh::GetHaloOffset</a></div><div class="ttdeci">double GetHaloOffset() const</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00861">Cylindrical2dMesh.cpp:861</a></div></div>
+<div class="ttc" id="aclassCylindrical2dMesh_html_a616be0c0b15738f9c975884b775deadb"><div class="ttname"><a href="classCylindrical2dMesh.html#a616be0c0b15738f9c975884b775deadb">Cylindrical2dMesh::GetHaloOffset</a></div><div class="ttdeci">double GetHaloOffset() const</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00849">Cylindrical2dMesh.cpp:849</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a63d009a414d56c3583f6d25b282b5957"><div class="ttname"><a href="classCylindrical2dMesh.html#a63d009a414d56c3583f6d25b282b5957">Cylindrical2dMesh::GetVectorFromAtoB</a></div><div class="ttdeci">c_vector&lt; double, 2 &gt; GetVectorFromAtoB(const c_vector&lt; double, 2 &gt; &amp;rLocation1, const c_vector&lt; double, 2 &gt; &amp;rLocation2)</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00477">Cylindrical2dMesh.cpp:477</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a66343c9706167157d1f271945e4e2cfb"><div class="ttname"><a href="classCylindrical2dMesh.html#a66343c9706167157d1f271945e4e2cfb">Cylindrical2dMesh::CreateMirrorNodes</a></div><div class="ttdeci">void CreateMirrorNodes()</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00092">Cylindrical2dMesh.cpp:92</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a6704f04d227dca813d401d0cdbfebfa6"><div class="ttname"><a href="classCylindrical2dMesh.html#a6704f04d227dca813d401d0cdbfebfa6">Cylindrical2dMesh::mImageToRightOriginalNodeMap</a></div><div class="ttdeci">std::map&lt; unsigned, unsigned &gt; mImageToRightOriginalNodeMap</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8hpp_source.html#l00091">Cylindrical2dMesh.hpp:91</a></div></div>
-<div class="ttc" id="aclassCylindrical2dMesh_html_a688e19fe2764ab5f31a8fb5cfb89fdc6"><div class="ttname"><a href="classCylindrical2dMesh.html#a688e19fe2764ab5f31a8fb5cfb89fdc6">Cylindrical2dMesh::SetHaloOffset</a></div><div class="ttdeci">void SetHaloOffset(double haloOffset)</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00866">Cylindrical2dMesh.cpp:866</a></div></div>
+<div class="ttc" id="aclassCylindrical2dMesh_html_a688e19fe2764ab5f31a8fb5cfb89fdc6"><div class="ttname"><a href="classCylindrical2dMesh.html#a688e19fe2764ab5f31a8fb5cfb89fdc6">Cylindrical2dMesh::SetHaloOffset</a></div><div class="ttdeci">void SetHaloOffset(double haloOffset)</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00854">Cylindrical2dMesh.cpp:854</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a7b215e98a4c2b8494b4eb2ac323443fb"><div class="ttname"><a href="classCylindrical2dMesh.html#a7b215e98a4c2b8494b4eb2ac323443fb">Cylindrical2dMesh::mTop</a></div><div class="ttdeci">double mTop</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8hpp_source.html#l00064">Cylindrical2dMesh.hpp:64</a></div></div>
-<div class="ttc" id="aclassCylindrical2dMesh_html_a8c68e9014c5933dc944c60032c83bb07"><div class="ttname"><a href="classCylindrical2dMesh.html#a8c68e9014c5933dc944c60032c83bb07">Cylindrical2dMesh::SetHaloScalingFactor</a></div><div class="ttdeci">void SetHaloScalingFactor(double haloScalingFactor)</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00855">Cylindrical2dMesh.cpp:855</a></div></div>
+<div class="ttc" id="aclassCylindrical2dMesh_html_a8c68e9014c5933dc944c60032c83bb07"><div class="ttname"><a href="classCylindrical2dMesh.html#a8c68e9014c5933dc944c60032c83bb07">Cylindrical2dMesh::SetHaloScalingFactor</a></div><div class="ttdeci">void SetHaloScalingFactor(double haloScalingFactor)</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00843">Cylindrical2dMesh.cpp:843</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a8ea86ea8ca6a94e96bdacf4c812fc819"><div class="ttname"><a href="classCylindrical2dMesh.html#a8ea86ea8ca6a94e96bdacf4c812fc819">Cylindrical2dMesh::Cylindrical2dMesh</a></div><div class="ttdeci">Cylindrical2dMesh(double width)</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00047">Cylindrical2dMesh.cpp:47</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_a9a20f010bde076131f8a1ac6c19c1dff"><div class="ttname"><a href="classCylindrical2dMesh.html#a9a20f010bde076131f8a1ac6c19c1dff">Cylindrical2dMesh::DeleteHaloNodes</a></div><div class="ttdeci">void DeleteHaloNodes()</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00467">Cylindrical2dMesh.cpp:467</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_aa18f83a597c9559dbb7ec2776bf81ee5"><div class="ttname"><a href="classCylindrical2dMesh.html#aa18f83a597c9559dbb7ec2776bf81ee5">Cylindrical2dMesh::mBottom</a></div><div class="ttdeci">double mBottom</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8hpp_source.html#l00067">Cylindrical2dMesh.hpp:67</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_aa68013fcc969a7bea766abdf2abe0537"><div class="ttname"><a href="classCylindrical2dMesh.html#aa68013fcc969a7bea766abdf2abe0537">Cylindrical2dMesh::mTopHaloNodes</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; mTopHaloNodes</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8hpp_source.html#l00100">Cylindrical2dMesh.hpp:100</a></div></div>
-<div class="ttc" id="aclassCylindrical2dMesh_html_aacc72a4d0097b9661ea39f886eaa7555"><div class="ttname"><a href="classCylindrical2dMesh.html#aacc72a4d0097b9661ea39f886eaa7555">Cylindrical2dMesh::GetHaloScalingFactor</a></div><div class="ttdeci">double GetHaloScalingFactor() const</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00850">Cylindrical2dMesh.cpp:850</a></div></div>
+<div class="ttc" id="aclassCylindrical2dMesh_html_aacc72a4d0097b9661ea39f886eaa7555"><div class="ttname"><a href="classCylindrical2dMesh.html#aacc72a4d0097b9661ea39f886eaa7555">Cylindrical2dMesh::GetHaloScalingFactor</a></div><div class="ttdeci">double GetHaloScalingFactor() const</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00838">Cylindrical2dMesh.cpp:838</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_aaea2c25b517c9d1cb417a6fb0745ade4"><div class="ttname"><a href="classCylindrical2dMesh.html#aaea2c25b517c9d1cb417a6fb0745ade4">Cylindrical2dMesh::SetNode</a></div><div class="ttdeci">void SetNode(unsigned index, ChastePoint&lt; 2 &gt; point, bool concreteMove)</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8cpp_source.html#l00499">Cylindrical2dMesh.cpp:499</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_abda29f18770f4977b38ef0d602c23bdb"><div class="ttname"><a href="classCylindrical2dMesh.html#abda29f18770f4977b38ef0d602c23bdb">Cylindrical2dMesh::mWidth</a></div><div class="ttdeci">double mWidth</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8hpp_source.html#l00061">Cylindrical2dMesh.hpp:61</a></div></div>
 <div class="ttc" id="aclassCylindrical2dMesh_html_abdc64a9a6e84e6c0766c4f5018e5b6d7"><div class="ttname"><a href="classCylindrical2dMesh.html#abdc64a9a6e84e6c0766c4f5018e5b6d7">Cylindrical2dMesh::mRightOriginals</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; mRightOriginals</div><div class="ttdef"><b>Definition</b> <a href="Cylindrical2dMesh_8hpp_source.html#l00085">Cylindrical2dMesh.hpp:85</a></div></div>

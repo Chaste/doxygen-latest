@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::771ab98f8913a3343662c7287a42f1f9fa9ac297</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f4e357178db84b0074645ec781777ee906e93b8d</span>
    </div>
   </td>
  </tr>
@@ -249,12 +249,14 @@ $(document).ready(function(){initNavTree('AbstractNumericalMethod_8cpp_source.ht
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="comment">// Store applied forces in a vector</span></div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    std::vector&lt;c_vector&lt;double, SPACE_DIM&gt; &gt; forces_as_vector;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    forces_as_vector.reserve(mpCellPopulation-&gt;GetNumNodes());</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="foldopen" id="foldopen00164" data-start="{" data-end="}">
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classAbstractNumericalMethod.html#aa05d6e8f0deb524a596b22709c2b155e">  164</a></span> </div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractMesh_1_1NodeIterator.html">AbstractMesh&lt;ELEMENT_DIM, SPACE_DIM&gt;::NodeIterator</a> node_iter = mpCellPopulation-&gt;rGetMesh().GetNodeIteratorBegin();</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>         node_iter != mpCellPopulation-&gt;rGetMesh().GetNodeIteratorEnd(); ++node_iter)</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    {</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keywordtype">double</span> damping = mpCellPopulation-&gt;GetDampingConstant(node_iter-&gt;GetIndex());</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        forces_as_vector.push_back(node_iter-&gt;rGetAppliedForce()/damping);</div>
+<div class="foldopen" id="foldopen00169" data-start="{" data-end="}">
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="classAbstractNumericalMethod.html#ae575b5750d0e0669c663db621dcccb4b">  169</a></span>        forces_as_vector.push_back(node_iter-&gt;rGetAppliedForce()/damping);</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <a class="code hl_function" href="classGenericEventHandler.html#acce06123878935c93c6069dbbdfe713d">CellBasedEventHandler::EndEvent</a>(CellBasedEventHandler::FORCE);</div>
@@ -366,6 +368,8 @@ $(document).ready(function(){initNavTree('AbstractNumericalMethod_8cpp_source.ht
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractNumericalMethod.html">AbstractNumericalMethod&lt;1,3&gt;</a>;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractNumericalMethod.html">AbstractNumericalMethod&lt;2,3&gt;</a>;</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractNumericalMethod.html">AbstractNumericalMethod&lt;3,3&gt;</a>;</div>
+</div>
+</div>
 </div>
 </div>
 </div>
