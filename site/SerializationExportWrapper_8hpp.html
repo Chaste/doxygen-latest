@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::ca8ccdedf819b6e02855bc0e8e6f50bdecbc5208</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::baa90ac2819b962188b7562f2326be23c47859a7</span>
    </div>
   </td>
  </tr>
@@ -142,7 +142,7 @@ Macros</h2></td></tr>
 <p>In Boost 1.33.1 and 1.34, BOOST_CLASS_EXPORT should be placed in the .hpp file for each class, and archive headers included only in tests, or special 'archiver' class header files (e.g. <a class="el" href="CardiacSimulationArchiver_8hpp_source.html">CardiacSimulationArchiver.hpp</a>).</p>
 <p>Serialization is broken in Boost 1.35.</p>
 <p>In Boost 1.36 (and up to 1.40) both the archive header includes and the BOOST_CLASS_EXPORT should go in .cpp files.</p>
-<p>We also support 1.41 and above, which introduce BOOST_CLASS_EXPORT_KEY and BOOST_CLASS_EXPORT_IMPLEMENT. Note 1.41.1 has bugs in serialization. See <a href="https://chaste.cs.ox.ac.uk/trac/wiki/InstallGuides/DependencyVersions">https://chaste.cs.ox.ac.uk/trac/wiki/InstallGuides/DependencyVersions</a> for recommended versions.</p>
+<p>We also support 1.41 and above, which introduce BOOST_CLASS_EXPORT_KEY and BOOST_CLASS_EXPORT_IMPLEMENT. Note 1.41.1 has bugs in serialization. See <a href="https://chaste.github.io/docs/installguides/dependency-versions/">https://chaste.github.io/docs/installguides/dependency-versions/</a> for recommended versions.</p>
 <p>To handle all situations in Chaste: 1. In .hpp files, include this header after the class definition. 2. In .cpp files, after any other includes, include <a class="el" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>. In both cases, CHASTE_CLASS_EXPORT should be used instead of BOOST_CLASS_EXPORT.</p>
 <p>There are also variant macros for common cases of templated classes:</p><ul>
 <li>EXPORT_TEMPLATE_CLASS_SAME_DIMS</li>
