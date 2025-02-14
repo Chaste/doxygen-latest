@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::a8735432fb20262da8e82613f978b1d358ee87bf</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::cc96ae7e2d5d7576e53513a681a5dc09452f6da8</span>
    </div>
   </td>
  </tr>
@@ -432,7 +432,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
   </dd>
 </dl>
 <p>This hack is needed because in the case of a <a class="el" href="classMeshBasedCellPopulation.html">MeshBasedCellPopulation</a> in which multiple cell divisions have occurred over one time step, the Voronoi tessellation (while existing) is out-of-date. Thus, if we did not regenerate the Voronoi tessellation here, an assertion may trip as we try to access a Voronoi element whose index exceeds the number of elements in the out-of-date tessellation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000295">Todo:</a></b></dt><dd>work out how to properly fix this (#1986) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000296">Todo:</a></b></dt><dd>work out how to properly fix this (#1986) </dd></dl>
 <p>Iterate over cell population and store each cell's signed distance along mDivisionBiasVector through the centroid of the cell population, where zero corresponds to a cell located at the centroid of the cell population.</p>
 
 <p class="definition">Definition at line <a class="el" href="DivisionBiasTrackingModifier_8cpp_source.html#l00076">76</a> of file <a class="el" href="DivisionBiasTrackingModifier_8cpp_source.html">DivisionBiasTrackingModifier.cpp</a>.</p>
