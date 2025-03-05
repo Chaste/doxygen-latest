@@ -2,7 +2,7 @@ var classAbstractLinearParabolicPde =
 [
     [ "AbstractLinearParabolicPde", "classAbstractLinearParabolicPde.html#a31de20a1ac98477a4f007fb98cfeac05", null ],
     [ "~AbstractLinearParabolicPde", "classAbstractLinearParabolicPde.html#a5719f42dd993a9d66d168e41b51b1fbb", null ],
-    [ "ComputeDiffusionTerm", "classAbstractLinearParabolicPde.html#a3814a2ff12c310476476df51e7971ccd", null ],
+    [ "ComputeDiffusionTerm", "classAbstractLinearParabolicPde.html#ab9928d0f0425ef8996806fc155a3a243", null ],
     [ "ComputeDuDtCoefficientFunction", "classAbstractLinearParabolicPde.html#a37722348e710f28687566fba7dd8a3d8", null ],
     [ "ComputeSourceTerm", "classAbstractLinearParabolicPde.html#aadcc916ed4fbcaedfcdb41babc1b22db", null ],
     [ "ComputeSourceTermAtNode", "classAbstractLinearParabolicPde.html#a594b4cd826b8a59b2d8679df77ef3d3f", null ],

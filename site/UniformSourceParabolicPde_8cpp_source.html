@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::4327839e77ef54915ae2c0923732f303429e2a81</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::8fd15f78962a588c5c8a69b2614c83ac94ecd0d7</span>
    </div>
   </td>
  </tr>
@@ -107,62 +107,95 @@ $(document).ready(function(){initNavTree('UniformSourceParabolicPde_8cpp_source.
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
 <div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#a4f24242744cf809d71a5c2023ea739e4">   39</a></span><a class="code hl_function" href="classUniformSourceParabolicPde.html#a4f24242744cf809d71a5c2023ea739e4">UniformSourceParabolicPde&lt;DIM&gt;::UniformSourceParabolicPde</a>(<span class="keywordtype">double</span> sourceCoefficient)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    : mSourceCoefficient(sourceCoefficient)</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
-</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#a11858f51663f70d40fa83524b605fa28">   45</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classUniformSourceParabolicPde.html#a11858f51663f70d40fa83524b605fa28">UniformSourceParabolicPde&lt;DIM&gt;::GetCoefficient</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> mSourceCoefficient;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#a06e4a2cb95fa4e38183573a2516f187a">   39</a></span><a class="code hl_function" href="classUniformSourceParabolicPde.html#a06e4a2cb95fa4e38183573a2516f187a">UniformSourceParabolicPde&lt;DIM&gt;::UniformSourceParabolicPde</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> constantSourceCoefficient,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                                          <span class="keyword">const</span> <span class="keywordtype">double</span> linearSourceCoefficient,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                                          <span class="keyword">const</span> <span class="keywordtype">double</span> diffusionCoefficient,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                                          <span class="keyword">const</span> <span class="keywordtype">double</span> duDtCoefficient)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    : mConstantSourceCoefficient(constantSourceCoefficient),</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      mLinearSourceCoefficient(linearSourceCoefficient),</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      mDiffusionCoefficient(diffusionCoefficient),</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      mDuDtCoefficient(duDtCoefficient)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
 </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
 <div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#ad49a65e07c13abe7f9a0e52cd05a3be0">   51</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classUniformSourceParabolicPde.html#ad49a65e07c13abe7f9a0e52cd05a3be0">UniformSourceParabolicPde&lt;DIM&gt;::ComputeSourceTerm</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; rX, <span class="keywordtype">double</span> u, <a class="code hl_class" href="classElement.html">Element&lt;DIM,DIM&gt;</a>* pElement)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span> mSourceCoefficient;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#adffe7800498feabab8c4125270b367ca">   51</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classUniformSourceParabolicPde.html#adffe7800498feabab8c4125270b367ca">UniformSourceParabolicPde&lt;DIM&gt;::GetConstantCoefficient</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span> mConstantSourceCoefficient;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
 <div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#a3a85c143a40077453d1596c3e783b1a6">   57</a></span>c_matrix&lt;double,DIM,DIM&gt; <a class="code hl_function" href="classUniformSourceParabolicPde.html#a3a85c143a40077453d1596c3e783b1a6">UniformSourceParabolicPde&lt;DIM&gt;::ComputeDiffusionTerm</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; rX, <a class="code hl_class" href="classElement.html">Element&lt;DIM,DIM&gt;</a>* pElement)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> identity_matrix&lt;double&gt;(DIM);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#a6547b3b4c94fa5936a2646aaac461286">   57</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classUniformSourceParabolicPde.html#a6547b3b4c94fa5936a2646aaac461286">UniformSourceParabolicPde&lt;DIM&gt;::GetLinearCoefficient</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> mLinearSourceCoefficient;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
 <div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#af93e17cb766a0b4ab84790b38a537cd2">   63</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classUniformSourceParabolicPde.html#af93e17cb766a0b4ab84790b38a537cd2">UniformSourceParabolicPde&lt;DIM&gt;::ComputeDuDtCoefficientFunction</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; rX)</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> 1.0;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#ade4fd58f0fb411d136d186f8a7ae1922">   63</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classUniformSourceParabolicPde.html#ade4fd58f0fb411d136d186f8a7ae1922">UniformSourceParabolicPde&lt;DIM&gt;::GetDiffusionCoefficient</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> mDiffusionCoefficient;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
 </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classUniformSourceParabolicPde.html">UniformSourceParabolicPde&lt;1&gt;</a>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classUniformSourceParabolicPde.html">UniformSourceParabolicPde&lt;2&gt;</a>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classUniformSourceParabolicPde.html">UniformSourceParabolicPde&lt;3&gt;</a>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#a68d8898f0cc9b0e791c643c0396efd2d">EXPORT_TEMPLATE_CLASS_SAME_DIMS</a>(<a class="code hl_class" href="classUniformSourceParabolicPde.html">UniformSourceParabolicPde</a>)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#ab7e21fe4b727bfb47a35c1d68b3e14b5">   69</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classUniformSourceParabolicPde.html#ab7e21fe4b727bfb47a35c1d68b3e14b5">UniformSourceParabolicPde&lt;DIM&gt;::GetDuDtCoefficient</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">return</span> mDuDtCoefficient;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#a055333bbc935ef3c652c1d82bb3d8638">   75</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classUniformSourceParabolicPde.html#a055333bbc935ef3c652c1d82bb3d8638">UniformSourceParabolicPde&lt;DIM&gt;::ComputeSourceTerm</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; rX, <span class="keywordtype">double</span> u, <a class="code hl_class" href="classElement.html">Element&lt;DIM,DIM&gt;</a>* pElement)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">return</span> mConstantSourceCoefficient + mLinearSourceCoefficient * u;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#aa98aa2415e00d6f9543e06441ef5c09b">   81</a></span>c_matrix&lt;double,DIM,DIM&gt; <a class="code hl_function" href="classUniformSourceParabolicPde.html#aa98aa2415e00d6f9543e06441ef5c09b">UniformSourceParabolicPde&lt;DIM&gt;::ComputeDiffusionTerm</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; rX, <a class="code hl_class" href="classElement.html">Element&lt;DIM,DIM&gt;</a>* pElement)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> mDiffusionCoefficient * identity_matrix&lt;double&gt;(DIM);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classUniformSourceParabolicPde.html#a0ff802de2118743a8b7cf02f84b1ac25">   87</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classUniformSourceParabolicPde.html#a0ff802de2118743a8b7cf02f84b1ac25">UniformSourceParabolicPde&lt;DIM&gt;::ComputeDuDtCoefficientFunction</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; rX)</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">return</span> mDuDtCoefficient;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classUniformSourceParabolicPde.html">UniformSourceParabolicPde&lt;1&gt;</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classUniformSourceParabolicPde.html">UniformSourceParabolicPde&lt;2&gt;</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classUniformSourceParabolicPde.html">UniformSourceParabolicPde&lt;3&gt;</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#a68d8898f0cc9b0e791c643c0396efd2d">EXPORT_TEMPLATE_CLASS_SAME_DIMS</a>(<a class="code hl_class" href="classUniformSourceParabolicPde.html">UniformSourceParabolicPde</a>)</div>
 <div class="ttc" id="aSerializationExportWrapperForCpp_8hpp_html"><div class="ttname"><a href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a></div></div>
 <div class="ttc" id="aSerializationExportWrapper_8hpp_html_a68d8898f0cc9b0e791c643c0396efd2d"><div class="ttname"><a href="SerializationExportWrapper_8hpp.html#a68d8898f0cc9b0e791c643c0396efd2d">EXPORT_TEMPLATE_CLASS_SAME_DIMS</a></div><div class="ttdeci">#define EXPORT_TEMPLATE_CLASS_SAME_DIMS(CLASS)</div><div class="ttdef"><b>Definition</b> <a href="SerializationExportWrapper_8hpp_source.html#l00352">SerializationExportWrapper.hpp:352</a></div></div>
 <div class="ttc" id="aclassChastePoint_html"><div class="ttname"><a href="classChastePoint.html">ChastePoint</a></div><div class="ttdef"><b>Definition</b> <a href="ChastePoint_8hpp_source.html#l00049">ChastePoint.hpp:50</a></div></div>
 <div class="ttc" id="aclassElement_html"><div class="ttname"><a href="classElement.html">Element</a></div><div class="ttdef"><b>Definition</b> <a href="Element_8hpp_source.html#l00053">Element.hpp:54</a></div></div>
 <div class="ttc" id="aclassUniformSourceParabolicPde_html"><div class="ttname"><a href="classUniformSourceParabolicPde.html">UniformSourceParabolicPde</a></div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8hpp_source.html#l00060">UniformSourceParabolicPde.hpp:61</a></div></div>
-<div class="ttc" id="aclassUniformSourceParabolicPde_html_a11858f51663f70d40fa83524b605fa28"><div class="ttname"><a href="classUniformSourceParabolicPde.html#a11858f51663f70d40fa83524b605fa28">UniformSourceParabolicPde::GetCoefficient</a></div><div class="ttdeci">double GetCoefficient() const</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00045">UniformSourceParabolicPde.cpp:45</a></div></div>
-<div class="ttc" id="aclassUniformSourceParabolicPde_html_a3a85c143a40077453d1596c3e783b1a6"><div class="ttname"><a href="classUniformSourceParabolicPde.html#a3a85c143a40077453d1596c3e783b1a6">UniformSourceParabolicPde::ComputeDiffusionTerm</a></div><div class="ttdeci">c_matrix&lt; double, DIM, DIM &gt; ComputeDiffusionTerm(const ChastePoint&lt; DIM &gt; &amp;rX, Element&lt; DIM, DIM &gt; *pElement=NULL)</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00057">UniformSourceParabolicPde.cpp:57</a></div></div>
-<div class="ttc" id="aclassUniformSourceParabolicPde_html_a4f24242744cf809d71a5c2023ea739e4"><div class="ttname"><a href="classUniformSourceParabolicPde.html#a4f24242744cf809d71a5c2023ea739e4">UniformSourceParabolicPde::UniformSourceParabolicPde</a></div><div class="ttdeci">UniformSourceParabolicPde(double sourceCoefficient=0.0)</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00039">UniformSourceParabolicPde.cpp:39</a></div></div>
-<div class="ttc" id="aclassUniformSourceParabolicPde_html_ad49a65e07c13abe7f9a0e52cd05a3be0"><div class="ttname"><a href="classUniformSourceParabolicPde.html#ad49a65e07c13abe7f9a0e52cd05a3be0">UniformSourceParabolicPde::ComputeSourceTerm</a></div><div class="ttdeci">double ComputeSourceTerm(const ChastePoint&lt; DIM &gt; &amp;rX, double u, Element&lt; DIM, DIM &gt; *pElement=NULL)</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00051">UniformSourceParabolicPde.cpp:51</a></div></div>
-<div class="ttc" id="aclassUniformSourceParabolicPde_html_af93e17cb766a0b4ab84790b38a537cd2"><div class="ttname"><a href="classUniformSourceParabolicPde.html#af93e17cb766a0b4ab84790b38a537cd2">UniformSourceParabolicPde::ComputeDuDtCoefficientFunction</a></div><div class="ttdeci">double ComputeDuDtCoefficientFunction(const ChastePoint&lt; DIM &gt; &amp;rX)</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00063">UniformSourceParabolicPde.cpp:63</a></div></div>
+<div class="ttc" id="aclassUniformSourceParabolicPde_html_a055333bbc935ef3c652c1d82bb3d8638"><div class="ttname"><a href="classUniformSourceParabolicPde.html#a055333bbc935ef3c652c1d82bb3d8638">UniformSourceParabolicPde::ComputeSourceTerm</a></div><div class="ttdeci">double ComputeSourceTerm(const ChastePoint&lt; DIM &gt; &amp;rX, double u, Element&lt; DIM, DIM &gt; *pElement=nullptr) override</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00075">UniformSourceParabolicPde.cpp:75</a></div></div>
+<div class="ttc" id="aclassUniformSourceParabolicPde_html_a06e4a2cb95fa4e38183573a2516f187a"><div class="ttname"><a href="classUniformSourceParabolicPde.html#a06e4a2cb95fa4e38183573a2516f187a">UniformSourceParabolicPde::UniformSourceParabolicPde</a></div><div class="ttdeci">UniformSourceParabolicPde(double constantSourceCoefficient=0.0, double linearSourceCoefficient=0.0, double diffusionCoefficient=1.0, double duDtCoefficient=1.0)</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00039">UniformSourceParabolicPde.cpp:39</a></div></div>
+<div class="ttc" id="aclassUniformSourceParabolicPde_html_a0ff802de2118743a8b7cf02f84b1ac25"><div class="ttname"><a href="classUniformSourceParabolicPde.html#a0ff802de2118743a8b7cf02f84b1ac25">UniformSourceParabolicPde::ComputeDuDtCoefficientFunction</a></div><div class="ttdeci">double ComputeDuDtCoefficientFunction(const ChastePoint&lt; DIM &gt; &amp;rX) override</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00087">UniformSourceParabolicPde.cpp:87</a></div></div>
+<div class="ttc" id="aclassUniformSourceParabolicPde_html_a6547b3b4c94fa5936a2646aaac461286"><div class="ttname"><a href="classUniformSourceParabolicPde.html#a6547b3b4c94fa5936a2646aaac461286">UniformSourceParabolicPde::GetLinearCoefficient</a></div><div class="ttdeci">double GetLinearCoefficient() const</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00057">UniformSourceParabolicPde.cpp:57</a></div></div>
+<div class="ttc" id="aclassUniformSourceParabolicPde_html_aa98aa2415e00d6f9543e06441ef5c09b"><div class="ttname"><a href="classUniformSourceParabolicPde.html#aa98aa2415e00d6f9543e06441ef5c09b">UniformSourceParabolicPde::ComputeDiffusionTerm</a></div><div class="ttdeci">c_matrix&lt; double, DIM, DIM &gt; ComputeDiffusionTerm(const ChastePoint&lt; DIM &gt; &amp;rX, Element&lt; DIM, DIM &gt; *pElement=nullptr) override</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00081">UniformSourceParabolicPde.cpp:81</a></div></div>
+<div class="ttc" id="aclassUniformSourceParabolicPde_html_ab7e21fe4b727bfb47a35c1d68b3e14b5"><div class="ttname"><a href="classUniformSourceParabolicPde.html#ab7e21fe4b727bfb47a35c1d68b3e14b5">UniformSourceParabolicPde::GetDuDtCoefficient</a></div><div class="ttdeci">double GetDuDtCoefficient() const</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00069">UniformSourceParabolicPde.cpp:69</a></div></div>
+<div class="ttc" id="aclassUniformSourceParabolicPde_html_ade4fd58f0fb411d136d186f8a7ae1922"><div class="ttname"><a href="classUniformSourceParabolicPde.html#ade4fd58f0fb411d136d186f8a7ae1922">UniformSourceParabolicPde::GetDiffusionCoefficient</a></div><div class="ttdeci">double GetDiffusionCoefficient() const</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00063">UniformSourceParabolicPde.cpp:63</a></div></div>
+<div class="ttc" id="aclassUniformSourceParabolicPde_html_adffe7800498feabab8c4125270b367ca"><div class="ttname"><a href="classUniformSourceParabolicPde.html#adffe7800498feabab8c4125270b367ca">UniformSourceParabolicPde::GetConstantCoefficient</a></div><div class="ttdeci">double GetConstantCoefficient() const</div><div class="ttdef"><b>Definition</b> <a href="UniformSourceParabolicPde_8cpp_source.html#l00051">UniformSourceParabolicPde.cpp:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

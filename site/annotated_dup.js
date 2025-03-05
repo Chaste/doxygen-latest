@@ -671,7 +671,6 @@ var annotated_dup =
     [ "VertexT3SwapLocationsWriter", "classVertexT3SwapLocationsWriter.html", "classVertexT3SwapLocationsWriter" ],
     [ "VoltageInterpolaterOntoMechanicsMesh", "classVoltageInterpolaterOntoMechanicsMesh.html", "classVoltageInterpolaterOntoMechanicsMesh" ],
     [ "VolumeConstraintPottsUpdateRule", "classVolumeConstraintPottsUpdateRule.html", "classVolumeConstraintPottsUpdateRule" ],
-    [ "VolumeDependentAveragedSourceEllipticPde", "classVolumeDependentAveragedSourceEllipticPde.html", "classVolumeDependentAveragedSourceEllipticPde" ],
     [ "VolumeTrackingModifier", "classVolumeTrackingModifier.html", "classVolumeTrackingModifier" ],
     [ "VonMisesVertexBasedDivisionRule", "classVonMisesVertexBasedDivisionRule.html", "classVonMisesVertexBasedDivisionRule" ],
     [ "VoronoiDataWriter", "classVoronoiDataWriter.html", "classVoronoiDataWriter" ],

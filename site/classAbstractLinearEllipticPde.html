@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::4327839e77ef54915ae2c0923732f303429e2a81</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::8fd15f78962a588c5c8a69b2614c83ac94ecd0d7</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function(){initNavTree('classAbstractLinearEllipticPde.html','
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classAbstractLinearEllipticPde__inherit__graph.svg" width="787" height="1560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classAbstractLinearEllipticPde__inherit__graph.svg" width="782" height="1486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for AbstractLinearEllipticPde&lt; ELEMENT_DIM, SPACE_DIM &gt;:</div>
@@ -89,8 +89,8 @@ $(document).ready(function(){initNavTree('classAbstractLinearEllipticPde.html','
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aced2ba571b83bc6e3ed0216811ae16b0" id="r_aced2ba571b83bc6e3ed0216811ae16b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractLinearEllipticPde.html#aced2ba571b83bc6e3ed0216811ae16b0">AbstractLinearEllipticPde</a> ()</td></tr>
 <tr class="separator:aced2ba571b83bc6e3ed0216811ae16b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af71caca9fa632733ca604f1742084136" id="r_af71caca9fa632733ca604f1742084136"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractLinearEllipticPde.html#af71caca9fa632733ca604f1742084136">~AbstractLinearEllipticPde</a> ()</td></tr>
-<tr class="separator:af71caca9fa632733ca604f1742084136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67a91007d1a2607cad51ad9b3710562" id="r_aa67a91007d1a2607cad51ad9b3710562"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractLinearEllipticPde.html#aa67a91007d1a2607cad51ad9b3710562">~AbstractLinearEllipticPde</a> () override=default</td></tr>
+<tr class="separator:aa67a91007d1a2607cad51ad9b3710562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a65cc274f33d3da349497e1ebe3e6ce" id="r_a1a65cc274f33d3da349497e1ebe3e6ce"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classdouble.html">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractLinearEllipticPde.html#a1a65cc274f33d3da349497e1ebe3e6ce">ComputeConstantInUSourceTerm</a> (const <a class="el" href="classChastePoint.html">ChastePoint</a>&lt; SPACE_DIM &gt; &amp;rX, <a class="el" href="classElement.html">Element</a>&lt; ELEMENT_DIM, SPACE_DIM &gt; *pElement)=0</td></tr>
 <tr class="separator:a1a65cc274f33d3da349497e1ebe3e6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec2a8e8c54665d8a1b28538e78f2702e" id="r_aec2a8e8c54665d8a1b28538e78f2702e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classdouble.html">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractLinearEllipticPde.html#aec2a8e8c54665d8a1b28538e78f2702e">ComputeLinearInUCoeffInSourceTerm</a> (const <a class="el" href="classChastePoint.html">ChastePoint</a>&lt; SPACE_DIM &gt; &amp;rX, <a class="el" href="classElement.html">Element</a>&lt; ELEMENT_DIM, SPACE_DIM &gt; *pElement)=0</td></tr>
@@ -121,10 +121,10 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a class="el" href="classunsigned.html">unsigned</a> SPACE_DIM&gt;<br />
 class AbstractLinearEllipticPde&lt; ELEMENT_DIM, SPACE_DIM &gt;</div><p><a class="el" href="classAbstractLinearEllipticPde.html">AbstractLinearEllipticPde</a> class.</p>
-<p>A general PDE of the form: 0 = Grad.(DiffusionTerm(x)*Grad(u)) + ComputeConstantInUSourceTerm(x) + ComputeLinearInUCoeffInSourceTerm(x, u)</p>
-<p>Parabolic PDEs are be derived from this (<a class="el" href="classAbstractLinearParabolicPde.html">AbstractLinearParabolicPde</a>) </p>
+<p>A general PDE of the form: 0 = Grad.(DiffusionTerm(x)*Grad(u)) + ComputeConstantInUSourceTerm(x) + ComputeLinearInUCoeffInSourceTerm(x) * u</p>
+<p>Linear Elliptic PDEs are derived from this (<a class="el" href="classAbstractLinearEllipticPde.html">AbstractLinearEllipticPde</a>) </p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00060">60</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00059">59</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aced2ba571b83bc6e3ed0216811ae16b0" name="aced2ba571b83bc6e3ed0216811ae16b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aced2ba571b83bc6e3ed0216811ae16b0">&#9670;&#160;</a></span>AbstractLinearEllipticPde()</h2>
@@ -152,12 +152,12 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div><div class="memdoc">
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00083">83</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00082">82</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
 
 </div>
 </div>
-<a id="af71caca9fa632733ca604f1742084136" name="af71caca9fa632733ca604f1742084136"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af71caca9fa632733ca604f1742084136">&#9670;&#160;</a></span>~AbstractLinearEllipticPde()</h2>
+<a id="aa67a91007d1a2607cad51ad9b3710562" name="aa67a91007d1a2607cad51ad9b3710562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67a91007d1a2607cad51ad9b3710562">&#9670;&#160;</a></span>~AbstractLinearEllipticPde()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +168,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classAbstractLinearEllipticPde.html">AbstractLinearEllipticPde</a>&lt; ELEMENT_DIM, SPACE_DIM &gt;::~<a class="el" href="classAbstractLinearEllipticPde.html">AbstractLinearEllipticPde</a> </td>
+          <td class="memname"><a class="el" href="classAbstractLinearEllipticPde.html">AbstractLinearEllipticPde</a>&lt; ELEMENT_DIM, SPACE_DIM &gt;::~<a class="el" href="classAbstractLinearEllipticPde.html">AbstractLinearEllipticPde</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -176,13 +176,11 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Destructor. </p>
-
-<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00090">90</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
 
 </div>
 </div>
@@ -266,7 +264,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00139">139</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00137">137</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Node_8cpp_source.html#l00133">Node&lt; SPACE_DIM &gt;::GetPoint()</a>.</p>
 
@@ -387,7 +385,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00145">145</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00143">143</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Node_8cpp_source.html#l00133">Node&lt; SPACE_DIM &gt;::GetPoint()</a>.</p>
 
@@ -439,7 +437,7 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00073">73</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00072">72</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
 
 </div>
 </div>
@@ -467,7 +465,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div><div class="memdoc">
 <p>Needed for serialization. </p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00065">65</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html#l00064">64</a> of file <a class="el" href="AbstractLinearEllipticPde_8hpp_source.html">AbstractLinearEllipticPde.hpp</a>.</p>
 
 </div>
 </div>

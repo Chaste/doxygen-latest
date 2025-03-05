@@ -159,9 +159,7 @@ var hierarchy =
     [ "AbstractLinearPde< ELEMENT_DIM, SPACE_DIM >", "classAbstractLinearPde.html", null ],
     [ "AbstractLinearPde< ELEMENT_DIM, SPACE_DIM >", "classAbstractLinearPde.html", [
       [ "AbstractLinearEllipticPde< DIM, DIM >", "classAbstractLinearEllipticPde.html", [
-        [ "AveragedSourceEllipticPde< DIM >", "classAveragedSourceEllipticPde.html", [
-          [ "VolumeDependentAveragedSourceEllipticPde< DIM >", "classVolumeDependentAveragedSourceEllipticPde.html", null ]
-        ] ],
+        [ "AveragedSourceEllipticPde< DIM >", "classAveragedSourceEllipticPde.html", null ],
         [ "CellwiseSourceEllipticPde< DIM >", "classCellwiseSourceEllipticPde.html", null ],
         [ "UniformSourceEllipticPde< DIM >", "classUniformSourceEllipticPde.html", null ]
       ] ],

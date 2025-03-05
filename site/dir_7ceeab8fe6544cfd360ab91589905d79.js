@@ -11,7 +11,5 @@ var dir_7ceeab8fe6544cfd360ab91589905d79 =
     [ "UniformSourceEllipticPde.cpp", "UniformSourceEllipticPde_8cpp_source.html", null ],
     [ "UniformSourceEllipticPde.hpp", "UniformSourceEllipticPde_8hpp_source.html", null ],
     [ "UniformSourceParabolicPde.cpp", "UniformSourceParabolicPde_8cpp_source.html", null ],
-    [ "UniformSourceParabolicPde.hpp", "UniformSourceParabolicPde_8hpp_source.html", null ],
-    [ "VolumeDependentAveragedSourceEllipticPde.cpp", "VolumeDependentAveragedSourceEllipticPde_8cpp_source.html", null ],
-    [ "VolumeDependentAveragedSourceEllipticPde.hpp", "VolumeDependentAveragedSourceEllipticPde_8hpp_source.html", null ]
+    [ "UniformSourceParabolicPde.hpp", "UniformSourceParabolicPde_8hpp_source.html", null ]
 ];

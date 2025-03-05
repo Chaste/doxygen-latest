@@ -1,9 +1,9 @@
 <map id="EllipticGrowingDomainPdeModifier&lt; DIM &gt;" name="EllipticGrowingDomainPdeModifier&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="17,1707,239,1965"/>
-<area shape="rect" id="Node000002" href="$classAbstractGrowingDomainPdeModifier.html" title=" " alt="" coords="17,1433,239,1657"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,1671,131,1706,125,1706,125,1671"/>
-<area shape="rect" id="Node000003" href="$classAbstractPdeModifier.html" title=" " alt="" coords="8,869,248,1384"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,1398,131,1433,125,1433,125,1398"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,1727,239,1985"/>
+<area shape="rect" id="Node000002" href="$classAbstractGrowingDomainPdeModifier.html" title=" " alt="" coords="17,1453,239,1677"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,1691,131,1726,125,1726,125,1691"/>
+<area shape="rect" id="Node000003" href="$classAbstractPdeModifier.html" title=" " alt="" coords="8,869,248,1404"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,1418,131,1453,125,1453,125,1418"/>
 <area shape="rect" id="Node000004" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="5,521,251,820"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="131,834,131,869,125,869,125,834"/>
 <area shape="rect" id="Node000005" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>

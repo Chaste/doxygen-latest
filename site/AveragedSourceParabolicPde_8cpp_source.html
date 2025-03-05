@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::4327839e77ef54915ae2c0923732f303429e2a81</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::8fd15f78962a588c5c8a69b2614c83ac94ecd0d7</span>
    </div>
   </td>
  </tr>
@@ -108,129 +108,189 @@ $(document).ready(function(){initNavTree('AveragedSourceParabolicPde_8cpp_source
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
 <div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#a4191aaba09e56b31779940d0a429a827">   40</a></span><a class="code hl_function" href="classAveragedSourceParabolicPde.html#a4191aaba09e56b31779940d0a429a827">AveragedSourceParabolicPde&lt;DIM&gt;::AveragedSourceParabolicPde</a>(<a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;DIM,DIM&gt;</a>&amp; rCellPopulation,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                                            <span class="keywordtype">double</span> duDtCoefficient,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                                            <span class="keywordtype">double</span> diffusionCoefficient,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                                            <span class="keywordtype">double</span> sourceCoefficient)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    : mrCellPopulation(rCellPopulation),</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      mDuDtCoefficient(duDtCoefficient),</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      mDiffusionCoefficient(diffusionCoefficient),</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      mSourceCoefficient(sourceCoefficient)</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#ab3b9e6a0c58a25745988ea0942e72d2b">   40</a></span><a class="code hl_function" href="classAveragedSourceParabolicPde.html#ab3b9e6a0c58a25745988ea0942e72d2b">AveragedSourceParabolicPde&lt;DIM&gt;::AveragedSourceParabolicPde</a>(<a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;DIM,DIM&gt;</a>&amp; rCellPopulation,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                                            <span class="keywordtype">double</span> constantSourceCoefficient, </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                                            <span class="keywordtype">double</span> linearSourceCoefficient, </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                                            <span class="keywordtype">double</span> diffusionCoefficient,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                                            <span class="keywordtype">double</span> duDtCoefficient,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                                                            <span class="keywordtype">bool</span> scaleByCellVolume)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    : mrCellPopulation(rCellPopulation),</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      mConstantSourceCoefficient(constantSourceCoefficient),</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      mLinearSourceCoefficient(linearSourceCoefficient),</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      mDiffusionCoefficient(diffusionCoefficient),</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      mDuDtCoefficient(duDtCoefficient),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      mScaleByCellVolume(scaleByCellVolume)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#adf23c8815c8139bc37ef3a2fdefce853">   52</a></span><span class="keyword">const</span> <a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;DIM,DIM&gt;</a>&amp; <a class="code hl_function" href="classAveragedSourceParabolicPde.html#adf23c8815c8139bc37ef3a2fdefce853">AveragedSourceParabolicPde&lt;DIM&gt;::rGetCellPopulation</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> mrCellPopulation;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#adf23c8815c8139bc37ef3a2fdefce853">   56</a></span><span class="keyword">const</span> <a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;DIM,DIM&gt;</a>&amp; <a class="code hl_function" href="classAveragedSourceParabolicPde.html#adf23c8815c8139bc37ef3a2fdefce853">AveragedSourceParabolicPde&lt;DIM&gt;::rGetCellPopulation</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> mrCellPopulation;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#ae2ef8f521c73817295d610d90c4f2024">   58</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#ae2ef8f521c73817295d610d90c4f2024">AveragedSourceParabolicPde&lt;DIM&gt;::SetupSourceTerms</a>(<a class="code hl_class" href="classTetrahedralMesh.html">TetrahedralMesh&lt;DIM,DIM&gt;</a>&amp; rCoarseMesh, std::map&lt;CellPtr, unsigned&gt;* pCellPdeElementMap) <span class="comment">// must be called before solve</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Allocate memory</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    mCellDensityOnCoarseElements.resize(rCoarseMesh.<a class="code hl_function" href="classAbstractTetrahedralMesh.html#aedf161bba302ef0cf3ef2a54e104a782">GetNumElements</a>());</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> elem_index=0; elem_index&lt;mCellDensityOnCoarseElements.size(); elem_index++)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        mCellDensityOnCoarseElements[elem_index] = 0.0;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#a42d7780f2f3b3134a29eec5cd54ded01">   62</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#a42d7780f2f3b3134a29eec5cd54ded01">AveragedSourceParabolicPde&lt;DIM&gt;::GetConstantCoefficient</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> mConstantSourceCoefficient;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// Loop over cells, find which coarse element it is in, and add 1 to mSourceTermOnCoarseElements[elem_index]</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM&gt;::Iterator</a> cell_iter = mrCellPopulation.Begin();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>         cell_iter != mrCellPopulation.End();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>         ++cell_iter)</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    {</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">unsigned</span> elem_index = 0;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; r_position_of_cell = mrCellPopulation.GetLocationOfCellCentre(*cell_iter);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span> (pCellPdeElementMap != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            elem_index = (*pCellPdeElementMap)[*cell_iter];</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            elem_index = rCoarseMesh.<a class="code hl_function" href="classAbstractTetrahedralMesh.html#a26e3d1f0d314be314199434f42f0a73c">GetContainingElementIndex</a>(r_position_of_cell);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="comment">// Update element map if cell has moved</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordtype">bool</span> cell_is_apoptotic = cell_iter-&gt;template HasCellProperty&lt;ApoptoticCellProperty&gt;();</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">if</span> (!cell_is_apoptotic)</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        {</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            mCellDensityOnCoarseElements[elem_index] += 1.0;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">// Then divide each entry of mSourceTermOnCoarseElements by the element&#39;s area</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    c_matrix&lt;double, DIM, DIM&gt; jacobian;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">double</span> det;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> elem_index=0; elem_index&lt;mCellDensityOnCoarseElements.size(); elem_index++)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#af49c2f1e7d1d2029bfe39673d5e913be">   68</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#af49c2f1e7d1d2029bfe39673d5e913be">AveragedSourceParabolicPde&lt;DIM&gt;::GetLinearCoefficient</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> mLinearSourceCoefficient;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#a950037d01ef7859f76a5b8482db485c0">   74</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#a950037d01ef7859f76a5b8482db485c0">AveragedSourceParabolicPde&lt;DIM&gt;::GetDiffusionCoefficient</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> mDiffusionCoefficient;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#ad3fdd7cb37071dc140b7716bb2995aa1">   80</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#ad3fdd7cb37071dc140b7716bb2995aa1">AveragedSourceParabolicPde&lt;DIM&gt;::GetDuDtCoefficient</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> mDuDtCoefficient;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#a765d194fd70f22b270a5404a95201c0e">   86</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#a765d194fd70f22b270a5404a95201c0e">AveragedSourceParabolicPde&lt;DIM&gt;::GetScaleByCellVolume</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">return</span> mScaleByCellVolume;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#ae2ef8f521c73817295d610d90c4f2024">   92</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#ae2ef8f521c73817295d610d90c4f2024">AveragedSourceParabolicPde&lt;DIM&gt;::SetupSourceTerms</a>(<a class="code hl_class" href="classTetrahedralMesh.html">TetrahedralMesh&lt;DIM,DIM&gt;</a>&amp; rCoarseMesh, std::map&lt;CellPtr, unsigned&gt;* pCellPdeElementMap) <span class="comment">// must be called before solve</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">// Allocate memory</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    mCellDensityOnCoarseElements.resize(rCoarseMesh.<a class="code hl_function" href="classAbstractTetrahedralMesh.html#aedf161bba302ef0cf3ef2a54e104a782">GetNumElements</a>());</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">for</span> (<span class="keywordtype">double</span> &amp; mCellDensityOnCoarseElement : mCellDensityOnCoarseElements)</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        rCoarseMesh.<a class="code hl_function" href="classAbstractTetrahedralMesh.html#a8b461de1c8f2e0c2d889b5ec2d03c0a8">GetElement</a>(elem_index)-&gt;CalculateJacobian(jacobian, det);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        mCellDensityOnCoarseElements[elem_index] /= rCoarseMesh.<a class="code hl_function" href="classAbstractTetrahedralMesh.html#a8b461de1c8f2e0c2d889b5ec2d03c0a8">GetElement</a>(elem_index)-&gt;GetVolume(det);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
-</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#ac57dc65f3dc154604b7dbb73e7af057f">  104</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#ac57dc65f3dc154604b7dbb73e7af057f">AveragedSourceParabolicPde&lt;DIM&gt;::ComputeDuDtCoefficientFunction</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; )</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>{</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> mDuDtCoefficient;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
-</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        mCellDensityOnCoarseElement = 0.0;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// Loop over cells, find which coarse element it is in, and add 1 to mSourceTermOnCoarseElements[elem_index]</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM&gt;::Iterator</a> cell_iter = mrCellPopulation.Begin();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>         cell_iter != mrCellPopulation.End();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>         ++cell_iter)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordtype">unsigned</span> elem_index = 0;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; r_position_of_cell = mrCellPopulation.GetLocationOfCellCentre(*cell_iter);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#aefd0b5ea25b5b21afa92aed4fd721ecf">  110</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#aefd0b5ea25b5b21afa92aed4fd721ecf">AveragedSourceParabolicPde&lt;DIM&gt;::ComputeSourceTerm</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; rX, <span class="keywordtype">double</span> u, <a class="code hl_class" href="classElement.html">Element&lt;DIM,DIM&gt;</a>* pElement)</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>{</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    assert(!mCellDensityOnCoarseElements.empty());</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">double</span> coefficient = mSourceCoefficient * mCellDensityOnCoarseElements[pElement-&gt;<a class="code hl_function" href="classAbstractElement.html#ac1ef0f71ae056fc5878aa35cc55bd24c">GetIndex</a>()];</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// The source term is C*u</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">return</span> coefficient*u;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span> (pCellPdeElementMap != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            elem_index = (*pCellPdeElementMap)[*cell_iter];</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            elem_index = rCoarseMesh.<a class="code hl_function" href="classAbstractTetrahedralMesh.html#a26e3d1f0d314be314199434f42f0a73c">GetContainingElementIndex</a>(r_position_of_cell);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="comment">// Update element map if cell has moved</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordtype">bool</span> cell_is_apoptotic = cell_iter-&gt;template HasCellProperty&lt;ApoptoticCellProperty&gt;();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordflow">if</span> (!cell_is_apoptotic)</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordtype">double</span> cell_weight = 1.0;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keywordflow">if</span> (mScaleByCellVolume)</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            {   </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                <span class="comment">// If scaling by cell volume then use volume her instead of cell count </span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                cell_weight = mrCellPopulation.GetVolumeOfCell(*cell_iter);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                <span class="keywordflow">if</span> (cell_weight &lt;1e-6)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                    <a class="code hl_define" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(<span class="stringliteral">&quot;The volume of one of the cells is &quot;</span> &lt;&lt; cell_weight &lt;&lt; </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                              <span class="stringliteral">&quot; and you are scaling by cell volume. Either turn scaling off or use&quot;</span>  </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                              <span class="stringliteral">&quot; a cell model with non zero areas (i.e. a Bounded Voronoi Tesselation model).&quot;</span>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            mCellDensityOnCoarseElements[elem_index] += cell_weight;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="comment">// Then divide each entry of mSourceTermOnCoarseElements by the element&#39;s area</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    c_matrix&lt;double, DIM, DIM&gt; jacobian;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordtype">double</span> det;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> elem_index=0; elem_index&lt;mCellDensityOnCoarseElements.size(); elem_index++)</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        rCoarseMesh.<a class="code hl_function" href="classAbstractTetrahedralMesh.html#a8b461de1c8f2e0c2d889b5ec2d03c0a8">GetElement</a>(elem_index)-&gt;CalculateJacobian(jacobian, det);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        mCellDensityOnCoarseElements[elem_index] /= rCoarseMesh.<a class="code hl_function" href="classAbstractTetrahedralMesh.html#a8b461de1c8f2e0c2d889b5ec2d03c0a8">GetElement</a>(elem_index)-&gt;GetVolume(det);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>}</div>
 </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">// LCOV_EXCL_START</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#a22f9e46771c8c861c1406990cda47551">  121</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#a22f9e46771c8c861c1406990cda47551">AveragedSourceParabolicPde&lt;DIM&gt;::ComputeSourceTermAtNode</a>(<span class="keyword">const</span> <a class="code hl_class" href="classNode.html">Node&lt;DIM&gt;</a>&amp; rNode, <span class="keywordtype">double</span> u)</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>{</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_define" href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">return</span> 0.0;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#a4cc1fcc29e9d8a4706db18f6a9680813">  153</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#a4cc1fcc29e9d8a4706db18f6a9680813">AveragedSourceParabolicPde&lt;DIM&gt;::ComputeDuDtCoefficientFunction</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; )</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">return</span> mDuDtCoefficient;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
 </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// LCOV_EXCL_STOP</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#acfd090b36f8bb7e149195c5332b17094">  129</a></span>c_matrix&lt;double,DIM,DIM&gt; <a class="code hl_function" href="classAveragedSourceParabolicPde.html#acfd090b36f8bb7e149195c5332b17094">AveragedSourceParabolicPde&lt;DIM&gt;::ComputeDiffusionTerm</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; rX, <a class="code hl_class" href="classElement.html">Element&lt;DIM,DIM&gt;</a>* pElement)</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>{</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">return</span> mDiffusionCoefficient*identity_matrix&lt;double&gt;(DIM);</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#a2c3adc16cdefc97288f705fcb78ef59b">  159</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#a2c3adc16cdefc97288f705fcb78ef59b">AveragedSourceParabolicPde&lt;DIM&gt;::ComputeSourceTerm</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; rX, <span class="keywordtype">double</span> u, <a class="code hl_class" href="classElement.html">Element&lt;DIM,DIM&gt;</a>* pElement)</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>{</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    assert(!mCellDensityOnCoarseElements.empty());</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="comment">// The source term is (a*u + b)*density</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordtype">double</span> source_term = (mLinearSourceCoefficient * u + mConstantSourceCoefficient) * mCellDensityOnCoarseElements[pElement-&gt;<a class="code hl_function" href="classAbstractElement.html#ac1ef0f71ae056fc5878aa35cc55bd24c">GetIndex</a>()];</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>   </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">return</span> source_term;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
 </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00135" data-start="{" data-end="}">
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#ad58923cb907f1fd0622c3bb87d1cffea">  135</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#ad58923cb907f1fd0622c3bb87d1cffea">AveragedSourceParabolicPde&lt;DIM&gt;::GetUptakeRateForElement</a>(<span class="keywordtype">unsigned</span> elementIndex)</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>{</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">return</span> this-&gt;mCellDensityOnCoarseElements[elementIndex];</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">// LCOV_EXCL_START</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="}">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#adee8ade03310ae1b0551c1371e0531c6">  171</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#adee8ade03310ae1b0551c1371e0531c6">AveragedSourceParabolicPde&lt;DIM&gt;::ComputeSourceTermAtNode</a>(<span class="keyword">const</span> <a class="code hl_class" href="classNode.html">Node&lt;DIM&gt;</a>&amp; rNode, <span class="keywordtype">double</span> u)</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>{</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <a class="code hl_define" href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a>;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>}</div>
 </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde&lt;1&gt;</a>;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde&lt;2&gt;</a>;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde&lt;3&gt;</a>;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#a68d8898f0cc9b0e791c643c0396efd2d">EXPORT_TEMPLATE_CLASS_SAME_DIMS</a>(<a class="code hl_class" href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde</a>)</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">// LCOV_EXCL_STOP</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00178" data-start="{" data-end="}">
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#a977ad8ff206231fd7862f7deecd008f5">  178</a></span>c_matrix&lt;double,DIM,DIM&gt; <a class="code hl_function" href="classAveragedSourceParabolicPde.html#a977ad8ff206231fd7862f7deecd008f5">AveragedSourceParabolicPde&lt;DIM&gt;::ComputeDiffusionTerm</a>(<span class="keyword">const</span> <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a>&amp; rX, <a class="code hl_class" href="classElement.html">Element&lt;DIM,DIM&gt;</a>* pElement)</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>{</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">return</span> mDiffusionCoefficient*identity_matrix&lt;double&gt;(DIM);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
+</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00184" data-start="{" data-end="}">
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="classAveragedSourceParabolicPde.html#ad58923cb907f1fd0622c3bb87d1cffea">  184</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classAveragedSourceParabolicPde.html#ad58923cb907f1fd0622c3bb87d1cffea">AveragedSourceParabolicPde&lt;DIM&gt;::GetUptakeRateForElement</a>(<span class="keywordtype">unsigned</span> elementIndex)</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>{</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordflow">return</span> this-&gt;mCellDensityOnCoarseElements[elementIndex];</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
+</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde&lt;1&gt;</a>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde&lt;2&gt;</a>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde&lt;3&gt;</a>;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#a68d8898f0cc9b0e791c643c0396efd2d">EXPORT_TEMPLATE_CLASS_SAME_DIMS</a>(<a class="code hl_class" href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde</a>)</div>
+<div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
 <div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00227">Exception.hpp:227</a></div></div>
 <div class="ttc" id="aSerializationExportWrapperForCpp_8hpp_html"><div class="ttname"><a href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a></div></div>
 <div class="ttc" id="aSerializationExportWrapper_8hpp_html_a68d8898f0cc9b0e791c643c0396efd2d"><div class="ttname"><a href="SerializationExportWrapper_8hpp.html#a68d8898f0cc9b0e791c643c0396efd2d">EXPORT_TEMPLATE_CLASS_SAME_DIMS</a></div><div class="ttdeci">#define EXPORT_TEMPLATE_CLASS_SAME_DIMS(CLASS)</div><div class="ttdef"><b>Definition</b> <a href="SerializationExportWrapper_8hpp_source.html#l00352">SerializationExportWrapper.hpp:352</a></div></div>
@@ -241,14 +301,19 @@ $(document).ready(function(){initNavTree('AveragedSourceParabolicPde_8cpp_source
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_a8b461de1c8f2e0c2d889b5ec2d03c0a8"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a8b461de1c8f2e0c2d889b5ec2d03c0a8">AbstractTetrahedralMesh::GetElement</a></div><div class="ttdeci">Element&lt; ELEMENT_DIM, SPACE_DIM &gt; * GetElement(unsigned index) const</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00141">AbstractTetrahedralMesh.cpp:141</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_aedf161bba302ef0cf3ef2a54e104a782"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#aedf161bba302ef0cf3ef2a54e104a782">AbstractTetrahedralMesh::GetNumElements</a></div><div class="ttdeci">virtual unsigned GetNumElements() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00087">AbstractTetrahedralMesh.cpp:87</a></div></div>
 <div class="ttc" id="aclassAveragedSourceParabolicPde_html"><div class="ttname"><a href="classAveragedSourceParabolicPde.html">AveragedSourceParabolicPde</a></div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8hpp_source.html#l00066">AveragedSourceParabolicPde.hpp:67</a></div></div>
-<div class="ttc" id="aclassAveragedSourceParabolicPde_html_a22f9e46771c8c861c1406990cda47551"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#a22f9e46771c8c861c1406990cda47551">AveragedSourceParabolicPde::ComputeSourceTermAtNode</a></div><div class="ttdeci">virtual double ComputeSourceTermAtNode(const Node&lt; DIM &gt; &amp;rNode, double u)</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00121">AveragedSourceParabolicPde.cpp:121</a></div></div>
-<div class="ttc" id="aclassAveragedSourceParabolicPde_html_a4191aaba09e56b31779940d0a429a827"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#a4191aaba09e56b31779940d0a429a827">AveragedSourceParabolicPde::AveragedSourceParabolicPde</a></div><div class="ttdeci">AveragedSourceParabolicPde(AbstractCellPopulation&lt; DIM, DIM &gt; &amp;rCellPopulation, double duDtCoefficient=1.0, double diffusionCoefficient=1.0, double sourceCoefficient=0.0)</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00040">AveragedSourceParabolicPde.cpp:40</a></div></div>
-<div class="ttc" id="aclassAveragedSourceParabolicPde_html_ac57dc65f3dc154604b7dbb73e7af057f"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#ac57dc65f3dc154604b7dbb73e7af057f">AveragedSourceParabolicPde::ComputeDuDtCoefficientFunction</a></div><div class="ttdeci">virtual double ComputeDuDtCoefficientFunction(const ChastePoint&lt; DIM &gt; &amp;rX)</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00104">AveragedSourceParabolicPde.cpp:104</a></div></div>
-<div class="ttc" id="aclassAveragedSourceParabolicPde_html_acfd090b36f8bb7e149195c5332b17094"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#acfd090b36f8bb7e149195c5332b17094">AveragedSourceParabolicPde::ComputeDiffusionTerm</a></div><div class="ttdeci">virtual c_matrix&lt; double, DIM, DIM &gt; ComputeDiffusionTerm(const ChastePoint&lt; DIM &gt; &amp;rX, Element&lt; DIM, DIM &gt; *pElement=NULL)</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00129">AveragedSourceParabolicPde.cpp:129</a></div></div>
-<div class="ttc" id="aclassAveragedSourceParabolicPde_html_ad58923cb907f1fd0622c3bb87d1cffea"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#ad58923cb907f1fd0622c3bb87d1cffea">AveragedSourceParabolicPde::GetUptakeRateForElement</a></div><div class="ttdeci">double GetUptakeRateForElement(unsigned elementIndex)</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00135">AveragedSourceParabolicPde.cpp:135</a></div></div>
-<div class="ttc" id="aclassAveragedSourceParabolicPde_html_adf23c8815c8139bc37ef3a2fdefce853"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#adf23c8815c8139bc37ef3a2fdefce853">AveragedSourceParabolicPde::rGetCellPopulation</a></div><div class="ttdeci">const AbstractCellPopulation&lt; DIM &gt; &amp; rGetCellPopulation() const</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00052">AveragedSourceParabolicPde.cpp:52</a></div></div>
-<div class="ttc" id="aclassAveragedSourceParabolicPde_html_ae2ef8f521c73817295d610d90c4f2024"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#ae2ef8f521c73817295d610d90c4f2024">AveragedSourceParabolicPde::SetupSourceTerms</a></div><div class="ttdeci">virtual void SetupSourceTerms(TetrahedralMesh&lt; DIM, DIM &gt; &amp;rCoarseMesh, std::map&lt; CellPtr, unsigned &gt; *pCellPdeElementMap=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00058">AveragedSourceParabolicPde.cpp:58</a></div></div>
-<div class="ttc" id="aclassAveragedSourceParabolicPde_html_aefd0b5ea25b5b21afa92aed4fd721ecf"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#aefd0b5ea25b5b21afa92aed4fd721ecf">AveragedSourceParabolicPde::ComputeSourceTerm</a></div><div class="ttdeci">virtual double ComputeSourceTerm(const ChastePoint&lt; DIM &gt; &amp;rX, double u, Element&lt; DIM, DIM &gt; *pElement=NULL)</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00110">AveragedSourceParabolicPde.cpp:110</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_a2c3adc16cdefc97288f705fcb78ef59b"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#a2c3adc16cdefc97288f705fcb78ef59b">AveragedSourceParabolicPde::ComputeSourceTerm</a></div><div class="ttdeci">double ComputeSourceTerm(const ChastePoint&lt; DIM &gt; &amp;rX, double u, Element&lt; DIM, DIM &gt; *pElement) override</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00159">AveragedSourceParabolicPde.cpp:159</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_a42d7780f2f3b3134a29eec5cd54ded01"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#a42d7780f2f3b3134a29eec5cd54ded01">AveragedSourceParabolicPde::GetConstantCoefficient</a></div><div class="ttdeci">double GetConstantCoefficient() const</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00062">AveragedSourceParabolicPde.cpp:62</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_a4cc1fcc29e9d8a4706db18f6a9680813"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#a4cc1fcc29e9d8a4706db18f6a9680813">AveragedSourceParabolicPde::ComputeDuDtCoefficientFunction</a></div><div class="ttdeci">double ComputeDuDtCoefficientFunction(const ChastePoint&lt; DIM &gt; &amp;rX) override</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00153">AveragedSourceParabolicPde.cpp:153</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_a765d194fd70f22b270a5404a95201c0e"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#a765d194fd70f22b270a5404a95201c0e">AveragedSourceParabolicPde::GetScaleByCellVolume</a></div><div class="ttdeci">bool GetScaleByCellVolume() const</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00086">AveragedSourceParabolicPde.cpp:86</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_a950037d01ef7859f76a5b8482db485c0"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#a950037d01ef7859f76a5b8482db485c0">AveragedSourceParabolicPde::GetDiffusionCoefficient</a></div><div class="ttdeci">double GetDiffusionCoefficient() const</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00074">AveragedSourceParabolicPde.cpp:74</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_a977ad8ff206231fd7862f7deecd008f5"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#a977ad8ff206231fd7862f7deecd008f5">AveragedSourceParabolicPde::ComputeDiffusionTerm</a></div><div class="ttdeci">c_matrix&lt; double, DIM, DIM &gt; ComputeDiffusionTerm(const ChastePoint&lt; DIM &gt; &amp;rX, Element&lt; DIM, DIM &gt; *pElement=nullptr) override</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00178">AveragedSourceParabolicPde.cpp:178</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_ab3b9e6a0c58a25745988ea0942e72d2b"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#ab3b9e6a0c58a25745988ea0942e72d2b">AveragedSourceParabolicPde::AveragedSourceParabolicPde</a></div><div class="ttdeci">AveragedSourceParabolicPde(AbstractCellPopulation&lt; DIM, DIM &gt; &amp;rCellPopulation, double constantSourceCoefficient=0.0, double linearSourceCoefficient=0.0, double diffusionCoefficient=1.0, double duDtCoefficient=1.0, bool scaleByCellVolume=false)</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00040">AveragedSourceParabolicPde.cpp:40</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_ad3fdd7cb37071dc140b7716bb2995aa1"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#ad3fdd7cb37071dc140b7716bb2995aa1">AveragedSourceParabolicPde::GetDuDtCoefficient</a></div><div class="ttdeci">double GetDuDtCoefficient() const</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00080">AveragedSourceParabolicPde.cpp:80</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_ad58923cb907f1fd0622c3bb87d1cffea"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#ad58923cb907f1fd0622c3bb87d1cffea">AveragedSourceParabolicPde::GetUptakeRateForElement</a></div><div class="ttdeci">double GetUptakeRateForElement(unsigned elementIndex)</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00184">AveragedSourceParabolicPde.cpp:184</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_adee8ade03310ae1b0551c1371e0531c6"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#adee8ade03310ae1b0551c1371e0531c6">AveragedSourceParabolicPde::ComputeSourceTermAtNode</a></div><div class="ttdeci">double ComputeSourceTermAtNode(const Node&lt; DIM &gt; &amp;rNode, double u) override</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00171">AveragedSourceParabolicPde.cpp:171</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_adf23c8815c8139bc37ef3a2fdefce853"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#adf23c8815c8139bc37ef3a2fdefce853">AveragedSourceParabolicPde::rGetCellPopulation</a></div><div class="ttdeci">const AbstractCellPopulation&lt; DIM &gt; &amp; rGetCellPopulation() const</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00056">AveragedSourceParabolicPde.cpp:56</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_ae2ef8f521c73817295d610d90c4f2024"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#ae2ef8f521c73817295d610d90c4f2024">AveragedSourceParabolicPde::SetupSourceTerms</a></div><div class="ttdeci">virtual void SetupSourceTerms(TetrahedralMesh&lt; DIM, DIM &gt; &amp;rCoarseMesh, std::map&lt; CellPtr, unsigned &gt; *pCellPdeElementMap=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00092">AveragedSourceParabolicPde.cpp:92</a></div></div>
+<div class="ttc" id="aclassAveragedSourceParabolicPde_html_af49c2f1e7d1d2029bfe39673d5e913be"><div class="ttname"><a href="classAveragedSourceParabolicPde.html#af49c2f1e7d1d2029bfe39673d5e913be">AveragedSourceParabolicPde::GetLinearCoefficient</a></div><div class="ttdeci">double GetLinearCoefficient() const</div><div class="ttdef"><b>Definition</b> <a href="AveragedSourceParabolicPde_8cpp_source.html#l00068">AveragedSourceParabolicPde.cpp:68</a></div></div>
 <div class="ttc" id="aclassChastePoint_html"><div class="ttname"><a href="classChastePoint.html">ChastePoint</a></div><div class="ttdef"><b>Definition</b> <a href="ChastePoint_8hpp_source.html#l00049">ChastePoint.hpp:50</a></div></div>
 <div class="ttc" id="aclassElement_html"><div class="ttname"><a href="classElement.html">Element</a></div><div class="ttdef"><b>Definition</b> <a href="Element_8hpp_source.html#l00053">Element.hpp:54</a></div></div>
 <div class="ttc" id="aclassNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdef"><b>Definition</b> <a href="Node_8hpp_source.html#l00058">Node.hpp:59</a></div></div>
