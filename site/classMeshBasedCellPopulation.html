@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::8fd15f78962a588c5c8a69b2614c83ac94ecd0d7</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::d341bf2de767e31357b1f5ceea334c14bb8d3688</span>
    </div>
   </td>
  </tr>
@@ -1444,7 +1444,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the volume (or area in 2D, or length in 1D) of the element of mpVoronoiTessellation associated with the node with this global index in the Delaunay mesh.</dd></dl>
 <p>This method should be called instead of calling <a class="el" href="classMeshBasedCellPopulation.html#adcc9ba11a75184ded6ad1b1be15dd22f">GetVoronoiTessellation()</a>-&gt;GetVolumeOfElement() because the global indices of Delaunay nodes and Voronoi elements may not match, e.g. if a node is a ghost node or corresponds to a Voronoi face.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000273">Todo:</a></b></dt><dd>This method is somewhat redundant following the introduction of the method <a class="el" href="classMeshBasedCellPopulation.html#ae37b1901c982b60b6e8dd10854a6a0bc">GetVolumeOfCell()</a> (see #1985).</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000276">Todo:</a></b></dt><dd>This method is somewhat redundant following the introduction of the method <a class="el" href="classMeshBasedCellPopulation.html#ae37b1901c982b60b6e8dd10854a6a0bc">GetVolumeOfCell()</a> (see #1985).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>a node global index </td></tr>
@@ -2268,10 +2268,10 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000275">Todo:</a></b></dt><dd>check if there is a more efficient way of keeping track of node velocity information (#2404) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000273">Todo:</a></b></dt><dd>check if there is a more efficient way of keeping track of node velocity information (#2404) </dd></dl>
 <p>If node radii are set, then we must keep a record of these, since they will be cleared during the remeshing process. We then restore these attributes to the nodes after calling ReMesh().</p>
 <p>At present, we check whether node radii are set by interrogating the radius of the first node in the mesh and asking if it is strictly greater than zero (the default value, as set in the <a class="el" href="classNodeAttributes.html">NodeAttributes</a> constructor). Hence, we assume that either ALL node radii are set, or NONE are.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000276">Todo:</a></b></dt><dd>There may be a better way of checking if node radii are set (#2694) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000274">Todo:</a></b></dt><dd>There may be a better way of checking if node radii are set (#2694) </dd></dl>
 
 <p>Implements <a class="el" href="classAbstractCellPopulation.html#a7b4dac40d6417494df5d33e518f39b90">AbstractCellPopulation&lt; ELEMENT_DIM, SPACE_DIM &gt;</a>.</p>
 
