@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::6859bd79f3006223f2930d9c7a8a12516ce42cda</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::bf19d93096dfe56276301c3ab950a1e14a673b91</span>
    </div>
   </td>
  </tr>
@@ -326,7 +326,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 <p>Called by AssembleSystem(). Calls <a class="el" href="classAbstractFeVolumeIntegralAssembler.html#afe3f510cbd9400b6657d3fcd625c738c">ComputeMatrixTerm()</a> etc. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000199">Todo:</a></b></dt><dd>#1320 This assumes that the Jacobian is constant on an element. This is true for linear basis functions, but not for any other type of basis function. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000198">Todo:</a></b></dt><dd>#1320 This assumes that the Jacobian is constant on an element. This is true for linear basis functions, but not for any other type of basis function. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="AbstractFeVolumeIntegralAssembler_8hpp_source.html#l00345">345</a> of file <a class="el" href="AbstractFeVolumeIntegralAssembler_8hpp_source.html">AbstractFeVolumeIntegralAssembler.hpp</a>.</p>
 
@@ -459,7 +459,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div><div class="memdoc">
 <p>Compute the derivatives of all basis functions at a point within an element. This method will transform the results, for use within Gaussian quadrature for example.</p>
 <p>This is almost identical to <a class="el" href="classLinearBasisFunction.html#a4d752fd7738f3d95e69675c3484b8d32">LinearBasisFunction::ComputeTransformedBasisFunctionDerivatives</a>, except that it is also templated over SPACE_DIM and can handle cases such as 1d in 3d space.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000200">Todo:</a></b></dt><dd>#1319 Template <a class="el" href="classLinearBasisFunction.html">LinearBasisFunction</a> over SPACE_DIM and remove this method?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000199">Todo:</a></b></dt><dd>#1319 Template <a class="el" href="classLinearBasisFunction.html">LinearBasisFunction</a> over SPACE_DIM and remove this method?</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rPoint</td><td>The point at which to compute the basis functions. The results are undefined if this is not within the canonical element. </td></tr>
