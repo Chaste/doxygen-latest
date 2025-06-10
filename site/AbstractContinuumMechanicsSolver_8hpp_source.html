@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::bf19d93096dfe56276301c3ab950a1e14a673b91</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::bd78b1ee1f8fc4d49532765791e4bff38a3a178e</span>
    </div>
   </td>
  </tr>
@@ -611,228 +611,229 @@ $(document).ready(function(){initNavTree('AbstractContinuumMechanicsSolver_8hpp_
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>            <span class="comment">// E.g. for a boundary node at the zeroth node (x_0 = value), this is equal to</span></div>
 <div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>            <span class="comment">//   -value*[0 a_21 a_31 .. a_N1]</span></div>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>            <span class="comment">// and will be added to the RHS.</span></div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>            <a class="code hl_function" href="classPetscVecTools.html#a96877007e2946f9530e9d6281385d751">PetscVecTools::AddScaledVector</a>(mDirichletBoundaryConditionsVector, matrix_col, minus_value);</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>            <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(matrix_col);</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>        }</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    }</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span> </div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    <span class="keywordflow">if</span> (type!=NONLINEAR_PROBLEM_APPLY_TO_RESIDUAL_ONLY) <span class="comment">// i.e. doing a whole linear system</span></div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    {</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>        <span class="comment">// Now zero the appropriate rows and columns of the matrix. If the matrix is symmetric we apply the</span></div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>        <span class="comment">// boundary conditions in a way the symmetry isn&#39;t lost (rows and columns). If not only the row is</span></div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        <span class="comment">// zeroed.</span></div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>        <span class="keywordflow">if</span> (applySymmetrically)</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>        {</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>            <a class="code hl_function" href="classPetscMatTools.html#a742a2bec669f75b1067b282ce6cf3b11">PetscMatTools::ZeroRowsAndColumnsWithValueOnDiagonal</a>(mSystemLhsMatrix, rows, 1.0);</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>            <a class="code hl_function" href="classPetscMatTools.html#a742a2bec669f75b1067b282ce6cf3b11">PetscMatTools::ZeroRowsAndColumnsWithValueOnDiagonal</a>(mPreconditionMatrix, rows, 1.0);</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span> </div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>            <span class="comment">// Apply the RHS boundary conditions modification if required.</span></div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>            <span class="comment">// (AddScaledVector now needs assembly to be finalised.)</span></div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>            <a class="code hl_function" href="classPetscVecTools.html#ad15cac91050f67cbce505b32298553cd">PetscVecTools::Finalise</a>(mLinearSystemRhsVector);</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>            <a class="code hl_function" href="classPetscVecTools.html#a96877007e2946f9530e9d6281385d751">PetscVecTools::AddScaledVector</a>(mLinearSystemRhsVector, mDirichletBoundaryConditionsVector, 1.0);</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>        }</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>        {</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>            <a class="code hl_function" href="classPetscMatTools.html#a5a68cf8b1e9a1630f54a60feb03084b9">PetscMatTools::ZeroRowsWithValueOnDiagonal</a>(mSystemLhsMatrix, rows, 1.0);</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>            <a class="code hl_function" href="classPetscMatTools.html#a5a68cf8b1e9a1630f54a60feb03084b9">PetscMatTools::ZeroRowsWithValueOnDiagonal</a>(mPreconditionMatrix, rows, 1.0);</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>        }</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    }</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span> </div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    <span class="keywordflow">if</span> (type!=LINEAR_PROBLEM)</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    {</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;rows.size(); i++)</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>        {</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>            <a class="code hl_function" href="classPetscVecTools.html#afaeb1be761c448205b29efbcf77336fe">PetscVecTools::SetElement</a>(mResidualVector, rows[i], values[i]);</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>        }</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    }</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span> </div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    <span class="keywordflow">if</span> (type!=NONLINEAR_PROBLEM_APPLY_TO_RESIDUAL_ONLY)</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    {</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;rows.size(); i++)</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        {</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>            <a class="code hl_function" href="classPetscVecTools.html#afaeb1be761c448205b29efbcf77336fe">PetscVecTools::SetElement</a>(mLinearSystemRhsVector, rows[i], values[i]);</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>        }</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    }</div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>}</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>            <a class="code hl_function" href="classPetscVecTools.html#ad15cac91050f67cbce505b32298553cd">PetscVecTools::Finalise</a>(matrix_col); <span class="comment">//PETSc 3.19 doesn&#39;t like mixing &quot;set&quot; mode (above) with &quot;add&quot; mode</span></div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>            <a class="code hl_function" href="classPetscVecTools.html#a96877007e2946f9530e9d6281385d751">PetscVecTools::AddScaledVector</a>(mDirichletBoundaryConditionsVector, matrix_col, minus_value);</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>            <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(matrix_col);</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>        }</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    }</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span> </div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    <span class="keywordflow">if</span> (type!=NONLINEAR_PROBLEM_APPLY_TO_RESIDUAL_ONLY) <span class="comment">// i.e. doing a whole linear system</span></div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    {</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>        <span class="comment">// Now zero the appropriate rows and columns of the matrix. If the matrix is symmetric we apply the</span></div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        <span class="comment">// boundary conditions in a way the symmetry isn&#39;t lost (rows and columns). If not only the row is</span></div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>        <span class="comment">// zeroed.</span></div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>        <span class="keywordflow">if</span> (applySymmetrically)</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>        {</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>            <a class="code hl_function" href="classPetscMatTools.html#a742a2bec669f75b1067b282ce6cf3b11">PetscMatTools::ZeroRowsAndColumnsWithValueOnDiagonal</a>(mSystemLhsMatrix, rows, 1.0);</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>            <a class="code hl_function" href="classPetscMatTools.html#a742a2bec669f75b1067b282ce6cf3b11">PetscMatTools::ZeroRowsAndColumnsWithValueOnDiagonal</a>(mPreconditionMatrix, rows, 1.0);</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span> </div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>            <span class="comment">// Apply the RHS boundary conditions modification if required.</span></div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>            <span class="comment">// (AddScaledVector now needs assembly to be finalised.)</span></div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>            <a class="code hl_function" href="classPetscVecTools.html#ad15cac91050f67cbce505b32298553cd">PetscVecTools::Finalise</a>(mLinearSystemRhsVector);</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>            <a class="code hl_function" href="classPetscVecTools.html#a96877007e2946f9530e9d6281385d751">PetscVecTools::AddScaledVector</a>(mLinearSystemRhsVector, mDirichletBoundaryConditionsVector, 1.0);</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>        }</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>        {</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>            <a class="code hl_function" href="classPetscMatTools.html#a5a68cf8b1e9a1630f54a60feb03084b9">PetscMatTools::ZeroRowsWithValueOnDiagonal</a>(mSystemLhsMatrix, rows, 1.0);</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>            <a class="code hl_function" href="classPetscMatTools.html#a5a68cf8b1e9a1630f54a60feb03084b9">PetscMatTools::ZeroRowsWithValueOnDiagonal</a>(mPreconditionMatrix, rows, 1.0);</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>        }</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    }</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span> </div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    <span class="keywordflow">if</span> (type!=LINEAR_PROBLEM)</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    {</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;rows.size(); i++)</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        {</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>            <a class="code hl_function" href="classPetscVecTools.html#afaeb1be761c448205b29efbcf77336fe">PetscVecTools::SetElement</a>(mResidualVector, rows[i], values[i]);</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>        }</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    }</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span> </div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    <span class="keywordflow">if</span> (type!=NONLINEAR_PROBLEM_APPLY_TO_RESIDUAL_ONLY)</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    {</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;rows.size(); i++)</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>        {</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>            <a class="code hl_function" href="classPetscVecTools.html#afaeb1be761c448205b29efbcf77336fe">PetscVecTools::SetElement</a>(mLinearSystemRhsVector, rows[i], values[i]);</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>        }</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    }</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>}</div>
 </div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span> </div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00798" data-start="{" data-end="}">
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno"><a class="line" href="classAbstractContinuumMechanicsSolver.html#a7ad4ea647ef9cc77a128654cd875bdc8">  798</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractContinuumMechanicsSolver.html#a7ad4ea647ef9cc77a128654cd875bdc8">AbstractContinuumMechanicsSolver&lt;DIM&gt;::AddIdentityBlockForDummyPressureVariables</a>(ApplyDirichletBcsType type)</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>{</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    assert(mCompressibilityType==INCOMPRESSIBLE);</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span> </div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    <span class="keywordtype">int</span> lo, hi;</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    VecGetOwnershipRange(mResidualVector, &amp;lo, &amp;hi);</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span> </div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;mrQuadMesh.GetNumNodes(); i++)</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    {</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>        <span class="keywordflow">if</span> (mrQuadMesh.GetNode(i)-&gt;IsInternal())</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>        {</div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>            <span class="keywordtype">unsigned</span> row = (DIM+1)*i + DIM; <span class="comment">// DIM+1 is the problem dimension</span></div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>            <span class="keywordflow">if</span> (lo &lt;= (<span class="keywordtype">int</span>)row &amp;&amp; (int)row &lt; hi)</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>            {</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>                <span class="keywordflow">if</span> (type!=LINEAR_PROBLEM)</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>                {</div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>                    <a class="code hl_function" href="classPetscVecTools.html#afaeb1be761c448205b29efbcf77336fe">PetscVecTools::SetElement</a>(mResidualVector, row, mCurrentSolution[row]-0.0);</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>                }</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>                <span class="keywordflow">if</span> (type!=NONLINEAR_PROBLEM_APPLY_TO_RESIDUAL_ONLY) <span class="comment">// ie doing a whole linear system</span></div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>                {</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>                    <span class="keywordtype">double</span> rhs_vector_val = type==LINEAR_PROBLEM ? 0.0 : mCurrentSolution[row]-0.0;</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>                    <a class="code hl_function" href="classPetscVecTools.html#afaeb1be761c448205b29efbcf77336fe">PetscVecTools::SetElement</a>(mLinearSystemRhsVector, row, rhs_vector_val);</div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>                    <span class="comment">// This assumes the row is already zero, which is should be..</span></div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>                    <a class="code hl_function" href="classPetscMatTools.html#ad2991678b6341cb488fcf53bca9c7af1">PetscMatTools::SetElement</a>(mSystemLhsMatrix, row, row, 1.0);</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>                    <a class="code hl_function" href="classPetscMatTools.html#ad2991678b6341cb488fcf53bca9c7af1">PetscMatTools::SetElement</a>(mPreconditionMatrix, row, row, 1.0);</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>                }</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>            }</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>        }</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    }</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>}</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span> </div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00799" data-start="{" data-end="}">
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno"><a class="line" href="classAbstractContinuumMechanicsSolver.html#a7ad4ea647ef9cc77a128654cd875bdc8">  799</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractContinuumMechanicsSolver.html#a7ad4ea647ef9cc77a128654cd875bdc8">AbstractContinuumMechanicsSolver&lt;DIM&gt;::AddIdentityBlockForDummyPressureVariables</a>(ApplyDirichletBcsType type)</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>{</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    assert(mCompressibilityType==INCOMPRESSIBLE);</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span> </div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    <span class="keywordtype">int</span> lo, hi;</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    VecGetOwnershipRange(mResidualVector, &amp;lo, &amp;hi);</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span> </div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;mrQuadMesh.GetNumNodes(); i++)</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    {</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>        <span class="keywordflow">if</span> (mrQuadMesh.GetNode(i)-&gt;IsInternal())</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        {</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>            <span class="keywordtype">unsigned</span> row = (DIM+1)*i + DIM; <span class="comment">// DIM+1 is the problem dimension</span></div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>            <span class="keywordflow">if</span> (lo &lt;= (<span class="keywordtype">int</span>)row &amp;&amp; (int)row &lt; hi)</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>            {</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>                <span class="keywordflow">if</span> (type!=LINEAR_PROBLEM)</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>                {</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>                    <a class="code hl_function" href="classPetscVecTools.html#afaeb1be761c448205b29efbcf77336fe">PetscVecTools::SetElement</a>(mResidualVector, row, mCurrentSolution[row]-0.0);</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>                }</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>                <span class="keywordflow">if</span> (type!=NONLINEAR_PROBLEM_APPLY_TO_RESIDUAL_ONLY) <span class="comment">// ie doing a whole linear system</span></div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>                {</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>                    <span class="keywordtype">double</span> rhs_vector_val = type==LINEAR_PROBLEM ? 0.0 : mCurrentSolution[row]-0.0;</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>                    <a class="code hl_function" href="classPetscVecTools.html#afaeb1be761c448205b29efbcf77336fe">PetscVecTools::SetElement</a>(mLinearSystemRhsVector, row, rhs_vector_val);</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>                    <span class="comment">// This assumes the row is already zero, which is should be..</span></div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>                    <a class="code hl_function" href="classPetscMatTools.html#ad2991678b6341cb488fcf53bca9c7af1">PetscMatTools::SetElement</a>(mSystemLhsMatrix, row, row, 1.0);</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>                    <a class="code hl_function" href="classPetscMatTools.html#ad2991678b6341cb488fcf53bca9c7af1">PetscMatTools::SetElement</a>(mPreconditionMatrix, row, row, 1.0);</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>                }</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>            }</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>        }</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>    }</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>}</div>
 </div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span> </div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00830" data-start="{" data-end="}">
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno"><a class="line" href="classAbstractContinuumMechanicsSolver.html#a51efb6d651249387f4018b3bf1d12503">  830</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractContinuumMechanicsSolver.html#a51efb6d651249387f4018b3bf1d12503">AbstractContinuumMechanicsSolver&lt;DIM&gt;::AllocateMatrixMemory</a>()</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>{</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>    <a class="code hl_class" href="classVec.html">Vec</a> template_vec = mrQuadMesh.GetDistributedVectorFactory()-&gt;CreateVec(mProblemDimension);</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span> </div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>    <span class="comment">// three vectors</span></div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>    VecDuplicate(template_vec, &amp;mResidualVector);</div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>    VecDuplicate(mResidualVector, &amp;mLinearSystemRhsVector);</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>    <span class="comment">// the one is only allocated if it will be needed (in ApplyDirichletBoundaryConditions),</span></div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="comment">// depending on whether the matrix is kept symmetric.</span></div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>    mDirichletBoundaryConditionsVector = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>    <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(template_vec);</div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span> </div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    <span class="comment">// two matrices</span></div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span> </div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>    <span class="keywordtype">int</span> lo, hi;</div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    VecGetOwnershipRange(mResidualVector, &amp;lo, &amp;hi);</div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>    <a class="code hl_class" href="classPetscInt.html">PetscInt</a> local_size = hi - lo;</div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span> </div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span> </div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00831" data-start="{" data-end="}">
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno"><a class="line" href="classAbstractContinuumMechanicsSolver.html#a51efb6d651249387f4018b3bf1d12503">  831</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractContinuumMechanicsSolver.html#a51efb6d651249387f4018b3bf1d12503">AbstractContinuumMechanicsSolver&lt;DIM&gt;::AllocateMatrixMemory</a>()</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>{</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>    <a class="code hl_class" href="classVec.html">Vec</a> template_vec = mrQuadMesh.GetDistributedVectorFactory()-&gt;CreateVec(mProblemDimension);</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span> </div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>    <span class="comment">// three vectors</span></div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>    VecDuplicate(template_vec, &amp;mResidualVector);</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>    VecDuplicate(mResidualVector, &amp;mLinearSystemRhsVector);</div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="comment">// the one is only allocated if it will be needed (in ApplyDirichletBoundaryConditions),</span></div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>    <span class="comment">// depending on whether the matrix is kept symmetric.</span></div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>    mDirichletBoundaryConditionsVector = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>    <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(template_vec);</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span> </div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    <span class="comment">// two matrices</span></div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    <span class="keywordtype">int</span> lo, hi;</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>    VecGetOwnershipRange(mResidualVector, &amp;lo, &amp;hi);</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    <a class="code hl_class" href="classPetscInt.html">PetscInt</a> local_size = hi - lo;</div>
 <div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span> </div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>    <span class="keywordflow">if</span> (DIM==2)</div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>    {</div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>        <span class="comment">// 2D: N elements around a point =&gt; 7N+3 non-zeros in that row? Assume N&lt;=10 (structured mesh would have N_max=6) =&gt; 73.</span></div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>        <span class="keywordtype">unsigned</span> num_non_zeros = std::min(75u, mNumDofs);</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span> </div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>        <a class="code hl_function" href="classPetscTools.html#ad6d7a60499c5a6bd9c64eb35fffd3b06">PetscTools::SetupMat</a>(mSystemLhsMatrix, mNumDofs, mNumDofs, num_non_zeros, local_size, local_size);</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>        <a class="code hl_function" href="classPetscTools.html#ad6d7a60499c5a6bd9c64eb35fffd3b06">PetscTools::SetupMat</a>(mPreconditionMatrix, mNumDofs, mNumDofs, num_non_zeros, local_size, local_size);</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>    }</div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>    {</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>        assert(DIM==3);</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span> </div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>        <span class="comment">// in 3d we get the number of containing elements for each node and use that to obtain an upper bound</span></div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        <span class="comment">// for the number of non-zeros for each DOF associated with that node.</span></div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span> </div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>        <span class="keywordtype">int</span>* num_non_zeros_each_row = <span class="keyword">new</span> <span class="keywordtype">int</span>[mNumDofs];</div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;mNumDofs; i++)</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>        {</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>            num_non_zeros_each_row[i] = 0;</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>        }</div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span> </div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractMesh_1_1NodeIterator.html">AbstractMesh&lt;DIM,DIM&gt;::NodeIterator</a> iter = mrQuadMesh.GetNodeIteratorBegin();</div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>             iter != mrQuadMesh.GetNodeIteratorEnd();</div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>             ++iter)</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>        {</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>            <span class="comment">// this upper bound neglects the fact that two containing elements will share the same nodes..</span></div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>            <span class="comment">// 4 = max num dofs associated with this node</span></div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>            <span class="comment">// 30 = 3*9+3 = 3 dimensions x 9 other nodes on this element   +  3 vertices with a pressure unknown</span></div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>            <span class="keywordtype">unsigned</span> num_non_zeros_upper_bound = 4 + 30*iter-&gt;GetNumContainingElements();</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span> </div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>            num_non_zeros_upper_bound = std::min(num_non_zeros_upper_bound, mNumDofs);</div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span> </div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>            <span class="keywordtype">unsigned</span> i = iter-&gt;GetIndex();</div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span> </div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>            num_non_zeros_each_row[mProblemDimension*i + 0] = num_non_zeros_upper_bound;</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>            num_non_zeros_each_row[mProblemDimension*i + 1] = num_non_zeros_upper_bound;</div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>            num_non_zeros_each_row[mProblemDimension*i + 2] = num_non_zeros_upper_bound;</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span> </div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>            <span class="keywordflow">if</span> (mCompressibilityType==INCOMPRESSIBLE)</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>            {</div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>                <span class="keywordflow">if</span> (!iter-&gt;IsInternal())</div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>                {</div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>                    num_non_zeros_each_row[mProblemDimension*i + 3] = num_non_zeros_upper_bound;</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>                }</div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>                <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>                {</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>                    num_non_zeros_each_row[mProblemDimension*i + 3] = 1;</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>                }</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>            }</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        }</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span> </div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>        <span class="comment">// NOTE: PetscTools::SetupMat() or the below creates a MATAIJ matrix, which means the matrix will</span></div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>        <span class="comment">// be of type MATSEQAIJ if num_procs=1 and MATMPIAIJ otherwise. In the former case</span></div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>        <span class="comment">// MatSeqAIJSetPreallocation MUST be called [MatMPIAIJSetPreallocation will have</span></div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>        <span class="comment">// no effect (silently)], and vice versa in the latter case</span></div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span> </div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>        <span class="comment">//PetscTools::SetupMat(mSystemLhsMatrix, mNumDofs, mNumDofs, 0, PETSC_DECIDE, PETSC_DECIDE);</span></div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>        <span class="comment">//PetscTools::SetupMat(mPreconditionMatrix, mNumDofs, mNumDofs, 0, PETSC_DECIDE, PETSC_DECIDE);</span></div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span> </div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>        <span class="comment">// possible todo: create a PetscTools::SetupMatNoAllocation()</span></div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span> </div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span> </div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>    <span class="keywordflow">if</span> (DIM==2)</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>    {</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>        <span class="comment">// 2D: N elements around a point =&gt; 7N+3 non-zeros in that row? Assume N&lt;=10 (structured mesh would have N_max=6) =&gt; 73.</span></div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>        <span class="keywordtype">unsigned</span> num_non_zeros = std::min(75u, mNumDofs);</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span> </div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>        <a class="code hl_function" href="classPetscTools.html#ad6d7a60499c5a6bd9c64eb35fffd3b06">PetscTools::SetupMat</a>(mSystemLhsMatrix, mNumDofs, mNumDofs, num_non_zeros, local_size, local_size);</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>        <a class="code hl_function" href="classPetscTools.html#ad6d7a60499c5a6bd9c64eb35fffd3b06">PetscTools::SetupMat</a>(mPreconditionMatrix, mNumDofs, mNumDofs, num_non_zeros, local_size, local_size);</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>    }</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>    {</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>        assert(DIM==3);</div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span> </div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        <span class="comment">// in 3d we get the number of containing elements for each node and use that to obtain an upper bound</span></div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>        <span class="comment">// for the number of non-zeros for each DOF associated with that node.</span></div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span> </div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>        <span class="keywordtype">int</span>* num_non_zeros_each_row = <span class="keyword">new</span> <span class="keywordtype">int</span>[mNumDofs];</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;mNumDofs; i++)</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>        {</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>            num_non_zeros_each_row[i] = 0;</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>        }</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span> </div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractMesh_1_1NodeIterator.html">AbstractMesh&lt;DIM,DIM&gt;::NodeIterator</a> iter = mrQuadMesh.GetNodeIteratorBegin();</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>             iter != mrQuadMesh.GetNodeIteratorEnd();</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>             ++iter)</div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>        {</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>            <span class="comment">// this upper bound neglects the fact that two containing elements will share the same nodes..</span></div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>            <span class="comment">// 4 = max num dofs associated with this node</span></div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>            <span class="comment">// 30 = 3*9+3 = 3 dimensions x 9 other nodes on this element   +  3 vertices with a pressure unknown</span></div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>            <span class="keywordtype">unsigned</span> num_non_zeros_upper_bound = 4 + 30*iter-&gt;GetNumContainingElements();</div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span> </div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>            num_non_zeros_upper_bound = std::min(num_non_zeros_upper_bound, mNumDofs);</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span> </div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>            <span class="keywordtype">unsigned</span> i = iter-&gt;GetIndex();</div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span> </div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>            num_non_zeros_each_row[mProblemDimension*i + 0] = num_non_zeros_upper_bound;</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>            num_non_zeros_each_row[mProblemDimension*i + 1] = num_non_zeros_upper_bound;</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>            num_non_zeros_each_row[mProblemDimension*i + 2] = num_non_zeros_upper_bound;</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span> </div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>            <span class="keywordflow">if</span> (mCompressibilityType==INCOMPRESSIBLE)</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>            {</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>                <span class="keywordflow">if</span> (!iter-&gt;IsInternal())</div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>                {</div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>                    num_non_zeros_each_row[mProblemDimension*i + 3] = num_non_zeros_upper_bound;</div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>                }</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>                {</div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>                    num_non_zeros_each_row[mProblemDimension*i + 3] = 1;</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>                }</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>            }</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>        }</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span> </div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>        <span class="comment">// NOTE: PetscTools::SetupMat() or the below creates a MATAIJ matrix, which means the matrix will</span></div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>        <span class="comment">// be of type MATSEQAIJ if num_procs=1 and MATMPIAIJ otherwise. In the former case</span></div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>        <span class="comment">// MatSeqAIJSetPreallocation MUST be called [MatMPIAIJSetPreallocation will have</span></div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>        <span class="comment">// no effect (silently)], and vice versa in the latter case</span></div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span> </div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>        <span class="comment">//PetscTools::SetupMat(mSystemLhsMatrix, mNumDofs, mNumDofs, 0, PETSC_DECIDE, PETSC_DECIDE);</span></div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>        <span class="comment">//PetscTools::SetupMat(mPreconditionMatrix, mNumDofs, mNumDofs, 0, PETSC_DECIDE, PETSC_DECIDE);</span></div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span> </div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>        <span class="comment">// possible todo: create a PetscTools::SetupMatNoAllocation()</span></div>
 <div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span> </div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span><span class="preprocessor">#if (PETSC_VERSION_MAJOR == 2 &amp;&amp; PETSC_VERSION_MINOR == 2) </span><span class="comment">//PETSc 2.2</span></div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>        MatCreate(PETSC_COMM_WORLD,local_size,local_size,mNumDofs,mNumDofs,&amp;mSystemLhsMatrix);</div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>        MatCreate(PETSC_COMM_WORLD,local_size,local_size,mNumDofs,mNumDofs,&amp;mPreconditionMatrix);</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span><span class="preprocessor">#else </span><span class="comment">//New API</span></div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>        MatCreate(PETSC_COMM_WORLD,&amp;mSystemLhsMatrix);</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>        MatCreate(PETSC_COMM_WORLD,&amp;mPreconditionMatrix);</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        MatSetSizes(mSystemLhsMatrix,local_size,local_size,mNumDofs,mNumDofs);</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        MatSetSizes(mPreconditionMatrix,local_size,local_size,mNumDofs,mNumDofs);</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span> </div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a850294f254244f4f006695ba4052ab33">PetscTools::IsSequential</a>())</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>        {</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>            MatSetType(mSystemLhsMatrix, MATSEQAIJ);</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>            MatSetType(mPreconditionMatrix, MATSEQAIJ);</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>            MatSeqAIJSetPreallocation(mSystemLhsMatrix,    PETSC_DEFAULT, num_non_zeros_each_row);</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>            MatSeqAIJSetPreallocation(mPreconditionMatrix, PETSC_DEFAULT, num_non_zeros_each_row);</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>        }</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>        {</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>            <span class="keywordtype">int</span>* num_non_zeros_each_row_in_diag = <span class="keyword">new</span> <span class="keywordtype">int</span>[local_size];</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>            <span class="keywordtype">int</span>* num_non_zeros_each_row_off_diag = <span class="keyword">new</span> <span class="keywordtype">int</span>[local_size];</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;<a class="code hl_class" href="classunsigned.html">unsigned</a>(local_size); i++)</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>            {</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>                num_non_zeros_each_row_in_diag[i] = num_non_zeros_each_row[lo+i];</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>                num_non_zeros_each_row_off_diag[i] = num_non_zeros_each_row[lo+i];</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>                <span class="comment">// In the on process (&quot;diagonal block&quot;) there cannot be more non-zero columns specified than there are rows</span></div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>                <span class="keywordflow">if</span> (num_non_zeros_each_row_in_diag[i] &gt; local_size)</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>                {</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>                    num_non_zeros_each_row_in_diag[i] = local_size;</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>                }</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>            }</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span> </div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>            MatSetType(mSystemLhsMatrix, MATMPIAIJ);</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>            MatSetType(mPreconditionMatrix, MATMPIAIJ);</div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>            MatMPIAIJSetPreallocation(mSystemLhsMatrix,    PETSC_DEFAULT, num_non_zeros_each_row_in_diag, PETSC_DEFAULT, num_non_zeros_each_row_off_diag);</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>            MatMPIAIJSetPreallocation(mPreconditionMatrix, PETSC_DEFAULT, num_non_zeros_each_row_in_diag, PETSC_DEFAULT, num_non_zeros_each_row_off_diag);</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>        }</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span> </div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>        MatSetFromOptions(mSystemLhsMatrix);</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>        MatSetFromOptions(mPreconditionMatrix);</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span><span class="preprocessor">#if (PETSC_VERSION_MAJOR == 3) </span><span class="comment">//PETSc 3.x.x</span></div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>        MatSetOption(mSystemLhsMatrix, MAT_IGNORE_OFF_PROC_ENTRIES, PETSC_TRUE);</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>        MatSetOption(mPreconditionMatrix, MAT_IGNORE_OFF_PROC_ENTRIES, PETSC_TRUE);</div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>        MatSetOption(mSystemLhsMatrix, MAT_IGNORE_OFF_PROC_ENTRIES);</div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>        MatSetOption(mPreconditionMatrix, MAT_IGNORE_OFF_PROC_ENTRIES);</div>
-<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span> </div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        <span class="comment">//unsigned total_non_zeros = 0;</span></div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        <span class="comment">//for (unsigned i=0; i&lt;mNumDofs; i++)</span></div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>        <span class="comment">//{</span></div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>        <span class="comment">//   total_non_zeros += num_non_zeros_each_row[i];</span></div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>        <span class="comment">//}</span></div>
-<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>        <span class="comment">//std::cout &lt;&lt; total_non_zeros &lt;&lt; &quot; versus &quot; &lt;&lt; 500*mNumDofs &lt;&lt; &quot;\n&quot; &lt;&lt; std::flush;</span></div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span> </div>
-<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>        <span class="keyword">delete</span> [] num_non_zeros_each_row;</div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>    }</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>}</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span> </div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span><span class="preprocessor">#if (PETSC_VERSION_MAJOR == 2 &amp;&amp; PETSC_VERSION_MINOR == 2) </span><span class="comment">//PETSc 2.2</span></div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>        MatCreate(PETSC_COMM_WORLD,local_size,local_size,mNumDofs,mNumDofs,&amp;mSystemLhsMatrix);</div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>        MatCreate(PETSC_COMM_WORLD,local_size,local_size,mNumDofs,mNumDofs,&amp;mPreconditionMatrix);</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span><span class="preprocessor">#else </span><span class="comment">//New API</span></div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>        MatCreate(PETSC_COMM_WORLD,&amp;mSystemLhsMatrix);</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        MatCreate(PETSC_COMM_WORLD,&amp;mPreconditionMatrix);</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        MatSetSizes(mSystemLhsMatrix,local_size,local_size,mNumDofs,mNumDofs);</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        MatSetSizes(mPreconditionMatrix,local_size,local_size,mNumDofs,mNumDofs);</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span> </div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a850294f254244f4f006695ba4052ab33">PetscTools::IsSequential</a>())</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>        {</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>            MatSetType(mSystemLhsMatrix, MATSEQAIJ);</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>            MatSetType(mPreconditionMatrix, MATSEQAIJ);</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>            MatSeqAIJSetPreallocation(mSystemLhsMatrix,    PETSC_DEFAULT, num_non_zeros_each_row);</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>            MatSeqAIJSetPreallocation(mPreconditionMatrix, PETSC_DEFAULT, num_non_zeros_each_row);</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>        }</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>        {</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>            <span class="keywordtype">int</span>* num_non_zeros_each_row_in_diag = <span class="keyword">new</span> <span class="keywordtype">int</span>[local_size];</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>            <span class="keywordtype">int</span>* num_non_zeros_each_row_off_diag = <span class="keyword">new</span> <span class="keywordtype">int</span>[local_size];</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;<a class="code hl_class" href="classunsigned.html">unsigned</a>(local_size); i++)</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>            {</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>                num_non_zeros_each_row_in_diag[i] = num_non_zeros_each_row[lo+i];</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>                num_non_zeros_each_row_off_diag[i] = num_non_zeros_each_row[lo+i];</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>                <span class="comment">// In the on process (&quot;diagonal block&quot;) there cannot be more non-zero columns specified than there are rows</span></div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>                <span class="keywordflow">if</span> (num_non_zeros_each_row_in_diag[i] &gt; local_size)</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>                {</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>                    num_non_zeros_each_row_in_diag[i] = local_size;</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>                }</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>            }</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span> </div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>            MatSetType(mSystemLhsMatrix, MATMPIAIJ);</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>            MatSetType(mPreconditionMatrix, MATMPIAIJ);</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>            MatMPIAIJSetPreallocation(mSystemLhsMatrix,    PETSC_DEFAULT, num_non_zeros_each_row_in_diag, PETSC_DEFAULT, num_non_zeros_each_row_off_diag);</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>            MatMPIAIJSetPreallocation(mPreconditionMatrix, PETSC_DEFAULT, num_non_zeros_each_row_in_diag, PETSC_DEFAULT, num_non_zeros_each_row_off_diag);</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>        }</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span> </div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>        MatSetFromOptions(mSystemLhsMatrix);</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>        MatSetFromOptions(mPreconditionMatrix);</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span><span class="preprocessor">#if (PETSC_VERSION_MAJOR == 3) </span><span class="comment">//PETSc 3.x.x</span></div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>        MatSetOption(mSystemLhsMatrix, MAT_IGNORE_OFF_PROC_ENTRIES, PETSC_TRUE);</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>        MatSetOption(mPreconditionMatrix, MAT_IGNORE_OFF_PROC_ENTRIES, PETSC_TRUE);</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>        MatSetOption(mSystemLhsMatrix, MAT_IGNORE_OFF_PROC_ENTRIES);</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>        MatSetOption(mPreconditionMatrix, MAT_IGNORE_OFF_PROC_ENTRIES);</div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span> </div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        <span class="comment">//unsigned total_non_zeros = 0;</span></div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>        <span class="comment">//for (unsigned i=0; i&lt;mNumDofs; i++)</span></div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>        <span class="comment">//{</span></div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>        <span class="comment">//   total_non_zeros += num_non_zeros_each_row[i];</span></div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>        <span class="comment">//}</span></div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>        <span class="comment">//std::cout &lt;&lt; total_non_zeros &lt;&lt; &quot; versus &quot; &lt;&lt; 500*mNumDofs &lt;&lt; &quot;\n&quot; &lt;&lt; std::flush;</span></div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span> </div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>        <span class="keyword">delete</span> [] num_non_zeros_each_row;</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>    }</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>}</div>
 </div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span><span class="preprocessor">#endif </span><span class="comment">// ABSTRACTCONTINUUMMECHANICSSOLVER_HPP_</span></div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span><span class="preprocessor">#endif </span><span class="comment">// ABSTRACTCONTINUUMMECHANICSSOLVER_HPP_</span></div>
 <div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
 <div class="ttc" id="aPetscTools_8hpp_html"><div class="ttname"><a href="PetscTools_8hpp.html">PetscTools.hpp</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html">AbstractContinuumMechanicsSolver</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00087">AbstractContinuumMechanicsSolver.hpp:88</a></div></div>
@@ -847,14 +848,14 @@ $(document).ready(function(){initNavTree('AbstractContinuumMechanicsSolver_8hpp_
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a3697ca8ca5b9136dafc039422aff1ad3"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a3697ca8ca5b9136dafc039422aff1ad3">AbstractContinuumMechanicsSolver::mNumDofs</a></div><div class="ttdeci">unsigned mNumDofs</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00153">AbstractContinuumMechanicsSolver.hpp:153</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a46fd372999e615fa9cc9f4eabb7497aa"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a46fd372999e615fa9cc9f4eabb7497aa">AbstractContinuumMechanicsSolver::mpBoundaryQuadratureRule</a></div><div class="ttdeci">GaussianQuadratureRule&lt; DIM-1 &gt; * mpBoundaryQuadratureRule</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00132">AbstractContinuumMechanicsSolver.hpp:132</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a4c8eff89ceb7a1e131db6e96ec219096"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a4c8eff89ceb7a1e131db6e96ec219096">AbstractContinuumMechanicsSolver::~AbstractContinuumMechanicsSolver</a></div><div class="ttdeci">virtual ~AbstractContinuumMechanicsSolver()</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00430">AbstractContinuumMechanicsSolver.hpp:430</a></div></div>
-<div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a51efb6d651249387f4018b3bf1d12503"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a51efb6d651249387f4018b3bf1d12503">AbstractContinuumMechanicsSolver::AllocateMatrixMemory</a></div><div class="ttdeci">void AllocateMatrixMemory()</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00830">AbstractContinuumMechanicsSolver.hpp:830</a></div></div>
+<div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a51efb6d651249387f4018b3bf1d12503"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a51efb6d651249387f4018b3bf1d12503">AbstractContinuumMechanicsSolver::AllocateMatrixMemory</a></div><div class="ttdeci">void AllocateMatrixMemory()</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00831">AbstractContinuumMechanicsSolver.hpp:831</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a59782d56383f1d50a4cb4b1e5ce2adaa"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a59782d56383f1d50a4cb4b1e5ce2adaa">AbstractContinuumMechanicsSolver::mCurrentSolution</a></div><div class="ttdeci">std::vector&lt; double &gt; mCurrentSolution</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00126">AbstractContinuumMechanicsSolver.hpp:126</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a597d440cf022a2718722105d92db290e"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a597d440cf022a2718722105d92db290e">AbstractContinuumMechanicsSolver::AbstractContinuumMechanicsSolver</a></div><div class="ttdeci">AbstractContinuumMechanicsSolver(AbstractTetrahedralMesh&lt; DIM, DIM &gt; &amp;rQuadMesh, ContinuumMechanicsProblemDefinition&lt; DIM &gt; &amp;rProblemDefinition, std::string outputDirectory, CompressibilityType compressibilityType)</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00376">AbstractContinuumMechanicsSolver.hpp:376</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a5bd73daf24062075d89121a79c0e7a67"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a5bd73daf24062075d89121a79c0e7a67">AbstractContinuumMechanicsSolver::WriteCurrentPressureSolution</a></div><div class="ttdeci">void WriteCurrentPressureSolution(int counterToAppend=-1)</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00500">AbstractContinuumMechanicsSolver.hpp:500</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a673e7f7845fbb7c2f80496de3b3d3755"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a673e7f7845fbb7c2f80496de3b3d3755">AbstractContinuumMechanicsSolver::mLinearSystemRhsVector</a></div><div class="ttdeci">Vec mLinearSystemRhsVector</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00187">AbstractContinuumMechanicsSolver.hpp:187</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a6d64855299b8c48bc1bea5aabdb242dc"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a6d64855299b8c48bc1bea5aabdb242dc">AbstractContinuumMechanicsSolver::WriteCurrentSpatialSolution</a></div><div class="ttdeci">void WriteCurrentSpatialSolution(std::string fileName, std::string fileExtension, int counterToAppend=-1)</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00458">AbstractContinuumMechanicsSolver.hpp:458</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a7193cdb60e0b3c77afdf37e9aa0664c5"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a7193cdb60e0b3c77afdf37e9aa0664c5">AbstractContinuumMechanicsSolver::rGetSpatialSolution</a></div><div class="ttdeci">virtual std::vector&lt; c_vector&lt; double, DIM &gt; &gt; &amp; rGetSpatialSolution()=0</div></div>
-<div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a7ad4ea647ef9cc77a128654cd875bdc8"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a7ad4ea647ef9cc77a128654cd875bdc8">AbstractContinuumMechanicsSolver::AddIdentityBlockForDummyPressureVariables</a></div><div class="ttdeci">void AddIdentityBlockForDummyPressureVariables(ApplyDirichletBcsType type)</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00798">AbstractContinuumMechanicsSolver.hpp:798</a></div></div>
+<div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a7ad4ea647ef9cc77a128654cd875bdc8"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a7ad4ea647ef9cc77a128654cd875bdc8">AbstractContinuumMechanicsSolver::AddIdentityBlockForDummyPressureVariables</a></div><div class="ttdeci">void AddIdentityBlockForDummyPressureVariables(ApplyDirichletBcsType type)</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00799">AbstractContinuumMechanicsSolver.hpp:799</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a8bb5efbf95c5e0028020c89c2b19011b"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a8bb5efbf95c5e0028020c89c2b19011b">AbstractContinuumMechanicsSolver::rGetPressures</a></div><div class="ttdeci">std::vector&lt; double &gt; &amp; rGetPressures()</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00578">AbstractContinuumMechanicsSolver.hpp:578</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_a92326470870de16eee07d87b0b2337a3"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#a92326470870de16eee07d87b0b2337a3">AbstractContinuumMechanicsSolver::mpOutputFileHandler</a></div><div class="ttdeci">OutputFileHandler * mpOutputFileHandler</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00109">AbstractContinuumMechanicsSolver.hpp:109</a></div></div>
 <div class="ttc" id="aclassAbstractContinuumMechanicsSolver_html_aa23997bc213ecd2b1e4addf4918ccb69"><div class="ttname"><a href="classAbstractContinuumMechanicsSolver.html#aa23997bc213ecd2b1e4addf4918ccb69">AbstractContinuumMechanicsSolver::mrProblemDefinition</a></div><div class="ttdeci">ContinuumMechanicsProblemDefinition&lt; DIM &gt; &amp; mrProblemDefinition</div><div class="ttdef"><b>Definition</b> <a href="AbstractContinuumMechanicsSolver_8hpp_source.html#l00100">AbstractContinuumMechanicsSolver.hpp:100</a></div></div>
