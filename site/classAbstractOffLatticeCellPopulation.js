@@ -9,6 +9,8 @@ var classAbstractOffLatticeCellPopulation =
     [ "GetDampingConstantMutant", "classAbstractOffLatticeCellPopulation.html#a580593a821959f6c9c199aeef0f9410b", null ],
     [ "GetDampingConstantNormal", "classAbstractOffLatticeCellPopulation.html#a8bdfa9edea5f774f01d8c5450161045a", null ],
     [ "OutputCellPopulationParameters", "classAbstractOffLatticeCellPopulation.html#aa1aad48d275704ee775e4113f8d0adbe", null ],
+    [ "rGetModifiableNodePairs", "classAbstractOffLatticeCellPopulation.html#a42e546a1a5b52693bb91d56d2f2f226d", null ],
+    [ "rGetNodePairs", "classAbstractOffLatticeCellPopulation.html#aefa4471bf054a8cdd1bb3523117c5de4", null ],
     [ "serialize", "classAbstractOffLatticeCellPopulation.html#abdb9893b32faa94ecf34a6bdd13e1fe9", null ],
     [ "SetAbsoluteMovementThreshold", "classAbstractOffLatticeCellPopulation.html#ac5ca53b3e7ca6d556bfec02f0897eb07", null ],
     [ "SetDampingConstantMutant", "classAbstractOffLatticeCellPopulation.html#a09625b453b96ed9940578f97cd2d526a", null ],
@@ -18,5 +20,6 @@ var classAbstractOffLatticeCellPopulation =
     [ "boost::serialization::access", "classAbstractOffLatticeCellPopulation.html#ac98d07dd8f7b70e16ccb9a01abf56b9c", null ],
     [ "mAbsoluteMovementThreshold", "classAbstractOffLatticeCellPopulation.html#ae3ebc9d47f0dd94a38276d4cbd9d63c1", null ],
     [ "mDampingConstantMutant", "classAbstractOffLatticeCellPopulation.html#a8a7b63fd96215dddf76b9b4132ffd7f7", null ],
-    [ "mDampingConstantNormal", "classAbstractOffLatticeCellPopulation.html#a36a03b38fcbcaf87e99a63ce89e335c5", null ]
+    [ "mDampingConstantNormal", "classAbstractOffLatticeCellPopulation.html#a36a03b38fcbcaf87e99a63ce89e335c5", null ],
+    [ "mNodePairs", "classAbstractOffLatticeCellPopulation.html#a1e56386264e85d3b813642f439bdc43a", null ]
 ];

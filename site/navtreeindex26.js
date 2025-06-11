@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"classFibreWriter.html#ac7ff107d4a15f5275b5afd57eb21787b":[1,0,350,8],
+"classFileComparison.html":[1,0,351],
 "classFileComparison.html#a1432a16d1f3fc6479273f833cfb2be95":[1,0,351,3],
 "classFileComparison.html#a3156894ce8fdccd8908752e15a8b6aa1":[1,0,351,5],
 "classFileComparison.html#a36ae524a958d9dac1a760d3307b9139a":[1,0,351,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "classGenericEventHandler.html#a53c1131f103362cd7c36baa9074df6c8":[1,0,369,24],
 "classGenericEventHandler.html#a577411ec2a71cff5c609e229e896bff6":[1,0,369,23],
 "classGenericEventHandler.html#a60baf9103fd71084e4cacd0986154d85":[1,0,369,20],
-"classGenericEventHandler.html#a672ca619aee741d4c688c607d3975794":[1,0,369,14],
-"classGenericEventHandler.html#a6fc72541da1f14bf62a1cfe476e058e5":[1,0,369,18],
-"classGenericEventHandler.html#a71c6d67407305ba7c60c8f24006bfd84":[1,0,369,12]
+"classGenericEventHandler.html#a672ca619aee741d4c688c607d3975794":[1,0,369,14]
 };

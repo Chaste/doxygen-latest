@@ -1,6 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"classPottsBasedCellPopulation.html#aaa7367220e5d3045ed30a9c8c0277cce":[1,0,532,39],
 "classPottsBasedCellPopulation.html#ab53b95eca6155773c424057c7b371b45":[1,0,532,30],
 "classPottsBasedCellPopulation.html#abc1a54b9e6b9be5547fd50a0dc961ec6":[1,0,532,22],
 "classPottsBasedCellPopulation.html#abc7545c525730ef037e9db508523a1b4":[1,0,532,23],
@@ -249,5 +248,6 @@ var NAVTREEINDEX38 =
 "classRampedQuarterStimulusCellFactory.html#a095b9f48a79fa7d5afa8506d7738a173":[1,0,551,1],
 "classRampedQuarterStimulusCellFactory.html#a12b4975dd3ab40562721c4470e470e18":[1,0,551,3],
 "classRampedQuarterStimulusCellFactory.html#a199d5317e1d4f4cd0b00f1f3f9177ea7":[1,0,551,0],
-"classRampedQuarterStimulusCellFactory.html#a3e212d8f3ac160f817a3b57014bc0299":[1,0,551,2]
+"classRampedQuarterStimulusCellFactory.html#a3e212d8f3ac160f817a3b57014bc0299":[1,0,551,2],
+"classRampedQuarterStimulusCellFactory.html#a65eb42344ea60594885bbb394e342c29":[1,0,551,4]
 };

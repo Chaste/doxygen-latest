@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"classColumnDataWriter.html#a139046325901aa5e772f38fa42669c02":[1,0,246,28],
+"classColumnDataWriter.html#a184ffc62c99d59c01fdccab42159bab2":[1,0,246,6],
 "classColumnDataWriter.html#a19cd2ca80e86757522db40aa90e281cd":[1,0,246,23],
 "classColumnDataWriter.html#a1ae431b50cba5434369e921b5eea7537":[1,0,246,3],
 "classColumnDataWriter.html#a1b98b554a215c272054e29487a6a8b45":[1,0,246,44],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "classCorriasBuistICCModified.html#a5204654561aaaadeebe4868997af8af7":[1,0,261,90],
 "classCorriasBuistICCModified.html#a53815728588505e2a5219ab317866414":[1,0,261,95],
 "classCorriasBuistICCModified.html#a54870cf6dd94712686e5c16e3b331aff":[1,0,261,51],
-"classCorriasBuistICCModified.html#a5779ed38d281b3f1a07175f064a60b23":[1,0,261,89],
-"classCorriasBuistICCModified.html#a5827a6d0d0cd3297d83b424e680f0471":[1,0,261,12],
-"classCorriasBuistICCModified.html#a599f352c68216f3d4e892a73bde9bdbe":[1,0,261,70]
+"classCorriasBuistICCModified.html#a5779ed38d281b3f1a07175f064a60b23":[1,0,261,89]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX36 =
 {
-"classObsoleteBoxCollection.html#a10ac4f1acba851042908dd226d81fc1c":[1,0,488,18],
 "classObsoleteBoxCollection.html#a1772f3c35a84da7fdddc71590d2b5d46":[1,0,488,20],
 "classObsoleteBoxCollection.html#a2102f65f76f759c81d4f86632c7b2808":[1,0,488,16],
 "classObsoleteBoxCollection.html#a307efe6c2209e77cf3273a2b3013ef1d":[1,0,488,21],
@@ -249,5 +248,6 @@ var NAVTREEINDEX36 =
 "classParabolicGrowingDomainPdeModifier.html#aa5e3d865a28c22cd04416ec5d679ff6d":[1,0,510,1],
 "classParabolicGrowingDomainPdeModifier.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,510,8],
 "classParabolicGrowingDomainPdeModifier.html#ad6b614c77de02de277caa1ce39dfc398":[1,0,510,7],
-"classParallelCellsGenerator.html":[1,0,511]
+"classParallelCellsGenerator.html":[1,0,511],
+"classParallelCellsGenerator.html#a9f5c57354c8feb29ec73083211b35bfa":[1,0,511,1]
 };

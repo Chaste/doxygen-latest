@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"classMonodomainCorrectionTermAssembler.html":[1,0,445],
 "classMonodomainCorrectionTermAssembler.html#ab1343270524fec327cc418aceddb9dae":[1,0,445,1],
 "classMonodomainCorrectionTermAssembler.html#ab57939656b50bf19b987802cfcba83a7":[1,0,445,0],
 "classMonodomainProblem.html":[1,0,446],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "classMutableVertexMesh.html#ab87e757751f91b894868788c765a6772":[1,0,461,39],
 "classMutableVertexMesh.html#abd1cca7cfb9c426cba93d74376462bbb":[1,0,461,3],
 "classMutableVertexMesh.html#abd3ec24fdc253af40f9e9b5ec071647d":[1,0,461,64],
-"classMutableVertexMesh.html#abd79039d13f4942fd411b280579b2fdc":[1,0,461,25],
-"classMutableVertexMesh.html#abfc06c628af11523af8513677cb720db":[1,0,461,15]
+"classMutableVertexMesh.html#abd79039d13f4942fd411b280579b2fdc":[1,0,461,25]
 };

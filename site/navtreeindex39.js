@@ -1,6 +1,5 @@
 var NAVTREEINDEX39 =
 {
-"classRampedQuarterStimulusCellFactory.html#a65eb42344ea60594885bbb394e342c29":[1,0,551,4],
 "classRampedQuarterStimulusCellFactory.html#a9bbc0c93bcfc84b5c459102924312924":[1,0,551,5],
 "classRandomCaSwitchingUpdateRule.html":[1,0,552],
 "classRandomCaSwitchingUpdateRule.html#a157925611b68508a410988a1f5596039":[1,0,552,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX39 =
 "classSimpleStimulus.html#a993149004e872660febbccbb7088cfcd":[1,0,579,0],
 "classSimpleStimulus.html#abaef65eb7483e653bb640b426d3825bf":[1,0,579,4],
 "classSimpleStimulus.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,579,5],
-"classSimpleStimulus.html#ae50c0659be30833aa51ebb12c05571de":[1,0,579,2]
+"classSimpleStimulus.html#ae50c0659be30833aa51ebb12c05571de":[1,0,579,2],
+"classSimpleStimulus.html#afaf1a7806694034efe415eaa7cc87688":[1,0,579,8]
 };

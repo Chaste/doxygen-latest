@@ -20,7 +20,6 @@ var classAbstractCentreBasedCellPopulation =
     [ "IsParticle", "classAbstractCentreBasedCellPopulation.html#a4a71e1e20523cca58f59609d8df06477", null ],
     [ "MarkSpring", "classAbstractCentreBasedCellPopulation.html#a02f7a2a96fe4833c236e8332d9980305", null ],
     [ "OutputCellPopulationParameters", "classAbstractCentreBasedCellPopulation.html#a1da887a81e9d8633d30bc2ac76c7d681", null ],
-    [ "rGetNodePairs", "classAbstractCentreBasedCellPopulation.html#a63f2ba1d9d93f7f1e39b84e88f851d4d", null ],
     [ "serialize", "classAbstractCentreBasedCellPopulation.html#a56ff37cdba876d6b825480ab822504a6", null ],
     [ "SetCentreBasedDivisionRule", "classAbstractCentreBasedCellPopulation.html#a510c4e0f509057f9ee590465ec5462fa", null ],
     [ "SetMeinekeDivisionSeparation", "classAbstractCentreBasedCellPopulation.html#a61fa372186406a627c7724dd716a10f8", null ],

@@ -1,6 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"classSimpleStimulus.html#afaf1a7806694034efe415eaa7cc87688":[1,0,579,8],
 "classSimpleTargetAreaModifier.html":[1,0,580],
 "classSimpleTargetAreaModifier.html#a2bf8998878b5f09cd61fc988f8c1446c":[1,0,580,0],
 "classSimpleTargetAreaModifier.html#a4d7624d20c1ca57967ce0979575b5fcd":[1,0,580,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX40 =
 "classStreeterFibreGenerator.html#a80bea8729448b483e63d5f30060cda87":[1,0,603,15],
 "classStreeterFibreGenerator.html#a83f635a6cecb79b90d353db465973ab2":[1,0,603,6],
 "classStreeterFibreGenerator.html#aabc2bf05c034dafdece37bd3257a8336":[1,0,603,3],
-"classStreeterFibreGenerator.html#ab8cd648ea34d3481bbe5d6dc71810bcb":[1,0,603,0]
+"classStreeterFibreGenerator.html#ab8cd648ea34d3481bbe5d6dc71810bcb":[1,0,603,0],
+"classStreeterFibreGenerator.html#adf7fb02d11afb8498f09576f30bfdd96":[1,0,603,8]
 };
