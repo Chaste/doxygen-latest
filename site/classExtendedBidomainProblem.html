@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::30aa2d3ab230bc5dca36a9939ca5c8be91c2db8d</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::e55523dfb8f4521b3d8442e4120b78fb09c1b6f7</span>
    </div>
   </td>
  </tr>
@@ -953,7 +953,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>currently, the value of phi_e at the fixed nodes cannot be set to be anything other than zero. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>turn this into an exception if the user calls this twice... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>turn this into an exception if the user calls this twice... </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ExtendedBidomainProblem_8cpp_source.html#l00279">279</a> of file <a class="el" href="ExtendedBidomainProblem_8cpp_source.html">ExtendedBidomainProblem.cpp</a>.</p>
 
@@ -1165,7 +1165,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Write one timestep of output data to the primary results file. The solution of the problem is in terms of V_1, V_2 and Phi_e (i.e., transmembrane potentials of the two cells plus extracellular potential). It then writes to file V_1, V_2 and Phi_e.</p>
-<p>It also writes any extra variable (defined by <a class="el" href="classHeartConfig.html">HeartConfig</a>). Note that it does the job by calling the method in the parent class. This implies that the extra variable must be in the first cell (not the second) because the generic method to write extra variables only looks into the first cell factory. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>write a specific method for extended problems that looks in both cell factories</dd></dl>
+<p>It also writes any extra variable (defined by <a class="el" href="classHeartConfig.html">HeartConfig</a>). Note that it does the job by calling the method in the parent class. This implies that the extra variable must be in the first cell (not the second) because the generic method to write extra variables only looks into the first cell factory. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>write a specific method for extended problems that looks in both cell factories</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">time</td><td>the current time </td></tr>
@@ -1173,7 +1173,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> DIM&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>write a specific method for this class </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>write a specific method for this class </dd></dl>
 
 <p>Implements <a class="el" href="classAbstractCardiacProblem.html#aa0d771477eb7e72350820dd71125b91c">AbstractCardiacProblem&lt; DIM, DIM, 3 &gt;</a>.</p>
 
