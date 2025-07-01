@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::8eb7e01b901e291f621c77ee47157b54e9cc197f</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::7863c17e67a28851fcb3dc717d1749e550b17a60</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('CvodeContextManager_8hpp_source.html',
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">class </span>CvodeContextManager</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    sundials::Context mSundialsContext;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    SUNContext mSundialsContext;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    CvodeContextManager();</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
@@ -123,15 +123,17 @@ $(document).ready(function(){initNavTree('CvodeContextManager_8hpp_source.html',
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    CvodeContextManager&amp; operator=(<span class="keyword">const</span> CvodeContextManager&amp;) = <span class="keyword">delete</span>; <span class="comment">// disable copy assignment</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    sundials::Context&amp; GetSundialsContext();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    SUNContext&amp; GetSundialsContext();</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">static</span> CvodeContextManager* Instance();</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif </span><span class="comment">// CHASTE_SUNDIALS_VERSION &gt;= 60000</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif </span><span class="comment">// CHASTE_CVODE</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif </span><span class="comment">// _CVODECONTEXT_HPP_</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    ~CvodeContextManager();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif </span><span class="comment">// CHASTE_SUNDIALS_VERSION &gt;= 60000</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif </span><span class="comment">// CHASTE_CVODE</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#endif </span><span class="comment">// _CVODECONTEXT_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
