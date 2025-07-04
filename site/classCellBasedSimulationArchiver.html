@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Chaste: CellBasedSimulationArchiver&lt; ELEMENT_DIM, SIM, SPACE_DIM &gt; Class Template Reference</title>
+<title>Chaste: CellBasedSimulationArchiver&lt; ELEMENT_DIM, SIM, SPACE_DIM, INPUT_ARCHIVE_TYPE, OUTPUT_ARCHIVE_TYPE &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::7863c17e67a28851fcb3dc717d1749e550b17a60</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::55a4425755baea6ba62bb0acadb0aebd7f12fcd8</span>
    </div>
   </td>
  </tr>
@@ -63,45 +63,46 @@ $(document).ready(function(){initNavTree('classCellBasedSimulationArchiver.html'
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classCellBasedSimulationArchiver-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">CellBasedSimulationArchiver&lt; ELEMENT_DIM, SIM, SPACE_DIM &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">CellBasedSimulationArchiver&lt; ELEMENT_DIM, SIM, SPACE_DIM, INPUT_ARCHIVE_TYPE, OUTPUT_ARCHIVE_TYPE &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="CellBasedSimulationArchiver_8hpp_source.html">CellBasedSimulationArchiver.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for CellBasedSimulationArchiver&lt; ELEMENT_DIM, SIM, SPACE_DIM &gt;:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for CellBasedSimulationArchiver&lt; ELEMENT_DIM, SIM, SPACE_DIM, INPUT_ARCHIVE_TYPE, OUTPUT_ARCHIVE_TYPE &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCellBasedSimulationArchiver__coll__graph.svg" width="263" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCellBasedSimulationArchiver__coll__graph.svg" width="215" height="140"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a01a88bd0c374687a96c0d999c876382d" id="r_a01a88bd0c374687a96c0d999c876382d"><td class="memItemLeft" align="right" valign="top">static SIM *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCellBasedSimulationArchiver.html#a01a88bd0c374687a96c0d999c876382d">Load</a> (const std::string &amp;rArchiveDirectory, const <a class="el" href="classdouble.html">double</a> &amp;rTimeStamp)</td></tr>
-<tr class="separator:a01a88bd0c374687a96c0d999c876382d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad62caf3ee793476e1704be56c5cc5d4" id="r_aad62caf3ee793476e1704be56c5cc5d4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCellBasedSimulationArchiver.html#aad62caf3ee793476e1704be56c5cc5d4">Save</a> (SIM *pSim)</td></tr>
-<tr class="separator:aad62caf3ee793476e1704be56c5cc5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b99ed26567f8094cc189e80006a009" id="r_a11b99ed26567f8094cc189e80006a009"><td class="memItemLeft" align="right" valign="top">static SIM *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCellBasedSimulationArchiver.html#a11b99ed26567f8094cc189e80006a009">Load</a> (const std::string &amp;rArchiveDirectory, const <a class="el" href="classdouble.html">double</a> &amp;rTimeStamp)</td></tr>
+<tr class="separator:a11b99ed26567f8094cc189e80006a009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6baa960fcc97acadca430b74cd215ed8" id="r_a6baa960fcc97acadca430b74cd215ed8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCellBasedSimulationArchiver.html#a6baa960fcc97acadca430b74cd215ed8">Save</a> (SIM *pSim)</td></tr>
+<tr class="separator:a6baa960fcc97acadca430b74cd215ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, class SIM, <a class="el" href="classunsigned.html">unsigned</a> SPACE_DIM = ELEMENT_DIM&gt;<br />
-class CellBasedSimulationArchiver&lt; ELEMENT_DIM, SIM, SPACE_DIM &gt;</div><p><a class="el" href="classCellBasedSimulationArchiver.html">CellBasedSimulationArchiver</a> handles the checkpointing (saving and loading) of all the various <a class="el" href="classAbstractCellBasedSimulation.html">AbstractCellBasedSimulation</a> objects. It has no explicit constructor (just uses a default one) and no member variables. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, class SIM, <a class="el" href="classunsigned.html">unsigned</a> SPACE_DIM = ELEMENT_DIM, class INPUT_ARCHIVE_TYPE = boost::archive::text_iarchive, class OUTPUT_ARCHIVE_TYPE = boost::archive::text_oarchive&gt;<br />
+class CellBasedSimulationArchiver&lt; ELEMENT_DIM, SIM, SPACE_DIM, INPUT_ARCHIVE_TYPE, OUTPUT_ARCHIVE_TYPE &gt;</div><p><a class="el" href="classCellBasedSimulationArchiver.html">CellBasedSimulationArchiver</a> handles the checkpointing (saving and loading) of all the various <a class="el" href="classAbstractCellBasedSimulation.html">AbstractCellBasedSimulation</a> objects. It has no explicit constructor (just uses a default one) and no member variables.</p>
+<p>The template options for INPUT_ARCHIVE_TYPE and OUTPUT_ARCHIVE_TYPE can (in theory) be set independently but should be chosen accordingly. To help with this, below, we define type aliases to set both archive types for text and binary I/O respectively. Default settings are chosen such that existing implementations depending on text format as default are kept intact. </p>
 
-<p class="definition">Definition at line <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html#l00059">59</a> of file <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html">CellBasedSimulationArchiver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html#l00063">63</a> of file <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html">CellBasedSimulationArchiver.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a01a88bd0c374687a96c0d999c876382d" name="a01a88bd0c374687a96c0d999c876382d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01a88bd0c374687a96c0d999c876382d">&#9670;&#160;</a></span>Load()</h2>
+<a id="a11b99ed26567f8094cc189e80006a009" name="a11b99ed26567f8094cc189e80006a009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b99ed26567f8094cc189e80006a009">&#9670;&#160;</a></span>Load()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, class SIM , <a class="el" href="classunsigned.html">unsigned</a> SPACE_DIM&gt; </div>
+template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, class SIM , <a class="el" href="classunsigned.html">unsigned</a> SPACE_DIM, class INPUT_ARCHIVE_TYPE , class OUTPUT_ARCHIVE_TYPE &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SIM * <a class="el" href="classCellBasedSimulationArchiver.html">CellBasedSimulationArchiver</a>&lt; ELEMENT_DIM, SIM, SPACE_DIM &gt;::Load </td>
+          <td class="memname">SIM * <a class="el" href="classCellBasedSimulationArchiver.html">CellBasedSimulationArchiver</a>&lt; ELEMENT_DIM, SIM, SPACE_DIM, INPUT_ARCHIVE_TYPE, OUTPUT_ARCHIVE_TYPE &gt;::Load </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>rArchiveDirectory</em>, </td>
@@ -136,25 +137,25 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, cl
 <p>Find the right archive (and mesh) to load. The files are contained within the 'archive' folder in rArchiveDirectory, with the archive itself called 'cell_population_sim_at_time_`rTimeStamp`.arch'. The path to this file is returned.</p>
 <p>The path to the mesh is stored in <a class="el" href="classArchiveLocationInfo.html">ArchiveLocationInfo</a> for use by the CellPopulation de-serialization routines.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html#l00090">90</a> of file <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html">CellBasedSimulationArchiver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html#l00093">93</a> of file <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html">CellBasedSimulationArchiver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="FileFinder_8hpp_source.html#l00057">RelativeTo::ChasteTestOutput</a>, <a class="el" href="ArchiveOpener_8hpp_source.html#l00098">ArchiveOpener&lt; Archive, Stream &gt;::GetCommonArchive()</a>, and <a class="el" href="ArchiveLocationInfo_8cpp_source.html#l00046">ArchiveLocationInfo::SetMeshPathname()</a>.</p>
+<p class="reference">References <a class="el" href="FileFinder_8hpp_source.html#l00057">RelativeTo::ChasteTestOutput</a>, <a class="el" href="classArchiveOpener.html#a6ffbb79136758e3c1fdab38d57ce2959">ArchiveOpener&lt; Archive, Stream &gt;::GetCommonArchive()</a>, and <a class="el" href="ArchiveLocationInfo_8cpp_source.html#l00046">ArchiveLocationInfo::SetMeshPathname()</a>.</p>
 
 </div>
 </div>
-<a id="aad62caf3ee793476e1704be56c5cc5d4" name="aad62caf3ee793476e1704be56c5cc5d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad62caf3ee793476e1704be56c5cc5d4">&#9670;&#160;</a></span>Save()</h2>
+<a id="a6baa960fcc97acadca430b74cd215ed8" name="a6baa960fcc97acadca430b74cd215ed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6baa960fcc97acadca430b74cd215ed8">&#9670;&#160;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, class SIM , <a class="el" href="classunsigned.html">unsigned</a> SPACE_DIM&gt; </div>
+template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, class SIM , <a class="el" href="classunsigned.html">unsigned</a> SPACE_DIM, class INPUT_ARCHIVE_TYPE , class OUTPUT_ARCHIVE_TYPE &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classCellBasedSimulationArchiver.html">CellBasedSimulationArchiver</a>&lt; ELEMENT_DIM, SIM, SPACE_DIM &gt;::Save </td>
+          <td class="memname">void <a class="el" href="classCellBasedSimulationArchiver.html">CellBasedSimulationArchiver</a>&lt; ELEMENT_DIM, SIM, SPACE_DIM, INPUT_ARCHIVE_TYPE, OUTPUT_ARCHIVE_TYPE &gt;::Save </td>
           <td>(</td>
           <td class="paramtype">SIM *&#160;</td>
           <td class="paramname"><em>pSim</em></td><td>)</td>
@@ -177,9 +178,9 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, cl
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html#l00118">118</a> of file <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html">CellBasedSimulationArchiver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html#l00121">121</a> of file <a class="el" href="CellBasedSimulationArchiver_8hpp_source.html">CellBasedSimulationArchiver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="FileFinder_8hpp_source.html#l00057">RelativeTo::ChasteTestOutput</a>, <a class="el" href="ArchiveOpener_8hpp_source.html#l00098">ArchiveOpener&lt; Archive, Stream &gt;::GetCommonArchive()</a>, <a class="el" href="SimulationTime_8cpp_source.html#l00092">SimulationTime::GetTime()</a>, <a class="el" href="SimulationTime_8cpp_source.html#l00046">SimulationTime::Instance()</a>, <a class="el" href="SimulationTime_8cpp_source.html#l00136">SimulationTime::IsStartTimeSetUp()</a>, and <a class="el" href="ArchiveLocationInfo_8cpp_source.html#l00069">ArchiveLocationInfo::SetMeshFilename()</a>.</p>
+<p class="reference">References <a class="el" href="FileFinder_8hpp_source.html#l00057">RelativeTo::ChasteTestOutput</a>, <a class="el" href="classArchiveOpener.html#a6ffbb79136758e3c1fdab38d57ce2959">ArchiveOpener&lt; Archive, Stream &gt;::GetCommonArchive()</a>, <a class="el" href="SimulationTime_8cpp_source.html#l00092">SimulationTime::GetTime()</a>, <a class="el" href="SimulationTime_8cpp_source.html#l00046">SimulationTime::Instance()</a>, <a class="el" href="SimulationTime_8cpp_source.html#l00136">SimulationTime::IsStartTimeSetUp()</a>, and <a class="el" href="ArchiveLocationInfo_8cpp_source.html#l00069">ArchiveLocationInfo::SetMeshFilename()</a>.</p>
 
 </div>
 </div>

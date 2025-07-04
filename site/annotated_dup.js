@@ -165,6 +165,8 @@ var annotated_dup =
     [ "ApoptoticCellProperty", "classApoptoticCellProperty.html", "classApoptoticCellProperty" ],
     [ "ArchiveLocationInfo", "classArchiveLocationInfo.html", "classArchiveLocationInfo" ],
     [ "ArchiveOpener", "classArchiveOpener.html", "classArchiveOpener" ],
+    [ "ArchiveOpener< InputArchive, std::ifstream >", "classArchiveOpener_3_01InputArchive_00_01std_1_1ifstream_01_4.html", "classArchiveOpener_3_01InputArchive_00_01std_1_1ifstream_01_4" ],
+    [ "ArchiveOpener< OutputArchive, std::ofstream >", "classArchiveOpener_3_01OutputArchive_00_01std_1_1ofstream_01_4.html", "classArchiveOpener_3_01OutputArchive_00_01std_1_1ofstream_01_4" ],
     [ "AveragedSourceEllipticPde", "classAveragedSourceEllipticPde.html", "classAveragedSourceEllipticPde" ],
     [ "AveragedSourceParabolicPde", "classAveragedSourceParabolicPde.html", "classAveragedSourceParabolicPde" ],
     [ "AxisymmetricConductivityTensors", "classAxisymmetricConductivityTensors.html", "classAxisymmetricConductivityTensors" ],

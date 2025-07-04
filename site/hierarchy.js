@@ -320,6 +320,8 @@ var hierarchy =
     ] ],
     [ "ArchiveLocationInfo", "classArchiveLocationInfo.html", null ],
     [ "ArchiveOpener< Archive, Stream >", "classArchiveOpener.html", null ],
+    [ "ArchiveOpener< InputArchive, std::ifstream >", "classArchiveOpener_3_01InputArchive_00_01std_1_1ifstream_01_4.html", null ],
+    [ "ArchiveOpener< OutputArchive, std::ofstream >", "classArchiveOpener_3_01OutputArchive_00_01std_1_1ofstream_01_4.html", null ],
     [ "badsubseg", "structbadsubseg.html", null ],
     [ "badtriang", "structbadtriang.html", null ],
     [ "behavior", "structbehavior.html", null ],
@@ -587,7 +589,7 @@ var hierarchy =
     [ "CardiacNewtonSolver< SIZE, CELLTYPE >", "classCardiacNewtonSolver.html", null ],
     [ "CardiacSimulation", "classCardiacSimulation.html", null ],
     [ "CardiacSimulationArchiver< PROBLEM_CLASS >", "classCardiacSimulationArchiver.html", null ],
-    [ "CellBasedSimulationArchiver< ELEMENT_DIM, SIM, SPACE_DIM >", "classCellBasedSimulationArchiver.html", null ],
+    [ "CellBasedSimulationArchiver< ELEMENT_DIM, SIM, SPACE_DIM, INPUT_ARCHIVE_TYPE, OUTPUT_ARCHIVE_TYPE >", "classCellBasedSimulationArchiver.html", null ],
     [ "CellCycleModelOdeHandler", "classCellCycleModelOdeHandler.html", [
       [ "AbstractOdeBasedCellCycleModel", "classAbstractOdeBasedCellCycleModel.html", [
         [ "TysonNovakCellCycleModel", "classTysonNovakCellCycleModel.html", null ]

@@ -1,5 +1,5 @@
 var classCellBasedSimulationArchiver =
 [
-    [ "Load", "classCellBasedSimulationArchiver.html#a01a88bd0c374687a96c0d999c876382d", null ],
-    [ "Save", "classCellBasedSimulationArchiver.html#aad62caf3ee793476e1704be56c5cc5d4", null ]
+    [ "Load", "classCellBasedSimulationArchiver.html#a11b99ed26567f8094cc189e80006a009", null ],
+    [ "Save", "classCellBasedSimulationArchiver.html#a6baa960fcc97acadca430b74cd215ed8", null ]
 ];
