@@ -3,7 +3,7 @@ var classMixedDimensionMesh =
     [ "CableElementIterator", "classMixedDimensionMesh.html#a17599d23a19a5b1c1f88433a90ecdd8d", null ],
     [ "CableRangeAtNode", "classMixedDimensionMesh.html#a58e9ca798c8c346b5561286a74c21700", null ],
     [ "NodeCableIterator", "classMixedDimensionMesh.html#aa68b439d338846e781b02d7663bf8eb5", null ],
-    [ "MixedDimensionMesh", "classMixedDimensionMesh.html#aba6e2fe3c24405a3cdd4c8d52c58a419", null ],
+    [ "MixedDimensionMesh", "classMixedDimensionMesh.html#a6101f5c2f8e1c3e2bef50ce881b0c791", null ],
     [ "~MixedDimensionMesh", "classMixedDimensionMesh.html#a93dde281adbd9f8491ee18508d1e0614", null ],
     [ "CalculateDesignatedOwnershipOfCableElement", "classMixedDimensionMesh.html#ab956068860576f182ac404f230de59b6", null ],
     [ "ConstructFromMeshReader", "classMixedDimensionMesh.html#adc1ca9553ffe199068089bd5a212906c", null ],

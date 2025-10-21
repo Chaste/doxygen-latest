@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::65df20cbca8cf03ef4e5c682b963d791580983a4</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::cfa5bb492ebc7335956b168a60a0f0a2d40e9025</span>
    </div>
   </td>
  </tr>
@@ -107,8 +107,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aba6e2fe3c24405a3cdd4c8d52c58a419" id="r_aba6e2fe3c24405a3cdd4c8d52c58a419"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMixedDimensionMesh.html#aba6e2fe3c24405a3cdd4c8d52c58a419">MixedDimensionMesh</a> (<a class="el" href="structDistributedTetrahedralMeshPartitionType.html#a0db0b35cb269eb0e00b9f124fbc28e45">DistributedTetrahedralMeshPartitionType::type</a> partitioningMethod=DistributedTetrahedralMeshPartitionType::METIS_LIBRARY)</td></tr>
-<tr class="separator:aba6e2fe3c24405a3cdd4c8d52c58a419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6101f5c2f8e1c3e2bef50ce881b0c791" id="r_a6101f5c2f8e1c3e2bef50ce881b0c791"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMixedDimensionMesh.html#a6101f5c2f8e1c3e2bef50ce881b0c791">MixedDimensionMesh</a> (<a class="el" href="structDistributedTetrahedralMeshPartitionType.html#a0db0b35cb269eb0e00b9f124fbc28e45">DistributedTetrahedralMeshPartitionType::type</a> partitioningMethod=DistributedTetrahedralMeshPartitionType::PARMETIS_LIBRARY)</td></tr>
+<tr class="separator:a6101f5c2f8e1c3e2bef50ce881b0c791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93dde281adbd9f8491ee18508d1e0614" id="r_a93dde281adbd9f8491ee18508d1e0614"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMixedDimensionMesh.html#a93dde281adbd9f8491ee18508d1e0614">~MixedDimensionMesh</a> ()</td></tr>
 <tr class="separator:a93dde281adbd9f8491ee18508d1e0614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc1ca9553ffe199068089bd5a212906c" id="r_adc1ca9553ffe199068089bd5a212906c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMixedDimensionMesh.html#adc1ca9553ffe199068089bd5a212906c">ConstructFromMeshReader</a> (<a class="el" href="classAbstractMeshReader.html">AbstractMeshReader</a>&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMeshReader)</td></tr>
@@ -413,8 +413,8 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aba6e2fe3c24405a3cdd4c8d52c58a419" name="aba6e2fe3c24405a3cdd4c8d52c58a419"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba6e2fe3c24405a3cdd4c8d52c58a419">&#9670;&#160;</a></span>MixedDimensionMesh()</h2>
+<a id="a6101f5c2f8e1c3e2bef50ce881b0c791" name="a6101f5c2f8e1c3e2bef50ce881b0c791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6101f5c2f8e1c3e2bef50ce881b0c791">&#9670;&#160;</a></span>MixedDimensionMesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,7 +425,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
           <td class="memname"><a class="el" href="classMixedDimensionMesh.html">MixedDimensionMesh</a>&lt; ELEMENT_DIM, SPACE_DIM &gt;<a class="el" href="classMixedDimensionMesh.html">::MixedDimensionMesh</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structDistributedTetrahedralMeshPartitionType.html#a0db0b35cb269eb0e00b9f124fbc28e45">DistributedTetrahedralMeshPartitionType::type</a>&#160;</td>
-          <td class="paramname"><em>partitioningMethod</em> = <code>DistributedTetrahedralMeshPartitionType::METIS_LIBRARY</code></td><td>)</td>
+          <td class="paramname"><em>partitioningMethod</em> = <code>DistributedTetrahedralMeshPartitionType::PARMETIS_LIBRARY</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -433,7 +433,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 <p>Constructor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">partitioningMethod</td><td>defaults to METIS_LIBRARY, but in 1-D is always overridden in this constructor to be the DUMB partition </td></tr>
+    <tr><td class="paramname">partitioningMethod</td><td>defaults to PARMETIS_LIBRARY, but in 1-D is always overridden in this constructor to be the DUMB partition </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,7 +531,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="MixedDimensionMesh_8cpp_source.html#l00055">55</a> of file <a class="el" href="MixedDimensionMesh_8cpp_source.html">MixedDimensionMesh.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="DistributedTetrahedralMesh_8cpp_source.html#l00232">DistributedTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ConstructFromMeshReader()</a>.</p>
+<p class="reference">References <a class="el" href="DistributedTetrahedralMesh_8cpp_source.html#l00224">DistributedTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt;::ConstructFromMeshReader()</a>.</p>
 
 </div>
 </div>
