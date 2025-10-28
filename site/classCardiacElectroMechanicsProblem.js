@@ -28,6 +28,7 @@ var classCardiacElectroMechanicsProblem =
     [ "mNumTimestepsToOutputDeformationGradientsAndStress", "classCardiacElectroMechanicsProblem.html#afcebe90e7348f69c0330237e5b778d1c", null ],
     [ "mOutputDirectory", "classCardiacElectroMechanicsProblem.html#a8b22c9b496c1e022d1b3f56ba1e4332c", null ],
     [ "mpCardiacMechSolver", "classCardiacElectroMechanicsProblem.html#a974a0f2fd714ee68461a356f293e7b5d", null ],
+    [ "mpCardiacVtkWriter", "classCardiacElectroMechanicsProblem.html#ab41794267dabd24f7aa174164d516fd9", null ],
     [ "mpElectricsMesh", "classCardiacElectroMechanicsProblem.html#a1af86a603d78e3a1a8257f80ed9c12b2", null ],
     [ "mpElectricsProblem", "classCardiacElectroMechanicsProblem.html#af3b5edfa3478fea7127c1f7cec772f42", null ],
     [ "mpMechanicsMesh", "classCardiacElectroMechanicsProblem.html#a1bcc1826f5bdf398c4c60689bc13bb1b", null ],

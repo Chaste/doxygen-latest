@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::cfa5bb492ebc7335956b168a60a0f0a2d40e9025</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::b29f2bd0cf5edb53ef54baed985fd80529544064</span>
    </div>
   </td>
  </tr>
@@ -109,28 +109,48 @@ $(document).ready(function(){initNavTree('VoltageInterpolaterOntoMechanicsMesh_8
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;<a class="code" href="UblasIncludes_8hpp.html">UblasIncludes.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;TetrahedralMesh.hpp&quot;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;QuadraticMesh.hpp&quot;</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00052" data-start="{" data-end="};">
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classVoltageInterpolaterOntoMechanicsMesh.html">   52</a></span><span class="keyword">class </span><a class="code hl_class" href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh</a></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_class" href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh</a>(<a class="code hl_class" href="classTetrahedralMesh.html">TetrahedralMesh&lt;DIM,DIM&gt;</a>&amp; rElectricsMesh,</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                                         <a class="code hl_class" href="classQuadraticMesh.html">QuadraticMesh&lt;DIM&gt;</a>&amp; rMechanicsMesh,</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                         std::vector&lt;std::string&gt;&amp; rVariableNames,</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                                         std::string directory,</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                                         std::string inputFileNamePrefix);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;ReplicatableVector.hpp&quot;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;TetrahedralMesh.hpp&quot;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &quot;QuadraticMesh.hpp&quot;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &quot;FineCoarseMeshPair.hpp&quot;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classVoltageInterpolaterOntoMechanicsMesh.html">   55</a></span><span class="keyword">class </span><a class="code hl_class" href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh</a></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classVoltageInterpolaterOntoMechanicsMesh.html#abc62af93b38024a48e9a9f5d8ffd2d45">   61</a></span>    <a class="code hl_class" href="classTetrahedralMesh.html">TetrahedralMesh&lt;DIM,DIM&gt;</a>&amp; <a class="code hl_variable" href="classVoltageInterpolaterOntoMechanicsMesh.html#abc62af93b38024a48e9a9f5d8ffd2d45">mrElectricsMesh</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classVoltageInterpolaterOntoMechanicsMesh.html#a5aa58daa33d1297b56e35e5baa855ae9">   63</a></span>    <a class="code hl_class" href="classQuadraticMesh.html">QuadraticMesh&lt;DIM&gt;</a>&amp; <a class="code hl_variable" href="classVoltageInterpolaterOntoMechanicsMesh.html#a5aa58daa33d1297b56e35e5baa855ae9">mrMechanicsMesh</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classVoltageInterpolaterOntoMechanicsMesh.html#aff0cb865453c10622d8926dfd8472c20">   65</a></span>    <a class="code hl_class" href="classFineCoarseMeshPair.html">FineCoarseMeshPair&lt;DIM&gt;</a>* <a class="code hl_variable" href="classVoltageInterpolaterOntoMechanicsMesh.html#aff0cb865453c10622d8926dfd8472c20">mpMeshPair</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_class" href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh</a>(<a class="code hl_class" href="classTetrahedralMesh.html">TetrahedralMesh&lt;DIM,DIM&gt;</a>&amp; rElectricsMesh,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                                         <a class="code hl_class" href="classQuadraticMesh.html">QuadraticMesh&lt;DIM&gt;</a>&amp; rMechanicsMesh);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_function" href="classVoltageInterpolaterOntoMechanicsMesh.html#a2b239dd423f55ce9fae9c612379cfde1">~VoltageInterpolaterOntoMechanicsMesh</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classVoltageInterpolaterOntoMechanicsMesh.html#acf338ef8f2a19b8c8661b3d584859254">InterpolateOnCoarseMesh</a>(std::vector&lt;double&gt;&amp; rValuesOnCoarseMesh, <a class="code hl_class" href="classReplicatableVector.html">ReplicatableVector</a>&amp; rValuesOnFineMesh);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classVoltageInterpolaterOntoMechanicsMesh.html#a0e925ac2ba639ccdb236a5e6d9c238be">OutputToCmgui</a>(std::vector&lt;std::string&gt;&amp; rVariableNames, std::string directory, std::string inputFileNamePrefix);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>};</div>
 </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif </span><span class="comment">/*VOLTAGEINTERPOLATERONTOMECHANICSMESH_HPP_*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif </span><span class="comment">/*VOLTAGEINTERPOLATERONTOMECHANICSMESH_HPP_*/</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aUblasIncludes_8hpp_html"><div class="ttname"><a href="UblasIncludes_8hpp.html">UblasIncludes.hpp</a></div></div>
+<div class="ttc" id="aclassFineCoarseMeshPair_html"><div class="ttname"><a href="classFineCoarseMeshPair.html">FineCoarseMeshPair</a></div><div class="ttdef"><b>Definition</b> <a href="FineCoarseMeshPair_8hpp_source.html#l00106">FineCoarseMeshPair.hpp:107</a></div></div>
 <div class="ttc" id="aclassQuadraticMesh_html"><div class="ttname"><a href="classQuadraticMesh.html">QuadraticMesh</a></div><div class="ttdef"><b>Definition</b> <a href="QuadraticMesh_8hpp_source.html#l00051">QuadraticMesh.hpp:52</a></div></div>
+<div class="ttc" id="aclassReplicatableVector_html"><div class="ttname"><a href="classReplicatableVector.html">ReplicatableVector</a></div><div class="ttdef"><b>Definition</b> <a href="ReplicatableVector_8hpp_source.html#l00045">ReplicatableVector.hpp:46</a></div></div>
 <div class="ttc" id="aclassTetrahedralMesh_html"><div class="ttname"><a href="classTetrahedralMesh.html">TetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="TetrahedralMesh_8hpp_source.html#l00064">TetrahedralMesh.hpp:65</a></div></div>
-<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh</a></div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8hpp_source.html#l00052">VoltageInterpolaterOntoMechanicsMesh.hpp:53</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh</a></div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8hpp_source.html#l00055">VoltageInterpolaterOntoMechanicsMesh.hpp:56</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_a0e925ac2ba639ccdb236a5e6d9c238be"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#a0e925ac2ba639ccdb236a5e6d9c238be">VoltageInterpolaterOntoMechanicsMesh::OutputToCmgui</a></div><div class="ttdeci">void OutputToCmgui(std::vector&lt; std::string &gt; &amp;rVariableNames, std::string directory, std::string inputFileNamePrefix)</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8cpp_source.html#l00084">VoltageInterpolaterOntoMechanicsMesh.cpp:84</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_a2b239dd423f55ce9fae9c612379cfde1"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#a2b239dd423f55ce9fae9c612379cfde1">VoltageInterpolaterOntoMechanicsMesh::~VoltageInterpolaterOntoMechanicsMesh</a></div><div class="ttdeci">~VoltageInterpolaterOntoMechanicsMesh()</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8cpp_source.html#l00060">VoltageInterpolaterOntoMechanicsMesh.cpp:60</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_a5aa58daa33d1297b56e35e5baa855ae9"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#a5aa58daa33d1297b56e35e5baa855ae9">VoltageInterpolaterOntoMechanicsMesh::mrMechanicsMesh</a></div><div class="ttdeci">QuadraticMesh&lt; DIM &gt; &amp; mrMechanicsMesh</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8hpp_source.html#l00063">VoltageInterpolaterOntoMechanicsMesh.hpp:63</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_abc62af93b38024a48e9a9f5d8ffd2d45"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#abc62af93b38024a48e9a9f5d8ffd2d45">VoltageInterpolaterOntoMechanicsMesh::mrElectricsMesh</a></div><div class="ttdeci">TetrahedralMesh&lt; DIM, DIM &gt; &amp; mrElectricsMesh</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8hpp_source.html#l00061">VoltageInterpolaterOntoMechanicsMesh.hpp:61</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_acf338ef8f2a19b8c8661b3d584859254"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#acf338ef8f2a19b8c8661b3d584859254">VoltageInterpolaterOntoMechanicsMesh::InterpolateOnCoarseMesh</a></div><div class="ttdeci">void InterpolateOnCoarseMesh(std::vector&lt; double &gt; &amp;rValuesOnCoarseMesh, ReplicatableVector &amp;rValuesOnFineMesh)</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8cpp_source.html#l00066">VoltageInterpolaterOntoMechanicsMesh.cpp:66</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_aff0cb865453c10622d8926dfd8472c20"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#aff0cb865453c10622d8926dfd8472c20">VoltageInterpolaterOntoMechanicsMesh::mpMeshPair</a></div><div class="ttdeci">FineCoarseMeshPair&lt; DIM &gt; * mpMeshPair</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8hpp_source.html#l00065">VoltageInterpolaterOntoMechanicsMesh.hpp:65</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

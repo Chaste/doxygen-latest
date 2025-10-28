@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"classAbstractCardiacProblem.html#a84128649389daf570f549914590eb41b":[1,0,18,32],
+"classAbstractCardiacProblem.html#a85d2cb323a1f678b2ac373b9d85c1090":[1,0,18,14],
+"classAbstractCardiacProblem.html#a8acbf6952fb46a6e777f8d984d9db1c8":[1,0,18,20],
+"classAbstractCardiacProblem.html#a8e1ec8e3eac414052e098ff395e5f154":[1,0,18,13],
 "classAbstractCardiacProblem.html#a9055c5255b87198ec1ea51135a50bf23":[1,0,18,36],
 "classAbstractCardiacProblem.html#a905bf5faac250f4c4c9504339264246f":[1,0,18,61],
 "classAbstractCardiacProblem.html#a9072928a689e540e66085911b1c3d393":[1,0,18,38],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "classAbstractCellMutationState.html#a03fafb071aefc2aed2af9d2abdaa5df0":[1,0,30,4],
 "classAbstractCellMutationState.html#a1d87304609442a1cc76a9c0a01e177fb":[1,0,30,3],
 "classAbstractCellMutationState.html#a45b121639293b0a8e0288a6f16780496":[1,0,30,6],
-"classAbstractCellMutationState.html#a5133ad8bfc07190d8c60301746eef59c":[1,0,30,1],
-"classAbstractCellMutationState.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,30,5],
-"classAbstractCellMutationState.html#ae3b1797a5d917d16e906fba4a9be16ab":[1,0,30,0],
-"classAbstractCellMutationState.html#af7b83842e2c5b63496a4a544f55922ed":[1,0,30,2],
-"classAbstractCellPopulation.html":[1,0,31]
+"classAbstractCellMutationState.html#a5133ad8bfc07190d8c60301746eef59c":[1,0,30,1]
 };

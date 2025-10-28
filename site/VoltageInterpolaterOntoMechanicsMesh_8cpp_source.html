@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::cfa5bb492ebc7335956b168a60a0f0a2d40e9025</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::b29f2bd0cf5edb53ef54baed985fd80529544064</span>
    </div>
   </td>
  </tr>
@@ -105,135 +105,157 @@ $(document).ready(function(){initNavTree('VoltageInterpolaterOntoMechanicsMesh_8
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;VoltageInterpolaterOntoMechanicsMesh.hpp&quot;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;Hdf5ToCmguiConverter.hpp&quot;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;FineCoarseMeshPair.hpp&quot;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;ReplicatableVector.hpp&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;HeartConfig.hpp&quot;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;Hdf5DataReader.hpp&quot;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="PetscTools_8hpp.html">PetscTools.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;Hdf5DataWriter.hpp&quot;</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classVoltageInterpolaterOntoMechanicsMesh.html#a233076700748b5b158626253bf8f4761">   46</a></span><a class="code hl_function" href="classVoltageInterpolaterOntoMechanicsMesh.html#a233076700748b5b158626253bf8f4761">VoltageInterpolaterOntoMechanicsMesh&lt;DIM&gt;::VoltageInterpolaterOntoMechanicsMesh</a>(</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                                     <a class="code hl_class" href="classTetrahedralMesh.html">TetrahedralMesh&lt;DIM,DIM&gt;</a>&amp; rElectricsMesh,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                                     <a class="code hl_class" href="classQuadraticMesh.html">QuadraticMesh&lt;DIM&gt;</a>&amp; rMechanicsMesh,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                                     std::vector&lt;std::string&gt;&amp; rVariableNames,</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                     std::string directory,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                                     std::string inputFileNamePrefix)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;HeartConfig.hpp&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;Hdf5DataReader.hpp&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="PetscTools_8hpp.html">PetscTools.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;Hdf5DataWriter.hpp&quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classVoltageInterpolaterOntoMechanicsMesh.html#a94810ab58187a5511db3929157bc2c14">   45</a></span><a class="code hl_function" href="classVoltageInterpolaterOntoMechanicsMesh.html#a94810ab58187a5511db3929157bc2c14">VoltageInterpolaterOntoMechanicsMesh&lt;DIM&gt;::VoltageInterpolaterOntoMechanicsMesh</a>(</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                     <a class="code hl_class" href="classTetrahedralMesh.html">TetrahedralMesh&lt;DIM,DIM&gt;</a>&amp; rElectricsMesh,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                                     <a class="code hl_class" href="classQuadraticMesh.html">QuadraticMesh&lt;DIM&gt;</a>&amp; rMechanicsMesh)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            : mrElectricsMesh(rElectricsMesh),</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>              mrMechanicsMesh(rMechanicsMesh),</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>              mpMeshPair(new <a class="code hl_class" href="classFineCoarseMeshPair.html">FineCoarseMeshPair</a>&lt;DIM&gt;(rElectricsMesh, rMechanicsMesh))</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>              </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// Read the data from the HDF5 file</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="classHdf5DataReader.html">Hdf5DataReader</a> reader(directory,inputFileNamePrefix);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">unsigned</span> num_timesteps = reader.<a class="code hl_function" href="classHdf5DataReader.html#abe6aff552742f5842d5ea5475adb9b2a">GetUnlimitedDimensionValues</a>().size();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// set up the elements and weights for the coarse nodes in the fine mesh</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_class" href="classFineCoarseMeshPair.html">FineCoarseMeshPair&lt;DIM&gt;</a> mesh_pair(rElectricsMesh, rMechanicsMesh);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    mesh_pair.<a class="code hl_function" href="classFineCoarseMeshPair.html#a048c4294366fac02005f00cae27f55b4">SetUpBoxesOnFineMesh</a>();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    mesh_pair.<a class="code hl_function" href="classFineCoarseMeshPair.html#a727327c11a045d5cd10a4702322d3e66">ComputeFineElementsAndWeightsForCoarseNodes</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    assert(mesh_pair.<a class="code hl_function" href="classFineCoarseMeshPair.html#aac2deda28eecb7f690b495fbaee0f4e1">rGetElementsAndWeights</a>().size()==rMechanicsMesh.<a class="code hl_function" href="classAbstractMesh.html#a47fc94727ced2f9fa234c896653e76e4">GetNumNodes</a>());</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// create and setup a writer</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_class" href="classHdf5DataWriter.html">Hdf5DataWriter</a>* p_writer = <span class="keyword">new</span> <a class="code hl_class" href="classHdf5DataWriter.html">Hdf5DataWriter</a>(*rMechanicsMesh.<a class="code hl_function" href="classAbstractMesh.html#a0709b81de1a08d65fb21bd61e3512c98">GetDistributedVectorFactory</a>(),</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                                  directory,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                                  <span class="stringliteral">&quot;voltage_mechanics_mesh&quot;</span>,</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                                                  <span class="keyword">false</span>, <span class="comment">//don&#39;t clean</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                                  <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    std::vector&lt;int&gt; columns_id;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var_index = 0; var_index &lt; rVariableNames.size(); var_index++)</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        std::string var_name = rVariableNames[var_index];</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        columns_id.push_back( p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#aa383b32f27687c685ea5573e4cdb87e7">DefineVariable</a>(var_name,<span class="stringliteral">&quot;mV&quot;</span>) );</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#a2766640e13481a5ff6d307ebbb9e33ce">DefineUnlimitedDimension</a>(<span class="stringliteral">&quot;Time&quot;</span>,<span class="stringliteral">&quot;msecs&quot;</span>, num_timesteps);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#a8151f728d8460794bdc80aaf75ad2617">DefineFixedDimension</a>( rMechanicsMesh.<a class="code hl_function" href="classAbstractMesh.html#a47fc94727ced2f9fa234c896653e76e4">GetNumNodes</a>() );</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#aa8754a87f0cfbaa63e79e83829e3837a">EndDefineMode</a>();</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    assert(columns_id.size() == rVariableNames.size());</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">// set up a vector to read into</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_class" href="classDistributedVectorFactory.html">DistributedVectorFactory</a> factory(rElectricsMesh.<a class="code hl_function" href="classAbstractMesh.html#a47fc94727ced2f9fa234c896653e76e4">GetNumNodes</a>());</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_class" href="classVec.html">Vec</a> voltage = factory.<a class="code hl_function" href="classDistributedVectorFactory.html#a9f6e8e2b9056afd1a09c82f1fa5f33b8">CreateVec</a>();</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    std::vector&lt;double&gt; interpolated_voltages(rMechanicsMesh.<a class="code hl_function" href="classAbstractMesh.html#a47fc94727ced2f9fa234c896653e76e4">GetNumNodes</a>());</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_class" href="classVec.html">Vec</a> voltage_coarse = NULL;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> time_step=0; time_step&lt;num_timesteps; time_step++)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var_index = 0; var_index &lt; rVariableNames.size(); var_index++)</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            std::string var_name = rVariableNames[var_index];</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="comment">// read</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            reader.<a class="code hl_function" href="classHdf5DataReader.html#a859ef71cd53870bd08d77abc83e575b5">GetVariableOverNodes</a>(voltage, var_name, time_step);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_class" href="classReplicatableVector.html">ReplicatableVector</a> voltage_repl(voltage);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="comment">// interpolate</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;mesh_pair.<a class="code hl_function" href="classFineCoarseMeshPair.html#aac2deda28eecb7f690b495fbaee0f4e1">rGetElementsAndWeights</a>().size(); i++)</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <span class="keywordtype">double</span> interpolated_voltage = 0;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <a class="code hl_class" href="classElement.html">Element&lt;DIM,DIM&gt;</a>&amp; element = *(rElectricsMesh.<a class="code hl_function" href="classAbstractTetrahedralMesh.html#a8b461de1c8f2e0c2d889b5ec2d03c0a8">GetElement</a>(mesh_pair.<a class="code hl_function" href="classFineCoarseMeshPair.html#aac2deda28eecb7f690b495fbaee0f4e1">rGetElementsAndWeights</a>()[i].ElementNum));</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> node_index = 0; node_index&lt;element.<a class="code hl_function" href="classAbstractElement.html#a814b20706bde8803ced5c2bce05d109b">GetNumNodes</a>(); node_index++)</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                {</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    <span class="keywordtype">unsigned</span> global_node_index = element.<a class="code hl_function" href="classAbstractElement.html#a900ed88c6152ec2911ecfa35c933075e">GetNodeGlobalIndex</a>(node_index);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    interpolated_voltage += voltage_repl[global_node_index]*mesh_pair.<a class="code hl_function" href="classFineCoarseMeshPair.html#aac2deda28eecb7f690b495fbaee0f4e1">rGetElementsAndWeights</a>()[i].Weights(node_index);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                }</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                interpolated_voltages[i] = interpolated_voltage;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">if</span> (voltage_coarse != NULL)</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            {</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(voltage_coarse);</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            }</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            voltage_coarse = <a class="code hl_function" href="classPetscTools.html#aa85bd67ff451c14350d1910a0048c2ea">PetscTools::CreateVec</a>(interpolated_voltages);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="comment">// write</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#aa9b0f8585e7af2ed93a898d49367cb15">PutVector</a>(columns_id[var_index], voltage_coarse);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#a37e0f3206b070f371d1ff21613a34efb">PutUnlimitedVariable</a>(time_step);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#a3c3df62437eabcf50dd032a4876f5dbd">AdvanceAlongUnlimitedDimension</a>();</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordflow">if</span> (voltage_coarse != NULL)</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    {</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(voltage);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(voltage_coarse);</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="comment">// delete to flush</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">delete</span> p_writer;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="comment">// Convert the new data to CMGUI format.</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">// alter the directory in HeartConfig as that is where Hdf5ToCmguiConverter decides</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="comment">// where to output</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    std::string config_directory = <a class="code hl_function" href="classHeartConfig.html#af8ab048189a76d46bbec0ff541449b89">HeartConfig::Instance</a>()-&gt;<a class="code hl_function" href="classHeartConfig.html#ae843ac9750a4bcddd212598067e6c372">GetOutputDirectory</a>();</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <a class="code hl_function" href="classHeartConfig.html#af8ab048189a76d46bbec0ff541449b89">HeartConfig::Instance</a>()-&gt;<a class="code hl_function" href="classHeartConfig.html#a5f5d3c0f60554e91bf3f670ff3d8720a">SetOutputDirectory</a>(directory);</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <a class="code hl_class" href="classHdf5ToCmguiConverter.html">Hdf5ToCmguiConverter&lt;DIM,DIM&gt;</a> converter(<a class="code hl_class" href="classFileFinder.html">FileFinder</a>(directory, <a class="code hl_enumvalue" href="structRelativeTo.html#a71205f16f6ffbf2c354beb369d8b996ca81f5194dcff6b32216b335025dfa34e2">RelativeTo::ChasteTestOutput</a>),</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                                            <span class="stringliteral">&quot;voltage_mechanics_mesh&quot;</span>,</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                                            &amp;rMechanicsMesh,</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                                            <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <a class="code hl_function" href="classHeartConfig.html#af8ab048189a76d46bbec0ff541449b89">HeartConfig::Instance</a>()-&gt;<a class="code hl_function" href="classHeartConfig.html#a5f5d3c0f60554e91bf3f670ff3d8720a">SetOutputDirectory</a>(config_directory);</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    assert(<a class="code hl_variable" href="classVoltageInterpolaterOntoMechanicsMesh.html#aff0cb865453c10622d8926dfd8472c20">mpMeshPair</a>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_variable" href="classVoltageInterpolaterOntoMechanicsMesh.html#aff0cb865453c10622d8926dfd8472c20">mpMeshPair</a>-&gt;SetUpBoxesOnFineMesh();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_variable" href="classVoltageInterpolaterOntoMechanicsMesh.html#aff0cb865453c10622d8926dfd8472c20">mpMeshPair</a>-&gt;ComputeFineElementsAndWeightsForCoarseNodes(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    assert(<a class="code hl_variable" href="classVoltageInterpolaterOntoMechanicsMesh.html#aff0cb865453c10622d8926dfd8472c20">mpMeshPair</a>-&gt;rGetElementsAndWeights().size()==rMechanicsMesh.<a class="code hl_function" href="classAbstractMesh.html#a47fc94727ced2f9fa234c896653e76e4">GetNumNodes</a>());</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
 </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classVoltageInterpolaterOntoMechanicsMesh.html#a2b239dd423f55ce9fae9c612379cfde1">   60</a></span><a class="code hl_function" href="classVoltageInterpolaterOntoMechanicsMesh.html#a2b239dd423f55ce9fae9c612379cfde1">VoltageInterpolaterOntoMechanicsMesh&lt;DIM&gt;::~VoltageInterpolaterOntoMechanicsMesh</a>()</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">delete</span> mpMeshPair;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classVoltageInterpolaterOntoMechanicsMesh.html#acf338ef8f2a19b8c8661b3d584859254">   66</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classVoltageInterpolaterOntoMechanicsMesh.html#acf338ef8f2a19b8c8661b3d584859254">VoltageInterpolaterOntoMechanicsMesh&lt;DIM&gt;::InterpolateOnCoarseMesh</a>(std::vector&lt;double&gt;&amp; rValuesOnCoarseMesh, <a class="code hl_class" href="classReplicatableVector.html">ReplicatableVector</a>&amp; rValuesOnFineMesh)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    assert(rValuesOnCoarseMesh.size() == mrMechanicsMesh.GetNumNodes());</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;mpMeshPair-&gt;rGetElementsAndWeights().size(); i++)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <a class="code hl_class" href="classElement.html">Element&lt;DIM,DIM&gt;</a>&amp; element = *(mrElectricsMesh.GetElement(mpMeshPair-&gt;rGetElementsAndWeights()[i].ElementNum));</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">double</span> interpolated_value = 0;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> node_index = 0; node_index&lt;element.<a class="code hl_function" href="classAbstractElement.html#a814b20706bde8803ced5c2bce05d109b">GetNumNodes</a>(); node_index++)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordtype">unsigned</span> global_node_index = element.<a class="code hl_function" href="classAbstractElement.html#a900ed88c6152ec2911ecfa35c933075e">GetNodeGlobalIndex</a>(node_index);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            interpolated_value += rValuesOnFineMesh[global_node_index]*mpMeshPair-&gt;rGetElementsAndWeights()[i].Weights(node_index);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        rValuesOnCoarseMesh[i] = interpolated_value;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classVoltageInterpolaterOntoMechanicsMesh.html#a0e925ac2ba639ccdb236a5e6d9c238be">   84</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classVoltageInterpolaterOntoMechanicsMesh.html#a0e925ac2ba639ccdb236a5e6d9c238be">VoltageInterpolaterOntoMechanicsMesh&lt;DIM&gt;::OutputToCmgui</a>(std::vector&lt;std::string&gt;&amp; rVariableNames,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                     std::string directory,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                     std::string inputFileNamePrefix)          </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    assert(mpMeshPair);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    mpMeshPair-&gt;SetUpBoxesOnFineMesh();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    mpMeshPair-&gt;ComputeFineElementsAndWeightsForCoarseNodes(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    assert(mpMeshPair-&gt;rGetElementsAndWeights().size()==mrMechanicsMesh.GetNumNodes());</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">// Read the data from the HDF5 file</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_class" href="classHdf5DataReader.html">Hdf5DataReader</a> reader(directory,inputFileNamePrefix);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">unsigned</span> num_timesteps = reader.<a class="code hl_function" href="classHdf5DataReader.html#abe6aff552742f5842d5ea5475adb9b2a">GetUnlimitedDimensionValues</a>().size();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// create and setup a writer</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_class" href="classHdf5DataWriter.html">Hdf5DataWriter</a>* p_writer = <span class="keyword">new</span> <a class="code hl_class" href="classHdf5DataWriter.html">Hdf5DataWriter</a>(*mrMechanicsMesh.GetDistributedVectorFactory(),</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                                                  directory,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                                                  <span class="stringliteral">&quot;voltage_mechanics_mesh&quot;</span>,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                                                  <span class="keyword">false</span>, <span class="comment">//don&#39;t clean</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                                                  <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    std::vector&lt;int&gt; columns_id;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var_index = 0; var_index &lt; rVariableNames.size(); var_index++)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        std::string var_name = rVariableNames[var_index];</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        columns_id.push_back( p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#aa383b32f27687c685ea5573e4cdb87e7">DefineVariable</a>(var_name,<span class="stringliteral">&quot;mV&quot;</span>) );</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#a2766640e13481a5ff6d307ebbb9e33ce">DefineUnlimitedDimension</a>(<span class="stringliteral">&quot;Time&quot;</span>,<span class="stringliteral">&quot;msecs&quot;</span>, num_timesteps);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#a8151f728d8460794bdc80aaf75ad2617">DefineFixedDimension</a>(mrMechanicsMesh.GetNumNodes() );</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#aa8754a87f0cfbaa63e79e83829e3837a">EndDefineMode</a>();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    assert(columns_id.size() == rVariableNames.size());</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="comment">// set up a vector to read into</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <a class="code hl_class" href="classDistributedVectorFactory.html">DistributedVectorFactory</a> factory(mrElectricsMesh.GetNumNodes());</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <a class="code hl_class" href="classVec.html">Vec</a> voltage = factory.<a class="code hl_function" href="classDistributedVectorFactory.html#a9f6e8e2b9056afd1a09c82f1fa5f33b8">CreateVec</a>();</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    std::vector&lt;double&gt; interpolated_voltages(mrMechanicsMesh.GetNumNodes());</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_class" href="classVec.html">Vec</a> voltage_coarse = NULL;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> time_step=0; time_step&lt;num_timesteps; time_step++)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var_index = 0; var_index &lt; rVariableNames.size(); var_index++)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            std::string var_name = rVariableNames[var_index];</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="comment">// read</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            reader.<a class="code hl_function" href="classHdf5DataReader.html#a859ef71cd53870bd08d77abc83e575b5">GetVariableOverNodes</a>(voltage, var_name, time_step);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <a class="code hl_class" href="classReplicatableVector.html">ReplicatableVector</a> voltage_repl(voltage);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            InterpolateOnCoarseMesh(interpolated_voltages, voltage_repl);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <span class="keywordflow">if</span> (voltage_coarse != NULL)</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(voltage_coarse);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            voltage_coarse = <a class="code hl_function" href="classPetscTools.html#aa85bd67ff451c14350d1910a0048c2ea">PetscTools::CreateVec</a>(interpolated_voltages);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="comment">// write</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#aa9b0f8585e7af2ed93a898d49367cb15">PutVector</a>(columns_id[var_index], voltage_coarse);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#a37e0f3206b070f371d1ff21613a34efb">PutUnlimitedVariable</a>(time_step);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        p_writer-&gt;<a class="code hl_function" href="classHdf5DataWriter.html#a3c3df62437eabcf50dd032a4876f5dbd">AdvanceAlongUnlimitedDimension</a>();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh&lt;1&gt;</a>;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh&lt;2&gt;</a>;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh&lt;3&gt;</a>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">if</span> (voltage_coarse != NULL)</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(voltage);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <a class="code hl_function" href="classPetscTools.html#a0d218276d49e4605dc5b9272317b4e76">PetscTools::Destroy</a>(voltage_coarse);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="comment">// delete to flush</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keyword">delete</span> p_writer;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="comment">// Convert the new data to CMGUI format.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="comment">// alter the directory in HeartConfig as that is where Hdf5ToCmguiConverter decides</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="comment">// where to output</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    std::string config_directory = <a class="code hl_function" href="classHeartConfig.html#af8ab048189a76d46bbec0ff541449b89">HeartConfig::Instance</a>()-&gt;<a class="code hl_function" href="classHeartConfig.html#ae843ac9750a4bcddd212598067e6c372">GetOutputDirectory</a>();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <a class="code hl_function" href="classHeartConfig.html#af8ab048189a76d46bbec0ff541449b89">HeartConfig::Instance</a>()-&gt;<a class="code hl_function" href="classHeartConfig.html#a5f5d3c0f60554e91bf3f670ff3d8720a">SetOutputDirectory</a>(directory);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <a class="code hl_class" href="classHdf5ToCmguiConverter.html">Hdf5ToCmguiConverter&lt;DIM,DIM&gt;</a> converter(<a class="code hl_class" href="classFileFinder.html">FileFinder</a>(directory, <a class="code hl_enumvalue" href="structRelativeTo.html#a71205f16f6ffbf2c354beb369d8b996ca81f5194dcff6b32216b335025dfa34e2">RelativeTo::ChasteTestOutput</a>),</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                                            <span class="stringliteral">&quot;voltage_mechanics_mesh&quot;</span>,</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                                            &amp;mrMechanicsMesh,</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                                            <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <a class="code hl_function" href="classHeartConfig.html#af8ab048189a76d46bbec0ff541449b89">HeartConfig::Instance</a>()-&gt;<a class="code hl_function" href="classHeartConfig.html#a5f5d3c0f60554e91bf3f670ff3d8720a">SetOutputDirectory</a>(config_directory);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
+</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh&lt;1&gt;</a>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh&lt;2&gt;</a>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh&lt;3&gt;</a>;</div>
 <div class="ttc" id="aPetscTools_8hpp_html"><div class="ttname"><a href="PetscTools_8hpp.html">PetscTools.hpp</a></div></div>
 <div class="ttc" id="aclassAbstractElement_html_a814b20706bde8803ced5c2bce05d109b"><div class="ttname"><a href="classAbstractElement.html#a814b20706bde8803ced5c2bce05d109b">AbstractElement::GetNumNodes</a></div><div class="ttdeci">unsigned GetNumNodes() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractElement_8cpp_source.html#l00123">AbstractElement.cpp:123</a></div></div>
 <div class="ttc" id="aclassAbstractElement_html_a900ed88c6152ec2911ecfa35c933075e"><div class="ttname"><a href="classAbstractElement.html#a900ed88c6152ec2911ecfa35c933075e">AbstractElement::GetNodeGlobalIndex</a></div><div class="ttdeci">unsigned GetNodeGlobalIndex(unsigned localIndex) const</div><div class="ttdef"><b>Definition</b> <a href="AbstractElement_8cpp_source.html#l00109">AbstractElement.cpp:109</a></div></div>
-<div class="ttc" id="aclassAbstractMesh_html_a0709b81de1a08d65fb21bd61e3512c98"><div class="ttname"><a href="classAbstractMesh.html#a0709b81de1a08d65fb21bd61e3512c98">AbstractMesh::GetDistributedVectorFactory</a></div><div class="ttdeci">virtual DistributedVectorFactory * GetDistributedVectorFactory()</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00134">AbstractMesh.cpp:134</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_html_a47fc94727ced2f9fa234c896653e76e4"><div class="ttname"><a href="classAbstractMesh.html#a47fc94727ced2f9fa234c896653e76e4">AbstractMesh::GetNumNodes</a></div><div class="ttdeci">virtual unsigned GetNumNodes() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00067">AbstractMesh.cpp:67</a></div></div>
-<div class="ttc" id="aclassAbstractTetrahedralMesh_html_a8b461de1c8f2e0c2d889b5ec2d03c0a8"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a8b461de1c8f2e0c2d889b5ec2d03c0a8">AbstractTetrahedralMesh::GetElement</a></div><div class="ttdeci">Element&lt; ELEMENT_DIM, SPACE_DIM &gt; * GetElement(unsigned index) const</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00141">AbstractTetrahedralMesh.cpp:141</a></div></div>
 <div class="ttc" id="aclassDistributedVectorFactory_html"><div class="ttname"><a href="classDistributedVectorFactory.html">DistributedVectorFactory</a></div><div class="ttdef"><b>Definition</b> <a href="DistributedVectorFactory_8hpp_source.html#l00057">DistributedVectorFactory.hpp:58</a></div></div>
 <div class="ttc" id="aclassDistributedVectorFactory_html_a9f6e8e2b9056afd1a09c82f1fa5f33b8"><div class="ttname"><a href="classDistributedVectorFactory.html#a9f6e8e2b9056afd1a09c82f1fa5f33b8">DistributedVectorFactory::CreateVec</a></div><div class="ttdeci">Vec CreateVec()</div><div class="ttdef"><b>Definition</b> <a href="DistributedVectorFactory_8cpp_source.html#l00154">DistributedVectorFactory.cpp:154</a></div></div>
 <div class="ttc" id="aclassElement_html"><div class="ttname"><a href="classElement.html">Element</a></div><div class="ttdef"><b>Definition</b> <a href="Element_8hpp_source.html#l00053">Element.hpp:54</a></div></div>
 <div class="ttc" id="aclassFileFinder_html"><div class="ttname"><a href="classFileFinder.html">FileFinder</a></div><div class="ttdef"><b>Definition</b> <a href="FileFinder_8hpp_source.html#l00070">FileFinder.hpp:71</a></div></div>
 <div class="ttc" id="aclassFineCoarseMeshPair_html"><div class="ttname"><a href="classFineCoarseMeshPair.html">FineCoarseMeshPair</a></div><div class="ttdef"><b>Definition</b> <a href="FineCoarseMeshPair_8hpp_source.html#l00106">FineCoarseMeshPair.hpp:107</a></div></div>
-<div class="ttc" id="aclassFineCoarseMeshPair_html_a048c4294366fac02005f00cae27f55b4"><div class="ttname"><a href="classFineCoarseMeshPair.html#a048c4294366fac02005f00cae27f55b4">FineCoarseMeshPair::SetUpBoxesOnFineMesh</a></div><div class="ttdeci">void SetUpBoxesOnFineMesh(double boxWidth=-1)</div><div class="ttdef"><b>Definition</b> <a href="FineCoarseMeshPair_8cpp_source.html#l00092">FineCoarseMeshPair.cpp:92</a></div></div>
-<div class="ttc" id="aclassFineCoarseMeshPair_html_a727327c11a045d5cd10a4702322d3e66"><div class="ttname"><a href="classFineCoarseMeshPair.html#a727327c11a045d5cd10a4702322d3e66">FineCoarseMeshPair::ComputeFineElementsAndWeightsForCoarseNodes</a></div><div class="ttdeci">void ComputeFineElementsAndWeightsForCoarseNodes(bool safeMode)</div><div class="ttdef"><b>Definition</b> <a href="FineCoarseMeshPair_8cpp_source.html#l00250">FineCoarseMeshPair.cpp:250</a></div></div>
-<div class="ttc" id="aclassFineCoarseMeshPair_html_aac2deda28eecb7f690b495fbaee0f4e1"><div class="ttname"><a href="classFineCoarseMeshPair.html#aac2deda28eecb7f690b495fbaee0f4e1">FineCoarseMeshPair::rGetElementsAndWeights</a></div><div class="ttdeci">std::vector&lt; ElementAndWeights&lt; DIM &gt; &gt; &amp; rGetElementsAndWeights()</div><div class="ttdef"><b>Definition</b> <a href="FineCoarseMeshPair_8hpp_source.html#l00371">FineCoarseMeshPair.hpp:371</a></div></div>
 <div class="ttc" id="aclassHdf5DataReader_html"><div class="ttname"><a href="classHdf5DataReader.html">Hdf5DataReader</a></div><div class="ttdef"><b>Definition</b> <a href="Hdf5DataReader_8hpp_source.html#l00050">Hdf5DataReader.hpp:51</a></div></div>
 <div class="ttc" id="aclassHdf5DataReader_html_a859ef71cd53870bd08d77abc83e575b5"><div class="ttname"><a href="classHdf5DataReader.html#a859ef71cd53870bd08d77abc83e575b5">Hdf5DataReader::GetVariableOverNodes</a></div><div class="ttdeci">void GetVariableOverNodes(Vec data, const std::string &amp;rVariableName, unsigned timestep=0)</div><div class="ttdef"><b>Definition</b> <a href="Hdf5DataReader_8cpp_source.html#l00343">Hdf5DataReader.cpp:343</a></div></div>
 <div class="ttc" id="aclassHdf5DataReader_html_abe6aff552742f5842d5ea5475adb9b2a"><div class="ttname"><a href="classHdf5DataReader.html#abe6aff552742f5842d5ea5475adb9b2a">Hdf5DataReader::GetUnlimitedDimensionValues</a></div><div class="ttdeci">std::vector&lt; double &gt; GetUnlimitedDimensionValues()</div><div class="ttdef"><b>Definition</b> <a href="Hdf5DataReader_8cpp_source.html#l00404">Hdf5DataReader.cpp:404</a></div></div>
@@ -255,8 +277,12 @@ $(document).ready(function(){initNavTree('VoltageInterpolaterOntoMechanicsMesh_8
 <div class="ttc" id="aclassReplicatableVector_html"><div class="ttname"><a href="classReplicatableVector.html">ReplicatableVector</a></div><div class="ttdef"><b>Definition</b> <a href="ReplicatableVector_8hpp_source.html#l00045">ReplicatableVector.hpp:46</a></div></div>
 <div class="ttc" id="aclassTetrahedralMesh_html"><div class="ttname"><a href="classTetrahedralMesh.html">TetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="TetrahedralMesh_8hpp_source.html#l00064">TetrahedralMesh.hpp:65</a></div></div>
 <div class="ttc" id="aclassVec_html"><div class="ttname"><a href="classVec.html">Vec</a></div></div>
-<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh</a></div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8hpp_source.html#l00052">VoltageInterpolaterOntoMechanicsMesh.hpp:53</a></div></div>
-<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_a233076700748b5b158626253bf8f4761"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#a233076700748b5b158626253bf8f4761">VoltageInterpolaterOntoMechanicsMesh::VoltageInterpolaterOntoMechanicsMesh</a></div><div class="ttdeci">VoltageInterpolaterOntoMechanicsMesh(TetrahedralMesh&lt; DIM, DIM &gt; &amp;rElectricsMesh, QuadraticMesh&lt; DIM &gt; &amp;rMechanicsMesh, std::vector&lt; std::string &gt; &amp;rVariableNames, std::string directory, std::string inputFileNamePrefix)</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8cpp_source.html#l00046">VoltageInterpolaterOntoMechanicsMesh.cpp:46</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html">VoltageInterpolaterOntoMechanicsMesh</a></div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8hpp_source.html#l00055">VoltageInterpolaterOntoMechanicsMesh.hpp:56</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_a0e925ac2ba639ccdb236a5e6d9c238be"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#a0e925ac2ba639ccdb236a5e6d9c238be">VoltageInterpolaterOntoMechanicsMesh::OutputToCmgui</a></div><div class="ttdeci">void OutputToCmgui(std::vector&lt; std::string &gt; &amp;rVariableNames, std::string directory, std::string inputFileNamePrefix)</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8cpp_source.html#l00084">VoltageInterpolaterOntoMechanicsMesh.cpp:84</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_a2b239dd423f55ce9fae9c612379cfde1"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#a2b239dd423f55ce9fae9c612379cfde1">VoltageInterpolaterOntoMechanicsMesh::~VoltageInterpolaterOntoMechanicsMesh</a></div><div class="ttdeci">~VoltageInterpolaterOntoMechanicsMesh()</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8cpp_source.html#l00060">VoltageInterpolaterOntoMechanicsMesh.cpp:60</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_a94810ab58187a5511db3929157bc2c14"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#a94810ab58187a5511db3929157bc2c14">VoltageInterpolaterOntoMechanicsMesh::VoltageInterpolaterOntoMechanicsMesh</a></div><div class="ttdeci">VoltageInterpolaterOntoMechanicsMesh(TetrahedralMesh&lt; DIM, DIM &gt; &amp;rElectricsMesh, QuadraticMesh&lt; DIM &gt; &amp;rMechanicsMesh)</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8cpp_source.html#l00045">VoltageInterpolaterOntoMechanicsMesh.cpp:45</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_acf338ef8f2a19b8c8661b3d584859254"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#acf338ef8f2a19b8c8661b3d584859254">VoltageInterpolaterOntoMechanicsMesh::InterpolateOnCoarseMesh</a></div><div class="ttdeci">void InterpolateOnCoarseMesh(std::vector&lt; double &gt; &amp;rValuesOnCoarseMesh, ReplicatableVector &amp;rValuesOnFineMesh)</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8cpp_source.html#l00066">VoltageInterpolaterOntoMechanicsMesh.cpp:66</a></div></div>
+<div class="ttc" id="aclassVoltageInterpolaterOntoMechanicsMesh_html_aff0cb865453c10622d8926dfd8472c20"><div class="ttname"><a href="classVoltageInterpolaterOntoMechanicsMesh.html#aff0cb865453c10622d8926dfd8472c20">VoltageInterpolaterOntoMechanicsMesh::mpMeshPair</a></div><div class="ttdeci">FineCoarseMeshPair&lt; DIM &gt; * mpMeshPair</div><div class="ttdef"><b>Definition</b> <a href="VoltageInterpolaterOntoMechanicsMesh_8hpp_source.html#l00065">VoltageInterpolaterOntoMechanicsMesh.hpp:65</a></div></div>
 <div class="ttc" id="astructRelativeTo_html_a71205f16f6ffbf2c354beb369d8b996ca81f5194dcff6b32216b335025dfa34e2"><div class="ttname"><a href="structRelativeTo.html#a71205f16f6ffbf2c354beb369d8b996ca81f5194dcff6b32216b335025dfa34e2">RelativeTo::ChasteTestOutput</a></div><div class="ttdeci">@ ChasteTestOutput</div><div class="ttdef"><b>Definition</b> <a href="FileFinder_8hpp_source.html#l00057">FileFinder.hpp:57</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

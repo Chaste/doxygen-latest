@@ -13,6 +13,7 @@ var classVtkMeshWriter =
     [ "AugmentCellData", "classVtkMeshWriter.html#a53572016c65e7fa9e8de0cfdb9088a9d", null ],
     [ "MakeVtkMesh", "classVtkMeshWriter.html#aa20e1598ca5d560c86eb4a70d4365322", null ],
     [ "SetParallelFiles", "classVtkMeshWriter.html#a1cbce49f5420c79a7629cc9cea42fca4", null ],
+    [ "SetWriteMeshCells", "classVtkMeshWriter.html#a3757e1084be5f77f715dbb0191c429cb", null ],
     [ "WriteFiles", "classVtkMeshWriter.html#ab5bab5cabcbebf09e1501c43d13469f3", null ],
     [ "WriteFilesUsingMesh", "classVtkMeshWriter.html#a916bbe019de8e4956d34b365ca7e11ca", null ],
     [ "mGlobalToNodeIndexMap", "classVtkMeshWriter.html#a37cf805851fb77d0ad34f3366016d0e7", null ],
@@ -20,5 +21,6 @@ var classVtkMeshWriter =
     [ "mNodesToSendPerProcess", "classVtkMeshWriter.html#a145a01dcdbbd630bf9c7c931b4c3328a", null ],
     [ "mpNodesOnlyMesh", "classVtkMeshWriter.html#acbecf0b3b6b1772e3cf431076e4bf5f9", null ],
     [ "mpVtkUnstructedMesh", "classVtkMeshWriter.html#aa02a6856092eff8820cf27d47a70cd2e", null ],
+    [ "mWriteMeshCells", "classVtkMeshWriter.html#a878079cb66a125bb285fa47c26d76b23", null ],
     [ "mWriteParallelFiles", "classVtkMeshWriter.html#afafd71958b96b0d98a1bbe49cca6d0e9", null ]
 ];

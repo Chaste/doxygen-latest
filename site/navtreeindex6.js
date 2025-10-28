@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"classAbstractBoxDomainPdeModifier.html#a758cbdd4c08e9c63b225e2d0d43a3b5c":[1,0,8,1],
+"classAbstractBoxDomainPdeModifier.html#a773f80f6f821e90f7d22601f2b8cf0a5":[1,0,8,15],
+"classAbstractBoxDomainPdeModifier.html#a77cc9107084d3d251102a52a4bbdaf92":[1,0,8,6],
+"classAbstractBoxDomainPdeModifier.html#a8548ed8cefa24d7288096f1a24a39f93":[1,0,8,5],
 "classAbstractBoxDomainPdeModifier.html#a87dc49110cd67b02b703889045bd2587":[1,0,8,24],
 "classAbstractBoxDomainPdeModifier.html#a8b377ae3184bfff0f08cd86e2d72d3a4":[1,0,8,27],
 "classAbstractBoxDomainPdeModifier.html#a8ea028ed2a1b9dbaec18734212abf744":[1,0,8,16],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "classAbstractCardiacProblem.html#a7a72dc8f2ed3834792e92675130f7952":[1,0,18,40],
 "classAbstractCardiacProblem.html#a7bb1b93c33ffab1cacfc598df574f476":[1,0,18,17],
 "classAbstractCardiacProblem.html#a7df34444b6f89617c47e26a41f396585":[1,0,18,28],
-"classAbstractCardiacProblem.html#a83c213a7cebb59427dc8f58f7ba092eb":[1,0,18,51],
-"classAbstractCardiacProblem.html#a84128649389daf570f549914590eb41b":[1,0,18,32],
-"classAbstractCardiacProblem.html#a85d2cb323a1f678b2ac373b9d85c1090":[1,0,18,14],
-"classAbstractCardiacProblem.html#a8acbf6952fb46a6e777f8d984d9db1c8":[1,0,18,20],
-"classAbstractCardiacProblem.html#a8e1ec8e3eac414052e098ff395e5f154":[1,0,18,13]
+"classAbstractCardiacProblem.html#a83c213a7cebb59427dc8f58f7ba092eb":[1,0,18,51]
 };
