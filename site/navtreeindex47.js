@@ -1,5 +1,8 @@
 var NAVTREEINDEX47 =
 {
+"structImmersedBoundaryElementData.html#a9dce2f87f599039921ed10b67f5350a9":[1,0,402,1],
+"structImmersedBoundaryElementData.html#aadef972cd28abed1c587b10660051ec8":[1,0,402,6],
+"structImmersedBoundaryElementData.html#ae55cad39f3d95c898ff136d0934261e3":[1,0,402,0],
 "structLessThanNode.html":[1,0,425],
 "structLessThanNode.html#add4a2d75505f4094f16b00e2b4e3f19b":[1,0,425,0],
 "structMeshPottsWriterIterators.html":[1,0,442],
