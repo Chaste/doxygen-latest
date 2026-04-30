@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::799d958d43fb405b25bd1f1eed391976dd1296d1</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::99f8a5061faf856d338440851ffb4b9f8fbd30d9</span>
    </div>
   </td>
  </tr>
@@ -109,8 +109,8 @@ $(document).ready(function(){initNavTree('AveragedSourceEllipticPde_8cpp_source.
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
 <div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classAveragedSourceEllipticPde.html#aa9c2cf7f7c9bed77e55da2b9bd1bd45e">   40</a></span><a class="code hl_function" href="classAveragedSourceEllipticPde.html#aa9c2cf7f7c9bed77e55da2b9bd1bd45e">AveragedSourceEllipticPde&lt;DIM&gt;::AveragedSourceEllipticPde</a>(<a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;DIM&gt;</a>&amp; rCellPopulation,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                                          <span class="keywordtype">double</span> constantSourceCoefficient, </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                                          <span class="keywordtype">double</span> linearSourceCoefficient, </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                                          <span class="keywordtype">double</span> constantSourceCoefficient,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                                          <span class="keywordtype">double</span> linearSourceCoefficient,</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                                          <span class="keywordtype">double</span> diffusionCoefficient,</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                                          <span class="keywordtype">bool</span> scaleByCellVolume)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    : mrCellPopulation(rCellPopulation),</div>
@@ -198,14 +198,14 @@ $(document).ready(function(){initNavTree('AveragedSourceEllipticPde_8cpp_source.
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordtype">double</span> cell_weight = 1.0;</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">if</span> (mScaleByCellVolume)</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            {   </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                <span class="comment">// If scaling by cell volume then use volume her instead of cell count </span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                <span class="comment">// If scaling by cell volume then use volume her instead of cell count</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                cell_weight = mrCellPopulation.GetVolumeOfCell(*cell_iter);</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                <span class="keywordflow">if</span> (cell_weight &lt;1e-6)</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                {</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                    <a class="code hl_define" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(<span class="stringliteral">&quot;The volume of one of the cells is &quot;</span> &lt;&lt; cell_weight &lt;&lt; </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                              <span class="stringliteral">&quot; and you are scaling by cell volume. Either turn scaling off or use&quot;</span>  </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                    <a class="code hl_define" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(<span class="stringliteral">&quot;The volume of one of the cells is &quot;</span> &lt;&lt; cell_weight &lt;&lt;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                              <span class="stringliteral">&quot; and you are scaling by cell volume. Either turn scaling off or use&quot;</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                              <span class="stringliteral">&quot; a cell model with non zero areas (i.e. a Bounded Voronoi Tesselation model).&quot;</span>);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                }</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            }</div>

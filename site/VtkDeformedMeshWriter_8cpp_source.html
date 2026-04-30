@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::799d958d43fb405b25bd1f1eed391976dd1296d1</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::99f8a5061faf856d338440851ffb4b9f8fbd30d9</span>
    </div>
   </td>
  </tr>
@@ -110,13 +110,13 @@ $(document).ready(function(){initNavTree('VtkDeformedMeshWriter_8cpp_source.html
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
 <div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classVtkDeformedMeshWriter.html#a9fc5f08d55f232c73aaf120ae7b3642c">   42</a></span><a class="code hl_function" href="classVtkDeformedMeshWriter.html#a9fc5f08d55f232c73aaf120ae7b3642c">VtkDeformedMeshWriter&lt;DIM&gt;::VtkDeformedMeshWriter</a>(<a class="code hl_class" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt;DIM,DIM&gt;</a>* pDeformedOutputMesh, </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">const</span> std::string&amp; rDirectory, </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">const</span> std::string&amp; rBaseName, </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classVtkDeformedMeshWriter.html#a9fc5f08d55f232c73aaf120ae7b3642c">   42</a></span><a class="code hl_function" href="classVtkDeformedMeshWriter.html#a9fc5f08d55f232c73aaf120ae7b3642c">VtkDeformedMeshWriter&lt;DIM&gt;::VtkDeformedMeshWriter</a>(<a class="code hl_class" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt;DIM,DIM&gt;</a>* pDeformedOutputMesh,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">const</span> std::string&amp; rDirectory,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">const</span> std::string&amp; rBaseName,</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; rCleanDirectory)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    : <a class="code hl_class" href="classVtkMeshWriter.html">VtkMeshWriter</a>&lt;DIM,DIM&gt;(rDirectory,rBaseName,rCleanDirectory),</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      mpDeformedMesh(pDeformedOutputMesh)</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{    </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('VtkDeformedMeshWriter_8cpp_source.html
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> node_index = 0u; node_index&lt;rPositions.size(); ++node_index)</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    {</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_class" href="classChastePoint.html">ChastePoint&lt;DIM&gt;</a> new_position(rPositions[node_index]);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">//The next line will change node coordinates. </span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">//The next line will change node coordinates.</span></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="comment">//Note that we do not update element Jacobians (and related quantities)</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="comment">//as this mesh is used only in this class for visualization purposes.</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        mpDeformedMesh-&gt;GetNode(node_index)-&gt;SetPoint(new_position);</div>

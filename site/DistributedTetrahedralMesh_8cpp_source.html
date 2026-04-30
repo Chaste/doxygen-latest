@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::799d958d43fb405b25bd1f1eed391976dd1296d1</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::99f8a5061faf856d338440851ffb4b9f8fbd30d9</span>
    </div>
   </td>
  </tr>
@@ -1518,12 +1518,12 @@ $(document).ready(function(){initNavTree('DistributedTetrahedralMesh_8cpp_source
 <div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span>    }</div>
 <div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span> </div>
 <div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span><span class="preprocessor">#ifdef CHASTE_HOMEMADE_MESH_TO_DUAL</span></div>
-<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>    <span class="comment">// element_node_matrix is an encoding of the .ele file.  Each row is an element with the </span></div>
+<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>    <span class="comment">// element_node_matrix is an encoding of the .ele file.  Each row is an element with the</span></div>
 <div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>    <span class="comment">// 3 or 4 adjacent nodes indicated by a 1 in the approciate column</span></div>
 <div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span>    <a class="code hl_class" href="classMat.html">Mat</a> element_node_matrix;</div>
 <div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>    <a class="code hl_function" href="classPetscTools.html#ad6d7a60499c5a6bd9c64eb35fffd3b06">PetscTools::SetupMat</a>(element_node_matrix, num_elements, num_nodes, ELEMENT_DIM+1, num_local_elements);</div>
 <div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>    </div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span> </div>
 <div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span>    <span class="keywordtype">unsigned</span> counter = 0;</div>
 <div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>    <span class="keywordflow">for</span> (idx_t element_index = 0; element_index &lt; num_local_elements; element_index++)</div>
 <div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>    {</div>
@@ -1564,7 +1564,7 @@ $(document).ready(function(){initNavTree('DistributedTetrahedralMesh_8cpp_source
 <div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span><span class="comment">     * ELEMENT_DIM+1 if they are the same row and ELEMENT_DIM if they are neighbours.</span></div>
 <div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span><span class="comment">     * These dot-products are achieved (slowly) with</span></div>
 <div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span><span class="comment">     * element_element_matrix = element_node_matrix * transpose(element_node_matrix)</span></div>
-<div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span><span class="comment">     * </span></div>
+<div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span><span class="comment">     *</span></div>
 <div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span><span class="comment">     * Each entry of element_element_matrix shows how many nodes a pair of elements share.</span></div>
 <div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span><span class="comment">     */</span></div>
 <div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span> </div>
