@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::602848a95f986d8b833b3748eafd9c5c9710cc89</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2041842b57abe1fce4116e90417ccd70d0b106cc</span>
    </div>
   </td>
  </tr>
@@ -458,41 +458,40 @@ $(document).ready(function(){initNavTree('AbstractBackwardEulerCardiacCell_8hpp_
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="comment">// Debugging</span></div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="preprocessor">#ifndef NDEBUG</span></div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="preprocessor">#include &quot;OutputFileHandler.hpp&quot;</span></div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="preprocessor">#include &lt;boost/foreach.hpp&gt;</span></div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> SIZE&gt;</div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span><span class="keywordtype">void</span> DumpJacobianToFile(<span class="keywordtype">double</span> time, <span class="keyword">const</span> <span class="keywordtype">double</span> rCurrentGuess[SIZE], <span class="keywordtype">double</span> rJacobian[SIZE][SIZE],</div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>                        <span class="keyword">const</span> std::vector&lt;double&gt;&amp; rY)</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>{</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    <a class="code hl_class" href="classOutputFileHandler.html">OutputFileHandler</a> handler(<span class="stringliteral">&quot;DumpJacs&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    out_stream p_file = handler.<a class="code hl_function" href="classOutputFileHandler.html#a74f4eaf2e89e36084a54c571863b5d60">OpenOutputFile</a>(<span class="stringliteral">&quot;J.txt&quot;</span>, std::ios::app);</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    (*p_file) &lt;&lt; <span class="stringliteral">&quot;At &quot;</span> &lt;&lt; time &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; SIZE &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    (*p_file) &lt;&lt; <span class="stringliteral">&quot;rY&quot;</span>;</div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    BOOST_FOREACH(<span class="keywordtype">double</span> y, rY)</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    {</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>        (*p_file) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y;</div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>    }</div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    (*p_file) &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    (*p_file) &lt;&lt; <span class="stringliteral">&quot;rCurrentGuess&quot;</span>;</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;SIZE; i++)</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>    {</div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        (*p_file) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; rCurrentGuess[i];</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    }</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    (*p_file) &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    (*p_file) &lt;&lt; <span class="stringliteral">&quot;rJacobian&quot;</span>;</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;SIZE; i++)</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>    {</div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;SIZE; j++)</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        {</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>            (*p_file) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; rJacobian[i][j];</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>        }</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    }</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    (*p_file) &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>}</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><a class="code hl_define" href="ClassIsAbstract_8hpp.html#aa8ae4cacd1cf1b8ed6f2c663ce0ffbba">TEMPLATED_CLASS_IS_ABSTRACT_1_UNSIGNED</a>(<a class="code hl_class" href="classAbstractBackwardEulerCardiacCell.html">AbstractBackwardEulerCardiacCell</a>)</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="preprocessor">#endif </span><span class="comment">/*ABSTRACTBACKWARDEULERCARDIACCELL_HPP_*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> SIZE&gt;</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="keywordtype">void</span> DumpJacobianToFile(<span class="keywordtype">double</span> time, <span class="keyword">const</span> <span class="keywordtype">double</span> rCurrentGuess[SIZE], <span class="keywordtype">double</span> rJacobian[SIZE][SIZE],</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>                        <span class="keyword">const</span> std::vector&lt;double&gt;&amp; rY)</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>{</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    <a class="code hl_class" href="classOutputFileHandler.html">OutputFileHandler</a> handler(<span class="stringliteral">&quot;DumpJacs&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    out_stream p_file = handler.<a class="code hl_function" href="classOutputFileHandler.html#a74f4eaf2e89e36084a54c571863b5d60">OpenOutputFile</a>(<span class="stringliteral">&quot;J.txt&quot;</span>, std::ios::app);</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    (*p_file) &lt;&lt; <span class="stringliteral">&quot;At &quot;</span> &lt;&lt; time &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; SIZE &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    (*p_file) &lt;&lt; <span class="stringliteral">&quot;rY&quot;</span>;</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    <span class="keywordflow">for</span> (<span class="keywordtype">double</span> y : rY)</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    {</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>        (*p_file) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y;</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    }</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>    (*p_file) &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    (*p_file) &lt;&lt; <span class="stringliteral">&quot;rCurrentGuess&quot;</span>;</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;SIZE; i++)</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    {</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        (*p_file) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; rCurrentGuess[i];</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    }</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    (*p_file) &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    (*p_file) &lt;&lt; <span class="stringliteral">&quot;rJacobian&quot;</span>;</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;SIZE; i++)</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    {</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;SIZE; j++)</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        {</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>            (*p_file) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; rJacobian[i][j];</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>        }</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    }</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    (*p_file) &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>}</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><a class="code hl_define" href="ClassIsAbstract_8hpp.html#aa8ae4cacd1cf1b8ed6f2c663ce0ffbba">TEMPLATED_CLASS_IS_ABSTRACT_1_UNSIGNED</a>(<a class="code hl_class" href="classAbstractBackwardEulerCardiacCell.html">AbstractBackwardEulerCardiacCell</a>)</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="preprocessor">#endif </span><span class="comment">/*ABSTRACTBACKWARDEULERCARDIACCELL_HPP_*/</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aChasteSerialization_8hpp_html"><div class="ttname"><a href="ChasteSerialization_8hpp.html">ChasteSerialization.hpp</a></div></div>
 <div class="ttc" id="aClassIsAbstract_8hpp_html"><div class="ttname"><a href="ClassIsAbstract_8hpp.html">ClassIsAbstract.hpp</a></div></div>
 <div class="ttc" id="aClassIsAbstract_8hpp_html_aa8ae4cacd1cf1b8ed6f2c663ce0ffbba"><div class="ttname"><a href="ClassIsAbstract_8hpp.html#aa8ae4cacd1cf1b8ed6f2c663ce0ffbba">TEMPLATED_CLASS_IS_ABSTRACT_1_UNSIGNED</a></div><div class="ttdeci">#define TEMPLATED_CLASS_IS_ABSTRACT_1_UNSIGNED(T)</div><div class="ttdef"><b>Definition</b> <a href="ClassIsAbstract_8hpp_source.html#l00126">ClassIsAbstract.hpp:126</a></div></div>

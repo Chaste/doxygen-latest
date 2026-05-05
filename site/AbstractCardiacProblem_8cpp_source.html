@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::602848a95f986d8b833b3748eafd9c5c9710cc89</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2041842b57abe1fce4116e90417ccd70d0b106cc</span>
    </div>
   </td>
  </tr>
@@ -561,7 +561,7 @@ $(document).ready(function(){initNavTree('AbstractCardiacProblem_8cpp_source.htm
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    {</div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>        progress_reporter_dir = <span class="stringliteral">&quot;&quot;</span>; <span class="comment">// progress printed to CHASTE_TEST_OUTPUT</span></div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    }</div>
-<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>    BOOST_FOREACH (boost::shared_ptr&lt;AbstractOutputModifier&gt; p_output_modifier, mOutputModifiers)</div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;AbstractOutputModifier&gt; p_output_modifier : mOutputModifiers)</div>
 <div class="foldopen" id="foldopen00461" data-start="{" data-end="}">
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno"><a class="line" href="classAbstractCardiacProblem.html#a65e07485be337ec452dad5737ba0f807">  461</a></span>    {</div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>        p_output_modifier-&gt;InitialiseAtStart(this-&gt;mpMesh-&gt;GetDistributedVectorFactory(), this-&gt;mpMesh-&gt;rGetNodePermutation());</div>
@@ -661,7 +661,7 @@ $(document).ready(function(){initNavTree('AbstractCardiacProblem_8cpp_source.htm
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        }</div>
 <div class="foldopen" id="foldopen00551" data-start="{" data-end="}">
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno"><a class="line" href="classAbstractCardiacProblem.html#a084734adbdecbbc58e6379fe1ba4b5ef">  551</a></span> </div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        BOOST_FOREACH (boost::shared_ptr&lt;AbstractOutputModifier&gt; p_output_modifier, mOutputModifiers)</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        <span class="keywordflow">for</span> (boost::shared_ptr&lt;AbstractOutputModifier&gt; p_output_modifier : mOutputModifiers)</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        {</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>            p_output_modifier-&gt;ProcessSolutionAtTimeStep(stepper.<a class="code hl_function" href="classTimeStepper.html#aac70f5396b4538a137af9374436c1c86">GetTime</a>(), mSolution, PROBLEM_DIM);</div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        }</div>
@@ -690,7 +690,7 @@ $(document).ready(function(){initNavTree('AbstractCardiacProblem_8cpp_source.htm
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    <span class="comment">// Close the file that stores voltage values</span></div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    progress_reporter.PrintFinalising();</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    BOOST_FOREACH (boost::shared_ptr&lt;AbstractOutputModifier&gt; p_output_modifier, mOutputModifiers)</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;AbstractOutputModifier&gt; p_output_modifier : mOutputModifiers)</div>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    {</div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        p_output_modifier-&gt;FinaliseAtEnd();</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    }</div>
@@ -1168,7 +1168,7 @@ $(document).ready(function(){initNavTree('AbstractCardiacProblem_8cpp_source.htm
 <div class="ttc" id="aclassAbstractCardiacProblem_html_afa6a6c9f8ceba1af0b9be788c07f0864"><div class="ttname"><a href="classAbstractCardiacProblem.html#afa6a6c9f8ceba1af0b9be788c07f0864">AbstractCardiacProblem::DefineWriterColumns</a></div><div class="ttdeci">virtual void DefineWriterColumns(bool extending)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCardiacProblem_8cpp_source.html#l00684">AbstractCardiacProblem.cpp:684</a></div></div>
 <div class="ttc" id="aclassAbstractCardiacProblem_html_afee259ce793e7d48f7641ee4130ad4a7"><div class="ttname"><a href="classAbstractCardiacProblem.html#afee259ce793e7d48f7641ee4130ad4a7">AbstractCardiacProblem::GetSolution</a></div><div class="ttdeci">Vec GetSolution()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCardiacProblem_8cpp_source.html#l00320">AbstractCardiacProblem.cpp:320</a></div></div>
 <div class="ttc" id="aclassAbstractCardiacTissue_html"><div class="ttname"><a href="classAbstractCardiacTissue.html">AbstractCardiacTissue</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractCardiacTissue_8hpp_source.html#l00085">AbstractCardiacTissue.hpp:86</a></div></div>
-<div class="ttc" id="aclassAbstractTetrahedralMesh_html"><div class="ttname"><a href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00071">AbstractTetrahedralMesh.hpp:72</a></div></div>
+<div class="ttc" id="aclassAbstractTetrahedralMesh_html"><div class="ttname"><a href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00070">AbstractTetrahedralMesh.hpp:71</a></div></div>
 <div class="ttc" id="aclassAbstractTimeAdaptivityController_html"><div class="ttname"><a href="classAbstractTimeAdaptivityController.html">AbstractTimeAdaptivityController</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTimeAdaptivityController_8hpp_source.html#l00045">AbstractTimeAdaptivityController.hpp:46</a></div></div>
 <div class="ttc" id="aclassBoundaryConditionsContainer_html"><div class="ttname"><a href="classBoundaryConditionsContainer.html">BoundaryConditionsContainer</a></div><div class="ttdef"><b>Definition</b> <a href="BoundaryConditionsContainer_8hpp_source.html#l00067">BoundaryConditionsContainer.hpp:68</a></div></div>
 <div class="ttc" id="aclassDistributedTetrahedralMesh_html"><div class="ttname"><a href="classDistributedTetrahedralMesh.html">DistributedTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="DistributedTetrahedralMesh_8hpp_source.html#l00079">DistributedTetrahedralMesh.hpp:80</a></div></div>

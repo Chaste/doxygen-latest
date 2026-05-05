@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::602848a95f986d8b833b3748eafd9c5c9710cc89</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2041842b57abe1fce4116e90417ccd70d0b106cc</span>
    </div>
   </td>
  </tr>
@@ -394,9 +394,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    {</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;width+1; i++)</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        {</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            <span class="keywordtype">bool</span> is_boundary=<span class="keyword">false</span>;</div>
-<div class="foldopen" id="foldopen00289" data-start="{" data-end="}">
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a8782bcd90358efa7a300b124c2579fb3">  289</a></span>            <span class="keywordflow">if</span> (i==0 || j==0 || i==width || j==height)</div>
+<div class="foldopen" id="foldopen00288" data-start="{" data-end="}">
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a8782bcd90358efa7a300b124c2579fb3">  288</a></span>            <span class="keywordtype">bool</span> is_boundary=<span class="keyword">false</span>;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordflow">if</span> (i==0 || j==0 || i==width || j==height)</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            {</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                is_boundary=<span class="keyword">true</span>;</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            }</div>
@@ -428,76 +428,76 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        std::vector&lt;Node&lt;SPACE_DIM&gt;*&gt; nodes;</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        nodes.push_back(this-&gt;mNodes[(width+1)*j-1]);</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        nodes.push_back(this-&gt;mNodes[(width+1)*(j+1)-1]);</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        assert(belem_index==width+j-1);</div>
-<div class="foldopen" id="foldopen00322" data-start="{" data-end="}">
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a910d122d75ff6ed85379abec94aa8b20">  322</a></span>        this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,nodes));</div>
+<div class="foldopen" id="foldopen00321" data-start="{" data-end="}">
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a910d122d75ff6ed85379abec94aa8b20">  321</a></span>        assert(belem_index==width+j-1);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,nodes));</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    }</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="comment">//Bottom</span></div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;width; i++)</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    {</div>
-<div class="foldopen" id="foldopen00327" data-start="{" data-end="}">
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a913c45c2a79a66b3d972ce5372390f0e">  327</a></span>        std::vector&lt;Node&lt;SPACE_DIM&gt;*&gt; nodes;</div>
+<div class="foldopen" id="foldopen00326" data-start="{" data-end="}">
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a913c45c2a79a66b3d972ce5372390f0e">  326</a></span>    {</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        std::vector&lt;Node&lt;SPACE_DIM&gt;*&gt; nodes;</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        nodes.push_back(this-&gt;mNodes[i]);</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        nodes.push_back(this-&gt;mNodes[i+1]);</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        assert(belem_index==width+height+i);</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,nodes));</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    }</div>
-<div class="foldopen" id="foldopen00333" data-start="{" data-end="}">
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#aedf161bba302ef0cf3ef2a54e104a782">  333</a></span>    <span class="comment">//Left</span></div>
+<div class="foldopen" id="foldopen00332" data-start="{" data-end="}">
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#aedf161bba302ef0cf3ef2a54e104a782">  332</a></span>    }</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="comment">//Left</span></div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;height; j++)</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    {</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        std::vector&lt;Node&lt;SPACE_DIM&gt;*&gt; nodes;</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        nodes.push_back(this-&gt;mNodes[(width+1)*(j+1)]);</div>
-<div class="foldopen" id="foldopen00338" data-start="{" data-end="}">
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a862b59c7cc8c0bc47be3cede84acfb37">  338</a></span>        nodes.push_back(this-&gt;mNodes[(width+1)*(j)]);</div>
+<div class="foldopen" id="foldopen00337" data-start="{" data-end="}">
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a862b59c7cc8c0bc47be3cede84acfb37">  337</a></span>        nodes.push_back(this-&gt;mNodes[(width+1)*(j+1)]);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        nodes.push_back(this-&gt;mNodes[(width+1)*(j)]);</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        assert(belem_index==2*width+height+j);</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,nodes));</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    }</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
-<div class="foldopen" id="foldopen00343" data-start="{" data-end="}">
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a3e7f4de42f50fe6b9c7b9796a7bc4990">  343</a></span>    <span class="comment">//Construct the elements</span></div>
+<div class="foldopen" id="foldopen00342" data-start="{" data-end="}">
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a3e7f4de42f50fe6b9c7b9796a7bc4990">  342</a></span> </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="comment">//Construct the elements</span></div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    <span class="keywordtype">unsigned</span> elem_index = 0;</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;height; j++)</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    {</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;width; i++)</div>
-<div class="foldopen" id="foldopen00348" data-start="{" data-end="}">
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a164ebb3ce9ae84a2286431b0177ee79f">  348</a></span>        {</div>
+<div class="foldopen" id="foldopen00347" data-start="{" data-end="}">
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a164ebb3ce9ae84a2286431b0177ee79f">  347</a></span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;width; i++)</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        {</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>            <span class="keywordtype">unsigned</span> parity=(i+(height-j))%2;<span class="comment">//Note that parity is measured from the top-left (not bottom left) for historical reasons</span></div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>            <span class="keywordtype">unsigned</span> nw=(j+1)*(width+1)+i; <span class="comment">//ne=nw+1</span></div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>            <span class="keywordtype">unsigned</span> sw=(j)*(width+1)+i;   <span class="comment">//se=sw+1</span></div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>            std::vector&lt;Node&lt;SPACE_DIM&gt;*&gt; upper_nodes;</div>
-<div class="foldopen" id="foldopen00353" data-start="{" data-end="}">
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#aedf6b7bda23536fc283274e43c645738">  353</a></span>            upper_nodes.push_back(this-&gt;mNodes[nw]);</div>
+<div class="foldopen" id="foldopen00352" data-start="{" data-end="}">
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#aedf6b7bda23536fc283274e43c645738">  352</a></span>            std::vector&lt;Node&lt;SPACE_DIM&gt;*&gt; upper_nodes;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            upper_nodes.push_back(this-&gt;mNodes[nw]);</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>            upper_nodes.push_back(this-&gt;mNodes[nw+1]);</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            <span class="keywordflow">if</span> (stagger==<span class="keyword">false</span>  || parity == 1)</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>            {</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                upper_nodes.push_back(this-&gt;mNodes[sw+1]);</div>
-<div class="foldopen" id="foldopen00358" data-start="{" data-end="}">
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a5e92a7630b3b63b5a28bb104aabbdb40">  358</a></span>            }</div>
+<div class="foldopen" id="foldopen00357" data-start="{" data-end="}">
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a5e92a7630b3b63b5a28bb104aabbdb40">  357</a></span>                upper_nodes.push_back(this-&gt;mNodes[sw+1]);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>            }</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>            {</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                upper_nodes.push_back(this-&gt;mNodes[sw]);</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>            }</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            assert(elem_index==2*(j*width+i));</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            this-&gt;mElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classElement.html">Element&lt;ELEMENT_DIM,SPACE_DIM&gt;</a>(elem_index++,upper_nodes));</div>
-<div class="foldopen" id="foldopen00365" data-start="{" data-end="}">
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#ad6f30a80558ac8b8f406df2d8199ef37">  365</a></span>            std::vector&lt;Node&lt;SPACE_DIM&gt;*&gt; lower_nodes;</div>
+<div class="foldopen" id="foldopen00364" data-start="{" data-end="}">
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#ad6f30a80558ac8b8f406df2d8199ef37">  364</a></span>            this-&gt;mElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classElement.html">Element&lt;ELEMENT_DIM,SPACE_DIM&gt;</a>(elem_index++,upper_nodes));</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>            std::vector&lt;Node&lt;SPACE_DIM&gt;*&gt; lower_nodes;</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            lower_nodes.push_back(this-&gt;mNodes[sw+1]);</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            lower_nodes.push_back(this-&gt;mNodes[sw]);</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>            <span class="keywordflow">if</span> (stagger==<span class="keyword">false</span>  ||parity == 1)</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            {</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                lower_nodes.push_back(this-&gt;mNodes[nw]);</div>
-<div class="foldopen" id="foldopen00371" data-start="{" data-end="}">
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a6c9936fea8ca63e5b2b3d6dddaaf578f">  371</a></span>            }</div>
+<div class="foldopen" id="foldopen00370" data-start="{" data-end="}">
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a6c9936fea8ca63e5b2b3d6dddaaf578f">  370</a></span>                lower_nodes.push_back(this-&gt;mNodes[nw]);</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>            }</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>            <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>            {</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                lower_nodes.push_back(this-&gt;mNodes[nw+1]);</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>            }</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>            this-&gt;mElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classElement.html">Element&lt;ELEMENT_DIM,SPACE_DIM&gt;</a>(elem_index++,lower_nodes));</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        }</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    }</div>
-<div class="foldopen" id="foldopen00379" data-start="{" data-end="}">
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a5f62e989d886c9845d1785242d3a4bc0">  379</a></span> </div>
+<div class="foldopen" id="foldopen00378" data-start="{" data-end="}">
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a5f62e989d886c9845d1785242d3a4bc0">  378</a></span>    }</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    this-&gt;RefreshMesh();</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>}</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
@@ -505,18 +505,18 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="foldopen" id="foldopen00384" data-start="{" data-end="}">
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#ae0ec576ba4b883888aa717019b246310">  384</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractTetrahedralMesh.html#ae0ec576ba4b883888aa717019b246310">AbstractTetrahedralMesh&lt;ELEMENT_DIM, SPACE_DIM&gt;::ConstructCuboid</a>(<span class="keywordtype">unsigned</span> width,</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        <span class="keywordtype">unsigned</span> height,</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <span class="keywordtype">unsigned</span> depth)</div>
-<div class="foldopen" id="foldopen00387" data-start="{" data-end="}">
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a8b461de1c8f2e0c2d889b5ec2d03c0a8">  387</a></span>{</div>
+<div class="foldopen" id="foldopen00386" data-start="{" data-end="}">
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a8b461de1c8f2e0c2d889b5ec2d03c0a8">  386</a></span>        <span class="keywordtype">unsigned</span> depth)</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>{</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    assert(SPACE_DIM == 3);     <span class="comment">// LCOV_EXCL_LINE</span></div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    assert(ELEMENT_DIM == 3);     <span class="comment">// LCOV_EXCL_LINE</span></div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="comment">//Construct the nodes</span></div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span> </div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="keywordtype">unsigned</span> node_index = 0;</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> k=0; k&lt;depth+1; k++)</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    {</div>
-<div class="foldopen" id="foldopen00395" data-start="{" data-end="}">
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#abfc4f3ee1ebd134844fe3fda84efd25d">  395</a></span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;height+1; j++)</div>
+<div class="foldopen" id="foldopen00394" data-start="{" data-end="}">
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#abfc4f3ee1ebd134844fe3fda84efd25d">  394</a></span>    {</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;height+1; j++)</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>        {</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;width+1; i++)</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            {</div>
@@ -534,23 +534,23 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>                    this-&gt;mBoundaryNodes.push_back(p_node);</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>                }</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>            }</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        }</div>
-<div class="foldopen" id="foldopen00414" data-start="{" data-end="}">
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a58117ae299e18890024229126015a377">  414</a></span>    }</div>
+<div class="foldopen" id="foldopen00413" data-start="{" data-end="}">
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a58117ae299e18890024229126015a377">  413</a></span>        }</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    }</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    <span class="comment">// Construct the elements</span></div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <span class="keywordtype">unsigned</span> elem_index = 0;</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    <span class="keywordtype">unsigned</span> belem_index = 0;</div>
-<div class="foldopen" id="foldopen00420" data-start="{" data-end="}">
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#abd940176093a585d3dade0772f0ae60e">  420</a></span>    <span class="keywordtype">unsigned</span> element_nodes[6][4] = {{0, 1, 5, 7}, {0, 1, 3, 7},</div>
+<div class="foldopen" id="foldopen00419" data-start="{" data-end="}">
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#abd940176093a585d3dade0772f0ae60e">  419</a></span>    <span class="keywordtype">unsigned</span> belem_index = 0;</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    <span class="keywordtype">unsigned</span> element_nodes[6][4] = {{0, 1, 5, 7}, {0, 1, 3, 7},</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>                                        {0, 2, 3, 7}, {0, 2, 6, 7},</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>                                        {0, 4, 6, 7}, {0, 4, 5, 7}};</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="comment">/* Alternative tessellation - (gerardus)</span></div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="comment"> * Note that our method (above) has a bias that all tetrahedra share a</span></div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span><span class="comment"> * common edge (the diagonal 0 - 7).  In the following method the cube is</span></div>
-<div class="foldopen" id="foldopen00426" data-start="{" data-end="}">
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#af5cf5798227a51af63fdebe4182c12aa">  426</a></span><span class="comment"> * split along the &quot;face diagonal&quot; 1-2-5-6 into two prisms.  This also has a bias.</span></div>
+<div class="foldopen" id="foldopen00425" data-start="{" data-end="}">
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#af5cf5798227a51af63fdebe4182c12aa">  425</a></span><span class="comment"> * common edge (the diagonal 0 - 7).  In the following method the cube is</span></div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="comment"> * split along the &quot;face diagonal&quot; 1-2-5-6 into two prisms.  This also has a bias.</span></div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span><span class="comment">    unsigned element_nodes[6][4] = {{ 0, 6, 5, 4},</span></div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="comment">                                    { 0, 2, 6, 1},</span></div>
@@ -559,9 +559,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span><span class="comment">                                    { 1, 2, 6, 7},</span></div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="comment">                                    { 1, 6, 7, 5 }};</span></div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    std::vector&lt;Node&lt;SPACE_DIM&gt;*&gt; tetrahedra_nodes;</div>
-<div class="foldopen" id="foldopen00436" data-start="{" data-end="}">
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a4c2602e78bf5e076dda864265b928773">  436</a></span> </div>
+<div class="foldopen" id="foldopen00435" data-start="{" data-end="}">
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a4c2602e78bf5e076dda864265b928773">  435</a></span>    std::vector&lt;Node&lt;SPACE_DIM&gt;*&gt; tetrahedra_nodes;</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> k=0; k&lt;depth; k++)</div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    {</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        <span class="keywordflow">if</span> (k!=0)</div>
@@ -572,9 +572,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;height; j++)</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>        {</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;width; i++)</div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>            {</div>
-<div class="foldopen" id="foldopen00448" data-start="{" data-end="}">
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a3bebbb73b9f7a42af79e2f6b41803e65">  448</a></span>                <span class="comment">// Compute the nodes&#39; index</span></div>
+<div class="foldopen" id="foldopen00447" data-start="{" data-end="}">
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a3bebbb73b9f7a42af79e2f6b41803e65">  447</a></span>            {</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>                <span class="comment">// Compute the nodes&#39; index</span></div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>                <span class="keywordtype">unsigned</span> global_node_indices[8];</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>                <span class="keywordtype">unsigned</span> local_node_index = 0;</div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span> </div>
@@ -584,9 +584,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>                    {</div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 2; x++)</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>                        {</div>
-<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>                            global_node_indices[local_node_index] = i+x+(width+1)*(j+y+(height+1)*(k+z));</div>
-<div class="foldopen" id="foldopen00459" data-start="{" data-end="}">
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#add878a7e92318a650136a4afecc6a0a9">  459</a></span> </div>
+<div class="foldopen" id="foldopen00458" data-start="{" data-end="}">
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#add878a7e92318a650136a4afecc6a0a9">  458</a></span>                            global_node_indices[local_node_index] = i+x+(width+1)*(j+y+(height+1)*(k+z));</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span> </div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>                            local_node_index++;</div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>                        }</div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>                    }</div>
@@ -599,9 +599,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>                    tetrahedra_nodes.clear();</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span> </div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> n = 0; n &lt; 4; n++)</div>
-<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>                    {</div>
-<div class="foldopen" id="foldopen00473" data-start="{" data-end="}">
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#aeee67dbe2512466964e516195a6a6733">  473</a></span>                        tetrahedra_nodes.push_back(this-&gt;mNodes[global_node_indices[element_nodes[m][n]]]);</div>
+<div class="foldopen" id="foldopen00472" data-start="{" data-end="}">
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#aeee67dbe2512466964e516195a6a6733">  472</a></span>                    {</div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>                        tetrahedra_nodes.push_back(this-&gt;mNodes[global_node_indices[element_nodes[m][n]]]);</div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>                    }</div>
 <div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span> </div>
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>                    assert(elem_index == 6 * ((k*height+j)*width+i)+m );</div>
@@ -617,9 +617,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[0]]);</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[2]]);</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[6]]);</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
-<div class="foldopen" id="foldopen00490" data-start="{" data-end="}">
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#aba2123e7207733df01141d1821e5033c">  490</a></span>                    triangle_nodes.clear();</div>
+<div class="foldopen" id="foldopen00489" data-start="{" data-end="}">
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#aba2123e7207733df01141d1821e5033c">  489</a></span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>                    triangle_nodes.clear();</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[0]]);</div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[6]]);</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[4]]);</div>
@@ -631,9 +631,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[1]]);</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[5]]);</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[7]]);</div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
-<div class="foldopen" id="foldopen00503" data-start="{" data-end="}">
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#ae0ec576ba4b883888aa717019b246310">  503</a></span>                    triangle_nodes.clear();</div>
+<div class="foldopen" id="foldopen00502" data-start="{" data-end="}">
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#ae0ec576ba4b883888aa717019b246310">  502</a></span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>                    triangle_nodes.clear();</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[1]]);</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[7]]);</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[3]]);</div>
@@ -644,9 +644,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>                    triangle_nodes.clear();</div>
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[0]]);</div>
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[5]]);</div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[1]]);</div>
-<div class="foldopen" id="foldopen00515" data-start="{" data-end="}">
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a0a3065d3c31097fff35a4761791bcaaf">  515</a></span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
+<div class="foldopen" id="foldopen00514" data-start="{" data-end="}">
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a0a3065d3c31097fff35a4761791bcaaf">  514</a></span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[1]]);</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>                    triangle_nodes.clear();</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[0]]);</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[4]]);</div>
@@ -663,9 +663,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>                    triangle_nodes.clear();</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[2]]);</div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[7]]);</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[6]]);</div>
-<div class="foldopen" id="foldopen00533" data-start="{" data-end="}">
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a807da760374c25e8686310971c35640d">  533</a></span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
+<div class="foldopen" id="foldopen00532" data-start="{" data-end="}">
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a807da760374c25e8686310971c35640d">  532</a></span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[6]]);</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>                }</div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>                <span class="keywordflow">if</span> (k == 0) <span class="comment">//low face at z==0</span></div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>                {</div>
@@ -674,9 +674,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[3]]);</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[2]]);</div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>                    triangle_nodes.clear();</div>
-<div class="foldopen" id="foldopen00543" data-start="{" data-end="}">
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a504f867d0204f6e0893a953d448b18e6">  543</a></span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[0]]);</div>
+<div class="foldopen" id="foldopen00542" data-start="{" data-end="}">
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a504f867d0204f6e0893a953d448b18e6">  542</a></span>                    triangle_nodes.clear();</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[0]]);</div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[1]]);</div>
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[3]]);</div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
@@ -684,9 +684,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>                <span class="keywordflow">if</span> (k == depth-1) <span class="comment">//high face at z=depth</span></div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>                {</div>
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>                    triangle_nodes.clear();</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[4]]);</div>
-<div class="foldopen" id="foldopen00552" data-start="{" data-end="}">
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a1ee674fcd0ecba7ed3e09ff3d76efc83">  552</a></span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[7]]);</div>
+<div class="foldopen" id="foldopen00551" data-start="{" data-end="}">
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a1ee674fcd0ecba7ed3e09ff3d76efc83">  551</a></span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[4]]);</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[7]]);</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>                    triangle_nodes.push_back(this-&gt;mNodes[global_node_indices[5]]);</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>                    triangle_nodes.clear();</div>
@@ -696,9 +696,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>                    this-&gt;mBoundaryElements.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classBoundaryElement.html">BoundaryElement&lt;ELEMENT_DIM-1,SPACE_DIM&gt;</a>(belem_index++,triangle_nodes));</div>
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                }</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>            }<span class="comment">//i</span></div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>        }<span class="comment">//j</span></div>
-<div class="foldopen" id="foldopen00563" data-start="{" data-end="}">
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a8f929d1fba2f64b528b6f9f58d96a19c">  563</a></span>    }<span class="comment">//k</span></div>
+<div class="foldopen" id="foldopen00562" data-start="{" data-end="}">
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a8f929d1fba2f64b528b6f9f58d96a19c">  562</a></span>        }<span class="comment">//j</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    }<span class="comment">//k</span></div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    this-&gt;RefreshMesh();</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>}</div>
@@ -706,9 +706,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
 <div class="foldopen" id="foldopen00569" data-start="{" data-end="}">
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a0a3065d3c31097fff35a4761791bcaaf">  569</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractTetrahedralMesh.html#a0a3065d3c31097fff35a4761791bcaaf">AbstractTetrahedralMesh&lt;ELEMENT_DIM, SPACE_DIM&gt;::ConstructRegularSlabMesh</a>(<span class="keywordtype">double</span> spaceStep, <span class="keywordtype">double</span> width, <span class="keywordtype">double</span> height, <span class="keywordtype">double</span> depth)</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>{</div>
-<div class="foldopen" id="foldopen00571" data-start="{" data-end="}">
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a829868c212c7d2f5a7704a3229d7e36d">  571</a></span>    assert(spaceStep&gt;0.0);</div>
+<div class="foldopen" id="foldopen00570" data-start="{" data-end="}">
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a829868c212c7d2f5a7704a3229d7e36d">  570</a></span>{</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    assert(spaceStep&gt;0.0);</div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    assert(width&gt;0.0);</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    <span class="keywordflow">if</span> (ELEMENT_DIM &gt; 1)</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    {</div>
@@ -722,9 +722,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    <span class="keywordtype">unsigned</span> num_elem_y=(<a class="code hl_class" href="classunsigned.html">unsigned</a>)((height+0.5*spaceStep)/spaceStep);</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    <span class="keywordtype">unsigned</span> num_elem_z=(<a class="code hl_class" href="classunsigned.html">unsigned</a>)((depth+0.5*spaceStep)/spaceStep);</div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    <span class="comment">//Make it obvious that actual_width_x etc. are temporaries used in spotting for exception</span></div>
-<div class="foldopen" id="foldopen00586" data-start="{" data-end="}">
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a2673b92918ba2ecb58d7c6be35562976">  586</a></span>    {</div>
+<div class="foldopen" id="foldopen00585" data-start="{" data-end="}">
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a2673b92918ba2ecb58d7c6be35562976">  585</a></span>    <span class="comment">//Make it obvious that actual_width_x etc. are temporaries used in spotting for exception</span></div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    {</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        <span class="keywordtype">double</span> actual_width_x=num_elem_x*spaceStep;</div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>        <span class="keywordtype">double</span> actual_width_y=num_elem_y*spaceStep;</div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        <span class="keywordtype">double</span> actual_width_z=num_elem_z*spaceStep;</div>
@@ -735,9 +735,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>        <span class="keywordflow">if</span> (fabs (actual_width_x - width) &gt; DBL_EPSILON*width</div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>            ||( height!= 0.0 &amp;&amp;  fabs (actual_width_y - height) &gt; DBL_EPSILON*height)</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>            ||( depth != 0.0 &amp;&amp;  fabs (actual_width_z - depth) &gt; DBL_EPSILON*depth ))</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>        {</div>
-<div class="foldopen" id="foldopen00598" data-start="{" data-end="}">
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a915badea8c69373c2ad54099a0d69f3e">  598</a></span>            <a class="code hl_define" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(<span class="stringliteral">&quot;Space step does not divide the size of the mesh&quot;</span>);</div>
+<div class="foldopen" id="foldopen00597" data-start="{" data-end="}">
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a915badea8c69373c2ad54099a0d69f3e">  597</a></span>        {</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>            <a class="code hl_define" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(<span class="stringliteral">&quot;Space step does not divide the size of the mesh&quot;</span>);</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>        }</div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    }</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    <span class="keywordflow">switch</span> (ELEMENT_DIM)</div>
@@ -751,9 +751,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        <span class="keywordflow">case</span> 3:</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>            this-&gt;ConstructCuboid(num_elem_x, num_elem_y, num_elem_z);</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    }</div>
-<div class="foldopen" id="foldopen00613" data-start="{" data-end="}">
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a26e3d1f0d314be314199434f42f0a73c">  613</a></span>    this-&gt;Scale(spaceStep, spaceStep, spaceStep);</div>
+<div class="foldopen" id="foldopen00612" data-start="{" data-end="}">
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a26e3d1f0d314be314199434f42f0a73c">  612</a></span>    }</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>    this-&gt;Scale(spaceStep, spaceStep, spaceStep);</div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>}</div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
@@ -763,9 +763,9 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        <span class="keywordtype">double</span> width, <span class="keywordtype">double</span> height, <span class="keywordtype">double</span> depth)</div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>{</div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    assert(ELEMENT_DIM == SPACE_DIM);     <span class="comment">// LCOV_EXCL_LINE</span></div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    <span class="keywordflow">if</span> (dimension &gt;= SPACE_DIM)</div>
-<div class="foldopen" id="foldopen00623" data-start="{" data-end="}">
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a8a49f0b27aa2bbc3b7cf2a990d2dcd5e">  623</a></span>    {</div>
+<div class="foldopen" id="foldopen00622" data-start="{" data-end="}">
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno"><a class="line" href="classAbstractTetrahedralMesh.html#a8a49f0b27aa2bbc3b7cf2a990d2dcd5e">  622</a></span>    <span class="keywordflow">if</span> (dimension &gt;= SPACE_DIM)</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>    {</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>        <a class="code hl_define" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(<span class="stringliteral">&quot;Cannot split on non-existent dimension&quot;</span>);</div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    }</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    <span class="comment">// Rotate the width -&gt; height -&gt; depth around (if dimension is non-default)</span></div>
@@ -1281,8 +1281,8 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="ttc" id="aclassAbstractElement_html_ad3615921e216492cf80234ffdb3a119a"><div class="ttname"><a href="classAbstractElement.html#ad3615921e216492cf80234ffdb3a119a">AbstractElement::SetOwnership</a></div><div class="ttdeci">void SetOwnership(bool ownership)</div><div class="ttdef"><b>Definition</b> <a href="AbstractElement_8cpp_source.html#l00159">AbstractElement.cpp:159</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_html_a47fc94727ced2f9fa234c896653e76e4"><div class="ttname"><a href="classAbstractMesh.html#a47fc94727ced2f9fa234c896653e76e4">AbstractMesh::GetNumNodes</a></div><div class="ttdeci">virtual unsigned GetNumNodes() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00067">AbstractMesh.cpp:67</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_html_a9c0e16a572d40d8599ca1adde020a2e4"><div class="ttname"><a href="classAbstractMesh.html#a9c0e16a572d40d8599ca1adde020a2e4">AbstractMesh::GetNode</a></div><div class="ttdeci">Node&lt; SPACE_DIM &gt; * GetNode(unsigned index) const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00094">AbstractMesh.cpp:94</a></div></div>
-<div class="ttc" id="aclassAbstractTetrahedralMesh_1_1ElementIterator_html"><div class="ttname"><a href="classAbstractTetrahedralMesh_1_1ElementIterator.html">AbstractTetrahedralMesh::ElementIterator</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00633">AbstractTetrahedralMesh.hpp:634</a></div></div>
-<div class="ttc" id="aclassAbstractTetrahedralMesh_html"><div class="ttname"><a href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00071">AbstractTetrahedralMesh.hpp:72</a></div></div>
+<div class="ttc" id="aclassAbstractTetrahedralMesh_1_1ElementIterator_html"><div class="ttname"><a href="classAbstractTetrahedralMesh_1_1ElementIterator.html">AbstractTetrahedralMesh::ElementIterator</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00632">AbstractTetrahedralMesh.hpp:633</a></div></div>
+<div class="ttc" id="aclassAbstractTetrahedralMesh_html"><div class="ttname"><a href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00070">AbstractTetrahedralMesh.hpp:71</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_a0a3065d3c31097fff35a4761791bcaaf"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a0a3065d3c31097fff35a4761791bcaaf">AbstractTetrahedralMesh::ConstructRegularSlabMesh</a></div><div class="ttdeci">void ConstructRegularSlabMesh(double spaceStep, double width, double height=0, double depth=0)</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00569">AbstractTetrahedralMesh.cpp:569</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_a164ebb3ce9ae84a2286431b0177ee79f"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a164ebb3ce9ae84a2286431b0177ee79f">AbstractTetrahedralMesh::GetNumLocalBoundaryElements</a></div><div class="ttdeci">virtual unsigned GetNumLocalBoundaryElements() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00111">AbstractTetrahedralMesh.cpp:111</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_a1ee674fcd0ecba7ed3e09ff3d76efc83"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a1ee674fcd0ecba7ed3e09ff3d76efc83">AbstractTetrahedralMesh::CalculateDesignatedOwnershipOfElement</a></div><div class="ttdeci">virtual bool CalculateDesignatedOwnershipOfElement(unsigned elementIndex)</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00701">AbstractTetrahedralMesh.cpp:701</a></div></div>
@@ -1298,7 +1298,7 @@ $(document).ready(function(){initNavTree('AbstractTetrahedralMesh_8cpp_source.ht
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_a6c9936fea8ca63e5b2b3d6dddaaf578f"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a6c9936fea8ca63e5b2b3d6dddaaf578f">AbstractTetrahedralMesh::GetNumVertices</a></div><div class="ttdeci">virtual unsigned GetNumVertices() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00129">AbstractTetrahedralMesh.cpp:129</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_a807da760374c25e8686310971c35640d"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a807da760374c25e8686310971c35640d">AbstractTetrahedralMesh::ConstructRegularSlabMeshWithDimensionSplit</a></div><div class="ttdeci">void ConstructRegularSlabMeshWithDimensionSplit(unsigned dimension, double spaceStep, double width, double height=0, double depth=0)</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00617">AbstractTetrahedralMesh.cpp:617</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_a829868c212c7d2f5a7704a3229d7e36d"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a829868c212c7d2f5a7704a3229d7e36d">AbstractTetrahedralMesh::GetHaloNodeIndices</a></div><div class="ttdeci">virtual void GetHaloNodeIndices(std::vector&lt; unsigned &gt; &amp;rHaloIndices) const</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00829">AbstractTetrahedralMesh.cpp:829</a></div></div>
-<div class="ttc" id="aclassAbstractTetrahedralMesh_html_a8402d504b37d70112752d3f1cd5ac8ec"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a8402d504b37d70112752d3f1cd5ac8ec">AbstractTetrahedralMesh::BoundaryElementIterator</a></div><div class="ttdeci">std::vector&lt; BoundaryElement&lt; ELEMENT_DIM-1, SPACE_DIM &gt; * &gt;::const_iterator BoundaryElementIterator</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00298">AbstractTetrahedralMesh.hpp:298</a></div></div>
+<div class="ttc" id="aclassAbstractTetrahedralMesh_html_a8402d504b37d70112752d3f1cd5ac8ec"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a8402d504b37d70112752d3f1cd5ac8ec">AbstractTetrahedralMesh::BoundaryElementIterator</a></div><div class="ttdeci">std::vector&lt; BoundaryElement&lt; ELEMENT_DIM-1, SPACE_DIM &gt; * &gt;::const_iterator BoundaryElementIterator</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00297">AbstractTetrahedralMesh.hpp:297</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_a862b59c7cc8c0bc47be3cede84acfb37"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a862b59c7cc8c0bc47be3cede84acfb37">AbstractTetrahedralMesh::GetNumLocalElements</a></div><div class="ttdeci">virtual unsigned GetNumLocalElements() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00093">AbstractTetrahedralMesh.cpp:93</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_a8782bcd90358efa7a300b124c2579fb3"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a8782bcd90358efa7a300b124c2579fb3">AbstractTetrahedralMesh::SetElementOwnerships</a></div><div class="ttdeci">void SetElementOwnerships()</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l00045">AbstractTetrahedralMesh.cpp:45</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html_a8a49f0b27aa2bbc3b7cf2a990d2dcd5e"><div class="ttname"><a href="classAbstractTetrahedralMesh.html#a8a49f0b27aa2bbc3b7cf2a990d2dcd5e">AbstractTetrahedralMesh::GetNearestElementIndexFromTestElements</a></div><div class="ttdeci">unsigned GetNearestElementIndexFromTestElements(const ChastePoint&lt; SPACE_DIM &gt; &amp;rTestPoint, std::set&lt; unsigned &gt; testElements)</div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8cpp_source.html#l01039">AbstractTetrahedralMesh.cpp:1039</a></div></div>
