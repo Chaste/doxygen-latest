@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"classDiffusionForce.html#a8f91727753a549e84f4e9b213770feda":[1,0,303,12],
 "classDiffusionForce.html#ab12bc225389b51490912c8b0613711e7":[1,0,303,3],
 "classDiffusionForce.html#abea71d7e37f48b3bae906a65bc370e8d":[1,0,303,2],
 "classDiffusionForce.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,303,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "classDistributedVector_1_1Stripe.html#ad687bc959e43f5ebebe652c798f9e03b":[1,0,310,2,6],
 "classDivisionBiasTrackingModifier.html":[1,0,313],
 "classDivisionBiasTrackingModifier.html#a0a60691a2aee0f11f5a2d0c67e096f15":[1,0,313,0],
-"classDivisionBiasTrackingModifier.html#a23aa60cf87e4ba11d2d8d2bf51b23a08":[1,0,313,9],
-"classDivisionBiasTrackingModifier.html#a498146167cc64b89aff0d51a11375453":[1,0,313,6]
+"classDivisionBiasTrackingModifier.html#a23aa60cf87e4ba11d2d8d2bf51b23a08":[1,0,313,9]
 };
