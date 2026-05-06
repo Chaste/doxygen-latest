@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2041842b57abe1fce4116e90417ccd70d0b106cc</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::c53d92749cdb934d4561053285b7219faaaf8504</span>
    </div>
   </td>
  </tr>
@@ -284,7 +284,7 @@ $(document).ready(function(){initNavTree('PCBlockDiagonal_8cpp_source.html','');
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="comment">// We are expecting an error from PETSC on systems that don&#39;t have the hypre library, so suppress it</span></div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="comment">// in case it aborts</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    PetscPushErrorHandler(PetscIgnoreErrorHandler, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    PetscPushErrorHandler(PetscReturnErrorHandler, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    PetscErrorCode pc_set_error = PCSetType(<a class="code hl_variable" href="classPCBlockDiagonal.html#ae3775feceabf1f45c9cb70aa247bf594">mPCContext</a>.<a class="code hl_variable" href="structPCBlockDiagonal_1_1PCBlockDiagonalContext.html#ab30e41636edc4227f32664e633811735">PC_amg_A11</a>, PCHYPRE);</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordflow">if</span> (pc_set_error != 0)</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    {</div>
@@ -318,7 +318,7 @@ $(document).ready(function(){initNavTree('PCBlockDiagonal_8cpp_source.html','');
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    PCCreate(PETSC_COMM_WORLD, &amp;(<a class="code hl_variable" href="classPCBlockDiagonal.html#ae3775feceabf1f45c9cb70aa247bf594">mPCContext</a>.<a class="code hl_variable" href="structPCBlockDiagonal_1_1PCBlockDiagonalContext.html#a6004045452c8c19a26aedce6e95743dd">PC_amg_A22</a>));</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="comment">/* Full AMG in the block */</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    PetscPushErrorHandler(PetscIgnoreErrorHandler, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    PetscPushErrorHandler(PetscReturnErrorHandler, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    PCSetType(<a class="code hl_variable" href="classPCBlockDiagonal.html#ae3775feceabf1f45c9cb70aa247bf594">mPCContext</a>.<a class="code hl_variable" href="structPCBlockDiagonal_1_1PCBlockDiagonalContext.html#a6004045452c8c19a26aedce6e95743dd">PC_amg_A22</a>, PCHYPRE);</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="comment">// Stop supressing error</span></div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    PetscPopErrorHandler();</div>

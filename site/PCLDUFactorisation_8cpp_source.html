@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::2041842b57abe1fce4116e90417ccd70d0b106cc</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::c53d92749cdb934d4561053285b7219faaaf8504</span>
    </div>
   </td>
  </tr>
@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('PCLDUFactorisation_8cpp_source.html','
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="comment">// We are expecting an error from PETSC on systems that don&#39;t have the hypre library, so suppress it</span></div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="comment">// in case it aborts</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    PetscPushErrorHandler(PetscIgnoreErrorHandler, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    PetscPushErrorHandler(PetscReturnErrorHandler, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    PetscErrorCode pc_set_error = PCSetType(<a class="code hl_variable" href="classPCLDUFactorisation.html#a144fd13752dd19f3d907fa88a3f54572">mPCContext</a>.<a class="code hl_variable" href="structPCLDUFactorisation_1_1PCLDUFactorisationContext.html#aa457cd5770a3fd29b7678718d8dbbb8a">PC_amg_A11</a>, PCHYPRE);</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordflow">if</span> (pc_set_error != 0)</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    {</div>
@@ -396,7 +396,7 @@ $(document).ready(function(){initNavTree('PCLDUFactorisation_8cpp_source.html','
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="comment">// or with an CG solve with high tolerance</span></div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="comment">// We are expecting an error from PETSC on systems that don&#39;t have the hypre library, so suppress it</span></div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="comment">// in case it aborts</span></div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    PetscPushErrorHandler(PetscIgnoreErrorHandler, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    PetscPushErrorHandler(PetscReturnErrorHandler, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    PCSetType(<a class="code hl_variable" href="classPCLDUFactorisation.html#a144fd13752dd19f3d907fa88a3f54572">mPCContext</a>.<a class="code hl_variable" href="structPCLDUFactorisation_1_1PCLDUFactorisationContext.html#a89466aa004f0e1a893e555c238d6ec84">PC_amg_A22</a>, PCHYPRE);</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="comment">// Stop supressing error</span></div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    PetscPopErrorHandler();</div>
