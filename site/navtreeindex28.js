@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"classHeartConfig.html#a48f53d59048f8f20c9291e9e811ea526":[1,0,386,70],
+"classHeartConfig.html#a4d4dbabe117107031e2451e05fdf1b35":[1,0,386,124],
 "classHeartConfig.html#a4e167e490593bc2de5d162a89cac0df4":[1,0,386,55],
 "classHeartConfig.html#a4e525c4ace93166720a3b77d0b5f389d":[1,0,386,187],
 "classHeartConfig.html#a4f24e9511561306cd100eac814380a22":[1,0,386,101],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "classHeterotypicBoundaryLengthWriter.html#a5e91fe549adebbf9d8dc6937072d68d1":[1,0,392,2],
 "classHeterotypicBoundaryLengthWriter.html#a6a1dd52efff34cee93db355127c16815":[1,0,392,7],
 "classHeterotypicBoundaryLengthWriter.html#a855e4331acf291962e3bc9cc3f26e469":[1,0,392,6],
-"classHeterotypicBoundaryLengthWriter.html#ac0a4e6a957bb051da8b72ccbe13b6d8e":[1,0,392,3],
-"classHeterotypicBoundaryLengthWriter.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,392,8],
-"classHeunIvpOdeSolver.html":[1,0,393]
+"classHeterotypicBoundaryLengthWriter.html#ac0a4e6a957bb051da8b72ccbe13b6d8e":[1,0,392,3]
 };
