@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::d7d2e2c67cc5b9d70cab25ad4469eb0c2630f203</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::8c9ed6394efb627973fab3e230dd8886815a8eac</span>
    </div>
   </td>
  </tr>
@@ -168,7 +168,7 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    { \</div>
 <div class="line">    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> counter=1; \</div>
 <div class="line">    std::cout &lt;&lt; <a class="code hl_function" href="Debug_8hpp.html#a2831c6a8055e4a8b85bd2bfa275d2595">FormDebugHead</a>() &lt;&lt; <span class="stringliteral">&quot;Num times here (&quot;</span> &lt;&lt; message &lt;&lt; <span class="stringliteral">&quot;): &quot;</span> &lt;&lt; counter++ &lt;&lt; std::endl &lt;&lt; std::flush; }</div>
-<div class="ttc" id="aDebug_8hpp_html_a2831c6a8055e4a8b85bd2bfa275d2595"><div class="ttname"><a href="Debug_8hpp.html#a2831c6a8055e4a8b85bd2bfa275d2595">FormDebugHead</a></div><div class="ttdeci">std::string FormDebugHead()</div><div class="ttdef"><b>Definition</b> <a href="Debug_8cpp_source.html#l00047">Debug.cpp:47</a></div></div>
+<div class="ttc" id="aDebug_8hpp_html_a2831c6a8055e4a8b85bd2bfa275d2595"><div class="ttname"><a href="Debug_8hpp.html#a2831c6a8055e4a8b85bd2bfa275d2595">FormDebugHead</a></div><div class="ttdeci">std::string FormDebugHead()</div><div class="ttdef"><b>Definition</b> <a href="Debug_8cpp_source.html#l00044">Debug.cpp:44</a></div></div>
 </div><!-- fragment --><p>Print how many times this line has been reached, everytime it is reached. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message</td><td>message to include in brackets </td></tr>
@@ -672,7 +672,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>a 'header' which can be printed in each debug output line </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00047">47</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00044">44</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="PetscTools_8cpp_source.html#l00114">PetscTools::GetMyRank()</a>, and <a class="el" href="PetscTools_8cpp_source.html#l00097">PetscTools::IsParallel()</a>.</p>
 
@@ -696,7 +696,7 @@ Variables</h2></td></tr>
 <p>Set sMemoryAtMarker to the current approximate memory footprint. This value is subtracted from the memory footprint if the macro PRINT_MEMORY is called.</p>
 <p>This is used with the macro MARK_MEMORY </p>
 
-<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00083">83</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00077">77</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Debug_8hpp_source.html#l00096">TRACE</a>.</p>
 
@@ -719,7 +719,7 @@ Variables</h2></td></tr>
 <p>Print the approximate memory footprint. This is the current memory footprint minus sMemoryAtMarker, which will be zero if the MARK_MEMORY macro has not been used.</p>
 <p>This is used with the macro PRINT_MEMORY </p>
 
-<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00105">105</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00095">95</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
 </div>
 </div>
@@ -739,7 +739,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>In extremis, print enough of the stack to see how we got to this point (e.g. at EXCEPTION time). This is used with the macro STACK </p>
 
-<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00059">59</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00056">56</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Debug_8hpp_source.html#l00096">TRACE</a>.</p>
 
@@ -762,7 +762,7 @@ Variables</h2></td></tr>
 <p>Set sMemoryAtMarker to zero meaning subsequent use of PRINT_MEMORY will give an absolute memory footprint, rather than relative to a fixed value.</p>
 <p>This is used with the macro UNMARK_MEMORY </p>
 
-<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00096">96</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00088">88</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Debug_8hpp_source.html#l00096">TRACE</a>.</p>
 
@@ -790,7 +790,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Can be set as approximate memory footprint in Mb at marker using the macro MARK_MEMORY </p>
 
-<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00045">45</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Debug_8cpp_source.html#l00042">42</a> of file <a class="el" href="Debug_8cpp_source.html">Debug.cpp</a>.</p>
 
 </div>
 </div>

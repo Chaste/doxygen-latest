@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::d7d2e2c67cc5b9d70cab25ad4469eb0c2630f203</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::8c9ed6394efb627973fab3e230dd8886815a8eac</span>
    </div>
   </td>
  </tr>
@@ -128,109 +128,105 @@ $(document).ready(function(){initNavTree('Hdf5ToXdmfConverter_8cpp_source.html',
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
 </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#ifndef _MSC_VER</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classHdf5ToXdmfConverter.html#a1dd7509fe4c15e6033f73004ea5f30a6">   62</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classHdf5ToXdmfConverter.html#a1dd7509fe4c15e6033f73004ea5f30a6">Hdf5ToXdmfConverter&lt;ELEMENT_DIM, SPACE_DIM&gt;::AddDataOnNodes</a>(XERCES_CPP_NAMESPACE_QUALIFIER DOMElement* pGridElement,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                                                 XERCES_CPP_NAMESPACE_QUALIFIER DOMDocument* pDomDocument,</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                                                                 <span class="keywordtype">unsigned</span> timeStep)</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// Use xerces namespace for convenience</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    XERCES_CPP_NAMESPACE_USE</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classHdf5ToXdmfConverter.html#a1dd7509fe4c15e6033f73004ea5f30a6">   60</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classHdf5ToXdmfConverter.html#a1dd7509fe4c15e6033f73004ea5f30a6">Hdf5ToXdmfConverter&lt;ELEMENT_DIM, SPACE_DIM&gt;::AddDataOnNodes</a>(XERCES_CPP_NAMESPACE_QUALIFIER DOMElement* pGridElement,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                                                 XERCES_CPP_NAMESPACE_QUALIFIER DOMDocument* pDomDocument,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                                                                 <span class="keywordtype">unsigned</span> timeStep)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// Use xerces namespace for convenience</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    XERCES_CPP_NAMESPACE_USE</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">unsigned</span> num_timesteps = this-&gt;mpReader-&gt;GetUnlimitedDimensionValues().size();</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">unsigned</span> num_timesteps = this-&gt;mpReader-&gt;GetUnlimitedDimensionValues().size();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// Loop over variables</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var_index=0; var_index&lt;this-&gt;mNumVariables; var_index++)</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        std::string variable_name = this-&gt;mpReader-&gt;GetVariableNames()[var_index];</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="comment">/*</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">         * e.g. &lt;Attribute Center=&quot;Node&quot; Name=&quot;V&quot;&gt;</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        DOMElement* p_attr_element =  pDomDocument-&gt;createElement(X(<span class="stringliteral">&quot;Attribute&quot;</span>));</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        p_attr_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Name&quot;</span>), X(variable_name));</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        p_attr_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Center&quot;</span>), X(<span class="stringliteral">&quot;Node&quot;</span>));</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        pGridElement-&gt;appendChild(p_attr_element);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="comment">/*</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">         * e.g. &lt;DataItem Dimensions=&quot;1 12 1&quot; ItemType=&quot;HyperSlab&quot;&gt;</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        DOMElement* p_hype_element =  pDomDocument-&gt;createElement(X(<span class="stringliteral">&quot;DataItem&quot;</span>));</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        p_hype_element-&gt;setAttribute(X(<span class="stringliteral">&quot;ItemType&quot;</span>), X(<span class="stringliteral">&quot;HyperSlab&quot;</span>));</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        std::stringstream dim_stream;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="comment">// First index is time value, second is number of nodes, third is variable index</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="comment">/* DistributedVectorFactory* p_factory = AbstractHdf5Converter&lt;ELEMENT_DIM, SPACE_DIM&gt;::mpMesh-&gt;GetDistributedVectorFactory();</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">        dim_stream &lt;&lt; &quot;1 &quot; &lt;&lt; p_factory-&gt;GetHigh()-p_factory-&gt;GetLow() &lt;&lt; &quot; 1&quot;; */</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordtype">unsigned</span> num_nodes = <a class="code hl_class" href="classAbstractHdf5Converter.html">AbstractHdf5Converter&lt;ELEMENT_DIM, SPACE_DIM&gt;::mpMesh</a>-&gt;GetNumNodes();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        dim_stream &lt;&lt; <span class="stringliteral">&quot;1 &quot;</span> &lt;&lt; num_nodes &lt;&lt; <span class="stringliteral">&quot; 1&quot;</span>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        p_hype_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Dimensions&quot;</span>), X(dim_stream.str()));</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        p_attr_element-&gt;appendChild(p_hype_element);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="comment">/*</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">         * e.g. &lt;DataItem Dimensions=&quot;3 3&quot; Format=&quot;XML&quot;&gt;</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        DOMElement* p_xml_element =  pDomDocument-&gt;createElement(X(<span class="stringliteral">&quot;DataItem&quot;</span>));</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        p_xml_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Format&quot;</span>), X(<span class="stringliteral">&quot;XML&quot;</span>));</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        p_xml_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Dimensions&quot;</span>), X(<span class="stringliteral">&quot;3 3&quot;</span>));</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        p_hype_element-&gt;appendChild(p_xml_element);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="comment">/*</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">         * e.g. 0 0 0 1 1 1 1 12 1</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        std::stringstream XMLStream;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        XMLStream &lt;&lt; timeStep &lt;&lt; <span class="stringliteral">&quot; 0 &quot;</span> &lt;&lt; var_index &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        XMLStream &lt;&lt; <span class="stringliteral">&quot;1 1 1 &quot;</span>;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="comment">/* XMLStream &lt;&lt; &quot;1 &quot; &lt;&lt; p_factory-&gt;GetHigh()-p_factory-&gt;GetLow() &lt;&lt; &quot; 1&quot;; */</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        XMLStream &lt;&lt; <span class="stringliteral">&quot;1 &quot;</span> &lt;&lt; num_nodes &lt;&lt; <span class="stringliteral">&quot; 1&quot;</span>;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        DOMText* p_xml_text = pDomDocument-&gt;createTextNode(X(XMLStream.str()));</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        p_xml_element-&gt;appendChild(p_xml_text);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="comment">/*</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">         * e.g. &lt;DataItem Dimensions=&quot;2 12 2&quot; Format=&quot;HDF&quot; NumberType=&quot;Float&quot; Precision=&quot;8&quot;&gt;</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        DOMElement* p_hdf_element =  pDomDocument-&gt;createElement(X(<span class="stringliteral">&quot;DataItem&quot;</span>));</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        p_hdf_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Format&quot;</span>), X(<span class="stringliteral">&quot;HDF&quot;</span>));</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        p_hdf_element-&gt;setAttribute(X(<span class="stringliteral">&quot;NumberType&quot;</span>), X(<span class="stringliteral">&quot;Float&quot;</span>));</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        p_hdf_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Precision&quot;</span>), X(<span class="stringliteral">&quot;8&quot;</span>));</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        std::stringstream hdf_dims_stream;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="comment">/* hdf_dims_stream &lt;&lt; num_timesteps &lt;&lt; &quot; &quot; &lt;&lt; p_factory-&gt;GetHigh()-p_factory-&gt;GetLow() &lt;&lt; &quot; &quot; &lt;&lt; this-&gt;mNumVariables; */</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        hdf_dims_stream &lt;&lt; num_timesteps &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; num_nodes &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; this-&gt;mNumVariables;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        p_hdf_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Dimensions&quot;</span>), X(hdf_dims_stream.str()));</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        p_hype_element-&gt;appendChild(p_hdf_element);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="comment">/*</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">         * e.g. ../cube_2mm_12_elements.h5:/Data</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        std::stringstream HDFStream;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        HDFStream &lt;&lt; <span class="stringliteral">&quot;../&quot;</span> &lt;&lt; <a class="code hl_class" href="classAbstractHdf5Converter.html">AbstractHdf5Converter&lt;ELEMENT_DIM, SPACE_DIM&gt;::mFileBaseName</a> &lt;&lt; <span class="stringliteral">&quot;.h5:/Data&quot;</span>;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        DOMText* p_hdf_text = pDomDocument-&gt;createTextNode(X(HDFStream.str()));</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        p_hdf_element-&gt;appendChild(p_hdf_text);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>}</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// Loop over variables</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var_index=0; var_index&lt;this-&gt;mNumVariables; var_index++)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        std::string variable_name = this-&gt;mpReader-&gt;GetVariableNames()[var_index];</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="comment">/*</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">         * e.g. &lt;Attribute Center=&quot;Node&quot; Name=&quot;V&quot;&gt;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        DOMElement* p_attr_element =  pDomDocument-&gt;createElement(X(<span class="stringliteral">&quot;Attribute&quot;</span>));</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        p_attr_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Name&quot;</span>), X(variable_name));</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        p_attr_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Center&quot;</span>), X(<span class="stringliteral">&quot;Node&quot;</span>));</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        pGridElement-&gt;appendChild(p_attr_element);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">/*</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">         * e.g. &lt;DataItem Dimensions=&quot;1 12 1&quot; ItemType=&quot;HyperSlab&quot;&gt;</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        DOMElement* p_hype_element =  pDomDocument-&gt;createElement(X(<span class="stringliteral">&quot;DataItem&quot;</span>));</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        p_hype_element-&gt;setAttribute(X(<span class="stringliteral">&quot;ItemType&quot;</span>), X(<span class="stringliteral">&quot;HyperSlab&quot;</span>));</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        std::stringstream dim_stream;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="comment">// First index is time value, second is number of nodes, third is variable index</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="comment">/* DistributedVectorFactory* p_factory = AbstractHdf5Converter&lt;ELEMENT_DIM, SPACE_DIM&gt;::mpMesh-&gt;GetDistributedVectorFactory();</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">        dim_stream &lt;&lt; &quot;1 &quot; &lt;&lt; p_factory-&gt;GetHigh()-p_factory-&gt;GetLow() &lt;&lt; &quot; 1&quot;; */</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordtype">unsigned</span> num_nodes = <a class="code hl_class" href="classAbstractHdf5Converter.html">AbstractHdf5Converter&lt;ELEMENT_DIM, SPACE_DIM&gt;::mpMesh</a>-&gt;GetNumNodes();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        dim_stream &lt;&lt; <span class="stringliteral">&quot;1 &quot;</span> &lt;&lt; num_nodes &lt;&lt; <span class="stringliteral">&quot; 1&quot;</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        p_hype_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Dimensions&quot;</span>), X(dim_stream.str()));</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        p_attr_element-&gt;appendChild(p_hype_element);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="comment">/*</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">         * e.g. &lt;DataItem Dimensions=&quot;3 3&quot; Format=&quot;XML&quot;&gt;</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        DOMElement* p_xml_element =  pDomDocument-&gt;createElement(X(<span class="stringliteral">&quot;DataItem&quot;</span>));</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        p_xml_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Format&quot;</span>), X(<span class="stringliteral">&quot;XML&quot;</span>));</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        p_xml_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Dimensions&quot;</span>), X(<span class="stringliteral">&quot;3 3&quot;</span>));</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        p_hype_element-&gt;appendChild(p_xml_element);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="comment">/*</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">         * e.g. 0 0 0 1 1 1 1 12 1</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        std::stringstream XMLStream;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        XMLStream &lt;&lt; timeStep &lt;&lt; <span class="stringliteral">&quot; 0 &quot;</span> &lt;&lt; var_index &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        XMLStream &lt;&lt; <span class="stringliteral">&quot;1 1 1 &quot;</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="comment">/* XMLStream &lt;&lt; &quot;1 &quot; &lt;&lt; p_factory-&gt;GetHigh()-p_factory-&gt;GetLow() &lt;&lt; &quot; 1&quot;; */</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        XMLStream &lt;&lt; <span class="stringliteral">&quot;1 &quot;</span> &lt;&lt; num_nodes &lt;&lt; <span class="stringliteral">&quot; 1&quot;</span>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        DOMText* p_xml_text = pDomDocument-&gt;createTextNode(X(XMLStream.str()));</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        p_xml_element-&gt;appendChild(p_xml_text);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="comment">/*</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">         * e.g. &lt;DataItem Dimensions=&quot;2 12 2&quot; Format=&quot;HDF&quot; NumberType=&quot;Float&quot; Precision=&quot;8&quot;&gt;</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        DOMElement* p_hdf_element =  pDomDocument-&gt;createElement(X(<span class="stringliteral">&quot;DataItem&quot;</span>));</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        p_hdf_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Format&quot;</span>), X(<span class="stringliteral">&quot;HDF&quot;</span>));</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        p_hdf_element-&gt;setAttribute(X(<span class="stringliteral">&quot;NumberType&quot;</span>), X(<span class="stringliteral">&quot;Float&quot;</span>));</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        p_hdf_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Precision&quot;</span>), X(<span class="stringliteral">&quot;8&quot;</span>));</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        std::stringstream hdf_dims_stream;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="comment">/* hdf_dims_stream &lt;&lt; num_timesteps &lt;&lt; &quot; &quot; &lt;&lt; p_factory-&gt;GetHigh()-p_factory-&gt;GetLow() &lt;&lt; &quot; &quot; &lt;&lt; this-&gt;mNumVariables; */</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        hdf_dims_stream &lt;&lt; num_timesteps &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; num_nodes &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; this-&gt;mNumVariables;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        p_hdf_element-&gt;setAttribute(X(<span class="stringliteral">&quot;Dimensions&quot;</span>), X(hdf_dims_stream.str()));</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        p_hype_element-&gt;appendChild(p_hdf_element);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="comment">/*</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">         * e.g. ../cube_2mm_12_elements.h5:/Data</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        std::stringstream HDFStream;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        HDFStream &lt;&lt; <span class="stringliteral">&quot;../&quot;</span> &lt;&lt; <a class="code hl_class" href="classAbstractHdf5Converter.html">AbstractHdf5Converter&lt;ELEMENT_DIM, SPACE_DIM&gt;::mFileBaseName</a> &lt;&lt; <span class="stringliteral">&quot;.h5:/Data&quot;</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        DOMText* p_hdf_text = pDomDocument-&gt;createTextNode(X(HDFStream.str()));</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        p_hdf_element-&gt;appendChild(p_hdf_text);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
 </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;1,1&gt;</a>;</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;1,2&gt;</a>;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;2,2&gt;</a>;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;1,3&gt;</a>;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;2,3&gt;</a>;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;3,3&gt;</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;1,1&gt;</a>;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;1,2&gt;</a>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;2,2&gt;</a>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;1,3&gt;</a>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;2,3&gt;</a>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter&lt;3,3&gt;</a>;</div>
 <div class="ttc" id="aclassAbstractHdf5Converter_html"><div class="ttname"><a href="classAbstractHdf5Converter.html">AbstractHdf5Converter</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractHdf5Converter_8hpp_source.html#l00050">AbstractHdf5Converter.hpp:51</a></div></div>
 <div class="ttc" id="aclassAbstractHdf5Converter_html_ad6c30c7b93e596ff95bef2e8f693dcb6"><div class="ttname"><a href="classAbstractHdf5Converter.html#ad6c30c7b93e596ff95bef2e8f693dcb6">AbstractHdf5Converter::mpReader</a></div><div class="ttdeci">boost::shared_ptr&lt; Hdf5DataReader &gt; mpReader</div><div class="ttdef"><b>Definition</b> <a href="AbstractHdf5Converter_8hpp_source.html#l00067">AbstractHdf5Converter.hpp:67</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html"><div class="ttname"><a href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00070">AbstractTetrahedralMesh.hpp:71</a></div></div>
 <div class="ttc" id="aclassFileFinder_html"><div class="ttname"><a href="classFileFinder.html">FileFinder</a></div><div class="ttdef"><b>Definition</b> <a href="FileFinder_8hpp_source.html#l00070">FileFinder.hpp:71</a></div></div>
 <div class="ttc" id="aclassHdf5ToXdmfConverter_html"><div class="ttname"><a href="classHdf5ToXdmfConverter.html">Hdf5ToXdmfConverter</a></div><div class="ttdef"><b>Definition</b> <a href="Hdf5ToXdmfConverter_8hpp_source.html#l00047">Hdf5ToXdmfConverter.hpp:50</a></div></div>
-<div class="ttc" id="aclassHdf5ToXdmfConverter_html_a1dd7509fe4c15e6033f73004ea5f30a6"><div class="ttname"><a href="classHdf5ToXdmfConverter.html#a1dd7509fe4c15e6033f73004ea5f30a6">Hdf5ToXdmfConverter::AddDataOnNodes</a></div><div class="ttdeci">void AddDataOnNodes(XERCES_CPP_NAMESPACE_QUALIFIER DOMElement *pGridElement, XERCES_CPP_NAMESPACE_QUALIFIER DOMDocument *pDomDocument, unsigned timeStep)</div><div class="ttdef"><b>Definition</b> <a href="Hdf5ToXdmfConverter_8cpp_source.html#l00062">Hdf5ToXdmfConverter.cpp:62</a></div></div>
+<div class="ttc" id="aclassHdf5ToXdmfConverter_html_a1dd7509fe4c15e6033f73004ea5f30a6"><div class="ttname"><a href="classHdf5ToXdmfConverter.html#a1dd7509fe4c15e6033f73004ea5f30a6">Hdf5ToXdmfConverter::AddDataOnNodes</a></div><div class="ttdeci">void AddDataOnNodes(XERCES_CPP_NAMESPACE_QUALIFIER DOMElement *pGridElement, XERCES_CPP_NAMESPACE_QUALIFIER DOMDocument *pDomDocument, unsigned timeStep)</div><div class="ttdef"><b>Definition</b> <a href="Hdf5ToXdmfConverter_8cpp_source.html#l00060">Hdf5ToXdmfConverter.cpp:60</a></div></div>
 <div class="ttc" id="aclassHdf5ToXdmfConverter_html_a70fd6bb1d56c9af906c6f83946075be3"><div class="ttname"><a href="classHdf5ToXdmfConverter.html#a70fd6bb1d56c9af906c6f83946075be3">Hdf5ToXdmfConverter::Hdf5ToXdmfConverter</a></div><div class="ttdeci">Hdf5ToXdmfConverter(const FileFinder &amp;rInputDirectory, const std::string &amp;rFileBaseName, AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; *pMesh)</div><div class="ttdef"><b>Definition</b> <a href="Hdf5ToXdmfConverter_8cpp_source.html#l00039">Hdf5ToXdmfConverter.cpp:39</a></div></div>
-<div class="ttc" id="aclassXdmfMeshWriter_html"><div class="ttname"><a href="classXdmfMeshWriter.html">XdmfMeshWriter</a></div><div class="ttdef"><b>Definition</b> <a href="XdmfMeshWriter_8hpp_source.html#l00062">XdmfMeshWriter.hpp:63</a></div></div>
-<div class="ttc" id="aclassXdmfMeshWriter_html_a43cf156d56aa6a3327a1abb10f85056d"><div class="ttname"><a href="classXdmfMeshWriter.html#a43cf156d56aa6a3327a1abb10f85056d">XdmfMeshWriter::mTimeStep</a></div><div class="ttdeci">double mTimeStep</div><div class="ttdef"><b>Definition</b> <a href="XdmfMeshWriter_8hpp_source.html#l00066">XdmfMeshWriter.hpp:66</a></div></div>
-<div class="ttc" id="aclassXdmfMeshWriter_html_af2ca97d223dce7b399ca7ef3585ef160"><div class="ttname"><a href="classXdmfMeshWriter.html#af2ca97d223dce7b399ca7ef3585ef160">XdmfMeshWriter::mNumberOfTimePoints</a></div><div class="ttdeci">unsigned mNumberOfTimePoints</div><div class="ttdef"><b>Definition</b> <a href="XdmfMeshWriter_8hpp_source.html#l00065">XdmfMeshWriter.hpp:65</a></div></div>
+<div class="ttc" id="aclassXdmfMeshWriter_html"><div class="ttname"><a href="classXdmfMeshWriter.html">XdmfMeshWriter</a></div><div class="ttdef"><b>Definition</b> <a href="XdmfMeshWriter_8hpp_source.html#l00058">XdmfMeshWriter.hpp:59</a></div></div>
+<div class="ttc" id="aclassXdmfMeshWriter_html_a43cf156d56aa6a3327a1abb10f85056d"><div class="ttname"><a href="classXdmfMeshWriter.html#a43cf156d56aa6a3327a1abb10f85056d">XdmfMeshWriter::mTimeStep</a></div><div class="ttdeci">double mTimeStep</div><div class="ttdef"><b>Definition</b> <a href="XdmfMeshWriter_8hpp_source.html#l00062">XdmfMeshWriter.hpp:62</a></div></div>
+<div class="ttc" id="aclassXdmfMeshWriter_html_af2ca97d223dce7b399ca7ef3585ef160"><div class="ttname"><a href="classXdmfMeshWriter.html#af2ca97d223dce7b399ca7ef3585ef160">XdmfMeshWriter::mNumberOfTimePoints</a></div><div class="ttdeci">unsigned mNumberOfTimePoints</div><div class="ttdef"><b>Definition</b> <a href="XdmfMeshWriter_8hpp_source.html#l00061">XdmfMeshWriter.hpp:61</a></div></div>
 <div class="ttc" id="aclassXdmfMeshWriter_html_affa52cfeefa7f0186533802a697d165a"><div class="ttname"><a href="classXdmfMeshWriter.html#affa52cfeefa7f0186533802a697d165a">XdmfMeshWriter::WriteFilesUsingMesh</a></div><div class="ttdeci">void WriteFilesUsingMesh(AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMesh, bool keepOriginalElementIndexing=true)</div><div class="ttdef"><b>Definition</b> <a href="XdmfMeshWriter_8cpp_source.html#l00054">XdmfMeshWriter.cpp:54</a></div></div>
 <div class="ttc" id="astructRelativeTo_html"><div class="ttname"><a href="structRelativeTo.html">RelativeTo</a></div><div class="ttdef"><b>Definition</b> <a href="FileFinder_8hpp_source.html#l00049">FileFinder.hpp:50</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
