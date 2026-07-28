@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classAbstractVanLeeuwen2009WntSwatCellCycleModel.html#ace044e8583c79986f950035744a7759a":[1,0,133,9],
 "classAbstractVanLeeuwen2009WntSwatCellCycleModel.html#ad0a77129f9cca7efe3e4f8a05198fe19":[1,0,133,2],
 "classAbstractVertexBasedDivisionRule.html":[1,0,134],
 "classAbstractVertexBasedDivisionRule.html#a477b9826853c90a459f7a969d6e723a1":[1,0,134,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "classBiasedBernoulliTrialCellCycleModel.html":[1,0,159],
 "classBiasedBernoulliTrialCellCycleModel.html#a0287579aa01c4b5e61687496b4241006":[1,0,159,6],
 "classBiasedBernoulliTrialCellCycleModel.html#a15b774f0d194afebcd1472853b26f2b6":[1,0,159,12],
-"classBiasedBernoulliTrialCellCycleModel.html#a2048dcce3f927c427e7238ddec1783b9":[1,0,159,4],
-"classBiasedBernoulliTrialCellCycleModel.html#a27b862307ab03935c873cd23af59239d":[1,0,159,11]
+"classBiasedBernoulliTrialCellCycleModel.html#a2048dcce3f927c427e7238ddec1783b9":[1,0,159,4]
 };

@@ -21,6 +21,7 @@ var dir_153b6113adfe56ce3b68923ad87d45aa =
     [ "ExecutableSupport.hpp", "ExecutableSupport_8hpp_source.html", null ],
     [ "FileFinder.cpp", "FileFinder_8cpp_source.html", null ],
     [ "FileFinder.hpp", "FileFinder_8hpp_source.html", null ],
+    [ "FilesystemPermissions.hpp", "FilesystemPermissions_8hpp_source.html", null ],
     [ "GetCurrentWorkingDirectory.cpp", "GetCurrentWorkingDirectory_8cpp_source.html", null ],
     [ "GetCurrentWorkingDirectory.hpp", "GetCurrentWorkingDirectory_8hpp_source.html", null ],
     [ "IsNan.hpp", "IsNan_8hpp.html", null ],

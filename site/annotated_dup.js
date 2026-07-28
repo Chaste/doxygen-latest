@@ -374,6 +374,7 @@ var annotated_dup =
     [ "FibreWriter", "classFibreWriter.html", "classFibreWriter" ],
     [ "FileComparison", "classFileComparison.html", "classFileComparison" ],
     [ "FileFinder", "classFileFinder.html", "classFileFinder" ],
+    [ "FilesystemPermissions", "classFilesystemPermissions.html", "classFilesystemPermissions" ],
     [ "FineCoarseMeshPair", "classFineCoarseMeshPair.html", "classFineCoarseMeshPair" ],
     [ "FitzHughNagumo1961OdeSystem", "classFitzHughNagumo1961OdeSystem.html", "classFitzHughNagumo1961OdeSystem" ],
     [ "FixedCentreBasedDivisionRule", "classFixedCentreBasedDivisionRule.html", "classFixedCentreBasedDivisionRule" ],

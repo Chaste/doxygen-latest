@@ -696,6 +696,7 @@ var hierarchy =
     [ "FileFinder", "classFileFinder.html", [
       [ "HeartFileFinder", "classHeartFileFinder.html", null ]
     ] ],
+    [ "FilesystemPermissions", "classFilesystemPermissions.html", null ],
     [ "FineCoarseMeshPair< DIM >", "classFineCoarseMeshPair.html", null ],
     [ "flipstacker", "structflipstacker.html", null ],
     [ "FluidSource< SPACE_DIM >", "classFluidSource.html", null ],
