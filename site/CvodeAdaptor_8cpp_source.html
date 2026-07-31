@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::60fe40e0d042fbf653ce9c9ba517bac8963b0d08</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::6a12efc3932b10e9b8aad7957bae377cd67f4bb3</span>
    </div>
   </td>
  </tr>
@@ -625,107 +625,110 @@ $(document).ready(function(){initNavTree('CvodeAdaptor_8cpp_source.html',''); in
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#aff7fbf625df0a59fe3c53dc6a4e2a980">  575</a></span><a class="code hl_function" href="classCvodeAdaptor.html#aff7fbf625df0a59fe3c53dc6a4e2a980">CvodeAdaptor::CvodeAdaptor</a>(<span class="keywordtype">double</span> relTol, <span class="keywordtype">double</span> absTol)</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>        : <a class="code hl_class" href="classAbstractIvpOdeSolver.html">AbstractIvpOdeSolver</a>(),</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>          mpCvodeMem(nullptr),</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>          mRelTol(relTol),</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>          mAbsTol(absTol),</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>          mLastInternalStepSize(-0.0),</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>          mMaxSteps(0),</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>          mCheckForRoots(false),</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>          mLastSolutionState(nullptr),</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>          mLastSolutionTime(0.0),</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>#if CHASTE_SUNDIALS_VERSION &gt;= 20400</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>          mForceReset(false),</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>#else</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>          mForceReset(true),</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>#endif</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>          mForceMinimalReset(false)</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>#if CHASTE_SUNDIALS_VERSION &gt;= 30000</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>          ,</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>          mpSundialsDenseMatrix(nullptr),</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>          mpSundialsLinearSolver(nullptr)</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>#endif</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>{</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>}</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>#if CHASTE_SUNDIALS_VERSION &gt;= 60000</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>          mpSundialsContextManager(CvodeContextManager::Instance()),</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>#endif</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>          mRelTol(relTol),</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>          mAbsTol(absTol),</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>          mLastInternalStepSize(-0.0),</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>          mMaxSteps(0),</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>          mCheckForRoots(false),</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>          mLastSolutionState(nullptr),</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>          mLastSolutionTime(0.0),</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>#if CHASTE_SUNDIALS_VERSION &gt;= 20400</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>          mForceReset(false),</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>#else</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>          mForceReset(true),</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>#endif</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>          mForceMinimalReset(false)</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>#if CHASTE_SUNDIALS_VERSION &gt;= 30000</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>          ,</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>          mpSundialsDenseMatrix(nullptr),</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>          mpSundialsLinearSolver(nullptr)</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>#endif</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>{</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>}</div>
 </div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span> </div>
-<div class="foldopen" id="foldopen00599" data-start="{" data-end="}">
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#a3740b354bf0c980f4f2bf17e5861188a">  599</a></span><a class="code hl_function" href="classCvodeAdaptor.html#a3740b354bf0c980f4f2bf17e5861188a">CvodeAdaptor::~CvodeAdaptor</a>()</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>{</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    <a class="code hl_function" href="classCvodeAdaptor.html#a66b20440400baac0d504541c5eb09773">FreeCvodeMemory</a>();</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    <a class="code hl_function" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector</a>(<a class="code hl_variable" href="classCvodeAdaptor.html#a398ff372d6908583bc8166c615af4020">mLastSolutionState</a>);</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>}</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
+<div class="foldopen" id="foldopen00602" data-start="{" data-end="}">
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#a3740b354bf0c980f4f2bf17e5861188a">  602</a></span><a class="code hl_function" href="classCvodeAdaptor.html#a3740b354bf0c980f4f2bf17e5861188a">CvodeAdaptor::~CvodeAdaptor</a>()</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>{</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    <a class="code hl_function" href="classCvodeAdaptor.html#a66b20440400baac0d504541c5eb09773">FreeCvodeMemory</a>();</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    <a class="code hl_function" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector</a>(<a class="code hl_variable" href="classCvodeAdaptor.html#a398ff372d6908583bc8166c615af4020">mLastSolutionState</a>);</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>}</div>
 </div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span> </div>
-<div class="foldopen" id="foldopen00605" data-start="{" data-end="}">
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#ad55ada356e160d50a521d7b5efb2e062">  605</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCvodeAdaptor.html#ad55ada356e160d50a521d7b5efb2e062">CvodeAdaptor::RecordStoppingPoint</a>(<span class="keywordtype">double</span> stopTime, <a class="code hl_class" href="classN__Vector.html">N_Vector</a> yEnd)</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>{</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classCvodeAdaptor.html#a5ae1e4b15c7cb978c25252e80e4f19de">mForceReset</a>)</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    {</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> size = <a class="code hl_function" href="VectorHelperFunctions_8hpp.html#a7d1b4ed5c0714f5f5c61e29ef1e00aa7">GetVectorSize</a>(yEnd);</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        <a class="code hl_function" href="VectorHelperFunctions_8hpp.html#a281864ac0e52720541a0258ea8c0d466">CreateVectorIfEmpty</a>(<a class="code hl_variable" href="classCvodeAdaptor.html#a398ff372d6908583bc8166c615af4020">mLastSolutionState</a>, size);</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; size; i++)</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        {</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>            <a class="code hl_function" href="VectorHelperFunctions_8hpp.html#a5f5a0070b300ab7a4f842eda15652a9f">SetVectorComponent</a>(<a class="code hl_variable" href="classCvodeAdaptor.html#a398ff372d6908583bc8166c615af4020">mLastSolutionState</a>, i, <a class="code hl_function" href="VectorHelperFunctions_8hpp.html#a62d66ca3275882a624f0d5d8c00c0c6d">GetVectorComponent</a>(yEnd, i));</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>        }</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>        <a class="code hl_variable" href="classCvodeAdaptor.html#aebf2a13b2eb87b7159927addf52b5dae">mLastSolutionTime</a> = stopTime;</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    }</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>}</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
+<div class="foldopen" id="foldopen00608" data-start="{" data-end="}">
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#ad55ada356e160d50a521d7b5efb2e062">  608</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCvodeAdaptor.html#ad55ada356e160d50a521d7b5efb2e062">CvodeAdaptor::RecordStoppingPoint</a>(<span class="keywordtype">double</span> stopTime, <a class="code hl_class" href="classN__Vector.html">N_Vector</a> yEnd)</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>{</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classCvodeAdaptor.html#a5ae1e4b15c7cb978c25252e80e4f19de">mForceReset</a>)</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    {</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> size = <a class="code hl_function" href="VectorHelperFunctions_8hpp.html#a7d1b4ed5c0714f5f5c61e29ef1e00aa7">GetVectorSize</a>(yEnd);</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        <a class="code hl_function" href="VectorHelperFunctions_8hpp.html#a281864ac0e52720541a0258ea8c0d466">CreateVectorIfEmpty</a>(<a class="code hl_variable" href="classCvodeAdaptor.html#a398ff372d6908583bc8166c615af4020">mLastSolutionState</a>, size);</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; size; i++)</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>        {</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>            <a class="code hl_function" href="VectorHelperFunctions_8hpp.html#a5f5a0070b300ab7a4f842eda15652a9f">SetVectorComponent</a>(<a class="code hl_variable" href="classCvodeAdaptor.html#a398ff372d6908583bc8166c615af4020">mLastSolutionState</a>, i, <a class="code hl_function" href="VectorHelperFunctions_8hpp.html#a62d66ca3275882a624f0d5d8c00c0c6d">GetVectorComponent</a>(yEnd, i));</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>        }</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>        <a class="code hl_variable" href="classCvodeAdaptor.html#aebf2a13b2eb87b7159927addf52b5dae">mLastSolutionTime</a> = stopTime;</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    }</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>}</div>
 </div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
-<div class="foldopen" id="foldopen00619" data-start="{" data-end="}">
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#afca34808d6bd9f4e0887665e3ad206be">  619</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCvodeAdaptor.html#afca34808d6bd9f4e0887665e3ad206be">CvodeAdaptor::SetTolerances</a>(<span class="keywordtype">double</span> relTol, <span class="keywordtype">double</span> absTol)</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>{</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    <a class="code hl_variable" href="classCvodeAdaptor.html#aa4b4695183eb76cfeac9151cde2d8532">mRelTol</a> = relTol;</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    <a class="code hl_variable" href="classCvodeAdaptor.html#a28bb2e7c96a38930698e18e6d9fb2aa1">mAbsTol</a> = absTol;</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>}</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
+<div class="foldopen" id="foldopen00622" data-start="{" data-end="}">
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#afca34808d6bd9f4e0887665e3ad206be">  622</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCvodeAdaptor.html#afca34808d6bd9f4e0887665e3ad206be">CvodeAdaptor::SetTolerances</a>(<span class="keywordtype">double</span> relTol, <span class="keywordtype">double</span> absTol)</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>{</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    <a class="code hl_variable" href="classCvodeAdaptor.html#aa4b4695183eb76cfeac9151cde2d8532">mRelTol</a> = relTol;</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <a class="code hl_variable" href="classCvodeAdaptor.html#a28bb2e7c96a38930698e18e6d9fb2aa1">mAbsTol</a> = absTol;</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>}</div>
 </div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span> </div>
-<div class="foldopen" id="foldopen00625" data-start="{" data-end="}">
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#aec70d2f9c3105a538b1e682804d60a25">  625</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCvodeAdaptor.html#aec70d2f9c3105a538b1e682804d60a25">CvodeAdaptor::GetRelativeTolerance</a>()</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>{</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCvodeAdaptor.html#aa4b4695183eb76cfeac9151cde2d8532">mRelTol</a>;</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>}</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
+<div class="foldopen" id="foldopen00628" data-start="{" data-end="}">
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#aec70d2f9c3105a538b1e682804d60a25">  628</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCvodeAdaptor.html#aec70d2f9c3105a538b1e682804d60a25">CvodeAdaptor::GetRelativeTolerance</a>()</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>{</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCvodeAdaptor.html#aa4b4695183eb76cfeac9151cde2d8532">mRelTol</a>;</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>}</div>
 </div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span> </div>
-<div class="foldopen" id="foldopen00630" data-start="{" data-end="}">
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#a01356b5455bbd64672546c1d69574109">  630</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCvodeAdaptor.html#a01356b5455bbd64672546c1d69574109">CvodeAdaptor::GetAbsoluteTolerance</a>()</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>{</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCvodeAdaptor.html#a28bb2e7c96a38930698e18e6d9fb2aa1">mAbsTol</a>;</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>}</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
+<div class="foldopen" id="foldopen00633" data-start="{" data-end="}">
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#a01356b5455bbd64672546c1d69574109">  633</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCvodeAdaptor.html#a01356b5455bbd64672546c1d69574109">CvodeAdaptor::GetAbsoluteTolerance</a>()</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>{</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCvodeAdaptor.html#a28bb2e7c96a38930698e18e6d9fb2aa1">mAbsTol</a>;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>}</div>
 </div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
-<div class="foldopen" id="foldopen00635" data-start="{" data-end="}">
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#ac7a9d1f4eb36406cb1ce4c10c30e8352">  635</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCvodeAdaptor.html#ac7a9d1f4eb36406cb1ce4c10c30e8352">CvodeAdaptor::GetLastStepSize</a>()</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>{</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCvodeAdaptor.html#ac7b60a6fdc73408b2e05e04a72ae4bf2">mLastInternalStepSize</a>;</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>}</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span> </div>
+<div class="foldopen" id="foldopen00638" data-start="{" data-end="}">
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#ac7a9d1f4eb36406cb1ce4c10c30e8352">  638</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCvodeAdaptor.html#ac7a9d1f4eb36406cb1ce4c10c30e8352">CvodeAdaptor::GetLastStepSize</a>()</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>{</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCvodeAdaptor.html#ac7b60a6fdc73408b2e05e04a72ae4bf2">mLastInternalStepSize</a>;</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>}</div>
 </div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
-<div class="foldopen" id="foldopen00640" data-start="{" data-end="}">
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#a9310253f49de7fbee80bf25f02cf1499">  640</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCvodeAdaptor.html#a9310253f49de7fbee80bf25f02cf1499">CvodeAdaptor::CheckForStoppingEvents</a>()</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>{</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    <a class="code hl_variable" href="classCvodeAdaptor.html#aed67e1ade033e0b62602b616652c90dd">mCheckForRoots</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>}</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
+<div class="foldopen" id="foldopen00643" data-start="{" data-end="}">
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#a9310253f49de7fbee80bf25f02cf1499">  643</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCvodeAdaptor.html#a9310253f49de7fbee80bf25f02cf1499">CvodeAdaptor::CheckForStoppingEvents</a>()</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>{</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <a class="code hl_variable" href="classCvodeAdaptor.html#aed67e1ade033e0b62602b616652c90dd">mCheckForRoots</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>}</div>
 </div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
-<div class="foldopen" id="foldopen00645" data-start="{" data-end="}">
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#a6554c24f0c8d7e47d3eed3aa093fdcef">  645</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCvodeAdaptor.html#a6554c24f0c8d7e47d3eed3aa093fdcef">CvodeAdaptor::SetMaxSteps</a>(<span class="keywordtype">long</span> <span class="keywordtype">int</span> numSteps)</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>{</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <a class="code hl_variable" href="classCvodeAdaptor.html#a1f4857cd94fb8aa2d5a9c1ec406b10e0">mMaxSteps</a> = numSteps;</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>}</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span> </div>
+<div class="foldopen" id="foldopen00648" data-start="{" data-end="}">
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#a6554c24f0c8d7e47d3eed3aa093fdcef">  648</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCvodeAdaptor.html#a6554c24f0c8d7e47d3eed3aa093fdcef">CvodeAdaptor::SetMaxSteps</a>(<span class="keywordtype">long</span> <span class="keywordtype">int</span> numSteps)</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>{</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    <a class="code hl_variable" href="classCvodeAdaptor.html#a1f4857cd94fb8aa2d5a9c1ec406b10e0">mMaxSteps</a> = numSteps;</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>}</div>
 </div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
-<div class="foldopen" id="foldopen00650" data-start="{" data-end="}">
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#a06d36e78659c024740292eb17cec01d5">  650</a></span><span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classCvodeAdaptor.html#a06d36e78659c024740292eb17cec01d5">CvodeAdaptor::GetMaxSteps</a>()</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>{</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCvodeAdaptor.html#a1f4857cd94fb8aa2d5a9c1ec406b10e0">mMaxSteps</a>;</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>}</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span> </div>
+<div class="foldopen" id="foldopen00653" data-start="{" data-end="}">
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno"><a class="line" href="classCvodeAdaptor.html#a06d36e78659c024740292eb17cec01d5">  653</a></span><span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classCvodeAdaptor.html#a06d36e78659c024740292eb17cec01d5">CvodeAdaptor::GetMaxSteps</a>()</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>{</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classCvodeAdaptor.html#a1f4857cd94fb8aa2d5a9c1ec406b10e0">mMaxSteps</a>;</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>}</div>
 </div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span> </div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#ace086cfef82d692752842bea698f6e7c">CHASTE_CLASS_EXPORT</a>(<a class="code hl_class" href="classCvodeAdaptor.html">CvodeAdaptor</a>)</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span><span class="preprocessor">#endif </span><span class="comment">// CHASTE_CVODE</span></div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#ace086cfef82d692752842bea698f6e7c">CHASTE_CLASS_EXPORT</a>(<a class="code hl_class" href="classCvodeAdaptor.html">CvodeAdaptor</a>)</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="preprocessor">#endif </span><span class="comment">// CHASTE_CVODE</span></div>
 <div class="ttc" id="aException_8hpp_html"><div class="ttname"><a href="Exception_8hpp.html">Exception.hpp</a></div></div>
 <div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
 <div class="ttc" id="aException_8hpp_html_ac7f0d719848e5a14ba55d70276feb00f"><div class="ttname"><a href="Exception_8hpp.html#ac7f0d719848e5a14ba55d70276feb00f">UNUSED_OPT</a></div><div class="ttdeci">#define UNUSED_OPT(var)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00237">Exception.hpp:237</a></div></div>
@@ -750,34 +753,34 @@ $(document).ready(function(){initNavTree('CvodeAdaptor_8cpp_source.html',''); in
 <div class="ttc" id="aclassAbstractUntemplatedParameterisedSystem_html_a42f1795ed50deec08f1a9f9aeef83699"><div class="ttname"><a href="classAbstractUntemplatedParameterisedSystem.html#a42f1795ed50deec08f1a9f9aeef83699">AbstractUntemplatedParameterisedSystem::GetSystemInformation</a></div><div class="ttdeci">boost::shared_ptr&lt; const AbstractOdeSystemInformation &gt; GetSystemInformation() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractUntemplatedParameterisedSystem_8cpp_source.html#l00056">AbstractUntemplatedParameterisedSystem.cpp:56</a></div></div>
 <div class="ttc" id="aclassAbstractUntemplatedParameterisedSystem_html_ae25c8aba0810b57641c02da47e86f654"><div class="ttname"><a href="classAbstractUntemplatedParameterisedSystem.html#ae25c8aba0810b57641c02da47e86f654">AbstractUntemplatedParameterisedSystem::GetNumberOfStateVariables</a></div><div class="ttdeci">unsigned GetNumberOfStateVariables() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractUntemplatedParameterisedSystem_8cpp_source.html#l00072">AbstractUntemplatedParameterisedSystem.cpp:72</a></div></div>
 <div class="ttc" id="aclassCompareDoubles_html_a7515148e16dae984f77bce2a5acc5f31"><div class="ttname"><a href="classCompareDoubles.html#a7515148e16dae984f77bce2a5acc5f31">CompareDoubles::WithinAnyTolerance</a></div><div class="ttdeci">static bool WithinAnyTolerance(double number1, double number2, double relTol=DBL_EPSILON, double absTol=DBL_EPSILON, bool printError=false)</div><div class="ttdef"><b>Definition</b> <a href="MathsCustomFunctions_8cpp_source.html#l00213">MathsCustomFunctions.cpp:213</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html"><div class="ttname"><a href="classCvodeAdaptor.html">CvodeAdaptor</a></div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00115">CvodeAdaptor.hpp:116</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_a01356b5455bbd64672546c1d69574109"><div class="ttname"><a href="classCvodeAdaptor.html#a01356b5455bbd64672546c1d69574109">CvodeAdaptor::GetAbsoluteTolerance</a></div><div class="ttdeci">double GetAbsoluteTolerance()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00630">CvodeAdaptor.cpp:630</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_a06d36e78659c024740292eb17cec01d5"><div class="ttname"><a href="classCvodeAdaptor.html#a06d36e78659c024740292eb17cec01d5">CvodeAdaptor::GetMaxSteps</a></div><div class="ttdeci">long int GetMaxSteps()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00650">CvodeAdaptor.cpp:650</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html"><div class="ttname"><a href="classCvodeAdaptor.html">CvodeAdaptor</a></div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00117">CvodeAdaptor.hpp:118</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_a01356b5455bbd64672546c1d69574109"><div class="ttname"><a href="classCvodeAdaptor.html#a01356b5455bbd64672546c1d69574109">CvodeAdaptor::GetAbsoluteTolerance</a></div><div class="ttdeci">double GetAbsoluteTolerance()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00633">CvodeAdaptor.cpp:633</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_a06d36e78659c024740292eb17cec01d5"><div class="ttname"><a href="classCvodeAdaptor.html#a06d36e78659c024740292eb17cec01d5">CvodeAdaptor::GetMaxSteps</a></div><div class="ttdeci">long int GetMaxSteps()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00653">CvodeAdaptor.cpp:653</a></div></div>
 <div class="ttc" id="aclassCvodeAdaptor_html_a07eb292864fa41110ead82c4a1f4000d"><div class="ttname"><a href="classCvodeAdaptor.html#a07eb292864fa41110ead82c4a1f4000d">CvodeAdaptor::CvodeError</a></div><div class="ttdeci">void CvodeError(int flag, const char *msg)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00436">CvodeAdaptor.cpp:436</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_a1f4857cd94fb8aa2d5a9c1ec406b10e0"><div class="ttname"><a href="classCvodeAdaptor.html#a1f4857cd94fb8aa2d5a9c1ec406b10e0">CvodeAdaptor::mMaxSteps</a></div><div class="ttdeci">long int mMaxSteps</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00157">CvodeAdaptor.hpp:157</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_a1f4857cd94fb8aa2d5a9c1ec406b10e0"><div class="ttname"><a href="classCvodeAdaptor.html#a1f4857cd94fb8aa2d5a9c1ec406b10e0">CvodeAdaptor::mMaxSteps</a></div><div class="ttdeci">long int mMaxSteps</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00167">CvodeAdaptor.hpp:167</a></div></div>
 <div class="ttc" id="aclassCvodeAdaptor_html_a1f9ba8b7d1f9ee0821f9844356bd6c7a"><div class="ttname"><a href="classCvodeAdaptor.html#a1f9ba8b7d1f9ee0821f9844356bd6c7a">CvodeAdaptor::SetMinimalReset</a></div><div class="ttdeci">void SetMinimalReset(bool minimalReset)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00421">CvodeAdaptor.cpp:421</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_a28bb2e7c96a38930698e18e6d9fb2aa1"><div class="ttname"><a href="classCvodeAdaptor.html#a28bb2e7c96a38930698e18e6d9fb2aa1">CvodeAdaptor::mAbsTol</a></div><div class="ttdeci">double mAbsTol</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00148">CvodeAdaptor.hpp:148</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_a3740b354bf0c980f4f2bf17e5861188a"><div class="ttname"><a href="classCvodeAdaptor.html#a3740b354bf0c980f4f2bf17e5861188a">CvodeAdaptor::~CvodeAdaptor</a></div><div class="ttdeci">~CvodeAdaptor()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00599">CvodeAdaptor.cpp:599</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_a398ff372d6908583bc8166c615af4020"><div class="ttname"><a href="classCvodeAdaptor.html#a398ff372d6908583bc8166c615af4020">CvodeAdaptor::mLastSolutionState</a></div><div class="ttdeci">N_Vector mLastSolutionState</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00163">CvodeAdaptor.hpp:163</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_a5ae1e4b15c7cb978c25252e80e4f19de"><div class="ttname"><a href="classCvodeAdaptor.html#a5ae1e4b15c7cb978c25252e80e4f19de">CvodeAdaptor::mForceReset</a></div><div class="ttdeci">bool mForceReset</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00169">CvodeAdaptor.hpp:169</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_a6554c24f0c8d7e47d3eed3aa093fdcef"><div class="ttname"><a href="classCvodeAdaptor.html#a6554c24f0c8d7e47d3eed3aa093fdcef">CvodeAdaptor::SetMaxSteps</a></div><div class="ttdeci">void SetMaxSteps(long int numSteps)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00645">CvodeAdaptor.cpp:645</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_a28bb2e7c96a38930698e18e6d9fb2aa1"><div class="ttname"><a href="classCvodeAdaptor.html#a28bb2e7c96a38930698e18e6d9fb2aa1">CvodeAdaptor::mAbsTol</a></div><div class="ttdeci">double mAbsTol</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00158">CvodeAdaptor.hpp:158</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_a3740b354bf0c980f4f2bf17e5861188a"><div class="ttname"><a href="classCvodeAdaptor.html#a3740b354bf0c980f4f2bf17e5861188a">CvodeAdaptor::~CvodeAdaptor</a></div><div class="ttdeci">~CvodeAdaptor()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00602">CvodeAdaptor.cpp:602</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_a398ff372d6908583bc8166c615af4020"><div class="ttname"><a href="classCvodeAdaptor.html#a398ff372d6908583bc8166c615af4020">CvodeAdaptor::mLastSolutionState</a></div><div class="ttdeci">N_Vector mLastSolutionState</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00173">CvodeAdaptor.hpp:173</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_a5ae1e4b15c7cb978c25252e80e4f19de"><div class="ttname"><a href="classCvodeAdaptor.html#a5ae1e4b15c7cb978c25252e80e4f19de">CvodeAdaptor::mForceReset</a></div><div class="ttdeci">bool mForceReset</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00179">CvodeAdaptor.hpp:179</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_a6554c24f0c8d7e47d3eed3aa093fdcef"><div class="ttname"><a href="classCvodeAdaptor.html#a6554c24f0c8d7e47d3eed3aa093fdcef">CvodeAdaptor::SetMaxSteps</a></div><div class="ttdeci">void SetMaxSteps(long int numSteps)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00648">CvodeAdaptor.cpp:648</a></div></div>
 <div class="ttc" id="aclassCvodeAdaptor_html_a66b20440400baac0d504541c5eb09773"><div class="ttname"><a href="classCvodeAdaptor.html#a66b20440400baac0d504541c5eb09773">CvodeAdaptor::FreeCvodeMemory</a></div><div class="ttdeci">void FreeCvodeMemory()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00386">CvodeAdaptor.cpp:386</a></div></div>
 <div class="ttc" id="aclassCvodeAdaptor_html_a6bc65e1f3b5535a0e2eae1bab7d1a613"><div class="ttname"><a href="classCvodeAdaptor.html#a6bc65e1f3b5535a0e2eae1bab7d1a613">CvodeAdaptor::ResetSolver</a></div><div class="ttdeci">void ResetSolver()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00430">CvodeAdaptor.cpp:430</a></div></div>
 <div class="ttc" id="aclassCvodeAdaptor_html_a71ec251eb71d4833c7e564526d5a4ccf"><div class="ttname"><a href="classCvodeAdaptor.html#a71ec251eb71d4833c7e564526d5a4ccf">CvodeAdaptor::SetForceReset</a></div><div class="ttdeci">void SetForceReset(bool autoReset)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00411">CvodeAdaptor.cpp:411</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_a9310253f49de7fbee80bf25f02cf1499"><div class="ttname"><a href="classCvodeAdaptor.html#a9310253f49de7fbee80bf25f02cf1499">CvodeAdaptor::CheckForStoppingEvents</a></div><div class="ttdeci">void CheckForStoppingEvents()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00640">CvodeAdaptor.cpp:640</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_aa4b4695183eb76cfeac9151cde2d8532"><div class="ttname"><a href="classCvodeAdaptor.html#aa4b4695183eb76cfeac9151cde2d8532">CvodeAdaptor::mRelTol</a></div><div class="ttdeci">double mRelTol</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00145">CvodeAdaptor.hpp:145</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_aae77731be2be64771134e95b2a2ab67c"><div class="ttname"><a href="classCvodeAdaptor.html#aae77731be2be64771134e95b2a2ab67c">CvodeAdaptor::mData</a></div><div class="ttdeci">CvodeData mData</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00142">CvodeAdaptor.hpp:142</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_abb51c640e77aacece29aa25e57390723"><div class="ttname"><a href="classCvodeAdaptor.html#abb51c640e77aacece29aa25e57390723">CvodeAdaptor::mpCvodeMem</a></div><div class="ttdeci">void * mpCvodeMem</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00139">CvodeAdaptor.hpp:139</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_a9310253f49de7fbee80bf25f02cf1499"><div class="ttname"><a href="classCvodeAdaptor.html#a9310253f49de7fbee80bf25f02cf1499">CvodeAdaptor::CheckForStoppingEvents</a></div><div class="ttdeci">void CheckForStoppingEvents()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00643">CvodeAdaptor.cpp:643</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_aa4b4695183eb76cfeac9151cde2d8532"><div class="ttname"><a href="classCvodeAdaptor.html#aa4b4695183eb76cfeac9151cde2d8532">CvodeAdaptor::mRelTol</a></div><div class="ttdeci">double mRelTol</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00155">CvodeAdaptor.hpp:155</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_aae77731be2be64771134e95b2a2ab67c"><div class="ttname"><a href="classCvodeAdaptor.html#aae77731be2be64771134e95b2a2ab67c">CvodeAdaptor::mData</a></div><div class="ttdeci">CvodeData mData</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00152">CvodeAdaptor.hpp:152</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_abb51c640e77aacece29aa25e57390723"><div class="ttname"><a href="classCvodeAdaptor.html#abb51c640e77aacece29aa25e57390723">CvodeAdaptor::mpCvodeMem</a></div><div class="ttdeci">void * mpCvodeMem</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00141">CvodeAdaptor.hpp:141</a></div></div>
 <div class="ttc" id="aclassCvodeAdaptor_html_abebfc85122486c5be0f048b7e0306dfa"><div class="ttname"><a href="classCvodeAdaptor.html#abebfc85122486c5be0f048b7e0306dfa">CvodeAdaptor::Solve</a></div><div class="ttdeci">OdeSolution Solve(AbstractOdeSystem *pOdeSystem, std::vector&lt; double &gt; &amp;rYValues, double startTime, double endTime, double maxStep, double timeSampling)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00447">CvodeAdaptor.cpp:447</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_ac7a9d1f4eb36406cb1ce4c10c30e8352"><div class="ttname"><a href="classCvodeAdaptor.html#ac7a9d1f4eb36406cb1ce4c10c30e8352">CvodeAdaptor::GetLastStepSize</a></div><div class="ttdeci">double GetLastStepSize()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00635">CvodeAdaptor.cpp:635</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_ac7b60a6fdc73408b2e05e04a72ae4bf2"><div class="ttname"><a href="classCvodeAdaptor.html#ac7b60a6fdc73408b2e05e04a72ae4bf2">CvodeAdaptor::mLastInternalStepSize</a></div><div class="ttdeci">double mLastInternalStepSize</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00151">CvodeAdaptor.hpp:151</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_ad55ada356e160d50a521d7b5efb2e062"><div class="ttname"><a href="classCvodeAdaptor.html#ad55ada356e160d50a521d7b5efb2e062">CvodeAdaptor::RecordStoppingPoint</a></div><div class="ttdeci">void RecordStoppingPoint(double stopTime, N_Vector yEnd)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00605">CvodeAdaptor.cpp:605</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_ac7a9d1f4eb36406cb1ce4c10c30e8352"><div class="ttname"><a href="classCvodeAdaptor.html#ac7a9d1f4eb36406cb1ce4c10c30e8352">CvodeAdaptor::GetLastStepSize</a></div><div class="ttdeci">double GetLastStepSize()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00638">CvodeAdaptor.cpp:638</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_ac7b60a6fdc73408b2e05e04a72ae4bf2"><div class="ttname"><a href="classCvodeAdaptor.html#ac7b60a6fdc73408b2e05e04a72ae4bf2">CvodeAdaptor::mLastInternalStepSize</a></div><div class="ttdeci">double mLastInternalStepSize</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00161">CvodeAdaptor.hpp:161</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_ad55ada356e160d50a521d7b5efb2e062"><div class="ttname"><a href="classCvodeAdaptor.html#ad55ada356e160d50a521d7b5efb2e062">CvodeAdaptor::RecordStoppingPoint</a></div><div class="ttdeci">void RecordStoppingPoint(double stopTime, N_Vector yEnd)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00608">CvodeAdaptor.cpp:608</a></div></div>
 <div class="ttc" id="aclassCvodeAdaptor_html_adc9c55260146ccbf1f7abc2e0309b5c2"><div class="ttname"><a href="classCvodeAdaptor.html#adc9c55260146ccbf1f7abc2e0309b5c2">CvodeAdaptor::SetupCvode</a></div><div class="ttdeci">void SetupCvode(AbstractOdeSystem *pOdeSystem, std::vector&lt; double &gt; &amp;rInitialY, double startTime, double maxStep)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00198">CvodeAdaptor.cpp:198</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_ae6006835ab9e6583258a6b6374db1f89"><div class="ttname"><a href="classCvodeAdaptor.html#ae6006835ab9e6583258a6b6374db1f89">CvodeAdaptor::mForceMinimalReset</a></div><div class="ttdeci">bool mForceMinimalReset</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00172">CvodeAdaptor.hpp:172</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_aebf2a13b2eb87b7159927addf52b5dae"><div class="ttname"><a href="classCvodeAdaptor.html#aebf2a13b2eb87b7159927addf52b5dae">CvodeAdaptor::mLastSolutionTime</a></div><div class="ttdeci">double mLastSolutionTime</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00166">CvodeAdaptor.hpp:166</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_aec70d2f9c3105a538b1e682804d60a25"><div class="ttname"><a href="classCvodeAdaptor.html#aec70d2f9c3105a538b1e682804d60a25">CvodeAdaptor::GetRelativeTolerance</a></div><div class="ttdeci">double GetRelativeTolerance()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00625">CvodeAdaptor.cpp:625</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_aed67e1ade033e0b62602b616652c90dd"><div class="ttname"><a href="classCvodeAdaptor.html#aed67e1ade033e0b62602b616652c90dd">CvodeAdaptor::mCheckForRoots</a></div><div class="ttdeci">bool mCheckForRoots</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00160">CvodeAdaptor.hpp:160</a></div></div>
-<div class="ttc" id="aclassCvodeAdaptor_html_afca34808d6bd9f4e0887665e3ad206be"><div class="ttname"><a href="classCvodeAdaptor.html#afca34808d6bd9f4e0887665e3ad206be">CvodeAdaptor::SetTolerances</a></div><div class="ttdeci">void SetTolerances(double relTol=1e-4, double absTol=1e-6)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00619">CvodeAdaptor.cpp:619</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_ae6006835ab9e6583258a6b6374db1f89"><div class="ttname"><a href="classCvodeAdaptor.html#ae6006835ab9e6583258a6b6374db1f89">CvodeAdaptor::mForceMinimalReset</a></div><div class="ttdeci">bool mForceMinimalReset</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00182">CvodeAdaptor.hpp:182</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_aebf2a13b2eb87b7159927addf52b5dae"><div class="ttname"><a href="classCvodeAdaptor.html#aebf2a13b2eb87b7159927addf52b5dae">CvodeAdaptor::mLastSolutionTime</a></div><div class="ttdeci">double mLastSolutionTime</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00176">CvodeAdaptor.hpp:176</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_aec70d2f9c3105a538b1e682804d60a25"><div class="ttname"><a href="classCvodeAdaptor.html#aec70d2f9c3105a538b1e682804d60a25">CvodeAdaptor::GetRelativeTolerance</a></div><div class="ttdeci">double GetRelativeTolerance()</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00628">CvodeAdaptor.cpp:628</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_aed67e1ade033e0b62602b616652c90dd"><div class="ttname"><a href="classCvodeAdaptor.html#aed67e1ade033e0b62602b616652c90dd">CvodeAdaptor::mCheckForRoots</a></div><div class="ttdeci">bool mCheckForRoots</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00170">CvodeAdaptor.hpp:170</a></div></div>
+<div class="ttc" id="aclassCvodeAdaptor_html_afca34808d6bd9f4e0887665e3ad206be"><div class="ttname"><a href="classCvodeAdaptor.html#afca34808d6bd9f4e0887665e3ad206be">CvodeAdaptor::SetTolerances</a></div><div class="ttdeci">void SetTolerances(double relTol=1e-4, double absTol=1e-6)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00622">CvodeAdaptor.cpp:622</a></div></div>
 <div class="ttc" id="aclassCvodeAdaptor_html_aff7fbf625df0a59fe3c53dc6a4e2a980"><div class="ttname"><a href="classCvodeAdaptor.html#aff7fbf625df0a59fe3c53dc6a4e2a980">CvodeAdaptor::CvodeAdaptor</a></div><div class="ttdeci">CvodeAdaptor(double relTol=1e-4, double absTol=1e-6)</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8cpp_source.html#l00575">CvodeAdaptor.cpp:575</a></div></div>
 <div class="ttc" id="aclassException_html"><div class="ttname"><a href="classException.html">Exception</a></div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00064">Exception.hpp:65</a></div></div>
 <div class="ttc" id="aclassN__Vector_html"><div class="ttname"><a href="classN__Vector.html">N_Vector</a></div></div>
@@ -792,9 +795,9 @@ $(document).ready(function(){initNavTree('CvodeAdaptor_8cpp_source.html',''); in
 <div class="ttc" id="aclassTimeStepper_html_ad84f3d460cbd27d30a753ea8f26b3fd8"><div class="ttname"><a href="classTimeStepper.html#ad84f3d460cbd27d30a753ea8f26b3fd8">TimeStepper::AdvanceOneTimeStep</a></div><div class="ttdeci">void AdvanceOneTimeStep()</div><div class="ttdef"><b>Definition</b> <a href="TimeStepper_8cpp_source.html#l00123">TimeStepper.cpp:123</a></div></div>
 <div class="ttc" id="aclassTimeStepper_html_aea31a742b9a393a4d4d7d4fdaf4ff053"><div class="ttname"><a href="classTimeStepper.html#aea31a742b9a393a4d4d7d4fdaf4ff053">TimeStepper::GetNextTime</a></div><div class="ttdeci">double GetNextTime() const</div><div class="ttdef"><b>Definition</b> <a href="TimeStepper_8cpp_source.html#l00144">TimeStepper.cpp:144</a></div></div>
 <div class="ttc" id="aclassTimeStepper_html_af6477b0a779371c38dc12480791a77a1"><div class="ttname"><a href="classTimeStepper.html#af6477b0a779371c38dc12480791a77a1">TimeStepper::EstimateTimeSteps</a></div><div class="ttdeci">unsigned EstimateTimeSteps() const</div><div class="ttdef"><b>Definition</b> <a href="TimeStepper_8cpp_source.html#l00170">TimeStepper.cpp:170</a></div></div>
-<div class="ttc" id="astructCvodeData___html"><div class="ttname"><a href="structCvodeData__.html">CvodeData_</a></div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00081">CvodeAdaptor.hpp:82</a></div></div>
-<div class="ttc" id="astructCvodeData___html_a26d3122e75c6d57da44198a3da1eb353"><div class="ttname"><a href="structCvodeData__.html#a26d3122e75c6d57da44198a3da1eb353">CvodeData_::pSystem</a></div><div class="ttdeci">AbstractOdeSystem * pSystem</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00086">CvodeAdaptor.hpp:86</a></div></div>
-<div class="ttc" id="astructCvodeData___html_ac578420ab898bfb7dace2c32b023eb9e"><div class="ttname"><a href="structCvodeData__.html#ac578420ab898bfb7dace2c32b023eb9e">CvodeData_::pY</a></div><div class="ttdeci">std::vector&lt; realtype &gt; * pY</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00084">CvodeAdaptor.hpp:84</a></div></div>
+<div class="ttc" id="astructCvodeData___html"><div class="ttname"><a href="structCvodeData__.html">CvodeData_</a></div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00083">CvodeAdaptor.hpp:84</a></div></div>
+<div class="ttc" id="astructCvodeData___html_a26d3122e75c6d57da44198a3da1eb353"><div class="ttname"><a href="structCvodeData__.html#a26d3122e75c6d57da44198a3da1eb353">CvodeData_::pSystem</a></div><div class="ttdeci">AbstractOdeSystem * pSystem</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00088">CvodeAdaptor.hpp:88</a></div></div>
+<div class="ttc" id="astructCvodeData___html_ac578420ab898bfb7dace2c32b023eb9e"><div class="ttname"><a href="structCvodeData__.html#ac578420ab898bfb7dace2c32b023eb9e">CvodeData_::pY</a></div><div class="ttdeci">std::vector&lt; realtype &gt; * pY</div><div class="ttdef"><b>Definition</b> <a href="CvodeAdaptor_8hpp_source.html#l00086">CvodeAdaptor.hpp:86</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
