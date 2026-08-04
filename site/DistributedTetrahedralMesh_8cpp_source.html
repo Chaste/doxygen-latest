@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::1200c4225d3051374cde35a83dbb82b6f326d016</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f6ebf502f3c29ecd5f70ae1f8fe2c1e822108c5f</span>
    </div>
   </td>
  </tr>
@@ -1594,8 +1594,8 @@ $(document).ready(function(){initNavTree('DistributedTetrahedralMesh_8cpp_source
 <div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span>    MatDestroy(&amp;element_node_matrix);</div>
 <div class="line"><a id="l01431" name="l01431"></a><span class="lineno"> 1431</span>    MatDestroy(&amp;node_element_matrix);</div>
 <div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span>    MatDestroy(&amp;element_element_matrix);</div>
-<div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span>    xadj = &amp;my_xadj[0];</div>
-<div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span>    adjncy = &amp;my_adjncy[0];</div>
+<div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span>    xadj = my_xadj.data();</div>
+<div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span>    adjncy = my_adjncy.data();</div>
 <div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span> </div>
 <div class="line"><a id="l01436" name="l01436"></a><span class="lineno"> 1436</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span>    <span class="comment">// The default behaviour is to use a ParMETIS (or possible Scotch) function to get the dual</span></div>

@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::1200c4225d3051374cde35a83dbb82b6f326d016</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f6ebf502f3c29ecd5f70ae1f8fe2c1e822108c5f</span>
    </div>
   </td>
  </tr>
@@ -284,7 +284,7 @@ $(document).ready(function(){initNavTree('Hdf5DataReader_8cpp_source.html',''); 
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="comment">// Read data from hyperslab in the file into the hyperslab in memory</span></div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <a class="code hl_variable" href="classAbstractHdf5Access.html#a98d53375934a51a0047a346cd8da0348">mIncompleteNodeIndices</a>.clear();</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <a class="code hl_variable" href="classAbstractHdf5Access.html#a98d53375934a51a0047a346cd8da0348">mIncompleteNodeIndices</a>.resize(num_node_indices);</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    H5Aread(attribute_id, H5T_NATIVE_UINT, &amp;<a class="code hl_variable" href="classAbstractHdf5Access.html#a98d53375934a51a0047a346cd8da0348">mIncompleteNodeIndices</a>[0]);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    H5Aread(attribute_id, H5T_NATIVE_UINT, <a class="code hl_variable" href="classAbstractHdf5Access.html#a98d53375934a51a0047a346cd8da0348">mIncompleteNodeIndices</a>.data());</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    H5Tclose(attribute_type);</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    H5Sclose(attribute_space);</div>

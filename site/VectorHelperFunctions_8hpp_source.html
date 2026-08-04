@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::1200c4225d3051374cde35a83dbb82b6f326d016</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f6ebf502f3c29ecd5f70ae1f8fe2c1e822108c5f</span>
    </div>
   </td>
  </tr>
@@ -354,7 +354,7 @@ $(document).ready(function(){initNavTree('VectorHelperFunctions_8hpp_source.html
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>{</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    <span class="comment">// Check for no-op</span></div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    realtype* p_src = NV_DATA_S(rSrc);</div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    <span class="keywordflow">if</span> (!rDest.empty() &amp;&amp; p_src == &amp;(rDest[0]))</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    <span class="keywordflow">if</span> (p_src == rDest.data())</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    <span class="comment">// Set dest size</span></div>
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    <span class="keywordtype">long</span> size = NV_LENGTH_S(rSrc);</div>
@@ -373,7 +373,7 @@ $(document).ready(function(){initNavTree('VectorHelperFunctions_8hpp_source.html
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>{</div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    <span class="comment">// Check for no-op</span></div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>    realtype* p_dest = NV_DATA_S(rDest);</div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>    <span class="keywordflow">if</span> (p_dest == &amp;(rSrc[0])) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>    <span class="keywordflow">if</span> (p_dest == rSrc.data()) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span> </div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>    <span class="comment">// Check dest size</span></div>
 <div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>    <span class="keywordtype">long</span> size = NV_LENGTH_S(rDest);</div>
