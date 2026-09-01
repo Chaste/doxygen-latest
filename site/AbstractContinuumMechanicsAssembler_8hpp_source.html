@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::fce1eeb1bd7b1284a795a679b32ef75d18e8421c</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::096d800bc662ec2914e1421023d73dd585d15705</span>
    </div>
   </td>
  </tr>
@@ -408,78 +408,74 @@ $(document).ready(function(){initNavTree('AbstractContinuumMechanicsAssembler_8h
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>        <span class="keywordflow">if</span> (this-&gt;mAssembleVector)</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>        {</div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>            c_vector&lt;double,SPATIAL_BLOCK_SIZE_ELEMENTAL&gt; b_spatial</div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>                = ComputeSpatialVectorTerm(quad_phi, grad_quad_phi, X, &amp;rElement);</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>            c_vector&lt;double,PRESSURE_BLOCK_SIZE_ELEMENTAL&gt; b_pressure = ComputePressureVectorTerm(linear_phi, grad_linear_phi, X, &amp;rElement);</div>
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span> </div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;SPATIAL_BLOCK_SIZE_ELEMENTAL; i++)</div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>            {</div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>                rBElem(i) += b_spatial(i)*wJ;</div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>            }</div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span> </div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;PRESSURE_BLOCK_SIZE_ELEMENTAL; i++)</div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>            {</div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>                rBElem(SPATIAL_BLOCK_SIZE_ELEMENTAL + i) += b_pressure(i)*wJ;</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>            }</div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>        }</div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span> </div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        <span class="keywordflow">if</span> (this-&gt;mAssembleMatrix)</div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>        {</div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>            c_matrix&lt;double,SPATIAL_BLOCK_SIZE_ELEMENTAL,SPATIAL_BLOCK_SIZE_ELEMENTAL&gt; a_spatial_spatial</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>                = ComputeSpatialSpatialMatrixTerm(quad_phi, grad_quad_phi, X, &amp;rElement);</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>            c_vector&lt;double,SPATIAL_BLOCK_SIZE_ELEMENTAL&gt; b_spatial = ComputeSpatialVectorTerm(quad_phi, grad_quad_phi, X, &amp;rElement);</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>            c_vector&lt;double,PRESSURE_BLOCK_SIZE_ELEMENTAL&gt; b_pressure = ComputePressureVectorTerm(linear_phi, grad_linear_phi, X, &amp;rElement);</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span> </div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;SPATIAL_BLOCK_SIZE_ELEMENTAL; i++)</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>            {</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>                rBElem(i) += b_spatial(i)*wJ;</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>            }</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span> </div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;PRESSURE_BLOCK_SIZE_ELEMENTAL; i++)</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>            {</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>                rBElem(SPATIAL_BLOCK_SIZE_ELEMENTAL + i) += b_pressure(i)*wJ;</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>            }</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>        }</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span> </div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>        <span class="keywordflow">if</span> (this-&gt;mAssembleMatrix)</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        {</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>            c_matrix&lt;double,SPATIAL_BLOCK_SIZE_ELEMENTAL,SPATIAL_BLOCK_SIZE_ELEMENTAL&gt; a_spatial_spatial = ComputeSpatialSpatialMatrixTerm(quad_phi, grad_quad_phi, X, &amp;rElement);</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span> </div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>            c_matrix&lt;double,SPATIAL_BLOCK_SIZE_ELEMENTAL,PRESSURE_BLOCK_SIZE_ELEMENTAL&gt; a_spatial_pressure = ComputeSpatialPressureMatrixTerm(quad_phi, grad_quad_phi, linear_phi, grad_linear_phi, X, &amp;rElement);</div>
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span> </div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>            c_matrix&lt;double,SPATIAL_BLOCK_SIZE_ELEMENTAL,PRESSURE_BLOCK_SIZE_ELEMENTAL&gt; a_spatial_pressure</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>                = ComputeSpatialPressureMatrixTerm(quad_phi, grad_quad_phi, linear_phi, grad_linear_phi, X, &amp;rElement);</div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>            c_matrix&lt;double,PRESSURE_BLOCK_SIZE_ELEMENTAL,SPATIAL_BLOCK_SIZE_ELEMENTAL&gt; a_pressure_spatial;</div>
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>            <span class="keywordflow">if</span> (!BLOCK_SYMMETRIC_MATRIX)</div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>            {</div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>                <a class="code hl_define" href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a>; <span class="comment">// to-come: non-mixed problems</span></div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>                <span class="comment">//a_pressure_spatial = ComputeSpatialPressureMatrixTerm(quad_phi, grad_quad_phi, lin_phi, grad_lin_phi, x, &amp;rElement);</span></div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>            }</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span> </div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>            c_matrix&lt;double,PRESSURE_BLOCK_SIZE_ELEMENTAL,PRESSURE_BLOCK_SIZE_ELEMENTAL&gt; a_pressure_pressure</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                = ComputePressurePressureMatrixTerm(linear_phi, grad_linear_phi, X, &amp;rElement);</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;SPATIAL_BLOCK_SIZE_ELEMENTAL; i++)</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>            {</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;SPATIAL_BLOCK_SIZE_ELEMENTAL; j++)</div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>                {</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>                    rAElem(i,j) += a_spatial_spatial(i,j)*wJ;</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>                }</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span> </div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;PRESSURE_BLOCK_SIZE_ELEMENTAL; j++)</div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>                {</div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>                    rAElem(i, SPATIAL_BLOCK_SIZE_ELEMENTAL + j) += a_spatial_pressure(i,j)*wJ;</div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>                }</div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>            }</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span> </div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;PRESSURE_BLOCK_SIZE_ELEMENTAL; i++)</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>            {</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>                <span class="keywordflow">if</span> (BLOCK_SYMMETRIC_MATRIX)</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>                {</div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;SPATIAL_BLOCK_SIZE_ELEMENTAL; j++)</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>                    {</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>                        rAElem(SPATIAL_BLOCK_SIZE_ELEMENTAL + i, j) += a_spatial_pressure(j,i)*wJ;</div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>                    }</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>            c_matrix&lt;double,PRESSURE_BLOCK_SIZE_ELEMENTAL,SPATIAL_BLOCK_SIZE_ELEMENTAL&gt; a_pressure_spatial;</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>            <span class="keywordflow">if</span> (!BLOCK_SYMMETRIC_MATRIX)</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>            {</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>                <a class="code hl_define" href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a>; <span class="comment">// to-come: non-mixed problems</span></div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>                <span class="comment">//a_pressure_spatial = ComputeSpatialPressureMatrixTerm(quad_phi, grad_quad_phi, lin_phi, grad_lin_phi, x, &amp;rElement);</span></div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>            }</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>            c_matrix&lt;double,PRESSURE_BLOCK_SIZE_ELEMENTAL,PRESSURE_BLOCK_SIZE_ELEMENTAL&gt; a_pressure_pressure = ComputePressurePressureMatrixTerm(linear_phi, grad_linear_phi, X, &amp;rElement);</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span> </div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;SPATIAL_BLOCK_SIZE_ELEMENTAL; i++)</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>            {</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;SPATIAL_BLOCK_SIZE_ELEMENTAL; j++)</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>                {</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>                    rAElem(i,j) += a_spatial_spatial(i,j)*wJ;</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>                }</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;PRESSURE_BLOCK_SIZE_ELEMENTAL; j++)</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>                {</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>                    rAElem(i, SPATIAL_BLOCK_SIZE_ELEMENTAL + j) += a_spatial_pressure(i,j)*wJ;</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>                }</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>            }</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span> </div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;PRESSURE_BLOCK_SIZE_ELEMENTAL; i++)</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>            {</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>                <span class="keywordflow">if</span> (BLOCK_SYMMETRIC_MATRIX)</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>                {</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;SPATIAL_BLOCK_SIZE_ELEMENTAL; j++)</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>                    {</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>                        rAElem(SPATIAL_BLOCK_SIZE_ELEMENTAL + i, j) += a_spatial_pressure(j,i)*wJ;</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>                    }</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>                }</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>                {</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>                    <a class="code hl_define" href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a>; <span class="comment">// to-come: non-mixed problems</span></div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>                }</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>                <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>                {</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>                    <a class="code hl_define" href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a>; <span class="comment">// to-come: non-mixed problems</span></div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>                }</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span> </div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;PRESSURE_BLOCK_SIZE_ELEMENTAL; j++)</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>                {</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>                    rAElem(SPATIAL_BLOCK_SIZE_ELEMENTAL + i, SPATIAL_BLOCK_SIZE_ELEMENTAL + j) += a_pressure_pressure(i,j)*wJ;</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>                }</div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>            }</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        }</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    }</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>}</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> j=0; j&lt;PRESSURE_BLOCK_SIZE_ELEMENTAL; j++)</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>                {</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>                    rAElem(SPATIAL_BLOCK_SIZE_ELEMENTAL + i, SPATIAL_BLOCK_SIZE_ELEMENTAL + j) += a_pressure_pressure(i,j)*wJ;</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>                }</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>            }</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        }</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    }</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>}</div>
 </div>
 </div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="preprocessor">#endif </span><span class="comment">// ABSTRACTCONTINUUMMECHANICSASSEMBLER_HPP_</span></div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span> </div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span><span class="preprocessor">#endif </span><span class="comment">// ABSTRACTCONTINUUMMECHANICSASSEMBLER_HPP_</span></div>
 </div>
 </div>
 <div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
@@ -508,7 +504,7 @@ $(document).ready(function(){initNavTree('AbstractContinuumMechanicsAssembler_8h
 <div class="ttc" id="aclassAbstractElement_html_aba671c1d70a7697292eff47237a1a009"><div class="ttname"><a href="classAbstractElement.html#aba671c1d70a7697292eff47237a1a009">AbstractElement::GetOwnership</a></div><div class="ttdeci">bool GetOwnership() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractElement_8cpp_source.html#l00153">AbstractElement.cpp:153</a></div></div>
 <div class="ttc" id="aclassAbstractElement_html_ac1ef0f71ae056fc5878aa35cc55bd24c"><div class="ttname"><a href="classAbstractElement.html#ac1ef0f71ae056fc5878aa35cc55bd24c">AbstractElement::GetIndex</a></div><div class="ttdeci">unsigned GetIndex() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractElement_8cpp_source.html#l00141">AbstractElement.cpp:141</a></div></div>
 <div class="ttc" id="aclassAbstractFeAssemblerInterface_html"><div class="ttname"><a href="classAbstractFeAssemblerInterface.html">AbstractFeAssemblerInterface</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractFeAssemblerInterface_8hpp_source.html#l00051">AbstractFeAssemblerInterface.hpp:52</a></div></div>
-<div class="ttc" id="aclassAbstractTetrahedralMesh_1_1ElementIterator_html"><div class="ttname"><a href="classAbstractTetrahedralMesh_1_1ElementIterator.html">AbstractTetrahedralMesh::ElementIterator</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00632">AbstractTetrahedralMesh.hpp:633</a></div></div>
+<div class="ttc" id="aclassAbstractTetrahedralMesh_1_1ElementIterator_html"><div class="ttname"><a href="classAbstractTetrahedralMesh_1_1ElementIterator.html">AbstractTetrahedralMesh::ElementIterator</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00631">AbstractTetrahedralMesh.hpp:632</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html"><div class="ttname"><a href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00070">AbstractTetrahedralMesh.hpp:71</a></div></div>
 <div class="ttc" id="aclassChastePoint_html"><div class="ttname"><a href="classChastePoint.html">ChastePoint</a></div><div class="ttdef"><b>Definition</b> <a href="ChastePoint_8hpp_source.html#l00049">ChastePoint.hpp:50</a></div></div>
 <div class="ttc" id="aclassCommandLineArguments_html_a04fce67b06d8e79ac4e56a1be2f46fa5"><div class="ttname"><a href="classCommandLineArguments.html#a04fce67b06d8e79ac4e56a1be2f46fa5">CommandLineArguments::OptionExists</a></div><div class="ttdeci">bool OptionExists(const std::string &amp;rOption)</div><div class="ttdef"><b>Definition</b> <a href="CommandLineArguments_8cpp_source.html#l00061">CommandLineArguments.cpp:61</a></div></div>

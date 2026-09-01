@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::fce1eeb1bd7b1284a795a679b32ef75d18e8421c</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::096d800bc662ec2914e1421023d73dd585d15705</span>
    </div>
   </td>
  </tr>
@@ -163,31 +163,30 @@ $(document).ready(function(){initNavTree('SimpleNonlinearEllipticSolver_8cpp_sou
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// Note rGradU is a 1 by SPACE_DIM matrix, the 1 representing the dimension of</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// u (ie in this problem the unknown is a scalar). rGradU0 is rGradU as a vector.</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    matrix_row&lt; c_matrix&lt;double, 1, SPACE_DIM&gt; &gt; rGradU0(rGradU, 0);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    c_vector&lt;double, ELEMENT_DIM+1&gt; integrand_values1 =</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        prod(c_vector&lt;double, ELEMENT_DIM&gt;(prod(rGradU0, FOfU)), rGradPhi);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    ret = integrand_values1 - (forcing_term * rPhi);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    c_vector&lt;double, ELEMENT_DIM+1&gt; integrand_values1 = prod(c_vector&lt;double, ELEMENT_DIM&gt;(prod(rGradU0, FOfU)), rGradPhi);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    ret = integrand_values1 - (forcing_term * rPhi);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classSimpleNonlinearEllipticSolver.html#a5b3ee39b787fa7898803fecc6948bf8e">  101</a></span><a class="code hl_function" href="classSimpleNonlinearEllipticSolver.html#a5b3ee39b787fa7898803fecc6948bf8e">SimpleNonlinearEllipticSolver&lt;ELEMENT_DIM,SPACE_DIM&gt;::SimpleNonlinearEllipticSolver</a>(</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                              <a class="code hl_class" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt;ELEMENT_DIM, SPACE_DIM&gt;</a>* pMesh,</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                              <a class="code hl_class" href="classAbstractNonlinearEllipticPde.html">AbstractNonlinearEllipticPde&lt;SPACE_DIM&gt;</a>* pPde,</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                              <a class="code hl_class" href="classBoundaryConditionsContainer.html">BoundaryConditionsContainer&lt;ELEMENT_DIM, SPACE_DIM, 1&gt;</a>* pBoundaryConditions)</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    :  <a class="code hl_class" href="classAbstractNonlinearAssemblerSolverHybrid.html">AbstractNonlinearAssemblerSolverHybrid</a>&lt;ELEMENT_DIM,SPACE_DIM,1&gt;(pMesh,pBoundaryConditions),</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>       mpNonlinearEllipticPde(pPde)</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>{</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    assert(pPde!=<span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classSimpleNonlinearEllipticSolver.html#a5b3ee39b787fa7898803fecc6948bf8e">  100</a></span><a class="code hl_function" href="classSimpleNonlinearEllipticSolver.html#a5b3ee39b787fa7898803fecc6948bf8e">SimpleNonlinearEllipticSolver&lt;ELEMENT_DIM,SPACE_DIM&gt;::SimpleNonlinearEllipticSolver</a>(</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                              <a class="code hl_class" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt;ELEMENT_DIM, SPACE_DIM&gt;</a>* pMesh,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                              <a class="code hl_class" href="classAbstractNonlinearEllipticPde.html">AbstractNonlinearEllipticPde&lt;SPACE_DIM&gt;</a>* pPde,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                              <a class="code hl_class" href="classBoundaryConditionsContainer.html">BoundaryConditionsContainer&lt;ELEMENT_DIM, SPACE_DIM, 1&gt;</a>* pBoundaryConditions)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    :  <a class="code hl_class" href="classAbstractNonlinearAssemblerSolverHybrid.html">AbstractNonlinearAssemblerSolverHybrid</a>&lt;ELEMENT_DIM,SPACE_DIM,1&gt;(pMesh,pBoundaryConditions),</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>       mpNonlinearEllipticPde(pPde)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    assert(pPde!=<span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
 </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classSimpleNonlinearEllipticSolver.html">SimpleNonlinearEllipticSolver&lt;1,1&gt;</a>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classSimpleNonlinearEllipticSolver.html">SimpleNonlinearEllipticSolver&lt;2,2&gt;</a>;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classSimpleNonlinearEllipticSolver.html">SimpleNonlinearEllipticSolver&lt;3,3&gt;</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classSimpleNonlinearEllipticSolver.html">SimpleNonlinearEllipticSolver&lt;1,1&gt;</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classSimpleNonlinearEllipticSolver.html">SimpleNonlinearEllipticSolver&lt;2,2&gt;</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classSimpleNonlinearEllipticSolver.html">SimpleNonlinearEllipticSolver&lt;3,3&gt;</a>;</div>
 <div class="ttc" id="aclassAbstractNonlinearAssemblerSolverHybrid_html"><div class="ttname"><a href="classAbstractNonlinearAssemblerSolverHybrid.html">AbstractNonlinearAssemblerSolverHybrid</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractNonlinearAssemblerSolverHybrid_8hpp_source.html#l00132">AbstractNonlinearAssemblerSolverHybrid.hpp:133</a></div></div>
 <div class="ttc" id="aclassAbstractNonlinearEllipticPde_html"><div class="ttname"><a href="classAbstractNonlinearEllipticPde.html">AbstractNonlinearEllipticPde</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractNonlinearEllipticPde_8hpp_source.html#l00052">AbstractNonlinearEllipticPde.hpp:53</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html"><div class="ttname"><a href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00070">AbstractTetrahedralMesh.hpp:71</a></div></div>
@@ -195,7 +194,7 @@ $(document).ready(function(){initNavTree('SimpleNonlinearEllipticSolver_8cpp_sou
 <div class="ttc" id="aclassChastePoint_html"><div class="ttname"><a href="classChastePoint.html">ChastePoint</a></div><div class="ttdef"><b>Definition</b> <a href="ChastePoint_8hpp_source.html#l00049">ChastePoint.hpp:50</a></div></div>
 <div class="ttc" id="aclassElement_html"><div class="ttname"><a href="classElement.html">Element</a></div><div class="ttdef"><b>Definition</b> <a href="Element_8hpp_source.html#l00053">Element.hpp:54</a></div></div>
 <div class="ttc" id="aclassSimpleNonlinearEllipticSolver_html"><div class="ttname"><a href="classSimpleNonlinearEllipticSolver.html">SimpleNonlinearEllipticSolver</a></div><div class="ttdef"><b>Definition</b> <a href="SimpleNonlinearEllipticSolver_8hpp_source.html#l00046">SimpleNonlinearEllipticSolver.hpp:47</a></div></div>
-<div class="ttc" id="aclassSimpleNonlinearEllipticSolver_html_a5b3ee39b787fa7898803fecc6948bf8e"><div class="ttname"><a href="classSimpleNonlinearEllipticSolver.html#a5b3ee39b787fa7898803fecc6948bf8e">SimpleNonlinearEllipticSolver::SimpleNonlinearEllipticSolver</a></div><div class="ttdeci">SimpleNonlinearEllipticSolver(AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; *pMesh, AbstractNonlinearEllipticPde&lt; SPACE_DIM &gt; *pPde, BoundaryConditionsContainer&lt; ELEMENT_DIM, SPACE_DIM, 1 &gt; *pBoundaryConditions)</div><div class="ttdef"><b>Definition</b> <a href="SimpleNonlinearEllipticSolver_8cpp_source.html#l00101">SimpleNonlinearEllipticSolver.cpp:101</a></div></div>
+<div class="ttc" id="aclassSimpleNonlinearEllipticSolver_html_a5b3ee39b787fa7898803fecc6948bf8e"><div class="ttname"><a href="classSimpleNonlinearEllipticSolver.html#a5b3ee39b787fa7898803fecc6948bf8e">SimpleNonlinearEllipticSolver::SimpleNonlinearEllipticSolver</a></div><div class="ttdeci">SimpleNonlinearEllipticSolver(AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; *pMesh, AbstractNonlinearEllipticPde&lt; SPACE_DIM &gt; *pPde, BoundaryConditionsContainer&lt; ELEMENT_DIM, SPACE_DIM, 1 &gt; *pBoundaryConditions)</div><div class="ttdef"><b>Definition</b> <a href="SimpleNonlinearEllipticSolver_8cpp_source.html#l00100">SimpleNonlinearEllipticSolver.cpp:100</a></div></div>
 <div class="ttc" id="aclassSimpleNonlinearEllipticSolver_html_a6492293804b6b4c0f22677e20d2a37c6"><div class="ttname"><a href="classSimpleNonlinearEllipticSolver.html#a6492293804b6b4c0f22677e20d2a37c6">SimpleNonlinearEllipticSolver::ComputeMatrixTerm</a></div><div class="ttdeci">virtual c_matrix&lt; double, 1 *(ELEMENT_DIM+1), 1 *(ELEMENT_DIM+1)&gt; ComputeMatrixTerm(c_vector&lt; double, ELEMENT_DIM+1 &gt; &amp;rPhi, c_matrix&lt; double, SPACE_DIM, ELEMENT_DIM+1 &gt; &amp;rGradPhi, ChastePoint&lt; SPACE_DIM &gt; &amp;rX, c_vector&lt; double, 1 &gt; &amp;rU, c_matrix&lt; double, 1, SPACE_DIM &gt; &amp;rGradU, Element&lt; ELEMENT_DIM, SPACE_DIM &gt; *pElement)</div><div class="ttdef"><b>Definition</b> <a href="SimpleNonlinearEllipticSolver_8cpp_source.html#l00039">SimpleNonlinearEllipticSolver.cpp:39</a></div></div>
 <div class="ttc" id="aclassdouble_html"><div class="ttname"><a href="classdouble.html">double</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

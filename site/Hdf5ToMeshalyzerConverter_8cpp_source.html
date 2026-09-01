@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::fce1eeb1bd7b1284a795a679b32ef75d18e8421c</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::096d800bc662ec2914e1421023d73dd585d15705</span>
    </div>
   </td>
  </tr>
@@ -211,22 +211,21 @@ $(document).ready(function(){initNavTree('Hdf5ToMeshalyzerConverter_8cpp_source.
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <span class="comment">// In this case we expect the mesh to have been read in from file</span></div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="comment">// Note that the next line will throw if the mesh has not been read from file</span></div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            std::string original_file = this-&gt;<a class="code hl_variable" href="classAbstractHdf5Converter.html#a5b3155bbd2ba0e619d92217f4157cd60">mpMesh</a>-&gt;GetMeshFileBaseName();</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            std::shared_ptr&lt;AbstractMeshReader&lt;ELEMENT_DIM, SPACE_DIM&gt; &gt; p_original_mesh_reader</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                = GenericMeshReader&lt;ELEMENT_DIM, SPACE_DIM&gt;(original_file);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            mesh_writer.<a class="code hl_function" href="classAbstractMeshWriter.html#a5be4e9a7277459ddfc38c446180b783c">WriteFilesUsingMeshReader</a>(*p_original_mesh_reader);</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        }</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <a class="code hl_function" href="classPetscTools.html#a7a807cfd3f93e989e1d90d00650e5c64">PetscTools::Barrier</a>(<span class="stringliteral">&quot;Hdf5ToMeshalyzerConverter&quot;</span>);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="keyword">auto</span> p_original_mesh_reader = GenericMeshReader&lt;ELEMENT_DIM, SPACE_DIM&gt;(original_file);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            mesh_writer.<a class="code hl_function" href="classAbstractMeshWriter.html#a5be4e9a7277459ddfc38c446180b783c">WriteFilesUsingMeshReader</a>(*p_original_mesh_reader);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <a class="code hl_function" href="classPetscTools.html#a7a807cfd3f93e989e1d90d00650e5c64">PetscTools::Barrier</a>(<span class="stringliteral">&quot;Hdf5ToMeshalyzerConverter&quot;</span>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
 </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;1,1&gt;</a>;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;1,2&gt;</a>;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;2,2&gt;</a>;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;1,3&gt;</a>;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;2,3&gt;</a>;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;3,3&gt;</a>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;1,1&gt;</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;1,2&gt;</a>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;2,2&gt;</a>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;1,3&gt;</a>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;2,3&gt;</a>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToMeshalyzerConverter.html">Hdf5ToMeshalyzerConverter&lt;3,3&gt;</a>;</div>
 <div class="ttc" id="aException_8hpp_html"><div class="ttname"><a href="Exception_8hpp.html">Exception.hpp</a></div></div>
 <div class="ttc" id="aPetscTools_8hpp_html"><div class="ttname"><a href="PetscTools_8hpp.html">PetscTools.hpp</a></div></div>
 <div class="ttc" id="aUblasCustomFunctions_8hpp_html"><div class="ttname"><a href="UblasCustomFunctions_8hpp.html">UblasCustomFunctions.hpp</a></div></div>

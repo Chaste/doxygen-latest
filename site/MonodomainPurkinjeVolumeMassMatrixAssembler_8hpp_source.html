@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::fce1eeb1bd7b1284a795a679b32ef75d18e8421c</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::096d800bc662ec2914e1421023d73dd585d15705</span>
    </div>
   </td>
  </tr>
@@ -151,28 +151,27 @@ $(document).ready(function(){initNavTree('MonodomainPurkinjeVolumeMassMatrixAsse
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">//            }</span></div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        c_matrix&lt;<a class="code hl_class" href="classdouble.html">double</a>,2*(ELEMENT_DIM+1),2*(ELEMENT_DIM+1)&gt; ret</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                = zero_matrix&lt;double&gt;(2*(ELEMENT_DIM+1),2*(ELEMENT_DIM+1));</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="comment">// even rows, even columns</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        matrix_slice&lt;c_matrix&lt;double, 2*ELEMENT_DIM+2, 2*ELEMENT_DIM+2&gt; &gt;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        slice00(ret, slice(0, 2, ELEMENT_DIM+1), slice(0, 2, ELEMENT_DIM+1));</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        slice00 = <a class="code hl_variable" href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#aa05727254ec2f92fe4e7c63f316f8f7f">mScaleFactor</a>*mass_matrix;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        c_matrix&lt;<a class="code hl_class" href="classdouble.html">double</a>,2*(ELEMENT_DIM+1),2*(ELEMENT_DIM+1)&gt; ret = zero_matrix&lt;double&gt;(2*(ELEMENT_DIM+1),2*(ELEMENT_DIM+1));</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="comment">// even rows, even columns</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        matrix_slice&lt;c_matrix&lt;double, 2*ELEMENT_DIM+2, 2*ELEMENT_DIM+2&gt; &gt;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        slice00(ret, slice(0, 2, ELEMENT_DIM+1), slice(0, 2, ELEMENT_DIM+1));</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        slice00 = <a class="code hl_variable" href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#aa05727254ec2f92fe4e7c63f316f8f7f">mScaleFactor</a>*mass_matrix;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
 </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#ae744eb0d70e11a9f88b75d10011fe753">  124</a></span>    <a class="code hl_function" href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#ae744eb0d70e11a9f88b75d10011fe753">MonodomainPurkinjeVolumeMassMatrixAssembler</a>(<a class="code hl_class" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt;ELEMENT_DIM,SPACE_DIM&gt;</a>* pMesh, <span class="keywordtype">bool</span> useMassLumping=<span class="keyword">false</span>, <span class="keywordtype">double</span> scaleFactor=1.0)</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        : <a class="code hl_class" href="classAbstractFeVolumeIntegralAssembler.html">AbstractFeVolumeIntegralAssembler</a>&lt;ELEMENT_DIM,SPACE_DIM,2,false,true,NORMAL&gt;(pMesh),</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>          <a class="code hl_variable" href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#aa05727254ec2f92fe4e7c63f316f8f7f">mScaleFactor</a>(scaleFactor),</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>          <a class="code hl_variable" href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#ac4cd3a264d581d14a0012c2f817db71b">mUseMassLumping</a>(useMassLumping)</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    {</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00123" data-start="{" data-end="}">
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#ae744eb0d70e11a9f88b75d10011fe753">  123</a></span>    <a class="code hl_function" href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#ae744eb0d70e11a9f88b75d10011fe753">MonodomainPurkinjeVolumeMassMatrixAssembler</a>(<a class="code hl_class" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt;ELEMENT_DIM,SPACE_DIM&gt;</a>* pMesh, <span class="keywordtype">bool</span> useMassLumping=<span class="keyword">false</span>, <span class="keywordtype">double</span> scaleFactor=1.0)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        : <a class="code hl_class" href="classAbstractFeVolumeIntegralAssembler.html">AbstractFeVolumeIntegralAssembler</a>&lt;ELEMENT_DIM,SPACE_DIM,2,false,true,NORMAL&gt;(pMesh),</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>          <a class="code hl_variable" href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#aa05727254ec2f92fe4e7c63f316f8f7f">mScaleFactor</a>(scaleFactor),</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>          <a class="code hl_variable" href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#ac4cd3a264d581d14a0012c2f817db71b">mUseMassLumping</a>(useMassLumping)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
 </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>};</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>};</div>
 </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif </span><span class="comment">/*MONODOMAINPURKINJEVOLUMEMASSMATRIXASSEMBLER_HPP_*/</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#endif </span><span class="comment">/*MONODOMAINPURKINJEVOLUMEMASSMATRIXASSEMBLER_HPP_*/</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00227">Exception.hpp:227</a></div></div>
 <div class="ttc" id="aclassAbstractFeVolumeIntegralAssembler_html"><div class="ttname"><a href="classAbstractFeVolumeIntegralAssembler.html">AbstractFeVolumeIntegralAssembler</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractFeVolumeIntegralAssembler_8hpp_source.html#l00078">AbstractFeVolumeIntegralAssembler.hpp:80</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html"><div class="ttname"><a href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00070">AbstractTetrahedralMesh.hpp:71</a></div></div>
@@ -182,7 +181,7 @@ $(document).ready(function(){initNavTree('MonodomainPurkinjeVolumeMassMatrixAsse
 <div class="ttc" id="aclassMonodomainPurkinjeVolumeMassMatrixAssembler_html_a58e4806946101418143fd7a45e38892d"><div class="ttname"><a href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#a58e4806946101418143fd7a45e38892d">MonodomainPurkinjeVolumeMassMatrixAssembler::ComputeMatrixTerm</a></div><div class="ttdeci">c_matrix&lt; double, 2 *(ELEMENT_DIM+1), 2 *(ELEMENT_DIM+1)&gt; ComputeMatrixTerm(c_vector&lt; double, ELEMENT_DIM+1 &gt; &amp;rPhi, c_matrix&lt; double, SPACE_DIM, ELEMENT_DIM+1 &gt; &amp;rGradPhi, ChastePoint&lt; SPACE_DIM &gt; &amp;rX, c_vector&lt; double, 2 &gt; &amp;rU, c_matrix&lt; double, 2, SPACE_DIM &gt; &amp;rGradU, Element&lt; ELEMENT_DIM, SPACE_DIM &gt; *pElement)</div><div class="ttdef"><b>Definition</b> <a href="MonodomainPurkinjeVolumeMassMatrixAssembler_8hpp_source.html#l00081">MonodomainPurkinjeVolumeMassMatrixAssembler.hpp:81</a></div></div>
 <div class="ttc" id="aclassMonodomainPurkinjeVolumeMassMatrixAssembler_html_aa05727254ec2f92fe4e7c63f316f8f7f"><div class="ttname"><a href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#aa05727254ec2f92fe4e7c63f316f8f7f">MonodomainPurkinjeVolumeMassMatrixAssembler::mScaleFactor</a></div><div class="ttdeci">double mScaleFactor</div><div class="ttdef"><b>Definition</b> <a href="MonodomainPurkinjeVolumeMassMatrixAssembler_8hpp_source.html#l00061">MonodomainPurkinjeVolumeMassMatrixAssembler.hpp:61</a></div></div>
 <div class="ttc" id="aclassMonodomainPurkinjeVolumeMassMatrixAssembler_html_ac4cd3a264d581d14a0012c2f817db71b"><div class="ttname"><a href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#ac4cd3a264d581d14a0012c2f817db71b">MonodomainPurkinjeVolumeMassMatrixAssembler::mUseMassLumping</a></div><div class="ttdeci">bool mUseMassLumping</div><div class="ttdef"><b>Definition</b> <a href="MonodomainPurkinjeVolumeMassMatrixAssembler_8hpp_source.html#l00064">MonodomainPurkinjeVolumeMassMatrixAssembler.hpp:64</a></div></div>
-<div class="ttc" id="aclassMonodomainPurkinjeVolumeMassMatrixAssembler_html_ae744eb0d70e11a9f88b75d10011fe753"><div class="ttname"><a href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#ae744eb0d70e11a9f88b75d10011fe753">MonodomainPurkinjeVolumeMassMatrixAssembler::MonodomainPurkinjeVolumeMassMatrixAssembler</a></div><div class="ttdeci">MonodomainPurkinjeVolumeMassMatrixAssembler(AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; *pMesh, bool useMassLumping=false, double scaleFactor=1.0)</div><div class="ttdef"><b>Definition</b> <a href="MonodomainPurkinjeVolumeMassMatrixAssembler_8hpp_source.html#l00124">MonodomainPurkinjeVolumeMassMatrixAssembler.hpp:124</a></div></div>
+<div class="ttc" id="aclassMonodomainPurkinjeVolumeMassMatrixAssembler_html_ae744eb0d70e11a9f88b75d10011fe753"><div class="ttname"><a href="classMonodomainPurkinjeVolumeMassMatrixAssembler.html#ae744eb0d70e11a9f88b75d10011fe753">MonodomainPurkinjeVolumeMassMatrixAssembler::MonodomainPurkinjeVolumeMassMatrixAssembler</a></div><div class="ttdeci">MonodomainPurkinjeVolumeMassMatrixAssembler(AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; *pMesh, bool useMassLumping=false, double scaleFactor=1.0)</div><div class="ttdef"><b>Definition</b> <a href="MonodomainPurkinjeVolumeMassMatrixAssembler_8hpp_source.html#l00123">MonodomainPurkinjeVolumeMassMatrixAssembler.hpp:123</a></div></div>
 <div class="ttc" id="aclassdouble_html"><div class="ttname"><a href="classdouble.html">double</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

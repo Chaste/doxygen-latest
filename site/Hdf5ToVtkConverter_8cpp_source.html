@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::fce1eeb1bd7b1284a795a679b32ef75d18e8421c</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::096d800bc662ec2914e1421023d73dd585d15705</span>
    </div>
   </td>
  </tr>
@@ -229,21 +229,20 @@ $(document).ready(function(){initNavTree('Hdf5ToVtkConverter_8cpp_source.html','
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="comment">// In this case we expect the mesh to have been read in from file</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="comment">// Note that the next line will throw if the mesh has not been read from file</span></div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        std::string original_file = this-&gt;<a class="code hl_variable" href="classAbstractHdf5Converter.html#a5b3155bbd2ba0e619d92217f4157cd60">mpMesh</a>-&gt;GetMeshFileBaseName();</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        std::shared_ptr&lt;AbstractMeshReader&lt;ELEMENT_DIM, SPACE_DIM&gt; &gt; p_original_mesh_reader</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            = GenericMeshReader&lt;ELEMENT_DIM, SPACE_DIM&gt;(original_file);</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        vtk_writer.<a class="code hl_function" href="classAbstractMeshWriter.html#a5be4e9a7277459ddfc38c446180b783c">WriteFilesUsingMeshReader</a>(*p_original_mesh_reader);</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="preprocessor">#endif </span><span class="comment">//CHASTE_VTK</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keyword">auto</span> p_original_mesh_reader = GenericMeshReader&lt;ELEMENT_DIM, SPACE_DIM&gt;(original_file);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        vtk_writer.<a class="code hl_function" href="classAbstractMeshWriter.html#a5be4e9a7277459ddfc38c446180b783c">WriteFilesUsingMeshReader</a>(*p_original_mesh_reader);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#endif </span><span class="comment">//CHASTE_VTK</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
 </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;1,1&gt;</a>;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;1,2&gt;</a>;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;2,2&gt;</a>;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;1,3&gt;</a>;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;2,3&gt;</a>;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;3,3&gt;</a>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;1,1&gt;</a>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;1,2&gt;</a>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;2,2&gt;</a>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;1,3&gt;</a>;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;2,3&gt;</a>;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classHdf5ToVtkConverter.html">Hdf5ToVtkConverter&lt;3,3&gt;</a>;</div>
 <div class="ttc" id="aException_8hpp_html"><div class="ttname"><a href="Exception_8hpp.html">Exception.hpp</a></div></div>
 <div class="ttc" id="aPetscTools_8hpp_html"><div class="ttname"><a href="PetscTools_8hpp.html">PetscTools.hpp</a></div></div>
 <div class="ttc" id="aUblasCustomFunctions_8hpp_html"><div class="ttname"><a href="UblasCustomFunctions_8hpp.html">UblasCustomFunctions.hpp</a></div></div>
@@ -258,7 +257,7 @@ $(document).ready(function(){initNavTree('Hdf5ToVtkConverter_8cpp_source.html','
 <div class="ttc" id="aclassAbstractMesh_html_a47fc94727ced2f9fa234c896653e76e4"><div class="ttname"><a href="classAbstractMesh.html#a47fc94727ced2f9fa234c896653e76e4">AbstractMesh::GetNumNodes</a></div><div class="ttdeci">virtual unsigned GetNumNodes() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00068">AbstractMesh.cpp:68</a></div></div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html"><div class="ttname"><a href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00070">AbstractTetrahedralMesh.hpp:71</a></div></div>
 <div class="ttc" id="aclassDistributedTetrahedralMesh_html"><div class="ttname"><a href="classDistributedTetrahedralMesh.html">DistributedTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="DistributedTetrahedralMesh_8hpp_source.html#l00079">DistributedTetrahedralMesh.hpp:80</a></div></div>
-<div class="ttc" id="aclassDistributedTetrahedralMesh_html_a2555dd6ec62ecbc5b7d00008a9c28ec1"><div class="ttname"><a href="classDistributedTetrahedralMesh.html#a2555dd6ec62ecbc5b7d00008a9c28ec1">DistributedTetrahedralMesh::GetNumLocalNodes</a></div><div class="ttdeci">unsigned GetNumLocalNodes() const</div><div class="ttdef"><b>Definition</b> <a href="DistributedTetrahedralMesh_8cpp_source.html#l00458">DistributedTetrahedralMesh.cpp:458</a></div></div>
+<div class="ttc" id="aclassDistributedTetrahedralMesh_html_a2555dd6ec62ecbc5b7d00008a9c28ec1"><div class="ttname"><a href="classDistributedTetrahedralMesh.html#a2555dd6ec62ecbc5b7d00008a9c28ec1">DistributedTetrahedralMesh::GetNumLocalNodes</a></div><div class="ttdeci">unsigned GetNumLocalNodes() const</div><div class="ttdef"><b>Definition</b> <a href="DistributedTetrahedralMesh_8cpp_source.html#l00457">DistributedTetrahedralMesh.cpp:457</a></div></div>
 <div class="ttc" id="aclassDistributedVectorFactory_html"><div class="ttname"><a href="classDistributedVectorFactory.html">DistributedVectorFactory</a></div><div class="ttdef"><b>Definition</b> <a href="DistributedVectorFactory_8hpp_source.html#l00057">DistributedVectorFactory.hpp:58</a></div></div>
 <div class="ttc" id="aclassDistributedVectorFactory_html_a9f6e8e2b9056afd1a09c82f1fa5f33b8"><div class="ttname"><a href="classDistributedVectorFactory.html#a9f6e8e2b9056afd1a09c82f1fa5f33b8">DistributedVectorFactory::CreateVec</a></div><div class="ttdeci">Vec CreateVec()</div><div class="ttdef"><b>Definition</b> <a href="DistributedVectorFactory_8cpp_source.html#l00154">DistributedVectorFactory.cpp:154</a></div></div>
 <div class="ttc" id="aclassFileFinder_html"><div class="ttname"><a href="classFileFinder.html">FileFinder</a></div><div class="ttdef"><b>Definition</b> <a href="FileFinder_8hpp_source.html#l00070">FileFinder.hpp:71</a></div></div>

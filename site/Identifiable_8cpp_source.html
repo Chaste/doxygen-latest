@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::fce1eeb1bd7b1284a795a679b32ef75d18e8421c</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::096d800bc662ec2914e1421023d73dd585d15705</span>
    </div>
   </td>
  </tr>
@@ -170,22 +170,21 @@ $(document).ready(function(){initNavTree('Identifiable_8cpp_source.html',''); in
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    std::string id;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#if BOOST_VERSION &gt;= 103700</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">const</span> boost::serialization::extended_type_info* p_type_info =</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            boost::serialization::type_info_implementation&lt;Identifiable&gt;::type::get_const_instance().get_derived_extended_type_info(*<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">if</span>(p_type_info!=<span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordtype">id</span> = p_type_info-&gt;get_key();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        WARN_ONCE_ONLY(<span class="stringliteral">&quot;Unable to determine the class type. If you are using C++ serialization may not be set up correctly. \n If you are using Python this behaviour is expected.&quot;</span>);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordtype">id</span> = <span class="stringliteral">&quot;UnknownClass-ReflectionFailed&quot;</span>;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">id</span> = boost::serialization::type_info_implementation&lt;Identifiable&gt;::type::get_derived_extended_type_info(*this)-&gt;get_key();</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classIdentifiable.html#a454becf3783f1f76f5ad5c66ce62c3b4">TidyTemplatedExportIdentifier</a>(<span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">const</span> boost::serialization::extended_type_info* p_type_info = boost::serialization::type_info_implementation&lt;Identifiable&gt;::type::get_const_instance().get_derived_extended_type_info(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">if</span>(p_type_info!=<span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordtype">id</span> = p_type_info-&gt;get_key();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        WARN_ONCE_ONLY(<span class="stringliteral">&quot;Unable to determine the class type. If you are using C++ serialization may not be set up correctly. \n If you are using Python this behaviour is expected.&quot;</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordtype">id</span> = <span class="stringliteral">&quot;UnknownClass-ReflectionFailed&quot;</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">id</span> = boost::serialization::type_info_implementation&lt;Identifiable&gt;::type::get_derived_extended_type_info(*this)-&gt;get_key();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classIdentifiable.html#a454becf3783f1f76f5ad5c66ce62c3b4">TidyTemplatedExportIdentifier</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
 </div>
 <div class="ttc" id="aclassIdentifiable_html_a454becf3783f1f76f5ad5c66ce62c3b4"><div class="ttname"><a href="classIdentifiable.html#a454becf3783f1f76f5ad5c66ce62c3b4">Identifiable::TidyTemplatedExportIdentifier</a></div><div class="ttdeci">std::string TidyTemplatedExportIdentifier(std::string identifier) const</div><div class="ttdef"><b>Definition</b> <a href="Identifiable_8cpp_source.html#l00047">Identifiable.cpp:47</a></div></div>
 <div class="ttc" id="aclassIdentifiable_html_a84235d68e37c157be092dd9319be6fb2"><div class="ttname"><a href="classIdentifiable.html#a84235d68e37c157be092dd9319be6fb2">Identifiable::~Identifiable</a></div><div class="ttdeci">virtual ~Identifiable()</div><div class="ttdef"><b>Definition</b> <a href="Identifiable_8cpp_source.html#l00090">Identifiable.cpp:90</a></div></div>
