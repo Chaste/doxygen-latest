@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::096d800bc662ec2914e1421023d73dd585d15705</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::f5fed888fe01e54e4ddcf5f31826902c9f6957b0</span>
    </div>
   </td>
  </tr>
@@ -653,33 +653,35 @@ $(document).ready(function(){initNavTree('AbstractMesh_8cpp_source.html',''); in
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    <span class="keywordflow">if</span> (mNodes.empty())</div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    {</div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>        <span class="keywordflow">return</span> 0u;</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    }</div>
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>    <span class="keywordflow">return</span> (*std::max_element(mNodes.begin(), mNodes.end(),</div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>                              [](<span class="keyword">const</span> <a class="code hl_class" href="classNode.html">Node&lt;SPACE_DIM&gt;</a>* a, <span class="keyword">const</span> <a class="code hl_class" href="classNode.html">Node&lt;SPACE_DIM&gt;</a>* b)</div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>                              {</div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>                                  return a-&gt;GetNumContainingElements() &lt; b-&gt;GetNumContainingElements();</div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>                              }))-&gt;GetNumContainingElements();</div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>}</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>        <span class="comment">// This can happen in parallel if a process isn&#39;t assigned any nodes.</span></div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>        <span class="comment">// Covered in TestDistributedTetrahedralMesh::TestConstructLinearMeshSmallest but only when there are 3 or more processes</span></div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>        <span class="keywordflow">return</span> 0u; <span class="comment">// LCOV_EXCL_LINE</span></div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    }</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    <span class="keywordflow">return</span> (*std::max_element(mNodes.begin(), mNodes.end(),</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>                              [](<span class="keyword">const</span> <a class="code hl_class" href="classNode.html">Node&lt;SPACE_DIM&gt;</a>* a, <span class="keyword">const</span> <a class="code hl_class" href="classNode.html">Node&lt;SPACE_DIM&gt;</a>* b)</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>                              {</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>                                  return a-&gt;GetNumContainingElements() &lt; b-&gt;GetNumContainingElements();</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>                              }))-&gt;GetNumContainingElements();</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>}</div>
 </div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span> </div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00505" data-start="{" data-end="}">
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno"><a class="line" href="classAbstractMesh.html#ae7c87e28aa83f6f1f6023c0627137323">  505</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractMesh.html#ae7c87e28aa83f6f1f6023c0627137323">AbstractMesh&lt;ELEMENT_DIM, SPACE_DIM&gt;::SetMeshHasChangedSinceLoading</a>()</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>{</div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    <span class="comment">// We just forget what the original file was, which has the desired effect</span></div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    mMeshFileBaseName = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>}</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span> </div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00507" data-start="{" data-end="}">
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno"><a class="line" href="classAbstractMesh.html#ae7c87e28aa83f6f1f6023c0627137323">  507</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractMesh.html#ae7c87e28aa83f6f1f6023c0627137323">AbstractMesh&lt;ELEMENT_DIM, SPACE_DIM&gt;::SetMeshHasChangedSinceLoading</a>()</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>{</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <span class="comment">// We just forget what the original file was, which has the desired effect</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    mMeshFileBaseName = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>}</div>
 </div>
 </div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span> </div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;1, 1&gt;</a>;</div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;1, 2&gt;</a>;</div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;1, 3&gt;</a>;</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;2, 2&gt;</a>;</div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;2, 3&gt;</a>;</div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;3, 3&gt;</a>;</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span> </div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;1, 1&gt;</a>;</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;1, 2&gt;</a>;</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;1, 3&gt;</a>;</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;2, 2&gt;</a>;</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;2, 3&gt;</a>;</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractMesh.html">AbstractMesh&lt;3, 3&gt;</a>;</div>
 </div>
 </div>
 </div>
@@ -764,7 +766,7 @@ $(document).ready(function(){initNavTree('AbstractMesh_8cpp_source.html',''); in
 <div class="ttc" id="aclassAbstractMesh_html_ac18bfbb1dac2aaf9f6b6f821d2980405"><div class="ttname"><a href="classAbstractMesh.html#ac18bfbb1dac2aaf9f6b6f821d2980405">AbstractMesh::GetNumNodeAttributes</a></div><div class="ttdeci">unsigned GetNumNodeAttributes() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00086">AbstractMesh.cpp:86</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_html_ac4576cdacd17c1c0bb3b5c742e8d054c"><div class="ttname"><a href="classAbstractMesh.html#ac4576cdacd17c1c0bb3b5c742e8d054c">AbstractMesh::CalculateMaximumContainingElementsPerProcess</a></div><div class="ttdeci">unsigned CalculateMaximumContainingElementsPerProcess() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00491">AbstractMesh.cpp:491</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_html_ad81a40a2e3970600185117829c1ca5f1"><div class="ttname"><a href="classAbstractMesh.html#ad81a40a2e3970600185117829c1ca5f1">AbstractMesh::GetNumBoundaryNodes</a></div><div class="ttdeci">unsigned GetNumBoundaryNodes() const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00074">AbstractMesh.cpp:74</a></div></div>
-<div class="ttc" id="aclassAbstractMesh_html_ae7c87e28aa83f6f1f6023c0627137323"><div class="ttname"><a href="classAbstractMesh.html#ae7c87e28aa83f6f1f6023c0627137323">AbstractMesh::SetMeshHasChangedSinceLoading</a></div><div class="ttdeci">void SetMeshHasChangedSinceLoading()</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00505">AbstractMesh.cpp:505</a></div></div>
+<div class="ttc" id="aclassAbstractMesh_html_ae7c87e28aa83f6f1f6023c0627137323"><div class="ttname"><a href="classAbstractMesh.html#ae7c87e28aa83f6f1f6023c0627137323">AbstractMesh::SetMeshHasChangedSinceLoading</a></div><div class="ttdeci">void SetMeshHasChangedSinceLoading()</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00507">AbstractMesh.cpp:507</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_html_af3013f33dddde763358245985b6b0380"><div class="ttname"><a href="classAbstractMesh.html#af3013f33dddde763358245985b6b0380">AbstractMesh::GetNodeFromPrePermutationIndex</a></div><div class="ttdeci">Node&lt; SPACE_DIM &gt; * GetNodeFromPrePermutationIndex(unsigned index) const</div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8cpp_source.html#l00108">AbstractMesh.cpp:108</a></div></div>
 <div class="ttc" id="aclassChasteCuboid_html"><div class="ttname"><a href="classChasteCuboid.html">ChasteCuboid</a></div><div class="ttdef"><b>Definition</b> <a href="ChasteCuboid_8hpp_source.html#l00051">ChasteCuboid.hpp:52</a></div></div>
 <div class="ttc" id="aclassChastePoint_html"><div class="ttname"><a href="classChastePoint.html">ChastePoint</a></div><div class="ttdef"><b>Definition</b> <a href="ChastePoint_8hpp_source.html#l00049">ChastePoint.hpp:50</a></div></div>
