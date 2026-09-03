@@ -964,17 +964,24 @@ var hierarchy =
         ] ],
         [ "AbstractTwoBodyInteractionForce< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractTwoBodyInteractionForce.html", null ],
         [ "AbstractTwoBodyInteractionForce< ELEMENT_DIM, SPACE_DIM >", "classAbstractTwoBodyInteractionForce.html", [
-          [ "GeneralisedLinearSpringForce< 2 >", "classGeneralisedLinearSpringForce.html", [
-            [ "CryptProjectionForce", "classCryptProjectionForce.html", null ]
+          [ "AbstractVariableSizeTwoBodyInteractionForce< ELEMENT_DIM, ELEMENT_DIM >", "classAbstractVariableSizeTwoBodyInteractionForce.html", null ],
+          [ "AbstractVariableSizeTwoBodyInteractionForce< ELEMENT_DIM, SPACE_DIM >", "classAbstractVariableSizeTwoBodyInteractionForce.html", [
+            [ "LinearSpringForce< 2 >", "classLinearSpringForce.html", [
+              [ "CryptProjectionForce", "classCryptProjectionForce.html", null ]
+            ] ],
+            [ "LinearSpringForce< ELEMENT_DIM, ELEMENT_DIM >", "classLinearSpringForce.html", null ],
+            [ "LinearSpringForce< DIM >", "classLinearSpringForce.html", [
+              [ "LinearSpringWithVariableSpringConstantsForce< DIM >", "classLinearSpringWithVariableSpringConstantsForce.html", null ]
+            ] ],
+            [ "PathmanathanInteractionForce< ELEMENT_DIM, ELEMENT_DIM >", "classPathmanathanInteractionForce.html", null ],
+            [ "LinearSpringForce< ELEMENT_DIM, SPACE_DIM >", "classLinearSpringForce.html", [
+              [ "DifferentialAdhesionLinearSpringForce< ELEMENT_DIM, SPACE_DIM >", "classDifferentialAdhesionLinearSpringForce.html", null ]
+            ] ],
+            [ "PathmanathanInteractionForce< ELEMENT_DIM, SPACE_DIM >", "classPathmanathanInteractionForce.html", [
+              [ "DifferentialAdhesionPathmanathanInteractionForce< ELEMENT_DIM, SPACE_DIM >", "classDifferentialAdhesionPathmanathanInteractionForce.html", null ]
+            ] ]
           ] ],
-          [ "GeneralisedLinearSpringForce< ELEMENT_DIM, ELEMENT_DIM >", "classGeneralisedLinearSpringForce.html", null ],
-          [ "GeneralisedLinearSpringForce< DIM >", "classGeneralisedLinearSpringForce.html", [
-            [ "LinearSpringWithVariableSpringConstantsForce< DIM >", "classLinearSpringWithVariableSpringConstantsForce.html", null ],
-            [ "RepulsionForce< DIM >", "classRepulsionForce.html", null ]
-          ] ],
-          [ "GeneralisedLinearSpringForce< ELEMENT_DIM, SPACE_DIM >", "classGeneralisedLinearSpringForce.html", [
-            [ "DifferentialAdhesionGeneralisedLinearSpringForce< ELEMENT_DIM, SPACE_DIM >", "classDifferentialAdhesionGeneralisedLinearSpringForce.html", null ]
-          ] ]
+          [ "SimpleLogarithmicRepulsionForce< ELEMENT_DIM, SPACE_DIM >", "classSimpleLogarithmicRepulsionForce.html", null ]
         ] ],
         [ "PopulationTestingForce< ELEMENT_DIM, SPACE_DIM >", "classPopulationTestingForce.html", null ]
       ] ],
