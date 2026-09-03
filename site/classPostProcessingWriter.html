@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::a79d31f49cf3c54d201ec4935463b825cf321adf</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::e4165a56b4dddd1499f27b1a05145563d73aa47e</span>
    </div>
   </td>
  </tr>
@@ -204,7 +204,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00052">52</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00050">50</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Hdf5DataReader_8cpp_source.html#l00442">Hdf5DataReader::GetNumberOfRows()</a>, <a class="el" href="PostProcessingWriter_8hpp_source.html#l00062">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::mDirectory</a>, <a class="el" href="PostProcessingWriter_8hpp_source.html#l00063">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::mHdf5File</a>, <a class="el" href="PostProcessingWriter_8hpp_source.html#l00069">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::mHi</a>, <a class="el" href="PostProcessingWriter_8hpp_source.html#l00068">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::mLo</a>, <a class="el" href="PostProcessingWriter_8hpp_source.html#l00067">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::mpCalculator</a>, <a class="el" href="PostProcessingWriter_8hpp_source.html#l00066">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::mpDataReader</a>, <a class="el" href="PostProcessingWriter_8hpp_source.html#l00070">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::mrMesh</a>, and <a class="el" href="PostProcessingWriter_8hpp_source.html#l00064">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::mVoltageName</a>.</p>
 
@@ -228,7 +228,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div><div class="memdoc">
 <p>Destructor </p>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00160">160</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00158">158</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string version of the number without minuses or decimal points. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00394">394</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00392">392</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 </div>
 </div>
@@ -291,7 +291,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 </div><div class="memdoc">
 <p>Method for opening a file and writing one row per node: line 1: &lt;number of upstrokes for node 0&gt; &lt;number of above-threshold depolarisations for node 0&gt; line 2: &lt;number of upstrokes for node 1&gt; &lt;number of above-threshold depolarisations for node 1&gt; etc.</p>
 <p>For the nodes where the threshold isn't crossed, the 'number of upstrokes' will be 0 (so will the number of above-threshold depolarisations for that node)</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>This method ought to be private and called by the WritePostProcessingFiles method if the user requests for it. This will be possible after modifying the schema and specifying Get and Set methods in <a class="el" href="classHeartConfig.html">HeartConfig</a> to check whether the user wants this file or not</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>This method ought to be private and called by the WritePostProcessingFiles method if the user requests for it. This will be possible after modifying the schema and specifying Get and Set methods in <a class="el" href="classHeartConfig.html">HeartConfig</a> to check whether the user wants this file or not</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">threshold</td><td>- used to signify the upstroke (mV) AND to specify above which voltage value the depolarisations are counted </td></tr>
@@ -299,7 +299,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00340">340</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00338">338</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 </div>
 </div>
@@ -348,7 +348,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00248">248</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00246">246</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 </div>
 </div>
@@ -398,7 +398,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00314">314</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00312">312</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 </div>
 </div>
@@ -452,7 +452,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00466">466</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00464">464</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="PetscTools_8cpp_source.html#l00120">PetscTools::AmMaster()</a>, <a class="el" href="PetscTools_8cpp_source.html#l00126">PetscTools::AmTopMost()</a>, <a class="el" href="PetscTools_8cpp_source.html#l00154">PetscTools::BeginRoundRobin()</a>, <a class="el" href="PetscTools_8cpp_source.html#l00164">PetscTools::EndRoundRobin()</a>, <a class="el" href="classChasteBuildInfo.html#af5842208aedc7b8b880e0942b2448acd">ChasteBuildInfo::GetProvenanceString()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l00210">HeartConfig::Instance()</a>, and <a class="el" href="OutputFileHandler_8cpp_source.html#l00258">OutputFileHandler::OpenOutputFile()</a>.</p>
 
@@ -493,7 +493,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00288">288</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00286">286</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 </div>
 </div>
@@ -562,7 +562,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00167">167</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00165">165</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Hdf5DataWriter_8cpp_source.html#l01136">Hdf5DataWriter::AdvanceAlongUnlimitedDimension()</a>, <a class="el" href="DistributedVector_8cpp_source.html#l00124">DistributedVector::Begin()</a>, <a class="el" href="FileFinder_8hpp_source.html#l00057">RelativeTo::ChasteTestOutput</a>, <a class="el" href="Hdf5DataWriter_8cpp_source.html#l01093">Hdf5DataWriter::Close()</a>, <a class="el" href="DistributedVectorFactory_8cpp_source.html#l00183">DistributedVectorFactory::CreateDistributedVector()</a>, <a class="el" href="DistributedVectorFactory_8cpp_source.html#l00154">DistributedVectorFactory::CreateVec()</a>, <a class="el" href="Hdf5DataWriter_8cpp_source.html#l00379">Hdf5DataWriter::DefineFixedDimension()</a>, <a class="el" href="Hdf5DataWriter_8cpp_source.html#l01116">Hdf5DataWriter::DefineUnlimitedDimension()</a>, <a class="el" href="Hdf5DataWriter_8cpp_source.html#l00464">Hdf5DataWriter::DefineVariable()</a>, <a class="el" href="PetscTools_8hpp_source.html#l00366">PetscTools::Destroy()</a>, <a class="el" href="Hdf5DataWriter_8cpp_source.html#l01176">Hdf5DataWriter::EmptyDataset()</a>, <a class="el" href="DistributedVector_8cpp_source.html#l00132">DistributedVector::End()</a>, <a class="el" href="Hdf5DataWriter_8cpp_source.html#l00525">Hdf5DataWriter::EndDefineMode()</a>, <a class="el" href="Hdf5DataWriter_8cpp_source.html#l01186">Hdf5DataWriter::GetVariableByName()</a>, <a class="el" href="Hdf5DataWriter_8cpp_source.html#l00520">Hdf5DataWriter::IsInDefineMode()</a>, <a class="el" href="Hdf5DataWriter_8cpp_source.html#l01057">Hdf5DataWriter::PutUnlimitedVariable()</a>, <a class="el" href="Hdf5DataWriter_8cpp_source.html#l00722">Hdf5DataWriter::PutVector()</a>, and <a class="el" href="Hdf5DataWriter_8cpp_source.html#l01389">Hdf5DataWriter::SetTargetChunkSize()</a>.</p>
 
@@ -588,7 +588,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>#2359 work out how to get rid of this line needed because <a class="el" href="classPseudoEcgCalculator.html">PseudoEcgCalculator</a> makes its own <a class="el" href="classHdf5DataReader.html">Hdf5DataReader</a>. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>#2359 work out how to get rid of these lines </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00072">72</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00070">70</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="DistanceMapCalculator_8cpp_source.html#l00077">DistanceMapCalculator&lt; ELEMENT_DIM, SPACE_DIM &gt;::ComputeDistanceMap()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l01739">HeartConfig::GetApdMaps()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l01818">HeartConfig::GetConductionVelocityMaps()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l01792">HeartConfig::GetMaxUpstrokeVelocityMaps()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l01844">HeartConfig::GetNodalTimeTraceRequested()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l01871">HeartConfig::GetPseudoEcgElectrodePositions()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l01766">HeartConfig::GetUpstrokeTimeMaps()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l00210">HeartConfig::Instance()</a>, and <a class="el" href="PseudoEcgCalculator_8cpp_source.html#l00127">PseudoEcgCalculator&lt; ELEMENT_DIM, SPACE_DIM, PROBLEM_DIM &gt;::WritePseudoEcg()</a>.</p>
 
@@ -629,7 +629,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00262">262</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00260">260</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 </div>
 </div>
@@ -672,7 +672,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00419">419</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8cpp_source.html#l00417">417</a> of file <a class="el" href="PostProcessingWriter_8cpp_source.html">PostProcessingWriter.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="PetscTools_8cpp_source.html#l00120">PetscTools::AmMaster()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l01406">HeartConfig::GetOutputUsingOriginalNodeOrdering()</a>, and <a class="el" href="HeartConfig_8cpp_source.html#l00210">HeartConfig::Instance()</a>.</p>
 
@@ -731,7 +731,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8hpp_source.html#l00062">62</a> of file <a class="el" href="PostProcessingWriter_8hpp_source.html">PostProcessingWriter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00052">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00050">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
 
 </div>
 </div>
@@ -787,7 +787,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8hpp_source.html#l00063">63</a> of file <a class="el" href="PostProcessingWriter_8hpp_source.html">PostProcessingWriter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00052">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00050">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
 
 </div>
 </div>
@@ -816,7 +816,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8hpp_source.html#l00069">69</a> of file <a class="el" href="PostProcessingWriter_8hpp_source.html">PostProcessingWriter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00052">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00050">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
 
 </div>
 </div>
@@ -845,7 +845,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8hpp_source.html#l00068">68</a> of file <a class="el" href="PostProcessingWriter_8hpp_source.html">PostProcessingWriter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00052">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00050">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
 
 </div>
 </div>
@@ -874,7 +874,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8hpp_source.html#l00067">67</a> of file <a class="el" href="PostProcessingWriter_8hpp_source.html">PostProcessingWriter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00052">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00050">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
 
 </div>
 </div>
@@ -903,7 +903,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8hpp_source.html#l00066">66</a> of file <a class="el" href="PostProcessingWriter_8hpp_source.html">PostProcessingWriter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00052">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00050">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
 
 </div>
 </div>
@@ -932,7 +932,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8hpp_source.html#l00070">70</a> of file <a class="el" href="PostProcessingWriter_8hpp_source.html">PostProcessingWriter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00052">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00050">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
 
 </div>
 </div>
@@ -961,7 +961,7 @@ template&lt;<a class="el" href="classunsigned.html">unsigned</a> ELEMENT_DIM, <a
 
 <p class="definition">Definition at line <a class="el" href="PostProcessingWriter_8hpp_source.html#l00064">64</a> of file <a class="el" href="PostProcessingWriter_8hpp_source.html">PostProcessingWriter.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00052">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PostProcessingWriter_8cpp_source.html#l00050">PostProcessingWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;::PostProcessingWriter()</a>.</p>
 
 </div>
 </div>
