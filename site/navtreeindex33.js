@@ -1,13 +1,5 @@
 var NAVTREEINDEX33 =
 {
-"classMeshEventHandler.html#a4b371717596773ce2188ac42e314424aaabc58304178fbccefc8c9dffff158ba3":[1,0,444,0,2],
-"classMeshEventHandler.html#a4b371717596773ce2188ac42e314424aaabe488506415b404699aeadb646d8b3f":[1,0,444,0,7],
-"classMeshEventHandler.html#a4b371717596773ce2188ac42e314424aae21056bd69890bcb0dd028e425283e73":[1,0,444,0,6],
-"classMeshEventHandler.html#a4b371717596773ce2188ac42e314424aaebe1d691fbe423a91906cffb35057e87":[1,0,444,0,4],
-"classMeshalyzerMeshWriter.html":[1,0,441],
-"classMeshalyzerMeshWriter.html#a27b76ac68641e4c63a97867231538943":[1,0,441,0],
-"classMeshalyzerMeshWriter.html#a4ca3e93d58376b8ccccaed2a495030d8":[1,0,441,3],
-"classMeshalyzerMeshWriter.html#a58fa3a19ef2453ee85760d25ffd40ef2":[1,0,441,8],
 "classMeshalyzerMeshWriter.html#a604ddd8e103005967ae82eaafbbd667b":[1,0,441,2],
 "classMeshalyzerMeshWriter.html#a90f951d4a004d752d3ced1dd92a9340a":[1,0,441,4],
 "classMeshalyzerMeshWriter.html#a94bc42275d26305923c6f74c3e663d5b":[1,0,441,5],
@@ -249,5 +241,13 @@ var NAVTREEINDEX33 =
 "classMutableMesh.html#ac8023af826be1ee5f32afa7c42c6bf45":[1,0,466,2],
 "classMutableMesh.html#ac93a9c2869e4d53de018ef73db4c3b75":[1,0,466,17],
 "classMutableMesh.html#ac98d07dd8f7b70e16ccb9a01abf56b9c":[1,0,466,27],
-"classMutableMesh.html#acf8116bb2abf5ad2b09d839b145e1500":[1,0,466,30]
+"classMutableMesh.html#acf8116bb2abf5ad2b09d839b145e1500":[1,0,466,30],
+"classMutableMesh.html#ad9808b176d9be206b9a7d1f00ddf3a4a":[1,0,466,7],
+"classMutableMesh.html#ae789400511cf05a3edcd40ee1e08c3b8":[1,0,466,12],
+"classMutableMesh.html#aeb5affa78af68d59b6ea15323a2785d2":[1,0,466,15],
+"classMutableMesh.html#aed3ab021619ed87a2ed13bf9e9527ba2":[1,0,466,31],
+"classMutableMesh.html#af36bd32e83e6dde393f0693e97cbde51":[1,0,466,4],
+"classMutableMesh.html#af824d4807195c60a03491904b454db88":[1,0,466,16],
+"classMutableMesh.html#afb3769d08e4f1dcf0701283a75b01e4d":[1,0,466,9],
+"classMutableVertexMesh.html":[1,0,467]
 };

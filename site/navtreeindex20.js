@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"classCitations.html#aed7440b6d301860a2df3d5703cb29501":[1,0,245,2],
+"classCmguiDeformedSolutionsWriter.html":[1,0,246],
 "classCmguiDeformedSolutionsWriter.html#a1bc3e09cae50ce31e7da4a1576c89689":[1,0,246,8],
 "classCmguiDeformedSolutionsWriter.html#a6e0744cdbbe45cdfe1fa0cf77254c383":[1,0,246,3],
 "classCmguiDeformedSolutionsWriter.html#a90fc2e2ec51407995985c68d196f9b17":[1,0,246,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "classContinuumMechanicsProblemDefinition.html#a2bc6a6b7a7490367f4a1d9b2d6907a1d":[1,0,263,36],
 "classContinuumMechanicsProblemDefinition.html#a33440c8227a6473ef35253fa03fbc0b3":[1,0,263,27],
 "classContinuumMechanicsProblemDefinition.html#a38a1379feae4769e48085940fe101d70":[1,0,263,2],
-"classContinuumMechanicsProblemDefinition.html#a3e0a6968ccce6c5cfc222a1dd809f2f8":[1,0,263,22],
-"classContinuumMechanicsProblemDefinition.html#a4df326eaf2debec6e008940305b60b56":[1,0,263,3],
-"classContinuumMechanicsProblemDefinition.html#a527695e668f14fcd2dabc4f0843067ce":[1,0,263,41]
+"classContinuumMechanicsProblemDefinition.html#a3e0a6968ccce6c5cfc222a1dd809f2f8":[1,0,263,22]
 };

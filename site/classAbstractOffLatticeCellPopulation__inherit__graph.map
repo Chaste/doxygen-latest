@@ -32,8 +32,8 @@
 <area shape="poly" id="edge13_Node000013_Node000009" title=" " alt="" coords="412,2631,412,2835,407,2835,407,2631"/>
 <area shape="poly" id="edge14_Node000013_Node000011" title=" " alt="" coords="290,2631,273,2681,222,2843,217,2842,268,2679,285,2630"/>
 <area shape="poly" id="edge15_Node000013_Node000012" title=" " alt="" coords="534,2630,551,2679,602,2842,597,2843,545,2681,529,2631"/>
-<area shape="rect" id="Node000015" href="$classImmersedBoundaryCellPopulation.html" title=" " alt="" coords="955,2025,1227,2585"/>
-<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="1067,1944,1073,2025,1068,2025,1062,1944"/>
-<area shape="rect" id="Node000016" href="$classVertexBasedCellPopulation.html" title=" " alt="" coords="1250,2001,1475,2610"/>
+<area shape="rect" id="Node000015" href="$classImmersedBoundaryCellPopulation.html" title=" " alt="" coords="955,2045,1227,2565"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="1067,1944,1074,2045,1069,2046,1062,1945"/>
+<area shape="rect" id="Node000016" href="$classVertexBasedCellPopulation.html" title=" " alt="" coords="1250,2011,1475,2600"/>
 <area shape="poly" id="edge19_Node000014_Node000016" title=" " alt="" coords="1183,1923,1187,1929,1215,1960,1241,1992,1252,2011,1248,2014,1236,1995,1211,1963,1183,1932,1179,1927"/>
 </map>

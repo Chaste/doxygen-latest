@@ -1013,7 +1013,9 @@ var hierarchy =
         [ "RungeKuttaFehlbergIvpOdeSolver", "classRungeKuttaFehlbergIvpOdeSolver.html", null ]
       ] ],
       [ "AbstractNumericalMethod< ELEMENT_DIM, SPACE_DIM >", "classAbstractNumericalMethod.html", [
-        [ "ForwardEulerNumericalMethod< ELEMENT_DIM, SPACE_DIM >", "classForwardEulerNumericalMethod.html", null ]
+        [ "ForwardEulerNumericalMethod< ELEMENT_DIM, SPACE_DIM >", "classForwardEulerNumericalMethod.html", null ],
+        [ "NoNumericalMethod< ELEMENT_DIM, SPACE_DIM >", "classNoNumericalMethod.html", null ],
+        [ "RK4NumericalMethod< ELEMENT_DIM, SPACE_DIM >", "classRK4NumericalMethod.html", null ]
       ] ],
       [ "AbstractSrnModel", "classAbstractSrnModel.html", [
         [ "AbstractOdeSrnModel", "classAbstractOdeSrnModel.html", null ],

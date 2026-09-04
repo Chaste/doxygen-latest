@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"classAbstractCardiacProblem.html#a599df25e63d52b4ed7b2952171e29f08":[1,0,18,53],
+"classAbstractCardiacProblem.html#a5dcc83e687597157690a3d0ae3c7cefa":[1,0,18,7],
+"classAbstractCardiacProblem.html#a6043c865361b0004c532af3ae8aeedb2":[1,0,18,4],
+"classAbstractCardiacProblem.html#a62136be61d4794bba7c5275f56166e49":[1,0,18,58],
 "classAbstractCardiacProblem.html#a65e07485be337ec452dad5737ba0f807":[1,0,18,9],
 "classAbstractCardiacProblem.html#a69fe8abc5ccab078838f6c180aed1780":[1,0,18,22],
 "classAbstractCardiacProblem.html#a6b27909fe54c0e2478d70c95fc6e32a9":[1,0,18,35],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "classAbstractCellCycleModelOdeSolver.html#ae3852a9a936e44f2a1d417068a833305":[1,0,28,1],
 "classAbstractCellKiller.html":[1,0,29],
 "classAbstractCellKiller.html#a0cccb8a5a726807dd2f0ec588e04456c":[1,0,29,4],
-"classAbstractCellKiller.html#a3c0fe45f09ebb4e476230e1b827e4544":[1,0,29,1],
-"classAbstractCellKiller.html#a3d333d5608e5ecb89e42c7ed8068d17b":[1,0,29,3],
-"classAbstractCellKiller.html#a973c23a57e2446afe5caaf4fc94b1304":[1,0,29,8],
-"classAbstractCellKiller.html#a9a5e8505fda9e89c6e264d2b00f15048":[1,0,29,6],
-"classAbstractCellKiller.html#aa947825c7067ccad2905de9a45691373":[1,0,29,5]
+"classAbstractCellKiller.html#a3c0fe45f09ebb4e476230e1b827e4544":[1,0,29,1]
 };

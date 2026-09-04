@@ -1047,64 +1047,60 @@
 <g id="Node000015" class="node">
 <title>Node15</title>
 <g id="a_Node000015"><a xlink:href="classImmersedBoundaryCellPopulation.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="transparent" points="916,-1573 712,-1573 712,-1153 916,-1153 916,-1573"/>
-<text text-anchor="start" x="730.5" y="-1561" font-family="Helvetica,sans-Serif" font-size="10.00">ImmersedBoundaryCellPopulation</text>
-<text text-anchor="start" x="792.5" y="-1550" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; DIM &gt;</text>
-<text text-anchor="start" x="718.5" y="-1535" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1535" font-family="Helvetica,sans-Serif" font-size="10.00">mDeleteMesh</text>
+<polygon fill="white" stroke="transparent" points="916,-1558 712,-1558 712,-1168 916,-1168 916,-1558"/>
+<text text-anchor="start" x="730.5" y="-1546" font-family="Helvetica,sans-Serif" font-size="10.00">ImmersedBoundaryCellPopulation</text>
+<text text-anchor="start" x="792.5" y="-1535" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; DIM &gt;</text>
 <text text-anchor="start" x="718.5" y="-1520" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1520" font-family="Helvetica,sans-Serif" font-size="10.00">mpImmersedBoundaryMesh</text>
+<text text-anchor="start" x="729" y="-1520" font-family="Helvetica,sans-Serif" font-size="10.00">mDeleteMesh</text>
 <text text-anchor="start" x="718.5" y="-1505" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1505" font-family="Helvetica,sans-Serif" font-size="10.00">mpImmersedBoundaryDivisionRule</text>
+<text text-anchor="start" x="729" y="-1505" font-family="Helvetica,sans-Serif" font-size="10.00">mpImmersedBoundaryMesh</text>
 <text text-anchor="start" x="718.5" y="-1490" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1490" font-family="Helvetica,sans-Serif" font-size="10.00">mIntrinsicSpacing</text>
+<text text-anchor="start" x="729" y="-1490" font-family="Helvetica,sans-Serif" font-size="10.00">mpImmersedBoundaryDivisionRule</text>
 <text text-anchor="start" x="718.5" y="-1475" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1475" font-family="Helvetica,sans-Serif" font-size="10.00">mPopulationHasActiveSources</text>
+<text text-anchor="start" x="729" y="-1475" font-family="Helvetica,sans-Serif" font-size="10.00">mIntrinsicSpacing</text>
 <text text-anchor="start" x="718.5" y="-1460" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1460" font-family="Helvetica,sans-Serif" font-size="10.00">mOutputNodeRegionToVtk</text>
+<text text-anchor="start" x="729" y="-1460" font-family="Helvetica,sans-Serif" font-size="10.00">mPopulationHasActiveSources</text>
 <text text-anchor="start" x="718.5" y="-1445" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1445" font-family="Helvetica,sans-Serif" font-size="10.00">mInteractionDistance</text>
+<text text-anchor="start" x="729" y="-1445" font-family="Helvetica,sans-Serif" font-size="10.00">mOutputNodeRegionToVtk</text>
 <text text-anchor="start" x="718.5" y="-1430" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1430" font-family="Helvetica,sans-Serif" font-size="10.00">mReMeshFrequency</text>
+<text text-anchor="start" x="729" y="-1430" font-family="Helvetica,sans-Serif" font-size="10.00">mInteractionDistance</text>
 <text text-anchor="start" x="718.5" y="-1415" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1415" font-family="Helvetica,sans-Serif" font-size="10.00">mThrowStepSizeException</text>
-<text text-anchor="start" x="718.5" y="-1400" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1400" font-family="Helvetica,sans-Serif" font-size="10.00">mCellRearrangementThreshold</text>
+<text text-anchor="start" x="729" y="-1415" font-family="Helvetica,sans-Serif" font-size="10.00">mReMeshFrequency</text>
+<text text-anchor="start" x="716" y="-1400" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="729" y="-1400" font-family="Helvetica,sans-Serif" font-size="10.00">ImmersedBoundaryCellPopulation()</text>
 <text text-anchor="start" x="716" y="-1385" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="729" y="-1385" font-family="Helvetica,sans-Serif" font-size="10.00">ImmersedBoundaryCellPopulation()</text>
 <text text-anchor="start" x="716" y="-1370" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="729" y="-1370" font-family="Helvetica,sans-Serif" font-size="10.00">ImmersedBoundaryCellPopulation()</text>
+<text text-anchor="start" x="729" y="-1370" font-family="Helvetica,sans-Serif" font-size="10.00">~ImmersedBoundaryCellPopulation()</text>
 <text text-anchor="start" x="716" y="-1355" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="729" y="-1355" font-family="Helvetica,sans-Serif" font-size="10.00">~ImmersedBoundaryCellPopulation()</text>
+<text text-anchor="start" x="729" y="-1355" font-family="Helvetica,sans-Serif" font-size="10.00">GetDampingConstant()</text>
 <text text-anchor="start" x="716" y="-1340" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="729" y="-1340" font-family="Helvetica,sans-Serif" font-size="10.00">GetDampingConstant()</text>
+<text text-anchor="start" x="729" y="-1340" font-family="Helvetica,sans-Serif" font-size="10.00">rGetMesh()</text>
 <text text-anchor="start" x="716" y="-1325" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="729" y="-1325" font-family="Helvetica,sans-Serif" font-size="10.00">rGetMesh()</text>
 <text text-anchor="start" x="716" y="-1310" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="729" y="-1310" font-family="Helvetica,sans-Serif" font-size="10.00">rGetMesh()</text>
+<text text-anchor="start" x="729" y="-1310" font-family="Helvetica,sans-Serif" font-size="10.00">GetElement()</text>
 <text text-anchor="start" x="716" y="-1295" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="729" y="-1295" font-family="Helvetica,sans-Serif" font-size="10.00">GetElement()</text>
+<text text-anchor="start" x="729" y="-1295" font-family="Helvetica,sans-Serif" font-size="10.00">GetLamina()</text>
 <text text-anchor="start" x="716" y="-1280" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="729" y="-1280" font-family="Helvetica,sans-Serif" font-size="10.00">GetLamina()</text>
+<text text-anchor="start" x="729" y="-1280" font-family="Helvetica,sans-Serif" font-size="10.00">GetNumElements()</text>
 <text text-anchor="start" x="716" y="-1265" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="729" y="-1265" font-family="Helvetica,sans-Serif" font-size="10.00">GetNumElements()</text>
-<text text-anchor="start" x="716" y="-1250" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="729" y="-1250" font-family="Helvetica,sans-Serif" font-size="10.00">GetNumLaminas()</text>
-<text text-anchor="start" x="729" y="-1235" font-family="Helvetica,sans-Serif" font-size="10.00">and 41 more...</text>
+<text text-anchor="start" x="729" y="-1265" font-family="Helvetica,sans-Serif" font-size="10.00">GetNumLaminas()</text>
+<text text-anchor="start" x="729" y="-1250" font-family="Helvetica,sans-Serif" font-size="10.00">and 36 more...</text>
+<text text-anchor="start" x="718.5" y="-1235" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="729" y="-1235" font-family="Helvetica,sans-Serif" font-size="10.00">WriteVtkResultsToFile()</text>
 <text text-anchor="start" x="718.5" y="-1220" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1220" font-family="Helvetica,sans-Serif" font-size="10.00">WriteVtkResultsToFile()</text>
+<text text-anchor="start" x="729" y="-1220" font-family="Helvetica,sans-Serif" font-size="10.00">serialize()</text>
 <text text-anchor="start" x="718.5" y="-1205" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1205" font-family="Helvetica,sans-Serif" font-size="10.00">serialize()</text>
+<text text-anchor="start" x="729" y="-1205" font-family="Helvetica,sans-Serif" font-size="10.00">Delta1D()</text>
 <text text-anchor="start" x="718.5" y="-1190" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1190" font-family="Helvetica,sans-Serif" font-size="10.00">Delta1D()</text>
+<text text-anchor="start" x="729" y="-1190" font-family="Helvetica,sans-Serif" font-size="10.00">CalculateIntrinsicCellSize()</text>
 <text text-anchor="start" x="718.5" y="-1175" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1175" font-family="Helvetica,sans-Serif" font-size="10.00">CalculateIntrinsicCellSize()</text>
-<text text-anchor="start" x="718.5" y="-1160" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="729" y="-1160" font-family="Helvetica,sans-Serif" font-size="10.00">Validate()</text>
-<polygon fill="#666666" stroke="#666666" points="712,-1545 712,-1545 916,-1545 916,-1545 712,-1545"/>
-<polygon fill="#666666" stroke="#666666" points="712,-1395 712,-1395 727,-1395 727,-1395 712,-1395"/>
-<polygon fill="#666666" stroke="#666666" points="727,-1395 727,-1395 916,-1395 916,-1395 727,-1395"/>
-<polygon fill="none" stroke="#666666" points="712,-1153 712,-1573 916,-1573 916,-1153 712,-1153"/>
+<text text-anchor="start" x="729" y="-1175" font-family="Helvetica,sans-Serif" font-size="10.00">Validate()</text>
+<polygon fill="#666666" stroke="#666666" points="712,-1530 712,-1530 916,-1530 916,-1530 712,-1530"/>
+<polygon fill="#666666" stroke="#666666" points="712,-1410 712,-1410 727,-1410 727,-1410 712,-1410"/>
+<polygon fill="#666666" stroke="#666666" points="727,-1410 727,-1410 916,-1410 916,-1410 727,-1410"/>
+<polygon fill="none" stroke="#666666" points="712,-1168 712,-1558 916,-1558 916,-1168 712,-1168"/>
 </a>
 </g>
 </g>
@@ -1112,7 +1108,7 @@
 <g id="edge18_Node000014_Node000015" class="edge">
 <title>Node14&#45;&gt;Node15</title>
 <g id="a_edge18_Node000014_Node000015"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M794.28,-1633.79C795.74,-1613.88 797.23,-1593.5 798.7,-1573.29"/>
+<path fill="none" stroke="#63b8ff" d="M794.29,-1633.6C796.11,-1608.72 797.99,-1583.1 799.82,-1558.01"/>
 <polygon fill="none" stroke="#63b8ff" points="790.78,-1633.61 793.55,-1643.84 797.77,-1634.12 790.78,-1633.61"/>
 </a>
 </g>
@@ -1121,68 +1117,66 @@
 <g id="Node000016" class="node">
 <title>Node16</title>
 <g id="a_Node000016"><a xlink:href="classVertexBasedCellPopulation.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="transparent" points="1102.5,-1591.5 933.5,-1591.5 933.5,-1134.5 1102.5,-1134.5 1102.5,-1591.5"/>
-<text text-anchor="start" x="952" y="-1579" font-family="Helvetica,sans-Serif" font-size="10.00">VertexBasedCellPopulation</text>
-<text text-anchor="start" x="997" y="-1568" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; DIM &gt;</text>
-<text text-anchor="start" x="940.5" y="-1553" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1553" font-family="Helvetica,sans-Serif" font-size="10.00">mDeleteMesh</text>
-<text text-anchor="start" x="940.5" y="-1538" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1538" font-family="Helvetica,sans-Serif" font-size="10.00">mpMutableVertexMesh</text>
-<text text-anchor="start" x="940.5" y="-1523" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1523" font-family="Helvetica,sans-Serif" font-size="10.00">mOutputCellRearrangement</text>
-<text text-anchor="start" x="951" y="-1512" font-family="Helvetica,sans-Serif" font-size="10.00">Locations</text>
-<text text-anchor="start" x="940.5" y="-1497" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1497" font-family="Helvetica,sans-Serif" font-size="10.00">mpVertexBasedDivisionRule</text>
-<text text-anchor="start" x="940.5" y="-1482" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1482" font-family="Helvetica,sans-Serif" font-size="10.00">mLocationsOfT2Swaps</text>
-<text text-anchor="start" x="940.5" y="-1467" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1467" font-family="Helvetica,sans-Serif" font-size="10.00">mCellIdsOfT2Swaps</text>
-<text text-anchor="start" x="940.5" y="-1452" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1452" font-family="Helvetica,sans-Serif" font-size="10.00">mRestrictVertexMovement</text>
-<text text-anchor="start" x="940.5" y="-1437" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1437" font-family="Helvetica,sans-Serif" font-size="10.00">mThrowStepSizeException</text>
-<text text-anchor="start" x="940.5" y="-1422" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1422" font-family="Helvetica,sans-Serif" font-size="10.00">mPopulationSrn</text>
-<text text-anchor="start" x="940.5" y="-1407" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1407" font-family="Helvetica,sans-Serif" font-size="10.00">mWriteCellVtkResults</text>
-<text text-anchor="start" x="940.5" y="-1392" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1392" font-family="Helvetica,sans-Serif" font-size="10.00">mWriteEdgeVtkResults</text>
-<text text-anchor="start" x="938" y="-1377" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="951" y="-1377" font-family="Helvetica,sans-Serif" font-size="10.00">VertexBasedCellPopulation()</text>
-<text text-anchor="start" x="938" y="-1362" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="951" y="-1362" font-family="Helvetica,sans-Serif" font-size="10.00">VertexBasedCellPopulation()</text>
-<text text-anchor="start" x="938" y="-1347" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="951" y="-1347" font-family="Helvetica,sans-Serif" font-size="10.00">~VertexBasedCellPopulation()</text>
-<text text-anchor="start" x="938" y="-1332" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="951" y="-1332" font-family="Helvetica,sans-Serif" font-size="10.00">GetDampingConstant()</text>
-<text text-anchor="start" x="938" y="-1317" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="951" y="-1317" font-family="Helvetica,sans-Serif" font-size="10.00">rGetMesh()</text>
-<text text-anchor="start" x="938" y="-1302" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="951" y="-1302" font-family="Helvetica,sans-Serif" font-size="10.00">rGetMesh()</text>
-<text text-anchor="start" x="938" y="-1287" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="951" y="-1287" font-family="Helvetica,sans-Serif" font-size="10.00">GetElement()</text>
-<text text-anchor="start" x="938" y="-1272" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="951" y="-1272" font-family="Helvetica,sans-Serif" font-size="10.00">GetNumElements()</text>
-<text text-anchor="start" x="938" y="-1257" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="951" y="-1257" font-family="Helvetica,sans-Serif" font-size="10.00">GetNumNodes()</text>
-<text text-anchor="start" x="938" y="-1242" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="951" y="-1242" font-family="Helvetica,sans-Serif" font-size="10.00">GetLocationOfCellCentre()</text>
-<text text-anchor="start" x="951" y="-1227" font-family="Helvetica,sans-Serif" font-size="10.00">and 42 more...</text>
-<text text-anchor="start" x="940.5" y="-1212" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1212" font-family="Helvetica,sans-Serif" font-size="10.00">WriteVtkResultsToFile()</text>
-<text text-anchor="start" x="940.5" y="-1197" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1197" font-family="Helvetica,sans-Serif" font-size="10.00">WriteCellVtkResultsToFile()</text>
-<text text-anchor="start" x="940.5" y="-1182" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1182" font-family="Helvetica,sans-Serif" font-size="10.00">WriteCellEdgeVtkResultsTo</text>
-<text text-anchor="start" x="951" y="-1171" font-family="Helvetica,sans-Serif" font-size="10.00">File()</text>
-<text text-anchor="start" x="940.5" y="-1156" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1156" font-family="Helvetica,sans-Serif" font-size="10.00">serialize()</text>
-<text text-anchor="start" x="940.5" y="-1141" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="951" y="-1141" font-family="Helvetica,sans-Serif" font-size="10.00">Validate()</text>
-<polygon fill="#666666" stroke="#666666" points="934,-1563 934,-1563 1103,-1563 1103,-1563 934,-1563"/>
-<polygon fill="#666666" stroke="#666666" points="934,-1387 934,-1387 949,-1387 949,-1387 934,-1387"/>
-<polygon fill="#666666" stroke="#666666" points="949,-1387 949,-1387 1103,-1387 1103,-1387 949,-1387"/>
-<polygon fill="none" stroke="#666666" points="933.5,-1134.5 933.5,-1591.5 1102.5,-1591.5 1102.5,-1134.5 933.5,-1134.5"/>
+<polygon fill="white" stroke="transparent" points="1102.5,-1584 933.5,-1584 933.5,-1142 1102.5,-1142 1102.5,-1584"/>
+<text text-anchor="start" x="952" y="-1572" font-family="Helvetica,sans-Serif" font-size="10.00">VertexBasedCellPopulation</text>
+<text text-anchor="start" x="997" y="-1561" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; DIM &gt;</text>
+<text text-anchor="start" x="940.5" y="-1546" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1546" font-family="Helvetica,sans-Serif" font-size="10.00">mDeleteMesh</text>
+<text text-anchor="start" x="940.5" y="-1531" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1531" font-family="Helvetica,sans-Serif" font-size="10.00">mpMutableVertexMesh</text>
+<text text-anchor="start" x="940.5" y="-1516" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1516" font-family="Helvetica,sans-Serif" font-size="10.00">mOutputCellRearrangement</text>
+<text text-anchor="start" x="951" y="-1505" font-family="Helvetica,sans-Serif" font-size="10.00">Locations</text>
+<text text-anchor="start" x="940.5" y="-1490" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1490" font-family="Helvetica,sans-Serif" font-size="10.00">mpVertexBasedDivisionRule</text>
+<text text-anchor="start" x="940.5" y="-1475" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1475" font-family="Helvetica,sans-Serif" font-size="10.00">mLocationsOfT2Swaps</text>
+<text text-anchor="start" x="940.5" y="-1460" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1460" font-family="Helvetica,sans-Serif" font-size="10.00">mCellIdsOfT2Swaps</text>
+<text text-anchor="start" x="940.5" y="-1445" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1445" font-family="Helvetica,sans-Serif" font-size="10.00">mRestrictVertexMovement</text>
+<text text-anchor="start" x="940.5" y="-1430" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1430" font-family="Helvetica,sans-Serif" font-size="10.00">mPopulationSrn</text>
+<text text-anchor="start" x="940.5" y="-1415" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1415" font-family="Helvetica,sans-Serif" font-size="10.00">mWriteCellVtkResults</text>
+<text text-anchor="start" x="940.5" y="-1400" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1400" font-family="Helvetica,sans-Serif" font-size="10.00">mWriteEdgeVtkResults</text>
+<text text-anchor="start" x="938" y="-1385" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="951" y="-1385" font-family="Helvetica,sans-Serif" font-size="10.00">VertexBasedCellPopulation()</text>
+<text text-anchor="start" x="938" y="-1370" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="951" y="-1370" font-family="Helvetica,sans-Serif" font-size="10.00">VertexBasedCellPopulation()</text>
+<text text-anchor="start" x="938" y="-1355" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="951" y="-1355" font-family="Helvetica,sans-Serif" font-size="10.00">~VertexBasedCellPopulation()</text>
+<text text-anchor="start" x="938" y="-1340" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="951" y="-1340" font-family="Helvetica,sans-Serif" font-size="10.00">GetDampingConstant()</text>
+<text text-anchor="start" x="938" y="-1325" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="951" y="-1325" font-family="Helvetica,sans-Serif" font-size="10.00">rGetMesh()</text>
+<text text-anchor="start" x="938" y="-1310" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="951" y="-1310" font-family="Helvetica,sans-Serif" font-size="10.00">rGetMesh()</text>
+<text text-anchor="start" x="938" y="-1295" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="951" y="-1295" font-family="Helvetica,sans-Serif" font-size="10.00">GetElement()</text>
+<text text-anchor="start" x="938" y="-1280" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="951" y="-1280" font-family="Helvetica,sans-Serif" font-size="10.00">GetNumElements()</text>
+<text text-anchor="start" x="938" y="-1265" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="951" y="-1265" font-family="Helvetica,sans-Serif" font-size="10.00">GetNumNodes()</text>
+<text text-anchor="start" x="938" y="-1250" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="951" y="-1250" font-family="Helvetica,sans-Serif" font-size="10.00">GetLocationOfCellCentre()</text>
+<text text-anchor="start" x="951" y="-1235" font-family="Helvetica,sans-Serif" font-size="10.00">and 42 more...</text>
+<text text-anchor="start" x="940.5" y="-1220" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1220" font-family="Helvetica,sans-Serif" font-size="10.00">WriteVtkResultsToFile()</text>
+<text text-anchor="start" x="940.5" y="-1205" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1205" font-family="Helvetica,sans-Serif" font-size="10.00">WriteCellVtkResultsToFile()</text>
+<text text-anchor="start" x="940.5" y="-1190" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1190" font-family="Helvetica,sans-Serif" font-size="10.00">WriteCellEdgeVtkResultsTo</text>
+<text text-anchor="start" x="951" y="-1179" font-family="Helvetica,sans-Serif" font-size="10.00">File()</text>
+<text text-anchor="start" x="940.5" y="-1164" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1164" font-family="Helvetica,sans-Serif" font-size="10.00">serialize()</text>
+<text text-anchor="start" x="940.5" y="-1149" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="951" y="-1149" font-family="Helvetica,sans-Serif" font-size="10.00">Validate()</text>
+<polygon fill="#666666" stroke="#666666" points="934,-1556 934,-1556 1103,-1556 1103,-1556 934,-1556"/>
+<polygon fill="#666666" stroke="#666666" points="934,-1395 934,-1395 949,-1395 949,-1395 934,-1395"/>
+<polygon fill="#666666" stroke="#666666" points="949,-1395 949,-1395 1103,-1395 1103,-1395 949,-1395"/>
+<polygon fill="none" stroke="#666666" points="933.5,-1142 933.5,-1584 1102.5,-1584 1102.5,-1142 933.5,-1142"/>
 </a>
 </g>
 </g>

@@ -1,5 +1,5 @@
 <map id="VertexBasedCellPopulation&lt; DIM &gt;" name="VertexBasedCellPopulation&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="31,1965,257,2575"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="31,1965,257,2555"/>
 <area shape="rect" id="Node000002" href="$classAbstractOffLatticeCellPopulation.html" title=" " alt="" coords="17,1456,271,1916"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,1930,147,1965,141,1965,141,1930"/>
 <area shape="rect" id="Node000003" href="$classAbstractCellPopulation.html" title=" " alt="" coords="5,160,272,884"/>

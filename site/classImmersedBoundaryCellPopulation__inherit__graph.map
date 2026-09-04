@@ -1,7 +1,7 @@
 <map id="ImmersedBoundaryCellPopulation&lt; DIM &gt;" name="ImmersedBoundaryCellPopulation&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="8,1965,280,2525"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="8,1965,280,2485"/>
 <area shape="rect" id="Node000002" href="$classAbstractOffLatticeCellPopulation.html" title=" " alt="" coords="17,1456,271,1916"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,1930,147,1965,141,1965,141,1930"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,1929,147,1965,141,1965,141,1929"/>
 <area shape="rect" id="Node000003" href="$classAbstractCellPopulation.html" title=" " alt="" coords="5,160,272,884"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="143,898,146,1456,140,1456,138,898"/>
 <area shape="rect" id="Node000005" href="$classAbstractOffLatticeCellPopulation.html" title=" " alt="" coords="160,933,413,1393"/>

@@ -36,7 +36,7 @@
 <text text-anchor="start" x="1786" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetNumNodes()</text>
 <text text-anchor="start" x="1773" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="1786" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetNumElements()</text>
-<text text-anchor="start" x="1786" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 59 more...</text>
+<text text-anchor="start" x="1786" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 57 more...</text>
 <text text-anchor="start" x="1773" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
 <text text-anchor="start" x="1786" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">SolveNodeMapping()</text>
 <text text-anchor="start" x="1773" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
@@ -819,19 +819,18 @@
 <polygon fill="none" stroke="#63b8ff" points="1756.2,-167.32 1761.79,-162.76 1768.15,-166.17 1762.56,-170.72 1756.2,-167.32"/>
 </a>
 </g>
-<text text-anchor="middle" x="1137" y="-621" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> #mCellRearrangementThreshold</text>
-<text text-anchor="middle" x="1137" y="-610" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">#mCharacteristicNodeSpacing</text>
-<text text-anchor="middle" x="1137" y="-599" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">#mElementDivisionSpacing</text>
-<text text-anchor="middle" x="1137" y="-588" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">#mNeighbourDist</text>
-<text text-anchor="middle" x="1137" y="-577" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">#mSummaryOfNodeLocations</text>
-<text text-anchor="middle" x="1137" y="-566" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">#mVoronoiHalo</text>
+<text text-anchor="middle" x="1131.5" y="-615.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> #mCharacteristicNodeSpacing</text>
+<text text-anchor="middle" x="1131.5" y="-604.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">#mElementDivisionSpacing</text>
+<text text-anchor="middle" x="1131.5" y="-593.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">#mNeighbourDist</text>
+<text text-anchor="middle" x="1131.5" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">#mSummaryOfNodeLocations</text>
+<text text-anchor="middle" x="1131.5" y="-571.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">#mVoronoiHalo</text>
 </g>
 <!-- Node14&#45;&gt;Node21 -->
 <g id="edge45_Node000021_Node000014" class="edge">
 <title>Node14&#45;&gt;Node21</title>
 <g id="a_edge45_Node000021_Node000014"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1062.82,-1137.42C1069.3,-1055.91 1092.08,-789.45 1115,-759 1123.73,-747.41 1276.07,-682.82 1382.25,-638.78"/>
-<polygon fill="none" stroke="#63b8ff" points="1382.26,-638.78 1386.27,-632.79 1393.34,-634.19 1389.33,-640.18 1382.26,-638.78"/>
+<path fill="none" stroke="#63b8ff" d="M1062.82,-1137.42C1069.3,-1055.91 1092.08,-789.45 1115,-759 1132.24,-736.1 1278.58,-676.15 1381.7,-635.95"/>
+<polygon fill="none" stroke="#63b8ff" points="1381.92,-635.87 1386.06,-629.97 1393.1,-631.52 1388.96,-637.42 1381.92,-635.87"/>
 </a>
 </g>
 <text text-anchor="middle" x="1175.5" y="-861.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;mAverageNodeSpacing</text>

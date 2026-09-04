@@ -66,7 +66,6 @@ var classVertexBasedCellPopulation =
     [ "mPopulationSrn", "classVertexBasedCellPopulation.html#abe4480d78cdd51edce838f94c6b091e3", null ],
     [ "mpVertexBasedDivisionRule", "classVertexBasedCellPopulation.html#ae5a616b8e9acabff08014154cb18e7c1", null ],
     [ "mRestrictVertexMovement", "classVertexBasedCellPopulation.html#abbde345773d8e8990c0ac3ce337a1e46", null ],
-    [ "mThrowStepSizeException", "classVertexBasedCellPopulation.html#a3155cf147c291ee39da2a2db20cb6a18", null ],
     [ "mWriteCellVtkResults", "classVertexBasedCellPopulation.html#a9561bde637278244f852052a57634aa8", null ],
     [ "mWriteEdgeVtkResults", "classVertexBasedCellPopulation.html#ade1bedaf00d8570ffd3e339addadf4cb", null ]
 ];
