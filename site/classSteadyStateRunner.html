@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::e8c2894cf996776c74990bd09dd32f8cbb82acf2</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::152eaefaf02246ef769bd916268f05686539aa51</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Note - because it looks for a small change in state variables between solves this method requires quite an accurate CVODE solution to do this efficiently (otherwise you just have to wait to get lucky on subsequent solves).</p>
 <p>So although running with stricter tolerances takes longer per pace it can mean you detect a steady state in up to 3x fewer paces, so it is recommended to use a model with SetTolerances(1e-6, 1e-8); or stricter. </p>
 
-<p class="definition">Definition at line <a class="el" href="SteadyStateRunner_8hpp_source.html#l00058">58</a> of file <a class="el" href="SteadyStateRunner_8hpp_source.html">SteadyStateRunner.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SteadyStateRunner_8hpp_source.html#l00056">56</a> of file <a class="el" href="SteadyStateRunner_8hpp_source.html">SteadyStateRunner.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abb1a861891cc0fe9f15781a2aaea3580" name="abb1a861891cc0fe9f15781a2aaea3580"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb1a861891cc0fe9f15781a2aaea3580">&#9670;&#160;</a></span>SteadyStateRunner()</h2>
@@ -179,7 +179,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="SteadyStateRunner_8hpp_source.html#l00080">80</a> of file <a class="el" href="SteadyStateRunner_8hpp_source.html">SteadyStateRunner.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SteadyStateRunner_8hpp_source.html#l00078">78</a> of file <a class="el" href="SteadyStateRunner_8hpp_source.html">SteadyStateRunner.hpp</a>.</p>
 
 </div>
 </div>
@@ -211,9 +211,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractSteadyStateRunner.html#a5ef4c670973ceaa92971545f5b74316b">AbstractSteadyStateRunner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SteadyStateRunner_8cpp_source.html#l00041">41</a> of file <a class="el" href="SteadyStateRunner_8cpp_source.html">SteadyStateRunner.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SteadyStateRunner_8cpp_source.html#l00039">39</a> of file <a class="el" href="SteadyStateRunner_8cpp_source.html">SteadyStateRunner.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#afcef45f6b8e832108e7e679ca148f38e">CopyToStdVector()</a>, <a class="el" href="AbstractSteadyStateRunner_8hpp_source.html#l00068">AbstractSteadyStateRunner::mMaxNumPaces</a>, <a class="el" href="AbstractSteadyStateRunner_8hpp_source.html#l00065">AbstractSteadyStateRunner::mNumEvaluations</a>, <a class="el" href="AbstractSteadyStateRunner_8hpp_source.html#l00062">AbstractSteadyStateRunner::mpModel</a>, and <a class="el" href="SteadyStateRunner_8hpp_source.html#l00062">mTwoPaceScan</a>.</p>
+<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#afcef45f6b8e832108e7e679ca148f38e">CopyToStdVector()</a>, <a class="el" href="AbstractSteadyStateRunner_8hpp_source.html#l00066">AbstractSteadyStateRunner::mMaxNumPaces</a>, <a class="el" href="AbstractSteadyStateRunner_8hpp_source.html#l00063">AbstractSteadyStateRunner::mNumEvaluations</a>, <a class="el" href="AbstractSteadyStateRunner_8hpp_source.html#l00060">AbstractSteadyStateRunner::mpModel</a>, and <a class="el" href="SteadyStateRunner_8hpp_source.html#l00060">mTwoPaceScan</a>.</p>
 
 </div>
 </div>
@@ -239,9 +239,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>whether we should do two paces at once (should detect steady alternans as well as single paces) </p>
 
-<p class="definition">Definition at line <a class="el" href="SteadyStateRunner_8hpp_source.html#l00062">62</a> of file <a class="el" href="SteadyStateRunner_8hpp_source.html">SteadyStateRunner.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SteadyStateRunner_8hpp_source.html#l00060">60</a> of file <a class="el" href="SteadyStateRunner_8hpp_source.html">SteadyStateRunner.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SteadyStateRunner_8cpp_source.html#l00041">RunToSteadyStateImplementation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SteadyStateRunner_8cpp_source.html#l00039">RunToSteadyStateImplementation()</a>.</p>
 
 </div>
 </div>

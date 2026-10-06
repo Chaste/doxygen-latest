@@ -1,5 +1,8 @@
 var NAVTREEINDEX38 =
 {
+"classPoleZeroMaterialLaw.html#a6bef93331323ec378425f4ff391fb2b0":[1,0,536,0],
+"classPoleZeroMaterialLaw.html#a7653527c0318a1c6dbd31f087b59b14c":[1,0,536,3],
+"classPoleZeroMaterialLaw.html#a9319d87e80adb8fea1f2e9a31c900267":[1,0,536,7],
 "classPoleZeroMaterialLaw.html#aa4a7c88408ee9356be2a945d372c8411":[1,0,536,1],
 "classPoleZeroMaterialLaw.html#ab982ea93dfc88f99bf4b85a3d7bc5a48":[1,0,536,5],
 "classPoleZeroMaterialLaw.html#ac9be7bc10f04291b337da4380b49d625":[1,0,536,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX38 =
 "classPurkinjeVentricularJunctionStimulus.html#a29d997e7e5f952cac2b5b7c37a9ff0d8":[1,0,551,8],
 "classPurkinjeVentricularJunctionStimulus.html#a403f6576c7c718107df579ebdf335a8c":[1,0,551,2],
 "classPurkinjeVentricularJunctionStimulus.html#a7bb103ef5814f3f58875c69cedd1917b":[1,0,551,3],
-"classPurkinjeVentricularJunctionStimulus.html#a8d94a1049acd2879843b33977bf650d4":[1,0,551,4],
-"classPurkinjeVentricularJunctionStimulus.html#a971a8886de78c90e7ddc4b416b05b2d9":[1,0,551,7],
-"classPurkinjeVentricularJunctionStimulus.html#aae55834a47ace39e0e0428506654521e":[1,0,551,5],
-"classPurkinjeVentricularJunctionStimulus.html#ad39eca3eb519fba5f5b5ea44c5f44e29":[1,0,551,1]
+"classPurkinjeVentricularJunctionStimulus.html#a8d94a1049acd2879843b33977bf650d4":[1,0,551,4]
 };

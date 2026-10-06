@@ -10426,72 +10426,76 @@
 <g id="Node000222" class="node">
 <title>Node222</title>
 <g id="a_Node000222"><a xlink:href="classCvodeAdaptor.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="transparent" points="19303,-2818 19153,-2818 19153,-2349 19303,-2349 19303,-2818"/>
-<text text-anchor="start" x="19193" y="-2805.5" font-family="Helvetica,sans-Serif" font-size="10.00">CvodeAdaptor</text>
+<polygon fill="white" stroke="transparent" points="19303,-2833 19153,-2833 19153,-2334 19303,-2334 19303,-2833"/>
+<text text-anchor="start" x="19193" y="-2820.5" font-family="Helvetica,sans-Serif" font-size="10.00">CvodeAdaptor</text>
+<text text-anchor="start" x="19159.5" y="-2805.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="19170" y="-2805.5" font-family="Helvetica,sans-Serif" font-size="10.00">mpCvodeMem</text>
 <text text-anchor="start" x="19159.5" y="-2790.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2790.5" font-family="Helvetica,sans-Serif" font-size="10.00">mpCvodeMem</text>
+<text text-anchor="start" x="19170" y="-2790.5" font-family="Helvetica,sans-Serif" font-size="10.00">mData</text>
 <text text-anchor="start" x="19159.5" y="-2775.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2775.5" font-family="Helvetica,sans-Serif" font-size="10.00">mData</text>
+<text text-anchor="start" x="19170" y="-2775.5" font-family="Helvetica,sans-Serif" font-size="10.00">mRelTol</text>
 <text text-anchor="start" x="19159.5" y="-2760.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2760.5" font-family="Helvetica,sans-Serif" font-size="10.00">mRelTol</text>
+<text text-anchor="start" x="19170" y="-2760.5" font-family="Helvetica,sans-Serif" font-size="10.00">mAbsTol</text>
 <text text-anchor="start" x="19159.5" y="-2745.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2745.5" font-family="Helvetica,sans-Serif" font-size="10.00">mAbsTol</text>
+<text text-anchor="start" x="19170" y="-2745.5" font-family="Helvetica,sans-Serif" font-size="10.00">mLastInternalStepSize</text>
 <text text-anchor="start" x="19159.5" y="-2730.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2730.5" font-family="Helvetica,sans-Serif" font-size="10.00">mLastInternalStepSize</text>
+<text text-anchor="start" x="19170" y="-2730.5" font-family="Helvetica,sans-Serif" font-size="10.00">mMaxSteps</text>
 <text text-anchor="start" x="19159.5" y="-2715.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2715.5" font-family="Helvetica,sans-Serif" font-size="10.00">mMaxSteps</text>
+<text text-anchor="start" x="19170" y="-2715.5" font-family="Helvetica,sans-Serif" font-size="10.00">mCheckForRoots</text>
 <text text-anchor="start" x="19159.5" y="-2700.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2700.5" font-family="Helvetica,sans-Serif" font-size="10.00">mCheckForRoots</text>
+<text text-anchor="start" x="19170" y="-2700.5" font-family="Helvetica,sans-Serif" font-size="10.00">mLastSolutionState</text>
 <text text-anchor="start" x="19159.5" y="-2685.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2685.5" font-family="Helvetica,sans-Serif" font-size="10.00">mLastSolutionState</text>
+<text text-anchor="start" x="19170" y="-2685.5" font-family="Helvetica,sans-Serif" font-size="10.00">mLastSolutionTime</text>
 <text text-anchor="start" x="19159.5" y="-2670.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2670.5" font-family="Helvetica,sans-Serif" font-size="10.00">mLastSolutionTime</text>
+<text text-anchor="start" x="19170" y="-2670.5" font-family="Helvetica,sans-Serif" font-size="10.00">mForceReset</text>
 <text text-anchor="start" x="19159.5" y="-2655.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2655.5" font-family="Helvetica,sans-Serif" font-size="10.00">mForceReset</text>
+<text text-anchor="start" x="19170" y="-2655.5" font-family="Helvetica,sans-Serif" font-size="10.00">mForceMinimalReset</text>
 <text text-anchor="start" x="19159.5" y="-2640.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2640.5" font-family="Helvetica,sans-Serif" font-size="10.00">mForceMinimalReset</text>
-<text text-anchor="start" x="19157" y="-2625.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2625.5" font-family="Helvetica,sans-Serif" font-size="10.00">CvodeAdaptor()</text>
+<text text-anchor="start" x="19170" y="-2640.5" font-family="Helvetica,sans-Serif" font-size="10.00">mpSundialsDenseMatrix</text>
+<text text-anchor="start" x="19159.5" y="-2625.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="19170" y="-2625.5" font-family="Helvetica,sans-Serif" font-size="10.00">mpSundialsLinearSolver</text>
 <text text-anchor="start" x="19157" y="-2610.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2610.5" font-family="Helvetica,sans-Serif" font-size="10.00">~CvodeAdaptor()</text>
+<text text-anchor="start" x="19170" y="-2610.5" font-family="Helvetica,sans-Serif" font-size="10.00">CvodeAdaptor()</text>
 <text text-anchor="start" x="19157" y="-2595.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2595.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetTolerances()</text>
+<text text-anchor="start" x="19170" y="-2595.5" font-family="Helvetica,sans-Serif" font-size="10.00">~CvodeAdaptor()</text>
 <text text-anchor="start" x="19157" y="-2580.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2580.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetRelativeTolerance()</text>
+<text text-anchor="start" x="19170" y="-2580.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetTolerances()</text>
 <text text-anchor="start" x="19157" y="-2565.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2565.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetAbsoluteTolerance()</text>
+<text text-anchor="start" x="19170" y="-2565.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetRelativeTolerance()</text>
 <text text-anchor="start" x="19157" y="-2550.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2550.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetLastStepSize()</text>
+<text text-anchor="start" x="19170" y="-2550.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetAbsoluteTolerance()</text>
 <text text-anchor="start" x="19157" y="-2535.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2535.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetForceReset()</text>
+<text text-anchor="start" x="19170" y="-2535.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetLastStepSize()</text>
 <text text-anchor="start" x="19157" y="-2520.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2520.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetMinimalReset()</text>
+<text text-anchor="start" x="19170" y="-2520.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetForceReset()</text>
 <text text-anchor="start" x="19157" y="-2505.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2505.5" font-family="Helvetica,sans-Serif" font-size="10.00">ResetSolver()</text>
+<text text-anchor="start" x="19170" y="-2505.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetMinimalReset()</text>
 <text text-anchor="start" x="19157" y="-2490.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2490.5" font-family="Helvetica,sans-Serif" font-size="10.00">Solve()</text>
+<text text-anchor="start" x="19170" y="-2490.5" font-family="Helvetica,sans-Serif" font-size="10.00">ResetSolver()</text>
 <text text-anchor="start" x="19157" y="-2475.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="19170" y="-2475.5" font-family="Helvetica,sans-Serif" font-size="10.00">Solve()</text>
 <text text-anchor="start" x="19157" y="-2460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2460.5" font-family="Helvetica,sans-Serif" font-size="10.00">CheckForStoppingEvents()</text>
+<text text-anchor="start" x="19170" y="-2460.5" font-family="Helvetica,sans-Serif" font-size="10.00">Solve()</text>
 <text text-anchor="start" x="19157" y="-2445.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2445.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetMaxSteps()</text>
+<text text-anchor="start" x="19170" y="-2445.5" font-family="Helvetica,sans-Serif" font-size="10.00">CheckForStoppingEvents()</text>
 <text text-anchor="start" x="19157" y="-2430.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="19170" y="-2430.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetMaxSteps()</text>
-<text text-anchor="start" x="19157" y="-2415.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="19170" y="-2415.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetupCvode()</text>
+<text text-anchor="start" x="19170" y="-2430.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetMaxSteps()</text>
+<text text-anchor="start" x="19157" y="-2415.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="19170" y="-2415.5" font-family="Helvetica,sans-Serif" font-size="10.00">GetMaxSteps()</text>
 <text text-anchor="start" x="19157" y="-2400.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="19170" y="-2400.5" font-family="Helvetica,sans-Serif" font-size="10.00">FreeCvodeMemory()</text>
+<text text-anchor="start" x="19170" y="-2400.5" font-family="Helvetica,sans-Serif" font-size="10.00">SetupCvode()</text>
 <text text-anchor="start" x="19157" y="-2385.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="19170" y="-2385.5" font-family="Helvetica,sans-Serif" font-size="10.00">CvodeError()</text>
-<text text-anchor="start" x="19159.5" y="-2370.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2370.5" font-family="Helvetica,sans-Serif" font-size="10.00">serialize()</text>
+<text text-anchor="start" x="19170" y="-2385.5" font-family="Helvetica,sans-Serif" font-size="10.00">FreeCvodeMemory()</text>
+<text text-anchor="start" x="19157" y="-2370.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="19170" y="-2370.5" font-family="Helvetica,sans-Serif" font-size="10.00">CvodeError()</text>
 <text text-anchor="start" x="19159.5" y="-2355.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="19170" y="-2355.5" font-family="Helvetica,sans-Serif" font-size="10.00">RecordStoppingPoint()</text>
-<polygon fill="#666666" stroke="#666666" points="19153,-2800.5 19153,-2800.5 19303,-2800.5 19303,-2800.5 19153,-2800.5"/>
-<polygon fill="#666666" stroke="#666666" points="19153,-2635.5 19153,-2635.5 19168,-2635.5 19168,-2635.5 19153,-2635.5"/>
-<polygon fill="#666666" stroke="#666666" points="19168,-2635.5 19168,-2635.5 19303,-2635.5 19303,-2635.5 19168,-2635.5"/>
-<polygon fill="none" stroke="#666666" points="19153,-2349 19153,-2818 19303,-2818 19303,-2349 19153,-2349"/>
+<text text-anchor="start" x="19170" y="-2355.5" font-family="Helvetica,sans-Serif" font-size="10.00">serialize()</text>
+<text text-anchor="start" x="19159.5" y="-2340.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="19170" y="-2340.5" font-family="Helvetica,sans-Serif" font-size="10.00">RecordStoppingPoint()</text>
+<polygon fill="#666666" stroke="#666666" points="19153,-2815.5 19153,-2815.5 19303,-2815.5 19303,-2815.5 19153,-2815.5"/>
+<polygon fill="#666666" stroke="#666666" points="19153,-2620.5 19153,-2620.5 19168,-2620.5 19168,-2620.5 19153,-2620.5"/>
+<polygon fill="#666666" stroke="#666666" points="19168,-2620.5 19168,-2620.5 19303,-2620.5 19303,-2620.5 19168,-2620.5"/>
+<polygon fill="none" stroke="#666666" points="19153,-2334 19153,-2833 19303,-2833 19303,-2334 19153,-2334"/>
 </a>
 </g>
 </g>
@@ -10499,7 +10503,7 @@
 <g id="edge249_Node000211_Node000222" class="edge">
 <title>Node211&#45;&gt;Node222</title>
 <g id="a_edge249_Node000211_Node000222"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M19299.71,-3089.85C19289.39,-3017.14 19274.62,-2913.06 19261.17,-2818.24"/>
+<path fill="none" stroke="#63b8ff" d="M19299.72,-3089.93C19289.94,-3020.99 19276.15,-2923.83 19263.28,-2833.09"/>
 <polygon fill="none" stroke="#63b8ff" points="19296.27,-3090.49 19301.14,-3099.9 19303.2,-3089.5 19296.27,-3090.49"/>
 </a>
 </g>

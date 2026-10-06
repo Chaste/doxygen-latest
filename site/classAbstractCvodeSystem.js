@@ -36,6 +36,8 @@ var classAbstractCvodeSystem =
     [ "mLastSolutionTime", "classAbstractCvodeSystem.html#ab7135b60313d405001d939a925c7943c", null ],
     [ "mMaxSteps", "classAbstractCvodeSystem.html#ac49e205b7faac1ed2da8e1a5b4c827d5", null ],
     [ "mpCvodeMem", "classAbstractCvodeSystem.html#a42f3011fe33e360b80efd74aa855ddd4", null ],
+    [ "mpSundialsDenseMatrix", "classAbstractCvodeSystem.html#a195f0c64aa527c7450208daf067b4f76", null ],
+    [ "mpSundialsLinearSolver", "classAbstractCvodeSystem.html#ac9ef8fd382812c885bc2fb041b02e086", null ],
     [ "mRelTol", "classAbstractCvodeSystem.html#a2472c40e48441a69d47ec48764faa504", null ],
     [ "mUseAnalyticJacobian", "classAbstractCvodeSystem.html#a44e33dbbceed1d13cae9b975aac6f47a", null ]
 ];

@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::e8c2894cf996776c74990bd09dd32f8cbb82acf2</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::152eaefaf02246ef769bd916268f05686539aa51</span>
    </div>
   </td>
  </tr>
@@ -77,14 +77,14 @@ $(document).ready(function(){initNavTree('classCvodeAdaptor.html',''); initResiz
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCvodeAdaptor__inherit__graph.svg" width="246" height="1063"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCvodeAdaptor__inherit__graph.svg" width="246" height="1103"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for CvodeAdaptor:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classCvodeAdaptor__coll__graph.svg" width="1235" height="2355"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classCvodeAdaptor__coll__graph.svg" width="1415" height="2355"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -175,6 +175,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a5ae1e4b15c7cb978c25252e80e4f19de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6006835ab9e6583258a6b6374db1f89" id="r_ae6006835ab9e6583258a6b6374db1f89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCvodeAdaptor.html#ae6006835ab9e6583258a6b6374db1f89">mForceMinimalReset</a></td></tr>
 <tr class="separator:ae6006835ab9e6583258a6b6374db1f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc71d06acc36c9bbb2b36c3099674e51" id="r_afc71d06acc36c9bbb2b36c3099674e51"><td class="memItemLeft" align="right" valign="top">SUNMatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCvodeAdaptor.html#afc71d06acc36c9bbb2b36c3099674e51">mpSundialsDenseMatrix</a></td></tr>
+<tr class="separator:afc71d06acc36c9bbb2b36c3099674e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58992b56ed054e255f416082302017ea" id="r_a58992b56ed054e255f416082302017ea"><td class="memItemLeft" align="right" valign="top">SUNLinearSolver&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCvodeAdaptor.html#a58992b56ed054e255f416082302017ea">mpSundialsLinearSolver</a></td></tr>
+<tr class="separator:a58992b56ed054e255f416082302017ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -199,7 +203,7 @@ Additional Inherited Members</h2></td></tr>
 <p>default behaviour - reset if state variables change, or we ask to solve from a different time than the last solve call finished.</p>
 <p>SetMinimalReset(true) - ignore changes in state vars and just reset if the time is inconsistent. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00117">117</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00114">114</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aff7fbf625df0a59fe3c53dc6a4e2a980" name="aff7fbf625df0a59fe3c53dc6a4e2a980"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff7fbf625df0a59fe3c53dc6a4e2a980">&#9670;&#160;</a></span>CvodeAdaptor()</h2>
@@ -235,7 +239,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00575">575</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00522">522</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
 </div>
 </div>
@@ -255,9 +259,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Destructor. Frees memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00602">602</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00543">543</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00386">FreeCvodeMemory()</a>, and <a class="el" href="CvodeAdaptor_8hpp_source.html#l00173">mLastSolutionState</a>.</p>
+<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00335">FreeCvodeMemory()</a>, and <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">mLastSolutionState</a>.</p>
 
 </div>
 </div>
@@ -279,9 +283,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Make the solver check for stopping events using CVODE's rootfinding functionality.</p>
 <p>By default we do not check. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00643">643</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00584">584</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">mCheckForRoots</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">mCheckForRoots</a>.</p>
 
 </div>
 </div>
@@ -328,11 +332,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00436">436</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00383">383</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00520">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00447">Solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00467">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00394">Solve()</a>.</p>
 
 </div>
 </div>
@@ -360,11 +364,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Free CVODE memory after solving a system of ODEs. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00386">386</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00335">335</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00141">mpCvodeMem</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00138">mpCvodeMem</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00182">mpSundialsDenseMatrix</a>, and <a class="el" href="CvodeAdaptor_8hpp_source.html#l00184">mpSundialsLinearSolver</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00602">~CvodeAdaptor()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00520">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00447">Solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00543">~CvodeAdaptor()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00467">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00394">Solve()</a>.</p>
 
 </div>
 </div>
@@ -384,9 +388,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the absolute tolerance. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00633">633</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00574">574</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00158">mAbsTol</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00155">mAbsTol</a>.</p>
 
 </div>
 </div>
@@ -406,9 +410,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the last step size used internally by CVODE in the last Solve call </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00638">638</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00579">579</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00161">mLastInternalStepSize</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00158">mLastInternalStepSize</a>.</p>
 
 </div>
 </div>
@@ -428,9 +432,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the maximum number of steps to be taken by the solver in its attempt to reach the next output time. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00653">653</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00594">594</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">mMaxSteps</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00164">mMaxSteps</a>.</p>
 
 </div>
 </div>
@@ -450,9 +454,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the relative tolerance. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00628">628</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00569">569</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00155">mRelTol</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00152">mRelTol</a>.</p>
 
 </div>
 </div>
@@ -497,11 +501,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00608">608</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00549">549</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#a281864ac0e52720541a0258ea8c0d466">CreateVectorIfEmpty()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a62d66ca3275882a624f0d5d8c00c0c6d">GetVectorComponent()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a7d1b4ed5c0714f5f5c61e29ef1e00aa7">GetVectorSize()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00179">mForceReset</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00173">mLastSolutionState</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00176">mLastSolutionTime</a>, and <a class="el" href="VectorHelperFunctions_8hpp.html#a5f5a0070b300ab7a4f842eda15652a9f">SetVectorComponent()</a>.</p>
+<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#a281864ac0e52720541a0258ea8c0d466">CreateVectorIfEmpty()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a62d66ca3275882a624f0d5d8c00c0c6d">GetVectorComponent()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a7d1b4ed5c0714f5f5c61e29ef1e00aa7">GetVectorSize()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00176">mForceReset</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">mLastSolutionState</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00173">mLastSolutionTime</a>, and <a class="el" href="VectorHelperFunctions_8hpp.html#a5f5a0070b300ab7a4f842eda15652a9f">SetVectorComponent()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00520">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00447">Solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00467">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00394">Solve()</a>.</p>
 
 </div>
 </div>
@@ -521,11 +525,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Successive calls to Solve will attempt to intelligently determine whether to re-initialise the internal CVODE solver, or whether we are simply extending the previous solution forward in time. This mechanism compares the state vector to its previous value, and the start time to the end of the last solve, which captures most cases where re-initialisation is required. However, changes to the RHS function can also require this, and cannot be automatically detected. In such cases users must call this function to force re-initialisation. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00430">430</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00377">377</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, and <a class="el" href="CvodeAdaptor_8hpp_source.html#l00173">mLastSolutionState</a>.</p>
+<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, and <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">mLastSolutionState</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00411">SetForceReset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00358">SetForceReset()</a>.</p>
 
 </div>
 </div>
@@ -573,9 +577,9 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00129">129</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00126">126</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00158">mAbsTol</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">mCheckForRoots</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00161">mLastInternalStepSize</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">mMaxSteps</a>, and <a class="el" href="CvodeAdaptor_8hpp_source.html#l00155">mRelTol</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00155">mAbsTol</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">mCheckForRoots</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00158">mLastInternalStepSize</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00164">mMaxSteps</a>, and <a class="el" href="CvodeAdaptor_8hpp_source.html#l00152">mRelTol</a>.</p>
 
 </div>
 </div>
@@ -602,11 +606,11 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00411">411</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00358">358</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00179">mForceReset</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00430">ResetSolver()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00421">SetMinimalReset()</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00176">mForceReset</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00377">ResetSolver()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00368">SetMinimalReset()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00421">SetMinimalReset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00368">SetMinimalReset()</a>.</p>
 
 </div>
 </div>
@@ -633,9 +637,9 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00648">648</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00589">589</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">mMaxSteps</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00164">mMaxSteps</a>.</p>
 
 </div>
 </div>
@@ -662,11 +666,11 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00421">421</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00368">368</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00182">mForceMinimalReset</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00411">SetForceReset()</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00179">mForceMinimalReset</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00358">SetForceReset()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00411">SetForceReset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00358">SetForceReset()</a>.</p>
 
 </div>
 </div>
@@ -704,9 +708,9 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00622">622</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00563">563</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00158">mAbsTol</a>, and <a class="el" href="CvodeAdaptor_8hpp_source.html#l00155">mRelTol</a>.</p>
+<p class="reference">References <a class="el" href="CvodeAdaptor_8hpp_source.html#l00155">mAbsTol</a>, and <a class="el" href="CvodeAdaptor_8hpp_source.html#l00152">mRelTol</a>.</p>
 
 </div>
 </div>
@@ -767,11 +771,11 @@ template&lt;class Archive &gt; </div>
 </dl>
 <p>Initial conditions for the ODE solver. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">198</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">192</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="AbstractUntemplatedParameterisedSystem_8cpp_source.html#l00072">AbstractUntemplatedParameterisedSystem::GetNumberOfStateVariables()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a62d66ca3275882a624f0d5d8c00c0c6d">GetVectorComponent()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a7d1b4ed5c0714f5f5c61e29ef1e00aa7">GetVectorSize()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00158">mAbsTol</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">mCheckForRoots</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00152">mData</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00182">mForceMinimalReset</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00179">mForceReset</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00173">mLastSolutionState</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00176">mLastSolutionTime</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">mMaxSteps</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00141">mpCvodeMem</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00155">mRelTol</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00088">CvodeData_::pSystem</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00086">CvodeData_::pY</a>, and <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00213">CompareDoubles::WithinAnyTolerance()</a>.</p>
+<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="AbstractUntemplatedParameterisedSystem_8cpp_source.html#l00072">AbstractUntemplatedParameterisedSystem::GetNumberOfStateVariables()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a62d66ca3275882a624f0d5d8c00c0c6d">GetVectorComponent()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a7d1b4ed5c0714f5f5c61e29ef1e00aa7">GetVectorSize()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00155">mAbsTol</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">mCheckForRoots</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00149">mData</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00179">mForceMinimalReset</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00176">mForceReset</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">mLastSolutionState</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00173">mLastSolutionTime</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00164">mMaxSteps</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00138">mpCvodeMem</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00182">mpSundialsDenseMatrix</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00184">mpSundialsLinearSolver</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00152">mRelTol</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00085">CvodeData_::pSystem</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00083">CvodeData_::pY</a>, and <a class="el" href="MathsCustomFunctions_8cpp_source.html#l00213">CompareDoubles::WithinAnyTolerance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00520">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00447">Solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00467">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00394">Solve()</a>.</p>
 
 </div>
 </div>
@@ -840,9 +844,9 @@ template&lt;class Archive &gt; </div>
 
 <p>Implements <a class="el" href="classAbstractIvpOdeSolver.html#a23b4b6b0bdfef21a16c6a082e13e80ba">AbstractIvpOdeSolver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00520">520</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00467">467</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AbstractOdeSystem_8cpp_source.html#l00049">AbstractOdeSystem::CalculateStoppingEvent()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00436">CvodeError()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00386">FreeCvodeMemory()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">mCheckForRoots</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00161">mLastInternalStepSize</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00141">mpCvodeMem</a>, <a class="el" href="AbstractIvpOdeSolver_8hpp_source.html#l00075">AbstractIvpOdeSolver::mStoppingEventOccurred</a>, <a class="el" href="AbstractIvpOdeSolver_8hpp_source.html#l00078">AbstractIvpOdeSolver::mStoppingTime</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00608">RecordStoppingPoint()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>, and <a class="el" href="Exception_8hpp_source.html#l00237">UNUSED_OPT</a>.</p>
+<p class="reference">References <a class="el" href="AbstractOdeSystem_8cpp_source.html#l00049">AbstractOdeSystem::CalculateStoppingEvent()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00383">CvodeError()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00335">FreeCvodeMemory()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">mCheckForRoots</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00158">mLastInternalStepSize</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00138">mpCvodeMem</a>, <a class="el" href="AbstractIvpOdeSolver_8hpp_source.html#l00075">AbstractIvpOdeSolver::mStoppingEventOccurred</a>, <a class="el" href="AbstractIvpOdeSolver_8hpp_source.html#l00078">AbstractIvpOdeSolver::mStoppingTime</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00549">RecordStoppingPoint()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>, and <a class="el" href="Exception_8hpp_source.html#l00237">UNUSED_OPT</a>.</p>
 
 </div>
 </div>
@@ -919,9 +923,9 @@ template&lt;class Archive &gt; </div>
 
 <p>Implements <a class="el" href="classAbstractIvpOdeSolver.html#a52f3d4561cfa1d866518a56c329c3196">AbstractIvpOdeSolver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00447">447</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8cpp_source.html#l00394">394</a> of file <a class="el" href="CvodeAdaptor_8cpp_source.html">CvodeAdaptor.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="TimeStepper_8cpp_source.html#l00123">TimeStepper::AdvanceOneTimeStep()</a>, <a class="el" href="AbstractOdeSystem_8cpp_source.html#l00049">AbstractOdeSystem::CalculateStoppingEvent()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00436">CvodeError()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, <a class="el" href="TimeStepper_8cpp_source.html#l00170">TimeStepper::EstimateTimeSteps()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00386">FreeCvodeMemory()</a>, <a class="el" href="TimeStepper_8cpp_source.html#l00144">TimeStepper::GetNextTime()</a>, <a class="el" href="AbstractUntemplatedParameterisedSystem_8cpp_source.html#l00056">AbstractUntemplatedParameterisedSystem::GetSystemInformation()</a>, <a class="el" href="TimeStepper_8cpp_source.html#l00175">TimeStepper::GetTotalTimeStepsTaken()</a>, <a class="el" href="TimeStepper_8cpp_source.html#l00165">TimeStepper::IsTimeAtEnd()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">mCheckForRoots</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00161">mLastInternalStepSize</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00176">mLastSolutionTime</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00141">mpCvodeMem</a>, <a class="el" href="AbstractIvpOdeSolver_8hpp_source.html#l00075">AbstractIvpOdeSolver::mStoppingEventOccurred</a>, <a class="el" href="AbstractIvpOdeSolver_8hpp_source.html#l00078">AbstractIvpOdeSolver::mStoppingTime</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00608">RecordStoppingPoint()</a>, <a class="el" href="OdeSolution_8cpp_source.html#l00126">OdeSolution::rGetSolutions()</a>, <a class="el" href="OdeSolution_8cpp_source.html#l00116">OdeSolution::rGetTimes()</a>, <a class="el" href="OdeSolution_8cpp_source.html#l00062">OdeSolution::SetNumberOfTimeSteps()</a>, <a class="el" href="OdeSolution_8cpp_source.html#l00070">OdeSolution::SetOdeSystemInformation()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>, and <a class="el" href="Exception_8hpp_source.html#l00237">UNUSED_OPT</a>.</p>
+<p class="reference">References <a class="el" href="TimeStepper_8cpp_source.html#l00123">TimeStepper::AdvanceOneTimeStep()</a>, <a class="el" href="AbstractOdeSystem_8cpp_source.html#l00049">AbstractOdeSystem::CalculateStoppingEvent()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00383">CvodeError()</a>, <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, <a class="el" href="TimeStepper_8cpp_source.html#l00170">TimeStepper::EstimateTimeSteps()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00335">FreeCvodeMemory()</a>, <a class="el" href="TimeStepper_8cpp_source.html#l00144">TimeStepper::GetNextTime()</a>, <a class="el" href="AbstractUntemplatedParameterisedSystem_8cpp_source.html#l00056">AbstractUntemplatedParameterisedSystem::GetSystemInformation()</a>, <a class="el" href="TimeStepper_8cpp_source.html#l00175">TimeStepper::GetTotalTimeStepsTaken()</a>, <a class="el" href="TimeStepper_8cpp_source.html#l00165">TimeStepper::IsTimeAtEnd()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">mCheckForRoots</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00158">mLastInternalStepSize</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00173">mLastSolutionTime</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00138">mpCvodeMem</a>, <a class="el" href="AbstractIvpOdeSolver_8hpp_source.html#l00075">AbstractIvpOdeSolver::mStoppingEventOccurred</a>, <a class="el" href="AbstractIvpOdeSolver_8hpp_source.html#l00078">AbstractIvpOdeSolver::mStoppingTime</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00549">RecordStoppingPoint()</a>, <a class="el" href="OdeSolution_8cpp_source.html#l00126">OdeSolution::rGetSolutions()</a>, <a class="el" href="OdeSolution_8cpp_source.html#l00116">OdeSolution::rGetTimes()</a>, <a class="el" href="OdeSolution_8cpp_source.html#l00062">OdeSolution::SetNumberOfTimeSteps()</a>, <a class="el" href="OdeSolution_8cpp_source.html#l00070">OdeSolution::SetOdeSystemInformation()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>, and <a class="el" href="Exception_8hpp_source.html#l00237">UNUSED_OPT</a>.</p>
 
 </div>
 </div>
@@ -947,7 +951,7 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>Needed for serialization. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00121">121</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00118">118</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
 </div>
 </div>
@@ -973,9 +977,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>Absolute tolerance for the ODE solver. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00158">158</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00155">155</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00633">GetAbsoluteTolerance()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00129">serialize()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00622">SetTolerances()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00574">GetAbsoluteTolerance()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00126">serialize()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00563">SetTolerances()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>.</p>
 
 </div>
 </div>
@@ -1000,9 +1004,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>Whether to check for stopping events. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">170</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">167</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00643">CheckForStoppingEvents()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00129">serialize()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00520">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00447">Solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00584">CheckForStoppingEvents()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00126">serialize()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00467">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00394">Solve()</a>.</p>
 
 </div>
 </div>
@@ -1027,9 +1031,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>The CVODE data structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00152">152</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00149">149</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>.</p>
 
 </div>
 </div>
@@ -1054,9 +1058,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>Whether to ignore changes in the state variables when deciding whether to reset. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00182">182</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00179">179</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00421">SetMinimalReset()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00368">SetMinimalReset()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>.</p>
 
 </div>
 </div>
@@ -1081,9 +1085,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>Whether to automatically reset CVODE on each Solve call. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00179">179</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00176">176</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00608">RecordStoppingPoint()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00411">SetForceReset()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00549">RecordStoppingPoint()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00358">SetForceReset()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>.</p>
 
 </div>
 </div>
@@ -1108,9 +1112,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>The size of the previous timestep. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00161">161</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00158">158</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00638">GetLastStepSize()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00129">serialize()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00520">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00447">Solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00579">GetLastStepSize()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00126">serialize()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00467">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00394">Solve()</a>.</p>
 
 </div>
 </div>
@@ -1135,9 +1139,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>Remember where the last solve got to so we know whether to re-initialise. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00173">173</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00170">170</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00602">~CvodeAdaptor()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00608">RecordStoppingPoint()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00430">ResetSolver()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00543">~CvodeAdaptor()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00549">RecordStoppingPoint()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00377">ResetSolver()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>.</p>
 
 </div>
 </div>
@@ -1162,9 +1166,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>Remember where the last solve got to so we know whether to re-initialise. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00176">176</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00173">173</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00608">RecordStoppingPoint()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00447">Solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00549">RecordStoppingPoint()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00394">Solve()</a>.</p>
 
 </div>
 </div>
@@ -1189,9 +1193,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>The maximum number of steps to be taken by the solver in its attempt to reach the next output time. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00167">167</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00164">164</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00653">GetMaxSteps()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00129">serialize()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00648">SetMaxSteps()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00594">GetMaxSteps()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00126">serialize()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00589">SetMaxSteps()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>.</p>
 
 </div>
 </div>
@@ -1216,9 +1220,63 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>Pointer to the CVODE memory block. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00141">141</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00138">138</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00386">FreeCvodeMemory()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00520">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00447">Solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00335">FreeCvodeMemory()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00467">Solve()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00394">Solve()</a>.</p>
+
+</div>
+</div>
+<a id="afc71d06acc36c9bbb2b36c3099674e51" name="afc71d06acc36c9bbb2b36c3099674e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc71d06acc36c9bbb2b36c3099674e51">&#9670;&#160;</a></span>mpSundialsDenseMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SUNMatrix CvodeAdaptor::mpSundialsDenseMatrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Working memory for CVODE to store a dense matrix </p>
+
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00182">182</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00335">FreeCvodeMemory()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>.</p>
+
+</div>
+</div>
+<a id="a58992b56ed054e255f416082302017ea" name="a58992b56ed054e255f416082302017ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58992b56ed054e255f416082302017ea">&#9670;&#160;</a></span>mpSundialsLinearSolver</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SUNLinearSolver CvodeAdaptor::mpSundialsLinearSolver</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Working memory for CVODE's linear solver </p>
+
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00184">184</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00335">FreeCvodeMemory()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>.</p>
 
 </div>
 </div>
@@ -1243,9 +1301,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>Relative tolerance for the ODE solver. </p>
 
-<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00155">155</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CvodeAdaptor_8hpp_source.html#l00152">152</a> of file <a class="el" href="CvodeAdaptor_8hpp_source.html">CvodeAdaptor.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00628">GetRelativeTolerance()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00129">serialize()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00622">SetTolerances()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00198">SetupCvode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CvodeAdaptor_8cpp_source.html#l00569">GetRelativeTolerance()</a>, <a class="el" href="CvodeAdaptor_8hpp_source.html#l00126">serialize()</a>, <a class="el" href="CvodeAdaptor_8cpp_source.html#l00563">SetTolerances()</a>, and <a class="el" href="CvodeAdaptor_8cpp_source.html#l00192">SetupCvode()</a>.</p>
 
 </div>
 </div>

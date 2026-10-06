@@ -1,5 +1,8 @@
 var NAVTREEINDEX39 =
 {
+"classPurkinjeVentricularJunctionStimulus.html#a971a8886de78c90e7ddc4b416b05b2d9":[1,0,551,7],
+"classPurkinjeVentricularJunctionStimulus.html#aae55834a47ace39e0e0428506654521e":[1,0,551,5],
+"classPurkinjeVentricularJunctionStimulus.html#ad39eca3eb519fba5f5b5ea44c5f44e29":[1,0,551,1],
 "classQuadraticBasisFunction.html":[1,0,552],
 "classQuadraticBasisFunction.html#a2d015538aa13347a0a74267edea221db":[1,0,552,0],
 "classQuadraticBasisFunction.html#a47cbc7573c1f1bab34e5206aa4fb1a49":[1,0,552,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX39 =
 "classSchmidCostaExponentialLaw2d.html#a800cf4a22fff38b857129aa034393897":[1,0,575,6],
 "classSchmidCostaExponentialLaw2d.html#a9611d7e95ca651520dfb1486bda80ea4":[1,0,575,1],
 "classSchmidCostaExponentialLaw2d.html#aab9a3d336fe646d4fc82a4f13087777d":[1,0,575,0],
-"classSerializableSingleton.html":[1,0,576],
-"classSerializableSingleton.html#a146c32a231a0ec1c3da708bb0b14b6bf":[1,0,576,0],
-"classSerializableSingleton.html#a359a93da5678e5917226fe2f24cb2e69":[1,0,576,2],
-"classSerializableSingleton.html#a5941abee9578a79198108a7397bc6f8d":[1,0,576,1]
+"classSerializableSingleton.html":[1,0,576]
 };

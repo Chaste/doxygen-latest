@@ -1,5 +1,8 @@
 var NAVTREEINDEX44 =
 {
+"classVertexIntersectionSwapLocationsWriter.html#af0ec3bd4da9afe7f47333dcfb691ea12":[1,0,652,5],
+"classVertexMesh.html":[1,0,653],
+"classVertexMesh.html#a0d8488ef41eb00f55acb649e2c5b9d72":[1,0,653,54],
 "classVertexMesh.html#a1ce36913a45ba60162179cd5fe0f964a":[1,0,653,41],
 "classVertexMesh.html#a1d5e827751edcfc14f467c4d8840e8f1":[1,0,653,9],
 "classVertexMesh.html#a1ed33110b13b3be17e31e6f2350026cc":[1,0,653,24],
@@ -246,8 +249,5 @@ var NAVTREEINDEX44 =
 "classVtkMeshReader.html#a4ccacf8d23574fa738f8f94ba687717d":[1,0,667,10],
 "classVtkMeshReader.html#a53c87a21c2c881bd08fb1157bd34a5a5":[1,0,667,42],
 "classVtkMeshReader.html#a546637313014307ae565a799496243e4":[1,0,667,26],
-"classVtkMeshReader.html#a5e343de3b9751c1bcc35f789d2318fb2":[1,0,667,4],
-"classVtkMeshReader.html#a66540f4354a993ff0226079bc482d98b":[1,0,667,19],
-"classVtkMeshReader.html#a67023ce873eac1d685980c5c6b3af509":[1,0,667,13],
-"classVtkMeshReader.html#a691c7460c2a489097c9fe32596ef8e45":[1,0,667,25]
+"classVtkMeshReader.html#a5e343de3b9751c1bcc35f789d2318fb2":[1,0,667,4]
 };

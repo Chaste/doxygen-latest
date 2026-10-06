@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::e8c2894cf996776c74990bd09dd32f8cbb82acf2</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::152eaefaf02246ef769bd916268f05686539aa51</span>
    </div>
   </td>
  </tr>
@@ -765,218 +765,216 @@ $(document).ready(function(){initNavTree('CaBasedCellPopulation_8cpp_source.html
 <div class="foldopen" id="foldopen00625" data-start="{" data-end="}">
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno"><a class="line" href="classCaBasedCellPopulation.html#a4896f246053bcaf246a9020e91cda29b">  625</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classCaBasedCellPopulation.html#a4896f246053bcaf246a9020e91cda29b">CaBasedCellPopulation&lt;DIM&gt;::WriteVtkResultsToFile</a>(<span class="keyword">const</span> std::string&amp; rDirectory)</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>{</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="preprocessor">#ifdef CHASTE_VTK</span></div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    <span class="comment">// Store the present time as a string</span></div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    <span class="keywordtype">unsigned</span> num_timesteps = <a class="code hl_function" href="classSimulationTime.html#ad98b0e76af7583ac1bd8935512aed8f6">SimulationTime::Instance</a>()-&gt;<a class="code hl_function" href="classSimulationTime.html#af7911e75485eab15236cf8c35e6a54c1">GetTimeStepsElapsed</a>();</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    std::stringstream time;</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    time &lt;&lt; num_timesteps;</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    <span class="comment">// Store the number of cells for which to output data to VTK</span></div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    <span class="keywordtype">unsigned</span> num_cells = this-&gt;GetNumRealCells();</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="comment">// When outputting any CellData, we assume that the first cell is representative of all cells</span></div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    <span class="keywordtype">unsigned</span> num_cell_data_items = 0u;</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    std::vector&lt;std::string&gt; cell_data_names;</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    <span class="keywordflow">if</span> (num_cells &gt; 0u)</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    {</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        num_cell_data_items = this-&gt;Begin()-&gt;GetCellData()-&gt;GetNumItems();</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        cell_data_names = this-&gt;Begin()-&gt;GetCellData()-&gt;GetKeys();</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    }</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    std::vector&lt;std::vector&lt;double&gt; &gt; cell_data;</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var=0; var&lt;num_cell_data_items; var++)</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    {</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        std::vector&lt;double&gt; cell_data_var(num_cells);</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>        cell_data.push_back(cell_data_var);</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    }</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span> </div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <span class="comment">// Create mesh writer for VTK output</span></div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    <a class="code hl_class" href="classVtkMeshWriter.html">VtkMeshWriter&lt;DIM, DIM&gt;</a> mesh_writer(rDirectory, <span class="stringliteral">&quot;results_&quot;</span>+time.str(), <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <span class="comment">// Create a counter to keep track of how many cells are at a lattice site</span></div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="keywordtype">unsigned</span> num_sites = this-&gt;mrMesh.GetNumNodes();</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    boost::scoped_array&lt;unsigned&gt; number_of_cells_at_site(<span class="keyword">new</span> <span class="keywordtype">unsigned</span>[num_sites]);</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;num_sites; i++)</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    {</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        number_of_cells_at_site[i] = 0;</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>    }</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    <span class="comment">// Populate a vector of nodes associated with cell locations, by iterating through the list of cells</span></div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    std::vector&lt;Node&lt;DIM&gt;*&gt; nodes;</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    <span class="keywordtype">unsigned</span> node_index = 0;</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM,DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>         cell_iter != this-&gt;End();</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>         ++cell_iter)</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>    {</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <span class="comment">// Get the location index of this cell and update the counter number_of_cells_at_site</span></div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        <span class="keywordtype">unsigned</span> location_index = this-&gt;GetLocationIndexUsingCell(*cell_iter);</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        number_of_cells_at_site[location_index]++;</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>        assert(number_of_cells_at_site[location_index] &lt;= mLatticeCarryingCapacity);</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span> </div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>        <span class="comment">// Note that we define this vector before setting it as otherwise the profiling build will break (see #2367)</span></div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        c_vector&lt;double, DIM&gt; coords;</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>        coords = this-&gt;mrMesh.GetNode(location_index)-&gt;rGetLocation();</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>        <span class="comment">// Move the coordinates slightly so that we can visualise all cells in a lattice site if there is more than one per site</span></div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>        <span class="keywordflow">if</span> (mLatticeCarryingCapacity &gt; 1)</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>        {</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>            c_vector&lt;double, DIM&gt; offset;</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>            <span class="keywordflow">if</span> (DIM == 2)</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>            {</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>                <span class="keywordtype">double</span> angle = (<a class="code hl_class" href="classdouble.html">double</a>)number_of_cells_at_site[location_index]*2.0*M_PI/(<span class="keywordtype">double</span>)mLatticeCarryingCapacity;</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>                offset[0] = 0.2*sin(angle);</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>                offset[1] = 0.2*cos(angle);</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>            }</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>            <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            {</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>                <a class="code hl_class" href="classRandomNumberGenerator.html">RandomNumberGenerator</a>* p_gen = <a class="code hl_function" href="classRandomNumberGenerator.html#a7bde43628bae2b451d2c283648d25975">RandomNumberGenerator::Instance</a>();</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;DIM; i++)</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>                {</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>                    offset[i] = p_gen-&gt;<a class="code hl_function" href="classRandomNumberGenerator.html#a6cdda62d1d9f8b4d194d97c00dc63ce0">ranf</a>(); <span class="comment">// This assumes that all sites are 1 unit apart</span></div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>                }</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>            }</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;DIM; i++)</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>            {</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>                coords[i] += offset[i];</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>            }</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>        }</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>        nodes.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classNode.html">Node&lt;DIM&gt;</a>(node_index, coords, <span class="keyword">false</span>));</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>        node_index++;</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>    }</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span> </div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>    <span class="comment">// Iterate over any cell writers that are present</span></div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;boost::shared_ptr&lt;<a class="code hl_class" href="classAbstractCellWriter.html">AbstractCellWriter&lt;DIM, DIM&gt;</a> &gt; &gt;::iterator cell_writer_iter = this-&gt;mCellWriters.begin();</div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>         cell_writer_iter != this-&gt;mCellWriters.end();</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>         ++cell_writer_iter)</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>    {</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>        <span class="comment">// Create vector to store VTK cell data</span></div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        <span class="comment">// (using a default value of -1 to correspond to an empty lattice site)</span></div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>        std::vector&lt;double&gt; vtk_cell_data(num_cells, -1.0);</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>        <span class="comment">// Loop over cells</span></div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>        <span class="keywordtype">unsigned</span> cell_index = 0;</div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM,DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>             cell_iter != this-&gt;End();</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>             ++cell_iter)</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>        {</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>            <span class="comment">// Populate the vector of VTK cell data</span></div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>            vtk_cell_data[cell_index] = (*cell_writer_iter)-&gt;GetCellDataForVtkOutput(*cell_iter, <span class="keyword">this</span>);</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>            cell_index++;</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>        }</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span> </div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>        mesh_writer.<a class="code hl_function" href="classVtkMeshWriter.html#a00a862e064b85a5596a4135e1029730b">AddPointData</a>((*cell_writer_iter)-&gt;GetVtkCellDataName(), vtk_cell_data);</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    }</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span> </div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    <span class="comment">// Loop over cells to output the cell data</span></div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    <span class="keywordtype">unsigned</span> cell_index = 0;</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM,DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>         cell_iter != this-&gt;End();</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>         ++cell_iter)</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>    {</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var=0; var&lt;num_cell_data_items; var++)</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>        {</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>            cell_data[var][cell_index] = cell_iter-&gt;GetCellData()-&gt;GetItem(cell_data_names[var]);</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>        }</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>        cell_index++;</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    }</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var=0; var&lt;num_cell_data_items; var++)</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    {</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>        mesh_writer.<a class="code hl_function" href="classVtkMeshWriter.html#a00a862e064b85a5596a4135e1029730b">AddPointData</a>(cell_data_names[var], cell_data[var]);</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    }</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span> </div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="comment">     * At present, the VTK writer can only write things which inherit from AbstractTetrahedralMeshWriter.</span></div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span><span class="comment">     * For now, we do an explicit conversion to NodesOnlyMesh. This can be written to VTK, then visualized</span></div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="comment">     * as glyphs in Paraview.</span></div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    <a class="code hl_class" href="classNodesOnlyMesh.html">NodesOnlyMesh&lt;DIM&gt;</a> temp_mesh;</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span> </div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    <span class="comment">// Use an approximation of the node spacing as the interaction distance for the nodes only mesh. This is to</span></div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    <span class="comment">// avoid rounding errors in distributed box collection.</span></div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    <span class="keywordtype">double</span> volume = this-&gt;mrMesh.<a class="code hl_function" href="classNodesOnlyMesh.html#a830005a3e2e6a050a047aa7f394c6c87">GetWidth</a>(0);</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> idx=1; idx&lt;DIM; idx++)</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    {</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>        volume *= this-&gt;mrMesh.GetWidth(idx);</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    }</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span> </div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    <span class="keywordtype">double</span> spacing;</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="keywordflow">if</span> (this-&gt;mrMesh.GetNumNodes() &gt;0 &amp;&amp; volume &gt; 0.0)</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    {</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>        spacing = std::pow(volume / <span class="keywordtype">double</span>(this-&gt;mrMesh.GetNumNodes()), 1.0/<span class="keywordtype">double</span>(DIM));</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    }</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    {</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        spacing = 1.0;</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    }</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span> </div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    temp_mesh.<a class="code hl_function" href="classNodesOnlyMesh.html#a22b796bc5befd6698fde4d25b6201e77">ConstructNodesWithoutMesh</a>(nodes, spacing * 1.2);</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    mesh_writer.<a class="code hl_function" href="classVtkMeshWriter.html#a916bbe019de8e4956d34b365ca7e11ca">WriteFilesUsingMesh</a>(temp_mesh);</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span> </div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    *(this-&gt;mpVtkMetaFile) &lt;&lt; <span class="stringliteral">&quot;        &lt;DataSet timestep=\&quot;&quot;</span>;</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    *(this-&gt;mpVtkMetaFile) &lt;&lt; num_timesteps;</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    *(this-&gt;mpVtkMetaFile) &lt;&lt; <span class="stringliteral">&quot;\&quot; group=\&quot;\&quot; part=\&quot;0\&quot; file=\&quot;results_&quot;</span>;</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    *(this-&gt;mpVtkMetaFile) &lt;&lt; num_timesteps;</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    *(this-&gt;mpVtkMetaFile) &lt;&lt; <span class="stringliteral">&quot;.vtu\&quot;/&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span> </div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    <span class="comment">// Tidy up</span></div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;nodes.size(); i++)</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    {</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>        <span class="keyword">delete</span> nodes[i];</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    }</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span><span class="preprocessor">#endif </span><span class="comment">//CHASTE_VTK</span></div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>}</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    <span class="comment">// Store the present time as a string</span></div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    <span class="keywordtype">unsigned</span> num_timesteps = <a class="code hl_function" href="classSimulationTime.html#ad98b0e76af7583ac1bd8935512aed8f6">SimulationTime::Instance</a>()-&gt;<a class="code hl_function" href="classSimulationTime.html#af7911e75485eab15236cf8c35e6a54c1">GetTimeStepsElapsed</a>();</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    std::stringstream time;</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    time &lt;&lt; num_timesteps;</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    <span class="comment">// Store the number of cells for which to output data to VTK</span></div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    <span class="keywordtype">unsigned</span> num_cells = this-&gt;GetNumRealCells();</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="comment">// When outputting any CellData, we assume that the first cell is representative of all cells</span></div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="keywordtype">unsigned</span> num_cell_data_items = 0u;</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    std::vector&lt;std::string&gt; cell_data_names;</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    <span class="keywordflow">if</span> (num_cells &gt; 0u)</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    {</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        num_cell_data_items = this-&gt;Begin()-&gt;GetCellData()-&gt;GetNumItems();</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        cell_data_names = this-&gt;Begin()-&gt;GetCellData()-&gt;GetKeys();</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    }</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    std::vector&lt;std::vector&lt;double&gt; &gt; cell_data;</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var=0; var&lt;num_cell_data_items; var++)</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    {</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        std::vector&lt;double&gt; cell_data_var(num_cells);</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        cell_data.push_back(cell_data_var);</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    }</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    <span class="comment">// Create mesh writer for VTK output</span></div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <a class="code hl_class" href="classVtkMeshWriter.html">VtkMeshWriter&lt;DIM, DIM&gt;</a> mesh_writer(rDirectory, <span class="stringliteral">&quot;results_&quot;</span>+time.str(), <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span> </div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    <span class="comment">// Create a counter to keep track of how many cells are at a lattice site</span></div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <span class="keywordtype">unsigned</span> num_sites = this-&gt;mrMesh.GetNumNodes();</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    boost::scoped_array&lt;unsigned&gt; number_of_cells_at_site(<span class="keyword">new</span> <span class="keywordtype">unsigned</span>[num_sites]);</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;num_sites; i++)</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>    {</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>        number_of_cells_at_site[i] = 0;</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    }</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span> </div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>    <span class="comment">// Populate a vector of nodes associated with cell locations, by iterating through the list of cells</span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    std::vector&lt;Node&lt;DIM&gt;*&gt; nodes;</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    <span class="keywordtype">unsigned</span> node_index = 0;</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM,DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>         cell_iter != this-&gt;End();</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>         ++cell_iter)</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    {</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>        <span class="comment">// Get the location index of this cell and update the counter number_of_cells_at_site</span></div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <span class="keywordtype">unsigned</span> location_index = this-&gt;GetLocationIndexUsingCell(*cell_iter);</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        number_of_cells_at_site[location_index]++;</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        assert(number_of_cells_at_site[location_index] &lt;= mLatticeCarryingCapacity);</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span> </div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>        <span class="comment">// Note that we define this vector before setting it as otherwise the profiling build will break (see #2367)</span></div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>        c_vector&lt;double, DIM&gt; coords;</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        coords = this-&gt;mrMesh.GetNode(location_index)-&gt;rGetLocation();</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span> </div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        <span class="comment">// Move the coordinates slightly so that we can visualise all cells in a lattice site if there is more than one per site</span></div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>        <span class="keywordflow">if</span> (mLatticeCarryingCapacity &gt; 1)</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>        {</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>            c_vector&lt;double, DIM&gt; offset;</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>            <span class="keywordflow">if</span> (DIM == 2)</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>            {</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>                <span class="keywordtype">double</span> angle = (<a class="code hl_class" href="classdouble.html">double</a>)number_of_cells_at_site[location_index]*2.0*M_PI/(<span class="keywordtype">double</span>)mLatticeCarryingCapacity;</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>                offset[0] = 0.2*sin(angle);</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>                offset[1] = 0.2*cos(angle);</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>            }</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>            {</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>                <a class="code hl_class" href="classRandomNumberGenerator.html">RandomNumberGenerator</a>* p_gen = <a class="code hl_function" href="classRandomNumberGenerator.html#a7bde43628bae2b451d2c283648d25975">RandomNumberGenerator::Instance</a>();</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;DIM; i++)</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>                {</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>                    offset[i] = p_gen-&gt;<a class="code hl_function" href="classRandomNumberGenerator.html#a6cdda62d1d9f8b4d194d97c00dc63ce0">ranf</a>(); <span class="comment">// This assumes that all sites are 1 unit apart</span></div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>                }</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>            }</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;DIM; i++)</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>            {</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>                coords[i] += offset[i];</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>            }</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        }</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span> </div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>        nodes.push_back(<span class="keyword">new</span> <a class="code hl_class" href="classNode.html">Node&lt;DIM&gt;</a>(node_index, coords, <span class="keyword">false</span>));</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>        node_index++;</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>    }</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span> </div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>    <span class="comment">// Iterate over any cell writers that are present</span></div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;boost::shared_ptr&lt;<a class="code hl_class" href="classAbstractCellWriter.html">AbstractCellWriter&lt;DIM, DIM&gt;</a> &gt; &gt;::iterator cell_writer_iter = this-&gt;mCellWriters.begin();</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>         cell_writer_iter != this-&gt;mCellWriters.end();</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>         ++cell_writer_iter)</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    {</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>        <span class="comment">// Create vector to store VTK cell data</span></div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>        <span class="comment">// (using a default value of -1 to correspond to an empty lattice site)</span></div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        std::vector&lt;double&gt; vtk_cell_data(num_cells, -1.0);</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span> </div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>        <span class="comment">// Loop over cells</span></div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>        <span class="keywordtype">unsigned</span> cell_index = 0;</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM,DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>             cell_iter != this-&gt;End();</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>             ++cell_iter)</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        {</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>            <span class="comment">// Populate the vector of VTK cell data</span></div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>            vtk_cell_data[cell_index] = (*cell_writer_iter)-&gt;GetCellDataForVtkOutput(*cell_iter, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>            cell_index++;</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>        }</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span> </div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>        mesh_writer.<a class="code hl_function" href="classVtkMeshWriter.html#a00a862e064b85a5596a4135e1029730b">AddPointData</a>((*cell_writer_iter)-&gt;GetVtkCellDataName(), vtk_cell_data);</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    }</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span> </div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    <span class="comment">// Loop over cells to output the cell data</span></div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    <span class="keywordtype">unsigned</span> cell_index = 0;</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM,DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>         cell_iter != this-&gt;End();</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>         ++cell_iter)</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    {</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var=0; var&lt;num_cell_data_items; var++)</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>        {</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>            cell_data[var][cell_index] = cell_iter-&gt;GetCellData()-&gt;GetItem(cell_data_names[var]);</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>        }</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>        cell_index++;</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    }</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> var=0; var&lt;num_cell_data_items; var++)</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    {</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>        mesh_writer.<a class="code hl_function" href="classVtkMeshWriter.html#a00a862e064b85a5596a4135e1029730b">AddPointData</a>(cell_data_names[var], cell_data[var]);</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    }</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span><span class="comment">     * At present, the VTK writer can only write things which inherit from AbstractTetrahedralMeshWriter.</span></div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="comment">     * For now, we do an explicit conversion to NodesOnlyMesh. This can be written to VTK, then visualized</span></div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span><span class="comment">     * as glyphs in Paraview.</span></div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    <a class="code hl_class" href="classNodesOnlyMesh.html">NodesOnlyMesh&lt;DIM&gt;</a> temp_mesh;</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span> </div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    <span class="comment">// Use an approximation of the node spacing as the interaction distance for the nodes only mesh. This is to</span></div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    <span class="comment">// avoid rounding errors in distributed box collection.</span></div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    <span class="keywordtype">double</span> volume = this-&gt;mrMesh.<a class="code hl_function" href="classNodesOnlyMesh.html#a830005a3e2e6a050a047aa7f394c6c87">GetWidth</a>(0);</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> idx=1; idx&lt;DIM; idx++)</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    {</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>        volume *= this-&gt;mrMesh.GetWidth(idx);</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    }</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span> </div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    <span class="keywordtype">double</span> spacing;</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    <span class="keywordflow">if</span> (this-&gt;mrMesh.GetNumNodes() &gt;0 &amp;&amp; volume &gt; 0.0)</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    {</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>        spacing = std::pow(volume / <span class="keywordtype">double</span>(this-&gt;mrMesh.GetNumNodes()), 1.0/<span class="keywordtype">double</span>(DIM));</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    }</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    {</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>        spacing = 1.0;</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    }</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span> </div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>    temp_mesh.<a class="code hl_function" href="classNodesOnlyMesh.html#a22b796bc5befd6698fde4d25b6201e77">ConstructNodesWithoutMesh</a>(nodes, spacing * 1.2);</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    mesh_writer.<a class="code hl_function" href="classVtkMeshWriter.html#a916bbe019de8e4956d34b365ca7e11ca">WriteFilesUsingMesh</a>(temp_mesh);</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span> </div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    *(this-&gt;mpVtkMetaFile) &lt;&lt; <span class="stringliteral">&quot;        &lt;DataSet timestep=\&quot;&quot;</span>;</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    *(this-&gt;mpVtkMetaFile) &lt;&lt; num_timesteps;</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    *(this-&gt;mpVtkMetaFile) &lt;&lt; <span class="stringliteral">&quot;\&quot; group=\&quot;\&quot; part=\&quot;0\&quot; file=\&quot;results_&quot;</span>;</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    *(this-&gt;mpVtkMetaFile) &lt;&lt; num_timesteps;</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    *(this-&gt;mpVtkMetaFile) &lt;&lt; <span class="stringliteral">&quot;.vtu\&quot;/&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span> </div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    <span class="comment">// Tidy up</span></div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;nodes.size(); i++)</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    {</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        <span class="keyword">delete</span> nodes[i];</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>    }</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>}</div>
 </div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span> </div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00791" data-start="{" data-end="}">
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno"><a class="line" href="classCaBasedCellPopulation.html#ace8e215905837ad4b13e658fe92ac513">  791</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCaBasedCellPopulation.html#ace8e215905837ad4b13e658fe92ac513">CaBasedCellPopulation&lt;DIM&gt;::GetCellDataItemAtPdeNode</a>(</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    <span class="keywordtype">unsigned</span> pdeNodeIndex,</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    std::string&amp; rVariableName,</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    <span class="keywordtype">bool</span> dirichletBoundaryConditionApplies,</div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    <span class="keywordtype">double</span> dirichletBoundaryValue)</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>{</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    <span class="keywordtype">unsigned</span> counter = 0;</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    <span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    <span class="keywordflow">while</span> (counter != pdeNodeIndex)</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    {</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>        ++cell_iter;</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>        counter++;</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    }</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span> </div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00789" data-start="{" data-end="}">
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno"><a class="line" href="classCaBasedCellPopulation.html#ace8e215905837ad4b13e658fe92ac513">  789</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="classCaBasedCellPopulation.html#ace8e215905837ad4b13e658fe92ac513">CaBasedCellPopulation&lt;DIM&gt;::GetCellDataItemAtPdeNode</a>(</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    <span class="keywordtype">unsigned</span> pdeNodeIndex,</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    std::string&amp; rVariableName,</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    <span class="keywordtype">bool</span> dirichletBoundaryConditionApplies,</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    <span class="keywordtype">double</span> dirichletBoundaryValue)</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>{</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    <span class="keywordtype">unsigned</span> counter = 0;</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    <span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    <span class="keywordflow">while</span> (counter != pdeNodeIndex)</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    {</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>        ++cell_iter;</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>        counter++;</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    }</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span> </div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    <span class="keywordtype">double</span> value = cell_iter-&gt;GetCellData()-&gt;GetItem(rVariableName);</div>
 <div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span> </div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keywordtype">double</span> value = cell_iter-&gt;GetCellData()-&gt;GetItem(rVariableName);</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span> </div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    <span class="keywordflow">return</span> value;</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>}</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>}</div>
 </div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span> </div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00811" data-start="{" data-end="}">
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno"><a class="line" href="classCaBasedCellPopulation.html#aa4b6bf610e5bea188a6995acc661c545">  811</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classCaBasedCellPopulation.html#aa4b6bf610e5bea188a6995acc661c545">CaBasedCellPopulation&lt;DIM&gt;::IsPdeNodeAssociatedWithNonApoptoticCell</a>(<span class="keywordtype">unsigned</span> pdeNodeIndex)</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>{</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>    <span class="comment">// pdeNodeIndex corresponds to the &#39;position&#39; of the cell to interrogate in the vector of cells</span></div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    <span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span> </div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    assert(pdeNodeIndex &lt; this-&gt;GetNumRealCells());</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;pdeNodeIndex; i++)</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>    {</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>        ++cell_iter;</div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>    }</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    <span class="keywordtype">bool</span> is_cell_apoptotic = cell_iter-&gt;template HasCellProperty&lt;ApoptoticCellProperty&gt;();</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span> </div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>    <span class="keywordflow">return</span> !is_cell_apoptotic;</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>}</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span> </div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00809" data-start="{" data-end="}">
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno"><a class="line" href="classCaBasedCellPopulation.html#aa4b6bf610e5bea188a6995acc661c545">  809</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classCaBasedCellPopulation.html#aa4b6bf610e5bea188a6995acc661c545">CaBasedCellPopulation&lt;DIM&gt;::IsPdeNodeAssociatedWithNonApoptoticCell</a>(<span class="keywordtype">unsigned</span> pdeNodeIndex)</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>{</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="comment">// pdeNodeIndex corresponds to the &#39;position&#39; of the cell to interrogate in the vector of cells</span></div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    <span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span> </div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    assert(pdeNodeIndex &lt; this-&gt;GetNumRealCells());</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;pdeNodeIndex; i++)</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    {</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>        ++cell_iter;</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>    }</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>    <span class="keywordtype">bool</span> is_cell_apoptotic = cell_iter-&gt;template HasCellProperty&lt;ApoptoticCellProperty&gt;();</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span> </div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    <span class="keywordflow">return</span> !is_cell_apoptotic;</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>}</div>
 </div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span> </div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classCaBasedCellPopulation.html">CaBasedCellPopulation&lt;1&gt;</a>;</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classCaBasedCellPopulation.html">CaBasedCellPopulation&lt;2&gt;</a>;</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classCaBasedCellPopulation.html">CaBasedCellPopulation&lt;3&gt;</a>;</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span> </div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#a68d8898f0cc9b0e791c643c0396efd2d">EXPORT_TEMPLATE_CLASS_SAME_DIMS</a>(<a class="code hl_class" href="classCaBasedCellPopulation.html">CaBasedCellPopulation</a>)</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span> </div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classCaBasedCellPopulation.html">CaBasedCellPopulation&lt;1&gt;</a>;</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classCaBasedCellPopulation.html">CaBasedCellPopulation&lt;2&gt;</a>;</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classCaBasedCellPopulation.html">CaBasedCellPopulation&lt;3&gt;</a>;</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span> </div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="comment">// Serialization for Boost &gt;= 1.36</span></div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span><span class="preprocessor">#include &quot;<a class="code" href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><a class="code hl_define" href="SerializationExportWrapper_8hpp.html#a68d8898f0cc9b0e791c643c0396efd2d">EXPORT_TEMPLATE_CLASS_SAME_DIMS</a>(<a class="code hl_class" href="classCaBasedCellPopulation.html">CaBasedCellPopulation</a>)</div>
 <div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
 <div class="ttc" id="aException_8hpp_html_ae0019d0a062e0daca4aa9b982d8f6ac4"><div class="ttname"><a href="Exception_8hpp.html#ae0019d0a062e0daca4aa9b982d8f6ac4">NEVER_REACHED</a></div><div class="ttdeci">#define NEVER_REACHED</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00227">Exception.hpp:227</a></div></div>
 <div class="ttc" id="aSerializationExportWrapperForCpp_8hpp_html"><div class="ttname"><a href="SerializationExportWrapperForCpp_8hpp.html">SerializationExportWrapperForCpp.hpp</a></div></div>
@@ -989,7 +987,7 @@ $(document).ready(function(){initNavTree('CaBasedCellPopulation_8cpp_source.html
 <div class="ttc" id="aclassAbstractCellPopulationWriter_html"><div class="ttname"><a href="classAbstractCellPopulationWriter.html">AbstractCellPopulationWriter</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulationWriter_8hpp_source.html#l00062">AbstractCellPopulationWriter.hpp:63</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_1_1Iterator_html"><div class="ttname"><a href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation::Iterator</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8hpp_source.html#l00967">AbstractCellPopulation.hpp:968</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a18cf6e9fafbdd5ef14ef26b48369b64b"><div class="ttname"><a href="classAbstractCellPopulation.html#a18cf6e9fafbdd5ef14ef26b48369b64b">AbstractCellPopulation::AddCellUsingLocationIndex</a></div><div class="ttdeci">virtual void AddCellUsingLocationIndex(unsigned index, CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00376">AbstractCellPopulation.cpp:376</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a21b0ffbec3136ce1a3a2834bf362bfa5"><div class="ttname"><a href="classAbstractCellPopulation.html#a21b0ffbec3136ce1a3a2834bf362bfa5">AbstractCellPopulation::OpenWritersFiles</a></div><div class="ttdeci">virtual void OpenWritersFiles(OutputFileHandler &amp;rOutputFileHandler)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00514">AbstractCellPopulation.cpp:514</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a21b0ffbec3136ce1a3a2834bf362bfa5"><div class="ttname"><a href="classAbstractCellPopulation.html#a21b0ffbec3136ce1a3a2834bf362bfa5">AbstractCellPopulation::OpenWritersFiles</a></div><div class="ttdeci">virtual void OpenWritersFiles(OutputFileHandler &amp;rOutputFileHandler)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00512">AbstractCellPopulation.cpp:512</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a2e9077e406f31df825baf31e55be9df0"><div class="ttname"><a href="classAbstractCellPopulation.html#a2e9077e406f31df825baf31e55be9df0">AbstractCellPopulation&lt; DIM &gt;::mCells</a></div><div class="ttdeci">std::list&lt; CellPtr &gt; mCells</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8hpp_source.html#l00138">AbstractCellPopulation.hpp:138</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_afb46691d44f80ce9dc6f3370c2c4a167"><div class="ttname"><a href="classAbstractCellPopulation.html#afb46691d44f80ce9dc6f3370c2c4a167">AbstractCellPopulation::RemoveCellUsingLocationIndex</a></div><div class="ttdeci">virtual void RemoveCellUsingLocationIndex(unsigned index, CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00383">AbstractCellPopulation.cpp:383</a></div></div>
 <div class="ttc" id="aclassAbstractCellWriter_html"><div class="ttname"><a href="classAbstractCellWriter.html">AbstractCellWriter</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractCellWriter_8hpp_source.html#l00052">AbstractCellWriter.hpp:53</a></div></div>
@@ -1018,7 +1016,7 @@ $(document).ready(function(){initNavTree('CaBasedCellPopulation_8cpp_source.html
 <div class="ttc" id="aclassCaBasedCellPopulation_html_a65faa394afba2fe515e5238e5e25a555"><div class="ttname"><a href="classCaBasedCellPopulation.html#a65faa394afba2fe515e5238e5e25a555">CaBasedCellPopulation::OutputCellPopulationParameters</a></div><div class="ttdeci">void OutputCellPopulationParameters(out_stream &amp;rParamsFile)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00613">CaBasedCellPopulation.cpp:613</a></div></div>
 <div class="ttc" id="aclassCaBasedCellPopulation_html_a7abd44291aa5b93c34d3cda336829560"><div class="ttname"><a href="classCaBasedCellPopulation.html#a7abd44291aa5b93c34d3cda336829560">CaBasedCellPopulation::Validate</a></div><div class="ttdeci">void Validate()</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00053">CaBasedCellPopulation.cpp:53</a></div></div>
 <div class="ttc" id="aclassCaBasedCellPopulation_html_a88ed06889698398910d806de2a020bf8"><div class="ttname"><a href="classCaBasedCellPopulation.html#a88ed06889698398910d806de2a020bf8">CaBasedCellPopulation::RemoveCellUsingLocationIndex</a></div><div class="ttdeci">void RemoveCellUsingLocationIndex(unsigned index, CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00215">CaBasedCellPopulation.cpp:215</a></div></div>
-<div class="ttc" id="aclassCaBasedCellPopulation_html_aa4b6bf610e5bea188a6995acc661c545"><div class="ttname"><a href="classCaBasedCellPopulation.html#aa4b6bf610e5bea188a6995acc661c545">CaBasedCellPopulation::IsPdeNodeAssociatedWithNonApoptoticCell</a></div><div class="ttdeci">virtual bool IsPdeNodeAssociatedWithNonApoptoticCell(unsigned pdeNodeIndex)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00811">CaBasedCellPopulation.cpp:811</a></div></div>
+<div class="ttc" id="aclassCaBasedCellPopulation_html_aa4b6bf610e5bea188a6995acc661c545"><div class="ttname"><a href="classCaBasedCellPopulation.html#aa4b6bf610e5bea188a6995acc661c545">CaBasedCellPopulation::IsPdeNodeAssociatedWithNonApoptoticCell</a></div><div class="ttdeci">virtual bool IsPdeNodeAssociatedWithNonApoptoticCell(unsigned pdeNodeIndex)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00809">CaBasedCellPopulation.cpp:809</a></div></div>
 <div class="ttc" id="aclassCaBasedCellPopulation_html_aab48780b3c3be2a8eb75e33c5154ff0d"><div class="ttname"><a href="classCaBasedCellPopulation.html#aab48780b3c3be2a8eb75e33c5154ff0d">CaBasedCellPopulation::rGetAvailableSpaces</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; &amp; rGetAvailableSpaces()</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00116">CaBasedCellPopulation.cpp:116</a></div></div>
 <div class="ttc" id="aclassCaBasedCellPopulation_html_ab0282d51975ddf72fd7c68afe155051f"><div class="ttname"><a href="classCaBasedCellPopulation.html#ab0282d51975ddf72fd7c68afe155051f">CaBasedCellPopulation::AcceptPopulationCountWriter</a></div><div class="ttdeci">virtual void AcceptPopulationCountWriter(boost::shared_ptr&lt; AbstractCellPopulationCountWriter&lt; DIM, DIM &gt; &gt; pPopulationCountWriter)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00511">CaBasedCellPopulation.cpp:511</a></div></div>
 <div class="ttc" id="aclassCaBasedCellPopulation_html_abe5777f48811d4fe5b5e965e8c4289ec"><div class="ttname"><a href="classCaBasedCellPopulation.html#abe5777f48811d4fe5b5e965e8c4289ec">CaBasedCellPopulation::mpCaBasedDivisionRule</a></div><div class="ttdeci">boost::shared_ptr&lt; AbstractCaBasedDivisionRule&lt; DIM &gt; &gt; mpCaBasedDivisionRule</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8hpp_source.html#l00084">CaBasedCellPopulation.hpp:84</a></div></div>
@@ -1026,7 +1024,7 @@ $(document).ready(function(){initNavTree('CaBasedCellPopulation_8cpp_source.html
 <div class="ttc" id="aclassCaBasedCellPopulation_html_ac45ee7aea54e8bdfb3b6d92ca6a21c75"><div class="ttname"><a href="classCaBasedCellPopulation.html#ac45ee7aea54e8bdfb3b6d92ca6a21c75">CaBasedCellPopulation::UpdateCellLocations</a></div><div class="ttdeci">void UpdateCellLocations(double dt)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00283">CaBasedCellPopulation.cpp:283</a></div></div>
 <div class="ttc" id="aclassCaBasedCellPopulation_html_ac7a2df6f725835891f5d3ccfb149cf32"><div class="ttname"><a href="classCaBasedCellPopulation.html#ac7a2df6f725835891f5d3ccfb149cf32">CaBasedCellPopulation::AcceptPopulationWriter</a></div><div class="ttdeci">virtual void AcceptPopulationWriter(boost::shared_ptr&lt; AbstractCellPopulationWriter&lt; DIM, DIM &gt; &gt; pPopulationWriter)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00505">CaBasedCellPopulation.cpp:505</a></div></div>
 <div class="ttc" id="aclassCaBasedCellPopulation_html_acb6c815a4b0d103530f96e6f95613a85"><div class="ttname"><a href="classCaBasedCellPopulation.html#acb6c815a4b0d103530f96e6f95613a85">CaBasedCellPopulation::Update</a></div><div class="ttdeci">void Update(bool hasHadBirthsOrDeaths=true)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00500">CaBasedCellPopulation.cpp:500</a></div></div>
-<div class="ttc" id="aclassCaBasedCellPopulation_html_ace8e215905837ad4b13e658fe92ac513"><div class="ttname"><a href="classCaBasedCellPopulation.html#ace8e215905837ad4b13e658fe92ac513">CaBasedCellPopulation::GetCellDataItemAtPdeNode</a></div><div class="ttdeci">virtual double GetCellDataItemAtPdeNode(unsigned pdeNodeIndex, std::string &amp;rVariableName, bool dirichletBoundaryConditionApplies=false, double dirichletBoundaryValue=0.0)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00791">CaBasedCellPopulation.cpp:791</a></div></div>
+<div class="ttc" id="aclassCaBasedCellPopulation_html_ace8e215905837ad4b13e658fe92ac513"><div class="ttname"><a href="classCaBasedCellPopulation.html#ace8e215905837ad4b13e658fe92ac513">CaBasedCellPopulation::GetCellDataItemAtPdeNode</a></div><div class="ttdeci">virtual double GetCellDataItemAtPdeNode(unsigned pdeNodeIndex, std::string &amp;rVariableName, bool dirichletBoundaryConditionApplies=false, double dirichletBoundaryValue=0.0)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00789">CaBasedCellPopulation.cpp:789</a></div></div>
 <div class="ttc" id="aclassCaBasedCellPopulation_html_ad0df9c984d1a2074737588153066b418"><div class="ttname"><a href="classCaBasedCellPopulation.html#ad0df9c984d1a2074737588153066b418">CaBasedCellPopulation::IsCellAssociatedWithADeletedLocation</a></div><div class="ttdeci">bool IsCellAssociatedWithADeletedLocation(CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00494">CaBasedCellPopulation.cpp:494</a></div></div>
 <div class="ttc" id="aclassCaBasedCellPopulation_html_ad7e523128b978fdf89a9d000efec2cfe"><div class="ttname"><a href="classCaBasedCellPopulation.html#ad7e523128b978fdf89a9d000efec2cfe">CaBasedCellPopulation::AcceptPopulationEventWriter</a></div><div class="ttdeci">virtual void AcceptPopulationEventWriter(boost::shared_ptr&lt; AbstractCellPopulationEventWriter&lt; DIM, DIM &gt; &gt; pPopulationEventWriter)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00517">CaBasedCellPopulation.cpp:517</a></div></div>
 <div class="ttc" id="aclassCaBasedCellPopulation_html_adef73da8917fcae2193074e3ce003d81"><div class="ttname"><a href="classCaBasedCellPopulation.html#adef73da8917fcae2193074e3ce003d81">CaBasedCellPopulation::GetNodeCorrespondingToCell</a></div><div class="ttdeci">Node&lt; DIM &gt; * GetNodeCorrespondingToCell(CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="CaBasedCellPopulation_8cpp_source.html#l00197">CaBasedCellPopulation.cpp:197</a></div></div>
@@ -1054,9 +1052,9 @@ $(document).ready(function(){initNavTree('CaBasedCellPopulation_8cpp_source.html
 <div class="ttc" id="aclassSimulationTime_html_ad98b0e76af7583ac1bd8935512aed8f6"><div class="ttname"><a href="classSimulationTime.html#ad98b0e76af7583ac1bd8935512aed8f6">SimulationTime::Instance</a></div><div class="ttdeci">static SimulationTime * Instance()</div><div class="ttdef"><b>Definition</b> <a href="SimulationTime_8cpp_source.html#l00046">SimulationTime.cpp:46</a></div></div>
 <div class="ttc" id="aclassSimulationTime_html_af7911e75485eab15236cf8c35e6a54c1"><div class="ttname"><a href="classSimulationTime.html#af7911e75485eab15236cf8c35e6a54c1">SimulationTime::GetTimeStepsElapsed</a></div><div class="ttdeci">unsigned GetTimeStepsElapsed() const</div><div class="ttdef"><b>Definition</b> <a href="SimulationTime_8cpp_source.html#l00086">SimulationTime.cpp:86</a></div></div>
 <div class="ttc" id="aclassTetrahedralMesh_html"><div class="ttname"><a href="classTetrahedralMesh.html">TetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="TetrahedralMesh_8hpp_source.html#l00064">TetrahedralMesh.hpp:65</a></div></div>
-<div class="ttc" id="aclassVtkMeshWriter_html"><div class="ttname"><a href="classVtkMeshWriter.html">VtkMeshWriter</a></div><div class="ttdef"><b>Definition</b> <a href="VtkMeshWriter_8hpp_source.html#l00071">VtkMeshWriter.hpp:72</a></div></div>
-<div class="ttc" id="aclassVtkMeshWriter_html_a00a862e064b85a5596a4135e1029730b"><div class="ttname"><a href="classVtkMeshWriter.html#a00a862e064b85a5596a4135e1029730b">VtkMeshWriter::AddPointData</a></div><div class="ttdeci">void AddPointData(std::string name, std::vector&lt; double &gt; data)</div><div class="ttdef"><b>Definition</b> <a href="VtkMeshWriter_8cpp_source.html#l00365">VtkMeshWriter.cpp:365</a></div></div>
-<div class="ttc" id="aclassVtkMeshWriter_html_a916bbe019de8e4956d34b365ca7e11ca"><div class="ttname"><a href="classVtkMeshWriter.html#a916bbe019de8e4956d34b365ca7e11ca">VtkMeshWriter::WriteFilesUsingMesh</a></div><div class="ttdeci">void WriteFilesUsingMesh(AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMesh, bool keepOriginalElementIndexing=true)</div><div class="ttdef"><b>Definition</b> <a href="VtkMeshWriter_8cpp_source.html#l00609">VtkMeshWriter.cpp:609</a></div></div>
+<div class="ttc" id="aclassVtkMeshWriter_html"><div class="ttname"><a href="classVtkMeshWriter.html">VtkMeshWriter</a></div><div class="ttdef"><b>Definition</b> <a href="VtkMeshWriter_8hpp_source.html#l00069">VtkMeshWriter.hpp:70</a></div></div>
+<div class="ttc" id="aclassVtkMeshWriter_html_a00a862e064b85a5596a4135e1029730b"><div class="ttname"><a href="classVtkMeshWriter.html#a00a862e064b85a5596a4135e1029730b">VtkMeshWriter::AddPointData</a></div><div class="ttdeci">void AddPointData(std::string name, std::vector&lt; double &gt; data)</div><div class="ttdef"><b>Definition</b> <a href="VtkMeshWriter_8cpp_source.html#l00360">VtkMeshWriter.cpp:360</a></div></div>
+<div class="ttc" id="aclassVtkMeshWriter_html_a916bbe019de8e4956d34b365ca7e11ca"><div class="ttname"><a href="classVtkMeshWriter.html#a916bbe019de8e4956d34b365ca7e11ca">VtkMeshWriter::WriteFilesUsingMesh</a></div><div class="ttdeci">void WriteFilesUsingMesh(AbstractTetrahedralMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMesh, bool keepOriginalElementIndexing=true)</div><div class="ttdef"><b>Definition</b> <a href="VtkMeshWriter_8cpp_source.html#l00604">VtkMeshWriter.cpp:604</a></div></div>
 <div class="ttc" id="aclassdouble_html"><div class="ttname"><a href="classdouble.html">double</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

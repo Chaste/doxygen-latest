@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::e8c2894cf996776c74990bd09dd32f8cbb82acf2</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::152eaefaf02246ef769bd916268f05686539aa51</span>
    </div>
   </td>
  </tr>
@@ -642,524 +642,524 @@ $(document).ready(function(){initNavTree('AbstractCellPopulation_8cpp_source.htm
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>        p_pop_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a4eda5657c983d215b24e7380d3595ab6">CloseFile</a>();</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>    }</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span> </div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span><span class="preprocessor">#ifdef CHASTE_VTK</span></div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    *mpVtkMetaFile &lt;&lt; <span class="stringliteral">&quot;    &lt;/Collection&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    *mpVtkMetaFile &lt;&lt; <span class="stringliteral">&quot;&lt;/VTKFile&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    mpVtkMetaFile-&gt;close();</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>    *mpVtkMetaFile &lt;&lt; <span class="stringliteral">&quot;    &lt;/Collection&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    *mpVtkMetaFile &lt;&lt; <span class="stringliteral">&quot;&lt;/VTKFile&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    mpVtkMetaFile-&gt;close();</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>}</div>
 <div class="foldopen" id="foldopen00510" data-start="{" data-end="}">
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a0beb3797979501fa07fc3f56ca33d515">  510</a></span><span class="preprocessor">#endif </span><span class="comment">//CHASTE_VTK</span></div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>}</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span> </div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00514" data-start="{" data-end="}">
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a21b0ffbec3136ce1a3a2834bf362bfa5">  514</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a21b0ffbec3136ce1a3a2834bf362bfa5">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::OpenWritersFiles</a>(<a class="code hl_class" href="classOutputFileHandler.html">OutputFileHandler</a>&amp; rOutputFileHandler)</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>{</div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><span class="preprocessor">#ifdef CHASTE_VTK</span></div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    mpVtkMetaFile = rOutputFileHandler.<a class="code hl_function" href="classOutputFileHandler.html#a74f4eaf2e89e36084a54c571863b5d60">OpenOutputFile</a>(<span class="stringliteral">&quot;results.pvd&quot;</span>);</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a0beb3797979501fa07fc3f56ca33d515">  510</a></span> </div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00512" data-start="{" data-end="}">
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a21b0ffbec3136ce1a3a2834bf362bfa5">  512</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a21b0ffbec3136ce1a3a2834bf362bfa5">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::OpenWritersFiles</a>(<a class="code hl_class" href="classOutputFileHandler.html">OutputFileHandler</a>&amp; rOutputFileHandler)</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>{</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>    mpVtkMetaFile = rOutputFileHandler.<a class="code hl_function" href="classOutputFileHandler.html#a74f4eaf2e89e36084a54c571863b5d60">OpenOutputFile</a>(<span class="stringliteral">&quot;results.pvd&quot;</span>);</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>    *mpVtkMetaFile &lt;&lt; <span class="stringliteral">&quot;&lt;?xml version=\&quot;1.0\&quot;?&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>    *mpVtkMetaFile &lt;&lt; <span class="stringliteral">&quot;&lt;VTKFile type=\&quot;Collection\&quot; version=\&quot;0.1\&quot; byte_order=\&quot;LittleEndian\&quot; compressor=\&quot;vtkZLibDataCompressor\&quot;&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    *mpVtkMetaFile &lt;&lt; <span class="stringliteral">&quot;    &lt;Collection&gt;\n&quot;</span>;</div>
 <div class="foldopen" id="foldopen00518" data-start="{" data-end="}">
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a18cf6e9fafbdd5ef14ef26b48369b64b">  518</a></span>    *mpVtkMetaFile &lt;&lt; <span class="stringliteral">&quot;&lt;?xml version=\&quot;1.0\&quot;?&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    *mpVtkMetaFile &lt;&lt; <span class="stringliteral">&quot;&lt;VTKFile type=\&quot;Collection\&quot; version=\&quot;0.1\&quot; byte_order=\&quot;LittleEndian\&quot; compressor=\&quot;vtkZLibDataCompressor\&quot;&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    *mpVtkMetaFile &lt;&lt; <span class="stringliteral">&quot;    &lt;Collection&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span><span class="preprocessor">#endif </span><span class="comment">//CHASTE_VTK</span></div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span> </div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    <span class="keywordflow">if</span> (mOutputResultsForChasteVisualizer)</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    {</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>        <span class="keywordflow">if</span> (!HasWriter&lt;NodeLocationWriter&gt;())</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a18cf6e9fafbdd5ef14ef26b48369b64b">  518</a></span> </div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    <span class="keywordflow">if</span> (mOutputResultsForChasteVisualizer)</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    {</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        <span class="keywordflow">if</span> (!HasWriter&lt;NodeLocationWriter&gt;())</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>        {</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>            AddPopulationWriter&lt;NodeLocationWriter&gt;();</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>        }</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>        <span class="keywordflow">if</span> (!HasWriter&lt;BoundaryNodeWriter&gt;())</div>
 <div class="foldopen" id="foldopen00526" data-start="{" data-end="}">
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#afb46691d44f80ce9dc6f3370c2c4a167">  526</a></span>        {</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>            AddPopulationWriter&lt;NodeLocationWriter&gt;();</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>            AddPopulationWriter&lt;BoundaryNodeWriter&gt;();</div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>        }</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        <span class="keywordflow">if</span> (!HasWriter&lt;BoundaryNodeWriter&gt;())</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        <span class="keywordflow">if</span> (!HasWriter&lt;CellProliferativeTypesWriter&gt;())</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>        {</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            AddPopulationWriter&lt;BoundaryNodeWriter&gt;();</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            AddCellWriter&lt;CellProliferativeTypesWriter&gt;();</div>
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        }</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        <span class="keywordflow">if</span> (!HasWriter&lt;CellProliferativeTypesWriter&gt;())</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        <span class="keywordflow">if</span> (!HasWriter&lt;LegacyCellProliferativeTypesWriter&gt;())</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>        {</div>
 <div class="foldopen" id="foldopen00535" data-start="{" data-end="}">
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae367f9e7e7705f5c5cf2a3270f337acd">  535</a></span>            AddCellWriter&lt;CellProliferativeTypesWriter&gt;();</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae367f9e7e7705f5c5cf2a3270f337acd">  535</a></span>            AddCellWriter&lt;LegacyCellProliferativeTypesWriter&gt;();</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>        }</div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        <span class="keywordflow">if</span> (!HasWriter&lt;LegacyCellProliferativeTypesWriter&gt;())</div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>        {</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>            AddCellWriter&lt;LegacyCellProliferativeTypesWriter&gt;();</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>        }</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    }</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span> </div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    <span class="comment">// Open output files for any cell writers</span></div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellWriter.html">AbstractCellWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> cell_writer_t;</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;cell_writer_t&gt; p_cell_writer : mCellWriters)</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    }</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    <span class="comment">// Open output files for any cell writers</span></div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellWriter.html">AbstractCellWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> cell_writer_t;</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;cell_writer_t&gt; p_cell_writer : mCellWriters)</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    {</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>        p_cell_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a68d2bdbba785a62606ed35cc25dd036b">OpenOutputFile</a>(rOutputFileHandler);</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    }</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
 <div class="foldopen" id="foldopen00546" data-start="{" data-end="}">
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a34252001bd8dfcf1b4a4a6ba859b9890">  546</a></span>    {</div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        p_cell_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a68d2bdbba785a62606ed35cc25dd036b">OpenOutputFile</a>(rOutputFileHandler);</div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    }</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    <span class="comment">// Open output files and write headers for any population writers</span></div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a34252001bd8dfcf1b4a4a6ba859b9890">  546</a></span>    <span class="comment">// Open output files and write headers for any population writers</span></div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationWriter.html">AbstractCellPopulationWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> pop_writer_t;</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;pop_writer_t&gt; p_pop_writer : mCellPopulationWriters)</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    {</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        p_pop_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a68d2bdbba785a62606ed35cc25dd036b">OpenOutputFile</a>(rOutputFileHandler);</div>
 <div class="foldopen" id="foldopen00551" data-start="{" data-end="}">
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a6cb825d5c23060ba8aff6904ab1fdad1">  551</a></span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationWriter.html">AbstractCellPopulationWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> pop_writer_t;</div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;pop_writer_t&gt; p_pop_writer : mCellPopulationWriters)</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    {</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>        p_pop_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a68d2bdbba785a62606ed35cc25dd036b">OpenOutputFile</a>(rOutputFileHandler);</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        p_pop_writer-&gt;WriteHeader(<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    }</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a6cb825d5c23060ba8aff6904ab1fdad1">  551</a></span>        p_pop_writer-&gt;WriteHeader(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    }</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span> </div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    <span class="comment">// Open output files and write headers for any population count writers</span></div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationCountWriter.html">AbstractCellPopulationCountWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> count_writer_t;</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;count_writer_t&gt; p_count_writer : mCellPopulationCountWriters)</div>
 <div class="foldopen" id="foldopen00557" data-start="{" data-end="}">
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae22afa97f71f2c52fa421b388b721b6c">  557</a></span> </div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    <span class="comment">// Open output files and write headers for any population count writers</span></div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationCountWriter.html">AbstractCellPopulationCountWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> count_writer_t;</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;count_writer_t&gt; p_count_writer : mCellPopulationCountWriters)</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    {</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>        p_count_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a68d2bdbba785a62606ed35cc25dd036b">OpenOutputFile</a>(rOutputFileHandler);</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>        p_count_writer-&gt;WriteHeader(<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    }</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    <span class="comment">// Open output files and write headers for any population event writers</span></div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationEventWriter.html">AbstractCellPopulationEventWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> event_writer_t;</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;event_writer_t&gt; p_event_writer : mCellPopulationEventWriters)</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    {</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>        p_event_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a68d2bdbba785a62606ed35cc25dd036b">OpenOutputFile</a>(rOutputFileHandler);</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>        p_event_writer-&gt;WriteHeader(<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    }</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>}</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00576" data-start="{" data-end="}">
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a09c74da73d285fa9ed1c81d6a752ae29">  576</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a09c74da73d285fa9ed1c81d6a752ae29">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::OpenRoundRobinWritersFilesForAppend</a>(<a class="code hl_class" href="classOutputFileHandler.html">OutputFileHandler</a>&amp; rOutputFileHandler)</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>{</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellWriter.html">AbstractCellWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> cell_writer_t;</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationWriter.html">AbstractCellPopulationWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> pop_writer_t;</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;cell_writer_t&gt; p_cell_writer : mCellWriters)</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae22afa97f71f2c52fa421b388b721b6c">  557</a></span>    {</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        p_count_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a68d2bdbba785a62606ed35cc25dd036b">OpenOutputFile</a>(rOutputFileHandler);</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        p_count_writer-&gt;WriteHeader(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    }</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span> </div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <span class="comment">// Open output files and write headers for any population event writers</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationEventWriter.html">AbstractCellPopulationEventWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> event_writer_t;</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;event_writer_t&gt; p_event_writer : mCellPopulationEventWriters)</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    {</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>        p_event_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a68d2bdbba785a62606ed35cc25dd036b">OpenOutputFile</a>(rOutputFileHandler);</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        p_event_writer-&gt;WriteHeader(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    }</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>}</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span> </div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00572" data-start="{" data-end="}">
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a09c74da73d285fa9ed1c81d6a752ae29">  572</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a09c74da73d285fa9ed1c81d6a752ae29">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::OpenRoundRobinWritersFilesForAppend</a>(<a class="code hl_class" href="classOutputFileHandler.html">OutputFileHandler</a>&amp; rOutputFileHandler)</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>{</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellWriter.html">AbstractCellWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> cell_writer_t;</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationWriter.html">AbstractCellPopulationWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> pop_writer_t;</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;cell_writer_t&gt; p_cell_writer : mCellWriters)</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    {</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>        p_cell_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a7e359ff6bb1dbb92882e4320e243ce11">OpenOutputFileForAppend</a>(rOutputFileHandler);</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    }</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;pop_writer_t&gt; p_pop_writer : mCellPopulationWriters)</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    {</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        p_cell_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a7e359ff6bb1dbb92882e4320e243ce11">OpenOutputFileForAppend</a>(rOutputFileHandler);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        p_pop_writer-&gt;OpenOutputFileForAppend(rOutputFileHandler);</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    }</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    <span class="keywordflow">for</span> (boost::shared_ptr&lt;pop_writer_t&gt; p_pop_writer : mCellPopulationWriters)</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    {</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>        p_pop_writer-&gt;OpenOutputFileForAppend(rOutputFileHandler);</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    }</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>}</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>}</div>
 </div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00591" data-start="{" data-end="}">
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a3692584202bafe904789e02c2088fc2a">  591</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a3692584202bafe904789e02c2088fc2a">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::WriteResultsToFiles</a>(<span class="keyword">const</span> std::string&amp; rDirectory)</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>{</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellWriter.html">AbstractCellWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> cell_writer_t;</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationWriter.html">AbstractCellPopulationWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> pop_writer_t;</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    <a class="code hl_class" href="classOutputFileHandler.html">OutputFileHandler</a> output_file_handler(rDirectory, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    <span class="keywordflow">if</span> (!(mCellWriters.empty() &amp;&amp; mCellPopulationWriters.empty() &amp;&amp; mCellPopulationCountWriters.empty()))</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    {</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>        <span class="comment">// An ordering must be specified for cell mutation states and cell proliferative types</span></div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>        SetDefaultCellMutationStateAndProliferativeTypeOrdering();</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span> </div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00587" data-start="{" data-end="}">
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a3692584202bafe904789e02c2088fc2a">  587</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a3692584202bafe904789e02c2088fc2a">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::WriteResultsToFiles</a>(<span class="keyword">const</span> std::string&amp; rDirectory)</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>{</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellWriter.html">AbstractCellWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> cell_writer_t;</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationWriter.html">AbstractCellPopulationWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> pop_writer_t;</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    <a class="code hl_class" href="classOutputFileHandler.html">OutputFileHandler</a> output_file_handler(rDirectory, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <span class="keywordflow">if</span> (!(mCellWriters.empty() &amp;&amp; mCellPopulationWriters.empty() &amp;&amp; mCellPopulationCountWriters.empty()))</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    {</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        <span class="comment">// An ordering must be specified for cell mutation states and cell proliferative types</span></div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>        SetDefaultCellMutationStateAndProliferativeTypeOrdering();</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span> </div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        <a class="code hl_function" href="classPetscTools.html#ac4d633c0ac0dc40cb02d486b1a1672e1">PetscTools::BeginRoundRobin</a>();</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>        {</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>            OpenRoundRobinWritersFilesForAppend(output_file_handler);</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>        <a class="code hl_function" href="classPetscTools.html#ac4d633c0ac0dc40cb02d486b1a1672e1">PetscTools::BeginRoundRobin</a>();</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>        {</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>            OpenRoundRobinWritersFilesForAppend(output_file_handler);</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span> </div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>            <span class="comment">// The master process writes time stamps</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>            <span class="comment">// The master process writes time stamps</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>            {</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>                <span class="keywordflow">for</span> (boost::shared_ptr&lt;cell_writer_t&gt; p_cell_writer : mCellWriters)</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>                {</div>
 <div class="foldopen" id="foldopen00607" data-start="{" data-end="}">
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a5aab0c3bda61e45b2beeec8f89e8820b">  607</a></span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>            {</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>                <span class="keywordflow">for</span> (boost::shared_ptr&lt;cell_writer_t&gt; p_cell_writer : mCellWriters)</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a5aab0c3bda61e45b2beeec8f89e8820b">  607</a></span>                    p_cell_writer-&gt;WriteTimeStamp();</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>                }</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>                <span class="keywordflow">for</span> (boost::shared_ptr&lt;pop_writer_t&gt; p_pop_writer : mCellPopulationWriters)</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>                {</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>                    p_cell_writer-&gt;WriteTimeStamp();</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>                    p_pop_writer-&gt;WriteTimeStamp();</div>
 <div class="foldopen" id="foldopen00612" data-start="{" data-end="}">
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#abeac136a25c6c12ff3aac7529c7ead5c">  612</a></span>                }</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>                <span class="keywordflow">for</span> (boost::shared_ptr&lt;pop_writer_t&gt; p_pop_writer : mCellPopulationWriters)</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>                {</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>                    p_pop_writer-&gt;WriteTimeStamp();</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>                }</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>            }</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>            <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;boost::shared_ptr&lt;<a class="code hl_class" href="classAbstractCellPopulationWriter.html">AbstractCellPopulationWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> &gt; &gt;::iterator pop_writer_iter = mCellPopulationWriters.begin();</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>                 pop_writer_iter != mCellPopulationWriters.end();</div>
 <div class="foldopen" id="foldopen00617" data-start="{" data-end="}">
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ad415909aab3b62daa4adc6b36e4cfa5e">  617</a></span>            }</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>            <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;boost::shared_ptr&lt;<a class="code hl_class" href="classAbstractCellPopulationWriter.html">AbstractCellPopulationWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> &gt; &gt;::iterator pop_writer_iter = mCellPopulationWriters.begin();</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>                 pop_writer_iter != mCellPopulationWriters.end();</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>                 ++pop_writer_iter)</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>            {</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                AcceptPopulationWriter(*pop_writer_iter);</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            }</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>            AcceptCellWritersAcrossPopulation();</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>            <span class="comment">// The top-most process adds a newline</span></div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a45d6cfe320d8266756c20a38de1e9a73">PetscTools::AmTopMost</a>())</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>            {</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>                <span class="keywordflow">for</span> (boost::shared_ptr&lt;cell_writer_t&gt; p_cell_writer : mCellWriters)</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ad415909aab3b62daa4adc6b36e4cfa5e">  617</a></span>                 ++pop_writer_iter)</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>            {</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>                AcceptPopulationWriter(*pop_writer_iter);</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>            }</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>            AcceptCellWritersAcrossPopulation();</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span> </div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            <span class="comment">// The top-most process adds a newline</span></div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a45d6cfe320d8266756c20a38de1e9a73">PetscTools::AmTopMost</a>())</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>            {</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>                <span class="keywordflow">for</span> (boost::shared_ptr&lt;cell_writer_t&gt; p_cell_writer : mCellWriters)</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>                {</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>                    p_cell_writer-&gt;WriteNewline();</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>                }</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>                <span class="keywordflow">for</span> (boost::shared_ptr&lt;pop_writer_t&gt; p_pop_writer : mCellPopulationWriters)</div>
 <div class="foldopen" id="foldopen00632" data-start="{" data-end="}">
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a21b0ffbec3136ce1a3a2834bf362bfa5">  632</a></span>                {</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>                    p_cell_writer-&gt;WriteNewline();</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>                    p_pop_writer-&gt;WriteNewline();</div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>                }</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                <span class="keywordflow">for</span> (boost::shared_ptr&lt;pop_writer_t&gt; p_pop_writer : mCellPopulationWriters)</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>                {</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>                    p_pop_writer-&gt;WriteNewline();</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>                }</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>            }</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>            }</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>            CloseRoundRobinWritersFiles();</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        }</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>        <a class="code hl_function" href="classPetscTools.html#a97aa7131d15f87f813e9367140301644">PetscTools::EndRoundRobin</a>();</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
 <div class="foldopen" id="foldopen00640" data-start="{" data-end="}">
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a74f70fdfb45402b8e2671229edda12b7">  640</a></span>            CloseRoundRobinWritersFiles();</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        }</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        <a class="code hl_function" href="classPetscTools.html#a97aa7131d15f87f813e9367140301644">PetscTools::EndRoundRobin</a>();</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>        <span class="comment">// Outside the round robin, deal with population count writers</span></div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationCountWriter.html">AbstractCellPopulationCountWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> count_writer_t;</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a74f70fdfb45402b8e2671229edda12b7">  640</a></span>        <span class="comment">// Outside the round robin, deal with population count writers</span></div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationCountWriter.html">AbstractCellPopulationCountWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> count_writer_t;</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>        {</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>            <span class="comment">// Open mCellPopulationCountWriters in append mode for writing, and write time stamps</span></div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>            <span class="keywordflow">for</span> (boost::shared_ptr&lt;count_writer_t&gt; p_count_writer : mCellPopulationCountWriters)</div>
 <div class="foldopen" id="foldopen00647" data-start="{" data-end="}">
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a3692584202bafe904789e02c2088fc2a">  647</a></span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>        {</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>            <span class="comment">// Open mCellPopulationCountWriters in append mode for writing, and write time stamps</span></div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>            <span class="keywordflow">for</span> (boost::shared_ptr&lt;count_writer_t&gt; p_count_writer : mCellPopulationCountWriters)</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>            {</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>                p_count_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a7e359ff6bb1dbb92882e4320e243ce11">OpenOutputFileForAppend</a>(output_file_handler);</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>                p_count_writer-&gt;WriteTimeStamp();</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>            }</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>        }</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;boost::shared_ptr&lt;<a class="code hl_class" href="classAbstractCellPopulationCountWriter.html">AbstractCellPopulationCountWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> &gt; &gt;::iterator count_writer_iter = mCellPopulationCountWriters.begin();</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>             count_writer_iter != mCellPopulationCountWriters.end();</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>             ++count_writer_iter)</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        {</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>            AcceptPopulationCountWriter(*count_writer_iter);</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>        }</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>        {</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>            <span class="comment">// Add a newline and close any output files</span></div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>            <span class="keywordflow">for</span> (boost::shared_ptr&lt;count_writer_t&gt; p_count_writer : mCellPopulationCountWriters)</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>            {</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>                p_count_writer-&gt;WriteNewline();</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>                p_count_writer-&gt;CloseFile();</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>            }</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        }</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a3692584202bafe904789e02c2088fc2a">  647</a></span>            {</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>                p_count_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a7e359ff6bb1dbb92882e4320e243ce11">OpenOutputFileForAppend</a>(output_file_handler);</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>                p_count_writer-&gt;WriteTimeStamp();</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>            }</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>        }</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;boost::shared_ptr&lt;<a class="code hl_class" href="classAbstractCellPopulationCountWriter.html">AbstractCellPopulationCountWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> &gt; &gt;::iterator count_writer_iter = mCellPopulationCountWriters.begin();</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>             count_writer_iter != mCellPopulationCountWriters.end();</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>             ++count_writer_iter)</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>        {</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>            AcceptPopulationCountWriter(*count_writer_iter);</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>        }</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>        {</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>            <span class="comment">// Add a newline and close any output files</span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>            <span class="keywordflow">for</span> (boost::shared_ptr&lt;count_writer_t&gt; p_count_writer : mCellPopulationCountWriters)</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>            {</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>                p_count_writer-&gt;WriteNewline();</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>                p_count_writer-&gt;CloseFile();</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>            }</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>        }</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        <span class="comment">// Outside the round robin, deal with population event writers</span></div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationEventWriter.html">AbstractCellPopulationEventWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> event_writer_t;</div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span> </div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span> </div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>        <span class="comment">// Outside the round robin, deal with population event writers</span></div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        <span class="keyword">typedef</span> <a class="code hl_class" href="classAbstractCellPopulationEventWriter.html">AbstractCellPopulationEventWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> event_writer_t;</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span> </div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>        {</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>            <span class="comment">// Open mCellPopulationCountWriters in append mode for writing</span></div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>            <span class="keywordflow">for</span> (boost::shared_ptr&lt;event_writer_t&gt; p_event_writer : mCellPopulationEventWriters)</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>            {</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>                p_event_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a7e359ff6bb1dbb92882e4320e243ce11">OpenOutputFileForAppend</a>(output_file_handler);</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>            }</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        }</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;boost::shared_ptr&lt;<a class="code hl_class" href="classAbstractCellPopulationEventWriter.html">AbstractCellPopulationEventWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> &gt; &gt;::iterator event_writer_iter = mCellPopulationEventWriters.begin();</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>             event_writer_iter != mCellPopulationEventWriters.end();</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>             ++event_writer_iter)</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        {</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>            AcceptPopulationEventWriter(*event_writer_iter);</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        }</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        {</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>            <span class="comment">// Close any output files</span></div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>        {</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>            <span class="comment">// Open mCellPopulationCountWriters in append mode for writing</span></div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>            <span class="keywordflow">for</span> (boost::shared_ptr&lt;event_writer_t&gt; p_event_writer : mCellPopulationEventWriters)</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>            {</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>                p_event_writer-&gt;<a class="code hl_function" href="classAbstractCellBasedWriter.html#a7e359ff6bb1dbb92882e4320e243ce11">OpenOutputFileForAppend</a>(output_file_handler);</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>            }</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>        }</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;boost::shared_ptr&lt;<a class="code hl_class" href="classAbstractCellPopulationEventWriter.html">AbstractCellPopulationEventWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> &gt; &gt;::iterator event_writer_iter = mCellPopulationEventWriters.begin();</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>             event_writer_iter != mCellPopulationEventWriters.end();</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>             ++event_writer_iter)</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        {</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>            AcceptPopulationEventWriter(*event_writer_iter);</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        }</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classPetscTools.html#a30cf1b3576c5dd99556f6b87a05be7cc">PetscTools::AmMaster</a>())</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>        {</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            <span class="comment">// Close any output files</span></div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>            <span class="keywordflow">for</span> (boost::shared_ptr&lt;event_writer_t&gt; p_event_writer : mCellPopulationEventWriters)</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>            {</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>                p_event_writer-&gt;CloseFile();</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>            }</div>
 <div class="foldopen" id="foldopen00695" data-start="{" data-end="}">
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a094911a02f34b8e1473fc913db84b7cc">  695</a></span>            <span class="keywordflow">for</span> (boost::shared_ptr&lt;event_writer_t&gt; p_event_writer : mCellPopulationEventWriters)</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>            {</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>                p_event_writer-&gt;CloseFile();</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>            }</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        }</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    }</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span> </div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    <span class="comment">// VTK can only be written in 2 or 3 dimensions</span></div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>    <span class="keywordflow">if</span> (SPACE_DIM &gt; 1)</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a094911a02f34b8e1473fc913db84b7cc">  695</a></span>        }</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    }</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    <span class="comment">// VTK can only be written in 2 or 3 dimensions</span></div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>    <span class="keywordflow">if</span> (SPACE_DIM &gt; 1)</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    {</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>       WriteVtkResultsToFile(rDirectory);</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    }</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>}</div>
 <div class="foldopen" id="foldopen00704" data-start="{" data-end="}">
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aefca486b62fc6cd79c5fc2f35f3b72cc">  704</a></span>    {</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>       WriteVtkResultsToFile(rDirectory);</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>    }</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>}</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span> </div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aefca486b62fc6cd79c5fc2f35f3b72cc">  704</a></span> </div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00706" data-start="{" data-end="}">
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#af6eb8d5010208e10cfe575e818109b88">  706</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#af6eb8d5010208e10cfe575e818109b88">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::AcceptCellWritersAcrossPopulation</a>()</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>{</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
 <div class="foldopen" id="foldopen00709" data-start="{" data-end="}">
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a06e19b1d1d2994ddf6dd5d49480b703f">  709</a></span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00710" data-start="{" data-end="}">
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#af6eb8d5010208e10cfe575e818109b88">  710</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#af6eb8d5010208e10cfe575e818109b88">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::AcceptCellWritersAcrossPopulation</a>()</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>{</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>         cell_iter != this-&gt;End();</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>         ++cell_iter)</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>    {</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a06e19b1d1d2994ddf6dd5d49480b703f">  709</a></span>         cell_iter != this-&gt;End();</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>         ++cell_iter)</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    {</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;boost::shared_ptr&lt;<a class="code hl_class" href="classAbstractCellWriter.html">AbstractCellWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> &gt; &gt;::iterator cell_writer_iter = mCellWriters.begin();</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>             cell_writer_iter != mCellWriters.end();</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>             ++cell_writer_iter)</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>        {</div>
 <div class="foldopen" id="foldopen00716" data-start="{" data-end="}">
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a0c7f255b449556385c2035bde5723c2a">  716</a></span>        <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;boost::shared_ptr&lt;<a class="code hl_class" href="classAbstractCellWriter.html">AbstractCellWriter&lt;ELEMENT_DIM, SPACE_DIM&gt;</a> &gt; &gt;::iterator cell_writer_iter = mCellWriters.begin();</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>             cell_writer_iter != mCellWriters.end();</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>             ++cell_writer_iter)</div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>        {</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>            AcceptCellWriter(*cell_writer_iter, *cell_iter);</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        }</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>    }</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a0c7f255b449556385c2035bde5723c2a">  716</a></span>            AcceptCellWriter(*cell_writer_iter, *cell_iter);</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>        }</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>    }</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>}</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span> </div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00722" data-start="{" data-end="}">
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aac78c3a843150474e73cf0d85fc59138">  722</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#aac78c3a843150474e73cf0d85fc59138">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::OutputCellPopulationInfo</a>(out_stream&amp; rParamsFile)</div>
 <div class="foldopen" id="foldopen00723" data-start="{" data-end="}">
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#adf7c6e70201108ef83009cccdb49e41b">  723</a></span>}</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span> </div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00726" data-start="{" data-end="}">
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aac78c3a843150474e73cf0d85fc59138">  726</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#aac78c3a843150474e73cf0d85fc59138">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::OutputCellPopulationInfo</a>(out_stream&amp; rParamsFile)</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>{</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#adf7c6e70201108ef83009cccdb49e41b">  723</a></span>{</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    std::string cell_population_type = GetIdentifier();</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span> </div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;&quot;</span> &lt;&lt; cell_population_type &lt;&lt; <span class="stringliteral">&quot;&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    OutputCellPopulationParameters(rParamsFile);</div>
 <div class="foldopen" id="foldopen00728" data-start="{" data-end="}">
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a42d54f79a59280578ba75c7579e9f694">  728</a></span>    std::string cell_population_type = GetIdentifier();</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span> </div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;&quot;</span> &lt;&lt; cell_population_type &lt;&lt; <span class="stringliteral">&quot;&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    OutputCellPopulationParameters(rParamsFile);</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;/&quot;</span> &lt;&lt; cell_population_type &lt;&lt; <span class="stringliteral">&quot;&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;CellCycleModels&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span> </div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    std::set&lt;std::string&gt; unique_cell_cycle_models;</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    std::vector&lt;CellPtr&gt; first_cell_with_unique_CCM;</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a42d54f79a59280578ba75c7579e9f694">  728</a></span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;/&quot;</span> &lt;&lt; cell_population_type &lt;&lt; <span class="stringliteral">&quot;&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;CellCycleModels&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    std::set&lt;std::string&gt; unique_cell_cycle_models;</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    std::vector&lt;CellPtr&gt; first_cell_with_unique_CCM;</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>         cell_iter != this-&gt;End();</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>         ++cell_iter)</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    {</div>
 <div class="foldopen" id="foldopen00744" data-start="{" data-end="}">
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ac71ec2b24bf494e91a9dfffaa2f6e302">  744</a></span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>         cell_iter != this-&gt;End();</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>         ++cell_iter)</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    {</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>        std::string identifier = cell_iter-&gt;GetCellCycleModel()-&gt;GetIdentifier();</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>        <span class="keywordflow">if</span> (unique_cell_cycle_models.count(identifier) == 0)</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>        {</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>            unique_cell_cycle_models.insert(identifier);</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ac71ec2b24bf494e91a9dfffaa2f6e302">  744</a></span>        std::string identifier = cell_iter-&gt;GetCellCycleModel()-&gt;GetIdentifier();</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>        <span class="keywordflow">if</span> (unique_cell_cycle_models.count(identifier) == 0)</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>        {</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>            unique_cell_cycle_models.insert(identifier);</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>            first_cell_with_unique_CCM.push_back((*cell_iter));</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>        }</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    }</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span> </div>
 <div class="foldopen" id="foldopen00752" data-start="{" data-end="}">
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#abb1402cb170d9da92f05a8f19cba3e46">  752</a></span>            first_cell_with_unique_CCM.push_back((*cell_iter));</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>        }</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    }</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span> </div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    <span class="comment">// Loop over unique cell-cycle models</span></div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;first_cell_with_unique_CCM.size(); i++)</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    {</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#abb1402cb170d9da92f05a8f19cba3e46">  752</a></span>    <span class="comment">// Loop over unique cell-cycle models</span></div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;first_cell_with_unique_CCM.size(); i++)</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    {</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>        <span class="comment">// Output cell-cycle model details</span></div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>        first_cell_with_unique_CCM[i]-&gt;GetCellCycleModel()-&gt;OutputCellCycleModelInfo(rParamsFile);</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    }</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;/CellCycleModels&gt;\n&quot;</span>;</div>
 <div class="foldopen" id="foldopen00759" data-start="{" data-end="}">
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aac78c3a843150474e73cf0d85fc59138">  759</a></span>        <span class="comment">// Output cell-cycle model details</span></div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>        first_cell_with_unique_CCM[i]-&gt;GetCellCycleModel()-&gt;OutputCellCycleModelInfo(rParamsFile);</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    }</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;/CellCycleModels&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span> </div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;SrnModels&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span> </div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    std::set&lt;std::string&gt; unique_srn_models;</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    std::vector&lt;CellPtr&gt; first_cell_with_unique_SRN;</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>         cell_iter != this-&gt;End();</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>         ++cell_iter)</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    {</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>        std::string identifier = cell_iter-&gt;GetSrnModel()-&gt;GetIdentifier();</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>        <span class="keywordflow">if</span> (unique_srn_models.count(identifier) == 0)</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>        {</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>            unique_srn_models.insert(identifier);</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>            first_cell_with_unique_SRN.push_back((*cell_iter));</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        }</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aac78c3a843150474e73cf0d85fc59138">  759</a></span> </div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;SrnModels&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span> </div>
+<div class="foldopen" id="foldopen00769" data-start="{" data-end="}">
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a500f21753894d9c6fcf394344098e9b8">  769</a></span>    std::set&lt;std::string&gt; unique_srn_models;</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    std::vector&lt;CellPtr&gt; first_cell_with_unique_SRN;</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>         cell_iter != this-&gt;End();</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>         ++cell_iter)</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    {</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>        std::string identifier = cell_iter-&gt;GetSrnModel()-&gt;GetIdentifier();</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>        <span class="keywordflow">if</span> (unique_srn_models.count(identifier) == 0)</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>        {</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>            unique_srn_models.insert(identifier);</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>            first_cell_with_unique_SRN.push_back((*cell_iter));</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>        }</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    }</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span> </div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <span class="comment">// Loop over unique SRN models</span></div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;first_cell_with_unique_SRN.size(); i++)</div>
 <div class="foldopen" id="foldopen00785" data-start="{" data-end="}">
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a5db4888c0abdd6e71e9288c59b417e77">  785</a></span>    }</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span> </div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    <span class="comment">// Loop over unique SRN models</span></div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;first_cell_with_unique_SRN.size(); i++)</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    {</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a5db4888c0abdd6e71e9288c59b417e77">  785</a></span>    {</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>        <span class="comment">// Output SRN model details</span></div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>        first_cell_with_unique_SRN[i]-&gt;GetSrnModel()-&gt;OutputSrnModelInfo(rParamsFile);</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    }</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span> </div>
 <div class="foldopen" id="foldopen00790" data-start="{" data-end="}">
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aa5a30307be4d20d9e888b6a6b56989db">  790</a></span>        <span class="comment">// Output SRN model details</span></div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        first_cell_with_unique_SRN[i]-&gt;GetSrnModel()-&gt;OutputSrnModelInfo(rParamsFile);</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    }</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span> </div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;/SrnModels&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>}</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span> </div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00798" data-start="{" data-end="}">
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a500f21753894d9c6fcf394344098e9b8">  798</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a500f21753894d9c6fcf394344098e9b8">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::OutputCellPopulationParameters</a>(out_stream&amp; rParamsFile)</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>{</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t\t&lt;OutputResultsForChasteVisualizer&gt;&quot;</span> &lt;&lt; mOutputResultsForChasteVisualizer &lt;&lt; <span class="stringliteral">&quot;&lt;/OutputResultsForChasteVisualizer&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>}</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aa5a30307be4d20d9e888b6a6b56989db">  790</a></span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t&lt;/SrnModels&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>}</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span> </div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00794" data-start="{" data-end="}">
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a500f21753894d9c6fcf394344098e9b8">  794</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a500f21753894d9c6fcf394344098e9b8">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::OutputCellPopulationParameters</a>(out_stream&amp; rParamsFile)</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>{</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    *rParamsFile &lt;&lt; <span class="stringliteral">&quot;\t\t&lt;OutputResultsForChasteVisualizer&gt;&quot;</span> &lt;&lt; mOutputResultsForChasteVisualizer &lt;&lt; <span class="stringliteral">&quot;&lt;/OutputResultsForChasteVisualizer&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>}</div>
 </div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span> </div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00804" data-start="{" data-end="}">
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a5db4888c0abdd6e71e9288c59b417e77">  804</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a5db4888c0abdd6e71e9288c59b417e77">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::SimulationSetupHook</a>(<a class="code hl_class" href="classAbstractCellBasedSimulation.html">AbstractCellBasedSimulation&lt;ELEMENT_DIM, SPACE_DIM&gt;</a>* pSimulation)</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>{</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>}</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span> </div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00800" data-start="{" data-end="}">
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a5db4888c0abdd6e71e9288c59b417e77">  800</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a5db4888c0abdd6e71e9288c59b417e77">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::SimulationSetupHook</a>(<a class="code hl_class" href="classAbstractCellBasedSimulation.html">AbstractCellBasedSimulation&lt;ELEMENT_DIM, SPACE_DIM&gt;</a>* pSimulation)</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>{</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>}</div>
 </div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span> </div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00809" data-start="{" data-end="}">
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aa5a30307be4d20d9e888b6a6b56989db">  809</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAbstractCellPopulation.html#aa5a30307be4d20d9e888b6a6b56989db">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::GetOutputResultsForChasteVisualizer</a>()</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>{</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="keywordflow">return</span> mOutputResultsForChasteVisualizer;</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>}</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span> </div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00805" data-start="{" data-end="}">
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aa5a30307be4d20d9e888b6a6b56989db">  805</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAbstractCellPopulation.html#aa5a30307be4d20d9e888b6a6b56989db">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::GetOutputResultsForChasteVisualizer</a>()</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>{</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    <span class="keywordflow">return</span> mOutputResultsForChasteVisualizer;</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>}</div>
 </div>
 </div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span> </div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00815" data-start="{" data-end="}">
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a36186ff40149c44a01a890b1e90a1a1f">  815</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a36186ff40149c44a01a890b1e90a1a1f">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::SetOutputResultsForChasteVisualizer</a>(<span class="keywordtype">bool</span> outputResultsForChasteVisualizer)</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>{</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    mOutputResultsForChasteVisualizer = outputResultsForChasteVisualizer;</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>}</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span> </div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00811" data-start="{" data-end="}">
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a36186ff40149c44a01a890b1e90a1a1f">  811</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a36186ff40149c44a01a890b1e90a1a1f">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::SetOutputResultsForChasteVisualizer</a>(<span class="keywordtype">bool</span> outputResultsForChasteVisualizer)</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>{</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>    mOutputResultsForChasteVisualizer = outputResultsForChasteVisualizer;</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>}</div>
 </div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span> </div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00821" data-start="{" data-end="}">
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a094911a02f34b8e1473fc913db84b7cc">  821</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="classAbstractCellPopulation.html#a094911a02f34b8e1473fc913db84b7cc">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::GetDivisionsInformation</a>()</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>{</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>    <span class="keywordflow">return</span> mDivisionsInformation;</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>}</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span> </div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00817" data-start="{" data-end="}">
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a094911a02f34b8e1473fc913db84b7cc">  817</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="classAbstractCellPopulation.html#a094911a02f34b8e1473fc913db84b7cc">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::GetDivisionsInformation</a>()</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>{</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>    <span class="keywordflow">return</span> mDivisionsInformation;</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>}</div>
 </div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00826" data-start="{" data-end="}">
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aefca486b62fc6cd79c5fc2f35f3b72cc">  826</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#aefca486b62fc6cd79c5fc2f35f3b72cc">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::AddDivisionInformation</a>(std::string divisionInformation)</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>{</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    mDivisionsInformation.push_back(divisionInformation);</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>}</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00822" data-start="{" data-end="}">
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#aefca486b62fc6cd79c5fc2f35f3b72cc">  822</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#aefca486b62fc6cd79c5fc2f35f3b72cc">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::AddDivisionInformation</a>(std::string divisionInformation)</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>{</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>    mDivisionsInformation.push_back(divisionInformation);</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>}</div>
 </div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span> </div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00832" data-start="{" data-end="}">
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a06e19b1d1d2994ddf6dd5d49480b703f">  832</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a06e19b1d1d2994ddf6dd5d49480b703f">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::ClearDivisionsInformation</a>()</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>{</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>    mDivisionsInformation.clear();</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>}</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span> </div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00828" data-start="{" data-end="}">
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a06e19b1d1d2994ddf6dd5d49480b703f">  828</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a06e19b1d1d2994ddf6dd5d49480b703f">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::ClearDivisionsInformation</a>()</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>{</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>    mDivisionsInformation.clear();</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>}</div>
 </div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span> </div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00838" data-start="{" data-end="}">
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a0c7f255b449556385c2035bde5723c2a">  838</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="classAbstractCellPopulation.html#a0c7f255b449556385c2035bde5723c2a">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::GetRemovalsInformation</a>()</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>{</div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="keywordflow">return</span> mRemovalsInformation;</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>}</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span> </div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00834" data-start="{" data-end="}">
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a0c7f255b449556385c2035bde5723c2a">  834</a></span>std::vector&lt;std::string&gt; <a class="code hl_function" href="classAbstractCellPopulation.html#a0c7f255b449556385c2035bde5723c2a">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::GetRemovalsInformation</a>()</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>{</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>    <span class="keywordflow">return</span> mRemovalsInformation;</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>}</div>
 </div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00844" data-start="{" data-end="}">
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#adf7c6e70201108ef83009cccdb49e41b">  844</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#adf7c6e70201108ef83009cccdb49e41b">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::AddRemovalInformation</a>(std::string removalInformation)</div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>{</div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    mRemovalsInformation.push_back(removalInformation);</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>}</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span> </div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00840" data-start="{" data-end="}">
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#adf7c6e70201108ef83009cccdb49e41b">  840</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#adf7c6e70201108ef83009cccdb49e41b">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::AddRemovalInformation</a>(std::string removalInformation)</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>{</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>    mRemovalsInformation.push_back(removalInformation);</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>}</div>
 </div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00850" data-start="{" data-end="}">
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a42d54f79a59280578ba75c7579e9f694">  850</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a42d54f79a59280578ba75c7579e9f694">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::ClearRemovalsInformation</a>()</div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>{</div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>    mRemovalsInformation.clear();</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>}</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span> </div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00846" data-start="{" data-end="}">
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a42d54f79a59280578ba75c7579e9f694">  846</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a42d54f79a59280578ba75c7579e9f694">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::ClearRemovalsInformation</a>()</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>{</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>    mRemovalsInformation.clear();</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>}</div>
 </div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span> </div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00856" data-start="{" data-end="}">
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a8427c3389e99653b1f0467378ef0ec2f">  856</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a8427c3389e99653b1f0467378ef0ec2f">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::GenerateRemovalInformation</a>(CellPtr pCell, std::string killerInfo)</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>{</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    <span class="comment">//If necessary store the information about the cell removal</span></div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>    c_vector&lt;double, SPACE_DIM&gt; cell_location = GetLocationOfCellCentre(pCell);</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>    <span class="keywordflow">if</span> (HasWriter&lt;CellRemovalLocationsWriter&gt;())</div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>    {</div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>        std::stringstream removal_info;</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>        removal_info &lt;&lt; <a class="code hl_function" href="classSimulationTime.html#ad98b0e76af7583ac1bd8935512aed8f6">SimulationTime::Instance</a>()-&gt;<a class="code hl_function" href="classSimulationTime.html#a4261f2fa497493318b9101a82f7d7fd6">GetTime</a>() &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; SPACE_DIM; i++)</div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>        {</div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>            removal_info &lt;&lt; cell_location[i] &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>        }</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>        removal_info &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; pCell-&gt;GetAge() &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; pCell-&gt;GetCellId() &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; killerInfo &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span> </div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00852" data-start="{" data-end="}">
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a8427c3389e99653b1f0467378ef0ec2f">  852</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a8427c3389e99653b1f0467378ef0ec2f">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::GenerateRemovalInformation</a>(CellPtr pCell, std::string killerInfo)</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>{</div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>    <span class="comment">//If necessary store the information about the cell removal</span></div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>    c_vector&lt;double, SPACE_DIM&gt; cell_location = GetLocationOfCellCentre(pCell);</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>    <span class="keywordflow">if</span> (HasWriter&lt;CellRemovalLocationsWriter&gt;())</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    {</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>        std::stringstream removal_info;</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>        removal_info &lt;&lt; <a class="code hl_function" href="classSimulationTime.html#ad98b0e76af7583ac1bd8935512aed8f6">SimulationTime::Instance</a>()-&gt;<a class="code hl_function" href="classSimulationTime.html#a4261f2fa497493318b9101a82f7d7fd6">GetTime</a>() &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; SPACE_DIM; i++)</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>        {</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>            removal_info &lt;&lt; cell_location[i] &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>        }</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>        removal_info &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; pCell-&gt;GetAge() &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; pCell-&gt;GetCellId() &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span> &lt;&lt; killerInfo &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>;</div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span> </div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        AddRemovalInformation(removal_info.str());</div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>    }</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>}</div>
+</div>
 <div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span> </div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>        AddRemovalInformation(removal_info.str());</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>    }</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>}</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00871" data-start="{" data-end="}">
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ac71ec2b24bf494e91a9dfffaa2f6e302">  871</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#ac71ec2b24bf494e91a9dfffaa2f6e302">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::KillCell</a>(CellPtr pCell, std::string killerInfo)</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>{</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>    <span class="comment">//If necessary store the information about the cell removal</span></div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>    GenerateRemovalInformation(pCell, killerInfo);</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span> </div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>    <span class="comment">//Mark cell as dead</span></div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>    pCell-&gt;Kill();</div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>}</div>
 </div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span> </div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00875" data-start="{" data-end="}">
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ac71ec2b24bf494e91a9dfffaa2f6e302">  875</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#ac71ec2b24bf494e91a9dfffaa2f6e302">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::KillCell</a>(CellPtr pCell, std::string killerInfo)</div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>{</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>    <span class="comment">//If necessary store the information about the cell removal</span></div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>    GenerateRemovalInformation(pCell, killerInfo);</div>
 <div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span> </div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>    <span class="comment">//Mark cell as dead</span></div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>    pCell-&gt;Kill();</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>}</div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00881" data-start="{" data-end="}">
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#abb1402cb170d9da92f05a8f19cba3e46">  881</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#abb1402cb170d9da92f05a8f19cba3e46">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::StartApoptosisOnCell</a>(CellPtr pCell, std::string killerInfo)</div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>{</div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>    <span class="comment">//If necessary store the information about the cell removal</span></div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>    GenerateRemovalInformation(pCell, killerInfo);</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span> </div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>    <span class="comment">//Mark cell as Apoptotic</span></div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>    pCell-&gt;StartApoptosis();</div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>}</div>
 </div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span> </div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00885" data-start="{" data-end="}">
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#abb1402cb170d9da92f05a8f19cba3e46">  885</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classAbstractCellPopulation.html#abb1402cb170d9da92f05a8f19cba3e46">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::StartApoptosisOnCell</a>(CellPtr pCell, std::string killerInfo)</div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>{</div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>    <span class="comment">//If necessary store the information about the cell removal</span></div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>    GenerateRemovalInformation(pCell, killerInfo);</div>
 <div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span> </div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>    <span class="comment">//Mark cell as Apoptotic</span></div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>    pCell-&gt;StartApoptosis();</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>}</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00891" data-start="{" data-end="}">
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a25791c31c2760436ed4da081d3ab2f8e">  891</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a25791c31c2760436ed4da081d3ab2f8e">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::IsRoomToDivide</a>(CellPtr pCell)</div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>{</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>}</div>
 </div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span> </div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span><span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00895" data-start="{" data-end="}">
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a25791c31c2760436ed4da081d3ab2f8e">  895</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a25791c31c2760436ed4da081d3ab2f8e">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::IsRoomToDivide</a>(CellPtr pCell)</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>{</div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>}</div>
-</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span> </div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00901" data-start="{" data-end="}">
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae8712ed7ac0f1ffcec75b9067e38dd20">  901</a></span>c_vector&lt;double,SPACE_DIM&gt; <a class="code hl_function" href="classAbstractCellPopulation.html#ae8712ed7ac0f1ffcec75b9067e38dd20">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::GetSizeOfCellPopulation</a>()</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>{</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>    <span class="comment">// Compute the centre of mass of the cell population</span></div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>    c_vector&lt;double,SPACE_DIM&gt; centre = GetCentroidOfCellPopulation();</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span> </div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>    <span class="comment">// Loop over cells and find the maximum distance from the centre of mass in each dimension</span></div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>    c_vector&lt;double,SPACE_DIM&gt; max_distance_from_centre = zero_vector&lt;double&gt;(SPACE_DIM);</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>         cell_iter != this-&gt;End();</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>         ++cell_iter)</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>    {</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>        c_vector&lt;double,SPACE_DIM&gt; cell_location = GetLocationOfCellCentre(*cell_iter);</div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span> </div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00897" data-start="{" data-end="}">
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae8712ed7ac0f1ffcec75b9067e38dd20">  897</a></span>c_vector&lt;double,SPACE_DIM&gt; <a class="code hl_function" href="classAbstractCellPopulation.html#ae8712ed7ac0f1ffcec75b9067e38dd20">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::GetSizeOfCellPopulation</a>()</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>{</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>    <span class="comment">// Compute the centre of mass of the cell population</span></div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>    c_vector&lt;double,SPACE_DIM&gt; centre = GetCentroidOfCellPopulation();</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span> </div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>    <span class="comment">// Loop over cells and find the maximum distance from the centre of mass in each dimension</span></div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>    c_vector&lt;double,SPACE_DIM&gt; max_distance_from_centre = zero_vector&lt;double&gt;(SPACE_DIM);</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code hl_class" href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::Iterator</a> cell_iter = this-&gt;Begin();</div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>         cell_iter != this-&gt;End();</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>         ++cell_iter)</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>    {</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>        c_vector&lt;double,SPACE_DIM&gt; cell_location = GetLocationOfCellCentre(*cell_iter);</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span> </div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>        <span class="comment">// Note that we define this vector before setting it as otherwise the profiling build will break (see #2367)</span></div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>        c_vector&lt;double,SPACE_DIM&gt; displacement;</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>        displacement = centre - cell_location;</div>
 <div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span> </div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>        <span class="comment">// Note that we define this vector before setting it as otherwise the profiling build will break (see #2367)</span></div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>        c_vector&lt;double,SPACE_DIM&gt; displacement;</div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>        displacement = centre - cell_location;</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span> </div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;SPACE_DIM; i++)</div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>        {</div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>            <span class="keywordflow">if</span> (displacement[i] &gt; max_distance_from_centre[i])</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>            {</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>                max_distance_from_centre[i] = displacement[i];</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>            }</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        }</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    }</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span> </div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>    <span class="keywordflow">return</span> max_distance_from_centre;</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>}</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i=0; i&lt;SPACE_DIM; i++)</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>        {</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>            <span class="keywordflow">if</span> (displacement[i] &gt; max_distance_from_centre[i])</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>            {</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>                max_distance_from_centre[i] = displacement[i];</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>            }</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>        }</div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>    }</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span> </div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    <span class="keywordflow">return</span> max_distance_from_centre;</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>}</div>
 </div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span> </div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
-<div class="foldopen" id="foldopen00931" data-start="{" data-end="}">
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae33b3f3a5dd5c1bed0f9385c971acdb7">  931</a></span>std::pair&lt;unsigned,unsigned&gt; <a class="code hl_function" href="classAbstractCellPopulation.html#ae33b3f3a5dd5c1bed0f9385c971acdb7">AbstractCellPopulation&lt;ELEMENT_DIM,SPACE_DIM&gt;::CreateOrderedPair</a>(<span class="keywordtype">unsigned</span> index1, <span class="keywordtype">unsigned</span> index2)</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>{</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    assert(index1 != index2);</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span> </div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    std::pair&lt;unsigned, unsigned&gt; ordered_pair;</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span> </div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00927" data-start="{" data-end="}">
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae33b3f3a5dd5c1bed0f9385c971acdb7">  927</a></span>std::pair&lt;unsigned,unsigned&gt; <a class="code hl_function" href="classAbstractCellPopulation.html#ae33b3f3a5dd5c1bed0f9385c971acdb7">AbstractCellPopulation&lt;ELEMENT_DIM,SPACE_DIM&gt;::CreateOrderedPair</a>(<span class="keywordtype">unsigned</span> index1, <span class="keywordtype">unsigned</span> index2)</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>{</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>    assert(index1 != index2);</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span> </div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>    std::pair&lt;unsigned, unsigned&gt; ordered_pair;</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>    <span class="keywordflow">if</span> (index1 &lt; index2)</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    {</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>        ordered_pair.first = index1;</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>        ordered_pair.second = index2;</div>
 <div class="foldopen" id="foldopen00936" data-start="{" data-end="}">
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a36186ff40149c44a01a890b1e90a1a1f">  936</a></span>    <span class="keywordflow">if</span> (index1 &lt; index2)</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    {</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>        ordered_pair.first = index1;</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>        ordered_pair.second = index2;</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    }</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a36186ff40149c44a01a890b1e90a1a1f">  936</a></span>    }</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    {</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>        ordered_pair.first = index2;</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>        ordered_pair.second = index1;</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    }</div>
 <div class="foldopen" id="foldopen00942" data-start="{" data-end="}">
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae8712ed7ac0f1ffcec75b9067e38dd20">  942</a></span>    {</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>        ordered_pair.first = index2;</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>        ordered_pair.second = index1;</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    }</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    <span class="keywordflow">return</span> ordered_pair;</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>}</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span> </div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae8712ed7ac0f1ffcec75b9067e38dd20">  942</a></span>    <span class="keywordflow">return</span> ordered_pair;</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>}</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span> </div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> ELEMENT_DIM, <span class="keywordtype">unsigned</span> SPACE_DIM&gt;</div>
+<div class="foldopen" id="foldopen00946" data-start="{" data-end="}">
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a2f08cca745a685098ef7c8c0e2d87d64">  946</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a2f08cca745a685098ef7c8c0e2d87d64">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::IsPdeNodeAssociatedWithNonApoptoticCell</a>(<span class="keywordtype">unsigned</span> pdeNodeIndex)</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>{</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>    <span class="keywordtype">bool</span> non_apoptotic_cell_present = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span> </div>
 <div class="foldopen" id="foldopen00950" data-start="{" data-end="}">
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a2f08cca745a685098ef7c8c0e2d87d64">  950</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classAbstractCellPopulation.html#a2f08cca745a685098ef7c8c0e2d87d64">AbstractCellPopulation&lt;ELEMENT_DIM, SPACE_DIM&gt;::IsPdeNodeAssociatedWithNonApoptoticCell</a>(<span class="keywordtype">unsigned</span> pdeNodeIndex)</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>{</div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    <span class="keywordtype">bool</span> non_apoptotic_cell_present = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span> </div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    <span class="keywordflow">if</span> (IsCellAttachedToLocationIndex(pdeNodeIndex))</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    {</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>        non_apoptotic_cell_present = !(GetCellUsingLocationIndex(pdeNodeIndex)-&gt;template HasCellProperty&lt;ApoptoticCellProperty&gt;());</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    }</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#a25791c31c2760436ed4da081d3ab2f8e">  950</a></span>    <span class="keywordflow">if</span> (IsCellAttachedToLocationIndex(pdeNodeIndex))</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>    {</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>        non_apoptotic_cell_present = !(GetCellUsingLocationIndex(pdeNodeIndex)-&gt;template HasCellProperty&lt;ApoptoticCellProperty&gt;());</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    }</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span> </div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    <span class="keywordflow">return</span> non_apoptotic_cell_present;</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>}</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span> </div>
 <div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span> </div>
 <div class="foldopen" id="foldopen00959" data-start="{" data-end="}">
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae33b3f3a5dd5c1bed0f9385c971acdb7">  959</a></span>    <span class="keywordflow">return</span> non_apoptotic_cell_present;</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>}</div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span> </div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span> </div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span><span class="comment">// Explicit instantiation</span></div>
-<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;1,1&gt;</a>;</div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;1,2&gt;</a>;</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;2,2&gt;</a>;</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;1,3&gt;</a>;</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;2,3&gt;</a>;</div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;3,3&gt;</a>;</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno"><a class="line" href="classAbstractCellPopulation.html#ae33b3f3a5dd5c1bed0f9385c971acdb7">  959</a></span><span class="comment">// Explicit instantiation</span></div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;1,1&gt;</a>;</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;1,2&gt;</a>;</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;2,2&gt;</a>;</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;1,3&gt;</a>;</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;2,3&gt;</a>;</div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classAbstractCellPopulation.html">AbstractCellPopulation&lt;3,3&gt;</a>;</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1233,59 +1233,59 @@ $(document).ready(function(){initNavTree('AbstractCellPopulation_8cpp_source.htm
 <div class="ttc" id="aclassAbstractCellPopulation_1_1Iterator_html"><div class="ttname"><a href="classAbstractCellPopulation_1_1Iterator.html">AbstractCellPopulation::Iterator</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8hpp_source.html#l00967">AbstractCellPopulation.hpp:968</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html"><div class="ttname"><a href="classAbstractCellPopulation.html">AbstractCellPopulation</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8hpp_source.html#l00081">AbstractCellPopulation.hpp:82</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a013b5fd6d2539387ab05a43848e8b55b"><div class="ttname"><a href="classAbstractCellPopulation.html#a013b5fd6d2539387ab05a43848e8b55b">AbstractCellPopulation::mpCellPropertyRegistry</a></div><div class="ttdeci">boost::shared_ptr&lt; CellPropertyRegistry &gt; mpCellPropertyRegistry</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8hpp_source.html#l00147">AbstractCellPopulation.hpp:147</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a06e19b1d1d2994ddf6dd5d49480b703f"><div class="ttname"><a href="classAbstractCellPopulation.html#a06e19b1d1d2994ddf6dd5d49480b703f">AbstractCellPopulation::ClearDivisionsInformation</a></div><div class="ttdeci">void ClearDivisionsInformation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00832">AbstractCellPopulation.cpp:832</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a094911a02f34b8e1473fc913db84b7cc"><div class="ttname"><a href="classAbstractCellPopulation.html#a094911a02f34b8e1473fc913db84b7cc">AbstractCellPopulation::GetDivisionsInformation</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetDivisionsInformation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00821">AbstractCellPopulation.cpp:821</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a09c74da73d285fa9ed1c81d6a752ae29"><div class="ttname"><a href="classAbstractCellPopulation.html#a09c74da73d285fa9ed1c81d6a752ae29">AbstractCellPopulation::OpenRoundRobinWritersFilesForAppend</a></div><div class="ttdeci">void OpenRoundRobinWritersFilesForAppend(OutputFileHandler &amp;rOutputFileHandler)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00576">AbstractCellPopulation.cpp:576</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a06e19b1d1d2994ddf6dd5d49480b703f"><div class="ttname"><a href="classAbstractCellPopulation.html#a06e19b1d1d2994ddf6dd5d49480b703f">AbstractCellPopulation::ClearDivisionsInformation</a></div><div class="ttdeci">void ClearDivisionsInformation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00828">AbstractCellPopulation.cpp:828</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a094911a02f34b8e1473fc913db84b7cc"><div class="ttname"><a href="classAbstractCellPopulation.html#a094911a02f34b8e1473fc913db84b7cc">AbstractCellPopulation::GetDivisionsInformation</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetDivisionsInformation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00817">AbstractCellPopulation.cpp:817</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a09c74da73d285fa9ed1c81d6a752ae29"><div class="ttname"><a href="classAbstractCellPopulation.html#a09c74da73d285fa9ed1c81d6a752ae29">AbstractCellPopulation::OpenRoundRobinWritersFilesForAppend</a></div><div class="ttdeci">void OpenRoundRobinWritersFilesForAppend(OutputFileHandler &amp;rOutputFileHandler)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00572">AbstractCellPopulation.cpp:572</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a0beb3797979501fa07fc3f56ca33d515"><div class="ttname"><a href="classAbstractCellPopulation.html#a0beb3797979501fa07fc3f56ca33d515">AbstractCellPopulation::SetCellUsingLocationIndex</a></div><div class="ttdeci">void SetCellUsingLocationIndex(unsigned index, CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00362">AbstractCellPopulation.cpp:362</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a0c7f255b449556385c2035bde5723c2a"><div class="ttname"><a href="classAbstractCellPopulation.html#a0c7f255b449556385c2035bde5723c2a">AbstractCellPopulation::GetRemovalsInformation</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetRemovalsInformation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00838">AbstractCellPopulation.cpp:838</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a0c7f255b449556385c2035bde5723c2a"><div class="ttname"><a href="classAbstractCellPopulation.html#a0c7f255b449556385c2035bde5723c2a">AbstractCellPopulation::GetRemovalsInformation</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetRemovalsInformation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00834">AbstractCellPopulation.cpp:834</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a18cf6e9fafbdd5ef14ef26b48369b64b"><div class="ttname"><a href="classAbstractCellPopulation.html#a18cf6e9fafbdd5ef14ef26b48369b64b">AbstractCellPopulation::AddCellUsingLocationIndex</a></div><div class="ttdeci">virtual void AddCellUsingLocationIndex(unsigned index, CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00376">AbstractCellPopulation.cpp:376</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a1fc5f4d863252e2291e51ffc00c34120"><div class="ttname"><a href="classAbstractCellPopulation.html#a1fc5f4d863252e2291e51ffc00c34120">AbstractCellPopulation::GetCellMutationStateCount</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; GetCellMutationStateCount()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00193">AbstractCellPopulation.cpp:193</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a2072583820f9fedcab82da7e39d340a2"><div class="ttname"><a href="classAbstractCellPopulation.html#a2072583820f9fedcab82da7e39d340a2">AbstractCellPopulation::rGetCells</a></div><div class="ttdeci">std::list&lt; CellPtr &gt; &amp; rGetCells()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00147">AbstractCellPopulation.cpp:147</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a21255830a7c4c5d1857ea272986076c3"><div class="ttname"><a href="classAbstractCellPopulation.html#a21255830a7c4c5d1857ea272986076c3">AbstractCellPopulation::SetDataOnAllCells</a></div><div class="ttdeci">void SetDataOnAllCells(const std::string &amp;rDataName, double dataValue)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00130">AbstractCellPopulation.cpp:130</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a21b0ffbec3136ce1a3a2834bf362bfa5"><div class="ttname"><a href="classAbstractCellPopulation.html#a21b0ffbec3136ce1a3a2834bf362bfa5">AbstractCellPopulation::OpenWritersFiles</a></div><div class="ttdeci">virtual void OpenWritersFiles(OutputFileHandler &amp;rOutputFileHandler)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00514">AbstractCellPopulation.cpp:514</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a21b0ffbec3136ce1a3a2834bf362bfa5"><div class="ttname"><a href="classAbstractCellPopulation.html#a21b0ffbec3136ce1a3a2834bf362bfa5">AbstractCellPopulation::OpenWritersFiles</a></div><div class="ttdeci">virtual void OpenWritersFiles(OutputFileHandler &amp;rOutputFileHandler)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00512">AbstractCellPopulation.cpp:512</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a22d90cdc23105d6a4950c627c83a9ec8"><div class="ttname"><a href="classAbstractCellPopulation.html#a22d90cdc23105d6a4950c627c83a9ec8">AbstractCellPopulation::IsCellAttachedToLocationIndex</a></div><div class="ttdeci">virtual bool IsCellAttachedToLocationIndex(unsigned index)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00347">AbstractCellPopulation.cpp:347</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a25791c31c2760436ed4da081d3ab2f8e"><div class="ttname"><a href="classAbstractCellPopulation.html#a25791c31c2760436ed4da081d3ab2f8e">AbstractCellPopulation::IsRoomToDivide</a></div><div class="ttdeci">virtual bool IsRoomToDivide(CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00895">AbstractCellPopulation.cpp:895</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a25791c31c2760436ed4da081d3ab2f8e"><div class="ttname"><a href="classAbstractCellPopulation.html#a25791c31c2760436ed4da081d3ab2f8e">AbstractCellPopulation::IsRoomToDivide</a></div><div class="ttdeci">virtual bool IsRoomToDivide(CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00891">AbstractCellPopulation.cpp:891</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a2e9077e406f31df825baf31e55be9df0"><div class="ttname"><a href="classAbstractCellPopulation.html#a2e9077e406f31df825baf31e55be9df0">AbstractCellPopulation::mCells</a></div><div class="ttdeci">std::list&lt; CellPtr &gt; mCells</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8hpp_source.html#l00138">AbstractCellPopulation.hpp:138</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a2f08cca745a685098ef7c8c0e2d87d64"><div class="ttname"><a href="classAbstractCellPopulation.html#a2f08cca745a685098ef7c8c0e2d87d64">AbstractCellPopulation::IsPdeNodeAssociatedWithNonApoptoticCell</a></div><div class="ttdeci">virtual bool IsPdeNodeAssociatedWithNonApoptoticCell(unsigned pdeNodeIndex)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00950">AbstractCellPopulation.cpp:950</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a2f08cca745a685098ef7c8c0e2d87d64"><div class="ttname"><a href="classAbstractCellPopulation.html#a2f08cca745a685098ef7c8c0e2d87d64">AbstractCellPopulation::IsPdeNodeAssociatedWithNonApoptoticCell</a></div><div class="ttdeci">virtual bool IsPdeNodeAssociatedWithNonApoptoticCell(unsigned pdeNodeIndex)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00946">AbstractCellPopulation.cpp:946</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a30d412a48fa7866aea4e265a0aaf7ce3"><div class="ttname"><a href="classAbstractCellPopulation.html#a30d412a48fa7866aea4e265a0aaf7ce3">AbstractCellPopulation::mLocationCellMap</a></div><div class="ttdeci">std::map&lt; unsigned, std::set&lt; CellPtr &gt; &gt; mLocationCellMap</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8hpp_source.html#l00129">AbstractCellPopulation.hpp:129</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a34252001bd8dfcf1b4a4a6ba859b9890"><div class="ttname"><a href="classAbstractCellPopulation.html#a34252001bd8dfcf1b4a4a6ba859b9890">AbstractCellPopulation::GetLocationIndexUsingCell</a></div><div class="ttdeci">unsigned GetLocationIndexUsingCell(CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00409">AbstractCellPopulation.cpp:409</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a36186ff40149c44a01a890b1e90a1a1f"><div class="ttname"><a href="classAbstractCellPopulation.html#a36186ff40149c44a01a890b1e90a1a1f">AbstractCellPopulation::SetOutputResultsForChasteVisualizer</a></div><div class="ttdeci">void SetOutputResultsForChasteVisualizer(bool outputResultsForChasteVisualizer)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00815">AbstractCellPopulation.cpp:815</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a3692584202bafe904789e02c2088fc2a"><div class="ttname"><a href="classAbstractCellPopulation.html#a3692584202bafe904789e02c2088fc2a">AbstractCellPopulation::WriteResultsToFiles</a></div><div class="ttdeci">virtual void WriteResultsToFiles(const std::string &amp;rDirectory)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00591">AbstractCellPopulation.cpp:591</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a36186ff40149c44a01a890b1e90a1a1f"><div class="ttname"><a href="classAbstractCellPopulation.html#a36186ff40149c44a01a890b1e90a1a1f">AbstractCellPopulation::SetOutputResultsForChasteVisualizer</a></div><div class="ttdeci">void SetOutputResultsForChasteVisualizer(bool outputResultsForChasteVisualizer)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00811">AbstractCellPopulation.cpp:811</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a3692584202bafe904789e02c2088fc2a"><div class="ttname"><a href="classAbstractCellPopulation.html#a3692584202bafe904789e02c2088fc2a">AbstractCellPopulation::WriteResultsToFiles</a></div><div class="ttdeci">virtual void WriteResultsToFiles(const std::string &amp;rDirectory)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00587">AbstractCellPopulation.cpp:587</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a3d4fe1519e7d946ede7ddc5a114b665c"><div class="ttname"><a href="classAbstractCellPopulation.html#a3d4fe1519e7d946ede7ddc5a114b665c">AbstractCellPopulation::GetCellsUsingLocationIndex</a></div><div class="ttdeci">std::set&lt; CellPtr &gt; GetCellsUsingLocationIndex(unsigned index)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00340">AbstractCellPopulation.cpp:340</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a42d54f79a59280578ba75c7579e9f694"><div class="ttname"><a href="classAbstractCellPopulation.html#a42d54f79a59280578ba75c7579e9f694">AbstractCellPopulation::ClearRemovalsInformation</a></div><div class="ttdeci">void ClearRemovalsInformation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00850">AbstractCellPopulation.cpp:850</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a42d54f79a59280578ba75c7579e9f694"><div class="ttname"><a href="classAbstractCellPopulation.html#a42d54f79a59280578ba75c7579e9f694">AbstractCellPopulation::ClearRemovalsInformation</a></div><div class="ttdeci">void ClearRemovalsInformation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00846">AbstractCellPopulation.cpp:846</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a4db437ea02ec7d9b9dd4db100c0df547"><div class="ttname"><a href="classAbstractCellPopulation.html#a4db437ea02ec7d9b9dd4db100c0df547">AbstractCellPopulation::GetCellAncestors</a></div><div class="ttdeci">std::set&lt; unsigned &gt; GetCellAncestors()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00182">AbstractCellPopulation.cpp:182</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a500f21753894d9c6fcf394344098e9b8"><div class="ttname"><a href="classAbstractCellPopulation.html#a500f21753894d9c6fcf394344098e9b8">AbstractCellPopulation::OutputCellPopulationParameters</a></div><div class="ttdeci">virtual void OutputCellPopulationParameters(out_stream &amp;rParamsFile)=0</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00798">AbstractCellPopulation.cpp:798</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a500f21753894d9c6fcf394344098e9b8"><div class="ttname"><a href="classAbstractCellPopulation.html#a500f21753894d9c6fcf394344098e9b8">AbstractCellPopulation::OutputCellPopulationParameters</a></div><div class="ttdeci">virtual void OutputCellPopulationParameters(out_stream &amp;rParamsFile)=0</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00794">AbstractCellPopulation.cpp:794</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a5aab0c3bda61e45b2beeec8f89e8820b"><div class="ttname"><a href="classAbstractCellPopulation.html#a5aab0c3bda61e45b2beeec8f89e8820b">AbstractCellPopulation::GetNeighbouringEdgeIndices</a></div><div class="ttdeci">virtual std::set&lt; std::pair&lt; unsigned, unsigned &gt; &gt; GetNeighbouringEdgeIndices(CellPtr pCell, unsigned pEdgeIndex)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00449">AbstractCellPopulation.cpp:449</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a5db4888c0abdd6e71e9288c59b417e77"><div class="ttname"><a href="classAbstractCellPopulation.html#a5db4888c0abdd6e71e9288c59b417e77">AbstractCellPopulation::SimulationSetupHook</a></div><div class="ttdeci">virtual void SimulationSetupHook(AbstractCellBasedSimulation&lt; ELEMENT_DIM, SPACE_DIM &gt; *pSimulation)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00804">AbstractCellPopulation.cpp:804</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a5db4888c0abdd6e71e9288c59b417e77"><div class="ttname"><a href="classAbstractCellPopulation.html#a5db4888c0abdd6e71e9288c59b417e77">AbstractCellPopulation::SimulationSetupHook</a></div><div class="ttdeci">virtual void SimulationSetupHook(AbstractCellBasedSimulation&lt; ELEMENT_DIM, SPACE_DIM &gt; *pSimulation)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00800">AbstractCellPopulation.cpp:800</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a6cb825d5c23060ba8aff6904ab1fdad1"><div class="ttname"><a href="classAbstractCellPopulation.html#a6cb825d5c23060ba8aff6904ab1fdad1">AbstractCellPopulation::GetCellPropertyRegistry</a></div><div class="ttdeci">boost::shared_ptr&lt; CellPropertyRegistry &gt; GetCellPropertyRegistry()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00418">AbstractCellPopulation.cpp:418</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a7392d57e3b01637e229d2a8c38e987a3"><div class="ttname"><a href="classAbstractCellPopulation.html#a7392d57e3b01637e229d2a8c38e987a3">AbstractCellPopulation::WriteDataToVisualizerSetupFile</a></div><div class="ttdeci">virtual void WriteDataToVisualizerSetupFile(out_stream &amp;pVizSetupFile)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00357">AbstractCellPopulation.cpp:357</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a74f70fdfb45402b8e2671229edda12b7"><div class="ttname"><a href="classAbstractCellPopulation.html#a74f70fdfb45402b8e2671229edda12b7">AbstractCellPopulation::CloseWritersFiles</a></div><div class="ttdeci">virtual void CloseWritersFiles()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00492">AbstractCellPopulation.cpp:492</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_a8427c3389e99653b1f0467378ef0ec2f"><div class="ttname"><a href="classAbstractCellPopulation.html#a8427c3389e99653b1f0467378ef0ec2f">AbstractCellPopulation::GenerateRemovalInformation</a></div><div class="ttdeci">void GenerateRemovalInformation(CellPtr pCell, std::string killerInfo)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00856">AbstractCellPopulation.cpp:856</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_a8427c3389e99653b1f0467378ef0ec2f"><div class="ttname"><a href="classAbstractCellPopulation.html#a8427c3389e99653b1f0467378ef0ec2f">AbstractCellPopulation::GenerateRemovalInformation</a></div><div class="ttdeci">void GenerateRemovalInformation(CellPtr pCell, std::string killerInfo)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00852">AbstractCellPopulation.cpp:852</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a8b39a677585927e2d38f8ee95b253980"><div class="ttname"><a href="classAbstractCellPopulation.html#a8b39a677585927e2d38f8ee95b253980">AbstractCellPopulation::GetNumAllCells</a></div><div class="ttdeci">unsigned GetNumAllCells()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00166">AbstractCellPopulation.cpp:166</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a8e7bb54c983041eeed366aa6f1aa03ac"><div class="ttname"><a href="classAbstractCellPopulation.html#a8e7bb54c983041eeed366aa6f1aa03ac">AbstractCellPopulation::GetNumRealCells</a></div><div class="ttdeci">unsigned GetNumRealCells()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00153">AbstractCellPopulation.cpp:153</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a964adcd84ec09a1632386f5dc585e33c"><div class="ttname"><a href="classAbstractCellPopulation.html#a964adcd84ec09a1632386f5dc585e33c">AbstractCellPopulation::CloseRoundRobinWritersFiles</a></div><div class="ttdeci">void CloseRoundRobinWritersFiles()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00476">AbstractCellPopulation.cpp:476</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a99696779e09ea538ae5882960854559d"><div class="ttname"><a href="classAbstractCellPopulation.html#a99696779e09ea538ae5882960854559d">AbstractCellPopulation::mCellLocationMap</a></div><div class="ttdeci">std::map&lt; Cell *, unsigned &gt; mCellLocationMap</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8hpp_source.html#l00132">AbstractCellPopulation.hpp:132</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_a9a41bc28824e479e2e9fb87c021aefb2"><div class="ttname"><a href="classAbstractCellPopulation.html#a9a41bc28824e479e2e9fb87c021aefb2">AbstractCellPopulation::SetCellAncestorsToLocationIndices</a></div><div class="ttdeci">void SetCellAncestorsToLocationIndices()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00172">AbstractCellPopulation.cpp:172</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_aa5a30307be4d20d9e888b6a6b56989db"><div class="ttname"><a href="classAbstractCellPopulation.html#aa5a30307be4d20d9e888b6a6b56989db">AbstractCellPopulation::GetOutputResultsForChasteVisualizer</a></div><div class="ttdeci">bool GetOutputResultsForChasteVisualizer()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00809">AbstractCellPopulation.cpp:809</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_aac78c3a843150474e73cf0d85fc59138"><div class="ttname"><a href="classAbstractCellPopulation.html#aac78c3a843150474e73cf0d85fc59138">AbstractCellPopulation::OutputCellPopulationInfo</a></div><div class="ttdeci">void OutputCellPopulationInfo(out_stream &amp;rParamsFile)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00726">AbstractCellPopulation.cpp:726</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_aa5a30307be4d20d9e888b6a6b56989db"><div class="ttname"><a href="classAbstractCellPopulation.html#aa5a30307be4d20d9e888b6a6b56989db">AbstractCellPopulation::GetOutputResultsForChasteVisualizer</a></div><div class="ttdeci">bool GetOutputResultsForChasteVisualizer()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00805">AbstractCellPopulation.cpp:805</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_aac78c3a843150474e73cf0d85fc59138"><div class="ttname"><a href="classAbstractCellPopulation.html#aac78c3a843150474e73cf0d85fc59138">AbstractCellPopulation::OutputCellPopulationInfo</a></div><div class="ttdeci">void OutputCellPopulationInfo(out_stream &amp;rParamsFile)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00722">AbstractCellPopulation.cpp:722</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_ab20f4c6a5a1eebe46d8c3dbe977b073b"><div class="ttname"><a href="classAbstractCellPopulation.html#ab20f4c6a5a1eebe46d8c3dbe977b073b">AbstractCellPopulation::GetCellUsingLocationIndex</a></div><div class="ttdeci">virtual CellPtr GetCellUsingLocationIndex(unsigned index)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00319">AbstractCellPopulation.cpp:319</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_ab21bea76177388702e895cf16b5c2a14"><div class="ttname"><a href="classAbstractCellPopulation.html#ab21bea76177388702e895cf16b5c2a14">AbstractCellPopulation::GetCellCyclePhaseCount</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; GetCellCyclePhaseCount()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00260">AbstractCellPopulation.cpp:260</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_ab3c6718e8f5ae4748e1ca11b41d284de"><div class="ttname"><a href="classAbstractCellPopulation.html#ab3c6718e8f5ae4748e1ca11b41d284de">AbstractCellPopulation::AbstractCellPopulation</a></div><div class="ttdeci">AbstractCellPopulation(AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp;rMesh)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00107">AbstractCellPopulation.cpp:107</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_ab86680e21acacd4147b3c6ee51c433b3"><div class="ttname"><a href="classAbstractCellPopulation.html#ab86680e21acacd4147b3c6ee51c433b3">AbstractCellPopulation::rGetMesh</a></div><div class="ttdeci">AbstractMesh&lt; ELEMENT_DIM, SPACE_DIM &gt; &amp; rGetMesh()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00141">AbstractCellPopulation.cpp:141</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_abb1402cb170d9da92f05a8f19cba3e46"><div class="ttname"><a href="classAbstractCellPopulation.html#abb1402cb170d9da92f05a8f19cba3e46">AbstractCellPopulation::StartApoptosisOnCell</a></div><div class="ttdeci">void StartApoptosisOnCell(CellPtr pCell, std::string killerInfo)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00885">AbstractCellPopulation.cpp:885</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_abb1402cb170d9da92f05a8f19cba3e46"><div class="ttname"><a href="classAbstractCellPopulation.html#abb1402cb170d9da92f05a8f19cba3e46">AbstractCellPopulation::StartApoptosisOnCell</a></div><div class="ttdeci">void StartApoptosisOnCell(CellPtr pCell, std::string killerInfo)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00881">AbstractCellPopulation.cpp:881</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_abeac136a25c6c12ff3aac7529c7ead5c"><div class="ttname"><a href="classAbstractCellPopulation.html#abeac136a25c6c12ff3aac7529c7ead5c">AbstractCellPopulation::GetCentroidOfCellPopulation</a></div><div class="ttdeci">c_vector&lt; double, SPACE_DIM &gt; GetCentroidOfCellPopulation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00456">AbstractCellPopulation.cpp:456</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_ac2ed6eb66aa95e9fdee1d44bf6e159ff"><div class="ttname"><a href="classAbstractCellPopulation.html#ac2ed6eb66aa95e9fdee1d44bf6e159ff">AbstractCellPopulation::InitialiseCells</a></div><div class="ttdeci">void InitialiseCells()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00118">AbstractCellPopulation.cpp:118</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_ac4b5df57882fe2eda045bcc1a6950435"><div class="ttname"><a href="classAbstractCellPopulation.html#ac4b5df57882fe2eda045bcc1a6950435">AbstractCellPopulation::~AbstractCellPopulation</a></div><div class="ttdeci">virtual ~AbstractCellPopulation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00113">AbstractCellPopulation.cpp:113</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_ac71ec2b24bf494e91a9dfffaa2f6e302"><div class="ttname"><a href="classAbstractCellPopulation.html#ac71ec2b24bf494e91a9dfffaa2f6e302">AbstractCellPopulation::KillCell</a></div><div class="ttdeci">void KillCell(CellPtr pCell, std::string killerInfo)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00875">AbstractCellPopulation.cpp:875</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_ac71ec2b24bf494e91a9dfffaa2f6e302"><div class="ttname"><a href="classAbstractCellPopulation.html#ac71ec2b24bf494e91a9dfffaa2f6e302">AbstractCellPopulation::KillCell</a></div><div class="ttdeci">void KillCell(CellPtr pCell, std::string killerInfo)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00871">AbstractCellPopulation.cpp:871</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_ad415909aab3b62daa4adc6b36e4cfa5e"><div class="ttname"><a href="classAbstractCellPopulation.html#ad415909aab3b62daa4adc6b36e4cfa5e">AbstractCellPopulation::UpdateCellProcessLocation</a></div><div class="ttdeci">virtual void UpdateCellProcessLocation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00471">AbstractCellPopulation.cpp:471</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_ad4f48384c035db46f6789d1528c974a0"><div class="ttname"><a href="classAbstractCellPopulation.html#ad4f48384c035db46f6789d1528c974a0">AbstractCellPopulation::GetCellProliferativeTypeCount</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; GetCellProliferativeTypeCount()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00226">AbstractCellPopulation.cpp:226</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_adf7c6e70201108ef83009cccdb49e41b"><div class="ttname"><a href="classAbstractCellPopulation.html#adf7c6e70201108ef83009cccdb49e41b">AbstractCellPopulation::AddRemovalInformation</a></div><div class="ttdeci">void AddRemovalInformation(std::string removalInformation)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00844">AbstractCellPopulation.cpp:844</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_adf7c6e70201108ef83009cccdb49e41b"><div class="ttname"><a href="classAbstractCellPopulation.html#adf7c6e70201108ef83009cccdb49e41b">AbstractCellPopulation::AddRemovalInformation</a></div><div class="ttdeci">void AddRemovalInformation(std::string removalInformation)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00840">AbstractCellPopulation.cpp:840</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_ae22afa97f71f2c52fa421b388b721b6c"><div class="ttname"><a href="classAbstractCellPopulation.html#ae22afa97f71f2c52fa421b388b721b6c">AbstractCellPopulation::SetDefaultCellMutationStateAndProliferativeTypeOrdering</a></div><div class="ttdeci">void SetDefaultCellMutationStateAndProliferativeTypeOrdering()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00424">AbstractCellPopulation.cpp:424</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_ae33b3f3a5dd5c1bed0f9385c971acdb7"><div class="ttname"><a href="classAbstractCellPopulation.html#ae33b3f3a5dd5c1bed0f9385c971acdb7">AbstractCellPopulation::CreateOrderedPair</a></div><div class="ttdeci">std::pair&lt; unsigned, unsigned &gt; CreateOrderedPair(unsigned index1, unsigned index2)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00931">AbstractCellPopulation.cpp:931</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_ae33b3f3a5dd5c1bed0f9385c971acdb7"><div class="ttname"><a href="classAbstractCellPopulation.html#ae33b3f3a5dd5c1bed0f9385c971acdb7">AbstractCellPopulation::CreateOrderedPair</a></div><div class="ttdeci">std::pair&lt; unsigned, unsigned &gt; CreateOrderedPair(unsigned index1, unsigned index2)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00927">AbstractCellPopulation.cpp:927</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_ae367f9e7e7705f5c5cf2a3270f337acd"><div class="ttname"><a href="classAbstractCellPopulation.html#ae367f9e7e7705f5c5cf2a3270f337acd">AbstractCellPopulation::MoveCellInLocationMap</a></div><div class="ttdeci">void MoveCellInLocationMap(CellPtr pCell, unsigned old_index, unsigned new_index)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00399">AbstractCellPopulation.cpp:399</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_ae8712ed7ac0f1ffcec75b9067e38dd20"><div class="ttname"><a href="classAbstractCellPopulation.html#ae8712ed7ac0f1ffcec75b9067e38dd20">AbstractCellPopulation::GetSizeOfCellPopulation</a></div><div class="ttdeci">c_vector&lt; double, SPACE_DIM &gt; GetSizeOfCellPopulation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00901">AbstractCellPopulation.cpp:901</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_aefca486b62fc6cd79c5fc2f35f3b72cc"><div class="ttname"><a href="classAbstractCellPopulation.html#aefca486b62fc6cd79c5fc2f35f3b72cc">AbstractCellPopulation::AddDivisionInformation</a></div><div class="ttdeci">void AddDivisionInformation(std::string divisionInformation)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00826">AbstractCellPopulation.cpp:826</a></div></div>
-<div class="ttc" id="aclassAbstractCellPopulation_html_af6eb8d5010208e10cfe575e818109b88"><div class="ttname"><a href="classAbstractCellPopulation.html#af6eb8d5010208e10cfe575e818109b88">AbstractCellPopulation::AcceptCellWritersAcrossPopulation</a></div><div class="ttdeci">virtual void AcceptCellWritersAcrossPopulation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00710">AbstractCellPopulation.cpp:710</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_ae8712ed7ac0f1ffcec75b9067e38dd20"><div class="ttname"><a href="classAbstractCellPopulation.html#ae8712ed7ac0f1ffcec75b9067e38dd20">AbstractCellPopulation::GetSizeOfCellPopulation</a></div><div class="ttdeci">c_vector&lt; double, SPACE_DIM &gt; GetSizeOfCellPopulation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00897">AbstractCellPopulation.cpp:897</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_aefca486b62fc6cd79c5fc2f35f3b72cc"><div class="ttname"><a href="classAbstractCellPopulation.html#aefca486b62fc6cd79c5fc2f35f3b72cc">AbstractCellPopulation::AddDivisionInformation</a></div><div class="ttdeci">void AddDivisionInformation(std::string divisionInformation)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00822">AbstractCellPopulation.cpp:822</a></div></div>
+<div class="ttc" id="aclassAbstractCellPopulation_html_af6eb8d5010208e10cfe575e818109b88"><div class="ttname"><a href="classAbstractCellPopulation.html#af6eb8d5010208e10cfe575e818109b88">AbstractCellPopulation::AcceptCellWritersAcrossPopulation</a></div><div class="ttdeci">virtual void AcceptCellWritersAcrossPopulation()</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00706">AbstractCellPopulation.cpp:706</a></div></div>
 <div class="ttc" id="aclassAbstractCellPopulation_html_afb46691d44f80ce9dc6f3370c2c4a167"><div class="ttname"><a href="classAbstractCellPopulation.html#afb46691d44f80ce9dc6f3370c2c4a167">AbstractCellPopulation::RemoveCellUsingLocationIndex</a></div><div class="ttdeci">virtual void RemoveCellUsingLocationIndex(unsigned index, CellPtr pCell)</div><div class="ttdef"><b>Definition</b> <a href="AbstractCellPopulation_8cpp_source.html#l00383">AbstractCellPopulation.cpp:383</a></div></div>
 <div class="ttc" id="aclassAbstractCellWriter_html"><div class="ttname"><a href="classAbstractCellWriter.html">AbstractCellWriter</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractCellWriter_8hpp_source.html#l00052">AbstractCellWriter.hpp:53</a></div></div>
 <div class="ttc" id="aclassAbstractMesh_html"><div class="ttname"><a href="classAbstractMesh.html">AbstractMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractMesh_8hpp_source.html#l00060">AbstractMesh.hpp:61</a></div></div>

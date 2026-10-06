@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::e8c2894cf996776c74990bd09dd32f8cbb82acf2</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::152eaefaf02246ef769bd916268f05686539aa51</span>
    </div>
   </td>
  </tr>
@@ -143,37 +143,31 @@ $(document).ready(function(){initNavTree('GenericMeshReader_8hpp_source.html',''
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classException.html">Exception</a>&amp; r_memfem_exception)</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#ifdef CHASTE_VTK</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                p_reader.reset(<span class="keyword">new</span> <a class="code hl_class" href="classVtkMeshReader.html">VtkMeshReader&lt;ELEMENT_DIM, SPACE_DIM&gt;</a>(rPathBaseName));</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classException.html">Exception</a>&amp; r_vtk_exception)</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif </span><span class="comment">// CHASTE_VTK</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                std::string eol(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                std::string combined_message = <span class="stringliteral">&quot;Could not open appropriate mesh files for &quot;</span> + rPathBaseName + eol;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                combined_message += <span class="stringliteral">&quot;Triangle format: &quot;</span> + r_triangles_exception.<a class="code hl_function" href="classException.html#aced2a015c356d7cba5090c4ce7f842bc">GetShortMessage</a>() + eol;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                combined_message += <span class="stringliteral">&quot;Memfem format: &quot;</span> + r_memfem_exception.<a class="code hl_function" href="classException.html#aced2a015c356d7cba5090c4ce7f842bc">GetShortMessage</a>() + eol;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#ifdef CHASTE_VTK</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                combined_message += <span class="stringliteral">&quot;Vtk format: &quot;</span> + r_vtk_exception.<a class="code hl_function" href="classException.html#aced2a015c356d7cba5090c4ce7f842bc">GetShortMessage</a>() + eol;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif </span><span class="comment">// CHASTE_VTK</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                <a class="code hl_define" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(combined_message);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#ifdef CHASTE_VTK</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif </span><span class="comment">// CHASTE_VTK</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">return</span> p_reader;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#endif </span><span class="comment">//_GENERICMESHREADER_HPP_</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                p_reader.reset(<span class="keyword">new</span> <a class="code hl_class" href="classVtkMeshReader.html">VtkMeshReader&lt;ELEMENT_DIM, SPACE_DIM&gt;</a>(rPathBaseName));</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classException.html">Exception</a>&amp; r_vtk_exception)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                std::string eol(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                std::string combined_message = <span class="stringliteral">&quot;Could not open appropriate mesh files for &quot;</span> + rPathBaseName + eol;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                combined_message += <span class="stringliteral">&quot;Triangle format: &quot;</span> + r_triangles_exception.<a class="code hl_function" href="classException.html#aced2a015c356d7cba5090c4ce7f842bc">GetShortMessage</a>() + eol;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                combined_message += <span class="stringliteral">&quot;Memfem format: &quot;</span> + r_memfem_exception.<a class="code hl_function" href="classException.html#aced2a015c356d7cba5090c4ce7f842bc">GetShortMessage</a>() + eol;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                combined_message += <span class="stringliteral">&quot;Vtk format: &quot;</span> + r_vtk_exception.<a class="code hl_function" href="classException.html#aced2a015c356d7cba5090c4ce7f842bc">GetShortMessage</a>() + eol;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <a class="code hl_define" href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a>(combined_message);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">return</span> p_reader;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif </span><span class="comment">//_GENERICMESHREADER_HPP_</span></div>
 <div class="ttc" id="aException_8hpp_html_aa49c727f91093a79c46ee6ecd83548bb"><div class="ttname"><a href="Exception_8hpp.html#aa49c727f91093a79c46ee6ecd83548bb">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(message)</div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00156">Exception.hpp:156</a></div></div>
 <div class="ttc" id="aclassException_html"><div class="ttname"><a href="classException.html">Exception</a></div><div class="ttdef"><b>Definition</b> <a href="Exception_8hpp_source.html#l00064">Exception.hpp:65</a></div></div>
 <div class="ttc" id="aclassException_html_aced2a015c356d7cba5090c4ce7f842bc"><div class="ttname"><a href="classException.html#aced2a015c356d7cba5090c4ce7f842bc">Exception::GetShortMessage</a></div><div class="ttdeci">std::string GetShortMessage() const</div><div class="ttdef"><b>Definition</b> <a href="Exception_8cpp_source.html#l00087">Exception.cpp:87</a></div></div>
 <div class="ttc" id="aclassMemfemMeshReader_html"><div class="ttname"><a href="classMemfemMeshReader.html">MemfemMeshReader</a></div><div class="ttdef"><b>Definition</b> <a href="MemfemMeshReader_8hpp_source.html#l00050">MemfemMeshReader.hpp:51</a></div></div>
 <div class="ttc" id="aclassTrianglesMeshReader_html"><div class="ttname"><a href="classTrianglesMeshReader.html">TrianglesMeshReader</a></div><div class="ttdef"><b>Definition</b> <a href="TrianglesMeshReader_8hpp_source.html#l00052">TrianglesMeshReader.hpp:53</a></div></div>
-<div class="ttc" id="aclassVtkMeshReader_html"><div class="ttname"><a href="classVtkMeshReader.html">VtkMeshReader</a></div><div class="ttdef"><b>Definition</b> <a href="VtkMeshReader_8hpp_source.html#l00080">VtkMeshReader.hpp:81</a></div></div>
+<div class="ttc" id="aclassVtkMeshReader_html"><div class="ttname"><a href="classVtkMeshReader.html">VtkMeshReader</a></div><div class="ttdef"><b>Definition</b> <a href="VtkMeshReader_8hpp_source.html#l00078">VtkMeshReader.hpp:79</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

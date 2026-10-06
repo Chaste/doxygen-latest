@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::e8c2894cf996776c74990bd09dd32f8cbb82acf2</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::152eaefaf02246ef769bd916268f05686539aa51</span>
    </div>
   </td>
  </tr>
@@ -106,7 +106,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:abf2c5c3ac10429bff5891eccbe23ad4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A helper class which will dynamically load a CellML file and provide a method to get a pointer to a new <a class="el" href="classAbstractCardiacCell.html">AbstractCardiacCell</a> (or <a class="el" href="classAbstractCvodeCell.html">AbstractCvodeCell</a> if CVODE is enabled).</p>
+<div class="textblock"><p>A helper class which will dynamically load a CellML file and provide a method to get a pointer to a new <a class="el" href="classAbstractCardiacCell.html">AbstractCardiacCell</a> (or <a class="el" href="classAbstractCvodeCell.html">AbstractCvodeCell</a>).</p>
 <p>Note that you cannot call both LoadCardiacCell and LoadCvodeCell on the same object, since there would be filename conflicts trying to create different classes in the same output folder. Create a second loader with a different rOutputFileHandler parameter if you need both kinds of cell. </p>
 
 <p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00058">58</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
@@ -215,9 +215,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="CellMLLoader_8cpp_source.html#l00050">50</a> of file <a class="el" href="CellMLLoader_8cpp_source.html">CellMLLoader.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="OutputFileHandler_8cpp_source.html#l00304">OutputFileHandler::CopyFileTo()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="OutputFileHandler_8cpp_source.html#l00330">OutputFileHandler::FindFile()</a>, <a class="el" href="FileFinder_8cpp_source.html#l00240">FileFinder::GetLeafName()</a>, <a class="el" href="FileFinder_8cpp_source.html#l00245">FileFinder::GetLeafNameNoExtension()</a>, <a class="el" href="AbstractCardiacCellInterface_8cpp_source.html#l00133">AbstractCardiacCellInterface::HasCellMLDefaultStimulus()</a>, <a class="el" href="CellMLLoader_8hpp_source.html#l00089">mCellMLFile</a>, <a class="el" href="CellMLLoader_8hpp_source.html#l00095">mOptions</a>, <a class="el" href="CellMLLoader_8hpp_source.html#l00092">mOutputFileHandler</a>, <a class="el" href="CellMLLoader_8hpp_source.html#l00098">mpConverter</a>, <a class="el" href="CellMLLoader_8hpp_source.html#l00101">mUseCvode</a>, and <a class="el" href="AbstractCardiacCellInterface_8cpp_source.html#l00126">AbstractCardiacCellInterface::UseCellMLDefaultStimulus()</a>.</p>
+<p class="reference">References <a class="el" href="OutputFileHandler_8cpp_source.html#l00304">OutputFileHandler::CopyFileTo()</a>, <a class="el" href="Exception_8hpp_source.html#l00156">EXCEPTION</a>, <a class="el" href="OutputFileHandler_8cpp_source.html#l00330">OutputFileHandler::FindFile()</a>, <a class="el" href="FileFinder_8cpp_source.html#l00240">FileFinder::GetLeafName()</a>, <a class="el" href="FileFinder_8cpp_source.html#l00245">FileFinder::GetLeafNameNoExtension()</a>, <a class="el" href="AbstractCardiacCellInterface_8cpp_source.html#l00133">AbstractCardiacCellInterface::HasCellMLDefaultStimulus()</a>, <a class="el" href="CellMLLoader_8hpp_source.html#l00087">mCellMLFile</a>, <a class="el" href="CellMLLoader_8hpp_source.html#l00093">mOptions</a>, <a class="el" href="CellMLLoader_8hpp_source.html#l00090">mOutputFileHandler</a>, <a class="el" href="CellMLLoader_8hpp_source.html#l00096">mpConverter</a>, <a class="el" href="CellMLLoader_8hpp_source.html#l00099">mUseCvode</a>, and <a class="el" href="AbstractCardiacCellInterface_8cpp_source.html#l00126">AbstractCardiacCellInterface::UseCellMLDefaultStimulus()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellMLLoader_8cpp_source.html#l00102">LoadCardiacCell()</a>, and <a class="el" href="CellMLLoader_8cpp_source.html#l00110">LoadCvodeCell()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellMLLoader_8cpp_source.html#l00102">LoadCardiacCell()</a>, and <a class="el" href="CellMLLoader_8cpp_source.html#l00109">LoadCvodeCell()</a>.</p>
 
 </div>
 </div>
@@ -238,7 +238,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Make an <a class="el" href="classAbstractCvodeCell.html">AbstractCvodeCell</a>, using the default stimulus from the CellML file (if present). </p><dl class="section return"><dt>Returns</dt><dd>a pointer to the cell </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CellMLLoader_8cpp_source.html#l00110">110</a> of file <a class="el" href="CellMLLoader_8cpp_source.html">CellMLLoader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellMLLoader_8cpp_source.html#l00109">109</a> of file <a class="el" href="CellMLLoader_8cpp_source.html">CellMLLoader.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="CellMLLoader_8cpp_source.html#l00050">LoadCellMLFile()</a>.</p>
 
@@ -266,7 +266,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The location of the CellML file to convert </p>
 
-<p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00089">89</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00087">87</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CellMLLoader_8cpp_source.html#l00050">LoadCellMLFile()</a>.</p>
 
@@ -293,7 +293,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>A vector of options to be passed to the CellML converter (chaste_codegen) e.g. "--use-modifiers" </p>
 
-<p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00095">95</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00093">93</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CellMLLoader_8cpp_source.html#l00050">LoadCellMLFile()</a>.</p>
 
@@ -320,7 +320,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The location of an output folder to put the converted file and shared library in </p>
 
-<p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00092">92</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00090">90</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CellMLLoader_8cpp_source.html#l00050">LoadCellMLFile()</a>.</p>
 
@@ -347,7 +347,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The converter we will use </p>
 
-<p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00098">98</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00096">96</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CellMLLoader_8cpp_source.html#l00050">LoadCellMLFile()</a>.</p>
 
@@ -374,7 +374,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Whether we are building 'normal' (false) or 'CVODE' (true) cells. </p>
 
-<p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00101">101</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellMLLoader_8hpp_source.html#l00099">99</a> of file <a class="el" href="CellMLLoader_8hpp_source.html">CellMLLoader.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CellMLLoader_8cpp_source.html#l00050">LoadCellMLFile()</a>.</p>
 

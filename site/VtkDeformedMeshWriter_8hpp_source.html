@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::e8c2894cf996776c74990bd09dd32f8cbb82acf2</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::152eaefaf02246ef769bd916268f05686539aa51</span>
    </div>
   </td>
  </tr>
@@ -106,49 +106,45 @@ $(document).ready(function(){initNavTree('VtkDeformedMeshWriter_8hpp_source.html
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#ifndef VTKDEFORMEDMESHWRITER_HPP_</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#define VTKDEFORMEDMESHWRITER_HPP_</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#ifdef CHASTE_VTK</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;VtkMeshWriter.hpp&quot;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;AbstractTetrahedralMesh.hpp&quot;</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
-<div class="foldopen" id="foldopen00072" data-start="{" data-end="};">
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classVtkDeformedMeshWriter.html">   72</a></span><span class="keyword">class </span><a class="code hl_class" href="classVtkDeformedMeshWriter.html">VtkDeformedMeshWriter</a> : <span class="keyword">public</span> <a class="code hl_class" href="classVtkMeshWriter.html">VtkMeshWriter</a>&lt;DIM,DIM&gt;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;VtkMeshWriter.hpp&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;AbstractTetrahedralMesh.hpp&quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> DIM&gt;</div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="};">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classVtkDeformedMeshWriter.html">   70</a></span><span class="keyword">class </span><a class="code hl_class" href="classVtkDeformedMeshWriter.html">VtkDeformedMeshWriter</a> : <span class="keyword">public</span> <a class="code hl_class" href="classVtkMeshWriter.html">VtkMeshWriter</a>&lt;DIM,DIM&gt;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classVtkDeformedMeshWriter.html#a1fc817715168dea4f8b9606600c4c511">   81</a></span>    <a class="code hl_class" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt;DIM,DIM&gt;</a>* <a class="code hl_variable" href="classVtkDeformedMeshWriter.html#a1fc817715168dea4f8b9606600c4c511">mpDeformedMesh</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classVtkDeformedMeshWriter.html#a1fc817715168dea4f8b9606600c4c511">   79</a></span>    <a class="code hl_class" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt;DIM,DIM&gt;</a>* <a class="code hl_variable" href="classVtkDeformedMeshWriter.html#a1fc817715168dea4f8b9606600c4c511">mpDeformedMesh</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_class" href="classVtkDeformedMeshWriter.html">VtkDeformedMeshWriter</a>(<a class="code hl_class" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt;DIM,DIM&gt;</a>* pDeformedOutputMesh, <span class="keyword">const</span> std::string&amp; rDirectory, <span class="keyword">const</span> std::string&amp; rBaseName, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; rCleanDirectory=<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_function" href="classVtkDeformedMeshWriter.html#af8990e67242ca9f6a297a170f77925f9">~VtkDeformedMeshWriter</a>();</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classVtkDeformedMeshWriter.html#a560926b9f1e4f02d31d447b30b088595">SetOutputBaseFileName</a>(<span class="keyword">const</span> std::string&amp; rOutputBaseFileName);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classVtkDeformedMeshWriter.html#a622990212f7a18a7995178527ed87805">WriteDeformedFiles</a>();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classVtkDeformedMeshWriter.html#a8814b2a70561da501f3cf04e9d8e0315">ApplyDeformation</a>(<span class="keyword">const</span> std::vector&lt;c_vector&lt;double,DIM&gt; &gt;&amp; rPositions);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>};</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_class" href="classVtkDeformedMeshWriter.html">VtkDeformedMeshWriter</a>(<a class="code hl_class" href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh&lt;DIM,DIM&gt;</a>* pDeformedOutputMesh, <span class="keyword">const</span> std::string&amp; rDirectory, <span class="keyword">const</span> std::string&amp; rBaseName, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; rCleanDirectory=<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_function" href="classVtkDeformedMeshWriter.html#af8990e67242ca9f6a297a170f77925f9">~VtkDeformedMeshWriter</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classVtkDeformedMeshWriter.html#a560926b9f1e4f02d31d447b30b088595">SetOutputBaseFileName</a>(<span class="keyword">const</span> std::string&amp; rOutputBaseFileName);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classVtkDeformedMeshWriter.html#a622990212f7a18a7995178527ed87805">WriteDeformedFiles</a>();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classVtkDeformedMeshWriter.html#a8814b2a70561da501f3cf04e9d8e0315">ApplyDeformation</a>(<span class="keyword">const</span> std::vector&lt;c_vector&lt;double,DIM&gt; &gt;&amp; rPositions);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>};</div>
 </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif </span><span class="comment">/*VTKDEFORMEDMESHWRITER_HPP_*/</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#endif </span><span class="comment">//CHASTE_VTK</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif </span><span class="comment">/*VTKDEFORMEDMESHWRITER_HPP_*/</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
 <div class="ttc" id="aclassAbstractTetrahedralMesh_html"><div class="ttname"><a href="classAbstractTetrahedralMesh.html">AbstractTetrahedralMesh</a></div><div class="ttdef"><b>Definition</b> <a href="AbstractTetrahedralMesh_8hpp_source.html#l00070">AbstractTetrahedralMesh.hpp:71</a></div></div>
-<div class="ttc" id="aclassVtkDeformedMeshWriter_html"><div class="ttname"><a href="classVtkDeformedMeshWriter.html">VtkDeformedMeshWriter</a></div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8hpp_source.html#l00072">VtkDeformedMeshWriter.hpp:73</a></div></div>
-<div class="ttc" id="aclassVtkDeformedMeshWriter_html_a1fc817715168dea4f8b9606600c4c511"><div class="ttname"><a href="classVtkDeformedMeshWriter.html#a1fc817715168dea4f8b9606600c4c511">VtkDeformedMeshWriter::mpDeformedMesh</a></div><div class="ttdeci">AbstractTetrahedralMesh&lt; DIM, DIM &gt; * mpDeformedMesh</div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8hpp_source.html#l00081">VtkDeformedMeshWriter.hpp:81</a></div></div>
-<div class="ttc" id="aclassVtkDeformedMeshWriter_html_a560926b9f1e4f02d31d447b30b088595"><div class="ttname"><a href="classVtkDeformedMeshWriter.html#a560926b9f1e4f02d31d447b30b088595">VtkDeformedMeshWriter::SetOutputBaseFileName</a></div><div class="ttdeci">void SetOutputBaseFileName(const std::string &amp;rOutputBaseFileName)</div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8cpp_source.html#l00058">VtkDeformedMeshWriter.cpp:58</a></div></div>
-<div class="ttc" id="aclassVtkDeformedMeshWriter_html_a622990212f7a18a7995178527ed87805"><div class="ttname"><a href="classVtkDeformedMeshWriter.html#a622990212f7a18a7995178527ed87805">VtkDeformedMeshWriter::WriteDeformedFiles</a></div><div class="ttdeci">void WriteDeformedFiles()</div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8cpp_source.html#l00066">VtkDeformedMeshWriter.cpp:66</a></div></div>
-<div class="ttc" id="aclassVtkDeformedMeshWriter_html_a8814b2a70561da501f3cf04e9d8e0315"><div class="ttname"><a href="classVtkDeformedMeshWriter.html#a8814b2a70561da501f3cf04e9d8e0315">VtkDeformedMeshWriter::ApplyDeformation</a></div><div class="ttdeci">void ApplyDeformation(const std::vector&lt; c_vector&lt; double, DIM &gt; &gt; &amp;rPositions)</div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8cpp_source.html#l00072">VtkDeformedMeshWriter.cpp:72</a></div></div>
-<div class="ttc" id="aclassVtkDeformedMeshWriter_html_af8990e67242ca9f6a297a170f77925f9"><div class="ttname"><a href="classVtkDeformedMeshWriter.html#af8990e67242ca9f6a297a170f77925f9">VtkDeformedMeshWriter::~VtkDeformedMeshWriter</a></div><div class="ttdeci">~VtkDeformedMeshWriter()</div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8cpp_source.html#l00052">VtkDeformedMeshWriter.cpp:52</a></div></div>
-<div class="ttc" id="aclassVtkMeshWriter_html"><div class="ttname"><a href="classVtkMeshWriter.html">VtkMeshWriter</a></div><div class="ttdef"><b>Definition</b> <a href="VtkMeshWriter_8hpp_source.html#l00071">VtkMeshWriter.hpp:72</a></div></div>
+<div class="ttc" id="aclassVtkDeformedMeshWriter_html"><div class="ttname"><a href="classVtkDeformedMeshWriter.html">VtkDeformedMeshWriter</a></div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8hpp_source.html#l00070">VtkDeformedMeshWriter.hpp:71</a></div></div>
+<div class="ttc" id="aclassVtkDeformedMeshWriter_html_a1fc817715168dea4f8b9606600c4c511"><div class="ttname"><a href="classVtkDeformedMeshWriter.html#a1fc817715168dea4f8b9606600c4c511">VtkDeformedMeshWriter::mpDeformedMesh</a></div><div class="ttdeci">AbstractTetrahedralMesh&lt; DIM, DIM &gt; * mpDeformedMesh</div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8hpp_source.html#l00079">VtkDeformedMeshWriter.hpp:79</a></div></div>
+<div class="ttc" id="aclassVtkDeformedMeshWriter_html_a560926b9f1e4f02d31d447b30b088595"><div class="ttname"><a href="classVtkDeformedMeshWriter.html#a560926b9f1e4f02d31d447b30b088595">VtkDeformedMeshWriter::SetOutputBaseFileName</a></div><div class="ttdeci">void SetOutputBaseFileName(const std::string &amp;rOutputBaseFileName)</div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8cpp_source.html#l00057">VtkDeformedMeshWriter.cpp:57</a></div></div>
+<div class="ttc" id="aclassVtkDeformedMeshWriter_html_a622990212f7a18a7995178527ed87805"><div class="ttname"><a href="classVtkDeformedMeshWriter.html#a622990212f7a18a7995178527ed87805">VtkDeformedMeshWriter::WriteDeformedFiles</a></div><div class="ttdeci">void WriteDeformedFiles()</div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8cpp_source.html#l00065">VtkDeformedMeshWriter.cpp:65</a></div></div>
+<div class="ttc" id="aclassVtkDeformedMeshWriter_html_a8814b2a70561da501f3cf04e9d8e0315"><div class="ttname"><a href="classVtkDeformedMeshWriter.html#a8814b2a70561da501f3cf04e9d8e0315">VtkDeformedMeshWriter::ApplyDeformation</a></div><div class="ttdeci">void ApplyDeformation(const std::vector&lt; c_vector&lt; double, DIM &gt; &gt; &amp;rPositions)</div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8cpp_source.html#l00071">VtkDeformedMeshWriter.cpp:71</a></div></div>
+<div class="ttc" id="aclassVtkDeformedMeshWriter_html_af8990e67242ca9f6a297a170f77925f9"><div class="ttname"><a href="classVtkDeformedMeshWriter.html#af8990e67242ca9f6a297a170f77925f9">VtkDeformedMeshWriter::~VtkDeformedMeshWriter</a></div><div class="ttdeci">~VtkDeformedMeshWriter()</div><div class="ttdef"><b>Definition</b> <a href="VtkDeformedMeshWriter_8cpp_source.html#l00051">VtkDeformedMeshWriter.cpp:51</a></div></div>
+<div class="ttc" id="aclassVtkMeshWriter_html"><div class="ttname"><a href="classVtkMeshWriter.html">VtkMeshWriter</a></div><div class="ttdef"><b>Definition</b> <a href="VtkMeshWriter_8hpp_source.html#l00069">VtkMeshWriter.hpp:70</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

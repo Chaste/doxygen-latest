@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::e8c2894cf996776c74990bd09dd32f8cbb82acf2</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::152eaefaf02246ef769bd916268f05686539aa51</span>
    </div>
   </td>
  </tr>
@@ -76,14 +76,14 @@ $(document).ready(function(){initNavTree('classAbstractCvodeCell.html',''); init
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classAbstractCvodeCell__inherit__graph.svg" width="638" height="2595"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classAbstractCvodeCell__inherit__graph.svg" width="638" height="2635"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for AbstractCvodeCell:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classAbstractCvodeCell__coll__graph.svg" width="1831" height="2224"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classAbstractCvodeCell__coll__graph.svg" width="2166" height="2224"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -404,7 +404,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Any single cell work should generally use this class rather than <a class="el" href="classAbstractCardiacCell.html">AbstractCardiacCell</a>.</p>
 <p>This class may also be faster for certain tissue problems (especially when using a relatively large PDE timestep (~0.1ms)). BUT it will come with a memory overhead as every node has to carry a CVODE solver object as it stores the internal state of the solver, not just the state variables as ForwardEuler solver does. So may not be appropriate for very large meshes. </p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00078">78</a> of file <a class="el" href="AbstractCvodeCell_8hpp_source.html">AbstractCvodeCell.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00077">77</a> of file <a class="el" href="AbstractCvodeCell_8hpp_source.html">AbstractCvodeCell.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae67152efb818b7177b448d2d28edaec5" name="ae67152efb818b7177b448d2d28edaec5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae67152efb818b7177b448d2d28edaec5">&#9670;&#160;</a></span>AbstractCvodeCell()</h2>
@@ -455,7 +455,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00048">48</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00046">46</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 </div>
 </div>
@@ -483,7 +483,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Free the state variables, if they have been set. </p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00059">59</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00057">57</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 </div>
 </div>
@@ -541,9 +541,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#ab97ee3ddec796cd4c587f80952426ab4">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00102">102</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00100">100</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00057">DOUBLE_UNSET</a>, <a class="el" href="HeartConfig_8cpp_source.html#l01588">HeartConfig::GetPrintingTimeStep()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l00210">HeartConfig::Instance()</a>, <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00100">mMaxDt</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00082">SetTimestep()</a>, and <a class="el" href="AbstractCvodeSystem_8cpp_source.html#l00219">AbstractCvodeSystem::Solve()</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00057">DOUBLE_UNSET</a>, <a class="el" href="HeartConfig_8cpp_source.html#l01568">HeartConfig::GetPrintingTimeStep()</a>, <a class="el" href="HeartConfig_8cpp_source.html#l00190">HeartConfig::Instance()</a>, <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00099">mMaxDt</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00080">SetTimestep()</a>, and <a class="el" href="AbstractCvodeSystem_8cpp_source.html#l00185">AbstractCvodeSystem::Solve()</a>.</p>
 
 </div>
 </div>
@@ -591,11 +591,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a2a4866fc58c08a15d28fd985cf189542">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00116">116</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00114">114</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00063">GetVoltage()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00069">SetVoltage()</a>, <a class="el" href="AbstractCardiacCellInterface_8cpp_source.html#l00159">AbstractCardiacCellInterface::SetVoltageDerivativeToZero()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00093">SolveAndUpdateState()</a>, and <a class="el" href="AbstractParameterisedSystem_8hpp_source.html#l00198">AbstractParameterisedSystem&lt; N_Vector &gt;::VerifyStateVariables()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="AbstractCardiacTissue_8cpp_source.html#l00779">AbstractCardiacTissue&lt; SPACE_DIM &gt;::SetConductivityModifier()</a>.</p>
+<p class="reference">References <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00061">GetVoltage()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00067">SetVoltage()</a>, <a class="el" href="AbstractCardiacCellInterface_8cpp_source.html#l00159">AbstractCardiacCellInterface::SetVoltageDerivativeToZero()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00091">SolveAndUpdateState()</a>, and <a class="el" href="AbstractParameterisedSystem_8hpp_source.html#l00198">AbstractParameterisedSystem&lt; N_Vector &gt;::VerifyStateVariables()</a>.</p>
 
 </div>
 </div>
@@ -645,7 +643,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#ad92c4f39a6b4e37b6df09325f98caba3">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00187">187</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00185">185</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00282">AbstractParameterisedSystem&lt; N_Vector &gt;::GetAnyVariable()</a>.</p>
 
@@ -679,7 +677,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#abb48949ce4e3232a96c620e6fa2c613b">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00148">148</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00146">146</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractUntemplatedParameterisedSystem_8cpp_source.html#l00106">AbstractUntemplatedParameterisedSystem::GetNumberOfParameters()</a>.</p>
 
@@ -713,11 +711,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a260f11f05b87b9b6f08db8af710f44c5">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00143">143</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00141">141</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractUntemplatedParameterisedSystem_8cpp_source.html#l00072">AbstractUntemplatedParameterisedSystem::GetNumberOfStateVariables()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00153">GetStdVecStateVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00151">GetStdVecStateVariables()</a>.</p>
 
 </div>
 </div>
@@ -756,7 +754,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#aa501af8f8416dcc5d33014a62b7d6a19">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00192">192</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00190">190</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00246">AbstractParameterisedSystem&lt; N_Vector &gt;::GetParameter()</a>.</p>
 
@@ -797,7 +795,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a4db5c485a72997ec96455a2d38c80ebf">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00197">197</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00195">195</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00246">AbstractParameterisedSystem&lt; N_Vector &gt;::GetParameter()</a>.</p>
 
@@ -831,9 +829,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a88bf9c08ebf48d72764bec6d2873002e">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00153">153</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00151">151</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#afcef45f6b8e832108e7e679ca148f38e">CopyToStdVector()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00143">GetNumberOfStateVariables()</a>, and <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00136">AbstractParameterisedSystem&lt; N_Vector &gt;::rGetStateVariables()</a>.</p>
+<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#afcef45f6b8e832108e7e679ca148f38e">CopyToStdVector()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00141">GetNumberOfStateVariables()</a>, and <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00136">AbstractParameterisedSystem&lt; N_Vector &gt;::rGetStateVariables()</a>.</p>
 
 </div>
 </div>
@@ -853,9 +851,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The maximum timestep that is used by CVODE with this cell. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00087">87</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00085">85</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00100">mMaxDt</a>.</p>
+<p class="reference">References <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00099">mMaxDt</a>.</p>
 
 </div>
 </div>
@@ -885,11 +883,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a7d8092262ebad974599bdb3c78e79d66">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00063">63</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00061">61</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00282">AbstractParameterisedSystem&lt; N_Vector &gt;::GetAnyVariable()</a>, <a class="el" href="AbstractParameterisedSystem_8hpp_source.html#l00071">AbstractParameterisedSystem&lt; N_Vector &gt;::mStateVariables</a>, and <a class="el" href="AbstractCardiacCellInterface_8hpp_source.html#l00427">AbstractCardiacCellInterface::mVoltageIndex</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00116">ComputeExceptVoltage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00114">ComputeExceptVoltage()</a>.</p>
 
 </div>
 </div>
@@ -921,7 +919,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a0c265a2f42fc2fed7e25e86cec28ce29">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00160">160</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00158">158</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractUntemplatedParameterisedSystem_8cpp_source.html#l00077">AbstractUntemplatedParameterisedSystem::rGetStateVariableNames()</a>.</p>
 
@@ -971,9 +969,9 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00090">90</a> of file <a class="el" href="AbstractCvodeCell_8hpp_source.html">AbstractCvodeCell.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00089">89</a> of file <a class="el" href="AbstractCvodeCell_8hpp_source.html">AbstractCvodeCell.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00100">mMaxDt</a>.</p>
+<p class="reference">References <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00099">mMaxDt</a>.</p>
 
 </div>
 </div>
@@ -1000,9 +998,9 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00077">77</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00075">75</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00082">SetTimestep()</a>.</p>
+<p class="reference">References <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00080">SetTimestep()</a>.</p>
 
 </div>
 </div>
@@ -1051,11 +1049,11 @@ template&lt;class Archive &gt; </div>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a8a853c0c01c6f05703b34fdf1d1f341c">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00202">202</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00200">200</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00266">AbstractParameterisedSystem&lt; N_Vector &gt;::SetParameter()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="AbstractCvodeCellWithDataClamp_8cpp_source.html#l00112">AbstractCvodeCellWithDataClamp::TurnOffDataClamp()</a>, and <a class="el" href="AbstractCvodeCellWithDataClamp_8cpp_source.html#l00118">AbstractCvodeCellWithDataClamp::TurnOnDataClamp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AbstractCvodeCellWithDataClamp_8cpp_source.html#l00110">AbstractCvodeCellWithDataClamp::TurnOffDataClamp()</a>, and <a class="el" href="AbstractCvodeCellWithDataClamp_8cpp_source.html#l00116">AbstractCvodeCellWithDataClamp::TurnOnDataClamp()</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1102,7 @@ template&lt;class Archive &gt; </div>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a2edfa252cf9b4ce3c0458cfaac0b2cf3">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00182">182</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00180">180</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00179">AbstractParameterisedSystem&lt; N_Vector &gt;::SetStateVariable()</a>.</p>
 
@@ -1155,7 +1153,7 @@ template&lt;class Archive &gt; </div>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a00babbb7041b982775659ec115c26c02">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00177">177</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00175">175</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00179">AbstractParameterisedSystem&lt; N_Vector &gt;::SetStateVariable()</a>.</p>
 
@@ -1183,7 +1181,7 @@ template&lt;class Archive &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00172">172</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00170">170</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00148">AbstractParameterisedSystem&lt; N_Vector &gt;::SetStateVariables()</a>.</p>
 
@@ -1223,9 +1221,9 @@ template&lt;class Archive &gt; </div>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a17de03050a1d570210546c0d63f9b4db">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00165">165</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00163">163</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, <a class="el" href="VectorHelperFunctions_8hpp_source.html#l00507">MakeNVector()</a>, and <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00148">AbstractParameterisedSystem&lt; N_Vector &gt;::SetStateVariables()</a>.</p>
+<p class="reference">References <a class="el" href="VectorHelperFunctions_8hpp.html#a013210710438a0563734aae4573c0503">DeleteVector()</a>, <a class="el" href="VectorHelperFunctions_8hpp_source.html#l00502">MakeNVector()</a>, and <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00148">AbstractParameterisedSystem&lt; N_Vector &gt;::SetStateVariables()</a>.</p>
 
 </div>
 </div>
@@ -1263,11 +1261,11 @@ template&lt;class Archive &gt; </div>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#a7e2a63ed24484fa54e2cb6edcd31e549">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00082">82</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00080">80</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00100">mMaxDt</a>.</p>
+<p class="reference">References <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00099">mMaxDt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00102">Compute()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00077">SetMaxTimestep()</a>, and <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00093">SolveAndUpdateState()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00100">Compute()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00075">SetMaxTimestep()</a>, and <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00091">SolveAndUpdateState()</a>.</p>
 
 </div>
 </div>
@@ -1303,11 +1301,11 @@ template&lt;class Archive &gt; </div>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#af3c5e62f52e96d87aed5913783114d2c">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00069">69</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00067">67</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="AbstractParameterisedSystem_8hpp_source.html#l00071">AbstractParameterisedSystem&lt; N_Vector &gt;::mStateVariables</a>, <a class="el" href="AbstractCardiacCellInterface_8hpp_source.html#l00427">AbstractCardiacCellInterface::mVoltageIndex</a>, <a class="el" href="AbstractParameterisedSystem_8cpp_source.html#l00327">AbstractParameterisedSystem&lt; N_Vector &gt;::SetAnyVariable()</a>, and <a class="el" href="AbstractCardiacCellInterface_8cpp_source.html#l00168">AbstractCardiacCellInterface::SetFixedVoltage()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00116">ComputeExceptVoltage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00114">ComputeExceptVoltage()</a>.</p>
 
 </div>
 </div>
@@ -1343,9 +1341,9 @@ template&lt;class Archive &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classAbstractCardiacCellInterface.html#a884223ef3c282650c04484b1136d17bf">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00134">134</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00132">132</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="AbstractCardiacCellInterface_8hpp_source.html#l00440">AbstractCardiacCellInterface::mSetVoltageDerivativeToZero</a>, <a class="el" href="AbstractCvodeSystem_8cpp_source.html#l00395">AbstractCvodeSystem::ResetSolver()</a>, and <a class="el" href="AbstractCardiacCellInterface_8cpp_source.html#l00159">AbstractCardiacCellInterface::SetVoltageDerivativeToZero()</a>.</p>
+<p class="reference">References <a class="el" href="AbstractCardiacCellInterface_8hpp_source.html#l00440">AbstractCardiacCellInterface::mSetVoltageDerivativeToZero</a>, <a class="el" href="AbstractCvodeSystem_8cpp_source.html#l00361">AbstractCvodeSystem::ResetSolver()</a>, and <a class="el" href="AbstractCardiacCellInterface_8cpp_source.html#l00159">AbstractCardiacCellInterface::SetVoltageDerivativeToZero()</a>.</p>
 
 </div>
 </div>
@@ -1394,11 +1392,11 @@ template&lt;class Archive &gt; </div>
 
 <p>Implements <a class="el" href="classAbstractCardiacCellInterface.html#ad5ed9e5abbe59f1c3d34a70dbe7430cb">AbstractCardiacCellInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00093">93</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00091">91</a> of file <a class="el" href="AbstractCvodeCell_8cpp_source.html">AbstractCvodeCell.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00057">DOUBLE_UNSET</a>, <a class="el" href="HeartConfig_8cpp_source.html#l00210">HeartConfig::Instance()</a>, <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00100">mMaxDt</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00082">SetTimestep()</a>, and <a class="el" href="AbstractCvodeSystem_8cpp_source.html#l00219">AbstractCvodeSystem::Solve()</a>.</p>
+<p class="reference">References <a class="el" href="Exception_8hpp_source.html#l00057">DOUBLE_UNSET</a>, <a class="el" href="HeartConfig_8cpp_source.html#l00190">HeartConfig::Instance()</a>, <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00099">mMaxDt</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00080">SetTimestep()</a>, and <a class="el" href="AbstractCvodeSystem_8cpp_source.html#l00185">AbstractCvodeSystem::Solve()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00116">ComputeExceptVoltage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00114">ComputeExceptVoltage()</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1422,7 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>Needed for serialization. </p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00082">82</a> of file <a class="el" href="AbstractCvodeCell_8hpp_source.html">AbstractCvodeCell.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00081">81</a> of file <a class="el" href="AbstractCvodeCell_8hpp_source.html">AbstractCvodeCell.hpp</a>.</p>
 
 </div>
 </div>
@@ -1450,9 +1448,9 @@ template&lt;class Archive &gt; </div>
 </div><div class="memdoc">
 <p>The maximum timestep to use. </p>
 
-<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00100">100</a> of file <a class="el" href="AbstractCvodeCell_8hpp_source.html">AbstractCvodeCell.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00099">99</a> of file <a class="el" href="AbstractCvodeCell_8hpp_source.html">AbstractCvodeCell.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00102">Compute()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00087">GetTimestep()</a>, <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00090">serialize()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00082">SetTimestep()</a>, and <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00093">SolveAndUpdateState()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00100">Compute()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00085">GetTimestep()</a>, <a class="el" href="AbstractCvodeCell_8hpp_source.html#l00089">serialize()</a>, <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00080">SetTimestep()</a>, and <a class="el" href="AbstractCvodeCell_8cpp_source.html#l00091">SolveAndUpdateState()</a>.</p>
 
 </div>
 </div>

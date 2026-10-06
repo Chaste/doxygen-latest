@@ -30,5 +30,7 @@ var classCvodeAdaptor =
     [ "mLastSolutionTime", "classCvodeAdaptor.html#aebf2a13b2eb87b7159927addf52b5dae", null ],
     [ "mMaxSteps", "classCvodeAdaptor.html#a1f4857cd94fb8aa2d5a9c1ec406b10e0", null ],
     [ "mpCvodeMem", "classCvodeAdaptor.html#abb51c640e77aacece29aa25e57390723", null ],
+    [ "mpSundialsDenseMatrix", "classCvodeAdaptor.html#afc71d06acc36c9bbb2b36c3099674e51", null ],
+    [ "mpSundialsLinearSolver", "classCvodeAdaptor.html#a58992b56ed054e255f416082302017ea", null ],
     [ "mRelTol", "classCvodeAdaptor.html#aa4b4695183eb76cfeac9151cde2d8532", null ]
 ];
