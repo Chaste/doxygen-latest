@@ -1120,6 +1120,7 @@ var hierarchy =
     [ "RelativeTo", "structRelativeTo.html", null ],
     [ "ReplicatableVector", "classReplicatableVector.html", null ],
     [ "SimpleDataWriter", "classSimpleDataWriter.html", null ],
+    [ "SourceRevision", "classSourceRevision.html", null ],
     [ "splaynode", "structsplaynode.html", null ],
     [ "std::exception", null, [
       [ "StepSizeException", "classStepSizeException.html", null ],

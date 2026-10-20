@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"classPoleZeroMaterialLaw.html#a5a7375436155545ef2f2aac9d99b0179":[1,0,536,9],
 "classPoleZeroMaterialLaw.html#a6bef93331323ec378425f4ff391fb2b0":[1,0,536,0],
 "classPoleZeroMaterialLaw.html#a7653527c0318a1c6dbd31f087b59b14c":[1,0,536,3],
 "classPoleZeroMaterialLaw.html#a9319d87e80adb8fea1f2e9a31c900267":[1,0,536,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "classPurkinjeVentricularJunctionStimulus.html#a2397da0e27efacfcd571493a01ba3d92":[1,0,551,6],
 "classPurkinjeVentricularJunctionStimulus.html#a29d997e7e5f952cac2b5b7c37a9ff0d8":[1,0,551,8],
 "classPurkinjeVentricularJunctionStimulus.html#a403f6576c7c718107df579ebdf335a8c":[1,0,551,2],
-"classPurkinjeVentricularJunctionStimulus.html#a7bb103ef5814f3f58875c69cedd1917b":[1,0,551,3],
-"classPurkinjeVentricularJunctionStimulus.html#a8d94a1049acd2879843b33977bf650d4":[1,0,551,4]
+"classPurkinjeVentricularJunctionStimulus.html#a7bb103ef5814f3f58875c69cedd1917b":[1,0,551,3]
 };

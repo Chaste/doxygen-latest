@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"classHeartConfig.html#a173a413e3e4a049f54cf2db3956b6ebb":[1,0,388,106],
 "classHeartConfig.html#a17d4f1d2ba9d6e48108e8f84c462c68d":[1,0,388,120],
 "classHeartConfig.html#a1a9fa38bb75d605b812838a6f7affc98":[1,0,388,10],
 "classHeartConfig.html#a1c2e9fe97d37940788e7f815abf177d9":[1,0,388,163],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "classHeartGeometryInformation.html#a6a44b29e5ce5a3dbc1f2edc54e110f8b":[1,0,392,13],
 "classHeartGeometryInformation.html#a7da528fbae5624b17c72907a957d7d36":[1,0,392,9],
 "classHeartGeometryInformation.html#a86d402db5679059744748158539d6553":[1,0,392,42],
-"classHeartGeometryInformation.html#a8c2ff42fc1fb94d56f6507386266a34a":[1,0,392,1],
-"classHeartGeometryInformation.html#a8ce7f2dcbcd6a543fa9f8e5ed4773da8":[1,0,392,15]
+"classHeartGeometryInformation.html#a8c2ff42fc1fb94d56f6507386266a34a":[1,0,392,1]
 };

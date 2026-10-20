@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"classMutableMesh.html#af36bd32e83e6dde393f0693e97cbde51":[1,0,466,4],
 "classMutableMesh.html#af824d4807195c60a03491904b454db88":[1,0,466,16],
 "classMutableMesh.html#afb3769d08e4f1dcf0701283a75b01e4d":[1,0,466,9],
 "classMutableVertexMesh.html":[1,0,467],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "classNode.html#aaa323c6ffbc64de407a09c0d7b7796b1":[1,0,476,61],
 "classNode.html#aae035448ae480b72acddb56c18f4151d":[1,0,476,62],
 "classNode.html#ab23438a1521aba1b773c58f8036a0212":[1,0,476,27],
-"classNode.html#ab316c0b1ee76c5a0eecde5d38320f418":[1,0,476,22],
-"classNode.html#ab505504db8c0cfde63675ca6249db478":[1,0,476,4]
+"classNode.html#ab316c0b1ee76c5a0eecde5d38320f418":[1,0,476,22]
 };

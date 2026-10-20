@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::0be956bc7d5bb0b64d9085b76ddb0754dca78a71</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::29c3c4ab2bee00ddd311a035a1e522c03cbe928a</span>
    </div>
   </td>
  </tr>
@@ -89,6 +89,8 @@ Functions</h2></td></tr>
 <tr class="separator:adfef4665c652bfd7c7c20938aedb13cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa66f1f914c5a653c82a9aa7da00dc0b4" id="r_aa66f1f914c5a653c82a9aa7da00dc0b4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ChasteBuildRoot_8hpp.html#aa66f1f914c5a653c82a9aa7da00dc0b4">ChasteSourceRootDir</a> ()</td></tr>
 <tr class="separator:aa66f1f914c5a653c82a9aa7da00dc0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d75ee25676305a411004b7df668af1f" id="r_a2d75ee25676305a411004b7df668af1f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ChasteBuildRoot_8hpp.html#a2d75ee25676305a411004b7df668af1f">ChasteInstallRootDir</a> ()</td></tr>
+<tr class="separator:a2d75ee25676305a411004b7df668af1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7592cac8fe7fc0d6a2bcf0addeb505" id="r_a9c7592cac8fe7fc0d6a2bcf0addeb505"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ChasteBuildRoot_8hpp.html#a9c7592cac8fe7fc0d6a2bcf0addeb505">ChasteComponentBuildDir</a> (const std::string &amp;rComponent)</td></tr>
 <tr class="separator:a9c7592cac8fe7fc0d6a2bcf0addeb505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8828f88b0fbd65c428478a22b3832002" id="r_a8828f88b0fbd65c428478a22b3832002"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ChasteBuildRoot_8hpp.html#a8828f88b0fbd65c428478a22b3832002">ChasteBuildDirName</a> ()</td></tr>
@@ -185,6 +187,24 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a2d75ee25676305a411004b7df668af1f" name="a2d75ee25676305a411004b7df668af1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d75ee25676305a411004b7df668af1f">&#9670;&#160;</a></span>ChasteInstallRootDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * ChasteInstallRootDir </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the install prefix (CMAKE_INSTALL_PREFIX) this Chaste was configured with. Will always give you the absolute path with a trailing slash. Used to locate an installed copy of the provenance/ directory when this Chaste is used out of tree, via ChasteConfig.cmake, rather than from its own source or build tree. </dd></dl>
 
 </div>
 </div>
