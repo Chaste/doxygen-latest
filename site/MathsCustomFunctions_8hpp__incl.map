@@ -1,7 +1,7 @@
 <map id="global/src/MathsCustomFunctions.hpp" name="global/src/MathsCustomFunctions.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,275,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="67,79,125,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,32,113,68,108,66,130,30"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="150,79,221,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,30,173,66,168,69,145,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,274,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="67,81,124,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,32,113,69,109,66,129,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="149,81,218,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,31,171,68,165,67,146,36"/>
 </map>

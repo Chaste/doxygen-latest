@@ -1,16 +1,16 @@
 <map id="AbstractCvodeCell" name="AbstractCvodeCell">
-<area shape="rect" id="Node000001" title=" " alt="" coords="105,1991,296,2276"/>
-<area shape="rect" id="Node000007" href="$classAbstractCvodeCellWithDataClamp.html" title=" " alt="" coords="90,2325,311,2629"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="203,2290,203,2325,198,2325,198,2290"/>
-<area shape="rect" id="Node000002" href="$classAbstractCardiacCellInterface.html" title=" " alt="" coords="5,1416,255,1821"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,1835,184,1990,179,1991,157,1835"/>
-<area shape="rect" id="Node000003" href="$classAbstractCvodeSystem.html" title=" " alt="" coords="279,1296,483,1941"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,1924,253,1991,248,1989,272,1922"/>
-<area shape="rect" id="Node000004" href="$classAbstractParameterisedSystem.html" title=" " alt="" coords="263,847,499,1247"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="383,1260,383,1296,378,1296,378,1260"/>
-<area shape="rect" id="Node000005" href="$classAbstractUntemplatedParameterisedSystem.html" title=" " alt="" coords="239,5,512,335"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="379,348,382,846,377,846,374,348"/>
-<area shape="rect" id="Node000006" href="$classAbstractParameterisedSystem.html" title=" " alt="" coords="396,384,632,784"/>
-<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="437,347,449,383,444,385,432,349"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="455,798,441,847,436,846,450,796"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="50,2201,239,2519"/>
+<area shape="rect" id="Node000007" href="$classAbstractCvodeCellWithDataClamp.html" title=" " alt="" coords="35,2568,254,2909"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="145,2531,147,2569,142,2568,144,2536"/>
+<area shape="rect" id="Node000002" href="$classAbstractCardiacCellInterface.html" title=" " alt="" coords="5,1565,252,2017"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,2030,143,2201,138,2201,135,2035"/>
+<area shape="rect" id="Node000003" href="$classAbstractCvodeSystem.html" title=" " alt="" coords="276,1431,478,2151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="269,2142,267,2152,242,2205,237,2203,262,2150,271,2137"/>
+<area shape="rect" id="Node000004" href="$classAbstractParameterisedSystem.html" title=" " alt="" coords="260,935,494,1382"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="377,1394,379,1432,374,1431,376,1399"/>
+<area shape="rect" id="Node000005" href="$classAbstractUntemplatedParameterisedSystem.html" title=" " alt="" coords="236,5,507,374"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="373,387,378,936,373,935,372,392"/>
+<area shape="rect" id="Node000006" href="$classAbstractParameterisedSystem.html" title=" " alt="" coords="393,424,627,870"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="432,386,445,424,440,424,432,391"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="448,887,438,936,432,935,449,882"/>
 </map>

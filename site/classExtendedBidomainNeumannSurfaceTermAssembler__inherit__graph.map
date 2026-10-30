@@ -1,19 +1,19 @@
 <map id="ExtendedBidomainNeumannSurfaceTermAssembler&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="ExtendedBidomainNeumannSurfaceTermAssembler&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="12,1872,276,2001"/>
-<area shape="rect" id="Node000008" href="$classExtendedBidomainNeumannSurfaceTermAssembler.html" title=" " alt="" coords="12,2064,276,2193"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="147,2015,147,2064,141,2064,141,2015"/>
-<area shape="rect" id="Node000002" href="$classAbstractFeSurfaceIntegralAssembler.html" title=" " alt="" coords="9,1559,279,1823"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,1836,147,1872,141,1872,141,1836"/>
-<area shape="rect" id="Node000003" href="$classAbstractFeAssemblerCommon.html" title=" " alt="" coords="5,909,272,1168"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,1182,146,1559,140,1559,137,1182"/>
-<area shape="rect" id="Node000007" href="$classAbstractFeSurfaceIntegralAssembler.html" title=" " alt="" coords="160,1217,429,1481"/>
-<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="212,1179,231,1216,226,1218,207,1182"/>
-<area shape="rect" id="Node000004" href="$classAbstractFeAssemblerInterface.html" title=" " alt="" coords="11,120,256,495"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="137,508,140,909,135,909,132,508"/>
-<area shape="rect" id="Node000006" href="$classAbstractFeAssemblerCommon.html" title=" " alt="" coords="155,544,421,817"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="219,507,234,543,229,545,214,509"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="63,5,204,71"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="136,84,136,119,131,119,131,84"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="228,831,195,910,190,908,223,829"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="233,1495,205,1559,200,1557,228,1493"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="12,2068,274,2214"/>
+<area shape="rect" id="Node000008" href="$classExtendedBidomainNeumannSurfaceTermAssembler.html" title=" " alt="" coords="12,2279,274,2424"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="144,2226,146,2279,141,2278,142,2231"/>
+<area shape="rect" id="Node000002" href="$classAbstractFeSurfaceIntegralAssembler.html" title=" " alt="" coords="9,1722,277,2019"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,2031,146,2069,141,2068,143,2036"/>
+<area shape="rect" id="Node000003" href="$classAbstractFeAssemblerCommon.html" title=" " alt="" coords="5,1003,270,1294"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="140,1307,145,1723,139,1722,138,1312"/>
+<area shape="rect" id="Node000007" href="$classAbstractFeSurfaceIntegralAssembler.html" title=" " alt="" coords="160,1343,428,1640"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="210,1305,229,1343,224,1344,210,1310"/>
+<area shape="rect" id="Node000004" href="$classAbstractFeAssemblerInterface.html" title=" " alt="" coords="10,127,254,546"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="134,558,140,1003,134,1003,134,564"/>
+<area shape="rect" id="Node000006" href="$classAbstractFeAssemblerCommon.html" title=" " alt="" coords="153,595,418,904"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="215,557,231,595,226,596,216,562"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="64,5,201,78"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="133,90,135,128,130,128,132,95"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="223,920,194,1004,189,1002,224,915"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="228,1657,205,1723,200,1721,230,1651"/>
 </map>

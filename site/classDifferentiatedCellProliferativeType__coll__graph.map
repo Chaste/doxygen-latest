@@ -1,12 +1,12 @@
 <map id="DifferentiatedCellProliferativeType" name="DifferentiatedCellProliferativeType">
-<area shape="rect" id="Node000001" title=" " alt="" coords="111,707,350,807"/>
-<area shape="rect" id="Node000002" href="$classAbstractCellProliferativeType.html" title=" " alt="" coords="129,468,332,657"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,671,233,706,228,706,228,671"/>
-<area shape="rect" id="Node000003" href="$classAbstractCellProperty.html" title=" " alt="" coords="69,173,253,419"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,431,209,467,203,468,194,433"/>
-<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="136,124,144,173,139,174,131,125"/>
-<area shape="rect" id="Node000005" href="$classunsigned.html" title=" " alt="" coords="265,25,338,91"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="302,91,291,233,268,419,261,452,256,451,263,418,286,233,297,91"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="277,93,253,113,237,120,223,123,211,127,199,136,184,160,180,157,195,133,209,122,222,118,236,115,251,108,273,89"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,772,346,884"/>
+<area shape="rect" id="Node000002" href="$classAbstractCellProliferativeType.html" title=" " alt="" coords="129,510,328,723"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,735,231,773,226,771,227,739"/>
+<area shape="rect" id="Node000003" href="$classAbstractCellProperty.html" title=" " alt="" coords="68,187,250,461"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="195,473,206,510,201,510,195,478"/>
+<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="132,134,142,188,137,188,132,140"/>
+<area shape="rect" id="Node000005" href="$classunsigned.html" title=" " alt="" coords="263,28,333,100"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="297,97,288,257,264,461,259,494,254,493,259,460,283,256,295,102"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="272,102,251,125,235,132,221,135,208,138,196,148,181,173,176,171,192,145,206,134,220,130,234,127,248,120,275,97"/>
 </map>

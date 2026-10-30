@@ -1,7 +1,7 @@
 <map id="ForwardEulerNumericalMethod&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="ForwardEulerNumericalMethod&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,707,279,867"/>
-<area shape="rect" id="Node000002" href="$classAbstractNumericalMethod.html" title=" " alt="" coords="5,159,279,659"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,672,145,706,139,706,139,672"/>
-<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="25,5,259,111"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,124,145,159,139,159,139,124"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,777,276,955"/>
+<area shape="rect" id="Node000002" href="$classAbstractNumericalMethod.html" title=" " alt="" coords="5,170,276,729"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,741,143,778,138,776,140,746"/>
+<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="24,5,257,122"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="141,135,143,171,138,170,141,140"/>
 </map>

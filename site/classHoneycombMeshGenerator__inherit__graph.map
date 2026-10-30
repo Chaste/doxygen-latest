@@ -1,7 +1,7 @@
 <map id="HoneycombMeshGenerator" name="HoneycombMeshGenerator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="129,5,357,371"/>
-<area shape="rect" id="Node000002" href="$classCylindricalHoneycombMeshGenerator.html" title=" " alt="" coords="5,419,216,553"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,384,143,419,138,417,154,382"/>
-<area shape="rect" id="Node000003" href="$classToroidalHoneycombMeshGenerator.html" title=" " alt="" coords="241,433,509,539"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="332,382,354,432,349,434,327,385"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="128,5,354,413"/>
+<area shape="rect" id="Node000002" href="$classCylindricalHoneycombMeshGenerator.html" title=" " alt="" coords="5,461,214,612"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,425,142,462,137,460,152,429"/>
+<area shape="rect" id="Node000003" href="$classToroidalHoneycombMeshGenerator.html" title=" " alt="" coords="238,478,504,595"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="329,424,351,478,346,477,326,429"/>
 </map>

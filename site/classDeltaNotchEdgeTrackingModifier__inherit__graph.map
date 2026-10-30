@@ -1,10 +1,10 @@
 <map id="DeltaNotchEdgeTrackingModifier&lt; DIM &gt;" name="DeltaNotchEdgeTrackingModifier&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,869,267,1084"/>
-<area shape="rect" id="Node000002" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="13,521,259,820"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,834,139,869,133,869,133,834"/>
-<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="13,5,248,111"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,125,137,521,132,521,129,125"/>
-<area shape="rect" id="Node000004" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="153,160,426,459"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="173,121,197,158,192,161,169,124"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="223,473,202,522,197,520,218,471"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,958,265,1198"/>
+<area shape="rect" id="Node000002" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="14,573,257,909"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,921,138,959,133,958,135,926"/>
+<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="14,5,246,122"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,135,137,573,131,573,130,140"/>
+<area shape="rect" id="Node000004" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="151,172,421,508"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="169,132,194,172,188,173,170,138"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="217,524,201,574,196,572,218,519"/>
 </map>

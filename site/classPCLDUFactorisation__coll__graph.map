@@ -1,14 +1,14 @@
 <map id="PCLDUFactorisation" name="PCLDUFactorisation">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,349,215,475"/>
-<area shape="rect" id="Node000002" href="$structPCLDUFactorisation_1_1PCLDUFactorisationContext.html" title=" " alt="" coords="185,207,385,287"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,289,190,340,186,336,241,285"/>
-<area shape="rect" id="Node000003" href="$classMat.html" title=" " alt="" coords="475,5,513,71"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="498,72,490,128,480,158,463,184,434,208,401,225,399,221,431,204,459,181,475,156,485,127,492,71"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="45,5,76,71"/>
-<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="57,71,45,168,45,227,53,286,69,333,64,335,47,287,39,228,39,168,51,71"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="62,70,68,127,78,156,94,181,169,205,168,210,91,185,73,158,63,128,57,71"/>
-<area shape="rect" id="Node000005" href="$classVec.html" title=" " alt="" coords="195,5,233,71"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="208,71,202,125,204,154,212,182,219,193,214,195,208,184,199,155,196,125,203,71"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="302,5,385,71"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="342,72,332,125,317,183,313,193,308,191,311,182,327,123,336,71"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,382,212,521"/>
+<area shape="rect" id="Node000002" href="$structPCLDUFactorisation_1_1PCLDUFactorisationContext.html" title=" " alt="" coords="182,228,379,317"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,315,189,372,185,368,237,319"/>
+<area shape="rect" id="Node000003" href="$classMat.html" title=" " alt="" coords="472,5,508,78"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="493,75,494,107,488,141,477,175,459,205,430,231,397,248,394,244,427,226,455,202,473,173,483,140,488,107,491,79"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="46,5,73,78"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="52,80,48,126,43,185,42,251,51,316,67,366,62,367,46,318,37,251,37,185,43,125,53,75"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="57,75,60,107,65,140,75,173,93,202,109,214,124,218,142,220,164,225,170,228,165,230,163,230,142,225,123,224,106,219,90,205,71,175,60,141,55,108,57,80"/>
+<area shape="rect" id="Node000005" href="$classVec.html" title=" " alt="" coords="195,5,228,78"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="204,75,199,138,201,171,211,203,216,214,211,214,206,205,196,172,194,138,202,80"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="301,5,381,78"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="338,75,330,137,314,204,311,213,306,211,309,203,325,136,336,80"/>
 </map>

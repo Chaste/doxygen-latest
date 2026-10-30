@@ -1,5 +1,5 @@
 <map id="PdeSimulationTime" name="PdeSimulationTime">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,177,240,343"/>
-<area shape="rect" id="Node000002" href="$classdouble.html" title=" " alt="" coords="93,5,152,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,71,125,161,120,161,120,71"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,194,238,378"/>
+<area shape="rect" id="Node000002" href="$classdouble.html" title=" " alt="" coords="94,5,149,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,75,124,177,119,176,121,80"/>
 </map>

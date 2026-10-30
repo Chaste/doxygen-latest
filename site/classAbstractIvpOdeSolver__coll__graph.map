@@ -1,9 +1,9 @@
 <map id="AbstractIvpOdeSolver" name="AbstractIvpOdeSolver">
-<area shape="rect" id="Node000001" title=" " alt="" coords="169,173,402,379"/>
-<area shape="rect" id="Node000002" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,120,211,172,207,175,168,123"/>
-<area shape="rect" id="Node000003" href="$classbool.html" title=" " alt="" coords="264,25,307,91"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="288,91,288,157,283,157,283,91"/>
-<area shape="rect" id="Node000004" href="$classdouble.html" title=" " alt="" coords="468,25,527,91"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="495,92,486,122,470,151,445,179,417,204,414,200,442,175,466,148,481,120,490,90"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="166,187,398,416"/>
+<area shape="rect" id="Node000002" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,132,208,187,203,188,169,137"/>
+<area shape="rect" id="Node000003" href="$classbool.html" title=" " alt="" coords="262,28,301,100"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="283,98,284,171,279,169,281,102"/>
+<area shape="rect" id="Node000004" href="$classdouble.html" title=" " alt="" coords="465,28,520,100"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="489,98,481,133,465,165,441,195,412,222,409,218,437,191,461,162,476,131,486,102"/>
 </map>

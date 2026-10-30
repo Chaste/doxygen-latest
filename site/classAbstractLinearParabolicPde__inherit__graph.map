@@ -1,15 +1,15 @@
 <map id="AbstractLinearParabolicPde&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="AbstractLinearParabolicPde&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="285,372,541,587"/>
-<area shape="rect" id="Node000004" href="$classAbstractLinearParabolicPde.html" title=" " alt="" coords="285,649,541,864"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="416,600,416,649,411,649,411,600"/>
-<area shape="rect" id="Node000002" href="$classAbstractLinearPde.html" title=" " alt="" coords="309,203,518,323"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="416,337,416,372,411,372,411,337"/>
-<area shape="rect" id="Node000003" href="$classAbstractLinearPde.html" title=" " alt="" coords="309,5,518,125"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,139,416,203,411,203,411,139"/>
-<area shape="rect" id="Node000005" href="$classAveragedSourceParabolicPde.html" title=" " alt="" coords="5,913,261,1373"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="306,876,275,915,264,931,260,928,271,912,302,873"/>
-<area shape="rect" id="Node000006" href="$classCellwiseSourceParabolicPde.html" title=" " alt="" coords="285,943,541,1343"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="416,878,416,943,411,943,411,878"/>
-<area shape="rect" id="Node000007" href="$classUniformSourceParabolicPde.html" title=" " alt="" coords="565,993,821,1293"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="524,873,555,912,610,991,605,994,551,915,520,876"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="284,405,538,645"/>
+<area shape="rect" id="Node000004" href="$classAbstractLinearParabolicPde.html" title=" " alt="" coords="284,710,538,950"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="412,658,414,711,408,710,410,663"/>
+<area shape="rect" id="Node000002" href="$classAbstractLinearPde.html" title=" " alt="" coords="308,221,514,355"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="411,367,414,405,408,405,411,373"/>
+<area shape="rect" id="Node000003" href="$classAbstractLinearPde.html" title=" " alt="" coords="308,5,514,139"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="411,151,414,222,408,221,411,157"/>
+<area shape="rect" id="Node000005" href="$classAveragedSourceParabolicPde.html" title=" " alt="" coords="5,1000,259,1513"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="298,964,275,1001,262,1021,257,1018,270,998,301,960"/>
+<area shape="rect" id="Node000006" href="$classCellwiseSourceParabolicPde.html" title=" " alt="" coords="284,1033,538,1480"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="412,963,414,1034,408,1032,410,967"/>
+<area shape="rect" id="Node000007" href="$classUniformSourceParabolicPde.html" title=" " alt="" coords="563,1089,817,1424"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="523,959,552,998,607,1089,602,1089,547,1001,522,965"/>
 </map>

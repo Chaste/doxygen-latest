@@ -1,15 +1,15 @@
 <map id="PottsMesh&lt; DIM &gt;::PottsElementIterator" name="PottsMesh&lt; DIM &gt;::PottsElementIterator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="158,419,391,619"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,283,157,349"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,347,169,405,166,408,110,351"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="182,276,367,356"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,356,277,403,272,403,272,356"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="121,133,289,199"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="218,198,240,251,245,260,240,263,235,253,213,200"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="314,133,435,199"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="348,212,303,277,299,274,343,209"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="363,5,386,71"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="377,71,377,117,372,117,372,71"/>
-<area shape="rect" id="Node000007" href="$classbool.html" title=" " alt="" coords="392,283,435,349"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="404,350,381,396,374,407,370,404,376,393,399,348"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="154,451,384,675"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,306,154,378"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,375,165,438,160,440,109,380"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="178,297,360,386"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,384,272,435,266,433,268,389"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="119,143,283,215"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="211,212,234,272,238,282,233,282,229,274,210,217"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="308,143,425,215"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="339,226,298,299,293,296,336,230"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="357,5,376,78"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="367,75,369,127,364,125,366,80"/>
+<area shape="rect" id="Node000007" href="$classbool.html" title=" " alt="" coords="384,306,423,378"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="396,376,375,429,369,439,365,435,371,426,392,380"/>
 </map>

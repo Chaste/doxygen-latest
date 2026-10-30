@@ -1,15 +1,15 @@
 <map id="TargetAreaLinearGrowthModifier&lt; DIM &gt;" name="TargetAreaLinearGrowthModifier&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="134,1207,394,1461"/>
-<area shape="rect" id="Node000002" href="$classAbstractTargetAreaModifier.html" title=" " alt="" coords="59,883,285,1157"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,1170,229,1206,224,1207,214,1171"/>
-<area shape="rect" id="Node000003" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="5,521,251,820"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,833,149,858,153,882,147,883,144,859,141,834"/>
-<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="126,125,129,521,124,521,121,125"/>
-<area shape="rect" id="Node000005" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="145,160,418,459"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="165,121,189,158,184,161,161,124"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="215,473,194,522,189,520,210,471"/>
-<area shape="rect" id="Node000006" href="$classdouble.html" title=" " alt="" coords="301,638,360,703"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="335,704,341,844,339,934,330,1025,302,1191,296,1190,325,1025,334,934,336,844,330,704"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="327,704,306,764,288,795,264,822,252,830,239,833,216,832,194,833,185,837,175,846,163,868,158,865,171,842,182,832,193,828,216,827,239,828,250,825,261,818,284,792,301,762,322,703"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="134,1330,392,1615"/>
+<area shape="rect" id="Node000002" href="$classAbstractTargetAreaModifier.html" title=" " alt="" coords="59,974,284,1281"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,1292,228,1331,223,1330,215,1298"/>
+<area shape="rect" id="Node000003" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="6,573,249,909"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="143,921,148,949,151,974,146,974,143,950,143,926"/>
+<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,135,129,573,123,573,122,140"/>
+<area shape="rect" id="Node000005" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="143,172,413,508"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="161,132,185,171,180,173,162,138"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="209,524,193,573,188,572,210,519"/>
+<area shape="rect" id="Node000006" href="$classdouble.html" title=" " alt="" coords="300,704,354,777"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="330,774,339,933,337,1032,329,1132,301,1314,296,1313,324,1131,332,1031,334,933,329,779"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="323,774,318,809,306,845,288,880,262,911,250,919,238,922,214,921,193,922,184,926,175,934,161,959,156,957,170,931,181,921,192,917,214,916,237,917,248,914,259,907,283,877,301,843,313,808,322,779"/>
 </map>

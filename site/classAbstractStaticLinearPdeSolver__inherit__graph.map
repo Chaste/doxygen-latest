@@ -1,16 +1,16 @@
 <map id="AbstractStaticLinearPdeSolver&lt; ELEMENT_DIM, SPACE_DIM, PROBLEM_DIM &gt;" name="AbstractStaticLinearPdeSolver&lt; ELEMENT_DIM, SPACE_DIM, PROBLEM_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="8,424,243,539"/>
-<area shape="rect" id="Node000004" href="$classAbstractStaticLinearPdeSolver.html" title=" " alt="" coords="7,616,243,716"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="128,552,128,616,123,616,123,552"/>
-<area shape="rect" id="Node000002" href="$classAbstractLinearPdeSolver.html" title=" " alt="" coords="8,120,243,375"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,388,128,424,123,424,123,388"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="55,5,196,71"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,84,128,120,123,120,123,84"/>
-<area shape="rect" id="Node000005" href="$classSimpleLinearEllipticSolver.html" title=" " alt="" coords="26,988,235,1148"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="129,730,132,988,127,988,124,730"/>
-<area shape="rect" id="Node000007" href="$classSimpleLinearEllipticSolver.html" title=" " alt="" coords="147,765,367,925"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="172,725,201,764,196,767,168,729"/>
-<area shape="rect" id="Node000006" href="$classCellBasedEllipticPdeSolver.html" title=" " alt="" coords="5,1197,256,1417"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="133,1162,133,1197,128,1197,128,1162"/>
-<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="207,939,178,989,174,986,203,936"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="8,461,241,590"/>
+<area shape="rect" id="Node000004" href="$classAbstractStaticLinearPdeSolver.html" title=" " alt="" coords="8,672,241,784"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="125,602,127,672,122,672,124,608"/>
+<area shape="rect" id="Node000002" href="$classAbstractLinearPdeSolver.html" title=" " alt="" coords="8,127,241,412"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,424,127,462,122,462,124,429"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="56,5,193,78"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,90,127,127,122,127,124,95"/>
+<area shape="rect" id="Node000005" href="$classSimpleLinearEllipticSolver.html" title=" " alt="" coords="26,1077,233,1255"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="126,796,131,1077,126,1077,125,801"/>
+<area shape="rect" id="Node000007" href="$classSimpleLinearEllipticSolver.html" title=" " alt="" coords="146,833,362,1012"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="169,794,197,832,192,834,170,799"/>
+<area shape="rect" id="Node000006" href="$classCellBasedEllipticPdeSolver.html" title=" " alt="" coords="5,1305,254,1550"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="131,1268,132,1305,127,1304,129,1273"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="201,1027,177,1078,172,1076,203,1022"/>
 </map>

@@ -1,14 +1,14 @@
 <map id="MonodomainPurkinjeCableMassMatrixAssembler&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="MonodomainPurkinjeCableMassMatrixAssembler&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="25,1671,263,1840"/>
-<area shape="rect" id="Node000002" href="$classAbstractFeCableIntegralAssembler.html" title=" " alt="" coords="12,1297,276,1621"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,1635,147,1671,141,1671,141,1635"/>
-<area shape="rect" id="Node000003" href="$classAbstractFeAssemblerCommon.html" title=" " alt="" coords="5,544,272,817"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,831,146,1297,140,1297,137,831"/>
-<area shape="rect" id="Node000006" href="$classAbstractFeCableIntegralAssembler.html" title=" " alt="" coords="161,867,482,1205"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="217,828,237,865,232,868,213,831"/>
-<area shape="rect" id="Node000004" href="$classAbstractFeAssemblerInterface.html" title=" " alt="" coords="16,120,261,495"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="141,509,141,544,136,544,136,509"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="68,5,209,71"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="141,84,141,119,136,119,136,84"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="248,1219,214,1298,209,1296,243,1217"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="25,1846,261,2036"/>
+<area shape="rect" id="Node000002" href="$classAbstractFeCableIntegralAssembler.html" title=" " alt="" coords="12,1433,274,1796"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,1809,146,1847,141,1845,142,1814"/>
+<area shape="rect" id="Node000003" href="$classAbstractFeAssemblerCommon.html" title=" " alt="" coords="5,595,270,904"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="140,916,145,1433,139,1433,138,921"/>
+<area shape="rect" id="Node000006" href="$classAbstractFeCableIntegralAssembler.html" title=" " alt="" coords="159,953,477,1334"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="214,914,234,953,228,954,214,919"/>
+<area shape="rect" id="Node000004" href="$classAbstractFeAssemblerInterface.html" title=" " alt="" coords="16,127,260,546"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="138,558,140,596,135,595,138,563"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="69,5,207,78"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="138,90,140,128,135,127,138,95"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="241,1350,213,1434,208,1432,243,1345"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="ImmersedBoundaryMeshWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="ImmersedBoundaryMeshWriter&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,493,280,988"/>
-<area shape="rect" id="Node000002" href="$classAbstractMeshWriter.html" title=" " alt="" coords="32,5,253,445"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,459,145,493,140,493,140,459"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,545,278,1098"/>
+<area shape="rect" id="Node000002" href="$classAbstractMeshWriter.html" title=" " alt="" coords="32,5,252,497"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,509,144,545,139,545,141,514"/>
 </map>

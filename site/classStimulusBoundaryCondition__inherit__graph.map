@@ -1,5 +1,5 @@
 <map id="StimulusBoundaryCondition&lt; SPACE_DIM &gt;" name="StimulusBoundaryCondition&lt; SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="9,193,229,293"/>
-<area shape="rect" id="Node000002" href="$classAbstractBoundaryCondition.html" title=" " alt="" coords="5,5,233,145"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,159,122,193,117,193,117,159"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,210,227,321"/>
+<area shape="rect" id="Node000002" href="$classAbstractBoundaryCondition.html" title=" " alt="" coords="5,5,231,162"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,174,121,211,116,209,117,179"/>
 </map>

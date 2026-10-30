@@ -1,28 +1,28 @@
 <map id="DeltaNotchEdgeOdeSystem" name="DeltaNotchEdgeOdeSystem">
-<area shape="rect" id="Node000001" title=" " alt="" coords="287,1709,517,1835"/>
-<area shape="rect" id="Node000002" href="$classAbstractOdeSystem.html" title=" " alt="" coords="303,1435,501,1660"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="405,1674,405,1709,399,1709,399,1674"/>
-<area shape="rect" id="Node000003" href="$classAbstractParameterisedSystem.html" title=" " alt="" coords="203,992,439,1372"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,1385,380,1434,374,1435,363,1386"/>
-<area shape="rect" id="Node000004" href="$classAbstractUntemplatedParameterisedSystem.html" title=" " alt="" coords="144,148,417,457"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="291,471,315,992,309,992,286,472"/>
-<area shape="rect" id="Node000011" href="$classAbstractParameterisedSystem.html" title=" " alt="" coords="5,535,241,915"/>
-<area shape="poly" id="edge11_Node000011_Node000004" title=" " alt="" coords="245,471,231,512,222,536,217,534,226,510,240,470"/>
-<area shape="rect" id="Node000005" href="$classunsigned.html" title=" " alt="" coords="101,13,175,78"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="137,78,138,101,143,123,147,132,142,134,138,125,133,101,132,78"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="245,5,471,85"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="349,86,335,133,330,131,344,85"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="391,692,549,757"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="462,758,390,977,385,975,457,757"/>
-<area shape="rect" id="Node000008" href="$classdouble.html" title=" " alt="" coords="441,270,499,335"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="473,336,473,675,467,675,467,336"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="524,270,645,335"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="583,349,572,426,554,511,520,612,487,693,482,691,515,610,549,510,567,425,577,349"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="573,13,596,78"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="587,78,587,254,582,254,582,78"/>
-<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="116,927,127,967,142,998,160,1027,204,1081,200,1084,156,1030,137,1000,122,969,111,929"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="53,270,119,335"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="91,335,108,518,102,518,86,336"/>
-<area shape="rect" id="Node000013" href="$classbool.html" title=" " alt="" coords="462,1149,505,1215"/>
-<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="481,1215,453,1373,441,1420,436,1418,447,1371,476,1214"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="286,1884,514,2024"/>
+<area shape="rect" id="Node000002" href="$classAbstractOdeSystem.html" title=" " alt="" coords="302,1584,498,1835"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="401,1848,402,1886,397,1883,398,1852"/>
+<area shape="rect" id="Node000003" href="$classAbstractParameterisedSystem.html" title=" " alt="" coords="203,1095,437,1519"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,1531,378,1585,372,1584,364,1536"/>
+<area shape="rect" id="Node000004" href="$classAbstractUntemplatedParameterisedSystem.html" title=" " alt="" coords="144,160,415,506"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="288,519,314,1095,308,1095,286,524"/>
+<area shape="rect" id="Node000011" href="$classAbstractParameterisedSystem.html" title=" " alt="" coords="5,588,239,1013"/>
+<area shape="poly" id="edge11_Node000011_Node000004" title=" " alt="" coords="240,524,230,565,222,589,217,588,225,564,241,518"/>
+<area shape="rect" id="Node000005" href="$classunsigned.html" title=" " alt="" coords="101,14,170,86"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="132,83,136,110,141,135,144,144,139,144,136,136,131,111,132,88"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="244,5,468,95"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="343,97,333,144,328,143,345,92"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="390,764,543,837"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="457,834,388,1079,383,1078,455,839"/>
+<area shape="rect" id="Node000008" href="$classdouble.html" title=" " alt="" coords="439,297,494,369"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="467,366,469,748,464,747,466,371"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="518,297,636,369"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="573,381,565,469,548,565,515,675,483,765,478,763,510,674,542,564,560,468,572,386"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="568,14,586,86"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="577,83,580,280,574,280,577,88"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="112,1025,127,1070,141,1103,160,1136,205,1196,200,1198,156,1139,137,1106,121,1072,112,1030"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="56,297,120,369"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="90,366,108,571,103,571,90,372"/>
+<area shape="rect" id="Node000013" href="$classbool.html" title=" " alt="" coords="460,1271,499,1343"/>
+<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="477,1340,468,1424,452,1520,440,1569,436,1567,446,1518,463,1423,475,1345"/>
 </map>

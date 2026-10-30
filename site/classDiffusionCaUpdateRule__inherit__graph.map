@@ -1,9 +1,9 @@
 <map id="DiffusionCaUpdateRule&lt; DIM &gt;" name="DiffusionCaUpdateRule&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="6,575,239,775"/>
-<area shape="rect" id="Node000002" href="$classAbstractCaUpdateRule.html" title=" " alt="" coords="6,367,239,527"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,540,125,574,120,574,120,540"/>
-<area shape="rect" id="Node000003" href="$classAbstractUpdateRule.html" title=" " alt="" coords="6,159,239,319"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,332,125,366,120,366,120,332"/>
-<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="125,124,125,158,120,158,120,124"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,624,237,847"/>
+<area shape="rect" id="Node000002" href="$classAbstractCaUpdateRule.html" title=" " alt="" coords="6,397,237,576"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,588,124,624,119,623,121,593"/>
+<area shape="rect" id="Node000003" href="$classAbstractUpdateRule.html" title=" " alt="" coords="6,170,237,349"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="122,361,124,398,119,397,121,367"/>
+<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="122,135,124,171,119,170,122,140"/>
 </map>

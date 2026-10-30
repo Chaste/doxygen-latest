@@ -1,7 +1,7 @@
 <map id="HeartConfigRelatedCellFactory&lt; SPACE_DIM &gt;" name="HeartConfigRelatedCellFactory&lt; SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,856,255,1355"/>
-<area shape="rect" id="Node000002" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="11,437,249,807"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,820,133,856,127,856,127,820"/>
-<area shape="rect" id="Node000003" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="11,5,249,375"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,389,133,437,127,437,127,389"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,947,252,1506"/>
+<area shape="rect" id="Node000002" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="10,484,247,898"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,910,131,947,126,947,129,916"/>
+<area shape="rect" id="Node000003" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="10,5,247,419"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,431,131,484,126,484,129,437"/>
 </map>

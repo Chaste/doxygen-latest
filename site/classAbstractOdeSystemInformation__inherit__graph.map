@@ -1,9 +1,9 @@
 <map id="AbstractOdeSystemInformation" name="AbstractOdeSystemInformation">
-<area shape="rect" id="Node000001" title=" " alt="" coords="275,5,530,511"/>
-<area shape="rect" id="Node000002" href="$classCellwiseOdeSystemInformation.html" title=" " alt="" coords="5,619,251,879"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,499,203,620,198,617,266,496"/>
-<area shape="rect" id="Node000003" href="$classCombinedOdeSystemInformation.html" title=" " alt="" coords="275,676,531,821"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="405,524,405,676,400,676,400,524"/>
-<area shape="rect" id="Node000004" href="$classOdeSystemInformation.html" title=" " alt="" coords="555,559,744,939"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="538,522,557,559,552,561,533,524"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="272,5,525,569"/>
+<area shape="rect" id="Node000002" href="$classCellwiseOdeSystemInformation.html" title=" " alt="" coords="5,684,248,974"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,550,202,686,197,683,264,555"/>
+<area shape="rect" id="Node000003" href="$classCombinedOdeSystemInformation.html" title=" " alt="" coords="272,748,526,910"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="400,582,401,749,396,748,397,586"/>
+<area shape="rect" id="Node000004" href="$classOdeSystemInformation.html" title=" " alt="" coords="550,617,738,1041"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="532,578,553,622,548,621,531,583"/>
 </map>

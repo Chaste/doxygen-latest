@@ -1,25 +1,25 @@
 <map id="AbstractCellKiller&lt; SPACE_DIM &gt;" name="AbstractCellKiller&lt; SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="813,160,1059,375"/>
-<area shape="rect" id="Node000003" href="$classApoptoticCellKiller.html" title=" " alt="" coords="544,450,789,639"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="824,387,760,452,756,448,820,383"/>
-<area shape="rect" id="Node000004" href="$classAbstractCellKiller.html" title=" " alt="" coords="813,437,1059,652"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="939,388,939,437,933,437,933,388"/>
-<area shape="rect" id="Node000011" href="$classAbstractCellKiller.html" title=" " alt="" coords="1443,445,1688,645"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1072,325,1443,487,1441,492,1070,330"/>
-<area shape="rect" id="Node000002" href="$classIdentifiable.html" title=" " alt="" coords="819,5,1053,111"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="939,124,939,160,933,160,933,124"/>
-<area shape="rect" id="Node000005" href="$classIsolatedLabelledCellKiller.html" title=" " alt="" coords="5,761,251,916"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="801,654,744,666,676,673,522,676,373,681,311,689,264,704,223,730,187,763,184,759,220,726,262,699,310,684,372,676,521,671,675,667,743,661,800,649"/>
-<area shape="rect" id="Node000006" href="$classPlaneBasedCellKiller.html" title=" " alt="" coords="275,731,520,946"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="802,654,761,667,726,674,663,676,602,680,570,688,533,704,490,733,487,729,531,699,568,683,601,674,663,671,725,669,760,662,800,649"/>
-<area shape="rect" id="Node000007" href="$classRandomCellKiller.html" title=" " alt="" coords="544,741,789,936"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="831,664,758,743,754,739,827,660"/>
-<area shape="rect" id="Node000008" href="$classSloughingCellKiller.html" title=" " alt="" coords="813,701,1059,976"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="939,666,939,701,933,701,933,666"/>
-<area shape="rect" id="Node000009" href="$classT2SwapCellKiller.html" title=" " alt="" coords="1083,769,1328,909"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="1045,660,1144,767,1140,770,1041,664"/>
-<area shape="rect" id="Node000010" href="$classTargetedCellKiller.html" title=" " alt="" coords="1352,731,1597,946"/>
-<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="1073,580,1207,629,1276,661,1341,699,1380,729,1377,733,1339,704,1274,666,1205,634,1071,585"/>
-<area shape="rect" id="Node000012" href="$classRadialSloughingCellKiller.html" title=" " alt="" coords="1621,739,1867,939"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1635,655,1686,737,1681,740,1631,658"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="805,172,1048,412"/>
+<area shape="rect" id="Node000003" href="$classApoptoticCellKiller.html" title=" " alt="" coords="539,491,782,704"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="814,421,754,493,751,489,810,425"/>
+<area shape="rect" id="Node000004" href="$classAbstractCellKiller.html" title=" " alt="" coords="805,477,1048,717"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="928,425,929,479,924,476,926,430"/>
+<area shape="rect" id="Node000011" href="$classAbstractCellKiller.html" title=" " alt="" coords="1428,486,1671,709"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1062,356,1431,536,1426,537,1061,361"/>
+<area shape="rect" id="Node000002" href="$classIdentifiable.html" title=" " alt="" coords="810,5,1043,122"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="928,135,929,173,924,171,926,140"/>
+<area shape="rect" id="Node000005" href="$classIsolatedLabelledCellKiller.html" title=" " alt="" coords="5,834,248,1007"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="789,718,736,732,668,739,515,741,368,746,308,754,261,769,219,798,184,836,180,832,216,794,259,764,306,749,368,740,515,736,668,733,735,727,794,716"/>
+<area shape="rect" id="Node000006" href="$classPlaneBasedCellKiller.html" title=" " alt="" coords="272,800,515,1040"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="789,718,753,734,718,740,656,741,596,744,563,753,528,769,484,802,481,798,525,764,562,748,595,739,655,736,718,735,752,728,794,716"/>
+<area shape="rect" id="Node000007" href="$classRandomCellKiller.html" title=" " alt="" coords="539,811,782,1029"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="821,727,751,814,748,810,816,730"/>
+<area shape="rect" id="Node000008" href="$classSloughingCellKiller.html" title=" " alt="" coords="805,767,1048,1074"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="928,730,929,768,925,765,925,734"/>
+<area shape="rect" id="Node000009" href="$classT2SwapCellKiller.html" title=" " alt="" coords="1072,842,1315,998"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="1036,726,1132,843,1127,842,1034,731"/>
+<area shape="rect" id="Node000010" href="$classTargetedCellKiller.html" title=" " alt="" coords="1339,800,1582,1040"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="1062,636,1128,659,1196,689,1264,724,1328,765,1369,801,1364,800,1325,769,1262,728,1194,694,1126,664,1062,641"/>
+<area shape="rect" id="Node000012" href="$classRadialSloughingCellKiller.html" title=" " alt="" coords="1605,809,1848,1032"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1619,719,1668,810,1664,808,1617,724"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="badsubseg" name="badsubseg">
-<area shape="rect" id="Node000001" title=" " alt="" coords="53,148,137,213"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,71,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="36,71,36,97,42,123,48,134,43,136,37,125,30,98,30,71"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="125,5,183,71"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,72,127,125,123,134,118,132,122,123,142,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="53,160,134,232"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,67,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="31,75,33,106,40,135,46,147,41,148,35,137,28,107,30,80"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="124,5,178,78"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,76,124,137,120,146,116,143,119,135,139,80"/>
 </map>

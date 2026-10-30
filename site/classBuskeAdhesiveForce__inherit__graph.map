@@ -1,12 +1,12 @@
 <map id="BuskeAdhesiveForce&lt; DIM &gt;" name="BuskeAdhesiveForce&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="11,1115,245,1315"/>
-<area shape="rect" id="Node000002" href="$classAbstractTwoBodyInteractionForce.html" title=" " alt="" coords="11,776,245,1065"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,1079,131,1114,125,1114,125,1079"/>
-<area shape="rect" id="Node000003" href="$classAbstractForce.html" title=" " alt="" coords="18,160,227,375"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,388,129,776,124,776,121,388"/>
-<area shape="rect" id="Node000005" href="$classAbstractTwoBodyInteractionForce.html" title=" " alt="" coords="145,424,399,713"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="184,386,203,423,198,425,179,388"/>
-<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="125,124,125,160,120,160,120,124"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="210,727,190,777,185,775,205,725"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="11,1224,243,1448"/>
+<area shape="rect" id="Node000002" href="$classAbstractTwoBodyInteractionForce.html" title=" " alt="" coords="12,851,243,1175"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,1187,130,1225,125,1224,126,1192"/>
+<area shape="rect" id="Node000003" href="$classAbstractForce.html" title=" " alt="" coords="18,172,226,412"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,424,129,851,123,851,122,429"/>
+<area shape="rect" id="Node000005" href="$classAbstractTwoBodyInteractionForce.html" title=" " alt="" coords="143,461,394,786"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="181,423,200,461,194,462,181,428"/>
+<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="122,135,124,172,119,172,122,140"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="204,802,188,852,183,850,205,797"/>
 </map>

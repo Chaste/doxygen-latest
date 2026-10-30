@@ -12,11 +12,14 @@ var classCommandLineArguments =
     [ "GetStringsCorrespondingToOption", "classCommandLineArguments.html#a6b109ca6b9a43e676df9fda8ead4febf", null ],
     [ "GetUnsignedCorrespondingToOption", "classCommandLineArguments.html#a9b1479469994df291e5c478df7176019", null ],
     [ "GetUnsignedsCorrespondingToOption", "classCommandLineArguments.html#a73a0a621fccd5cdd1bc722ad3336791b", null ],
+    [ "GetUnusedOptions", "classCommandLineArguments.html#af2e2840cbd9476b92044c9fb93f5a0ff", null ],
     [ "GetValueCorrespondingToOption", "classCommandLineArguments.html#abc942f490a85a116c4d8f78664bcd596", null ],
     [ "Instance", "classCommandLineArguments.html#a05b160b100db21aec7f47398d12612c0", null ],
+    [ "MarkOptionUsed", "classCommandLineArguments.html#a9c7ba28af99d3b78972aa864ca9d23d5", null ],
     [ "OptionExists", "classCommandLineArguments.html#a04fce67b06d8e79ac4e56a1be2f46fa5", null ],
     [ "TestOptionFormat", "classCommandLineArguments.html#ae8f2e5d78eae61a42e087a63d7cd8841", null ],
     [ "mpInstance", "classCommandLineArguments.html#a12b3ae9b72bfe82647005b2bf9c9fae4", null ],
+    [ "mUsedOptions", "classCommandLineArguments.html#a4e7dfff3b27622873a68550ff8c7a245", null ],
     [ "p_argc", "classCommandLineArguments.html#a067b1911f5cfe57e7acc7b7a1cc477c2", null ],
     [ "p_argv", "classCommandLineArguments.html#afe9555ea87ea7ecac846aa5fcda7c209", null ]
 ];

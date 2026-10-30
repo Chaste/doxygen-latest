@@ -1,7 +1,7 @@
 <map id="global/src/checkpointing/ClassIsAbstract.hpp" name="global/src/checkpointing/ClassIsAbstract.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="67,5,247,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,101,144,126"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,47,97,92,94,89,137,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="169,93,311,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,44,214,81,210,85,174,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="66,5,245,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,106,143,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,49,98,97,94,93,134,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="167,98,309,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,48,211,87,206,87,174,53"/>
 </map>

@@ -1,23 +1,23 @@
 <map id="AbstractWntOdeBasedCellCycleModel" name="AbstractWntOdeBasedCellCycleModel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="427,1496,684,1889"/>
-<area shape="rect" id="Node000007" href="$classAbstractVanLeeuwen2009WntSwatCellCycleModel.html" title=" " alt="" coords="287,1937,544,2291"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="488,1904,477,1938,472,1936,483,1902"/>
-<area shape="rect" id="Node000010" href="$classWntCellCycleModel.html" title=" " alt="" coords="568,1994,825,2234"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="628,1902,659,1993,654,1995,623,1904"/>
-<area shape="rect" id="Node000002" href="$classAbstractOdeBasedPhaseBasedCellCycleModel.html" title=" " alt="" coords="427,1144,684,1448"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="558,1462,558,1496,553,1496,553,1462"/>
-<area shape="rect" id="Node000003" href="$classAbstractPhaseBasedCellCycleModel.html" title=" " alt="" coords="312,592,545,1096"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="506,1109,515,1143,510,1144,501,1110"/>
-<area shape="rect" id="Node000004" href="$classAbstractCellCycleModel.html" title=" " alt="" coords="326,159,531,544"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="431,558,431,592,426,592,426,558"/>
-<area shape="rect" id="Node000005" href="$classIdentifiable.html" title=" " alt="" coords="311,5,546,111"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="431,124,431,159,426,159,426,124"/>
-<area shape="rect" id="Node000006" href="$classCellCycleModelOdeHandler.html" title=" " alt="" coords="569,614,797,1074"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="617,1088,601,1144,596,1143,612,1087"/>
-<area shape="rect" id="Node000008" href="$classVanLeeuwen2009WntSwatCellCycleModelHypothesisOne.html" title=" " alt="" coords="5,2367,263,2576"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="280,2290,218,2368,214,2365,276,2287"/>
-<area shape="rect" id="Node000009" href="$classVanLeeuwen2009WntSwatCellCycleModelHypothesisTwo.html" title=" " alt="" coords="287,2367,544,2576"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="418,2305,418,2366,413,2366,413,2305"/>
-<area shape="rect" id="Node000011" href="$classStochasticWntCellCycleModel.html" title=" " alt="" coords="568,2339,825,2604"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="699,2248,699,2338,694,2338,694,2248"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="425,1650,681,2092"/>
+<area shape="rect" id="Node000007" href="$classAbstractVanLeeuwen2009WntSwatCellCycleModel.html" title=" " alt="" coords="285,2140,541,2538"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="484,2104,475,2142,470,2139,482,2109"/>
+<area shape="rect" id="Node000010" href="$classWntCellCycleModel.html" title=" " alt="" coords="565,2205,821,2473"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="625,2104,656,2206,651,2205,623,2109"/>
+<area shape="rect" id="Node000002" href="$classAbstractOdeBasedPhaseBasedCellCycleModel.html" title=" " alt="" coords="425,1261,681,1602"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="554,1614,556,1651,551,1649,553,1620"/>
+<area shape="rect" id="Node000003" href="$classAbstractPhaseBasedCellCycleModel.html" title=" " alt="" coords="311,648,543,1213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="502,1224,513,1261,508,1261,502,1230"/>
+<area shape="rect" id="Node000004" href="$classAbstractCellCycleModel.html" title=" " alt="" coords="325,170,528,600"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="427,612,429,649,424,648,426,617"/>
+<area shape="rect" id="Node000005" href="$classIdentifiable.html" title=" " alt="" coords="310,5,543,122"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="427,135,429,171,424,170,426,140"/>
+<area shape="rect" id="Node000006" href="$classCellCycleModelOdeHandler.html" title=" " alt="" coords="567,674,793,1187"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="612,1199,599,1262,594,1260,611,1204"/>
+<area shape="rect" id="Node000008" href="$classVanLeeuwen2009WntSwatCellCycleModelHypothesisOne.html" title=" " alt="" coords="5,2616,261,2851"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="278,2530,218,2618,214,2615,275,2534"/>
+<area shape="rect" id="Node000009" href="$classVanLeeuwen2009WntSwatCellCycleModelHypothesisTwo.html" title=" " alt="" coords="285,2616,541,2851"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="415,2551,416,2618,411,2616,412,2555"/>
+<area shape="rect" id="Node000011" href="$classStochasticWntCellCycleModel.html" title=" " alt="" coords="565,2586,821,2882"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="695,2486,696,2587,691,2585,692,2490"/>
 </map>

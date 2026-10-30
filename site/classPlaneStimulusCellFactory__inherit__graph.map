@@ -1,9 +1,9 @@
 <map id="PlaneStimulusCellFactory&lt; CELL, ELEMENT_DIM, SPACE_DIM &gt;" name="PlaneStimulusCellFactory&lt; CELL, ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="105,424,364,539"/>
-<area shape="rect" id="Node000003" href="$classGeneralPlaneStimulusCellFactory.html" title=" " alt="" coords="5,619,203,728"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,552,143,620,139,617,186,549"/>
-<area shape="rect" id="Node000004" href="$classPlaneStimulusCellFactory.html" title=" " alt="" coords="227,616,506,731"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="284,548,330,614,325,617,279,552"/>
-<area shape="rect" id="Node000002" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="115,5,354,375"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,388,237,424,232,424,232,388"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="105,468,360,597"/>
+<area shape="rect" id="Node000003" href="$classGeneralPlaneStimulusCellFactory.html" title=" " alt="" coords="5,682,201,805"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,608,143,683,139,680,184,612"/>
+<area shape="rect" id="Node000004" href="$classPlaneStimulusCellFactory.html" title=" " alt="" coords="226,679,501,808"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="281,607,327,679,321,679,279,612"/>
+<area shape="rect" id="Node000002" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="114,5,351,419"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,431,235,469,230,468,232,436"/>
 </map>

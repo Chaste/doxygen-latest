@@ -1,16 +1,16 @@
 <map id="LinearSpringWithVariableSpringConstantsForce&lt; DIM &gt;" name="LinearSpringWithVariableSpringConstantsForce&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="11,1692,280,2349"/>
-<area shape="rect" id="Node000002" href="$classLinearSpringForce.html" title=" " alt="" coords="47,1483,244,1643"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,1656,148,1692,143,1692,143,1656"/>
-<area shape="rect" id="Node000003" href="$classAbstractVariableSizeTwoBodyInteractionForce.html" title=" " alt="" coords="5,763,275,1211"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,1224,147,1482,142,1483,140,1224"/>
-<area shape="rect" id="Node000007" href="$classLinearSpringForce.html" title=" " alt="" coords="162,1260,371,1420"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="228,1223,241,1259,236,1261,223,1225"/>
-<area shape="rect" id="Node000004" href="$classAbstractTwoBodyInteractionForce.html" title=" " alt="" coords="13,424,267,713"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="143,727,143,763,137,763,137,727"/>
-<area shape="rect" id="Node000005" href="$classAbstractForce.html" title=" " alt="" coords="35,160,245,375"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="143,388,143,424,137,424,137,388"/>
-<area shape="rect" id="Node000006" href="$classIdentifiable.html" title=" " alt="" coords="23,5,257,111"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="143,124,143,160,137,160,137,124"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="219,1433,191,1484,187,1481,214,1431"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="11,1860,279,2599"/>
+<area shape="rect" id="Node000002" href="$classLinearSpringForce.html" title=" " alt="" coords="47,1632,242,1811"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,1823,147,1860,142,1860,144,1828"/>
+<area shape="rect" id="Node000003" href="$classAbstractVariableSizeTwoBodyInteractionForce.html" title=" " alt="" coords="5,835,273,1339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,1352,147,1632,141,1632,141,1357"/>
+<area shape="rect" id="Node000007" href="$classLinearSpringForce.html" title=" " alt="" coords="160,1388,366,1567"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="224,1351,238,1388,233,1389,224,1356"/>
+<area shape="rect" id="Node000004" href="$classAbstractTwoBodyInteractionForce.html" title=" " alt="" coords="14,461,265,786"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="139,798,142,835,137,835,139,803"/>
+<area shape="rect" id="Node000005" href="$classAbstractForce.html" title=" " alt="" coords="35,172,243,412"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="139,424,142,462,137,462,139,430"/>
+<area shape="rect" id="Node000006" href="$classIdentifiable.html" title=" " alt="" coords="23,5,256,122"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="139,135,142,172,137,172,139,140"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="213,1583,190,1633,185,1631,214,1578"/>
 </map>

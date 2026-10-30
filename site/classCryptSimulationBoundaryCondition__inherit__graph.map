@@ -1,10 +1,10 @@
 <map id="CryptSimulationBoundaryCondition&lt; DIM &gt;" name="CryptSimulationBoundaryCondition&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,829,273,1044"/>
-<area shape="rect" id="Node000002" href="$classAbstractCellPopulationBoundaryCondition.html" title=" " alt="" coords="15,501,264,780"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,794,142,829,137,829,137,794"/>
-<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="17,5,251,111"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="137,124,141,501,135,501,132,124"/>
-<area shape="rect" id="Node000004" href="$classAbstractCellPopulationBoundaryCondition.html" title=" " alt="" coords="155,160,438,439"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="179,121,205,158,200,161,175,124"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="229,453,206,502,201,500,224,450"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,913,271,1154"/>
+<area shape="rect" id="Node000002" href="$classAbstractCellPopulationBoundaryCondition.html" title=" " alt="" coords="14,550,262,864"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,876,141,914,136,913,138,882"/>
+<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="16,5,250,122"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,135,140,551,134,550,133,140"/>
+<area shape="rect" id="Node000004" href="$classAbstractCellPopulationBoundaryCondition.html" title=" " alt="" coords="155,172,434,485"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="175,132,201,171,196,172,176,137"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="223,501,205,551,200,550,225,496"/>
 </map>

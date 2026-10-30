@@ -1,5 +1,8 @@
 var NAVTREEINDEX34 =
 {
+"classMutableMesh.html#ae789400511cf05a3edcd40ee1e08c3b8":[1,0,466,12],
+"classMutableMesh.html#aeb5affa78af68d59b6ea15323a2785d2":[1,0,466,15],
+"classMutableMesh.html#aed3ab021619ed87a2ed13bf9e9527ba2":[1,0,466,31],
 "classMutableMesh.html#af36bd32e83e6dde393f0693e97cbde51":[1,0,466,4],
 "classMutableMesh.html#af824d4807195c60a03491904b454db88":[1,0,466,16],
 "classMutableMesh.html#afb3769d08e4f1dcf0701283a75b01e4d":[1,0,466,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX34 =
 "classNode.html#aa125ab5172596c6bf3a993e25211a7da":[1,0,476,44],
 "classNode.html#aa64209607e023f5ee041e446a1830207":[1,0,476,23],
 "classNode.html#aa64c9da53049117167d0daceac1c53b4":[1,0,476,31],
-"classNode.html#aaa323c6ffbc64de407a09c0d7b7796b1":[1,0,476,61],
-"classNode.html#aae035448ae480b72acddb56c18f4151d":[1,0,476,62],
-"classNode.html#ab23438a1521aba1b773c58f8036a0212":[1,0,476,27],
-"classNode.html#ab316c0b1ee76c5a0eecde5d38320f418":[1,0,476,22]
+"classNode.html#aaa323c6ffbc64de407a09c0d7b7796b1":[1,0,476,61]
 };

@@ -1,7 +1,7 @@
 <map id="AbstractLinearEllipticPde&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="AbstractLinearEllipticPde&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,372,245,651"/>
-<area shape="rect" id="Node000002" href="$classAbstractLinearPde.html" title=" " alt="" coords="21,203,230,323"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,336,128,372,123,372,123,336"/>
-<area shape="rect" id="Node000003" href="$classAbstractLinearPde.html" title=" " alt="" coords="21,5,230,125"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,139,128,203,123,203,123,139"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,405,243,718"/>
+<area shape="rect" id="Node000002" href="$classAbstractLinearPde.html" title=" " alt="" coords="22,221,227,355"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,368,127,405,122,404,124,373"/>
+<area shape="rect" id="Node000003" href="$classAbstractLinearPde.html" title=" " alt="" coords="22,5,227,139"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,151,127,222,122,221,124,157"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="StokesFlowProblemDefinition&lt; DIM &gt;" name="StokesFlowProblemDefinition&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="8,677,249,877"/>
-<area shape="rect" id="Node000002" href="$classContinuumMechanicsProblemDefinition.html" title=" " alt="" coords="5,5,252,629"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,643,131,677,126,677,126,643"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="8,752,247,975"/>
+<area shape="rect" id="Node000002" href="$classContinuumMechanicsProblemDefinition.html" title=" " alt="" coords="5,5,250,704"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,717,130,753,125,752,127,722"/>
 </map>

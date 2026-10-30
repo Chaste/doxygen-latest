@@ -1,18 +1,18 @@
 <map id="NodeBasedCellPopulation&lt; DIM &gt;" name="NodeBasedCellPopulation&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="158,2384,386,3319"/>
-<area shape="rect" id="Node000007" href="$classNodeBasedCellPopulationWithBuskeUpdate.html" title=" " alt="" coords="5,3438,256,3627"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="175,3333,153,3438,148,3437,170,3332"/>
-<area shape="rect" id="Node000008" href="$classNodeBasedCellPopulationWithParticles.html" title=" " alt="" coords="280,3368,547,3697"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="374,3332,382,3367,377,3368,369,3333"/>
-<area shape="rect" id="Node000002" href="$classAbstractCentreBasedCellPopulation.html" title=" " alt="" coords="137,1920,407,2335"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,2348,275,2384,269,2384,269,2348"/>
-<area shape="rect" id="Node000003" href="$classAbstractOffLatticeCellPopulation.html" title=" " alt="" coords="140,933,393,1393"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="271,1407,274,1920,268,1920,265,1407"/>
-<area shape="rect" id="Node000006" href="$classAbstractCentreBasedCellPopulation.html" title=" " alt="" coords="288,1443,557,1857"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="347,1406,359,1442,354,1443,342,1407"/>
-<area shape="rect" id="Node000004" href="$classAbstractCellPopulation.html" title=" " alt="" coords="133,160,400,884"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="269,898,269,933,264,933,264,898"/>
-<area shape="rect" id="Node000005" href="$classIdentifiable.html" title=" " alt="" coords="149,5,384,111"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="269,125,269,160,264,160,264,125"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="356,1871,340,1921,335,1919,351,1870"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="157,2636,383,3680"/>
+<area shape="rect" id="Node000007" href="$classNodeBasedCellPopulationWithBuskeUpdate.html" title=" " alt="" coords="5,3808,254,4020"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="171,3693,152,3809,147,3807,169,3697"/>
+<area shape="rect" id="Node000008" href="$classNodeBasedCellPopulationWithParticles.html" title=" " alt="" coords="279,3730,544,4099"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="371,3692,379,3731,374,3729,369,3697"/>
+<area shape="rect" id="Node000002" href="$classAbstractCentreBasedCellPopulation.html" title=" " alt="" coords="136,2123,404,2587"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,2598,272,2636,267,2636,270,2604"/>
+<area shape="rect" id="Node000003" href="$classAbstractOffLatticeCellPopulation.html" title=" " alt="" coords="139,1031,390,1545"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,1557,271,2123,266,2123,266,1562"/>
+<area shape="rect" id="Node000006" href="$classAbstractCentreBasedCellPopulation.html" title=" " alt="" coords="286,1594,554,2058"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="343,1556,356,1594,351,1595,343,1562"/>
+<area shape="rect" id="Node000004" href="$classAbstractCellPopulation.html" title=" " alt="" coords="132,172,397,982"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="265,994,267,1032,262,1031,264,1000"/>
+<area shape="rect" id="Node000005" href="$classIdentifiable.html" title=" " alt="" coords="148,5,381,122"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="265,135,267,172,262,172,264,140"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="350,2075,338,2124,333,2123,351,2069"/>
 </map>

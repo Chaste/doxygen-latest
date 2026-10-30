@@ -1,17 +1,17 @@
 <map id="VanLeeuwen2009WntSwatCellCycleModelHypothesisTwo" name="VanLeeuwen2009WntSwatCellCycleModelHypothesisTwo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="121,2339,378,2548"/>
-<area shape="rect" id="Node000002" href="$classAbstractVanLeeuwen2009WntSwatCellCycleModel.html" title=" " alt="" coords="121,1937,378,2291"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,2305,252,2338,247,2338,247,2305"/>
-<area shape="rect" id="Node000003" href="$classAbstractWntOdeBasedCellCycleModel.html" title=" " alt="" coords="121,1496,378,1889"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="252,1904,252,1937,247,1937,247,1904"/>
-<area shape="rect" id="Node000004" href="$classAbstractOdeBasedPhaseBasedCellCycleModel.html" title=" " alt="" coords="121,1144,378,1448"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="252,1462,252,1496,247,1496,247,1462"/>
-<area shape="rect" id="Node000005" href="$classAbstractPhaseBasedCellCycleModel.html" title=" " alt="" coords="6,592,239,1096"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="200,1109,209,1143,204,1144,195,1110"/>
-<area shape="rect" id="Node000006" href="$classAbstractCellCycleModel.html" title=" " alt="" coords="20,159,225,544"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="125,558,125,592,120,592,120,558"/>
-<area shape="rect" id="Node000007" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="125,124,125,159,120,159,120,124"/>
-<area shape="rect" id="Node000008" href="$classCellCycleModelOdeHandler.html" title=" " alt="" coords="263,614,491,1074"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="311,1088,295,1144,290,1143,306,1087"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="120,2586,376,2821"/>
+<area shape="rect" id="Node000002" href="$classAbstractVanLeeuwen2009WntSwatCellCycleModel.html" title=" " alt="" coords="120,2140,376,2538"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,2550,251,2587,246,2585,247,2555"/>
+<area shape="rect" id="Node000003" href="$classAbstractWntOdeBasedCellCycleModel.html" title=" " alt="" coords="120,1650,376,2092"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="249,2105,251,2141,246,2140,248,2110"/>
+<area shape="rect" id="Node000004" href="$classAbstractOdeBasedPhaseBasedCellCycleModel.html" title=" " alt="" coords="120,1261,376,1602"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="249,1614,251,1650,246,1650,248,1620"/>
+<area shape="rect" id="Node000005" href="$classAbstractPhaseBasedCellCycleModel.html" title=" " alt="" coords="6,648,238,1213"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="197,1224,208,1261,203,1261,197,1230"/>
+<area shape="rect" id="Node000006" href="$classAbstractCellCycleModel.html" title=" " alt="" coords="20,170,223,600"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="122,612,124,648,119,648,122,618"/>
+<area shape="rect" id="Node000007" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="122,135,124,171,119,170,122,140"/>
+<area shape="rect" id="Node000008" href="$classCellCycleModelOdeHandler.html" title=" " alt="" coords="262,674,488,1187"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="306,1204,294,1261,289,1260,307,1199"/>
 </map>

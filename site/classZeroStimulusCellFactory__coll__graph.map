@@ -1,19 +1,19 @@
 <map id="ZeroStimulusCellFactory&lt; CELL, DIM &gt;" name="ZeroStimulusCellFactory&lt; CELL, DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="447,879,656,1013"/>
-<area shape="rect" id="Node000002" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="432,520,671,829"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="554,843,554,879,549,879,549,843"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="239,5,469,85"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,86,335,158,328,252,328,303,332,355,341,407,356,456,385,511,423,560,419,563,381,514,352,458,336,408,327,356,323,303,322,251,330,157,342,85"/>
-<area shape="rect" id="Node000007" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="432,148,671,457"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="386,84,424,133,420,136,382,87"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,196,85"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="92,86,76,160,67,257,69,309,76,360,90,410,114,456,142,493,175,525,212,554,252,578,336,617,417,644,415,649,334,622,249,583,209,558,171,529,138,496,109,459,86,412,71,361,63,309,62,257,71,160,87,85"/>
-<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="139,83,165,105,195,122,226,132,254,135,304,131,355,128,383,133,414,146,419,149,417,153,412,150,381,138,354,134,305,136,254,140,225,137,193,126,162,109,136,88"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="793,13,993,78"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="896,78,895,151,885,249,875,302,860,357,841,409,815,459,788,497,756,532,686,593,682,589,752,528,784,494,810,456,836,407,855,355,870,301,880,248,890,150,891,78"/>
-<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="829,81,766,112,727,129,692,150,685,155,682,151,688,146,725,124,764,107,826,76"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="545,5,744,85"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="689,84,703,108,720,159,730,204,734,244,732,282,715,362,685,458,666,506,661,504,679,456,709,360,727,282,728,244,725,204,715,160,698,110,685,87"/>
-<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="633,86,616,133,611,131,628,84"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="554,471,554,520,549,520,549,471"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="442,967,649,1118"/>
+<area shape="rect" id="Node000002" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="427,571,664,918"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="548,931,548,969,544,966,544,935"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="236,5,464,95"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,92,331,174,323,278,323,335,327,393,337,450,353,505,381,564,419,619,414,619,376,567,348,507,332,451,322,393,318,335,317,277,325,173,340,97"/>
+<area shape="rect" id="Node000007" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="427,160,664,506"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="380,92,420,148,415,149,380,97"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,193,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="86,97,72,177,65,228,61,283,62,340,69,398,85,453,109,505,137,543,170,578,207,608,247,635,331,678,414,709,409,711,329,682,244,639,204,612,166,582,133,547,105,508,80,455,64,399,57,341,56,283,59,227,66,176,87,91"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="132,92,159,115,187,133,218,144,246,148,298,143,350,139,378,144,410,157,416,162,411,163,407,162,377,149,349,144,298,148,246,153,217,150,184,138,155,119,133,97"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="786,14,983,86"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="885,83,881,165,865,273,852,333,835,393,813,452,785,508,736,578,678,640,674,636,732,574,781,505,808,450,830,391,847,332,860,272,875,165,883,88"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="816,88,759,121,720,139,685,162,679,167,675,164,682,158,717,134,756,116,820,84"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="540,5,735,95"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="681,92,696,118,696,136,698,241,703,323,700,405,693,452,679,507,661,558,657,555,674,506,687,451,695,404,698,323,693,241,691,136,691,119,681,97"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="625,92,610,145,605,143,623,97"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="547,519,548,572,543,571,545,524"/>
 </map>

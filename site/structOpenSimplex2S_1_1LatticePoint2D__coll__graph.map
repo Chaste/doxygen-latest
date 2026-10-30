@@ -1,7 +1,7 @@
 <map id="OpenSimplex2S::LatticePoint2D" name="OpenSimplex2S::LatticePoint2D">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,148,225,233"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="65,5,96,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,71,81,97,85,123,87,132,82,134,79,125,75,97,75,71"/>
-<area shape="rect" id="Node000003" href="$classdouble.html" title=" " alt="" coords="121,5,179,71"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,71,131,132,126,131,140,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,160,222,254"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="65,5,93,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,75,80,106,84,135,86,144,81,143,78,136,74,106,76,80"/>
+<area shape="rect" id="Node000003" href="$classdouble.html" title=" " alt="" coords="121,5,176,78"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,75,129,144,124,142,139,79"/>
 </map>

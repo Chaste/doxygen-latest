@@ -1,9 +1,9 @@
 <map id="UniformCellCycleModel" name="UniformCellCycleModel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,920,263,1240"/>
-<area shape="rect" id="Node000002" href="$classAbstractSimpleCellCycleModel.html" title=" " alt="" coords="5,592,263,872"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,886,137,920,131,920,131,886"/>
-<area shape="rect" id="Node000003" href="$classAbstractCellCycleModel.html" title=" " alt="" coords="31,159,237,544"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="137,558,137,592,131,592,131,558"/>
-<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="17,5,251,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="137,124,137,159,131,159,131,124"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1009,261,1366"/>
+<area shape="rect" id="Node000002" href="$classAbstractSimpleCellCycleModel.html" title=" " alt="" coords="5,648,261,961"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,973,136,1009,131,1009,133,978"/>
+<area shape="rect" id="Node000003" href="$classAbstractCellCycleModel.html" title=" " alt="" coords="32,170,235,600"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,612,136,649,131,648,133,617"/>
+<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="17,5,250,122"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="133,135,136,171,131,170,133,140"/>
 </map>

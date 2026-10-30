@@ -1,5 +1,5 @@
 <map id="ToroidalHoneycombVertexMeshGenerator" name="ToroidalHoneycombVertexMeshGenerator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="23,179,257,313"/>
-<area shape="rect" id="Node000002" href="$classHoneycombVertexMeshGenerator.html" title=" " alt="" coords="5,5,275,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,145,143,179,137,179,137,145"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="23,193,256,344"/>
+<area shape="rect" id="Node000002" href="$classHoneycombVertexMeshGenerator.html" title=" " alt="" coords="5,5,273,145"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,157,142,194,137,193,138,162"/>
 </map>

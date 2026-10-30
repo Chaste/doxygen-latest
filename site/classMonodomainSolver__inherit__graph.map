@@ -1,12 +1,12 @@
 <map id="MonodomainSolver&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="MonodomainSolver&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,1689,275,1984"/>
-<area shape="rect" id="Node000002" href="$classAbstractDynamicLinearPdeSolver.html" title=" " alt="" coords="27,1071,253,1640"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,1654,143,1689,137,1689,137,1654"/>
-<area shape="rect" id="Node000003" href="$classAbstractLinearPdeSolver.html" title=" " alt="" coords="17,120,252,375"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,389,141,1071,136,1071,133,389"/>
-<area shape="rect" id="Node000005" href="$classAbstractDynamicLinearPdeSolver.html" title=" " alt="" coords="155,424,381,993"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="178,387,188,423,183,424,173,389"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="64,5,205,71"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="137,84,137,120,132,120,132,84"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="212,1007,199,1071,194,1070,206,1006"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1867,273,2196"/>
+<area shape="rect" id="Node000002" href="$classAbstractDynamicLinearPdeSolver.html" title=" " alt="" coords="27,1180,251,1817"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,1830,142,1868,137,1867,139,1835"/>
+<area shape="rect" id="Node000003" href="$classAbstractLinearPdeSolver.html" title=" " alt="" coords="18,127,250,412"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,424,141,1181,135,1181,134,429"/>
+<area shape="rect" id="Node000005" href="$classAbstractDynamicLinearPdeSolver.html" title=" " alt="" coords="155,461,379,1098"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="175,424,187,462,181,462,175,429"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="65,5,203,78"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="134,90,137,127,131,127,134,95"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="209,1110,199,1181,193,1180,208,1115"/>
 </map>

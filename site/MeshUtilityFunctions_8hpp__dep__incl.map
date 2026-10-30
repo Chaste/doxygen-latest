@@ -1,7 +1,7 @@
 <map id="mesh/src/utilities/MeshUtilityFunctions.hpp" name="mesh/src/utilities/MeshUtilityFunctions.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="134,5,325,45"/>
-<area shape="rect" id="Node000002" href="$ImmersedBoundaryMesh_8cpp_source.html" title=" " alt="" coords="5,93,224,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,56,142,95,138,91,191,52"/>
-<area shape="rect" id="Node000003" href="$MeshUtilityFunctions_8cpp_source.html" title=" " alt="" coords="249,93,439,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,52,320,91,317,95,264,56"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="133,5,323,50"/>
+<area shape="rect" id="Node000002" href="$ImmersedBoundaryMesh_8cpp_source.html" title=" " alt="" coords="5,98,224,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,59,143,100,140,95,187,61"/>
+<area shape="rect" id="Node000003" href="$MeshUtilityFunctions_8cpp_source.html" title=" " alt="" coords="248,98,437,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,57,318,98,312,97,266,62"/>
 </map>

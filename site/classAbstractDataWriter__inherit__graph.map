@@ -1,7 +1,7 @@
 <map id="AbstractDataWriter" name="AbstractDataWriter">
-<area shape="rect" id="Node000001" title=" " alt="" coords="15,5,280,211"/>
-<area shape="rect" id="Node000002" href="$classColumnDataWriter.html" title=" " alt="" coords="5,259,289,899"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,224,150,258,145,258,145,224"/>
-<area shape="rect" id="Node000003" href="$classParallelColumnDataWriter.html" title=" " alt="" coords="15,947,280,1192"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="150,912,150,946,145,946,145,912"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="14,5,278,234"/>
+<area shape="rect" id="Node000002" href="$classColumnDataWriter.html" title=" " alt="" coords="5,282,287,997"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,246,149,283,144,282,146,251"/>
+<area shape="rect" id="Node000003" href="$classParallelColumnDataWriter.html" title=" " alt="" coords="14,1045,278,1318"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,1009,149,1046,144,1044,146,1014"/>
 </map>

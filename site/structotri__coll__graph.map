@@ -1,7 +1,7 @@
 <map id="otri" name="otri">
-<area shape="rect" id="Node000001" title=" " alt="" coords="63,133,99,199"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,80,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,70,64,109,67,117,62,119,59,110,48,72"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="105,5,135,71"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,72,98,118,93,117,108,70"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="61,143,94,215"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,77,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,75,59,118,61,127,56,126,54,119,46,80"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="101,5,128,78"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,75,94,128,89,125,103,80"/>
 </map>

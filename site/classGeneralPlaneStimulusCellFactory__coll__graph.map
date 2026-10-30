@@ -1,17 +1,17 @@
 <map id="GeneralPlaneStimulusCellFactory&lt; CELL, ELEMENT_DIM, SPACE_DIM &gt;" name="GeneralPlaneStimulusCellFactory&lt; CELL, ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="501,684,698,793"/>
-<area shape="rect" id="Node000002" href="$classPlaneStimulusCellFactory.html" title=" " alt="" coords="470,520,729,635"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="602,649,602,684,597,684,597,649"/>
-<area shape="rect" id="Node000003" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="355,148,593,457"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="553,469,576,519,571,521,548,471"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,236,85"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="176,83,343,204,340,208,173,88"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="260,5,451,85"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="354,85,359,123,362,132,357,133,354,125,349,86"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="494,13,694,78"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="585,79,567,125,563,134,558,132,562,123,580,77"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="717,5,916,85"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="768,88,736,109,702,126,677,134,656,137,634,140,609,150,607,145,633,135,655,132,676,129,700,122,733,104,765,83"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="617,270,832,335"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="712,337,634,506,629,504,708,335"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="496,749,692,873"/>
+<area shape="rect" id="Node000002" href="$classPlaneStimulusCellFactory.html" title=" " alt="" coords="466,571,722,700"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="596,713,596,751,592,748,592,717"/>
+<area shape="rect" id="Node000003" href="$classAbstractCardiacCellFactory.html" title=" " alt="" coords="351,160,588,506"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="548,518,571,572,565,571,546,523"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,233,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="173,92,341,225,336,228,173,97"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="257,5,445,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="348,92,355,135,357,144,352,143,350,136,347,97"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="490,14,687,86"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="579,84,562,137,558,145,553,143,557,135,576,88"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="711,5,906,95"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="757,96,729,119,695,138,671,146,650,149,629,152,604,162,601,157,627,147,649,144,670,141,693,133,726,114,761,93"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="612,297,824,369"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="706,367,628,557,624,554,702,370"/>
 </map>

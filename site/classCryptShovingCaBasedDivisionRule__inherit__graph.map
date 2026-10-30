@@ -1,10 +1,10 @@
 <map id="CryptShovingCaBasedDivisionRule" name="CryptShovingCaBasedDivisionRule">
-<area shape="rect" id="Node000001" title=" " alt="" coords="8,745,248,940"/>
-<area shape="rect" id="Node000002" href="$classAbstractCaBasedDivisionRule.html" title=" " alt="" coords="5,467,251,696"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,710,131,745,125,745,125,710"/>
-<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,124,130,467,124,467,121,124"/>
-<area shape="rect" id="Node000004" href="$classAbstractCaBasedDivisionRule.html" title=" " alt="" coords="144,160,376,404"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="164,121,187,159,183,161,159,124"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="203,418,181,468,176,465,198,416"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,818,246,1036"/>
+<area shape="rect" id="Node000002" href="$classAbstractCaBasedDivisionRule.html" title=" " alt="" coords="6,511,248,768"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,781,130,818,125,817,126,786"/>
+<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,135,129,512,123,511,122,140"/>
+<area shape="rect" id="Node000004" href="$classAbstractCaBasedDivisionRule.html" title=" " alt="" coords="143,172,373,446"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="161,133,184,171,179,172,162,138"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="198,462,180,512,175,510,199,457"/>
 </map>

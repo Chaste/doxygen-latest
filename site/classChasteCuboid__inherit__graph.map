@@ -1,5 +1,5 @@
 <map id="ChasteCuboid&lt; SPACE_DIM &gt;" name="ChasteCuboid&lt; SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="22,213,182,433"/>
-<area shape="rect" id="Node000002" href="$classAbstractChasteRegion.html" title=" " alt="" coords="5,5,199,165"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,179,105,213,99,213,99,179"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="23,232,180,478"/>
+<area shape="rect" id="Node000002" href="$classAbstractChasteRegion.html" title=" " alt="" coords="5,5,197,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,197,104,233,99,232,101,202"/>
 </map>

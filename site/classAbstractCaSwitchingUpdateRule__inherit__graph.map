@@ -1,9 +1,9 @@
 <map id="AbstractCaSwitchingUpdateRule&lt; DIM &gt;" name="AbstractCaSwitchingUpdateRule&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="13,367,247,556"/>
-<area shape="rect" id="Node000004" href="$classRandomCaSwitchingUpdateRule.html" title=" " alt="" coords="5,604,255,819"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,570,133,604,127,604,127,570"/>
-<area shape="rect" id="Node000002" href="$classAbstractUpdateRule.html" title=" " alt="" coords="13,159,247,319"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,332,133,366,127,366,127,332"/>
-<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="13,5,247,111"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,124,133,158,127,158,127,124"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="13,397,244,610"/>
+<area shape="rect" id="Node000004" href="$classRandomCaSwitchingUpdateRule.html" title=" " alt="" coords="5,658,252,898"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,622,131,658,126,657,128,627"/>
+<area shape="rect" id="Node000002" href="$classAbstractUpdateRule.html" title=" " alt="" coords="13,170,244,349"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,361,131,397,126,397,128,367"/>
+<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="12,5,245,122"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,135,131,171,126,170,129,140"/>
 </map>

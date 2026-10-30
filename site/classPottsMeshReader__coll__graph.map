@@ -1,25 +1,25 @@
 <map id="PottsMeshReader&lt; SPACE_DIM &gt;" name="PottsMeshReader&lt; SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="392,1137,603,1517"/>
-<area shape="rect" id="Node000002" href="$classAbstractMeshReader.html" title=" " alt="" coords="19,721,267,1001"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,1011,394,1187,390,1190,255,1014"/>
-<area shape="rect" id="Node000003" href="$classAbstractMeshReader.html" title=" " alt="" coords="5,364,253,644"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,658,140,721,135,721,132,658"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="303,829,382,894"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="344,894,348,993,357,1053,372,1113,387,1151,382,1153,367,1114,352,1054,343,994,339,894"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="277,464,408,544"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="345,558,345,828,340,828,340,558"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="450,829,547,894"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="501,894,501,1121,495,1121,496,894"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="432,464,571,544"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="504,558,502,828,496,828,498,558"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="435,235,568,315"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="504,328,504,464,499,464,499,328"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="420,120,583,185"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="504,199,504,235,499,235,499,199"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="452,5,551,71"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="504,85,504,120,499,120,499,85"/>
-<area shape="rect" id="Node000011" href="$classbool.html" title=" " alt="" coords="613,829,656,894"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="637,894,631,994,622,1054,608,1114,605,1123,600,1121,603,1113,617,1053,626,993,632,894"/>
-<area shape="rect" id="Node000012" href="$classunsigned.html" title=" " alt="" coords="750,829,823,894"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="792,894,792,940,788,996,776,1057,753,1115,725,1156,692,1194,655,1227,618,1257,615,1252,652,1223,688,1190,721,1153,748,1112,771,1056,783,996,787,939,786,894"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="388,1245,597,1669"/>
+<area shape="rect" id="Node000002" href="$classAbstractMeshReader.html" title=" " alt="" coords="19,782,265,1095"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,1104,391,1302,386,1303,254,1109"/>
+<area shape="rect" id="Node000003" href="$classAbstractMeshReader.html" title=" " alt="" coords="5,387,251,700"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,712,139,783,134,782,134,717"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="301,902,377,974"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="338,972,343,1085,351,1153,367,1220,384,1268,379,1267,361,1221,346,1154,338,1086,337,977"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="275,499,403,588"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="340,601,342,903,336,902,338,606"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="447,902,540,974"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="495,972,496,1229,490,1228,492,977"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="426,499,561,588"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="495,601,496,903,491,902,493,606"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="429,249,558,338"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="494,350,496,500,491,499,493,356"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="414,127,573,199"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="494,211,496,249,491,248,493,217"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="446,5,542,78"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="494,90,496,127,491,127,493,95"/>
+<area shape="rect" id="Node000011" href="$classbool.html" title=" " alt="" coords="610,902,649,974"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="631,972,626,1085,617,1154,603,1221,600,1230,596,1227,598,1220,612,1153,621,1085,628,976"/>
+<area shape="rect" id="Node000012" href="$classunsigned.html" title=" " alt="" coords="747,902,816,974"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="786,972,788,1025,784,1088,772,1157,762,1190,748,1222,720,1267,687,1308,650,1345,611,1378,608,1374,646,1341,683,1304,716,1263,743,1219,757,1188,767,1155,779,1088,783,1025,783,977"/>
 </map>

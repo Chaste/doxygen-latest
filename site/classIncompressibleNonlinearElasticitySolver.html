@@ -23,7 +23,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="chaste-logo-60x60.jpg"/></td>
   <td id="projectalign">
-   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::29c3c4ab2bee00ddd311a035a1e522c03cbe928a</span>
+   <div id="projectname">Chaste<span id="projectnumber">&#160;Commit::357af77f3d8b47aa179dbebbdde04c89ce3f2aca</span>
    </div>
   </td>
  </tr>
@@ -76,14 +76,14 @@ $(document).ready(function(){initNavTree('classIncompressibleNonlinearElasticity
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classIncompressibleNonlinearElasticitySolver__inherit__graph.svg" width="272" height="1947"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classIncompressibleNonlinearElasticitySolver__inherit__graph.svg" width="271" height="2171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for IncompressibleNonlinearElasticitySolver&lt; DIM &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classIncompressibleNonlinearElasticitySolver__coll__graph.svg" width="4728" height="5108"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classIncompressibleNonlinearElasticitySolver__coll__graph.svg" width="4698" height="5664"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -531,7 +531,7 @@ template&lt;size_t DIM&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="IncompressibleNonlinearElasticitySolver_8cpp_source.html#l00052">52</a> of file <a class="el" href="IncompressibleNonlinearElasticitySolver_8cpp_source.html">IncompressibleNonlinearElasticitySolver.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="PetscVecTools_8cpp_source.html#l00048">PetscVecTools::Finalise()</a>, <a class="el" href="PetscTools_8cpp_source.html#l00114">PetscTools::GetMyRank()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00153">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetOwnership()</a>, <a class="el" href="CommandLineArguments_8cpp_source.html#l00050">CommandLineArguments::Instance()</a>, <a class="el" href="CommandLineArguments_8cpp_source.html#l00061">CommandLineArguments::OptionExists()</a>, <a class="el" href="PetscMatTools_8cpp_source.html#l00073">PetscMatTools::SwitchWriteMode()</a>, <a class="el" href="PetscMatTools_8cpp_source.html#l00291">PetscMatTools::Zero()</a>, and <a class="el" href="PetscVecTools_8cpp_source.html#l00090">PetscVecTools::Zero()</a>.</p>
+<p class="reference">References <a class="el" href="PetscVecTools_8cpp_source.html#l00048">PetscVecTools::Finalise()</a>, <a class="el" href="PetscTools_8cpp_source.html#l00114">PetscTools::GetMyRank()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00109">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetNodeGlobalIndex()</a>, <a class="el" href="AbstractElement_8cpp_source.html#l00153">AbstractElement&lt; ELEMENT_DIM, SPACE_DIM &gt;::GetOwnership()</a>, <a class="el" href="CommandLineArguments_8cpp_source.html#l00054">CommandLineArguments::Instance()</a>, <a class="el" href="CommandLineArguments_8cpp_source.html#l00065">CommandLineArguments::OptionExists()</a>, <a class="el" href="PetscMatTools_8cpp_source.html#l00073">PetscMatTools::SwitchWriteMode()</a>, <a class="el" href="PetscMatTools_8cpp_source.html#l00291">PetscMatTools::Zero()</a>, and <a class="el" href="PetscVecTools_8cpp_source.html#l00090">PetscVecTools::Zero()</a>.</p>
 
 </div>
 </div>
@@ -562,7 +562,7 @@ template&lt;size_t DIM&gt; </div>
 <p>Set up the current guess to be the solution given no displacement.</p>
 <p>The initial guess is zero for spatial variables, 0 for dummy pressure variables, and the appropriate choice of pressure such that the initial stress is zero (depends on material law)</p>
 <p>In a homogeneous problem, all (the non-dummy) pressures are the same. In a heterogeneous problem, p for a given vertex is the zero-strain-pressure for ONE of the elements containing that vertex (which element containing the vertex is reached LAST). In this case the initial guess will be close but not exactly the solution given zero body force. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000226">Todo:</a></b></dt><dd>#2223 This is unlikely to work using <a class="el" href="classDistributedQuadraticMesh.html">DistributedQuadraticMesh</a> with Non-homogeneous material laws </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000224">Todo:</a></b></dt><dd>#2223 This is unlikely to work using <a class="el" href="classDistributedQuadraticMesh.html">DistributedQuadraticMesh</a> with Non-homogeneous material laws </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="IncompressibleNonlinearElasticitySolver_8cpp_source.html#l00588">588</a> of file <a class="el" href="IncompressibleNonlinearElasticitySolver_8cpp_source.html">IncompressibleNonlinearElasticitySolver.cpp</a>.</p>
 

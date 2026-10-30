@@ -1,7 +1,7 @@
 <map id="CardiacSimulation" name="CardiacSimulation">
-<area shape="rect" id="Node000001" title=" " alt="" coords="23,148,225,333"/>
-<area shape="rect" id="Node000002" href="$classbool.html" title=" " alt="" coords="5,13,48,78"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="25,78,26,101,31,123,34,132,29,135,25,125,20,101,20,78"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="103,5,340,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,86,194,125,190,134,185,132,190,123,206,84"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="21,160,221,366"/>
+<area shape="rect" id="Node000002" href="$classbool.html" title=" " alt="" coords="5,14,44,86"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="20,83,23,110,28,135,31,144,26,144,23,136,18,111,20,88"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="101,5,335,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,92,191,137,187,146,182,143,186,135,203,97"/>
 </map>

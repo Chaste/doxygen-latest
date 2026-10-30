@@ -1,22 +1,22 @@
 <map id="AbstractCardiacTissue&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="AbstractCardiacTissue&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="119,120,357,803"/>
-<area shape="rect" id="Node000003" href="$classMonodomainTissue.html" title=" " alt="" coords="5,1921,223,2041"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,816,119,866,101,1019,91,1175,87,1331,87,1480,97,1742,111,1921,106,1921,92,1742,82,1480,81,1331,85,1175,96,1018,114,865,123,816"/>
-<area shape="rect" id="Node000004" href="$classMonodomainTissue.html" title=" " alt="" coords="129,1147,347,1267"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,817,241,1146,235,1146,235,817"/>
-<area shape="rect" id="Node000005" href="$classAbstractCardiacTissue.html" title=" " alt="" coords="373,865,612,1548"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="362,815,378,864,373,866,357,817"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="167,5,309,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,84,241,120,235,120,235,84"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="216,1281,175,1415,155,1494,139,1572,127,1668,120,1763,116,1921,111,1921,115,1763,122,1667,134,1572,150,1492,170,1414,210,1279"/>
-<area shape="rect" id="Node000006" href="$classBidomainTissue.html" title=" " alt="" coords="271,2651,507,2861"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="377,1562,365,1626,348,1769,339,1915,337,2062,340,2204,356,2459,377,2651,372,2651,351,2459,335,2204,331,2062,334,1915,342,1768,359,1625,371,1561"/>
-<area shape="rect" id="Node000007" href="$classExtendedBidomainTissue.html" title=" " alt="" coords="719,2400,976,3112"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="625,1294,703,1358,782,1435,819,1479,853,1525,883,1573,907,1624,939,1719,961,1817,974,1917,979,2018,978,2119,970,2217,959,2311,944,2400,939,2400,953,2310,965,2216,972,2119,974,2019,969,1918,956,1818,934,1720,902,1626,878,1576,848,1528,815,1482,778,1439,699,1362,622,1298"/>
-<area shape="rect" id="Node000008" href="$classBidomainTissue.html" title=" " alt="" coords="375,1869,611,2093"/>
-<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="495,1562,495,1869,490,1869,490,1562"/>
-<area shape="rect" id="Node000009" href="$classExtendedBidomainTissue.html" title=" " alt="" coords="635,1625,892,2337"/>
-<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="619,1561,641,1624,636,1626,614,1562"/>
-<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="479,2107,405,2652,400,2651,473,2107"/>
-<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="806,2351,811,2399,806,2400,801,2351"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="115,127,352,894"/>
+<area shape="rect" id="Node000003" href="$classMonodomainTissue.html" title=" " alt="" coords="5,2141,219,2275"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,911,117,959,100,1131,89,1307,85,1481,86,1648,96,1941,109,2141,104,2141,90,1941,80,1648,80,1481,84,1307,94,1130,112,958,123,906"/>
+<area shape="rect" id="Node000004" href="$classMonodomainTissue.html" title=" " alt="" coords="127,1275,340,1409"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,906,236,1275,231,1275,233,911"/>
+<area shape="rect" id="Node000005" href="$classAbstractCardiacTissue.html" title=" " alt="" coords="372,959,609,1725"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="356,905,375,959,370,959,357,910"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="165,5,302,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,90,236,127,231,127,233,95"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="209,1426,173,1574,153,1662,138,1750,126,1857,119,1964,114,2141,109,2141,114,1963,121,1856,133,1749,148,1661,167,1573,210,1421"/>
+<area shape="rect" id="Node000006" href="$classBidomainTissue.html" title=" " alt="" coords="270,2956,504,3191"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="373,1737,364,1808,347,1968,338,2133,336,2296,339,2455,355,2741,375,2957,370,2956,350,2742,333,2456,331,2296,333,2132,342,1968,359,1807,372,1743"/>
+<area shape="rect" id="Node000007" href="$classExtendedBidomainTissue.html" title=" " alt="" coords="715,2673,971,3474"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="620,1441,699,1514,778,1600,815,1648,849,1699,879,1752,903,1806,936,1913,959,2023,973,2135,978,2248,977,2360,970,2469,958,2574,943,2674,938,2672,953,2574,964,2469,971,2360,973,2248,967,2135,954,2024,931,1914,898,1808,874,1754,844,1702,811,1651,774,1604,695,1518,621,1447"/>
+<area shape="rect" id="Node000008" href="$classBidomainTissue.html" title=" " alt="" coords="374,2082,608,2334"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="491,1737,493,2082,488,2081,490,1743"/>
+<area shape="rect" id="Node000009" href="$classExtendedBidomainTissue.html" title=" " alt="" coords="632,1807,888,2608"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="614,1734,638,1807,633,1807,614,1740"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="476,2347,403,2957,398,2956,472,2350"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="801,2620,807,2674,802,2673,799,2625"/>
 </map>

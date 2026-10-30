@@ -1,5 +1,8 @@
 var NAVTREEINDEX39 =
 {
+"classPurkinjeVentricularJunctionStimulus.html#a29d997e7e5f952cac2b5b7c37a9ff0d8":[1,0,551,8],
+"classPurkinjeVentricularJunctionStimulus.html#a403f6576c7c718107df579ebdf335a8c":[1,0,551,2],
+"classPurkinjeVentricularJunctionStimulus.html#a7bb103ef5814f3f58875c69cedd1917b":[1,0,551,3],
 "classPurkinjeVentricularJunctionStimulus.html#a8d94a1049acd2879843b33977bf650d4":[1,0,551,4],
 "classPurkinjeVentricularJunctionStimulus.html#a971a8886de78c90e7ddc4b416b05b2d9":[1,0,551,7],
 "classPurkinjeVentricularJunctionStimulus.html#aae55834a47ace39e0e0428506654521e":[1,0,551,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX39 =
 "classSchmidCostaExponentialLaw2d.html#a4316f3ec4b0ebe249c1be66bcfd30690":[1,0,575,5],
 "classSchmidCostaExponentialLaw2d.html#a53394b19607dfd6c9a8f586e4c8bd308":[1,0,575,4],
 "classSchmidCostaExponentialLaw2d.html#a5c1107e363dbae69ad9753f36ea292e7":[1,0,575,7],
-"classSchmidCostaExponentialLaw2d.html#a709048c6a846a91c7649e144d4cd20ec":[1,0,575,3],
-"classSchmidCostaExponentialLaw2d.html#a800cf4a22fff38b857129aa034393897":[1,0,575,6],
-"classSchmidCostaExponentialLaw2d.html#a9611d7e95ca651520dfb1486bda80ea4":[1,0,575,1],
-"classSchmidCostaExponentialLaw2d.html#aab9a3d336fe646d4fc82a4f13087777d":[1,0,575,0]
+"classSchmidCostaExponentialLaw2d.html#a709048c6a846a91c7649e144d4cd20ec":[1,0,575,3]
 };

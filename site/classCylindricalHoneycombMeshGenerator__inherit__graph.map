@@ -1,5 +1,5 @@
 <map id="CylindricalHoneycombMeshGenerator" name="CylindricalHoneycombMeshGenerator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="14,419,225,553"/>
-<area shape="rect" id="Node000002" href="$classHoneycombMeshGenerator.html" title=" " alt="" coords="5,5,233,371"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,384,122,418,117,418,117,384"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="14,461,223,612"/>
+<area shape="rect" id="Node000002" href="$classHoneycombMeshGenerator.html" title=" " alt="" coords="5,5,231,413"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,425,121,461,116,460,117,430"/>
 </map>

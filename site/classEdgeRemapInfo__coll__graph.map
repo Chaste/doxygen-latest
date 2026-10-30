@@ -1,23 +1,23 @@
 <map id="EdgeRemapInfo" name="EdgeRemapInfo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="149,389,315,615"/>
-<area shape="rect" id="Node000002" href="$classbool.html" title=" " alt="" coords="5,261,48,327"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,320,89,364,139,413,135,417,85,367,46,324"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="72,261,213,327"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,326,170,364,174,373,169,375,166,366,151,328"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="25,133,68,199"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="44,199,44,218,50,236,61,250,57,254,46,239,39,219,38,199"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="295,133,417,199"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="292,208,197,264,195,259,289,204"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="238,261,410,327"/>
-<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="347,213,335,262,329,260,342,211"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="435,261,592,327"/>
-<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="419,204,442,221,484,259,481,263,438,225,416,208"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="345,5,367,71"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="359,71,359,117,353,117,353,71"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="312,328,291,375,286,373,307,326"/>
-<area shape="rect" id="Node000008" href="$classunsigned.html" title=" " alt="" coords="118,133,191,199"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="150,199,151,218,158,235,223,257,221,262,154,239,146,219,145,199"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="472,329,330,432,327,428,468,325"/>
-<area shape="rect" id="Node000010" href="$classdouble.html" title=" " alt="" coords="560,133,619,199"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="581,200,562,239,555,250,550,247,558,236,576,198"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="143,417,306,668"/>
+<area shape="rect" id="Node000002" href="$classbool.html" title=" " alt="" coords="5,280,44,352"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,345,80,392,134,452,129,453,76,395,44,350"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="68,280,206,352"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,350,162,392,165,402,160,401,157,394,146,355"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="19,143,57,215"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="32,212,35,236,42,255,57,274,52,276,37,257,30,236,32,218"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="286,143,404,215"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="277,225,192,282,189,278,280,221"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="230,280,398,352"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="335,227,324,281,319,279,332,232"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="422,280,576,352"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="411,221,432,237,473,280,468,280,428,241,411,226"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="335,5,354,78"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="345,75,347,127,342,125,344,80"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="302,350,283,403,278,400,299,354"/>
+<area shape="rect" id="Node000008" href="$classunsigned.html" title=" " alt="" coords="110,143,180,215"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="137,212,141,236,148,254,161,266,174,271,215,278,211,281,173,276,158,271,144,258,135,237,137,217"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="459,351,320,467,317,463,455,353"/>
+<area shape="rect" id="Node000010" href="$classdouble.html" title=" " alt="" coords="551,143,605,215"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="569,213,551,257,544,268,540,265,546,255,566,217"/>
 </map>

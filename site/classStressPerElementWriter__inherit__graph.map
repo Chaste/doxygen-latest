@@ -1,7 +1,7 @@
 <map id="StressPerElementWriter&lt; DIM &gt;" name="StressPerElementWriter&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="18,652,211,752"/>
-<area shape="rect" id="Node000002" href="$classAbstractPerElementWriter.html" title=" " alt="" coords="5,343,224,603"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,617,117,652,112,652,112,617"/>
-<area shape="rect" id="Node000003" href="$classAbstractPerElementWriter.html" title=" " alt="" coords="5,5,224,280"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,294,117,342,112,342,112,294"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="18,717,210,829"/>
+<area shape="rect" id="Node000002" href="$classAbstractPerElementWriter.html" title=" " alt="" coords="5,378,222,668"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,681,116,719,111,717,113,685"/>
+<area shape="rect" id="Node000003" href="$classAbstractPerElementWriter.html" title=" " alt="" coords="5,5,222,313"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,325,116,378,111,378,113,330"/>
 </map>

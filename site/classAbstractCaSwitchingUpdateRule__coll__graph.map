@@ -1,7 +1,7 @@
 <map id="AbstractCaSwitchingUpdateRule&lt; DIM &gt;" name="AbstractCaSwitchingUpdateRule&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="6,367,239,556"/>
-<area shape="rect" id="Node000002" href="$classAbstractUpdateRule.html" title=" " alt="" coords="6,159,239,319"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,332,125,366,120,366,120,332"/>
-<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,124,125,158,120,158,120,124"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,397,237,610"/>
+<area shape="rect" id="Node000002" href="$classAbstractUpdateRule.html" title=" " alt="" coords="6,170,237,349"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,361,124,398,119,397,121,367"/>
+<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="122,135,124,171,119,170,121,140"/>
 </map>

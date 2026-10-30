@@ -1,10 +1,10 @@
 <map id="CellCycleTimesGenerator" name="CellCycleTimesGenerator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,472,261,817"/>
-<area shape="rect" id="Node000002" href="$classSerializableSingleton.html" title=" " alt="" coords="28,303,239,423"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,436,136,472,131,472,131,436"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="57,5,199,71"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,84,135,303,130,303,126,84"/>
-<area shape="rect" id="Node000004" href="$classSerializableSingleton.html" title=" " alt="" coords="149,120,347,240"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="166,79,199,118,195,122,162,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="205,253,173,304,169,301,201,250"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,509,259,894"/>
+<area shape="rect" id="Node000002" href="$classSerializableSingleton.html" title=" " alt="" coords="29,326,236,460"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,472,135,510,130,509,132,477"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="58,5,196,78"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,90,134,326,129,326,127,95"/>
+<area shape="rect" id="Node000004" href="$classSerializableSingleton.html" title=" " alt="" coords="149,127,345,261"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="164,87,197,127,192,128,165,92"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="200,276,173,327,168,325,202,271"/>
 </map>

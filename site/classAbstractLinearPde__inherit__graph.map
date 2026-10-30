@@ -1,5 +1,5 @@
 <map id="AbstractLinearPde&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="AbstractLinearPde&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,215,125"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="230,56,241,65,233,74,216,78,214,73,231,69,236,66,227,60"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="228,41,290,40,346,44,387,51,399,57,404,65,399,74,385,80,340,88,280,90,215,88,215,83,280,85,340,82,383,75,395,70,399,65,396,61,385,56,345,49,290,46,229,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,211,139"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="226,61,238,72,230,82,211,86,210,81,227,77,232,72,225,67"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="226,46,287,45,342,48,383,57,395,63,400,72,394,82,381,89,336,97,276,100,211,98,211,92,276,95,335,92,379,84,391,78,394,72,391,67,381,62,342,54,287,50,226,51"/>
 </map>

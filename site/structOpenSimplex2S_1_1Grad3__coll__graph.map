@@ -1,5 +1,5 @@
 <map id="OpenSimplex2S::Grad3" name="OpenSimplex2S::Grad3">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,163,169,228"/>
-<area shape="rect" id="Node000002" href="$classdouble.html" title=" " alt="" coords="58,5,117,71"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,71,90,146,85,146,85,71"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,177,166,249"/>
+<area shape="rect" id="Node000002" href="$classdouble.html" title=" " alt="" coords="58,5,113,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,75,88,160,83,159,84,79"/>
 </map>

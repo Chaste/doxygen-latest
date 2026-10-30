@@ -1,7 +1,7 @@
 <map id="AbstractNonlinearSolver" name="AbstractNonlinearSolver">
-<area shape="rect" id="Node000001" title=" " alt="" coords="150,5,358,91"/>
-<area shape="rect" id="Node000002" href="$classSimpleNewtonNonlinearSolver.html" title=" " alt="" coords="5,139,255,324"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,103,195,140,191,137,216,100"/>
-<area shape="rect" id="Node000003" href="$classSimplePetscNonlinearSolver.html" title=" " alt="" coords="279,199,477,264"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="292,100,358,197,354,200,288,103"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="148,5,354,100"/>
+<area shape="rect" id="Node000002" href="$classSimpleNewtonNonlinearSolver.html" title=" " alt="" coords="5,148,252,354"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,111,195,150,190,147,213,115"/>
+<area shape="rect" id="Node000003" href="$classSimplePetscNonlinearSolver.html" title=" " alt="" coords="277,215,472,287"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="290,110,355,215,350,215,287,115"/>
 </map>

@@ -1,17 +1,17 @@
 <map id="PathmanathanInteractionForce&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="PathmanathanInteractionForce&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="653,1227,891,1441"/>
-<area shape="rect" id="Node000002" href="$classAbstractVariableSizeTwoBodyInteractionForce.html" title=" " alt="" coords="511,769,780,1177"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="724,1190,737,1226,732,1227,719,1191"/>
-<area shape="rect" id="Node000003" href="$classAbstractTwoBodyInteractionForce.html" title=" " alt="" coords="231,437,486,707"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="465,717,513,783,508,786,461,720"/>
-<area shape="rect" id="Node000004" href="$classAbstractForce.html" title=" " alt="" coords="18,160,227,375"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="216,384,257,436,252,439,212,387"/>
-<area shape="rect" id="Node000005" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="125,124,125,160,120,160,120,124"/>
-<area shape="rect" id="Node000006" href="$classbool.html" title=" " alt="" coords="252,235,295,300"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="272,300,270,354,277,413,280,421,274,423,272,414,265,354,267,300"/>
-<area shape="rect" id="Node000007" href="$classdouble.html" title=" " alt="" coords="616,235,675,300"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="676,278,722,301,776,335,829,380,851,407,869,436,890,485,906,535,918,587,925,640,929,746,921,852,904,955,880,1051,854,1138,827,1212,822,1210,849,1136,875,1050,898,954,916,852,924,746,920,640,913,588,901,537,885,487,864,439,847,410,825,383,773,339,719,305,674,283"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="648,300,648,753,643,753,643,300"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="617,284,534,329,488,362,446,400,427,425,423,422,442,397,484,358,531,324,615,279"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="649,1353,885,1593"/>
+<area shape="rect" id="Node000002" href="$classAbstractVariableSizeTwoBodyInteractionForce.html" title=" " alt="" coords="508,844,776,1303"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="720,1315,732,1354,727,1352,717,1320"/>
+<area shape="rect" id="Node000003" href="$classAbstractTwoBodyInteractionForce.html" title=" " alt="" coords="229,477,481,779"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="460,789,511,865,505,866,460,794"/>
+<area shape="rect" id="Node000004" href="$classAbstractForce.html" title=" " alt="" coords="18,172,226,412"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="213,422,253,476,248,478,214,427"/>
+<area shape="rect" id="Node000005" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="122,135,124,172,119,172,122,140"/>
+<area shape="rect" id="Node000006" href="$classbool.html" title=" " alt="" coords="250,256,289,328"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="266,325,267,387,274,453,276,460,271,461,269,453,262,387,266,331"/>
+<area shape="rect" id="Node000007" href="$classdouble.html" title=" " alt="" coords="614,256,669,328"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="668,303,716,329,770,366,824,416,846,444,864,476,887,530,904,586,916,644,924,703,929,821,921,939,903,1052,879,1159,852,1255,824,1338,820,1335,847,1253,874,1158,898,1051,916,938,924,821,919,703,911,645,898,588,881,532,859,478,842,447,820,419,767,370,713,333,670,308"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="643,325,644,828,639,827,640,330"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="613,309,532,359,485,395,443,438,424,464,420,461,439,434,482,391,529,354,616,304"/>
 </map>

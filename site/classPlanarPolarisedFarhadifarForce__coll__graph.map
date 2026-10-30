@@ -1,15 +1,15 @@
 <map id="PlanarPolarisedFarhadifarForce&lt; DIM &gt;" name="PlanarPolarisedFarhadifarForce&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="167,1203,433,1501"/>
-<area shape="rect" id="Node000002" href="$classFarhadifarForce.html" title=" " alt="" coords="39,759,305,1153"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,1165,254,1202,249,1203,237,1167"/>
-<area shape="rect" id="Node000003" href="$classAbstractForce.html" title=" " alt="" coords="23,437,233,637"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="141,650,149,734,152,758,147,759,144,735,136,651"/>
-<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="126,124,130,437,124,437,121,124"/>
-<area shape="rect" id="Node000005" href="$classAbstractForce.html" title=" " alt="" coords="145,160,354,375"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="164,121,187,158,182,161,159,124"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="198,388,175,438,170,436,193,386"/>
-<area shape="rect" id="Node000006" href="$classdouble.html" title=" " alt="" coords="328,505,387,570"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="377,569,397,612,412,661,416,698,412,735,399,853,381,973,340,1187,335,1186,375,972,393,853,407,734,410,698,407,662,392,614,373,571"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="329,572,291,607,245,640,224,647,205,648,190,651,175,663,155,701,145,743,140,742,150,699,171,660,187,646,205,643,223,642,243,635,288,603,326,568"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="165,1324,430,1660"/>
+<area shape="rect" id="Node000002" href="$classFarhadifarForce.html" title=" " alt="" coords="39,833,304,1275"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,1286,252,1324,247,1324,239,1291"/>
+<area shape="rect" id="Node000003" href="$classAbstractForce.html" title=" " alt="" coords="23,477,231,700"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,712,148,809,151,834,146,834,143,810,137,718"/>
+<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,135,129,477,123,477,122,140"/>
+<area shape="rect" id="Node000005" href="$classAbstractForce.html" title=" " alt="" coords="143,172,351,412"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="160,133,184,172,179,173,161,138"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="192,428,175,478,170,476,194,423"/>
+<area shape="rect" id="Node000006" href="$classdouble.html" title=" " alt="" coords="326,552,381,625"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="372,622,394,670,410,724,414,767,410,810,397,940,379,1071,338,1308,333,1307,373,1070,391,939,405,809,408,767,405,725,389,672,372,627"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="325,627,291,666,244,703,223,710,205,711,189,714,174,726,167,741,161,762,156,817,151,816,156,761,162,739,170,723,186,709,204,706,222,705,242,698,288,662,328,622"/>
 </map>

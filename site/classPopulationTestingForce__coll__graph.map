@@ -1,9 +1,9 @@
 <map id="PopulationTestingForce&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="PopulationTestingForce&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="73,437,322,687"/>
-<area shape="rect" id="Node000002" href="$classAbstractForce.html" title=" " alt="" coords="18,160,227,375"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,387,168,436,163,438,151,388"/>
-<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="5,5,240,111"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,124,125,160,120,160,120,124"/>
-<area shape="rect" id="Node000004" href="$classbool.html" title=" " alt="" coords="252,235,295,300"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="268,301,236,422,231,420,262,300"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="72,477,319,757"/>
+<area shape="rect" id="Node000002" href="$classAbstractForce.html" title=" " alt="" coords="18,172,226,412"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,424,166,478,161,477,152,429"/>
+<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="5,5,238,122"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="122,135,124,172,119,172,122,140"/>
+<area shape="rect" id="Node000004" href="$classbool.html" title=" " alt="" coords="250,256,289,328"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="263,325,234,461,229,459,260,330"/>
 </map>

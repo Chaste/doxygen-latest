@@ -1,7 +1,7 @@
 <map id="StreeterFibreGenerator&lt; SPACE_DIM &gt;" name="StreeterFibreGenerator&lt; SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="9,681,221,1056"/>
-<area shape="rect" id="Node000002" href="$classAbstractPerElementWriter.html" title=" " alt="" coords="5,357,224,632"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,646,117,681,112,681,112,646"/>
-<area shape="rect" id="Node000003" href="$classAbstractPerElementWriter.html" title=" " alt="" coords="5,5,224,280"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,294,117,357,112,357,112,294"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,751,219,1170"/>
+<area shape="rect" id="Node000002" href="$classAbstractPerElementWriter.html" title=" " alt="" coords="5,395,222,702"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,714,116,752,111,751,113,719"/>
+<area shape="rect" id="Node000003" href="$classAbstractPerElementWriter.html" title=" " alt="" coords="5,5,222,313"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,325,116,395,111,395,114,331"/>
 </map>

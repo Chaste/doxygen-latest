@@ -1,10 +1,10 @@
 <map id="RandomNumberGenerator" name="RandomNumberGenerator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,472,255,857"/>
-<area shape="rect" id="Node000002" href="$classSerializableSingleton.html" title=" " alt="" coords="23,303,237,423"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,436,133,472,127,472,127,436"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="54,5,195,71"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,84,132,303,126,303,123,84"/>
-<area shape="rect" id="Node000004" href="$classSerializableSingleton.html" title=" " alt="" coords="146,120,343,240"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="163,79,196,118,192,122,159,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="202,253,170,304,165,301,198,250"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,509,253,939"/>
+<area shape="rect" id="Node000002" href="$classSerializableSingleton.html" title=" " alt="" coords="24,326,235,460"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,472,132,510,127,509,129,477"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="55,5,193,78"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,90,131,326,126,326,124,95"/>
+<area shape="rect" id="Node000004" href="$classSerializableSingleton.html" title=" " alt="" coords="146,127,342,261"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="161,87,194,127,189,128,162,92"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="197,276,170,327,165,325,199,271"/>
 </map>

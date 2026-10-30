@@ -1,16 +1,16 @@
 <map id="AbstractBoxDomainPdeModifier&lt; DIM &gt;" name="AbstractBoxDomainPdeModifier&lt; DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="132,1453,403,1873"/>
-<area shape="rect" id="Node000006" href="$classEllipticBoxDomainPdeModifier.html" title=" " alt="" coords="5,1980,252,2209"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="198,1887,168,1980,163,1979,193,1885"/>
-<area shape="rect" id="Node000007" href="$classParabolicBoxDomainPdeModifier.html" title=" " alt="" coords="275,1923,537,2267"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="342,1886,353,1921,348,1923,337,1887"/>
-<area shape="rect" id="Node000002" href="$classAbstractPdeModifier.html" title=" " alt="" coords="147,869,387,1404"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,1418,270,1453,265,1453,265,1418"/>
-<area shape="rect" id="Node000003" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="145,521,390,820"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="270,834,270,869,265,869,265,834"/>
-<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="145,5,379,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="265,125,269,521,263,521,260,125"/>
-<area shape="rect" id="Node000005" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="284,160,557,459"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="304,121,328,158,324,161,300,124"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="354,473,333,522,328,520,349,471"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="131,1605,400,2074"/>
+<area shape="rect" id="Node000006" href="$classEllipticBoxDomainPdeModifier.html" title=" " alt="" coords="5,2188,250,2445"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="195,2086,167,2189,162,2187,193,2090"/>
+<area shape="rect" id="Node000007" href="$classParabolicBoxDomainPdeModifier.html" title=" " alt="" coords="274,2123,534,2509"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="338,2086,350,2124,345,2123,337,2091"/>
+<area shape="rect" id="Node000002" href="$classAbstractPdeModifier.html" title=" " alt="" coords="146,958,384,1556"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,1568,268,1606,263,1605,265,1573"/>
+<area shape="rect" id="Node000003" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="144,573,387,909"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="265,921,268,958,263,958,265,926"/>
+<area shape="rect" id="Node000004" href="$classIdentifiable.html" title=" " alt="" coords="143,5,376,122"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="261,135,267,573,261,573,260,140"/>
+<area shape="rect" id="Node000005" href="$classAbstractCellBasedSimulationModifier.html" title=" " alt="" coords="281,172,551,508"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="299,132,323,171,318,173,300,138"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="347,524,331,573,326,572,348,519"/>
 </map>

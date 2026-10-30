@@ -1,19 +1,19 @@
 <map id="RungeKuttaFehlbergIvpOdeSolver" name="RungeKuttaFehlbergIvpOdeSolver">
-<area shape="rect" id="Node000001" title=" " alt="" coords="533,716,739,1091"/>
-<area shape="rect" id="Node000002" href="$classAbstractIvpOdeSolver.html" title=" " alt="" coords="262,301,495,507"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="440,518,542,714,537,717,435,520"/>
-<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="5,133,240,239"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="196,246,263,302,260,306,193,250"/>
-<area shape="rect" id="Node000004" href="$classbool.html" title=" " alt="" coords="264,153,307,219"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="284,219,284,248,289,277,293,285,288,287,284,278,278,248,278,219"/>
-<area shape="rect" id="Node000005" href="$classdouble.html" title=" " alt="" coords="607,153,665,219"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="639,219,639,700,633,700,633,219"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="607,202,555,228,500,265,471,291,468,287,497,261,553,224,605,197"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="759,371,916,437"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="668,217,798,357,794,361,664,221"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="827,438,720,701,715,699,822,436"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="777,153,898,219"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="840,233,840,371,835,371,835,233"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="826,5,849,71"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="840,71,840,137,835,137,835,71"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="529,788,733,1207"/>
+<area shape="rect" id="Node000002" href="$classAbstractIvpOdeSolver.html" title=" " alt="" coords="259,325,491,553"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="435,565,538,789,533,789,432,569"/>
+<area shape="rect" id="Node000003" href="$classIdentifiable.html" title=" " alt="" coords="5,143,238,260"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,267,262,329,257,331,195,272"/>
+<area shape="rect" id="Node000004" href="$classbool.html" title=" " alt="" coords="262,165,301,237"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="278,235,280,268,286,300,289,309,283,309,281,301,275,269,277,240"/>
+<area shape="rect" id="Node000005" href="$classdouble.html" title=" " alt="" coords="604,165,658,237"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="633,235,634,772,629,771,629,239"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="602,217,552,246,496,286,468,313,464,310,493,282,550,241,606,213"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="753,403,907,475"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="658,231,737,323,792,390,787,390,733,326,658,237"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="819,473,714,774,709,771,815,477"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="771,165,889,237"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="831,250,832,404,827,402,829,255"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="820,5,839,78"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="831,75,832,149,827,147,829,80"/>
 </map>

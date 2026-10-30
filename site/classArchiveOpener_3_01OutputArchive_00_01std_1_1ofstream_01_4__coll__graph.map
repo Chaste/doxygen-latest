@@ -1,15 +1,15 @@
 <map id="ArchiveOpener&lt; OutputArchive, std::ofstream &gt;" name="ArchiveOpener&lt; OutputArchive, std::ofstream &gt;">
-<area shape="rect" id="Node000001" title="Partial class specialization to specialize class members for output archives." alt="" coords="59,636,282,756"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="36,493,137,559"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,559,84,585,91,611,96,621,91,624,85,613,79,586,79,559"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="15,364,158,444"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,458,89,493,84,493,84,458"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="18,235,155,315"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="89,328,89,364,84,364,84,328"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="5,120,168,185"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="89,199,89,235,84,235,84,199"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="37,5,136,71"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="89,85,89,120,84,120,84,85"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="195,493,314,559"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="248,560,228,613,223,623,218,620,223,611,243,558"/>
+<area shape="rect" id="Node000001" title="Partial class specialization to specialize class members for output archives." alt="" coords="58,680,277,814"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="36,526,134,598"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,596,82,627,89,655,93,666,88,666,83,657,77,627,79,601"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="15,387,154,477"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,489,87,526,82,526,84,494"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="18,249,152,338"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,350,87,388,82,387,84,355"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,127,164,199"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="85,211,87,249,82,249,84,217"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="37,5,132,78"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="85,90,87,127,82,127,85,95"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="194,526,309,598"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="244,596,224,657,220,667,216,664,220,655,241,600"/>
 </map>

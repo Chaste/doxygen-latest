@@ -1,5 +1,5 @@
 <map id="SimplePetscNonlinearSolver" name="SimplePetscNonlinearSolver">
-<area shape="rect" id="Node000001" title=" " alt="" coords="10,139,209,204"/>
-<area shape="rect" id="Node000002" href="$classAbstractNonlinearSolver.html" title=" " alt="" coords="5,5,213,91"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,104,112,138,107,138,107,104"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="11,148,206,220"/>
+<area shape="rect" id="Node000002" href="$classAbstractNonlinearSolver.html" title=" " alt="" coords="5,5,211,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,113,111,149,106,147,107,117"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="FunctionalBoundaryCondition&lt; SPACE_DIM &gt;" name="FunctionalBoundaryCondition&lt; SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="89,208,318,308"/>
-<area shape="rect" id="Node000002" href="$classAbstractBoundaryCondition.html" title=" " alt="" coords="5,5,233,145"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,157,183,206,178,209,155,159"/>
-<area shape="rect" id="Node000003" href="$classdouble.html" title=" " alt="" coords="258,43,317,108"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,109,235,194,231,192,270,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="86,227,314,338"/>
+<area shape="rect" id="Node000002" href="$classAbstractBoundaryCondition.html" title=" " alt="" coords="5,5,231,162"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,173,180,227,175,227,155,178"/>
+<area shape="rect" id="Node000003" href="$classdouble.html" title=" " alt="" coords="255,47,310,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,118,231,213,227,210,266,121"/>
 </map>

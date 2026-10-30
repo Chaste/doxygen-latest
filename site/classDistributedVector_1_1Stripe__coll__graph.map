@@ -1,20 +1,20 @@
 <map id="DistributedVector::Stripe" name="DistributedVector::Stripe">
-<area shape="rect" id="Node000001" title=" " alt="" coords="128,891,262,1031"/>
-<area shape="rect" id="Node000002" href="$classunsigned.html" title=" " alt="" coords="18,133,92,199"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="48,199,30,269,15,351,8,480,17,608,26,670,39,727,55,780,75,827,94,859,118,889,114,892,90,862,70,829,50,782,34,728,21,671,11,609,3,480,10,350,25,267,43,198"/>
-<area shape="rect" id="Node000004" href="$classDistributedVectorFactory.html" title=" " alt="" coords="84,433,306,828"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="57,199,59,258,70,326,98,417,93,419,64,327,54,259,52,199"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="180,261,352,327"/>
-<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="93,187,200,250,197,255,90,191"/>
-<area shape="rect" id="Node000003" href="$classdouble.html" title=" " alt="" coords="483,598,542,663"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="517,663,515,700,509,744,496,789,473,830,431,871,381,903,329,927,279,943,278,938,327,922,379,898,428,867,469,826,491,787,504,743,510,700,511,663"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,828,198,874,192,874,192,828"/>
-<area shape="poly" id="edge10_Node000004_Node000004" title=" " alt="" coords="308,591,325,606,332,631,329,647,322,660,317,657,324,646,327,631,321,609,304,595"/>
-<area shape="rect" id="Node000005" href="$classbool.html" title=" " alt="" coords="376,261,419,327"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="392,328,379,368,360,411,317,481,313,478,355,408,374,366,387,326"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="262,327,243,418,237,417,256,326"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="205,133,326,199"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="268,213,268,261,263,261,263,213"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="254,5,277,71"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="268,71,268,117,263,117,263,71"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="129,975,261,1131"/>
+<area shape="rect" id="Node000002" href="$classunsigned.html" title=" " alt="" coords="20,143,90,215"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,218,30,289,15,377,10,448,8,521,17,667,27,736,40,800,56,858,75,909,95,944,121,978,116,979,91,947,70,911,51,860,34,801,21,737,12,667,3,521,4,448,10,376,24,288,45,212"/>
+<area shape="rect" id="Node000004" href="$classDistributedVectorFactory.html" title=" " alt="" coords="85,468,305,910"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="55,212,60,279,71,352,99,452,94,453,65,353,55,279,55,218"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="179,280,347,352"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="89,200,197,269,192,272,91,205"/>
+<area shape="rect" id="Node000003" href="$classdouble.html" title=" " alt="" coords="481,653,536,725"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="512,723,514,766,509,815,496,865,472,911,430,955,381,989,328,1015,278,1033,276,1028,326,1010,378,984,427,950,468,908,491,863,504,814,509,766,510,727"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="196,907,198,958,192,957,194,912"/>
+<area shape="poly" id="edge10_Node000004_Node000004" title=" " alt="" coords="305,644,325,662,332,689,329,708,321,722,316,719,324,706,326,689,320,664,305,650"/>
+<area shape="rect" id="Node000005" href="$classbool.html" title=" " alt="" coords="372,280,410,352"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="385,349,374,397,356,445,316,520,311,518,351,443,369,396,383,354"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="257,350,241,452,236,451,256,355"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="204,143,322,215"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="263,227,266,281,260,280,263,232"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="254,5,272,78"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="263,75,266,126,260,126,263,80"/>
 </map>

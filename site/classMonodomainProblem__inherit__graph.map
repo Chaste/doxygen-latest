@@ -1,9 +1,9 @@
 <map id="MonodomainProblem&lt; ELEMENT_DIM, SPACE_DIM &gt;" name="MonodomainProblem&lt; ELEMENT_DIM, SPACE_DIM &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="27,944,237,1204"/>
-<area shape="rect" id="Node000002" href="$classAbstractCardiacProblem.html" title=" " alt="" coords="5,261,259,896"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,910,135,944,129,944,129,910"/>
-<area shape="rect" id="Node000003" href="$classAbstractUntemplatedCardiacProblem.html" title=" " alt="" coords="18,119,246,213"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,227,135,261,129,261,129,227"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="61,5,203,71"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="135,84,135,118,129,118,129,84"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="28,1037,234,1328"/>
+<area shape="rect" id="Node000002" href="$classAbstractCardiacProblem.html" title=" " alt="" coords="5,280,257,989"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,1002,134,1038,129,1037,131,1007"/>
+<area shape="rect" id="Node000003" href="$classAbstractUntemplatedCardiacProblem.html" title=" " alt="" coords="18,126,244,232"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,244,134,281,129,280,131,249"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="62,5,200,78"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="131,90,134,126,129,126,131,96"/>
 </map>
